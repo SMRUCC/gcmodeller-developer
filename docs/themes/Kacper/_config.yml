@@ -1,9 +1,9 @@
 # Header
 menu: #导航栏连接
   Home: /
-  API: /API 
+  API: /API    # library document reference
   Tags: /tags
-  # Category: /category
+  Tools: /tools
   Archives: /archives #/archives #归档页面URL 自定义页面标题: /自定义页面URL
   About: /about
   Github: https://github.com/SMRUCC/
