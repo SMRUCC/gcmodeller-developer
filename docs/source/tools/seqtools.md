@@ -1,11 +1,10 @@
 ---
-title: tools
-date: 2016-06-12 23:44:40
-tags: [manual]
+title: seqtools
+tags: [maunal, tools]
+date: 6/13/2016 12:26:42 AM
 ---
-
 # GCModeller [version 3.0.2456.4506]
-**Module AssemblyName**: file:///F:/bin-Debug/seqtools.exe
+**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/seqtools.exe
 **Root namespace**: LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities
 
 
@@ -31,7 +30,6 @@ All of the command that available in this program has been list below:
 |/Split||
 |/subset||
 |/To_Fasta|Convert the sequence data in a excel annotation file into a fasta sequence file.|
-|/TrimTest||
 |/Write.Seeds||
 |-321|Polypeptide sequence 3 letters to 1 lettes sequence.|
 |--align||
@@ -67,7 +65,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /align /query <query.fasta> /subject <subject.fasta> [/blosum <matrix.txt> /out <out.xml>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /align /query <query.fasta> /subject <subject.fasta> [/blosum <matrix.txt> /out <out.xml>]
   Example:      seqtools /align 
 ```
 
@@ -77,7 +75,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Clustal.Cut /in <in.fasta> [/left 0.1 /right 0.1 /out <out.fasta>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Clustal.Cut /in <in.fasta> [/left 0.1 /right 0.1 /out <out.fasta>]
   Example:      seqtools /Clustal.Cut 
 ```
 
@@ -87,7 +85,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Distinct /in <in.fasta> [/out <out.fasta>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Distinct /in <in.fasta> [/out <out.fasta>]
   Example:      seqtools /Distinct 
 ```
 
@@ -97,7 +95,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Get.Locis /in <locis.csv> /nt <genome.nt.fasta> [/out <outDIR>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Get.Locis /in <locis.csv> /nt <genome.nt.fasta> [/out <outDIR>]
   Example:      seqtools /Get.Locis 
 ```
 
@@ -107,7 +105,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Testing
-  Usage:        F:\bin-Debug\seqtools.EXE /Loci.describ /ptt <genome-context.ptt> [/test <loci:randomize> /complement /unstrand]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Loci.describ /ptt <genome-context.ptt> [/test <loci:randomize> /complement /unstrand]
   Example:      seqtools /Loci.describ 
 ```
 
@@ -117,7 +115,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  * Drawing the sequence logo from the clustal alignment result.
-  Usage:        F:\bin-Debug\seqtools.EXE /logo /in <clustal.fasta> [/out <out.png> /title ""]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /logo /in <clustal.fasta> [/out <out.png> /title ""]
   Example:      seqtools /logo 
 ```
 
@@ -149,7 +147,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Only search for 1 level folder, dit not search receve.
-  Usage:        F:\bin-Debug\seqtools.EXE /Merge /in <fasta.DIR> [/out <out.fasta> /trim /ext <*.fasta> /brief]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Merge /in <fasta.DIR> [/out <out.fasta> /trim /ext <*.fasta> /brief]
   Example:      seqtools /Merge 
 ```
 
@@ -159,7 +157,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Mirror.Batch /nt <nt.fasta> [/out <out.csv> /mp /min <3> /max <20> /num_threads <-1>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Mirror.Batch /nt <nt.fasta> [/out <out.csv> /mp /min <3> /max <20> /num_threads <-1>]
   Example:      seqtools /Mirror.Batch 
 ```
 
@@ -181,7 +179,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Mirror.Vector /in <inDIR> /size <genome.size> [/out out.txt]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Mirror.Vector /in <inDIR> /size <genome.size> [/out out.txt]
   Example:      seqtools /Mirror.Vector 
 ```
 
@@ -191,7 +189,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /nw /query <query.fasta> /subject <subject.fasta> /out <out.txt>
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /nw /query <query.fasta> /subject <subject.fasta> /out <out.txt>
   Example:      seqtools /nw 
 ```
 
@@ -201,7 +199,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Palindrome.BatchTask /in <in.DIR> [/num_threads 4 /min 3 /max 20 /min-appears 2 /cutoff <0.6> /Palindrome /max-dist <1000 (bp)> /partitions <-1> /out <out.DIR>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Palindrome.BatchTask /in <in.DIR> [/num_threads 4 /min 3 /max 20 /min-appears 2 /cutoff <0.6> /Palindrome /max-dist <1000 (bp)> /partitions <-1> /out <out.DIR>]
   Example:      seqtools /Palindrome.BatchTask 
 ```
 
@@ -223,7 +221,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Palindrome.Workflow /in <in.fasta> [/batch /min-appears 2 /min 3 /max 20 /cutoff <0.6> /max-dist <1000 (bp)> /Palindrome /partitions <-1> /out <out.DIR>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Palindrome.Workflow /in <in.fasta> [/batch /min-appears 2 /min 3 /max 20 /cutoff <0.6> /max-dist <1000 (bp)> /Palindrome /partitions <-1> /out <out.DIR>]
   Example:      seqtools /Palindrome.Workflow 
 ```
 
@@ -250,7 +248,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Select.By_Locus /in <locus.txt> /fa <fasta.inDIR> [/out <out.fasta>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Select.By_Locus /in <locus.txt> /fa <fasta.inDIR> [/out <out.fasta>]
   Example:      seqtools /Select.By_Locus 
 ```
 
@@ -260,7 +258,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /SimpleSegment.AutoBuild /in <locis.csv> [/out <out.csv>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /SimpleSegment.AutoBuild /in <locis.csv> [/out <out.csv>]
   Example:      seqtools /SimpleSegment.AutoBuild 
 ```
 
@@ -270,7 +268,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE 
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe 
   Example:      seqtools /SimpleSegment.Mirrors 
 ```
 
@@ -280,7 +278,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Split /in <in.fasta> [/n <4096> /out <outDIR>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Split /in <in.fasta> [/n <4096> /out <outDIR>]
   Example:      seqtools /Split 
 ```
 
@@ -290,7 +288,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /subset /lstID <lstID.txt> /fa <source.fasta>
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /subset /lstID <lstID.txt> /fa <source.fasta>
   Example:      seqtools /subset 
 ```
 
@@ -300,18 +298,8 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Convert the sequence data in a excel annotation file into a fasta sequence file.
-  Usage:        F:\bin-Debug\seqtools.EXE /To_Fasta /in <anno.csv> [/out <out.fasta> /attrs <gene;locus_tag;gi;location,...> /seq <Sequence>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /To_Fasta /in <anno.csv> [/out <out.fasta> /attrs <gene;locus_tag;gi;location,...> /seq <Sequence>]
   Example:      seqtools /To_Fasta 
-```
-
-##### Help for command '/TrimTest':
-
-**Prototype**: LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities::Int32 TrimTest(Microsoft.VisualBasic.CommandLine.CommandLine)
-
-```
-  Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /TrimTest /in <in.fasta>
-  Example:      seqtools /TrimTest 
 ```
 
 ##### Help for command '/Write.Seeds':
@@ -320,7 +308,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE /Write.Seeds /out <out.dat> [/prot /max <20>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe /Write.Seeds /out <out.dat> [/prot /max <20>]
   Example:      seqtools /Write.Seeds 
 ```
 
@@ -330,7 +318,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Polypeptide sequence 3 letters to 1 lettes sequence.
-  Usage:        F:\bin-Debug\seqtools.EXE -321 /in <sequence.txt> [/out <out.fasta>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe -321 /in <sequence.txt> [/out <out.fasta>]
   Example:      seqtools -321 
 ```
 
@@ -340,7 +328,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --align /query <query.fasta> /subject <subject.fasta> [/out <out.DIR> /cost <0.7>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --align /query <query.fasta> /subject <subject.fasta> [/out <out.DIR> /cost <0.7>]
   Example:      seqtools --align 
 ```
 
@@ -350,7 +338,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --align.Self /query <query.fasta> /out <out.DIR> [/cost 0.75]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --align.Self /query <query.fasta> /out <out.DIR> [/cost 0.75]
   Example:      seqtools --align.Self 
 ```
 
@@ -360,7 +348,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE -reverse -i <input_fasta> [-o <output_fasta>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe -reverse -i <input_fasta> [-o <output_fasta>]
   Example:      seqtools -complement 
 ```
 
@@ -370,7 +358,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --Drawing.ClustalW /in <align.fasta> [/out <out.png> /dot.Size 10]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Drawing.ClustalW /in <align.fasta> [/out <out.png> /dot.Size 10]
   Example:      seqtools --Drawing.ClustalW 
 ```
 
@@ -380,7 +368,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --Hairpinks /in <in.fasta> [/out <out.csv> /min <6> /max <7> /cutoff 3 /max-dist <35 (bp)>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Hairpinks /in <in.fasta> [/out <out.csv> /min <6> /max <7> /cutoff 3 /max-dist <35 (bp)>]
   Example:      seqtools --Hairpinks 
 ```
 
@@ -390,7 +378,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --Hairpinks.batch.task /in <in.fasta> [/out <outDIR> /min <6> /max <7> /cutoff <0.6> /max-dist <35 (bp)> /num_threads <-1>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Hairpinks.batch.task /in <in.fasta> [/out <outDIR> /min <6> /max <7> /cutoff <0.6> /max-dist <35 (bp)> /num_threads <-1>]
   Example:      seqtools --Hairpinks.batch.task 
 ```
 
@@ -400,7 +388,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --ImperfectsPalindrome.batch.Task /in <in.fasta> /out <outDir> [/min <3> /max <20> /cutoff <0.6> /max-dist <1000 (bp)> /num_threads <-1>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --ImperfectsPalindrome.batch.Task /in <in.fasta> /out <outDir> [/min <3> /max <20> /cutoff <0.6> /max-dist <1000 (bp)> /num_threads <-1>]
   Example:      seqtools --ImperfectsPalindrome.batch.Task 
 ```
 
@@ -410,7 +398,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Mirror Palindrome, search from a fasta file.
-  Usage:        F:\bin-Debug\seqtools.EXE --Mirror.From.Fasta /nt <nt-sequence.fasta> [/out <out.csv> /min <3> /max <20>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Mirror.From.Fasta /nt <nt-sequence.fasta> [/out <out.csv> /min <3> /max <20>]
   Example:      seqtools --Mirror.From.Fasta 
 ```
 
@@ -432,7 +420,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Mirror Palindrome, and this function is for the debugging test
-  Usage:        F:\bin-Debug\seqtools.EXE --Mirror.From.NT /nt <nt-sequence> /out <out.csv> [/min <3> /max <20>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Mirror.From.NT /nt <nt-sequence> /out <out.csv> [/min <3> /max <20>]
   Example:      seqtools --Mirror.From.NT 
 ```
 
@@ -442,7 +430,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --Palindrome.batch.Task /in <in.fasta> /out <outDir> [/min <3> /max <20> /num_threads <-1>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Palindrome.batch.Task /in <in.fasta> /out <outDir> [/min <3> /max <20> /num_threads <-1>]
   Example:      seqtools --Palindrome.batch.Task 
 ```
 
@@ -452,7 +440,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --Palindrome.From.Fasta /nt <nt-sequence.fasta> [/out <out.csv> /min <3> /max <20>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Palindrome.From.Fasta /nt <nt-sequence.fasta> [/out <out.csv> /min <3> /max <20>]
   Example:      seqtools --Palindrome.From.FASTA 
 ```
 
@@ -474,7 +462,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  This function is just for debugger test, /nt parameter is the nucleotide sequence data as ATGCCCC
-  Usage:        F:\bin-Debug\seqtools.EXE --Palindrome.From.NT /nt <nt-sequence> /out <out.csv> [/min <3> /max <20>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Palindrome.From.NT /nt <nt-sequence> /out <out.csv> [/min <3> /max <20>]
   Example:      seqtools --Palindrome.From.NT 
 ```
 
@@ -484,7 +472,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --Palindrome.Imperfects /in <in.fasta> [/out <out.csv> /min <3> /max <20> /cutoff <0.6> /max-dist <1000 (bp)> /partitions <-1>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Palindrome.Imperfects /in <in.fasta> [/out <out.csv> /min <3> /max <20> /cutoff <0.6> /max-dist <1000 (bp)> /partitions <-1>]
   Example:      seqtools --Palindrome.Imperfects 
 ```
 
@@ -494,7 +482,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Parsing the sequence segment from the sequence source using regular expression.
-  Usage:        F:\bin-Debug\seqtools.EXE -pattern_search -i <file_name> -p <regex_pattern>[ -o <output_directory> -f <format:fsa/gbk>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe -pattern_search -i <file_name> -p <regex_pattern>[ -o <output_directory> -f <format:fsa/gbk>]
   Example:      seqtools -pattern_search -pattern_search -i ~/xcc8004.txt -p TTA{3}N{1,2} -f fsa
 ```
 
@@ -534,7 +522,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --PerfectPalindrome.Filtering /in <inDIR> [/min <8> /out <outDIR>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --PerfectPalindrome.Filtering /in <inDIR> [/min <8> /out <outDIR>]
   Example:      seqtools --PerfectPalindrome.Filtering 
 ```
 
@@ -544,7 +532,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE Repeats.Density /dir <dir> /size <size> /ref <refName> [/out <out.csv> /cutoff <default:=0>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe Repeats.Density /dir <dir> /size <size> /ref <refName> [/out <out.csv> /cutoff <default:=0>]
   Example:      seqtools Repeats.Density 
 ```
 
@@ -554,7 +542,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE -reverse -i <input_fasta> [-o <output_fasta>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe -reverse -i <input_fasta> [-o <output_fasta>]
   Example:      seqtools -reverse 
 ```
 
@@ -564,7 +552,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE rev-Repeats.Density /dir <dir> /size <size> /ref <refName> [/out <out.csv> /cutoff <default:=0>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe rev-Repeats.Density /dir <dir> /size <size> /ref <refName> [/out <out.csv> /cutoff <default:=0>]
   Example:      seqtools rev-Repeats.Density 
 ```
 
@@ -574,7 +562,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Batch search for repeats.
-  Usage:        F:\bin-Debug\seqtools.EXE Search.Batch /aln <alignment.fasta> [/min 3 /max 20 /min-rep 2 /out <./>]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe Search.Batch /aln <alignment.fasta> [/min 3 /max 20 /min-rep 2 /out <./>]
   Example:      seqtools Search.Batch 
 ```
 
@@ -596,7 +584,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE -segment /fasta <Fasta_Token> [-loci <loci>] [/left <left> /length <length> /right <right> [/reverse]] [/ptt <ptt> /geneID <gene_id> /dist <distance> /downstream] -o <saved> [-line.break 100]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe -segment /fasta <Fasta_Token> [-loci <loci>] [/left <left> /length <length> /right <right> [/reverse]] [/ptt <ptt> /geneID <gene_id> /dist <distance> /downstream] -o <saved> [-line.break 100]
   Example:      seqtools -segment 
 ```
 
@@ -606,7 +594,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --segments /regions <regions.csv> /fasta <nt.fasta> [/complement /reversed /brief-dump]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --segments /regions <regions.csv> /fasta <nt.fasta> [/complement /reversed /brief-dump]
   Example:      seqtools --segments 
 ```
 
@@ -638,7 +626,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --ToVector /in <in.DIR> /min <4> /max <8> /out <out.txt> /size <genome.size>
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --ToVector /in <in.DIR> /min <4> /max <8> /out <out.txt> /size <genome.size>
   Example:      seqtools --ToVector 
 ```
 
@@ -648,7 +636,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Translates the ORF gene as protein sequence. If any error was output from the console, please using > operator dump the output to a log file for the analysis.
-  Usage:        F:\bin-Debug\seqtools.EXE --translates /orf <orf.fasta> [/transl_table 1 /force]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --translates /orf <orf.fasta> [/transl_table 1 /force]
   Example:      seqtools --translates 
 ```
 
@@ -680,7 +668,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\bin-Debug\seqtools.EXE --Trim /in <in.fasta> [/case <u/l> /break <-1/int> /out <out.fasta> /brief]
+  Usage:        F:\GCModeller\GCModeller-x64\seqtools.exe --Trim /in <in.fasta> [/case <u/l> /break <-1/int> /out <out.fasta> /brief]
   Example:      seqtools --Trim 
 ```
 
