@@ -1,0 +1,21 @@
+﻿---
+title: SafeWindowHandle
+---
+
+# SafeWindowHandle
+_namespace: [Microsoft.Windows.Internal](N-Microsoft.Windows.Internal.html)_
+
+Safe Window Handle
+
+### Methods
+
+#### ReleaseHandle
+```csharp
+Microsoft.Windows.Internal.SafeWindowHandle.ReleaseHandle
+```
+Release the handle
+_returns: true if handled is release successfully, false otherwise_
+
+
+
+

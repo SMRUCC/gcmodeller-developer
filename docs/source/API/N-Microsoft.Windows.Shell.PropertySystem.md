@@ -1,0 +1,32 @@
+﻿---
+title: Microsoft.Windows.Shell.PropertySystem
+date: 6/13/2016 6:38:16 PM
+---
+
+[IPropertyStore](T-Microsoft.Windows.Shell.PropertySystem.IPropertyStore.html)
+[IPropertyStoreCache](T-Microsoft.Windows.Shell.PropertySystem.IPropertyStoreCache.html)
+[IShellProperty](T-Microsoft.Windows.Shell.PropertySystem.IShellProperty.html)
+[PropEnumType](T-Microsoft.Windows.Shell.PropertySystem.PropEnumType.html)
+[PropertyAggregationType](T-Microsoft.Windows.Shell.PropertySystem.PropertyAggregationType.html)
+[PropertyColumnStateOptions](T-Microsoft.Windows.Shell.PropertySystem.PropertyColumnStateOptions.html)
+[PropertyConditionOperation](T-Microsoft.Windows.Shell.PropertySystem.PropertyConditionOperation.html)
+[PropertyConditionType](T-Microsoft.Windows.Shell.PropertySystem.PropertyConditionType.html)
+[PropertyDescriptionFormatOptions](T-Microsoft.Windows.Shell.PropertySystem.PropertyDescriptionFormatOptions.html)
+[PropertyDisplayType](T-Microsoft.Windows.Shell.PropertySystem.PropertyDisplayType.html)
+[PropertyGroupingRange](T-Microsoft.Windows.Shell.PropertySystem.PropertyGroupingRange.html)
+[PropertyKey](T-Microsoft.Windows.Shell.PropertySystem.PropertyKey.html)
+[PropertySortDescription](T-Microsoft.Windows.Shell.PropertySystem.PropertySortDescription.html)
+[PropertyStoreCacheState](T-Microsoft.Windows.Shell.PropertySystem.PropertyStoreCacheState.html)
+[PropertyStoreItems](T-Microsoft.Windows.Shell.PropertySystem.PropertyStoreItems.html)
+[PropertySystemException](T-Microsoft.Windows.Shell.PropertySystem.PropertySystemException.html)
+[PropertyTypeOptions](T-Microsoft.Windows.Shell.PropertySystem.PropertyTypeOptions.html)
+[PropertyViewOptions](T-Microsoft.Windows.Shell.PropertySystem.PropertyViewOptions.html)
+[ShellProperties](T-Microsoft.Windows.Shell.PropertySystem.ShellProperties.html)
+[ShellProperty`1](T-Microsoft.Windows.Shell.PropertySystem.ShellProperty`1.html)
+[ShellPropertyCollection](T-Microsoft.Windows.Shell.PropertySystem.ShellPropertyCollection.html)
+[ShellPropertyDescription](T-Microsoft.Windows.Shell.PropertySystem.ShellPropertyDescription.html)
+[ShellPropertyEnumType](T-Microsoft.Windows.Shell.PropertySystem.ShellPropertyEnumType.html)
+[ShellPropertyFactory](T-Microsoft.Windows.Shell.PropertySystem.ShellPropertyFactory.html)
+[ShellPropertyWriter](T-Microsoft.Windows.Shell.PropertySystem.ShellPropertyWriter.html)
+[SystemProperties](T-Microsoft.Windows.Shell.PropertySystem.SystemProperties.html)
+[WindowProperties](T-Microsoft.Windows.Shell.PropertySystem.WindowProperties.html)

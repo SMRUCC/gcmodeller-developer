@@ -1,0 +1,9 @@
+﻿---
+title: Microsoft.VisualBasic.ComponentModel.Ranges
+date: 6/13/2016 6:38:13 PM
+---
+
+[DoubleRange](T-Microsoft.VisualBasic.ComponentModel.Ranges.DoubleRange.html)
+[IntRange](T-Microsoft.VisualBasic.ComponentModel.Ranges.IntRange.html)
+[IRanges`1](T-Microsoft.VisualBasic.ComponentModel.Ranges.IRanges`1.html)
+[OrderSelector`1](T-Microsoft.VisualBasic.ComponentModel.Ranges.OrderSelector`1.html)
