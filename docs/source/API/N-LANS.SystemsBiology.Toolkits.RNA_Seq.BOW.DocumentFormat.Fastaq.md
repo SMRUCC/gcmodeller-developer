@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.Fastaq
-date: 6/13/2016 8:14:37 PM
+date: 6/13/2016 9:11:20 PM
 ---
 
 [Fastaq](T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.Fastaq.Fastaq.html)

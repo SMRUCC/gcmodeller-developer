@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat
-date: 6/13/2016 8:14:33 PM
+date: 6/13/2016 9:11:13 PM
 ---
 
 [DbAPI](T-LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.DbAPI.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.MicrobesOnline.MySQL.genomics
-date: 6/13/2016 8:14:35 PM
+date: 6/13/2016 9:11:14 PM
 ---
 
 [aaseq](T-LANS.SystemsBiology.DatabaseServices.MicrobesOnline.MySQL.genomics.aaseq.html)

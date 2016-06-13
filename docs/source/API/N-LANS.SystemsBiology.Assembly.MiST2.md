@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.MiST2
-date: 6/13/2016 8:14:33 PM
+date: 6/13/2016 9:11:13 PM
 ---
 
 [Domain](T-LANS.SystemsBiology.Assembly.MiST2.Domain.html)

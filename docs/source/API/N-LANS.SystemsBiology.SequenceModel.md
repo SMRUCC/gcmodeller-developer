@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.SequenceModel
-date: 6/13/2016 8:14:34 PM
+date: 6/13/2016 9:11:13 PM
 ---
 
 [I_PolymerSequenceModel](T-LANS.SystemsBiology.SequenceModel.I_PolymerSequenceModel.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: Biopax.Level3.Schema
-date: 6/13/2016 8:14:33 PM
+date: 6/13/2016 9:11:12 PM
 ---
 
 [Class](T-Biopax.Level3.Schema.Class.html)

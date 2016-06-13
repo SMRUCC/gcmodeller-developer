@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically
-date: 6/13/2016 8:14:33 PM
+date: 6/13/2016 9:11:12 PM
 ---
 
 [Imperfect](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.Imperfect.html)

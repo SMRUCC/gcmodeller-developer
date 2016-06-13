@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.Reactome.LocalMySQL.Tables.gk_current
-date: 6/13/2016 8:14:35 PM
+date: 6/13/2016 9:11:15 PM
 ---
 
 [_attributevaluebeforechange](T-LANS.SystemsBiology.DatabaseServices.Reactome.LocalMySQL.Tables.gk_current._attributevaluebeforechange.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.SequenceModel.FASTA.Reflection
-date: 6/13/2016 8:14:34 PM
+date: 6/13/2016 9:11:13 PM
 ---
 
 [FastaAttributeItem](T-LANS.SystemsBiology.SequenceModel.FASTA.Reflection.FastaAttributeItem.html)

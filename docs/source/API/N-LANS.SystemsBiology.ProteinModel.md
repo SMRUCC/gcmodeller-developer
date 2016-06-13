@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.ProteinModel
-date: 6/13/2016 8:14:34 PM
+date: 6/13/2016 9:11:13 PM
 ---
 
 [DomainObject](T-LANS.SystemsBiology.ProteinModel.DomainObject.html)

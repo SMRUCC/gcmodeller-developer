@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.GeneOntology.MySQL.Tables
-date: 6/13/2016 8:14:34 PM
+date: 6/13/2016 9:11:13 PM
 ---
 
 [assoc_rel](T-LANS.SystemsBiology.Assembly.GeneOntology.MySQL.Tables.assoc_rel.html)

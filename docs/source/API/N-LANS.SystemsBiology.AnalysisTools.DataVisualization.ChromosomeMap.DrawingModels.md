@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels
-date: 6/13/2016 8:14:32 PM
+date: 6/13/2016 9:11:11 PM
 ---
 
 [ChromesomeDrawingModel](T-LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.ChromesomeDrawingModel.html)

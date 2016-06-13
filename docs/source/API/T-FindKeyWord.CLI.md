@@ -18,7 +18,7 @@ FindKeyWord.CLI.Found(System.String,System.String,System.String,System.Boolean,S
 |Parameter Name|Remarks|
 |--------------|-------|
 |Keyword|-|
-|Dir|-|
+|DIR|-|
 |_extList|a.ext;b.ext;c.ext|
 |_usingRegex|-|
 |FilteringExt|-|

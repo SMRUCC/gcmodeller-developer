@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan
-date: 6/13/2016 8:14:33 PM
+date: 6/13/2016 9:11:12 PM
 ---
 
 [AAIndex](T-LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan.AAIndex.html)

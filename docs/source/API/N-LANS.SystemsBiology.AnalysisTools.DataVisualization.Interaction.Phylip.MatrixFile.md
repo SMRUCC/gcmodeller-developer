@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.MatrixFile
-date: 6/13/2016 8:14:46 PM
+date: 6/13/2016 9:11:20 PM
 ---
 
 [Gendist](T-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.MatrixFile.Gendist.html)

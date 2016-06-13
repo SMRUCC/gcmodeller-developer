@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.ComponentModel.EquaionModel
-date: 6/13/2016 8:14:34 PM
+date: 6/13/2016 9:11:13 PM
 ---
 
 [Equation`1](T-LANS.SystemsBiology.ComponentModel.EquaionModel.Equation`1.html)

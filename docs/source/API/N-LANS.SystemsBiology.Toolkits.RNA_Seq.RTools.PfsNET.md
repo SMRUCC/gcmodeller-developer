@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET
-date: 6/13/2016 8:14:37 PM
+date: 6/13/2016 9:11:20 PM
 ---
 
 [PfsNET](T-LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.PfsNET.html)

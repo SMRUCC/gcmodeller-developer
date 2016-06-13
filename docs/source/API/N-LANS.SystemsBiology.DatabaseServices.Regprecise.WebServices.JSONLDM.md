@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM
-date: 6/13/2016 8:14:35 PM
+date: 6/13/2016 9:11:16 PM
 ---
 
 [gene](T-LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM.gene.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSystem
-date: 6/13/2016 8:14:37 PM
+date: 6/13/2016 9:11:19 PM
 ---
 
 [CellComponentSystemFramework`1](T-LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSystem.CellComponentSystemFramework`1.html)

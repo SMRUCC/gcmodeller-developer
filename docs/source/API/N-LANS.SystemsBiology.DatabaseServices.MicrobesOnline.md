@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.MicrobesOnline
-date: 6/13/2016 8:14:35 PM
+date: 6/13/2016 9:11:15 PM
 ---
 
 [fetchLocus](T-LANS.SystemsBiology.DatabaseServices.MicrobesOnline.fetchLocus.html)

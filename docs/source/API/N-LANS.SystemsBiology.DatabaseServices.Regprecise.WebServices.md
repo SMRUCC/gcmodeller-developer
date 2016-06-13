@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices
-date: 6/13/2016 8:14:35 PM
+date: 6/13/2016 9:11:16 PM
 ---
 
 [Regulation](T-LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.Regulation.html)

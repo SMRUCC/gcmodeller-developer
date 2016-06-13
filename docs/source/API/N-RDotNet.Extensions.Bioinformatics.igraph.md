@@ -1,6 +1,6 @@
 ﻿---
 title: RDotNet.Extensions.Bioinformatics.igraph
-date: 6/13/2016 8:14:46 PM
+date: 6/13/2016 9:11:20 PM
 ---
 
 [from_edgelist](T-RDotNet.Extensions.Bioinformatics.igraph.from_edgelist.html)
