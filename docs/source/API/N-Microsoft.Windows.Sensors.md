@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.Windows.Sensors
-date: 6/13/2016 6:38:16 PM
+date: 6/13/2016 8:14:41 PM
 ---
 
 [Acceleration3D](T-Microsoft.Windows.Sensors.Acceleration3D.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.Regprecise
-date: 6/13/2016 6:38:09 PM
+date: 6/13/2016 8:14:35 PM
 ---
 
 [BacteriaGenome](T-LANS.SystemsBiology.DatabaseServices.Regprecise.BacteriaGenome.html)

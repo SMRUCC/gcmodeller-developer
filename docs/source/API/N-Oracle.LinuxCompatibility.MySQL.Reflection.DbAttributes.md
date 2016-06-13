@@ -1,6 +1,6 @@
 ﻿---
 title: Oracle.LinuxCompatibility.MySQL.Reflection.DbAttributes
-date: 6/13/2016 6:38:23 PM
+date: 6/13/2016 8:14:46 PM
 ---
 
 [AutoIncrement](T-Oracle.LinuxCompatibility.MySQL.Reflection.DbAttributes.AutoIncrement.html)

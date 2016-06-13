@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.Xfam.Rfam.MySQL.Tables
-date: 6/13/2016 6:38:08 PM
+date: 6/13/2016 8:14:34 PM
 ---
 
 [alignment_and_tree](T-LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.Xfam.Rfam.MySQL.Tables.alignment_and_tree.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.Windows.Dialogs.Controls
-date: 6/13/2016 6:38:16 PM
+date: 6/13/2016 8:14:40 PM
 ---
 
 [CommonFileDialogButton](T-Microsoft.Windows.Dialogs.Controls.CommonFileDialogButton.html)

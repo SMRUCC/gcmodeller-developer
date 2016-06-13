@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.VisualBasic.Scripting.ShoalShell.Runtime
-date: 6/13/2016 6:38:15 PM
+date: 6/13/2016 8:14:40 PM
 ---
 
 [Dynamics](T-Microsoft.VisualBasic.Scripting.ShoalShell.Runtime.Dynamics.html)

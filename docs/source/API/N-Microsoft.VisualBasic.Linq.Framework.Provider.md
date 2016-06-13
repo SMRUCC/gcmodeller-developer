@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.VisualBasic.Linq.Framework.Provider
-date: 6/13/2016 6:38:13 PM
+date: 6/13/2016 8:14:38 PM
 ---
 
 [DelegateProvider](T-Microsoft.VisualBasic.Linq.Framework.Provider.DelegateProvider.html)

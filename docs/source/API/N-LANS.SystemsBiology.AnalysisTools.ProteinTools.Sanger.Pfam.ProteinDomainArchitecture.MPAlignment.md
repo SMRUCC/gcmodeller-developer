@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinDomainArchitecture.MPAlignment
-date: 6/13/2016 6:38:05 PM
+date: 6/13/2016 8:14:33 PM
 ---
 
 [Algorithm](T-LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinDomainArchitecture.MPAlignment.Algorithm.html)

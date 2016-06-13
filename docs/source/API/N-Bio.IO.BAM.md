@@ -1,6 +1,6 @@
 ﻿---
 title: Bio.IO.BAM
-date: 6/13/2016 6:38:03 PM
+date: 6/13/2016 8:14:32 PM
 ---
 
 [BAMFormatterExtensions](T-Bio.IO.BAM.BAMFormatterExtensions.html)

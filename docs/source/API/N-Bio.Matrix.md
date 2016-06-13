@@ -1,6 +1,6 @@
 ﻿---
 title: Bio.Matrix
-date: 6/13/2016 6:38:03 PM
+date: 6/13/2016 8:14:31 PM
 ---
 
 [AbstractMatrixView`3](T-Bio.Matrix.AbstractMatrixView`3.html)

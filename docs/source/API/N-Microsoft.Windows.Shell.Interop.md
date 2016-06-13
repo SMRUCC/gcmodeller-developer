@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.Windows.Shell.Interop
-date: 6/13/2016 6:38:16 PM
+date: 6/13/2016 8:14:41 PM
 ---
 
 [IInitializeWithFile](T-Microsoft.Windows.Shell.Interop.IInitializeWithFile.html)

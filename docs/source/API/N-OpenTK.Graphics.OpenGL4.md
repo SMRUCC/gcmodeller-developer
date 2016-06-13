@@ -1,6 +1,6 @@
 ﻿---
 title: OpenTK.Graphics.OpenGL4
-date: 6/13/2016 6:38:22 PM
+date: 6/13/2016 8:14:45 PM
 ---
 
 [AccumOp](T-OpenTK.Graphics.OpenGL4.AccumOp.html)

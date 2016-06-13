@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.VisualBasic.MolkPlusTheme.Visualise.Elements
-date: 6/13/2016 6:38:17 PM
+date: 6/13/2016 8:14:41 PM
 ---
 
 [ButtonRender](T-Microsoft.VisualBasic.MolkPlusTheme.Visualise.Elements.ButtonRender.html)

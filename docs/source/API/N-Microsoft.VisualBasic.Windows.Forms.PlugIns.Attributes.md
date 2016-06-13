@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.VisualBasic.Windows.Forms.PlugIns.Attributes
-date: 6/13/2016 6:38:15 PM
+date: 6/13/2016 8:14:40 PM
 ---
 
 [CommandBase](T-Microsoft.VisualBasic.Windows.Forms.PlugIns.Attributes.CommandBase.html)

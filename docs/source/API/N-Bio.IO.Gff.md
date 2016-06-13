@@ -1,6 +1,6 @@
 ﻿---
 title: Bio.IO.Gff
-date: 6/13/2016 6:38:03 PM
+date: 6/13/2016 8:14:31 PM
 ---
 
 [GffFormatter](T-Bio.IO.Gff.GffFormatter.html)

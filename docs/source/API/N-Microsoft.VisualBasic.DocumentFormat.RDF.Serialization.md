@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.VisualBasic.DocumentFormat.RDF.Serialization
-date: 6/13/2016 6:38:15 PM
+date: 6/13/2016 8:14:39 PM
 ---
 
 [PropertyAttribute](T-Microsoft.VisualBasic.DocumentFormat.RDF.Serialization.PropertyAttribute.html)

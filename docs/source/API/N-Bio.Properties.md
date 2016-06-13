@@ -1,6 +1,6 @@
 ﻿---
 title: Bio.Properties
-date: 6/13/2016 6:38:03 PM
+date: 6/13/2016 8:14:31 PM
 ---
 
 [Resource](T-Bio.Properties.Resource.html)

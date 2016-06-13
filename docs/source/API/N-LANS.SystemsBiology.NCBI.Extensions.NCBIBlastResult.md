@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.NCBI.Extensions.NCBIBlastResult
-date: 6/13/2016 6:38:12 PM
+date: 6/13/2016 8:14:37 PM
 ---
 
 [AlignmentTable](T-LANS.SystemsBiology.NCBI.Extensions.NCBIBlastResult.AlignmentTable.html)

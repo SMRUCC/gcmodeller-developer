@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.PrimerDesigner
-date: 6/13/2016 6:38:05 PM
+date: 6/13/2016 8:14:33 PM
 ---
 
 [Designer](T-LANS.SystemsBiology.AnalysisTools.PrimerDesigner.Designer.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Toolkits.RNA_Seq
-date: 6/13/2016 6:38:13 PM
+date: 6/13/2016 8:14:38 PM
 ---
 
 [Correlation2](T-LANS.SystemsBiology.Toolkits.RNA_Seq.Correlation2.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.VisualBasic.DataVisualization.DataMining.Framework.Kernel.GeneticAlgorithm
-date: 6/13/2016 6:38:14 PM
+date: 6/13/2016 8:14:39 PM
 ---
 
 [BinaryNeuron](T-Microsoft.VisualBasic.DataVisualization.DataMining.Framework.Kernel.GeneticAlgorithm.BinaryNeuron.html)

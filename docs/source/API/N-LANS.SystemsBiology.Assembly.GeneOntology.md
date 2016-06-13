@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.GeneOntology
-date: 6/13/2016 6:38:07 PM
+date: 6/13/2016 8:14:34 PM
 ---
 
 [AnnotationFile](T-LANS.SystemsBiology.Assembly.GeneOntology.AnnotationFile.html)

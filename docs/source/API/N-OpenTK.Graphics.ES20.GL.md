@@ -1,6 +1,6 @@
 ﻿---
 title: OpenTK.Graphics.ES20.GL
-date: 6/13/2016 6:38:21 PM
+date: 6/13/2016 8:14:44 PM
 ---
 
 [Amd](T-OpenTK.Graphics.ES20.GL.Amd.html)

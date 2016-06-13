@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.GCML_Documents.XmlElements.Metabolism
-date: 6/13/2016 6:38:11 PM
+date: 6/13/2016 8:14:37 PM
 ---
 
 [DispositionReactant](T-LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.GCML_Documents.XmlElements.Metabolism.DispositionReactant.html)

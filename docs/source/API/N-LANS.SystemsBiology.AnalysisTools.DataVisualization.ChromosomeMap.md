@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap
-date: 6/13/2016 6:38:05 PM
+date: 6/13/2016 8:14:32 PM
 ---
 
 [ChromesomeMapAPI](T-LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.ChromesomeMapAPI.html)

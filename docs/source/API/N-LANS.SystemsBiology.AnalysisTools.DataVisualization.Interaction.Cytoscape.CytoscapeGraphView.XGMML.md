@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.CytoscapeGraphView.XGMML
-date: 6/13/2016 6:38:04 PM
+date: 6/13/2016 8:14:32 PM
 ---
 
 [Attribute](T-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.CytoscapeGraphView.XGMML.Attribute.html)

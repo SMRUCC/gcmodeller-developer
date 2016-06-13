@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure.ChouFasmanRules
-date: 6/13/2016 6:38:07 PM
+date: 6/13/2016 8:14:34 PM
 ---
 
 [ChouFasmanParameter](T-LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure.ChouFasmanRules.ChouFasmanParameter.html)

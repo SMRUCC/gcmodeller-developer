@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.DataVisualization.GeneticClock
-date: 6/13/2016 6:38:05 PM
+date: 6/13/2016 8:14:32 PM
 ---
 
 [ColorRender](T-LANS.SystemsBiology.AnalysisTools.DataVisualization.GeneticClock.ColorRender.html)

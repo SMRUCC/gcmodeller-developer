@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.Windows.ExtendedLinguisticServices
-date: 6/13/2016 6:38:16 PM
+date: 6/13/2016 8:14:41 PM
 ---
 
 [IMappingFormatter`1](T-Microsoft.Windows.ExtendedLinguisticServices.IMappingFormatter`1.html)

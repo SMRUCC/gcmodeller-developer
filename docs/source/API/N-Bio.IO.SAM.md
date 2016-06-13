@@ -1,6 +1,6 @@
 ﻿---
 title: Bio.IO.SAM
-date: 6/13/2016 6:38:03 PM
+date: 6/13/2016 8:14:31 PM
 ---
 
 [PairedRead](T-Bio.IO.SAM.PairedRead.html)

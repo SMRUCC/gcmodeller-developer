@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.NCBI.COG.COGs
-date: 6/13/2016 6:38:06 PM
+date: 6/13/2016 8:14:33 PM
 ---
 
 [COGFunc](T-LANS.SystemsBiology.Assembly.NCBI.COG.COGs.COGFunc.html)

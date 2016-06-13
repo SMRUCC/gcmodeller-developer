@@ -1,6 +1,6 @@
 ﻿---
 title: RegPrecise.Settings
-date: 6/13/2016 6:38:24 PM
+date: 6/13/2016 8:14:46 PM
 ---
 
 [File](T-RegPrecise.Settings.File.html)

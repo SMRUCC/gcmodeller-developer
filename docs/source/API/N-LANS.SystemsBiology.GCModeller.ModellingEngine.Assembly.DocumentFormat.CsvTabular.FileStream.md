@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.FileStream
-date: 6/13/2016 6:38:11 PM
+date: 6/13/2016 8:14:37 PM
 ---
 
 [GeneObject](T-LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.FileStream.GeneObject.html)

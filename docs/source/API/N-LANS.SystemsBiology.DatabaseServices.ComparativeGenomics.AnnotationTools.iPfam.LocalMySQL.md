@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.iPfam.LocalMySQL
-date: 6/13/2016 6:38:07 PM
+date: 6/13/2016 8:14:34 PM
 ---
 
 [citation](T-LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.iPfam.LocalMySQL.citation.html)

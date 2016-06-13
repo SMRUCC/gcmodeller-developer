@@ -1,6 +1,6 @@
 ﻿---
 title: KEGG.Settings
-date: 6/13/2016 6:38:04 PM
+date: 6/13/2016 8:14:32 PM
 ---
 
 [File](T-KEGG.Settings.File.html)

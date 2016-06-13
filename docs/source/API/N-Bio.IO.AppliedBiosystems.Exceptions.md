@@ -1,6 +1,6 @@
 ﻿---
 title: Bio.IO.AppliedBiosystems.Exceptions
-date: 6/13/2016 6:38:02 PM
+date: 6/13/2016 8:14:31 PM
 ---
 
 [InvalidFileSignatureException](T-Bio.IO.AppliedBiosystems.Exceptions.InvalidFileSignatureException.html)

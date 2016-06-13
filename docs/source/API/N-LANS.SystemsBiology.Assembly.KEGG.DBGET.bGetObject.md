@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject
-date: 6/13/2016 6:38:06 PM
+date: 6/13/2016 8:14:33 PM
 ---
 
 [bGetObject](T-LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.bGetObject.html)

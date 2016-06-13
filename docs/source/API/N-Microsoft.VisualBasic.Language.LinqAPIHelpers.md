@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.VisualBasic.Language.LinqAPIHelpers
-date: 6/13/2016 6:38:14 PM
+date: 6/13/2016 8:14:38 PM
 ---
 
 [ExecHelper`1](T-Microsoft.VisualBasic.Language.LinqAPIHelpers.ExecHelper`1.html)

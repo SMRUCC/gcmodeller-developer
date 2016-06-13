@@ -1,6 +1,6 @@
 ﻿---
 title: RDotNet.Extensions.Bioinformatics.bnlearn
-date: 6/13/2016 6:38:23 PM
+date: 6/13/2016 8:14:46 PM
 ---
 
 [BnlearnInference](T-RDotNet.Extensions.Bioinformatics.bnlearn.BnlearnInference.html)

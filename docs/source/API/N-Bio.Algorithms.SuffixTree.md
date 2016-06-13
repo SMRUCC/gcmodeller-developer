@@ -1,6 +1,6 @@
 ﻿---
 title: Bio.Algorithms.SuffixTree
-date: 6/13/2016 6:38:02 PM
+date: 6/13/2016 8:14:31 PM
 ---
 
 [ISuffixTree](T-Bio.Algorithms.SuffixTree.ISuffixTree.html)

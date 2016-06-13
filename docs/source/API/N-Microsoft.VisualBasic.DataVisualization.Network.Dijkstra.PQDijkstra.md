@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.VisualBasic.DataVisualization.Network.Dijkstra.PQDijkstra
-date: 6/13/2016 6:38:15 PM
+date: 6/13/2016 8:14:39 PM
 ---
 
 [BinaryPriorityQueue](T-Microsoft.VisualBasic.DataVisualization.Network.Dijkstra.PQDijkstra.BinaryPriorityQueue.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: OpenTK.Platform.Windows
-date: 6/13/2016 6:38:18 PM
+date: 6/13/2016 8:14:42 PM
 ---
 
 [API](T-OpenTK.Platform.Windows.API.html)

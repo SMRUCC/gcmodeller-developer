@@ -1,6 +1,6 @@
 ﻿---
 title: OpenTK.Graphics
-date: 6/13/2016 6:38:18 PM
+date: 6/13/2016 8:14:42 PM
 ---
 
 [Color4](T-OpenTK.Graphics.Color4.html)

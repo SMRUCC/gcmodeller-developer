@@ -1,6 +1,6 @@
 ﻿---
 title: Microsoft.Windows.Shell.ShellNativeMethods
-date: 6/13/2016 6:38:16 PM
+date: 6/13/2016 8:14:41 PM
 ---
 
 [GetPropertyStoreOptions](T-Microsoft.Windows.Shell.ShellNativeMethods.GetPropertyStoreOptions.html)
