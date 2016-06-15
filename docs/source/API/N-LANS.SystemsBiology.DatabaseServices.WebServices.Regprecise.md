@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.WebServices.Regprecise
-date: 6/13/2016 9:11:16 PM
+date: 6/16/2016 4:56:59 AM
 ---
 
 [ORMapperFactory](T-LANS.SystemsBiology.DatabaseServices.WebServices.Regprecise.ORMapperFactory.html)

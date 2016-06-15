@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.Reactome.LocalMySQL.Tables.gk_current_dn
-date: 6/13/2016 9:11:15 PM
+date: 6/16/2016 4:56:58 AM
 ---
 
 [id_to_externalidentifier](T-LANS.SystemsBiology.DatabaseServices.Reactome.LocalMySQL.Tables.gk_current_dn.id_to_externalidentifier.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: SMRUCC.R.CRAN.Bioconductor.DESeq2
-date: 6/13/2016 9:11:10 PM
+date: 6/16/2016 4:56:54 AM
 ---
 
 [DESeq](T-SMRUCC.R.CRAN.Bioconductor.DESeq2.DESeq.html)

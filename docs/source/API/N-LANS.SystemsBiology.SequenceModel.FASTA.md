@@ -1,10 +1,10 @@
 ﻿---
 title: LANS.SystemsBiology.SequenceModel.FASTA
-date: 6/13/2016 9:11:13 PM
+date: 6/16/2016 4:56:57 AM
 ---
 
 [FastaFile](T-LANS.SystemsBiology.SequenceModel.FASTA.FastaFile.html)
 [FastaToken](T-LANS.SystemsBiology.SequenceModel.FASTA.FastaToken.html)
-[I_FastaToken](T-LANS.SystemsBiology.SequenceModel.FASTA.I_FastaToken.html)
+[IAbstractFastaToken](T-LANS.SystemsBiology.SequenceModel.FASTA.IAbstractFastaToken.html)
 [StreamIterator](T-LANS.SystemsBiology.SequenceModel.FASTA.StreamIterator.html)
 [UltralargeSizeFastaReader](T-LANS.SystemsBiology.SequenceModel.FASTA.UltralargeSizeFastaReader.html)

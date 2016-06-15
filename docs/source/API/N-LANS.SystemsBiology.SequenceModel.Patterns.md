@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.SequenceModel.Patterns
-date: 6/13/2016 9:11:13 PM
+date: 6/16/2016 4:56:57 AM
 ---
 
 [PatternModel](T-LANS.SystemsBiology.SequenceModel.Patterns.PatternModel.html)

@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.MetaCyc.File
-date: 6/13/2016 9:11:12 PM
+date: 6/16/2016 4:56:56 AM
 ---
 
 [AttributeValue](T-LANS.SystemsBiology.Assembly.MetaCyc.File.AttributeValue.html)

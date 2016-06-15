@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.ExperimentSystem
-date: 6/13/2016 9:11:19 PM
+date: 6/16/2016 4:57:00 AM
 ---
 
 [ExperimentManageSystem](T-LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.ExperimentSystem.ExperimentManageSystem.html)

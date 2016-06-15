@@ -5,9 +5,30 @@ title: GenomeContextProvider`1
 # GenomeContextProvider`1
 _namespace: [LANS.SystemsBiology.ContextModel](N-LANS.SystemsBiology.ContextModel.html)_
 
-
+基因组上下文计算工具，一般使用@"T:LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.PTT"或者@"T:LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.GFF"文件作为数据源.
+ 
+ ```vbnet
+ Dim PTT As @"T:LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.PTT" = TabularFormat.PTT.Load("G:\Xanthomonas_campestris_8004_uid15\CP000050.ptt")
+ Dim genome As New @"T:LANS.SystemsBiology.ContextModel.GenomeContextProvider`1"(Of GeneBrief)(PTT)
+ Dim loci As New @"T:LANS.SystemsBiology.ComponentModel.Loci.NucleotideLocation"(3834400, 3834450) ' XC_3200, XC_3199, KEGG测试成功
+ Dim rels = genome.GetAroundRelated(loci, False)
+ 
+ rels = genome.GetAroundRelated(loci, True)
+ ```
 
 ### Methods
+
+#### __delegate
+```csharp
+LANS.SystemsBiology.ContextModel.GenomeContextProvider`1.__delegate(LANS.SystemsBiology.ComponentModel.Loci.NucleotideLocation,System.Boolean)
+```
+Creates the anonymous function pointer for the relationship @"M:LANS.SystemsBiology.ContextModel.GenomeContextProvider`1.GetAroundRelated(LANS.SystemsBiology.ComponentModel.Loci.NucleotideLocation,System.Boolean,System.Int32)"
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|loci|-|
+|stranded|-|
+
 
 #### GetAroundRelated
 ```csharp
@@ -66,6 +87,17 @@ LANS.SystemsBiology.ContextModel.GenomeContextProvider`1.GetRelatedUpstream(Syst
 |source|-|
 |Loci|-|
 |ATGDistance|-|
+
+
+#### GetSource
+```csharp
+LANS.SystemsBiology.ContextModel.GenomeContextProvider`1.GetSource(LANS.SystemsBiology.ComponentModel.Loci.Strands)
+```
+Gets the stranded gene object data source.
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|strand|-|
 
 
 

@@ -25,6 +25,17 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.__imperfectsPalindrome
 |maxDist|-|
 
 
+#### __lociFa
+```csharp
+LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.__lociFa(LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.PalindromeLoci)
+```
+Converts the mirror palindrome site into a fasta sequence
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|x|-|
+
+
 #### __palindromeTask
 ```csharp
 LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.__palindromeTask(LANS.SystemsBiology.SequenceModel.FASTA.FastaToken,System.String,System.Int32,System.Int32)
@@ -61,6 +72,17 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.BatchSearchPalindrome(
 |args|-|
 
 
+#### Complement
+```csharp
+LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.Complement(Microsoft.VisualBasic.CommandLine.CommandLine)
+```
+进行核酸fasta序列的互补
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|args|-|
+
+
 #### ConvertsAuto
 ```csharp
 LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.ConvertsAuto(Microsoft.VisualBasic.CommandLine.CommandLine)
@@ -91,7 +113,7 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.GetSegment(Microsoft.V
 
 |Parameter Name|Remarks|
 |--------------|-------|
-|argvs|-|
+|args|-|
 
 
 #### HairpinksBatch
@@ -99,6 +121,17 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.GetSegment(Microsoft.V
 LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.HairpinksBatch(Microsoft.VisualBasic.CommandLine.CommandLine)
 ```
 /num_threads <-1>: -1表示使用系统自动分配的参数值
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|args|-|
+
+
+#### MirrorGroups
+```csharp
+LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.MirrorGroups(Microsoft.VisualBasic.CommandLine.CommandLine)
+```
+对位点进行分组操作方便进行MEME分析
 
 |Parameter Name|Remarks|
 |--------------|-------|
@@ -125,6 +158,17 @@ Using the regular expression to search the motif pattern on a target nucleotide 
 |Parameter Name|Remarks|
 |--------------|-------|
 |argvs|-|
+
+
+#### Reverse
+```csharp
+LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.Reverse(Microsoft.VisualBasic.CommandLine.CommandLine)
+```
+对蛋白质序列或者核酸序列进行反向
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|args|-|
 
 
 #### SearchMirrotFasta

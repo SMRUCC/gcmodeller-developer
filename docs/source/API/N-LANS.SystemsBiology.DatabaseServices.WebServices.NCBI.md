@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.WebServices.NCBI
-date: 6/13/2016 9:11:17 PM
+date: 6/16/2016 4:56:59 AM
 ---
 
 [AssayColumnsType](T-LANS.SystemsBiology.DatabaseServices.WebServices.NCBI.AssayColumnsType.html)

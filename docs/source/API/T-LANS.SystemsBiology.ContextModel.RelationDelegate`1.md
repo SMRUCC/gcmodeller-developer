@@ -9,6 +9,18 @@ The working core of the genomics context provider.
 
 ### Methods
 
+#### GetATGRelation
+```csharp
+LANS.SystemsBiology.ContextModel.RelationDelegate`1.GetATGRelation(LANS.SystemsBiology.ComponentModel.Loci.SegmentRelationships,System.Int32)
+```
+
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|relType|-|
+|ATGdist|-|
+
+
 #### GetRelation
 ```csharp
 LANS.SystemsBiology.ContextModel.RelationDelegate`1.GetRelation(LANS.SystemsBiology.ComponentModel.Loci.SegmentRelationships,System.Int32)

@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.PrimerDesigner.IBCB.sgRNAcas
-date: 6/13/2016 9:11:12 PM
+date: 6/16/2016 4:56:55 AM
 ---
 
 [API](T-LANS.SystemsBiology.AnalysisTools.PrimerDesigner.IBCB.sgRNAcas.API.html)

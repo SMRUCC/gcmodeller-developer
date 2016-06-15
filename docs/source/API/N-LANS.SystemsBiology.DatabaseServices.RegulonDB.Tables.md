@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.RegulonDB.Tables
-date: 6/13/2016 9:11:16 PM
+date: 6/16/2016 4:56:59 AM
 ---
 
 [alignment](T-LANS.SystemsBiology.DatabaseServices.RegulonDB.Tables.alignment.html)

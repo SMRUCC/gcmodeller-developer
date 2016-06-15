@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.SequenceModel.NucleotideModels
-date: 6/13/2016 9:11:13 PM
+date: 6/16/2016 4:56:57 AM
 ---
 
 [Contig](T-LANS.SystemsBiology.SequenceModel.NucleotideModels.Contig.html)

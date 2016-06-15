@@ -9,6 +9,18 @@ _namespace: [LANS.SystemsBiology.ContextModel](N-LANS.SystemsBiology.ContextMode
 
 ### Methods
 
+#### ATGDistance``1
+```csharp
+LANS.SystemsBiology.ContextModel.LocationDescriptions.ATGDistance``1(``0,LANS.SystemsBiology.ComponentModel.Loci.NucleotideLocation)
+```
+Calculate the ATG distance between the target gene and the specific feature loci.
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|gene|-|
+|nucl|-|
+
+
 #### GetATGDistance
 ```csharp
 LANS.SystemsBiology.ContextModel.LocationDescriptions.GetATGDistance(LANS.SystemsBiology.ComponentModel.Loci.Location,LANS.SystemsBiology.ComponentModel.IGeneBrief)
@@ -21,6 +33,18 @@ Calculates the ATG distance between the target gene and a loci segment on.(计�
 |gene|-|
 
 _returns: 总是计算最大的距离_
+
+#### GetLociRelations``1
+```csharp
+LANS.SystemsBiology.ContextModel.LocationDescriptions.GetLociRelations``1(``0,LANS.SystemsBiology.ComponentModel.Loci.NucleotideLocation)
+```
+Get the loci relationship between the target gene and the specific feature loci.
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|gene|-|
+|nucl|-|
+
 
 #### IsBlankSegment
 ```csharp

@@ -1,6 +1,6 @@
 ﻿---
 title: RDotNET.Extensions.VisualBasic.Services.ScriptBuilder.RTypes
-date: 6/13/2016 9:11:20 PM
+date: 6/16/2016 4:57:02 AM
 ---
 
 [RBoolean](T-RDotNET.Extensions.VisualBasic.Services.ScriptBuilder.RTypes.RBoolean.html)

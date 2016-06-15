@@ -57,7 +57,7 @@ LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.CEG.Too
 
 |Parameter Name|Remarks|
 |--------------|-------|
-|Dir|一个基因组的文件夹可能包含有染色体基因组和质粒基因组的数据|
+|DIR|一个基因组的文件夹可能包含有染色体基因组和质粒基因组的数据|
 
 
 

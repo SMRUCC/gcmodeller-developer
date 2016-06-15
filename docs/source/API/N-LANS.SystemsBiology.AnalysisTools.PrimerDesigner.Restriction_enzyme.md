@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.PrimerDesigner.Restriction_enzyme
-date: 6/13/2016 9:11:12 PM
+date: 6/16/2016 4:56:55 AM
 ---
 
 [Cut](T-LANS.SystemsBiology.AnalysisTools.PrimerDesigner.Restriction_enzyme.Cut.html)

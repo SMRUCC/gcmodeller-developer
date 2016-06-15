@@ -34,7 +34,7 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.PhenotypeRegulations.__ranking(M
 
 #### AssignPhenotype
 ```csharp
-LANS.SystemsBiology.AnalysisTools.CellPhenotype.PhenotypeRegulations.AssignPhenotype(System.Collections.Generic.IEnumerable{LANS.SystemsBiology.InteractionModel.IRegulatorRegulation},System.Collections.Generic.IEnumerable{LANS.SystemsBiology.Assembly.KEGG.Archives.Csv.Pathway})
+LANS.SystemsBiology.AnalysisTools.CellPhenotype.PhenotypeRegulations.AssignPhenotype(System.Collections.Generic.IEnumerable{LANS.SystemsBiology.InteractionModel.Regulon.IRegulatorRegulation},System.Collections.Generic.IEnumerable{LANS.SystemsBiology.Assembly.KEGG.Archives.Csv.Pathway})
 ```
 仅仅只是根据调控数据将表型调控赋值给指定的调控因子,没有计算得分的过程
 
@@ -46,7 +46,7 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.PhenotypeRegulations.AssignPheno
 
 #### AssignPhenotype2
 ```csharp
-LANS.SystemsBiology.AnalysisTools.CellPhenotype.PhenotypeRegulations.AssignPhenotype2(System.Collections.Generic.IEnumerable{LANS.SystemsBiology.InteractionModel.IRegulatorRegulation},System.Collections.Generic.IEnumerable{LANS.SystemsBiology.Assembly.KEGG.Archives.Csv.Pathway},System.String)
+LANS.SystemsBiology.AnalysisTools.CellPhenotype.PhenotypeRegulations.AssignPhenotype2(System.Collections.Generic.IEnumerable{LANS.SystemsBiology.InteractionModel.Regulon.IRegulatorRegulation},System.Collections.Generic.IEnumerable{LANS.SystemsBiology.Assembly.KEGG.Archives.Csv.Pathway},System.String)
 ```
 仅仅只是根据调控数据将表型调控赋值给指定的调控因子,没有计算得分的过程
 

@@ -81,6 +81,17 @@ LANS.SystemsBiology.BioAssemblyExtensions.Group``1(System.Collections.Generic.IE
 |offsets|-|
 
 
+#### IsPure
+```csharp
+LANS.SystemsBiology.BioAssemblyExtensions.IsPure(System.Char)
+```
+Is this nt base is pure
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|base|-|
+
+
 #### IsReversed
 ```csharp
 LANS.SystemsBiology.BioAssemblyExtensions.IsReversed(LANS.SystemsBiology.SequenceModel.I_PolymerSequenceModel)
@@ -93,6 +104,17 @@ Is this ORF is in the reversed strand direction?(判断一段ORF核酸序列是�
  This function parameter is only allowed nucleotide sequence.
  (请注意，这个只允许核酸序列)
  |
+
+
+#### IsUnknown
+```csharp
+LANS.SystemsBiology.BioAssemblyExtensions.IsUnknown(System.Char)
+```
+Current nt base is a unknown base?
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|base|-|
 
 
 

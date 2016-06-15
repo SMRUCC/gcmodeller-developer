@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.KineticsModel
-date: 6/13/2016 9:11:11 PM
+date: 6/16/2016 4:56:55 AM
 ---
 
 [BinaryExpression](T-LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.KineticsModel.BinaryExpression.html)

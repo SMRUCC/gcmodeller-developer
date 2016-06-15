@@ -1,6 +1,6 @@
 ﻿---
 title: SMRUCC.R.CRAN.Bioconductor.WGCNA
-date: 6/13/2016 9:11:10 PM
+date: 6/16/2016 4:56:54 AM
 ---
 
 [blockwiseModules](T-SMRUCC.R.CRAN.Bioconductor.WGCNA.blockwiseModules.html)

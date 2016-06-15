@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.GCModeller.DataVisualization
-date: 6/13/2016 9:11:18 PM
+date: 6/16/2016 4:57:00 AM
 ---
 
 [ColorMgr](T-LANS.SystemsBiology.GCModeller.DataVisualization.ColorMgr.html)

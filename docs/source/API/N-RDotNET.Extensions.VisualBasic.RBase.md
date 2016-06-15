@@ -1,6 +1,6 @@
 ﻿---
 title: RDotNET.Extensions.VisualBasic.RBase
-date: 6/13/2016 9:11:20 PM
+date: 6/16/2016 4:57:02 AM
 ---
 
 [Is](T-RDotNET.Extensions.VisualBasic.RBase.Is.html)

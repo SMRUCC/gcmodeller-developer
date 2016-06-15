@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.Keywords.FEATURES
-date: 6/13/2016 9:11:13 PM
+date: 6/16/2016 4:56:56 AM
 ---
 
 [CDS](T-LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.Keywords.FEATURES.CDS.html)

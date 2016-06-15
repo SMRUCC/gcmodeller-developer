@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.SequenceModel.Patterns.Clustal
-date: 6/13/2016 9:11:13 PM
+date: 6/16/2016 4:56:57 AM
 ---
 
 [Clustal](T-LANS.SystemsBiology.SequenceModel.Patterns.Clustal.Clustal.html)

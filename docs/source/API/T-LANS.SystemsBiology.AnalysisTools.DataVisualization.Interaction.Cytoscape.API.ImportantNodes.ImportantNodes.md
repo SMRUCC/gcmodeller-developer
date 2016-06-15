@@ -27,7 +27,7 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.API.Im
 
 #### SignificantRegulator
 ```csharp
-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.API.ImportantNodes.ImportantNodes.SignificantRegulator(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Int32,LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.Tables.Node[]}},System.Collections.Generic.IEnumerable{LANS.SystemsBiology.InteractionModel.IRegulatorRegulation},System.Double)
+LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.API.ImportantNodes.ImportantNodes.SignificantRegulator(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Int32,LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.Tables.Node[]}},System.Collections.Generic.IEnumerable{LANS.SystemsBiology.InteractionModel.Regulon.IRegulatorRegulation},System.Double)
 ```
 这个仅仅是理论上面的计算结果，仅供参考
 

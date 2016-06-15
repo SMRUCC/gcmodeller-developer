@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.GeneOntology.NCBI
-date: 6/13/2016 9:11:13 PM
+date: 6/16/2016 4:56:57 AM
 ---
 
 [gene2go](T-LANS.SystemsBiology.Assembly.GeneOntology.NCBI.gene2go.html)

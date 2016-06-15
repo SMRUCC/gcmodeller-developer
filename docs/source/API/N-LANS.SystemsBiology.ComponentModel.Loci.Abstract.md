@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.ComponentModel.Loci.Abstract
-date: 6/13/2016 9:11:13 PM
+date: 6/16/2016 4:56:57 AM
 ---
 
 [ILocationComponent](T-LANS.SystemsBiology.ComponentModel.Loci.Abstract.ILocationComponent.html)

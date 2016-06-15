@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlus.BlastX.Components
-date: 6/13/2016 9:11:19 PM
+date: 6/16/2016 4:57:01 AM
 ---
 
 [HitFragment](T-LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlus.BlastX.Components.HitFragment.html)

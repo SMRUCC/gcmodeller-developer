@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif
-date: 6/13/2016 9:11:12 PM
+date: 6/16/2016 4:56:56 AM
 ---
 
 [IScanner](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.IScanner.html)

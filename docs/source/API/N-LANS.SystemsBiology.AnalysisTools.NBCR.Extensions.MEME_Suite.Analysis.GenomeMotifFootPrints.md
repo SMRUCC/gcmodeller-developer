@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.GenomeMotifFootPrints
-date: 6/13/2016 9:11:12 PM
+date: 6/16/2016 4:56:55 AM
 ---
 
 [MotifFootPrintsGenerates](T-LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.GenomeMotifFootPrints.MotifFootPrintsGenerates.html)

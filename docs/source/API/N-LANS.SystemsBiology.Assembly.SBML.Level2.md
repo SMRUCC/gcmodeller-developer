@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.SBML.Level2
-date: 6/13/2016 9:11:14 PM
+date: 6/16/2016 4:56:57 AM
 ---
 
 [API](T-LANS.SystemsBiology.Assembly.SBML.Level2.API.html)

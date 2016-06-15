@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.Settings.Programs
-date: 6/13/2016 9:11:10 PM
+date: 6/16/2016 4:56:54 AM
 ---
 
 [GCHOST](T-LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.Settings.Programs.GCHOST.html)

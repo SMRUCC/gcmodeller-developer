@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.CARMEN
-date: 6/13/2016 9:11:10 PM
+date: 6/16/2016 4:56:54 AM
 ---
 
 [CARMEN](T-LANS.SystemsBiology.AnalysisTools.CARMEN.CARMEN.html)

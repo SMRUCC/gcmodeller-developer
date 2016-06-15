@@ -1,6 +1,6 @@
 ﻿---
 title: RDotNET.Extensions.VisualBasic.RBase.Vectors
-date: 6/13/2016 9:11:20 PM
+date: 6/16/2016 4:57:02 AM
 ---
 
 [GenericVector`1](T-RDotNET.Extensions.VisualBasic.RBase.Vectors.GenericVector`1.html)

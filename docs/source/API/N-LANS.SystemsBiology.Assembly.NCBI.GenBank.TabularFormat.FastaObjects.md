@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.FastaObjects
-date: 6/13/2016 9:11:13 PM
+date: 6/16/2016 4:56:56 AM
 ---
 
 [GeneObject](T-LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.FastaObjects.GeneObject.html)
