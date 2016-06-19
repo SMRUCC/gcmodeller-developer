@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phy
 
 
 
+
+
 ### Methods
 
 #### GetRange
@@ -37,8 +39,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.CRISPRPhy
 |besthits|-|
 |ends|片段区域结束的基因|
 |start|片段区域起始的基因|
-
-
 
 
 

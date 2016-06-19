@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
+
 ### Methods
 
 #### __commits
@@ -34,8 +36,6 @@ LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.CorrsDb
 |raw|第一列是基因的编号列表，其他的列都是基因的表达数据|
 |uri|-|
 |WGCNA|WGCNA脚本所计算出来的Cytoscape的边文件|
-
-
 
 
 

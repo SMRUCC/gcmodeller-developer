@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller](N-LANS.SystemsBiology.GCModeller.ht
 
 
 
+
+
 ### Methods
 
 #### __mapScore
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.Phylip.__mapScore(LANS.SystemsBiology.AnalysisToo
 |Parameter Name|Remarks|
 |--------------|-------|
 |aln|-|
-
-
 
 
 

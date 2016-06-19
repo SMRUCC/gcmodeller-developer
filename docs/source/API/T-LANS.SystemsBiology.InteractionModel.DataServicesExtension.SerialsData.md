@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.InteractionModel.DataServicesExtension](N-LANS.
 
 
 
+
 ### Properties
 
 #### ChunkBuffer
 该样品的实验数据
 #### Tag
 样品标签
-

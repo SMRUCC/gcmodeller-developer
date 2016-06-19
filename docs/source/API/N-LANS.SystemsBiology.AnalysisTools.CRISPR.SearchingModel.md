@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.CRISPR.SearchingModel
-date: 6/16/2016 4:56:55 AM
+date: 6/19/2016 11:14:44 AM
 ---
 
 [BoyerMooreAlgorithmSearcher](T-LANS.SystemsBiology.AnalysisTools.CRISPR.SearchingModel.BoyerMooreAlgorithmSearcher.html)

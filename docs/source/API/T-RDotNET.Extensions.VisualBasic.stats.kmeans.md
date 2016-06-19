@@ -9,6 +9,7 @@ Perform k-means clustering on a data matrix.
 
 
 
+
 ### Properties
 
 #### algorithm
@@ -23,4 +24,3 @@ if centers is a number, how many random sets should be chosen?
 logical Or integer number, currently only used in the default method ("Hartigan-Wong") If positive(Or True), tracing information On the progress Of the algorithm Is produced. Higher values may produce more tracing information.
 #### x
 numeric matrix Of data, Or an Object that can be coerced To such a matrix (such As a numeric vector Or a data frame With all numeric columns).
-

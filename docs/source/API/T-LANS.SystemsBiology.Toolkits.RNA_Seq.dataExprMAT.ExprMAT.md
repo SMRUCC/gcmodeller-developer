@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.dataExprMAT](N-LANS.SystemsBio
 
 
 
+
+
 ### Methods
 
 #### LoadMatrix
@@ -18,8 +20,6 @@ General load method.
 |Parameter Name|Remarks|
 |--------------|-------|
 |path|-|
-
-
 
 
 

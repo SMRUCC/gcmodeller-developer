@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Pa
 
 
 
+
+
 ### Methods
 
 #### FindLocation
@@ -21,7 +23,5 @@ Found out all of the loci site on the target sequence.
 |Loci|-|
 
 > 这个位置查找函数是OK的
-
-
 
 

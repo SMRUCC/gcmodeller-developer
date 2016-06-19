@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Regulon](N-LANS.SystemsBiology
 
 
 
+
+
 ### Methods
 
 #### SignificantModel``1
@@ -29,8 +31,6 @@ LANS.SystemsBiology.InteractionModel.Regulon.RegulationModel.Trim``1(System.Coll
 |Parameter Name|Remarks|
 |--------------|-------|
 |Regulations|-|
-
-
 
 
 

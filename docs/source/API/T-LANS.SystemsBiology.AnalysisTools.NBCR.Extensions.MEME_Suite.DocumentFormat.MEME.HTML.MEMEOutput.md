@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 
 
+
 ### Properties
 
 #### MatchedMotif
 [@"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.MEME.HTML.MEMEOutput.ObjectId"][@"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.MEME.HTML.Site.Id"]
-

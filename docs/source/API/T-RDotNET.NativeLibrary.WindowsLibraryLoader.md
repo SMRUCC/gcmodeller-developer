@@ -7,6 +7,8 @@ _namespace: [RDotNET.NativeLibrary](N-RDotNET.NativeLibrary.html)_
 
 
 
+
+
 ### Methods
 
 #### GetShortPath
@@ -20,7 +22,5 @@ Gets the old style DOS short path (8.3 format) given a path name
 |path|A path|
 
 _returns: The short path name according to the Windows kernel32 API_
-
-
 
 

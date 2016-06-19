@@ -7,6 +7,8 @@ _namespace: [Cytoscape](N-Cytoscape.html)_
 
 
 
+
+
 ### Methods
 
 #### __classNetwork
@@ -146,8 +148,6 @@ Cytoscape.CLI.TFNet(Microsoft.VisualBasic.CommandLine.CommandLine)
 |Parameter Name|Remarks|
 |--------------|-------|
 |args|-|
-
-
 
 
 

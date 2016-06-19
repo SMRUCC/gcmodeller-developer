@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A matrix base.
 
+
+
 ### Methods
 
 #### #ctor
@@ -76,7 +78,6 @@ RDotNET.Matrix`1.ToArray
 Gets a .NET representation as a two dimensional array of an R matrix
 
 
-
 ### Properties
 
 #### ColumnCount
@@ -95,4 +96,3 @@ Gets the total number of items (rows times columns) in this matrix
 Gets the row size of elements.
 #### RowNames
 Gets the names of rows.
-

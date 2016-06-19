@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Repository](N-LANS.SystemsBiology.Repository.ht
 
 NCBI genbank repository system.(请注意，这个对象里面的所有的Repository实体都是使用genbank编号来作为Key的)
 
+
+
 ### Methods
 
 #### Query
@@ -23,11 +25,9 @@ LANS.SystemsBiology.Repository.Genbank.Query(System.Collections.Generic.IEnumera
 
 
 
-
 ### Properties
 
 #### DIR
 The genbank repository root directory.
 #### IndexJournal
 The index database file..
-

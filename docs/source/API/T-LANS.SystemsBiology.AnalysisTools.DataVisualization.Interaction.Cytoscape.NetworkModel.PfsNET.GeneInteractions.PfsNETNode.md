@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 
 
+
 ### Properties
 
 #### Important
 当前的@"P:Microsoft.VisualBasic.DataVisualization.Network.FileStream.Node.Identifier"[基因节点]受这个列表之中的调控因子的影响比较大
-

@@ -7,6 +7,21 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry](N-LANS.Systems
 
 Compounds with Biological Roles
 
+> 
+>  Compounds
+>  
+>   br08001  Compounds with biological roles
+>   br08002  Lipids
+>   br08003  Phytochemical compounds
+>   br08005  Bioactive peptides
+>   br08006  Endocrine disrupting compounds
+>   br08007  Pesticides
+>   br08008  Carcinogens
+>   br08009  Natural toxins
+>   br08010  Target-based classification of compounds
+>  
+
+
 ### Methods
 
 #### DownloadFromResource
@@ -27,8 +42,6 @@ br08001 Compounds with biological roles
 |--------------|-------|
 |EXPORT|-|
 |DirectoryOrganized|-|
-
-
 
 
 

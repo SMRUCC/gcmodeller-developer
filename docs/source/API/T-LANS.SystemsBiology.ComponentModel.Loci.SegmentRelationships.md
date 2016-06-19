@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.ComponentModel.Loci](N-LANS.SystemsBiology.Comp
 The location relationship description enumeration for the two loci sites on the nucleotide sequence.
  (核酸链上面的位点片段之间的位置关系的描述)
 
+> 为了能够在查询的时候对输入进行叠加，在这里采取互斥
+
 
 
 ### Properties
@@ -23,4 +25,3 @@ Target loci is on the same @"T:LANS.SystemsBiology.ComponentModel.Loci.Strands" 
 #### UpStreamOverlap
 The loci is on the upstream of the target loci, but part of the loci was overlapping.
  (目标位点和当前的位点重叠在一个，但是目标位点的左端是在当前位点的上游的)
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.Fastaq](N-L
 
 There is no standard file extension for a FASTQ file, but .fq and .fastq, are commonly used.
 
+
+
 ### Methods
 
 #### Load
@@ -25,7 +27,5 @@ Load the fastq data from a specific file handle.(从一个特定的文件句柄�
 LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.Fastaq.FastaqFile.ToFasta
 ```
 Convert fastaq data into a fasta data file.
-
-
 
 

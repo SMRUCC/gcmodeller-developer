@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.Documen
 
 实际上就相当于一个字典来的
 
+
+
 ### Methods
 
 #### #ctor
@@ -25,8 +27,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.SAM
  containing lowercase letters are reserved For End users.
  (每一行都是从@符号开始，后面跟随者两个字母的数据类型码，使用TAB进行分割除了@CO行，每一个域都以键值对的形式出现:  TAG:Value)
  |
-
-
 
 
 

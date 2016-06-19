@@ -10,6 +10,7 @@ Formats options for alignment inputs and outputs.
 
 
 
+
 ### Properties
 
 #### auto
@@ -28,4 +29,3 @@ selex
 st[ockholm]
 #### vienna
 vie[nna]
-

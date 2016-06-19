@@ -9,6 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.Expressi
  当然，对于本类型的对象，你也可以将其当作为一个调控因子，并且这种类型的调控因子为自由类型的调控因子，即不需要任何外部的附加条件既
  可以产生调控功能的调控因子
 
+
+
 ### Methods
 
 #### set_TargetSite
@@ -16,7 +18,6 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.Expressi
 LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.KineticsModel.Regulators.RegulationExpression.set_TargetSite(LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.KineticsModel.SiteInfo)
 ```
 调控因子所调控的实际对象是一个调控位点
-
 
 
 ### Properties
@@ -30,4 +31,3 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationN
 #### Weight
 @"P:LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.KineticsModel.Regulators.RegulationExpression.Weight"的值有符号，其中符号表示调控效应：激活或者抑制，为了方便计算，这里取绝对值，
  @"P:LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.KineticsModel.Regulators.RegulationExpression.Weight"值越大，则@"F:Microsoft.VisualBasic.DataMining.Framework.DFL_Driver.I_FactorElement._ABS_Weight"变量的值越小，即该调控事件越容易发生
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.BLAST](N-LANS.SystemsB
 
 
 
+
+
 ### Methods
 
 #### BBHHits
@@ -18,8 +20,6 @@ LANS.SystemsBiology.InteractionModel.Network.BLAST.BBHAPI.BBHHits(System.Collect
 |Parameter Name|Remarks|
 |--------------|-------|
 |sbh|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 The regulation motif site information.(基因组之上的调控位点的信息)
 
+
+
 ### Methods
 
 #### get_RegulationEffect
@@ -20,7 +22,5 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Feature
 LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Feature.MotifSite`1.get_RegulatorQuantitySum
 ```
 获取当前的这个位点之上的调控因子的总数目，以用于计算权重
-
-
 
 

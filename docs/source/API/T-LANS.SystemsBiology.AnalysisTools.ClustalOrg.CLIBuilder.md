@@ -28,6 +28,7 @@ Clustal Omega - 1.2.0 (AndreaGiacomo)
 
 
 
+
 ### Properties
 
 #### Auto
@@ -138,4 +139,3 @@ Clustal Omega - 1.2.0 (AndreaGiacomo)
 #### Wrap
 --wrap=<n> 
  number of residues before line-wrap in output
-

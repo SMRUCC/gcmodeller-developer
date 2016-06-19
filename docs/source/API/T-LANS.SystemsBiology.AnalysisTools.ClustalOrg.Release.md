@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ClustalOrg](N-LANS.SystemsBiology
 
 
 
+
+
 ### Methods
 
 #### ReleasePackage
@@ -21,7 +23,5 @@ Release the clustal program files from this assembly module resources data.
 |DIR|-|
 
 _returns: 返回clustal程序的路径_
-
-
 
 

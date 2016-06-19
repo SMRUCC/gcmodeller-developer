@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phy
 
 
 
+
+
 ### Methods
 
 #### __treeDrawing
@@ -30,7 +32,5 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.TreeDrawi
 >                        --------------------------------|
 >                                                        |---------------
 >  
-
-
 
 

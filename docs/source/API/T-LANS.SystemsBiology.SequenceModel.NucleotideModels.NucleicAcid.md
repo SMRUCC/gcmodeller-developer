@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.NucleotideModels](N-LANS.SystemsB
 
 The nucleotide sequence object.(核酸序列对象)
 
+
+
 ### Methods
 
 #### #ctor
@@ -72,7 +74,6 @@ LANS.SystemsBiology.SequenceModel.NucleotideModels.NucleicAcid.Split(System.Int3
 
 
 
-
 ### Properties
 
 #### __nucleotideAsChar
@@ -91,4 +92,3 @@ Calculate the GC content of the current sequence data.
 The melting temperature of P1 is Tm(P1), which is a reference temperature for a primer to perform annealing and known as the Wallace formula
 #### UserTag
 用户定义的标签数据，有时候用于在不同的序列之间唯一的标记当前的这条序列
-

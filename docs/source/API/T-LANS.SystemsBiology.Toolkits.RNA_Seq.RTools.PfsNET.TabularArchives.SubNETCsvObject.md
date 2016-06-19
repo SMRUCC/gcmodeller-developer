@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.TabularArchives]
 
 从pfsnet的R输出之中直接解析出来的pfsnet的计算结果
 
+
+
 ### Methods
 
 #### CreateObject
@@ -23,9 +25,7 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.TabularArchives.SubNETCsvObje
 
 
 
-
 ### Properties
 
 #### PhenotypePair
 使用结果文件名来表示
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 周期性实验的管理系统
 
+
+
 ### Methods
 
 #### LoadExperimentData
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Experim
 |Parameter Name|Remarks|
 |--------------|-------|
 |DataFile|CSV格式的实验配置数据文件的文件路径|
-
-
 
 
 

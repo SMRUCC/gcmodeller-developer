@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.TSSAR](N-LANS.SystemsBiology.T
 
 
 
+
+
 ### Methods
 
 #### MergeContigs
@@ -18,8 +20,6 @@ If the distance of two TSS positions differed by less than 3 (Default is 3 bp) n
 |Parameter Name|Remarks|
 |--------------|-------|
 |data|-|
-
-
 
 
 

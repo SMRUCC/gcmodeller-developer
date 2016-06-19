@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Compon
 
 Motif序列之中的一个位点
 
+
+
 ### Methods
 
 #### #ctor
@@ -32,7 +34,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.ComponentModel.Moti
 
 
 
-
 ### Properties
 
 #### A
@@ -45,4 +46,3 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.ComponentModel.Moti
 当前的位点之上最有可能出现的碱基及其概率，即可能出现的概率最高的碱基
 #### T
 @"F:LANS.SystemsBiology.SequenceModel.NucleotideModels.DNA.dTMP"碱基在这个位点之上出现的概率
-

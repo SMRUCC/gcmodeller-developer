@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regtransbase.WebServices](N-LA
 
 
 
+
+
 ### Methods
 
 #### GetUniqueIds
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regtransbase.WebServices](N-LA
 LANS.SystemsBiology.DatabaseServices.Regtransbase.WebServices.Regulogs.GetUniqueIds
 ```
 {Regulog, {Locus_tag, Locus_tag()}}
-
-
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.GeneticClock](N
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -20,8 +22,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.GeneticClock.DopplerEffect.#
 |Parameter Name|Remarks|
 |--------------|-------|
 |ExperimentData|-|
-
-
 
 
 

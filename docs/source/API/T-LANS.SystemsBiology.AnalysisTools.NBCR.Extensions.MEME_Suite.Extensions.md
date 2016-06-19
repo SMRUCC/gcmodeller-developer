@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite](N-LAN
 
 
 
+
+
 ### Methods
 
 #### __createObject
@@ -22,8 +24,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Extensions.__create
 |sequence|-|
 |OffSet|-|
 |trace|-|
-
-
 
 
 

@@ -9,6 +9,7 @@ Alignment view options.(比对输出视图的选项)
 
 
 
+
 ### Properties
 
 #### ASNBinary
@@ -35,4 +36,3 @@ Tabular
 Tabular with comment lines
 #### XML
 XML Blast output
-

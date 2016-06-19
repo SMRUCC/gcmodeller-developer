@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Prefix](N-LANS.Syste
 
 
 
+
+
 ### Methods
 
 #### MemoryDump
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Prefix.ActionScript.MemoryDump(Sy
 |Parameter Name|Remarks|
 |--------------|-------|
 |argvs|@"M:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine.GCModeller.MemoryDump(System.String)"[DUMP数据]的存放文件夹|
-
-
 
 
 

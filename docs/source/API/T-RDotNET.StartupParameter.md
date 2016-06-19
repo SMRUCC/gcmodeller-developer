@@ -7,6 +7,11 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 Represents parameters on R's startup.
 
+> 
+>  Wraps RStart struct.
+>  
+
+
 ### Methods
 
 #### #ctor
@@ -14,7 +19,6 @@ Represents parameters on R's startup.
 RDotNET.StartupParameter.#ctor
 ```
 Create a new Startup parameter, using some default parameters
-
 
 
 ### Properties
@@ -55,4 +59,3 @@ Gets or sets the value indicating that R runs as slave mode.
 Gets or sets the maximum number of protected pointers in stack.
 #### Verbose
 Gets or sets the value indicating that R runs as verbose mode.
-

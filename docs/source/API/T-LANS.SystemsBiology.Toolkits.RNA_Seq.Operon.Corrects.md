@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.Operon](N-LANS.SystemsBiology.
 
 根据转录组数据来修正操纵子
 
+
+
 ### Methods
 
 #### __correctOperon
@@ -44,8 +46,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.Operon.Corrects.CorrectDoorOperon(LANS.Syst
 |PCC|-|
 |DOOR|-|
 |pccCutoff|应该是一个正数|
-
-
 
 
 

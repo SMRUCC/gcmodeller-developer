@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.DataStorage.
 
 GCModeller的内核驱动程序的数据服务
 
+
+
 ### Methods
 
 #### LoadData_Integer
@@ -29,8 +31,6 @@ LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.DataStorage.FileModel.Ext
 |Parameter Name|Remarks|
 |--------------|-------|
 |data|-|
-
-
 
 
 

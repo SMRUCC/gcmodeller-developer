@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.Schema](N-LANS.SystemsBiology.
 
 查询通用标准名称在MetaCyc数据库Compound之间的等价
 
+
+
 ### Methods
 
 #### #ctor
@@ -32,9 +34,7 @@ LANS.SystemsBiology.Assembly.MetaCyc.Schema.CompoundsMapping.EffectorMapping(LAN
 
 
 
-
 ### Properties
 
 #### Compounds
 用于做等价Mapping的目标数据源
-

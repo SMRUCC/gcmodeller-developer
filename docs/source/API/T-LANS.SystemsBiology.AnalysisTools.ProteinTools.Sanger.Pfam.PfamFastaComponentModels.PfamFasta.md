@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.PfamFast
 
 
 
+
+
 ### Methods
 
 #### ParseEntry
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.PfamFastaComponentMod
 |Parameter Name|Remarks|
 |--------------|-------|
 |strValue|-|
-
-
 
 
 

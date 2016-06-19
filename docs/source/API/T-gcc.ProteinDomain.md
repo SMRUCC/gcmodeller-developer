@@ -7,6 +7,8 @@ _namespace: [gcc](N-gcc.html)_
 
 利用Smart程序分析目标蛋白质结构域，方便进行信号传导网络的重建工作
 
+
+
 ### Methods
 
 #### GetList
@@ -26,8 +28,6 @@ gcc.ProteinDomain.SMART(System.String,System.String,System.String)
 |--------------|-------|
 |TargetFile|目标蛋白质序列数据库|
 |ExportSaved|保存的结果数据CSV文件的文件路径|
-
-
 
 
 

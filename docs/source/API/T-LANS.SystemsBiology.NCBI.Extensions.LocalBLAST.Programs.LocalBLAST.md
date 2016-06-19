@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Programs](N-LANS.Sys
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -52,7 +54,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Programs.LocalBLAST.FormatDb(Syst
 LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Programs.LocalBLAST.GetLastLogFile
 ```
 返回BLAST程序的日志文件，本函数必须在执行完BLASTP或者BLASTN操作之后才可以调用，否则返回空对象
-
 
 
 ### Properties
@@ -215,4 +216,3 @@ Word size, default if zero (blastn 11, megablast 28, all others 3) [Integer]
 X dropoff value for final gapped alignment in bits (0.0 invokes default behavior)
  blastn/megablast 100, tblastx 0, all others 25 [Integer]
  default = 0
-

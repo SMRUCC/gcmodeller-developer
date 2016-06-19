@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.Documen
 
 
 
+
 ### Properties
 
 #### D
@@ -35,4 +36,3 @@ soft clipping (clipped sequences present In SEQ)
  S may only have H operations between them And the ends Of the CIGAR String.
 #### X
 sequence mismatch
-

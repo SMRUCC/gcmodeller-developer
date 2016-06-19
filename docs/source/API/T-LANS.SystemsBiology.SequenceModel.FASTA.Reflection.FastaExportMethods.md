@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.FASTA.Reflection](N-LANS.SystemsB
 
 對象模塊將數據庫中的一條記錄轉換為一條FASTA序列對象
 
+
+
 ### Methods
 
 #### Complement
@@ -61,7 +63,5 @@ LANS.SystemsBiology.SequenceModel.FASTA.Reflection.FastaExportMethods.Merge(Syst
 LANS.SystemsBiology.SequenceModel.FASTA.Reflection.FastaExportMethods.Reverse(LANS.SystemsBiology.SequenceModel.FASTA.FastaFile)
 ```
 将序列首尾反转
-
-
 
 

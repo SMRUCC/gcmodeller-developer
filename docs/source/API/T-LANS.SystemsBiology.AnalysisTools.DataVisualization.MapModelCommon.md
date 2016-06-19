@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization](N-LANS.Systems
 
 绘图模型的通用基本类型结构
 
+
+
 ### Methods
 
 #### CreateBackwardModel
@@ -46,7 +48,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.MapModelCommon.CreateNoneDir
 
 
 
-
 ### Properties
 
 #### Direction
@@ -65,4 +66,3 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.MapModelCommon.CreateNoneDir
 当前的基因对想在图形上面的绘制长度
 #### Right
 片段最右端的位置，这个位置和方向无关
-

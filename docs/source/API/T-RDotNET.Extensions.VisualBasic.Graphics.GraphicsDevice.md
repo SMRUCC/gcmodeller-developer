@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.Graphics](N-RDotNET.Extensions.Visua
 
 Graphics devices for BMP, JPEG, PNG and TIFF format bitmap files.
 
+
+
 ### Methods
 
 #### bmp
@@ -102,8 +104,6 @@ Execute the statement that comes from the function @"M:RDotNET.Extensions.Visual
 |Parameter Name|Remarks|
 |--------------|-------|
 |plot|-|
-
-
 
 
 

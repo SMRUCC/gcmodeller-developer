@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A matrix of byte values.
 
+
+
 ### Methods
 
 #### #ctor
@@ -40,11 +42,9 @@ Initializes this R matrix, using the values in a rectangular array.
 
 
 
-
 ### Properties
 
 #### DataSize
 Gets the size of an Raw in byte.
 #### Item
 Gets or sets the element at the specified index.
-

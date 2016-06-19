@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 -gene_mutations "gene|factor; gene|factor"
 
+
+
 ### Methods
 
 #### TryParse
@@ -21,9 +23,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Experim
 
 
 
-
 ### Properties
 
 #### MutationList
 {key:=UniqueId, value:=Factor/BasalValue}()
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Service
 
 子系统模块之中的数据采集服务对象类型的抽象接口
 
+
+
 ### Methods
 
 #### Close
@@ -45,9 +47,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Services.MySQL.IData
 
 
 
-
 ### Properties
 
 #### TableName
 本数据采集服务所映射到的数据库中的表或者CSV文件名
-

@@ -9,6 +9,7 @@ SEXPTYPE enumeration.
 
 
 
+
 ### Properties
 
 #### Any
@@ -61,4 +62,3 @@ Special functions.
 Symbols.
 #### WeakReference
 Weak reference.
-

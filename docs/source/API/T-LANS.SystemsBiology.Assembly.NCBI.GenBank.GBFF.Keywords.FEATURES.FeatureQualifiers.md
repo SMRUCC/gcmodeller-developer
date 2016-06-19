@@ -10,6 +10,8 @@ Qualifiers provide additional information about features. They take
  applicable, an equal sign (=) and a qualifier value. Feature
  qualifiers begin at column 22
 
+> 请注意，由于是直接使用ToString方法进行查询键值的获取的，所以请不要修改这些枚举对象的大小写
+
 
 
 ### Properties
@@ -76,4 +78,3 @@ Amino acid translation of a coding region
 Name of a strain if different from that in the SOURCE field
 #### usedin
 Indicates that feature is used in a compound feature in another entry
-

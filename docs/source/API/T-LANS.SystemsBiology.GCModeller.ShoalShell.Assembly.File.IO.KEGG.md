@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO](N-LANS.
 
 
 
+
+
 ### Methods
 
 #### KEGGPathwaysXMLUpdatesTool
@@ -31,8 +33,6 @@ LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO.KEGG.KEGGReactionsXML
 |--------------|-------|
 |source|-|
 |export|-|
-
-
 
 
 

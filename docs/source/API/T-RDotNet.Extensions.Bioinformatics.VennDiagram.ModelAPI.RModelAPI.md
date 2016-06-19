@@ -7,6 +7,8 @@ _namespace: [RDotNet.Extensions.Bioinformatics.VennDiagram.ModelAPI](N-RDotNet.E
 
 
 
+
+
 ### Methods
 
 #### Generate
@@ -38,7 +40,5 @@ RDotNet.Extensions.Bioinformatics.VennDiagram.ModelAPI.RModelAPI.VectorMapper``1
 |entities|字符串矩阵|
 
 _returns: 为了保证一一对应的映射关系，这个函数里面不再使用并行化拓展_
-
-
 
 

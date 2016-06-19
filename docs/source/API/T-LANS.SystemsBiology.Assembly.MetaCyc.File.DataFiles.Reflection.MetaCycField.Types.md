@@ -9,6 +9,7 @@ Data field type in a Metacyc database object instance.(MetaCyc数据库中的一
 
 
 
+
 ### Properties
 
 #### Char
@@ -17,4 +18,3 @@ A single Char type variable.
 A single string type variable.
 #### TStr
 A string array type variable.
-

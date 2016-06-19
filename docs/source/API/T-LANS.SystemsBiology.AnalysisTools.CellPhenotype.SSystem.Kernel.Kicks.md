@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Kernel](N-L
 
 
 
+
 ### Properties
 
 #### __pendingKicks
 Standing by
 #### __runningKicks
 Active object.
-

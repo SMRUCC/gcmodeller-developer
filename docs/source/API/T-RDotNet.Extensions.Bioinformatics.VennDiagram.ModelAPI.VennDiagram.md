@@ -7,6 +7,8 @@ _namespace: [RDotNet.Extensions.Bioinformatics.VennDiagram.ModelAPI](N-RDotNet.E
 
 The data model of the venn diagram.(文氏图的数据模型)
 
+
+
 ### Methods
 
 #### __R_script
@@ -34,7 +36,6 @@ RDotNet.Extensions.Bioinformatics.VennDiagram.ModelAPI.VennDiagram.RandomColors
 Assign random colors to the venn diagram partitions
 
 
-
 ### Properties
 
 #### categoryNames
@@ -47,4 +48,3 @@ The venn.diagram plot API in R language
 vennDiagram tiff file saved path.(所生成的文氏图的保存文件名)
 #### Title
 The title of the diagram.
-

@@ -9,6 +9,7 @@ The fasta object is a sequence model object with a specific title to identify th
 
 
 
+
 ### Properties
 
 #### Attributes
@@ -17,4 +18,3 @@ The attribute header of this FASTA file. The fasta header usually have some form
  usually different between each biological database.(这个FASTA文件的属性头，标题的格式通常在不同的数据库之间是具有很大差异的)
 #### Title
 The title value which contains some brief information about this sequence.(这条序列数据的标题摘要信息)
-

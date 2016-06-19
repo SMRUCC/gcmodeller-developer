@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine](N-LANS.SystemsBiolo
 
 
 
+
+
 ### Methods
 
 #### GetMySQLClient
@@ -21,9 +23,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.MySQLExtensions.GetMySQLClient(Sy
 
 
 
-
 ### Properties
 
 #### MySQL
-
 

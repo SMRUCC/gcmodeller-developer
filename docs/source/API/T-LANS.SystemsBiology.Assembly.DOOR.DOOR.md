@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.Assembly.DOOR](N-LANS.SystemsBiology.Assembly.D
 DOOR: Database of prOkaryotic OpeRons.
  Door operon prediction data.(Door操纵子预测数据)
 
+
+
 ### Methods
 
 #### Export
@@ -45,11 +47,9 @@ LANS.SystemsBiology.Assembly.DOOR.DOOR.IsOprPromoter(System.String)
 
 
 
-
 ### Properties
 
 #### Genes
 在文件之中，是一个表格的形式来表示整个文件的，这个属性表示文件之中的所有行
 #### GetGene
 查找不到目标基因对象则会返回空值
-

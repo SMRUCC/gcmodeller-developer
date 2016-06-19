@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools.Transcriptome.UTRs](
 
 A Replicate object represents information about a single RNA-seq experiment, including information about all reads from the experiment.
 
+
+
 ### Methods
 
 #### #ctor
@@ -76,7 +78,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.ToSt
 Returns a String representation of this object.
 
 
-
 ### Properties
 
 #### avgLengthReads
@@ -111,4 +112,3 @@ Reads on the plus strand for each genome
 Return total number of reads in this Replicate.
 #### upperQuartile
 Return the upper quartile for this Replicate.
-

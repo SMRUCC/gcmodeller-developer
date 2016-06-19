@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.Archives.Xml.Nodes](N-LANS.System
 
 
 
+
 ### Properties
 
 #### Category
 小分类
 #### Class
 大分类
-

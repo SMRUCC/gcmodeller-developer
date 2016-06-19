@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO](N-LANS.
 
 
 
+
+
 ### Methods
 
 #### DownloadMisT2Sequence
@@ -21,8 +23,6 @@ LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO.MiST2API.DownloadMisT
 |export|-|
 |grepScript|默认使用fasta标题之中的第一个单词为标识符|
 |FromFasta|-|
-
-
 
 
 

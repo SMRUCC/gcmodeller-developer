@@ -14,6 +14,8 @@ PDB File Format
  
  * PDF documents require Acrobat Reader
 
+
+
 ### Methods
 
 #### LoadBhCsv
@@ -25,8 +27,6 @@ LANS.SystemsBiology.Assembly.RCSB.PDB.PdbExport.LoadBhCsv(Microsoft.VisualBasic.
 |Parameter Name|Remarks|
 |--------------|-------|
 |CsvFile|目标基因组和ProtIn数据库的最佳双向比对结果，第一列为目标基因组中的蛋白质，第二列为ProtIn数据库中的蛋白质|
-
-
 
 
 

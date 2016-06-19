@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.GCModel
 
 
 
+
 ### Properties
 
 #### Motif_PWM
 Directory of /Regprecise/MEME/Motif_PWM/
 #### RegPreciseRegulations
 @"M:LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.GCModeller.FileSystem.FileSystem.GetRepositoryRoot" & "/Regprecise/RegPrecise.Xml"
-

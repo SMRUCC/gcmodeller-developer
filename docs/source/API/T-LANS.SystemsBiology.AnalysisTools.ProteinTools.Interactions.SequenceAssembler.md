@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions](N-LANS
 
 在计算贝叶斯网络所需要的矩阵之前所进行的比对序列的拼接并进行向量化的程序模块
 
+
+
 ### Methods
 
 #### Assemble
@@ -40,8 +42,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.SequenceAssembler.in
 |Parameter Name|Remarks|
 |--------------|-------|
 |alignFiles|FASTA格式的蛋白质比对序列数据|
-
-
 
 
 

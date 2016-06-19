@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### DynamicsLamda
 降解系数
-

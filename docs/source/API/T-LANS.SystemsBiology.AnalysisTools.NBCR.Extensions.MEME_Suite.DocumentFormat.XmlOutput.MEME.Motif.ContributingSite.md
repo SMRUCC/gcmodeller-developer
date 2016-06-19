@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 
 
+
 ### Properties
 
 #### LeftFlank
@@ -17,4 +18,3 @@ The left_flank contains the sequence for 10 bases to the left of the motif start
 The right_flank contains the sequence for 10 bases to the right of the motif end
 #### Site
 The site contains the sequence for the motif instance
-

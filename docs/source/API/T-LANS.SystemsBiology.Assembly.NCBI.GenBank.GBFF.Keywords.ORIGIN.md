@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.Keywords](N-LANS.Sys
 
 This GenBank keyword section stores the sequence data for this database.
 
+
+
 ### Methods
 
 #### GetFeatureSegment
@@ -23,7 +25,6 @@ Returns the whole genome sequence which was records in this GenBank database fil
  (返回记录在本Genbank数据库文件之中的全基因组核酸序列)
 
 
-
 ### Properties
 
 #### GCSkew
@@ -32,4 +33,3 @@ Returns the whole genome sequence which was records in this GenBank database fil
 The sequence data that stores in this GenBank database, which can be a genomics DNA sequence, protein sequence or RNA sequence.(序列数据，类型可以包括基因组DNA序列，蛋白质序列或者RNA序列)
 #### Size
 基因组的大小
-

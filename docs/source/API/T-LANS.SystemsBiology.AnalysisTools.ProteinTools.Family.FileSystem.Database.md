@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.FileSystem](N
 
 数据库是分模块存放的，每一个模块单独存储于一个Xml文件之中，这个对象就是管理这些模块在文件系统之中的位置的对象
 
+
+
 ### Methods
 
 #### Add
@@ -36,8 +38,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.FileSystem.Database.GetDat
 |Parameter Name|Remarks|
 |--------------|-------|
 |Name|数据库的名称或者文件路径|
-
-
 
 
 

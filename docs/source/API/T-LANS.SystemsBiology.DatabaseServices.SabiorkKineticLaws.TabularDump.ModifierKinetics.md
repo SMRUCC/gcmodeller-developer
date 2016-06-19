@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.SabiorkKineticLaws.TabularDump
 
 
 
+
 ### Properties
 
 #### KEGGCompoundId
@@ -17,4 +18,3 @@ KEGG.Compound identifier string for @"P:LANS.SystemsBiology.DatabaseServices.Sab
 Sabio-rk Id
 #### ObjectId
 具备附加属性的：Enzyme或者Reaction
-

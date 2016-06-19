@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 Indicates the class with the attribute represents rows of certain data frames.
 
+
+
 ### Methods
 
 #### #ctor
@@ -14,7 +16,5 @@ Indicates the class with the attribute represents rows of certain data frames.
 RDotNET.DataFrameRowAttribute.#ctor
 ```
 Initializes a new instance.
-
-
 
 

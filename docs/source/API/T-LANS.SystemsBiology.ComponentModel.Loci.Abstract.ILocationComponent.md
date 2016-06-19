@@ -9,8 +9,8 @@ This type of the object has the loci location value attribute.
 
 
 
+
 ### Properties
 
 #### Right
 Right position of the loci site on sequence.
-

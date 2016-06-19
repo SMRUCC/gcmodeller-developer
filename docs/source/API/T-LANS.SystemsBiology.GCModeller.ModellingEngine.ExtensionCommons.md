@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine](N-LANS.SystemsBiolo
 Extension method collection for the object comes from the .NET Framework in this Modelling Engine.
  (整个模型引擎中的通用来自于.NET的对象的拓展方法的集合)
 
+
+
 ### Methods
 
 #### GetMd5Hash
@@ -24,10 +26,8 @@ MD5 hash string calculation function of a specific string, modified from MSDN fo
 _returns: MD5 hash string.(MD5哈希字符串)_
 
 
-
 ### Properties
 
 #### FAILURE
 The Verification operation returns a failure result.
  (数据校验方法返回了校验错误这个结果)
-

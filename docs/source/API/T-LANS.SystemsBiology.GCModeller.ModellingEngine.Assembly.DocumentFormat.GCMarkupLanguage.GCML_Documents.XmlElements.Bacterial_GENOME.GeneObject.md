@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### AccessionId
@@ -17,4 +18,3 @@ NCBI ID
 这个基因对象所表达出来的蛋白质分子
 #### TranscriptProduct
 这个基因对象所转录出来的RNA分子
-

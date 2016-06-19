@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### bcftools
@@ -40,4 +41,3 @@ Looks up a localized string similar to samtools view -h -o out.sam in.bam.
 Looks up a localized resource of type System.Byte[].
 #### tabix
 Looks up a localized resource of type System.Byte[].
-

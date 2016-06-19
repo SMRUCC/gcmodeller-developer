@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan.h
 
 
 
+
+
 ### Methods
 
 #### FieldParser
@@ -19,8 +21,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan.hmmscan.hmmsca
 |--------------|-------|
 |s|-|
 |fields|-|
-
-
 
 
 

@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.Rfam.Infernal](N-LANS.SystemsBiol
 
 
 
+
 ### Properties
 
 #### data
 通过这个动态属性来兼容cm_scan以及cm_search的输出结果
 #### RfamAcc
 Rfam编号
-

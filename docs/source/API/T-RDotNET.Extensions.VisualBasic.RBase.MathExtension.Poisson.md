@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.RBase.MathExtension](N-RDotNET.Exten
 
 Density, distribution function, quantile function and random generation for the Poisson distribution with parameter lambda.
 
+
+
 ### Methods
 
 #### Dpois
@@ -32,8 +34,6 @@ Density, distribution function, quantile function and random generation for the 
 |--------------|-------|
 |n|number of random values to return.|
 |lambda|vector of (non-negative) means.|
-
-
 
 
 

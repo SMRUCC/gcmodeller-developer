@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler](N-LANS.SystemsBiolo
 
 Assembler @"T:Microsoft.VisualBasic.CommandLine.CommandLine" @"T:Microsoft.VisualBasic.CommandLine.Interpreter" API
 
+
+
 ### Methods
 
 #### DataView
@@ -52,8 +54,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI.MergeJason(Microsoft.VisualBa
 |--------------|-------|
 |Transcript|-|
 |delta|文献中的为3个bp的偏差|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService](N-LA
 
 
 
+
+
 ### Methods
 
 #### GetProgram
@@ -18,8 +20,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService.InitializeMethods.
 |Parameter Name|Remarks|
 |--------------|-------|
 |Name|Only two value: 'blastplus' or 'localblast'|
-
-
 
 
 

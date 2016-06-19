@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles](N-LANS.Systems
 
 Frames in this class define transcription start sites.
 
+
+
 ### Methods
 
 #### GetPromoters
@@ -20,7 +22,5 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Promoters.GetPromoters(LANS.
 |Genome|-|
 
 > 启动子的序列长度取250bp
-
-
 
 

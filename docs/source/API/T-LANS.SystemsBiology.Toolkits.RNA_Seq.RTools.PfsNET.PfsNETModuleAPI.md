@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET](N-LANS.SystemsB
 
 文件1,2之中所放着的基因是自身所感兴趣的基因突变体的转录组表达值，文件三则是文件1,2之中的两两组合的基因的关系
 
+
+
 ### Methods
 
 #### CreateList
@@ -100,9 +102,7 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.SavePfsNET(LA
 
 
 
-
 ### Properties
 
 #### PFSNet_EvaluateHandle
 默认是使用R脚本的计算版本
-

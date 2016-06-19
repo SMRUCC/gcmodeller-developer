@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phy
 
 
 
+
+
 ### Methods
 
 #### AddColorToBranch
@@ -38,7 +40,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.Evolview.
 LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.Evolview.PhyloNode.Clone
 ```
 make a new copy of current node
-
 
 
 ### Properties
@@ -87,4 +88,3 @@ total branch length from current node to root - max_distance_to_tip (height) is 
 #### minLeafVerticalLevel
 jan 7, 2011; if leaf node, min_leaf_vertical_level and max_leaf_vertical_level = level_vertical
  for slanted normal mode
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2](N-LANS.SystemsB
 
 
 
+
+
 ### Methods
 
 #### GetLevel
@@ -54,7 +56,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2.ExprStats.IsLowExpression(Sys
 
 
 
-
 ### Properties
 
 #### LEVEL2
@@ -62,4 +63,3 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2.ExprStats.IsLowExpression(Sys
 #### Samples
 @"F:LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2.ExprStats.LEVEL"[[Level]] 表达等级映射;
  [stat] 状态枚举: + 活跃，- 休眠
-

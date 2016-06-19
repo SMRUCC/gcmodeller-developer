@@ -8,6 +8,32 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW](N-LANS.SystemsBiology.Too
 Program: bwa (alignment via Burrows-Wheeler transformation)
  Contact: Heng Li <lh3@sanger.ac.uk>
 
+> 
+>  
+>  Program: bwa (alignment via Burrows-Wheeler transformation)
+>  Version: 0.6.1-r104
+>  Contact: Heng Li <lh3@sanger.ac.uk>
+>  
+>  Usage:   bwa <command> [options]
+>  
+>  Command: index         index sequences in the FASTA format
+>           aln           gapped/ungapped alignment
+>           samse         generate alignment (single ended)
+>           sampe         generate alignment (paired ended)
+>           bwasw         BWA-SW for long queries
+>           fastmap       identify super-maximal exact matches
+>  
+>           fa2pac        convert FASTA to PAC format
+>           pac2bwt       generate BWT from PAC
+>           pac2bwtgen    alternative algorithm for generating BWT
+>           bwtupdate     update .bwt to the new format
+>           bwt2sa        generate SA from BWT and Occ
+>           pac2cspac     convert PAC to color-space PAC
+>           stdsw         standard SW/NW alignment
+>  
+>  
+
+
 ### Methods
 
 #### Bwasw
@@ -102,9 +128,7 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.BWA.Stdsw
 standard SW/NW alignment
 
 
-
 ### Properties
 
 #### ALN_SA_COORDINATES
 bwa aln -c -t 3 -f {leftreads.sai} {reference.fa} {leftreads.fastq}
-

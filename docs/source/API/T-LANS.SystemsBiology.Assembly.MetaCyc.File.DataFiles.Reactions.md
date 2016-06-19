@@ -16,6 +16,10 @@ Frames within the Reactions class describe properties of a biochemical reaction 
  as in signaling pathways), and DNA sites (such as for reactions involving binding of transcription
  factors to DNA).
 
+> 
+>  This file lists all chemical reactions in the PGDB.
+>  (本数据库文件中记录了本菌种内所有的化学反应)
+>  
 
 
 

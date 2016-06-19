@@ -1,6 +1,6 @@
 ﻿---
 title: MEME.Analysis
-date: 6/16/2016 4:57:02 AM
+date: 6/19/2016 11:14:51 AM
 ---
 
 [RegpreciseSummary](T-MEME.Analysis.RegpreciseSummary.html)

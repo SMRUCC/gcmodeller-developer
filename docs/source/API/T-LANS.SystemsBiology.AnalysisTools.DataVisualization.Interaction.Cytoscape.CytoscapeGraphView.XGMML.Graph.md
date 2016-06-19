@@ -7,6 +7,9 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 The Cytoscape software XML format network visualization model.(Cytoscape软件的网络XML模型文件)
 
+> 请注意，由于在Cytoscape之中，每一个Xml元素都是小写字母的，所以在这个类之中的所有的Xml序列化的标记都不可以再更改大小写了
+
+
 ### Methods
 
 #### CreateObject
@@ -51,7 +54,6 @@ Save this cytoscape network visualization model using this function.
 
 
 
-
 ### Properties
 
 #### Directed
@@ -61,4 +63,3 @@ The edges between these nodes have the direction from one node to another node?
 The brief title information of this cytoscape network model.(这个Cytoscape网络模型文件的摘要标题信息)
 #### NetworkMetaData
 在这个属性里面会自动设置Graph对象的属性列表里面的数据
-

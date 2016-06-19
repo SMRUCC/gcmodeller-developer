@@ -8,6 +8,9 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM](N-LANS
 Counting reads in features with htseq-count, Given a file with aligned sequencing reads and a list of genomic features, a common task is to count how many reads map 
  to each feature.
 
+> 为了得到比较好的计算性能，SAM文件之中的Reads数据首先被转换为位置数据进行缓存
+
+
 ### Methods
 
 #### __getFeatures
@@ -139,8 +142,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.Uni
 |--------------|-------|
 |Read|-|
 |GFF_Forwards|-|
-
-
 
 
 

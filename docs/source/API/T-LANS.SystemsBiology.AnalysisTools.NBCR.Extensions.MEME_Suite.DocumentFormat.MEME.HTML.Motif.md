@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 
 
+
 ### Properties
 
 #### Id
 [Motif].[MotifId]，当前的这个属性值可以唯一的标识一个Motif对象
-

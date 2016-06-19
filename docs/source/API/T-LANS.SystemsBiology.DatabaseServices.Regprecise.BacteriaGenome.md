@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### CreateKEGGQuery
@@ -28,11 +30,9 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.BacteriaGenome.ListRegulators
 Listing all TF type regulators in this genome.
 
 
-
 ### Properties
 
 #### BacteriaGenome
 {GenomeName, Url}
 #### NumOfRegulons
 这个基因组里面的Regulon的数目
-

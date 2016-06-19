@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 对MEME text里面的位点在整个基因组上面的定位
 
+
+
 ### Methods
 
 #### __located
@@ -32,8 +34,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.MotifLoci.
 |gene|-|
 |site|-|
 |len|MEME序列的长度|
-
-
 
 
 

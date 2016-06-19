@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MiST2](N-LANS.SystemsBiology.Assembly.
 
 基因组之中的一个复制子
 
+
+
 ### Methods
 
 #### SignalProteinCollection
@@ -14,7 +16,6 @@ _namespace: [LANS.SystemsBiology.Assembly.MiST2](N-LANS.SystemsBiology.Assembly.
 LANS.SystemsBiology.Assembly.MiST2.Replicon.SignalProteinCollection
 ```
 获取在本对象中所存储的所有的蛋白质对象
-
 
 
 ### Properties
@@ -25,4 +26,3 @@ Extra Cytoplasmic Function
 One-component
 #### Size
 Replicon Size (Mbp)
-

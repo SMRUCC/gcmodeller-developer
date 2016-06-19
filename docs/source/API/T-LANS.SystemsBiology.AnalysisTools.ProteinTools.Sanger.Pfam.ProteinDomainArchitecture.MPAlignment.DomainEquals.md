@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinD
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -19,8 +21,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinDomainArchitec
 |--------------|-------|
 |high_Scoring_thresholds|-|
 |partEquals|位置得分是否满足一部分是高分的就行了？|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq](N-LANS.SystemsBiology.Toolkit
 
 基因表达相关性的本地文件数据库服务
 
+
+
 ### Methods
 
 #### CreateFromName
@@ -29,8 +31,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.Correlation2.LoadAuto(System.String)
 |Parameter Name|Remarks|
 |--------------|-------|
 |SpNameOrDIR|-|
-
-
 
 
 

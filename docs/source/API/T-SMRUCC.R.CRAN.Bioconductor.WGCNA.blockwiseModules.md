@@ -7,6 +7,15 @@ _namespace: [SMRUCC.R.CRAN.Bioconductor.WGCNA](N-SMRUCC.R.CRAN.Bioconductor.WGCN
 
 This function performs automatic network construction and module detection on large expression datasets in a block-wise manner.
 
+> 
+>  Before module detection starts, genes and samples are optionally checked for the presence of NAs. Genes and/or samples that have too many NAs are flagged as bad and removed from the analysis; bad genes will be automatically labeled as unassigned, while the returned eigengenes will have NA entries for all bad samples.
+>  If blocks Is Not given And the number Of genes exceeds maxBlockSize, genes are pre-clustered into blocks Using the Function projectiveKMeans; otherwise all genes are treated In a Single block.
+>  For Each block of genes, the network Is constructed And (if requested) topological overlap Is calculated. If requested, the topological overlaps are returned as part of the return value list. Genes are then clustered using average linkage hierarchical clustering And modules are identified in the resulting dendrogram by the Dynamic Hybrid tree cut. Found modules are trimmed of genes whose correlation with module eigengene (KME) Is less than minKMEtoStay. Modules in which fewer than minCoreKMESize genes have KME higher than minCoreKME are disbanded, i.e., their constituent genes are pronounced unassigned.
+>  After all blocks have been processed, the Function checks whether there are genes whose KME In the Module they assigned Is lower than KME To another Module. If p-values Of the higher correlations are smaller than those Of the native Module by the factor reassignThresholdPS, the gene Is re-assigned To the closer Module.
+>  In the last step, modules whose eigengenes are highly correlated are merged. This Is achieved by clustering module eigengenes using the dissimilarity given by one minus their correlation, cutting the dendrogram at the height mergeCutHeight And merging all modules on each branch. The process Is iterated until no modules are merged. See mergeCloseModules for more details on module merging.
+>  The argument quick specifies the precision Of handling Of missing data In the correlation calculations. Zero will cause all calculations To be executed precisely, which may be significantly slower than calculations without missing data. Progressively higher values will speed up the calculations but introduce progressively larger errors. Without missing data, all column means And variances can be pre-calculated before the covariances are calculated. When missing data are present, exact calculations require the column means And variances To be calculated For Each covariance. The approximate calculation uses the pre-calculated mean And variance And simply ignores missing data In the covariance calculation. If the number Of missing data Is high, the pre-calculated means And variances may be very different from the actual ones, thus potentially introducing large errors. The quick value times the number Of rows specifies the maximum difference In the number Of missing entries For mean And variance calculations On the one hand And covariance On the other hand that will be tolerated before a recalculation Is triggered. The hope Is that If only a few missing data are treated approximately, the Error introduced will be small but the potential speedup can be significant.
+>  
+
 
 
 ### Properties
@@ -102,4 +111,3 @@ logical: should errors in calculations be trapped?
 Logical: should branch eigennode (eigengene) dissimilarity be considered when merging branches in Dynamic Tree Cut?
 #### verbose
 integer level of verbosity. Zero means silent, higher values make the output progressively more and more verbose.
-

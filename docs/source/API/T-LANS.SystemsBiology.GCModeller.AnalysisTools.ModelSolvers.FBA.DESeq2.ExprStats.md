@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.DESeq
 
 
 
+
+
 ### Methods
 
 #### GetLevel
@@ -54,7 +56,6 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.DESeq2.ExprStats.I
 
 
 
-
 ### Properties
 
 #### LEVEL2
@@ -62,4 +63,3 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.DESeq2.ExprStats.I
 #### Samples
 @"F:LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.DESeq2.ExprStats.LEVEL"[[Level]] 表达等级映射;
  [stat] 状态枚举: + 活跃，- 休眠
-

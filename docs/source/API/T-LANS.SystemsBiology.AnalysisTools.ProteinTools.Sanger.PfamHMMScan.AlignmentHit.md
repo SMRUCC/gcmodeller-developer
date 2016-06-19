@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan](
 
 
 
+
 ### Properties
 
 #### QueryTag
 Tag data for the Pfam HMM model
-

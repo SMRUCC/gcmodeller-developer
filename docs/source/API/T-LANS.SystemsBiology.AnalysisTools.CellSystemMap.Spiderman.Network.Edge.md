@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellSystemMap.Spiderman.Network](
 
 
 
+
 ### Properties
 
 #### Direction
 Path Search direction between @"P:LANS.SystemsBiology.AnalysisTools.CellSystemMap.Spiderman.Network.Edge.FromNode" and @"P:LANS.SystemsBiology.AnalysisTools.CellSystemMap.Spiderman.Network.Edge.ToNode"
-

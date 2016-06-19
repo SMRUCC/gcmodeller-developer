@@ -11,6 +11,8 @@ In bioinformatics, a sequence logo is a graphical representation of the sequence
  sequence And diversity of the sequences. Sequence logos are frequently used to depict sequence 
  characteristics such as protein-binding sites in DNA Or functional units in proteins.
 
+
+
 ### Methods
 
 #### DrawFrequency
@@ -53,9 +55,7 @@ Drawing the sequence logo for the sequence motif model.(绘制SequenceLogo图)
 
 
 
-
 ### Properties
 
 #### WordSize
 The width of the character in the sequence logo.(字符的宽度)
-

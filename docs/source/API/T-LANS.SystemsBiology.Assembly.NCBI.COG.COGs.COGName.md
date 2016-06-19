@@ -14,6 +14,7 @@ cognames2003-2014.tab
 
 
 
+
 ### Properties
 
 #### COG
@@ -22,4 +23,3 @@ COG-id
 functional-class
 #### Name
 COG-annotation
-

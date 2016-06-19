@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.WGCNA](N-LANS.SystemsBiology.T
 
 包含有结果数据的加载模块以及脚本的执行调用模块
 
+
+
 ### Methods
 
 #### Filtering
@@ -31,8 +33,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.WGCNA.WGCNAWeight.Find(System.String,System
 |Id1|-|
 |Id2|-|
 |Parallel|可选参数，这个是为了控制并行计算的颗粒粒度而设置的参数，假若CPU利用率较低的话，可以尝试关闭本参数以增加颗粒粒度|
-
-
 
 
 

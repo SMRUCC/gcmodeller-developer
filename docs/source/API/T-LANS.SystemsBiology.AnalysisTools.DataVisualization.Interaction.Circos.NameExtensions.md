@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cir
 
 
 
+
+
 ### Methods
 
 #### DumpNames
@@ -19,8 +21,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.NameExten
 |--------------|-------|
 |DIR|-|
 |gb|-|
-
-
 
 
 

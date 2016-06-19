@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ComponentModel](N-LANS.SystemsBiology.Component
 
 元素周期表
 
+
+
 ### Methods
 
 #### MolecularWeightCalculate
@@ -18,8 +20,6 @@ LANS.SystemsBiology.ComponentModel.PeriodicTable.MolecularWeightCalculate(System
 |Parameter Name|Remarks|
 |--------------|-------|
 |Formula|-|
-
-
 
 
 

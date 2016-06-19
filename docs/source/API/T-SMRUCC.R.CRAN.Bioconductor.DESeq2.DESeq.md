@@ -18,6 +18,12 @@ Differential expression analysis based on the Negative Binomial (a.k.a. Gamma-Po
  generated using the results function. See the manual page for results for information on independent filtering
  And p-value adjustment for multiple test correction.
 
+> 
+>  a DESeqDataSet object with results stored as metadata columns. These results should accessed by calling the results function.
+>  By default this will return the log2 fold changes and p-values for the last variable in the design formula.
+>  See results for how to access results for other variables.
+>  
+
 
 
 ### Properties
@@ -61,4 +67,3 @@ for test="LRT", a reduced formula to compare against, i.e., the full formula wit
 either "Wald" or "LRT", which will then use either Wald significance tests (defined by nbinomWaldTest),
  or the likelihood ratio test on the difference in deviance between a full and reduced model formula
  (defined by nbinomLRT)
-

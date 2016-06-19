@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 Entity basetype in GCModeller ObjectModels.(GCModeller计算引擎之中的对象模型Entity类型的基类，本类型对象是整个系统的的运行基础，也可以认为生命是建立在Compound这种物质基础上的相互作用)
 
+
+
 ### Methods
 
 #### SetFluxValue
@@ -18,7 +20,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Entity.
 |Parameter Name|Remarks|
 |--------------|-------|
 |rate|净生成速率|
-
 
 
 
@@ -35,4 +36,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Entity.
 #### Quantity
 The quantity amount of this entity object instance in the system.(本实体对象在系统内的数量，在本属性中，返回的是实际浓度与本对象相关的流对象的数目的商，假若需要得到实际浓度的话，请使用@"P:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Entity.Compound.DataSource"属性，
  进行这种处理的原因是由于在实际的细胞过程之中，流对象之间都是平行发生的，并且使用本操作也可以用来表示代谢物的在整个空间范围内的均匀分布)
-

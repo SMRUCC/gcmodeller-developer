@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization](N-LANS.SystemsBio
 
 
 
+
+
 ### Methods
 
 #### DrawAixs
@@ -49,8 +51,6 @@ LANS.SystemsBiology.GCModeller.DataVisualization.GCSkew.InvokeDrawingGCContent(S
 |nt|Attributes的 1 和 2 分别为nt的开始和结束的位置|
 |Location|坐标轴原点的位置|
 |Width|坐标轴纵轴的宽度|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Repository](N-LANS.SystemsBiology.Repository.ht
 
 
 
+
+
 ### Methods
 
 #### DownloadGBK
@@ -21,7 +23,5 @@ LANS.SystemsBiology.Repository.DownloaderWebAPI.DownloadGBK(System.Collections.G
 |EXPORT|保存的文件夹|
 
 _returns: 返回下载成功的文件数目_
-
-
 
 

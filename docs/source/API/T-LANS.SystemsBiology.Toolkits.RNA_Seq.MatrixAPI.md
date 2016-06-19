@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq](N-LANS.SystemsBiology.Toolkit
 
 
 
+
+
 ### Methods
 
 #### CreateCorrelationMatrix
@@ -109,8 +111,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.MatrixAPI.ToSamples(Microsoft.VisualBasic.D
 |--------------|-------|
 |Data|-|
 |FirstRowTitle|Is first row in the table is the title description row, not a valid data row?(数据集中的第一行是否为标题行)|
-
-
 
 
 

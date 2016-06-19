@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.F
 
 Drawing model and method for the footprint motifs.
 
+
+
 ### Methods
 
 #### TriangleModel
@@ -21,8 +23,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.FootprintMap.R
 |Height|-|
 |Width|-|
 |UpSideDown|-|
-
-
 
 
 

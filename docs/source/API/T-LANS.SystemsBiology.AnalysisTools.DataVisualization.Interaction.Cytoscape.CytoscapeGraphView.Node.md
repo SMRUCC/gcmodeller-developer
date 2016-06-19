@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 一般是绘制圆形
 
+
+
 ### Methods
 
 #### getSinAlpha
@@ -21,7 +23,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.Cytosc
 
 
 
-
 ### Properties
 
 #### ir
@@ -30,4 +31,3 @@ Interface .Radius
 半径
 #### Rectangle
 在画图的时候的圆形的正方形的绘图区域
-

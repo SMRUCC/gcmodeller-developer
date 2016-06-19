@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual](N-L
 
 
 
+
+
 ### Methods
 
 #### __getName
@@ -46,8 +48,6 @@ LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual.ModelAPI.IsOrthol
 |hit|基因组标识符|
 |hits|-|
 |hitsTag|基因组标识符|
-
-
 
 
 

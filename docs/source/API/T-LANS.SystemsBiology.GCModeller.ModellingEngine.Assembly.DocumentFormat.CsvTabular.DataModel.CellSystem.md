@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 Data reader for the model file: @"T:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.FileStream.XmlFormat.CellSystemXmlModel"
 
+
+
 ### Methods
 
 #### CreateSignalTransductionNetwork
@@ -29,8 +31,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 |Parameter Name|Remarks|
 |--------------|-------|
 |TranscriptUnit|-|
-
-
 
 
 

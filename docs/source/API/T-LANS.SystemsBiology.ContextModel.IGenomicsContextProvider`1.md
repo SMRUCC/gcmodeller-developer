@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ContextModel](N-LANS.SystemsBiology.ContextMode
 
 
 
+
+
 ### Methods
 
 #### GetRelatedGenes
@@ -34,9 +36,7 @@ Gets all of the feature sites on the specific @"T:LANS.SystemsBiology.ComponentM
 
 
 
-
 ### Properties
 
 #### AllFeatures
 Listing all of the features loci sites on the genome.
-

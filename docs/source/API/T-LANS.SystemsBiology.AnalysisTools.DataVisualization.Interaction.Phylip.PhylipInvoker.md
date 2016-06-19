@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phy
 
 Phylip的命令行程序编程接口
 
+
+
 ### Methods
 
 #### #ctor
@@ -45,8 +47,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.PhylipInv
 
    Y to accept these or type the letter for one to change
  |
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### __Initialize_MetaCyc
@@ -91,8 +93,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 |argvs|[@"T:Microsoft.VisualBasic.CommandLine.CommandLine"[MetaCyc database data directory|Export directory|RegpreciseRegulators]] -
  -precompile -metacyc "@"F:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.Compiler.Compiler._MetaCyc"" -regprecise_regulator "@"F:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.Compiler.Compiler._RegpreciseRegulators"" -export "ModelParentDir"
  假若-transcript_regulation参数为空的话，则使用MetaCyc数据库中的Regulation关系数据表|
-
-
 
 
 

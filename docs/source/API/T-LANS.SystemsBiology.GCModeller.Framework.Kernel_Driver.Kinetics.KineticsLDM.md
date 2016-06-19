@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.Kinetics](N-
 
 
 
+
+
 ### Methods
 
 #### GetValue
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.Kinetics](N-
 LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.Kinetics.KineticsLDM.GetValue
 ```
 The formulation evaluation.
-
-
 
 

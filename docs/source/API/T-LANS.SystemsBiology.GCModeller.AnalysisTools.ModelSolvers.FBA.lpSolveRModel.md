@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA](N-LA
 
 Class object using for generate the R script for the R package lpSolveAPI.(用于生成lpSolverAPI所需的脚本的类型对象)
 
+
+
 ### Methods
 
 #### __add_constraint
@@ -86,7 +88,6 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.SetO
 
 
 
-
 ### Properties
 
 #### __fluxObjective
@@ -98,4 +99,3 @@ changes = 0;
 Direction of Objective Function.(目标函数的约束方向)
 #### fluxColumns
 得到每一个反应过程的标识符
-

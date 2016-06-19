@@ -9,6 +9,7 @@ The gene node in the PfsNET evaluated sub network.(PfsNET所计算出来的子�
 
 
 
+
 ### Properties
 
 #### Name
@@ -17,4 +18,3 @@ The gene name.(基因名称)
 Fuzzy weight of this gene node in current sub network.(这个基因节点在当前的这个子网络之中的模糊权重)
 #### weight2
 Fuzzy weight2 of this gene node in the current sub network.(这个基因节点在当前的这个子网络之中的模糊权重2)
-

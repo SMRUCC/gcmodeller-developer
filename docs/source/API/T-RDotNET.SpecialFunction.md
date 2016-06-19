@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A special function.
 
+
+
 ### Methods
 
 #### #ctor
@@ -32,7 +34,5 @@ NotSupportedException
 |args|key-value pairs|
 
 _returns: Always throws an exception_
-
-
 
 

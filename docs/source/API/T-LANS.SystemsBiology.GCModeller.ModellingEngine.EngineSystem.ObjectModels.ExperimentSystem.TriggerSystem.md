@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 由于需要动态构建代码并进行编译，由于Trigger进行条件测试的时候需要动态引用子系统部件的实例，故而TriggerSystem需要在CellSystem初始化完毕之后才可以初始化
 
+
+
 ### Methods
 
 #### Initialize
@@ -28,9 +30,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Experim
 >  
 
 
-
 ### Properties
 
 #### _ComponentSource
 列表中的对象的顺序按照@"P:LANS.SystemsBiology.GCModeller.ModellingEngine.Prefix.PrefixTypeReference"中的对象的顺序进行排列
-

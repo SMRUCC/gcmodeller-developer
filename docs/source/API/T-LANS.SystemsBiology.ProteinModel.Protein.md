@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ProteinModel](N-LANS.SystemsBiology.ProteinMode
 
 A type of data structure for descript the protein domain architecture distribution.(一个用于描述蛋白质结构域分布的数据结构)
 
+
+
 ### Methods
 
 #### ContainsAnyDomain
@@ -44,11 +46,9 @@ LANS.SystemsBiology.ProteinModel.Protein.SimilarTo(LANS.SystemsBiology.ProteinMo
 
 
 
-
 ### Properties
 
 #### Domains
 结构域分布
 #### Identifier
 该目标蛋白质的唯一标识符
-

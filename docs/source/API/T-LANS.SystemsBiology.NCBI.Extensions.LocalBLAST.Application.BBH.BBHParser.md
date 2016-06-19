@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH](N-L
 
 BBH解析的时候，是不会区分方向的，所以只要保证编号是一致的就会解析出结果，这个不需要担心
 
+
+
 ### Methods
 
 #### __topBesthit
@@ -97,8 +99,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH.BBHParser.TopHit(
 |Parameter Name|Remarks|
 |--------------|-------|
 |hits|假设这里面的hits都是通过了cutoff了的数据|
-
-
 
 
 

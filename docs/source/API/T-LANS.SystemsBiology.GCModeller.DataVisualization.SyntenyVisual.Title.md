@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual](N-L
 
 
 
+
 ### Properties
 
 #### Title
 用来控制标题格式的html文本
-

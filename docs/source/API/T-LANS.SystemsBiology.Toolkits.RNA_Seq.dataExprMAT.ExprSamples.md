@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.dataExprMAT](N-LANS.SystemsBio
 
 每一个基因的表达量的实验样本，{GeneId, value1, value2, value3, ...}
 
+
+
 ### Methods
 
 #### ConvertObject
@@ -29,8 +31,6 @@ Convert the Pcc matrix object into a csv document for save the data into filesys
 |Parameter Name|Remarks|
 |--------------|-------|
 |DataSet|-|
-
-
 
 
 

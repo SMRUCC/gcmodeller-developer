@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### ComplexComponents
 指向代谢组中的底物列表的所生成的蛋白质复合物的UniqueId
-

@@ -7,6 +7,11 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 绘制KEGG数据为主的基因互作网络
 
+> 
+>  1. 对于有代谢反应的网络，表现为酶分子与酶分子之间所组成的网络
+>  
+
+
 ### Methods
 
 #### __exportPathwayGraph
@@ -76,8 +81,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.Networ
 |FromPathway|-|
 |PfsNet|-|
 |ExportDIR|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 模块主要是分析出同源的和非同源的CrossTalk，并形成注释数据
 
+
+
 ### Methods
 
 #### Analysis
@@ -19,8 +21,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 |--------------|-------|
 |Model|-|
 |CrossTalks|第一行为RR基因，第一列为HisK基因|
-
-
 
 
 

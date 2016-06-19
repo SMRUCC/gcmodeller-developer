@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 
 
+
+
 ### Methods
 
 #### GetMotif
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.Similarity
 |Parameter Name|Remarks|
 |--------------|-------|
 |Entry|@"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.Similarity.MotifDeltaSimilarity.MotifCompares.Delta"之中的一个元素|
-
-
 
 
 

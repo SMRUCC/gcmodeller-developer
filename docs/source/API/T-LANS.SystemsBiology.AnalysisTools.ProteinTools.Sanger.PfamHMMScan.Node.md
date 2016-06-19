@@ -10,6 +10,7 @@ The remainder of the model has three lines per node, for M nodes (where M is the
 
 
 
+
 ### Properties
 
 #### Address
@@ -46,4 +47,3 @@ The remainder of the model has three lines per node, for M nodes (where M is the
  state E, and there Is no delete state M + 1; therefore the final Mk ! Dk+1 And
  Dk ! Dk+1 transitions are always * (zero probability), And the final Dk ! Mk+1
  transition Is always 0.0 (probability 1.0).
-

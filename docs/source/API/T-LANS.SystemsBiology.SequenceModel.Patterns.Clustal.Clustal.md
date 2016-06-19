@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Patterns.Clustal](N-LANS.SystemsB
 
 Fasta格式的多序列比对的结果
 
+
+
 ### Methods
 
 #### __initCommon
@@ -25,8 +27,6 @@ LANS.SystemsBiology.SequenceModel.Patterns.Clustal.Clustal.Mid(System.Int32,Syst
 |--------------|-------|
 |left|左端到位点的距离|
 |right|右端到位点的距离|
-
-
 
 
 

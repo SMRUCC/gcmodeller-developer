@@ -10,6 +10,19 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.TabularDataFiles](N-LANS.
  cofactors for the enzyme, up to 4 activators, up to 4 inhibitors, and the 
  subunit structure of the enzyme.
 
+> 
+>  Columns (multiple columns are indicated in parentheses):
+>  
+>    UNIQUE-ID
+>    NAME
+>    REACTION-EQUATION
+>    PATHWAYS (4)
+>    COFACTORS (4)
+>    ACTIVATORS (4)
+>    INHIBITORS (4)
+>    SUBUNIT-COMPOSITION
+>  
+>  
 
 
 

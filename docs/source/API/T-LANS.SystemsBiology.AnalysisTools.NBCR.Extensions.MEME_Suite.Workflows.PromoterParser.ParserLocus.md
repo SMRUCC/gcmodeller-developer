@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workfl
 
 
 
+
+
 ### Methods
 
 #### GetType
@@ -18,8 +20,6 @@ locus/union/initx
 |Parameter Name|Remarks|
 |--------------|-------|
 |name|-|
-
-
 
 
 

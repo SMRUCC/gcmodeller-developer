@@ -17,6 +17,8 @@ Measures of Relative Codon Biases
  
  H 集合是所选择的高表达量的参考基因
 
+
+
 ### Methods
 
 #### #ctor
@@ -58,8 +60,6 @@ LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RelativeCodonBiases.W(LANS
 |Parameter Name|Remarks|
 |--------------|-------|
 |Codon|-|
-
-
 
 
 

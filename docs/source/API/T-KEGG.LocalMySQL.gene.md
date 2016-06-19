@@ -33,10 +33,10 @@ _namespace: [KEGG.LocalMySQL](N-KEGG.LocalMySQL.html)_
 
 
 
+
 ### Properties
 
 #### kegg_sp
 kegg species organism brief code
 #### uniprot
 uniprot entry for this protein
-

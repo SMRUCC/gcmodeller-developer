@@ -7,6 +7,8 @@ _namespace: [RDotNET.NativeLibrary](N-RDotNET.NativeLibrary.html)_
 
 A proxy for unmanaged dynamic link library (DLL).
 
+
+
 ### Methods
 
 #### #ctor
@@ -63,11 +65,9 @@ Frees the native library this objects represents
 _returns: The result of the call to FreeLibrary_
 
 
-
 ### Properties
 
 #### DllFilename
 Gets the Dll file name used for this native Dll wrapper.
 #### IsInvalid
 Gets whether the current handle is equal to the invalid handle
-

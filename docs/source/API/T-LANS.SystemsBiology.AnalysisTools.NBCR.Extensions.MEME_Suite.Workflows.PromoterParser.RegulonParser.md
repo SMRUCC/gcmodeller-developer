@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workfl
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterP
 |Parameter Name|Remarks|
 |--------------|-------|
 |Fasta|-|
-
-
 
 
 

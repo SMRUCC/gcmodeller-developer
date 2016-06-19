@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.BLAST](N-LANS.SystemsB
 
 这个多用于宏基因组的研究
 
+
+
 ### Methods
 
 #### BuildFromBBH
@@ -41,8 +43,6 @@ LANS.SystemsBiology.InteractionModel.Network.BLAST.API.BuildFromBlastOUT(System.
 |Parameter Name|Remarks|
 |--------------|-------|
 |blastout|blast输出文件的路径|
-
-
 
 
 

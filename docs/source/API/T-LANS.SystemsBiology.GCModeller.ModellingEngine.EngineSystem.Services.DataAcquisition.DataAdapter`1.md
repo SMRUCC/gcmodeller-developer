@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Service
 
 
 
+
 ### Properties
 
 #### System
 本数据采集对象所采集的目标模块对象
-

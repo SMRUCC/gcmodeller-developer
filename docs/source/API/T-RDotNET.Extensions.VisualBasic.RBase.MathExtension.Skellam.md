@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.RBase.MathExtension](N-RDotNET.Exten
 
 Skellam distribution
 
+
+
 ### Methods
 
 #### DskellamSp
@@ -21,8 +23,6 @@ Density, distribution function, quantile function and random number generation f
 |lambda1|vectors of (non-negative) means.|
 |lambda2|vectors of (non-negative) means.|
 |log|logical; if TRUE, probabilities p are given as log(p).|
-
-
 
 
 

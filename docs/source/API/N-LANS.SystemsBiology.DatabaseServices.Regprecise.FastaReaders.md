@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.Regprecise.FastaReaders
-date: 6/16/2016 4:56:58 AM
+date: 6/19/2016 11:14:48 AM
 ---
 
 [Regulator](T-LANS.SystemsBiology.DatabaseServices.Regprecise.FastaReaders.Regulator.html)

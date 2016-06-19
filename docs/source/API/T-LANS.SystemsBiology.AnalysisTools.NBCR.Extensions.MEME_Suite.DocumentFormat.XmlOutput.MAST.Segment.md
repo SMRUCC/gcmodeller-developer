@@ -9,6 +9,7 @@ within each seg the hit tags are expected to be ordered by pos ascending and the
 
 
 
+
 ### Properties
 
 #### Hits
@@ -17,4 +18,3 @@ within each seg the hit tags are expected to be ordered by pos ascending and the
 里面是有回车符的，使用前请先使用@"M:Microsoft.VisualBasic.Extensions.TrimVBCrLf(System.String)"进行修剪
 #### start
 @"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.XmlOutput.MAST.Segment.SegmentData"在基因组上面的左端的起始位置
-

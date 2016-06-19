@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.NCBIBlastResult](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### CreateFromBBHOrthologous
@@ -19,8 +21,6 @@ BBH的文件夹
 |--------------|-------|
 |QueryID|-|
 |sbhDIR|Directory path which it contains the sbh result data.|
-
-
 
 
 

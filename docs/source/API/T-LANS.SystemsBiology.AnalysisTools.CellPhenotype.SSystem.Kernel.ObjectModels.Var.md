@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Kernel.Obje
 
 
 
+
+
 ### Methods
 
 #### op_Implicit
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Kernel.ObjectModels.Var.
 |Parameter Name|Remarks|
 |--------------|-------|
 |s|Script line.(脚本行文本)|
-
-
 
 
 

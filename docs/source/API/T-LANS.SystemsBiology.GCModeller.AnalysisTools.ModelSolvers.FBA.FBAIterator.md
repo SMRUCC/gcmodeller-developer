@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA](N-LA
 
 FBA状态迭代器
 
+
+
 ### Methods
 
 #### #ctor
@@ -48,11 +50,9 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.FBAIterator.Run
  （假若FBA的代谢物的约束为等于0的话，则这个计算模型不可用，但是更改了约束条件还可以被称作为FBA么？）
 
 
-
 ### Properties
 
 #### __lpModel
 FBA计算模型
 #### _iterates
 迭代的次数
-

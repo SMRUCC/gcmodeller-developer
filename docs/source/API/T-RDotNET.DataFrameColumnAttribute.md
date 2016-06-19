@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 Represents a column of certain data frames.
 
+
+
 ### Methods
 
 #### #ctor
@@ -21,11 +23,9 @@ Initializes a new instance by index.
 
 
 
-
 ### Properties
 
 #### Index
 Gets the index.
 #### Name
 Gets or sets the name.
-

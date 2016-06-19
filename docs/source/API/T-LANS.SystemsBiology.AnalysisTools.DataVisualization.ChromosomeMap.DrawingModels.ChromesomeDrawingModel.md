@@ -9,6 +9,7 @@ Data model for described a chromosome drawing action invoked.(用于描述如何
 
 
 
+
 ### Properties
 
 #### DrawingConfigurations
@@ -25,4 +26,3 @@ Motif位点的颜色配置
 COG分类的颜色配置
 #### TSSs
 基因的转录起始位点
-

@@ -9,6 +9,7 @@ The variable represents a node instance in the network system.(变量对象代�
 
 
 
+
 ### Properties
 
 #### Handle
@@ -19,4 +20,3 @@ The unique id of this node entity in the network, the function of this property 
  (本属性和@"P:LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.Variable.Handle"属性的作用是一样的，都可以唯一性的只是本节点在网络系统之中的唯一的位置)
 #### Value
 The node states in the current network state.
-

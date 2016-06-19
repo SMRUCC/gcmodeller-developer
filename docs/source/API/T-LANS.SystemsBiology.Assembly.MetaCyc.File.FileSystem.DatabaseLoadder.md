@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.FileSystem](N-LANS.System
 
 当对MetaCyc数据库进行延时加载的时候，则需要使用到本对象进行数据的读取操作
 
+
+
 ### Methods
 
 #### CreateInstance
@@ -109,9 +111,7 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.FileSystem.DatabaseLoadder.GetTransUni
 Returns the TransUnits table in the target metacyc database.
 
 
-
 ### Properties
 
 #### Database
 MetaCyc database directory.(MetaCyc数据库文件夹)
-

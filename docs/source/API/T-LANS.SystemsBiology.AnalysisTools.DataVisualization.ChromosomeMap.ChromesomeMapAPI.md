@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap](
 
 This module contains the required API function for create the chromosomes map of a specific bacteria genome.
 
+
+
 ### Methods
 
 #### AddMotifSites
@@ -90,8 +92,6 @@ Image formats can be one of the value: jpg,bmp,emf,exif,gif,png,wmf,tiff
 |res|@"M:LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingDevice.InvokeDrawing(LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.ChromesomeDrawingModel)"函数所生成的绘图图形输出资源数据|
 |Export|将要进行数据保存的文件夹|
 |Format|Value variant in jpg,bmp,emf,exif,gif,png,wmf,tiff|
-
-
 
 
 

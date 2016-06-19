@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.RBase.MathExtension](N-RDotNET.Exten
 
 
 
+
+
 ### Methods
 
 #### BesselI
@@ -81,8 +83,6 @@ Rounding of Numbers
 |Parameter Name|Remarks|
 |--------------|-------|
 |x|-|
-
-
 
 
 

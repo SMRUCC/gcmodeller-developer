@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ContextModel](N-LANS.SystemsBiology.ContextMode
 
 
 
+
+
 ### Methods
 
 #### ATGDistance``1
@@ -62,8 +64,6 @@ Gets the loci location description data.
 |--------------|-------|
 |posi|-|
 |data|-|
-
-
 
 
 

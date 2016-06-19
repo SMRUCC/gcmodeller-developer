@@ -9,6 +9,7 @@ Deoxyribonucleotides NT base which consist of the DNA sequence.(枚举所有的�
 
 
 
+
 ### Properties
 
 #### dAMP
@@ -21,4 +22,3 @@ Guanine, paired with @"F:LANS.SystemsBiology.SequenceModel.NucleotideModels.DNA.
 Thymine, paired with @"F:LANS.SystemsBiology.SequenceModel.NucleotideModels.DNA.dAMP"(T, 胸腺嘧啶)
 #### NA
 Gaps/Rare bases(空格或者其他的稀有碱基)
-

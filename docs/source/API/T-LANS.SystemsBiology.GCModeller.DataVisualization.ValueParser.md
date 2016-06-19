@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization](N-LANS.SystemsBio
 
 
 
+
+
 ### Methods
 
 #### GetSaveImageFormat
@@ -18,8 +20,6 @@ default is @"P:System.Drawing.Imaging.ImageFormat.Bmp"
 |Parameter Name|Remarks|
 |--------------|-------|
 |format|-|
-
-
 
 
 

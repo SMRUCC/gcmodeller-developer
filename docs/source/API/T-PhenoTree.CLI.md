@@ -7,6 +7,8 @@ _namespace: [PhenoTree](N-PhenoTree.html)_
 
 
 
+
+
 ### Methods
 
 #### GenePhenoClusters
@@ -29,8 +31,6 @@ PhenoTree.CLI.VennMatrix(Microsoft.VisualBasic.CommandLine.CommandLine)
 |Parameter Name|Remarks|
 |--------------|-------|
 |args|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService](N-LA
 
 
 
+
+
 ### Methods
 
 #### GetValue
@@ -23,9 +25,7 @@ Get an item value in the @"P:LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Inte
 
 
 
-
 ### Properties
 
 #### Parameters
 The collection of switches information in the target assembly command.
-

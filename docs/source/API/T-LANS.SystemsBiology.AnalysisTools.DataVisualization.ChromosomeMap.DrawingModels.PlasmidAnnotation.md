@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.D
 
 
 
+
+
 ### Methods
 
 #### ExportProteinFasta
@@ -14,7 +16,6 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.D
 LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.PlasmidAnnotation.ExportProteinFasta(System.Collections.Generic.IEnumerable{LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.PlasmidAnnotation},System.Boolean)
 ```
 导出蛋白质的序列信息
-
 
 
 ### Properties
@@ -29,4 +30,3 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.
 蛋白质功能注释
 #### Protein
 蛋白质序列
-

@@ -9,6 +9,7 @@ This function takes a list and creates a publication-quality TIFF Venn Diagram
 
 
 
+
 ### Properties
 
 #### areaVector
@@ -75,4 +76,3 @@ Size-units to use for the final figure
 Integer giving the width of the output figure in units
 #### x
 A list of vectors (e.g., integers, chars), with each component corresponding to a separate circle in the Venn diagram
-

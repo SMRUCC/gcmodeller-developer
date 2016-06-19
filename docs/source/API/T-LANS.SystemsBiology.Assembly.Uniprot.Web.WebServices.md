@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.Uniprot.Web](N-LANS.SystemsBiology.Ass
 
 
 
+
+
 ### Methods
 
 #### CreateQuery
@@ -41,8 +43,6 @@ LANS.SystemsBiology.Assembly.Uniprot.Web.WebServices.GetEntries(System.String)
 |Parameter Name|Remarks|
 |--------------|-------|
 |url|CreateQuery(geneId, taxonomy)|
-
-
 
 
 

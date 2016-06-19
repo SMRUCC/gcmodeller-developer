@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic](N-RDotNET.Extensions.VisualBasic.ht
 
 The interface of the R script model.(R脚本的数据模型对象的接口)
 
+
+
 ### Methods
 
 #### RScript
@@ -24,8 +26,6 @@ RDotNET.Extensions.VisualBasic.IRScript.SaveTo(System.String)
 |Parameter Name|Remarks|
 |--------------|-------|
 |FilePath|-|
-
-
 
 
 

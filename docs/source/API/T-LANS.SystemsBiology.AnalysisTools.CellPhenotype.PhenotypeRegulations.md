@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype](N-LANS.SystemsBiol
 
 将MEME所分析出来的调控信息附加到代谢途径的网络图之中
 
+
+
 ### Methods
 
 #### __levelMapping
@@ -138,8 +140,6 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.PhenotypeRegulations.MonteCarloE
 |network|-|
 |counts|实验的重复次数，建议至少1000次以上|
 |export|实验数据的导出位置|
-
-
 
 
 

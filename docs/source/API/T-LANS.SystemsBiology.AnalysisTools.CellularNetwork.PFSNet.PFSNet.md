@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellularNetwork.PFSNet](N-LANS.Sy
 Implements the pfsnet algorithm to calculates the significant and consist cellular network between two types of mutations.
  (计算两种突变体的共有的表型变化的PfsNET算法)
 
+
+
 ### Methods
 
 #### computegenelist
@@ -78,7 +80,6 @@ LANS.SystemsBiology.AnalysisTools.CellularNetwork.PFSNet.PFSNet.InternalVg(LANS.
 
 
 
-
 ### Properties
 
 #### OriginalRAlgorithm
@@ -117,4 +118,3 @@ else
 
 pfsnet.computegenelist<-function(w,beta){
 # within [rest of string was truncated]";.
-

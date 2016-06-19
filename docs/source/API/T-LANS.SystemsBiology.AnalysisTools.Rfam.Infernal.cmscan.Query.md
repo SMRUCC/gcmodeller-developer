@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.Rfam.Infernal.cmscan](N-LANS.Syst
 
 
 
+
 ### Properties
 
 #### uncertainHits
 ------ inclusion threshold ------
-

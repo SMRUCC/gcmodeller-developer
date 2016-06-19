@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.NCBIBlastResult
 
 Blast结果之中的hit对象的颜色映射
 
+
+
 ### Methods
 
 #### GetBlastnIdentitiesColor
@@ -42,8 +44,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.NCBIBlastResult.ColorSchema.
 |Parameter Name|Remarks|
 |--------------|-------|
 |scores|需要从这里得到分数|
-
-
 
 
 

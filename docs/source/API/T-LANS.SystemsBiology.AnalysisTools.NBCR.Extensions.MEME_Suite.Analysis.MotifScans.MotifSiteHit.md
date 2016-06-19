@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 
 
+
 ### Properties
 
 #### RegPrecise
 在RegPrecise数据库之中所匹配上的调控位点的trace信息：locus_tag:position
 #### source
 这个属性是记录了这个motif位点的来源信息，这个是用于Csv文档的，Xml文档会被忽略掉
-

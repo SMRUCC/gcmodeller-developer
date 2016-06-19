@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.Analysis.Moti
 
 MEME操作实际上是将motif位点的序列进行分组，则某一个符合条件的位点应该不仅仅和PWM可以匹配，和生成那些位点的序列也应该匹配
 
+
+
 ### Methods
 
 #### Mast
@@ -31,8 +33,6 @@ LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.Analysis.MotifScans.MotifS
 |sequence|基因组上面的滑窗位点片段|
 |PWMDelta|-|
 |complement|-|
-
-
 
 
 

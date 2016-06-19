@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BatchPar
 
 blast结果文件的路径，在这里面包含有query和subject的来源的信息
 
+
+
 ### Methods
 
 #### BiDirEquals
@@ -32,9 +34,7 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BatchParallel.AlignEn
 
 
 
-
 ### Properties
 
 #### FilePath
 The file path of the blast output log data or the csv data file.(日志文件或者Csv数据文件)
-

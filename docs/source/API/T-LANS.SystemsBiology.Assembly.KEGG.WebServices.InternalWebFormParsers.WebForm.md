@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.WebServices.InternalWebFormParser
 
 KEGG 网页表格的数据解析方法，在Value之中可能会有重复的Key数据出现
 
+
+
 ### Methods
 
 #### GetValue
@@ -33,9 +35,7 @@ LANS.SystemsBiology.Assembly.KEGG.WebServices.InternalWebFormParsers.WebForm.Reg
 
 
 
-
 ### Properties
 
 #### _strData
 Entry, {trim_formatted, non-process}
-

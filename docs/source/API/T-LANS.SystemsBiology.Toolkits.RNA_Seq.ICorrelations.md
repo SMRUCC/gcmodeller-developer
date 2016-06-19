@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq](N-LANS.SystemsBiology.Toolkit
 
 
 
+
+
 ### Methods
 
 #### GetPcc
@@ -55,8 +57,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.ICorrelations.GetWGCNAWeight(System.String,
 |--------------|-------|
 |id1|-|
 |id2|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.CLI](N-LANS.SystemsBiology.NCBI
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -32,9 +34,7 @@ LANS.SystemsBiology.NCBI.Extensions.CLI.__writeIO.InvokeWrite(LANS.SystemsBiolog
 
 
 
-
 ### Properties
 
 #### IO
 对象序列化串流句柄
-

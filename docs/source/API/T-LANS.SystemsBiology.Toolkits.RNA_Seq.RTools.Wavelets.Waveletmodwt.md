@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.Wavelets](N-LANS.System
 
 小波变换的输出结果
 
+
+
 ### Methods
 
 #### Load
@@ -18,7 +20,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.Wavelets.Waveletmodwt.Load(RDotNET.S
 |Parameter Name|Remarks|
 |--------------|-------|
 |Expr|R的输出|
-
 
 
 
@@ -48,4 +49,3 @@ The original time series, X, in matrix format.
 A list with element i comprised of a matrix containing the ith level scaling coefficients.
 #### W
 A list with element i comprised of a matrix containing the ith level wavelet coefficients.
-

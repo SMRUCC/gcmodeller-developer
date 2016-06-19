@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeAlig
 
 
 
+
 ### Properties
 
 #### spPairs
 query与subject的基因组的组合字符串
-

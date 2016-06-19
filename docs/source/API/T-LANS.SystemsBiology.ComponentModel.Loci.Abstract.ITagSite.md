@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.ComponentModel.Loci.Abstract](N-LANS.SystemsBio
 
 
 
+
 ### Properties
 
 #### Distance
 当前的这个位点对象距离@"P:LANS.SystemsBiology.ComponentModel.Loci.Abstract.ITagSite.Address"所标记的位点的距离
-

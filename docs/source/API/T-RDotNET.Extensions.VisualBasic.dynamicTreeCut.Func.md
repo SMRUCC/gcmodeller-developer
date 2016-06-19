@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.dynamicTreeCut](N-RDotNET.Extensions
 
 
 
+
+
 ### Methods
 
 #### printFlush
@@ -22,7 +24,5 @@ Passes all its arguments unchaged to the standard print function; after the exec
 > 
 >  Passes all its arguments unchaged to the standard print function; after the execution of print it flushes the console, if possible.
 >  
-
-
 
 

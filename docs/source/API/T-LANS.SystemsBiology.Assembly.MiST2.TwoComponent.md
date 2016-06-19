@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MiST2](N-LANS.SystemsBiology.Assembly.
 
 
 
+
+
 ### Methods
 
 #### get_HisKinase
@@ -22,7 +24,6 @@ LANS.SystemsBiology.Assembly.MiST2.TwoComponent.GetRR
 获取所有的双组份系统之中的RR蛋白质的基因编号
 
 
-
 ### Properties
 
 #### HHK
@@ -33,4 +34,3 @@ Histidine kinase
 Hybrid response regulator
 #### RR
 Response regulator
-

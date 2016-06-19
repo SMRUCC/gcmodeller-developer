@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry](N-LANS.Systems
 
 加载代谢途径或者KEGG Modules的Brite文档的模块
 
+
+
 ### Methods
 
 #### GetCategory
@@ -40,8 +42,6 @@ A
 |Parameter Name|Remarks|
 |--------------|-------|
 |x|-|
-
-
 
 
 

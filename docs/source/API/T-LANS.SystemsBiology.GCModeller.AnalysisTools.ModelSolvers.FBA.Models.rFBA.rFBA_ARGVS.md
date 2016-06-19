@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Model
 
 
 
+
 ### Properties
 
 #### DirectedFactor
 假若反应是单向的，则乘以这个倍增系数
-

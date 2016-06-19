@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeAlig
 
 对于很大的基因组，则直接进行画点和划线来代替原来的orf箭头以及图层区域了
 
+
+
 ### Methods
 
 #### InvokeDrawing
@@ -21,9 +23,7 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeAlignment.LargeGe
 
 
 
-
 ### Properties
 
 #### GenomeInterval
 两个基因组之间在绘制的时候的间隔的大小
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam](N-LANS.
 
 
 
+
+
 ### Methods
 
 #### __createStructureRegion
@@ -69,8 +71,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.DomainAnalysis.ToPfam
 |QueryIteration|-|
 |offset|0.11|
 |identities|暂时无用|
-
-
 
 
 

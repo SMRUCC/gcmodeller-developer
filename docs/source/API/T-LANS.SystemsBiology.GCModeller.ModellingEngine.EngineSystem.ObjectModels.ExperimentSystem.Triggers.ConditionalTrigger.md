@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
+
 ### Methods
 
 #### TriggerTest
@@ -16,9 +18,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Experim
 通过比较查看当前的触发器对象是否满足触发条件
 
 
-
 ### Properties
 
 #### Invoke
 对Action的调用方法
-

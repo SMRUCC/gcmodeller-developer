@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.Analysis](N-LANS.SystemsBiology
 
 
 
+
+
 ### Methods
 
 #### BLAST
@@ -21,7 +23,5 @@ LANS.SystemsBiology.NCBI.Extensions.Analysis.LocalBLAST.BLAST(System.String[],Sy
 |LogDIR|默认为桌面|
 
 _returns: 日志文件列表_
-
-
 
 

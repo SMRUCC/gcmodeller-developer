@@ -14,6 +14,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
  for comparative and evolutionary analysis of TF binding site motifs and regulon content for orthologous
  transcription factors.
 
+
+
 ### Methods
 
 #### BuildRegulatesHash
@@ -42,8 +44,6 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.TranscriptionFactors.GetRegulato
 |Parameter Name|Remarks|
 |--------------|-------|
 |trace|locus_tag:position|
-
-
 
 
 

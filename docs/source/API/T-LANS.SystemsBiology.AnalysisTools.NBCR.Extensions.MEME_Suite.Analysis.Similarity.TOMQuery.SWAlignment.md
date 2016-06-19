@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -20,8 +22,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.Similarity
 |query|-|
 |subject|-|
 |equals|越相似得分应该越高|
-
-
 
 
 

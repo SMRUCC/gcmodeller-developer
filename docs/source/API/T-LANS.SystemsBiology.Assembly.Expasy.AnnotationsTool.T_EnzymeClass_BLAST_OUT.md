@@ -9,8 +9,8 @@ The raw annotation data which was export from the blast output text.(蛋白酶�
 
 
 
+
 ### Properties
 
 #### Class
 酶分类的EC编号
-

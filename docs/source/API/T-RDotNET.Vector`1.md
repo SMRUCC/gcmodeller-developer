@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A vector base.
 
+
+
 ### Methods
 
 #### #ctor
@@ -89,7 +91,6 @@ A method to transfer data from native to .NET managed array equivalents fast.
 _returns: Array of values in the vector_
 
 
-
 ### Properties
 
 #### DataPointer
@@ -102,4 +103,3 @@ Gets or sets the element at the specified name.
 Gets the number of elements.
 #### Names
 Gets the names of elements.
-

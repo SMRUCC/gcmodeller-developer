@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects]
 
 
 
+
 ### Properties
 
 #### annotator_export_date
@@ -37,4 +38,3 @@ title: package name
 topic_guid: identifier of articles’ topic (topics were added for convenience of curator only)
 #### topic_path
 topic_path: path to the package file
-

@@ -7,6 +7,8 @@ _namespace: [KEGG](N-KEGG.html)_
 
 代谢途径功能关联分析
 
+
+
 ### Methods
 
 #### Analysis
@@ -18,8 +20,6 @@ KEGG.PathwayAssociationAnalysis.Analysis(Microsoft.VisualBasic.DocumentFormat.Cs
 |Parameter Name|Remarks|
 |--------------|-------|
 |Df|-|
-
-
 
 
 

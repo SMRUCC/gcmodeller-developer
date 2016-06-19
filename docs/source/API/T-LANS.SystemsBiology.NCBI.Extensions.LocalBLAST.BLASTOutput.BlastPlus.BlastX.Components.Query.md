@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlu
 
 
 
+
+
 ### Methods
 
 #### FilteringSegments
@@ -18,8 +20,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlus.BlastX.Comp
 |Parameter Name|Remarks|
 |--------------|-------|
 |p|0-1之间的数，用于表示长度的百分比|
-
-
 
 
 

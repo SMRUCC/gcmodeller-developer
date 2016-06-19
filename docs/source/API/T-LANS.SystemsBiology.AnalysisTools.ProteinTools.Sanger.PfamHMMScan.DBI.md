@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan](
 
 Retrieve hidden Markov model (HMM) profile from PFAM database
 
+
+
 ### Methods
 
 #### GetHMMprof
@@ -22,8 +24,6 @@ HMMStruct = gethmmprof(PFAMNumber) determines a protein family accession number 
 |PFAMNumber|
  Integer specifying a protein family number of an HMM profile record in the PFAM database. For example, 2 is the protein family number for the protein family 'PF00002'.
  |
-
-
 
 
 

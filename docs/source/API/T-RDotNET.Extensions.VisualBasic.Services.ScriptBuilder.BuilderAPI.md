@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.Services.ScriptBuilder](N-RDotNET.Ex
 
 Build script token
 
+
+
 ### Methods
 
 #### __getExpr
@@ -65,8 +67,6 @@ R.func(param="",...)
 |Parameter Name|Remarks|
 |--------------|-------|
 |token|-|
-
-
 
 
 

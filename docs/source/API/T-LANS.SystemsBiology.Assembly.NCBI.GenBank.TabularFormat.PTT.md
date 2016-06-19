@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat](N-LANS.Sys
 
 The brief information of a genome.(基因组的摘要信息)
 
+
+
 ### Methods
 
 #### ExistsLocusId
@@ -128,7 +130,6 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.PTT.TryGetGenesId(System
 
 
 
-
 ### Properties
 
 #### __innerHash
@@ -145,4 +146,3 @@ The number of gene product counts in this genome data: @"P:LANS.SystemsBiology.A
 The genome original sequence length.(基因组序列的长度)
 #### Title
 基因组的标题
-

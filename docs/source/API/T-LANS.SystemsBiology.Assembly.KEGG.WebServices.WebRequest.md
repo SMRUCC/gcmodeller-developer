@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.WebServices](N-LANS.SystemsBiolog
 
 KEGG web query request handler.(KEGG数据库web查询处理模块)
 
+
+
 ### Methods
 
 #### BatchQuery
@@ -117,9 +119,7 @@ Get an entry list from a keyword throught the KEGG database web request.{(specie
 _returns: 如果没有任何结果则返回一个空列表_
 
 
-
 ### Properties
 
 #### _16S_rRNA
 都定义在这个地方了。。。。
-

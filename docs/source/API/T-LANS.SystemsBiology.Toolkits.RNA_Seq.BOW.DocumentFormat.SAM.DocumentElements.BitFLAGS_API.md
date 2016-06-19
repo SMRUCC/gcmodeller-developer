@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.Documen
 
 
 
+
+
 ### Methods
 
 #### ComputeBitFLAGS
@@ -34,11 +36,9 @@ Bit Description
 
 
 
-
 ### Properties
 
 #### BitFLAG
 标记静态缓存
 #### Descriptions
 标记描述的静态缓存
-

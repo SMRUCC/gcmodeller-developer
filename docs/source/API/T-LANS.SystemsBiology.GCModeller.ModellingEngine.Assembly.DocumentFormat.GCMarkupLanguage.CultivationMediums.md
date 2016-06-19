@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### Uptake_Substrates
 培养基在计算机模型中的组成与代谢组一致，只不过在最开始的时候仅有用户所设定的一些代谢物有浓度值，则本属性提供了一个用于设置培养基初始组成的接口
-

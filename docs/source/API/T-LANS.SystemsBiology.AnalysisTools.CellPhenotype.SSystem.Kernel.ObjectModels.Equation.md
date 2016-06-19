@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Kernel.Obje
 
 
 
+
+
 ### Methods
 
 #### Evaluate
@@ -28,7 +30,6 @@ Set up the simulation kernel.
 
 
 
-
 ### Properties
 
 #### Expression
@@ -36,4 +37,3 @@ Set up the simulation kernel.
 #### Var
 The target that associated with this channel.
  (与本计算通道相关联的目标对象)
-

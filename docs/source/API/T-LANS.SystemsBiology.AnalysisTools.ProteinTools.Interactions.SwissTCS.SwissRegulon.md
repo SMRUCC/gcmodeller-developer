@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.SwissTC
 
 
 
+
+
 ### Methods
 
 #### Download
@@ -21,11 +23,9 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.SwissTCS.SwissRegulo
 
 
 
-
 ### Properties
 
 #### SCORE
 {0} [kinase][receiver] 
  {1} gene_id
  {2} speciesId
-

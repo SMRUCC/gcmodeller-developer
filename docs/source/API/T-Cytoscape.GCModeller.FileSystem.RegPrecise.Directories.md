@@ -9,10 +9,10 @@ _namespace: [Cytoscape.GCModeller.FileSystem.RegPrecise](N-Cytoscape.GCModeller.
 
 
 
+
 ### Properties
 
 #### Motif_PWM
 Directory of /Regprecise/MEME/Motif_PWM/
 #### RegPreciseRegulations
 @"M:Cytoscape.GCModeller.FileSystem.FileSystem.GetRepositoryRoot" & "/Regprecise/RegPrecise.Xml"
-

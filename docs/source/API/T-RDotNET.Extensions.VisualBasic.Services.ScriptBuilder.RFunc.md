@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.Services.ScriptBuilder](N-RDotNET.Ex
 
 Declaring a R function entry point.
 
+
+
 ### Methods
 
 #### #ctor
@@ -18,8 +20,6 @@ Declaring a R function entry point.
 |Parameter Name|Remarks|
 |--------------|-------|
 |name|-|
-
-
 
 
 

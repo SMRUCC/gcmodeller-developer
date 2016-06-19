@@ -9,6 +9,7 @@ _namespace: [gcc.Settings](N-gcc.Settings.html)_
 
 
 
+
 ### Properties
 
 #### BlastBin
@@ -24,4 +25,3 @@ The R program install location on your computer. This property value is the dire
 The root directory for stores the GCModeller database such as fasta sequence for annotation.
 #### ShoalShell
 有一些时候需要进行批量计算的时候，可能会在程序的内部释放出脚本重新调用Shoal进行计算
-

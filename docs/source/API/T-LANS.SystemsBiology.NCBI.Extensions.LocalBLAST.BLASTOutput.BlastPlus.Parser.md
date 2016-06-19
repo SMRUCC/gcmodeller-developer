@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlu
 
 
 
+
+
 ### Methods
 
 #### __fileSizeTooLarge
@@ -109,9 +111,7 @@ Dealing with the file size large than 2GB.(当Blast日志文件的大小大于10
 
 
 
-
 ### Properties
 
 #### CHUNK_SIZE
 It seems 768MB possibly is the up bound of the Utf8.GetString function.
-

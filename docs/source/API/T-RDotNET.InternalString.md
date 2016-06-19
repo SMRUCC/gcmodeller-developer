@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 Internal string.
 
+
+
 ### Methods
 
 #### #ctor
@@ -48,7 +50,5 @@ RDotNET.InternalString.ToString
 Gets the string representation of the string object.
  This returns "NA" if the value is NA, whereas @"M:RDotNET.InternalString.GetInternalValue" returns null.
 _returns: The string representation._
-
-
 
 

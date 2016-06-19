@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW](N-LANS.SystemsBiology.Too
 
 
 
+
+
 ### Methods
 
 #### AssemblingForward
@@ -31,8 +33,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Contig.AssemblingReversed(Microsoft.Vis
 |Parameter Name|Remarks|
 |--------------|-------|
 |Reads|位置从大到小的|
-
-
 
 
 

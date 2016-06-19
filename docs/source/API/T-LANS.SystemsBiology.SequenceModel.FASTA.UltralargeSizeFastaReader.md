@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.FASTA](N-LANS.SystemsBiology.Sequ
 
 超大的FASTA文件的读取工具
 
+
+
 ### Methods
 
 #### FastSplit
@@ -25,9 +27,7 @@ LANS.SystemsBiology.SequenceModel.FASTA.UltralargeSizeFastaReader.FastSplit(Syst
 
 
 
-
 ### Properties
 
 #### Item
 速度比较慢
-

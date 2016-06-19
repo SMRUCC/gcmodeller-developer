@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.ComponentModel.Loci.Abstract](N-LANS.SystemsBio
 
 
 
+
 ### Properties
 
 #### Left
 Left position of the loci site on sequence.
-

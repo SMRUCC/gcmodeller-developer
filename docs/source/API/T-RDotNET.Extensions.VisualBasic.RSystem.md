@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic](N-RDotNET.Extensions.VisualBasic.ht
 
 R Engine extensions.(似乎对于RDotNet而言，在一个应用程序的实例进程之中仅允许一个REngine的实例存在，所以在这里就统一的使用一个公共的REngine的实例对象)
 
+
+
 ### Methods
 
 #### #cctor
@@ -133,11 +135,9 @@ Manual set up R init environment.
 
 
 
-
 ### Properties
 
 #### RColors
 枚举R中所有的颜色代码
 #### RServer
 The default R Engine server.
-

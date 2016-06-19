@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 模糊相等的
 
+
+
 ### Methods
 
 #### __haveMirror
@@ -35,8 +37,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.S
 |Sequence|-|
 |maxDist|两个片段之间的最大的距离|
 |cut|-|
-
-
 
 
 

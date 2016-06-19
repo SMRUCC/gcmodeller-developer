@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Mo
 
 
 
+
+
 ### Methods
 
 #### GetExpressions
@@ -40,8 +42,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.Patterns.
 |Parameter Name|Remarks|
 |--------------|-------|
 |pattern|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.SBML.FLuxBalanceModel](N-LANS.SystemsB
 
 
 
+
+
 ### Methods
 
 #### GetStoichiometry
@@ -24,7 +26,6 @@ Query in this reaction object that the specific metabolite is exists in this rea
 
 
 
-
 ### Properties
 
 #### LOWER_BOUND
@@ -33,4 +34,3 @@ The lower bound of the flux in this reaction object.
 #### UPPER_BOUND
 The upper bound of the flux in this reaction object.
  (本生化反应对象的最大流量值)
-

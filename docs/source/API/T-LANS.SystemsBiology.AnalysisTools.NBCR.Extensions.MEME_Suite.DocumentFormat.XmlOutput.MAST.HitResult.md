@@ -9,8 +9,8 @@ gap, while superfluous, makes creating motif diagrams for the text version much 
 
 
 
+
 ### Properties
 
 #### gap
 gap, while superfluous, makes creating motif diagrams for the text version much easier when using XSLT
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Mo
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.Patterns.
 |Parameter Name|Remarks|
 |--------------|-------|
 |s|-|
-
-
 
 
 

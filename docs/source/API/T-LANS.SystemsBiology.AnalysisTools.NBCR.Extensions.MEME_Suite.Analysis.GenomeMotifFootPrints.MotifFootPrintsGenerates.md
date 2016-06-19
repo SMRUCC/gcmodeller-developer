@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 这里所定义的所有对象都是和数据解析无关了，都是用于进行数据存储的对象类型
 
+
+
 ### Methods
 
 #### __checkMoitfCoRegulations
@@ -195,7 +197,5 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.GenomeMoti
 > 
 >  对于所有基因调控关系对，都假设为0.85，根据Regprecise数据库之中所记录的Effect来猜测可能的符号
 >  
-
-
 
 

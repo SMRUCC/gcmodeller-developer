@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART](N-LANS.System
 
 
 
+
+
 ### Methods
 
 #### GetDomainDescription
@@ -21,11 +23,9 @@ Pfam数据库可能会和CDD之中的Pfam数据库的版本不一致，故而可
 
 
 
-
 ### Properties
 
 #### FONT_MICROSOFT_YAHEI
 默認的字體
 #### RULE_HEIGHT
 標尺綫的垂直位置
-

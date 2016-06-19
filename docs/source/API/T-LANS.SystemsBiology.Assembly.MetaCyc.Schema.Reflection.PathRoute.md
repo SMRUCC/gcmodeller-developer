@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.Schema.Reflection](N-LANS.Syst
 
 寻找MetaCyc数据库之中的任意两个对象之间的连接关系
 
+
+
 ### Methods
 
 #### #ctor
@@ -34,7 +36,5 @@ LANS.SystemsBiology.Assembly.MetaCyc.Schema.Reflection.PathRoute.GetPath(System.
 > 
 >  程序会首先尝试查找A-->B的最短路线，假若没有查找到，则会尝试查找B-->A的最短路线
 >  
-
-
 
 

@@ -7,6 +7,14 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Model
 
 Model builder for rFBA(FBA system with gene expression regulation) metabolism system
 
+> 
+>  关于上下限：
+>  非酶促过程使用sbml文件里面的默认参数
+>  拥有基因的酶促反应过程则根据调控因子的数量来计算出相应的上下限
+>  假若调控因子或者酶分子被缺失，则使用@"P:LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Models.rFBA.rFBA_ARGVS.baseFactor"本底表达或者酶促过程最低的速率来进行
+>  
+
+
 ### Methods
 
 #### __calFactor
@@ -58,7 +66,6 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Models.rFBA.rFBAMe
 
 
 
-
 ### Properties
 
 #### __regulations
@@ -70,4 +77,3 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Models.rFBA.rFBAMe
  1 正常表达
  0-1 低表达
  >1 高表达
-

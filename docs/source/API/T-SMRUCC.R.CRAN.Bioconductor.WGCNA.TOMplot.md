@@ -9,6 +9,7 @@ Graphical representation of the Topological Overlap Matrix using a heatmap plot 
 
 
 
+
 ### Properties
 
 #### Colors
@@ -24,4 +25,3 @@ logical: should layout be set? If TRUE, standard layout for one plot will be use
  If FALSE, the user is responsible for setting the correct layout.
 #### terrainColors
 logical: should terrain colors be used?
-

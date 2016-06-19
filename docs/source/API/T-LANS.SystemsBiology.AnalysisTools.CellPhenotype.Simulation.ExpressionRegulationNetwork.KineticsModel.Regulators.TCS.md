@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.Expressi
 
 
 
+
 ### Properties
 
 #### CrossTalkEffect
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.Expressi
 Key部分的值为HisK，Value为CrossTalk的计算得分，同源的TCS部件之家的CrossTalk的得分为1，CrossTalk的运算为加法运算
 #### RegulationFunctional
 计算原理与OCS的一致
-

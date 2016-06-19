@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.Assembly.SBML.Level2.Elements](N-LANS.SystemsBi
 
 
 
+
 ### Properties
 
 #### species
 Unique-Id for the metabolite.(目标参加本反应的代谢物对象的Unique-ID属性)
 #### stoichiometry
 (化学计量数)
-

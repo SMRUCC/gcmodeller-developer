@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools](N-LANS.SystemsBiolo
 
 
 
+
+
 ### Methods
 
 #### MergeHtseq
@@ -18,8 +20,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools.TSSsIdentification.MergeHtseq(Sys
 |Parameter Name|Remarks|
 |--------------|-------|
 |Files|-|
-
-
 
 
 

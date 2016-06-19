@@ -7,6 +7,8 @@ _namespace: [RDotNET.Graphics](N-RDotNET.Graphics.html)_
 
 32-bit color of ABGR model.
 
+
+
 ### Methods
 
 #### FromArgb
@@ -51,7 +53,6 @@ Gets a color from 32-bit value.
 _returns: The color._
 
 
-
 ### Properties
 
 #### Alpha
@@ -66,4 +67,3 @@ Gets whether the point is transparent.
 Gets the opaque value.
 #### Red
 Gets and sets the red value.
-

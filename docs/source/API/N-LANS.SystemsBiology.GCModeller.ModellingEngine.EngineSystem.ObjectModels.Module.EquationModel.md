@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.EquationModel
-date: 6/16/2016 4:57:00 AM
+date: 6/19/2016 11:14:50 AM
 ---
 
 [CompoundSpecieReference](T-LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.EquationModel.CompoundSpecieReference.html)

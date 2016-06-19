@@ -9,6 +9,7 @@ Motif data from the text format output file of the meme program.
 
 
 
+
 ### Properties
 
 #### Mcs
@@ -23,4 +24,3 @@ Simplified pos.-specific probability matrix
 产生这个Motif的序列的集合
 #### uid
 进行一些绘图操作的时候可能需要使用到这个属性，一般情况之下这个属性只是用作于一些用户的自定义数据，不太重要
-

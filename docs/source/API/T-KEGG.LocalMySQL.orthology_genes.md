@@ -26,8 +26,8 @@ _namespace: [KEGG.LocalMySQL](N-KEGG.LocalMySQL.html)_
 
 
 
+
 ### Properties
 
 #### sp_code
 The bacterial genome name brief code in KEGG database
-

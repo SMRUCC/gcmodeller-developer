@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.VennDiagramTool
 
 
 
+
+
 ### Methods
 
 #### DrawFile
@@ -19,8 +21,6 @@ Supports directly run Venn Xml model or csv dataset raw data
 |--------------|-------|
 |path|-|
 |args|null|
-
-
 
 
 

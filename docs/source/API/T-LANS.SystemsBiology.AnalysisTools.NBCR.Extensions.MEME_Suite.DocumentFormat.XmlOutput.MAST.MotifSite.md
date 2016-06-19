@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 
 
+
 ### Properties
 
 #### num
 num is simply the loading order of the motif, it's superfluous but makes things easier for XSLT
-

@@ -9,6 +9,7 @@ The genome partitional data.(基因组分区数据)
 
 
 
+
 ### Properties
 
 #### LociLeft
@@ -19,4 +20,3 @@ The genome partitional data.(基因组分区数据)
 当前的功能分区的标签信息
 #### SequenceData
 当前的基因组分区之中的基因序列
-

@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### Lamda
 降解系数，必须为0-1之间的数字，数字越小，降解越快
-

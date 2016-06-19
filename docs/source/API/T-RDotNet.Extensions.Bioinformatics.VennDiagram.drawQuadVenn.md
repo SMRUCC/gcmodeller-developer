@@ -7,6 +7,20 @@ _namespace: [RDotNet.Extensions.Bioinformatics.VennDiagram](N-RDotNet.Extensions
 
 Creates a Venn diagram with four sets.
 
+> 
+>  The function defaults to placing the ellipses so that area1 corresponds to lower left,
+>  area2 corresponds to lower right, area3 corresponds to middle left and area4 corresponds
+>  to middle right. Refer to the example below to see how the 31 partial areas are ordered.
+>  Arguments with length of 15 (label.col, cex, fontface, fontfamily) will follow the order
+>  in the example.
+> 
+>  Value
+> 
+>  Returns an Object Of Class gList containing the grid objects that make up the diagram.
+>  Also displays the diagram In a graphical device unless specified With ind = False.
+>  Grid:grid.draw can be used to draw the gList object in a graphical device.
+>  
+
 
 
 ### Properties
@@ -98,4 +112,3 @@ A vector (length 2) indicating (x,y) of the rotation centre
 Number of degrees to rotate the entire diagram
 #### sigdigs
 If one of the elements in print.mode is 'percent', then this is how many significant digits will be kept
-

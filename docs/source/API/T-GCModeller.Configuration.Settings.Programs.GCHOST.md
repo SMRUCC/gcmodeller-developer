@@ -9,8 +9,8 @@ _namespace: [GCModeller.Configuration.Settings.Programs](N-GCModeller.Configurat
 
 
 
+
 ### Properties
 
 #### SDK
-
 

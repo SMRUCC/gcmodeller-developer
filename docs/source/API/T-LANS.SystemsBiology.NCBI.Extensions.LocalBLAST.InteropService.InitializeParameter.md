@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService](N-LA
 
 对本地BLAST外部命令的初始化参数
 
+
+
 ### Methods
 
 #### #ctor
@@ -22,11 +24,9 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService.InitializeParamete
 
 
 
-
 ### Properties
 
 #### BlastBin
 BLAST程序的可执行文件的存放的文件夹
 #### Program
 BLAST程序的类型
-

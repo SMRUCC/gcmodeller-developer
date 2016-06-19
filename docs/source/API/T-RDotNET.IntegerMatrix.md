@@ -7,6 +7,11 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A matrix of integers from -2^31 + 1 to 2^31 - 1.
 
+> 
+>  The minimum value of IntegerVector is different from that of System.Int32 in .NET Framework.
+>  
+
+
 ### Methods
 
 #### #ctor
@@ -40,11 +45,9 @@ Initializes this R matrix, using the values in a rectangular array.
 
 
 
-
 ### Properties
 
 #### DataSize
 Gets the size of an integer in byte.
 #### Item
 Gets or sets the element at the specified index.
-

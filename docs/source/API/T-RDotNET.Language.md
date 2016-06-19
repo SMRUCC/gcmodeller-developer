@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A language object.
 
+
+
 ### Methods
 
 #### #ctor
@@ -22,9 +24,7 @@ Creates a language object.
 
 
 
-
 ### Properties
 
 #### FunctionCall
 Gets function calls.
-

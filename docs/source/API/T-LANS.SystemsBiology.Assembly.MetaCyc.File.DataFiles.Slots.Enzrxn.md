@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots](N-LANS.S
 
 
 
+
 ### Properties
 
 #### Enzyme
@@ -49,4 +50,3 @@ The values of this slot are members of the [Regulation] class, describing activa
 Some enzymes catalyze only a particular reaction when they are components of a larger 
  protein complex. For such an enzyme, this slot identifies the particular protein complex 
  of which the enzyme must be a component.
-

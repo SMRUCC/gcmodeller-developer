@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 
 
+
 ### Properties
 
 #### InteractionType
 节点之间互作的类型
 #### Title
 网络模型的名称
-

@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.Repository](N-LANS.SystemsBiology.Repository.ht
 
 
 
+
 ### Properties
 
 #### AccId
 locus_tag, 索引文件的表主键
 #### DIR
 DIR name
-

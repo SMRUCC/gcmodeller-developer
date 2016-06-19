@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Organism](N-LANS
 
 
 
+
+
 ### Methods
 
 #### GetKEGGSpeciesCode
@@ -45,9 +47,7 @@ Gets the organism value from the KEGG database through the brief code,
 
 
 
-
 ### Properties
 
 #### __spHash
 {brief_sp, @"T:LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Organism.Organism"}
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### AddEntry
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 |Parameter Name|Remarks|
 |--------------|-------|
 |item|-|
-
-
 
 
 

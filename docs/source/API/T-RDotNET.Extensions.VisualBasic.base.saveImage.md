@@ -9,6 +9,7 @@ save.image() is just a short-cut for ‘save my current workspace’, i.e., save
 
 
 
+
 ### Properties
 
 #### ascii
@@ -24,4 +25,3 @@ logical. If TRUE, a temporary file is used for creating the saved workspace. The
  This preserves an existing workspace file if the save fails, but at the cost of using extra disk space during the save.
 #### version
 the workspace format version to use. NULL specifies the current default format. The version used from R 0.99.0 to R 1.3.1 was version 1. The default format as from R 1.4.0 is version 2.
-

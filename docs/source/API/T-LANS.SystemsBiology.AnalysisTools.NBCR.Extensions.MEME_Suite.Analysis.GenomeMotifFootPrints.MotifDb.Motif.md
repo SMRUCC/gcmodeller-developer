@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 
 
+
 ### Properties
 
 #### MotifId
 [Motif].[MotifId]，当前的这个属性值可以唯一的标识一个Motif对象
 #### Signature
 这个Motif的序列特征，使用一个正则表达式来表示
-

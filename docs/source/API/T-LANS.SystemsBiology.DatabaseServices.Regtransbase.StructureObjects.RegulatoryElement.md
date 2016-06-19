@@ -13,6 +13,7 @@ Regulatory elements
 
 
 
+
 ### Properties
 
 #### ArticleGuid
@@ -31,4 +32,3 @@ fl_real_name - boolean, determine whether name is "real" (i.e. does it belong to
 name - regulatory element name
 #### PackageGuid
 pkg_guid - determine package (link to packages)
-

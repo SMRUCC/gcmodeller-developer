@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Regulon](N-LANS.SystemsBiology
 
 
 
+
 ### Properties
 
 #### InteractorA
 通常为Regulator
 #### InteractorB
 通常为目标调控对象
-

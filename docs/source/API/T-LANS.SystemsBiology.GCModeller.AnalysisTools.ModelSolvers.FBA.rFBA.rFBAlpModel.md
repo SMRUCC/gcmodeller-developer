@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.rFBA]
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -40,11 +42,9 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.rFBA.rFBAlpModel.g
 网络结构不会有变化
 
 
-
 ### Properties
 
 #### FluxConstraints
 {GeneId, {Reversible, UpperBound}}()，与Columns中的元素的位置一致，并且假设上限和下限在可逆反应中是一致的
 #### MAT_S
 S matrix in FBA model.(FBA模型中的S矩阵)
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### ScanRaw
@@ -29,8 +31,6 @@ Scan snp sites from the given fasta sequence file.
 |Parameter Name|Remarks|
 |--------------|-------|
 |nt|序列必须都是已经经过clustal对齐了的，并且拥有FileName属性值|
-
-
 
 
 

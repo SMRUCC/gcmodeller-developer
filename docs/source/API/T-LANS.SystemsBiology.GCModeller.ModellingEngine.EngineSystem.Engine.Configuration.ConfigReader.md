@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine.
 
 
 
+
 ### Properties
 
-#### RootDir
+#### RootDIR
 The directory of this configuration data file.(配置数据文件所在的路径文件夹)
-

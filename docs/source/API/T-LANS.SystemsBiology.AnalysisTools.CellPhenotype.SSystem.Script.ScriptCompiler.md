@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Script](N-L
 
 Modeling script compiler
 
+
+
 ### Methods
 
 #### #ctor
@@ -43,8 +45,6 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Script.ScriptCompiler.Co
  警告，假若不为真，则程序会抛出一个错误并退出整个编译过程。请注意，即使本参数为真，当遭遇重大错误程序无法
  处理的时候，整个编译过程还是会被意外终止的。)
  |
-
-
 
 
 

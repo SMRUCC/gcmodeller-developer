@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### Culture
@@ -65,4 +66,3 @@ pfsnet.computegenelist<-function(w,beta){
 # within.m [rest of string was truncated]";.
 #### ResourceManager
 Returns the cached ResourceManager instance used by this class.
-

@@ -9,8 +9,8 @@ Abstract model for a residue site in a motif sequence fragment.
 
 
 
+
 ### Properties
 
 #### Bits
 The information of this site can give us.
-

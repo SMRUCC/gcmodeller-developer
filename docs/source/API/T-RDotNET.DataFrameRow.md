@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A data frame row.
 
+
+
 ### Methods
 
 #### #ctor
@@ -77,7 +79,6 @@ Try to set a member to a specified value
 _returns: false if setting failed_
 
 
-
 ### Properties
 
 #### DataFrame
@@ -86,4 +87,3 @@ Gets the data frame containing this row.
 Gets and sets the value at the specified column.
 #### RowIndex
 Gets the index of this row.
-

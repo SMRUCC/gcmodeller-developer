@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.WebServices.NCBI](N-LANS.Syste
 
 
 
+
 ### Properties
 
 #### eScoreType_FeatureOpt3D
@@ -16,5 +17,4 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.WebServices.NCBI](N-LANS.Syste
 #### eScoreType_ShapeOpt3D
 
 #### eScoreType_Sim2DSubs
-
 

@@ -1,6 +1,6 @@
 ﻿---
 title: gcc.My.Resources
-date: 6/16/2016 4:56:55 AM
+date: 6/19/2016 11:14:44 AM
 ---
 
 [Resources](T-gcc.My.Resources.Resources.html)

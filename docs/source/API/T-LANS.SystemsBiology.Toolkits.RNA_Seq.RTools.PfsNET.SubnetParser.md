@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET](N-LANS.SystemsB
 
 
 
+
+
 ### Methods
 
 #### TryParse
@@ -20,7 +22,5 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.SubnetParser.TryParse(System.
 |TextLines|对于一次PFSNet的计算结果输出而言，其仅有两个元素，分别表示两种表型的数据|
 
 _returns: 分别返回表型1和表型2的计算结果数据_
-
-
 
 

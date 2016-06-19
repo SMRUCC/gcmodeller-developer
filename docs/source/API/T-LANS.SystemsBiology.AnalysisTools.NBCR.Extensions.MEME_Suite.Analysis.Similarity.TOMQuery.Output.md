@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 
 
+
 ### Properties
 
 #### Coverage
@@ -22,4 +23,3 @@ The directions pointing to the cells that
 Dynmaic programming matrix.(也可以看作为得分矩阵)
 #### lev
 lev%
-

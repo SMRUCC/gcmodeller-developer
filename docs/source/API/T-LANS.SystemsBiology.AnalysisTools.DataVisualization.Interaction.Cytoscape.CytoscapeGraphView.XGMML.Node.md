@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 
 
+
 ### Properties
 
 #### id
 当前的这个节点在整个网络的节点列表之中的位置
-

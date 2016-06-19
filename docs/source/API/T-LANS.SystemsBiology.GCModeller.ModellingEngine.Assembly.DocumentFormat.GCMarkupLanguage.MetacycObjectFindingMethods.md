@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 An extension method collection of the metacyc object query for the model compiling processing.
  (对MetaCyc数据库中的目标对象的查找扩展方法的集合)
 
+
+
 ### Methods
 
 #### GetHandles
@@ -68,8 +70,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupL
 |--------------|-------|
 |Object|-|
 |Table|-|
-
-
 
 
 

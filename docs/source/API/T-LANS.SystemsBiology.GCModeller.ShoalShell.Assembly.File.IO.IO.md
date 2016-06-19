@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO](N-LANS.
 
 This namespace module contains the various biological database I/O (reads and write) operations.
 
+
+
 ### Methods
 
 #### MergeFasta
@@ -41,8 +43,6 @@ LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO.IO.TrimNull(LANS.Syst
 |Parameter Name|Remarks|
 |--------------|-------|
 |FASTA|-|
-
-
 
 
 

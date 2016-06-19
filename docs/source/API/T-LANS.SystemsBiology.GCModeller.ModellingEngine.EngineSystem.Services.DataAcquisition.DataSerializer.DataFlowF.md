@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Service
 
 (数据包中的一个数据点：表示为一个节点处的流量值或者该节点大小)
 
+
+
 ### Methods
 
 #### ToCsvRow
@@ -14,7 +16,6 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Service
 LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Services.DataAcquisition.DataSerializer.DataFlowF.ToCsvRow
 ```
 将本记录中的数据转换为Csv数据表文件中的一行数据 [Id, Time, Handle, Value]
-
 
 
 ### Properties
@@ -33,4 +34,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Services.DataAcquisi
 当前的迭代次数
 #### Value
 模拟计算所产生的值
-

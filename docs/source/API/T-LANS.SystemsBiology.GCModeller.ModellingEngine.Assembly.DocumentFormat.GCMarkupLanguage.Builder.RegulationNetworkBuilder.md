@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### BuildRegulationNetwork
@@ -24,8 +26,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupL
 |Parameter Name|Remarks|
 |--------------|-------|
 |Regulation|-|
-
-
 
 
 

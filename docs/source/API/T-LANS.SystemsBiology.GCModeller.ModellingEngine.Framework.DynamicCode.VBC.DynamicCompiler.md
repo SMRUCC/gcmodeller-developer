@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Framework.DynamicCod
 
 编译整个LINQ语句的动态代码编译器
 
+
+
 ### Methods
 
 #### #ctor
@@ -68,9 +70,7 @@ Generate the source code from the CodeDOM object model.(根据对象模型生成
 >  
 
 
-
 ### Properties
 
 #### DotNETReferenceAssembliesDir
-
 

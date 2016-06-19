@@ -7,11 +7,13 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF](N-LANS.SystemsBiolo
 
 NCBI GenBank database file.(NCBI GenBank数据库文件)
 
+
+
 ### Methods
 
 #### Internal_readBlock
 ```csharp
-LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.File.Internal_readBlock(System.String,LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.File)
+LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.File.Internal_readBlock(System.String,System.String[]@)
 ```
 快速读取数据库文件中的某一个字段的文本块
 
@@ -67,7 +69,6 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.File.Read(System.String)
 
 
 
-
 ### Properties
 
 #### Accession
@@ -84,4 +85,3 @@ This GenBank data is the WGS(Whole genome shotgun) type data.
 The brief entry information of this genbank data.
 #### SourceFeature
 Gets the original source brief entry information of this genome.(获取这个基因组的摘要信息)
-

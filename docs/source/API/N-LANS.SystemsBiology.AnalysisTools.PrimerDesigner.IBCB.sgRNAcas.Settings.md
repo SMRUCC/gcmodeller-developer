@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.PrimerDesigner.IBCB.sgRNAcas.Settings
-date: 6/16/2016 4:56:55 AM
+date: 6/19/2016 11:14:45 AM
 ---
 
 [File](T-LANS.SystemsBiology.AnalysisTools.PrimerDesigner.IBCB.sgRNAcas.Settings.File.html)

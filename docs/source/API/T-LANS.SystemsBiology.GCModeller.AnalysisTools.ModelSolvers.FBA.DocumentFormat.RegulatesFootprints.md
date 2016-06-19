@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Docum
 
 简单描述调控位点和调控因子之间的关系以及该位点在基因组上面的位置
 
+
+
 ### Methods
 
 #### TraceUid
@@ -29,7 +31,6 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.DocumentFormat.Reg
 |Parameter Name|Remarks|
 |--------------|-------|
 |x|-|
-
 
 
 
@@ -57,4 +58,3 @@ Trace.Regulator.(调控因子的匹配来源)
 自定义的一个标签数据
 #### Type
 A
-

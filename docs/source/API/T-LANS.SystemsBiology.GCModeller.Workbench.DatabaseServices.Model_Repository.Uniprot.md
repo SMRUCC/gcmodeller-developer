@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Rep
 
 
 
+
 ### Properties
 
 #### GeneName
 GeneName(基因名称)
-

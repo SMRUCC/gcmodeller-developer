@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.Settings
 
 
 
+
 ### Properties
 
 #### CDD
 CDD数据库的数据文件夹的路径
-

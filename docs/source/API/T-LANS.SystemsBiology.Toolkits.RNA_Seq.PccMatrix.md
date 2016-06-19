@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq](N-LANS.SystemsBiology.Toolkit
 Pearson correlation coefficient calculator.
  (因为为了查找字典方便，所以里面的所有的编号都已经被转换为大写形式了，在查找的时候应该要注意)
 
+
+
 ### Methods
 
 #### GetValue
@@ -24,7 +26,6 @@ Get the pcc value between the specified two gene object.(获取任意两个基�
 
 
 
-
 ### Properties
 
 #### _pccValues
@@ -33,4 +34,3 @@ Get the pcc value between the specified two gene object.(获取任意两个基�
 顺序是与@"F:LANS.SystemsBiology.Toolkits.RNA_Seq.PccMatrix._pccValues"之中的对象是一一对应的
 #### PCC_SPCC_MixedType
 当前的这个矩阵对象是否为皮尔森系数和斯皮尔曼相关性系数的混合矩阵？
-

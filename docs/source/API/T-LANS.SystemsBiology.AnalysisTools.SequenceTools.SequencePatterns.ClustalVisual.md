@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns](N
 Visualization for the result of Clustal multiple sequence alignment.
  (多序列比对的结果可视化)
 
+
+
 ### Methods
 
 #### InvokeDrawing
@@ -22,11 +24,9 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.ClustalVisual.I
 
 
 
-
 ### Properties
 
 #### __colours
 Colors profile for the residues.
 #### DotSize
 一个点默认占据10个像素
-

@@ -9,6 +9,8 @@ Each frame in the class Genes describes a single gene, meaning a region of DNA t
  coding region for one or more gene products. Multiple gene products may be produced because 
  of modification of an RNA or protein.
 
+
+
 ### Methods
 
 #### GetAllGeneIds
@@ -22,7 +24,5 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Genes.GetAllGeneIds
 LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Genes.TryParsePromoters(LANS.SystemsBiology.SequenceModel.FASTA.FastaToken)
 ```
 尝试着取出所有的基因对象的启动子序列，结果不是很准确，请慎用！！！
-
-
 
 

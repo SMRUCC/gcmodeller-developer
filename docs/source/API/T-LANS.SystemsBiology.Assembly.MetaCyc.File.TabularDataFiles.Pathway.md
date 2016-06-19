@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.TabularDataFiles](N-LANS.
 
 
 
+
 ### Properties
 
 #### DisplayingName
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.TabularDataFiles](N-LANS.
 与其他的数据库的对象连接关系
 #### UniqueId
 这个途径对象在PGDB数据库中的唯一标识符
-

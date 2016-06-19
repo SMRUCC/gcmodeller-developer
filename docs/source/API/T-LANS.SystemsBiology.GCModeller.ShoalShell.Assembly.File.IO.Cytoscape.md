@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO](N-LANS.
 
 
 
+
+
 ### Methods
 
 #### BuildEdges
@@ -31,8 +33,6 @@ LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO.Cytoscape.ExportVirtu
 |--------------|-------|
 |VirtualFootprints|-|
 |PfsNET|不设置被参数的时候默认导出整个网络|
-
-
 
 
 

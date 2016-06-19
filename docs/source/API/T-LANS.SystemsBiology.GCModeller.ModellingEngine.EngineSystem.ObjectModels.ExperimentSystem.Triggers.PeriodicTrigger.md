@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
 ### Properties
 
 #### ComparedValue
 将要进行比较的设定值，在构造函数中初始化之后就不能够再进行修改
 #### GetTargetValue
 获取目标对象的值的方法
-

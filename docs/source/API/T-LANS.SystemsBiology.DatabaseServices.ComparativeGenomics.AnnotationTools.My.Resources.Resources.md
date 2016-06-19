@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### Culture
@@ -21,4 +22,3 @@ Call _init()
 Call MEME.Invoke_Batch {Source}, {Export}, 0.001, 100, zoops, -dna.
 #### ResourceManager
 Returns the cached ResourceManager instance used by this class.
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.Entrez](N-LANS.SystemsBiology.Ass
 
 http://www.ncbi.nlm.nih.gov/nuccore/?term=
 
+
+
 ### Methods
 
 #### __startQuery
@@ -21,9 +23,7 @@ LANS.SystemsBiology.Assembly.NCBI.Entrez.QueryHandler.__startQuery(System.String
 
 
 
-
 ### Properties
 
 #### _currentURL
 当前页面文件的URL
-

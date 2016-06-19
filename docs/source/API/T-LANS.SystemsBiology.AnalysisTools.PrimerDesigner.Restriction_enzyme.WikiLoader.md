@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.PrimerDesigner.Restriction_enzyme
 
 Parser for wikipadia
 
+
+
 ### Methods
 
 #### FromWiki
@@ -24,8 +26,6 @@ Loads the enzyme data source from the offline wiki page directory
 |Parameter Name|Remarks|
 |--------------|-------|
 |DIR|-|
-
-
 
 
 

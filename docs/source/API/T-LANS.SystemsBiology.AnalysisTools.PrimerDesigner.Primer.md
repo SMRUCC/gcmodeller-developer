@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.PrimerDesigner](N-LANS.SystemsBio
 
 
 
+
 ### Properties
 
 #### Alpha
@@ -17,4 +18,3 @@ Fe - Fs
 Rs - Fe
 #### Gamma
 Re - Rs
-

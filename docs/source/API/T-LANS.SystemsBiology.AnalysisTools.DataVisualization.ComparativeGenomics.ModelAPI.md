@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeGeno
 
 
 
+
+
 ### Methods
 
 #### __COGsColor``1
@@ -34,8 +36,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeGenomics.ModelAPI
 |title|-|
 |COGsColor|-|
 |__getId|Public Delegate Function GetDrawingID(Gene As @"T:LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.ComponentModels.GeneBrief") As @"T:System.String"|
-
-
 
 
 

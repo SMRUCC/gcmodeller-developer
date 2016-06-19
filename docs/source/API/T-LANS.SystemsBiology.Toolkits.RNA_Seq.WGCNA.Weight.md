@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.WGCNA](N-LANS.SystemsBiology.T
 
 CytoscapeEdges
 
+
+
 ### Methods
 
 #### GetOpposite
@@ -18,8 +20,6 @@ Gets the opposite gene in this interaction relationship
 |Parameter Name|Remarks|
 |--------------|-------|
 |Regulator|-|
-
-
 
 
 

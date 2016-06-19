@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry](N-LANS.Systems
 
 The brief entry information for the pathway objects in the KEGG database.(KEGG数据库之中的代谢途径对象的入口点信息)
 
+
+
 ### Methods
 
 #### LoadData
@@ -27,7 +29,6 @@ LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry.Pathway.LoadFromResource
 从程序的自身的资源文件之中加载数据
 
 
-
 ### Properties
 
 #### Category
@@ -36,4 +37,3 @@ B
 A
 #### Entry
 C
-

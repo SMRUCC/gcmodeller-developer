@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic](N-RDotNET.Extensions.VisualBasic.ht
 
 
 
+
+
 ### Methods
 
 #### StartEngineServices
@@ -18,8 +20,6 @@ Manual setup the R system path.(这个函数是在没有自动设置好环境变
 |Parameter Name|Remarks|
 |--------------|-------|
 |R_HOME|-|
-
-
 
 
 

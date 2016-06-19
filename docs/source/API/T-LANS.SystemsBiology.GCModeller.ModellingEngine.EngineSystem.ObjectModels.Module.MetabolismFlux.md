@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 Metaolism reaction basetype in GCModeller ObjectModels.(GCModeller计算引擎之中的代谢反应对象模型类型的基类)
 
+
+
 ### Methods
 
 #### GetCoefficient
@@ -38,9 +40,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.
 执行一次反应
 
 
-
 ### Properties
 
 #### _Metabolites
 使用Reactants字段域与Products字段域所生成的属性，表示为本代谢流对象中所涉及到的所有的代谢底物的集合
-

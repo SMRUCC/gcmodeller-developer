@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.GeneOntology.NCBI](N-LANS.SystemsBiolo
 
 #Format: tax_id GeneID GO_ID Evidence Qualifier GO_term PubMed Category (tab is used as a separator, pound sign - start of a comment)
 
+
+
 ### Methods
 
 #### LoadDoc
@@ -18,8 +20,6 @@ Load ncbi gene2go.txt document
 |Parameter Name|Remarks|
 |--------------|-------|
 |path|The doc path|
-
-
 
 
 

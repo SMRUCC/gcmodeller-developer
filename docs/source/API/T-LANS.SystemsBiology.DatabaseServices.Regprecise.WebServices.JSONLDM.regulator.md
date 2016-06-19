@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM
 
 
 
+
 ### Properties
 
 #### locusTag
@@ -21,4 +22,3 @@ family of a regulator
 identifier of regulon to which a regulator belongs to
 #### vimssId
 identifier of regulator gene in MicrobesOnline database
-

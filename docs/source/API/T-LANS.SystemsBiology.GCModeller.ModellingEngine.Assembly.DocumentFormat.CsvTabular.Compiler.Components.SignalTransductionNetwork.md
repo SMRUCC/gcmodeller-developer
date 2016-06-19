@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### _compile_OCS_RULE
@@ -15,7 +17,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 ```
 
 > 效应物的编号在左端的第二个，在这里是将MetaCyc和KEGG的代谢物进行合并的，首先会查找出MetaCyc的编号，然后在Mapping之中查找，假若存在KEGGcompound，则使用UniqueId，否则只是用MetaCycID
-
 
 
 ### Properties
@@ -28,4 +29,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 PF01339
 #### PFAM_CHER
 PF01739, PF03705
-

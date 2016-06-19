@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phy
 
 在做motif的分布密度的时候，将每一种类型的motif看作为一个等位基因
 
+
+
 ### Methods
 
 #### GenerateDocument
@@ -39,7 +41,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.MatrixFil
 
 
 
-
 ### Properties
 
 #### NumberOfAlleles
@@ -49,4 +50,3 @@ There then follows a line which gives the numbers of alleles at each locus, in o
 motif的数目
 #### SpeciesCount
 基因组的数目
-

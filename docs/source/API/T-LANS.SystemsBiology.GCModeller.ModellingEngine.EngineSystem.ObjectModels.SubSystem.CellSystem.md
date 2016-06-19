@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
+
 ### Methods
 
 #### Initialize
@@ -14,7 +16,6 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSystem.CellSystem.Initialize
 ```
 先加载系统模块在进行系统的初始化操作
-
 
 
 ### Properties
@@ -25,4 +26,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSyst
  2. RNA分子和多肽链分子的数量总和小于1
 #### DataModel
 本细胞对象的数据模型
-

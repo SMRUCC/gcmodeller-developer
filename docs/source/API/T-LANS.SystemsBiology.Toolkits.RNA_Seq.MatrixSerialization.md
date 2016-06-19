@@ -7,6 +7,9 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq](N-LANS.SystemsBiology.Toolkit
 
 对PCC矩阵进行快速的二进制序列化
 
+> 由于是一个二维的矩阵，坐标之间有着一一对应的顺序关系，所以这里不可以使用并行化拓展
+
+
 ### Methods
 
 #### Load
@@ -29,8 +32,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.MatrixSerialization.Serialize(LANS.SystemsB
 |Parameter Name|Remarks|
 |--------------|-------|
 |sample|-|
-
-
 
 
 

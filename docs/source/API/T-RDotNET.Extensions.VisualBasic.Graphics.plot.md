@@ -9,6 +9,10 @@ Generic function for plotting of R objects. For more details about the graphical
  For simple scatter plots, plot.default will be used. 
  However, there are plot methods for many R objects, including functions, data.frames, density objects, etc. Use methods(plot) And the documentation for these.
 
+> 
+>  The two step types differ in their x-y preference: Going from (x1,y1) to (x2,y2) with x1 < x2, type = "s" moves first horizontal, then vertical, whereas type = "S" moves the other way around.
+>  
+
 
 
 ### Properties
@@ -42,4 +46,3 @@ A title For the x axis: see title.
 the y coordinates Of points In the plot, Optional If x Is an appropriate Structure.
 #### ylab
 A title For the y axis: see title.
-

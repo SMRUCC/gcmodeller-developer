@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.grDevices](N-RDotNET.Extensions.Visu
 
 
 
+
+
 ### Methods
 
 #### Plot
@@ -21,7 +23,6 @@ RDotNET.Extensions.VisualBasic.grDevices.grDevice.Plot(System.Func{System.String
 
 
 
-
 ### Properties
 
 #### bg
@@ -32,4 +33,3 @@ A length-one character vector specifying the default font family. The default me
 the height of the device.
 #### width
 the width of the device.
-

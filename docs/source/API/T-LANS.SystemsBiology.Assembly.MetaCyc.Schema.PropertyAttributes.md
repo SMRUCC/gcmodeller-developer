@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.Schema](N-LANS.SystemsBiology.
 
 
 
+
+
 ### Methods
 
 #### GetAdditionalAttribute
@@ -20,7 +22,5 @@ LANS.SystemsBiology.Assembly.MetaCyc.Schema.PropertyAttributes.GetAdditionalAttr
 |strValue|-|
 
 > PropertyValue [^AttributeName AttributeValue]
-
-
 
 

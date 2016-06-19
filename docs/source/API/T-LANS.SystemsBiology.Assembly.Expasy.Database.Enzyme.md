@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.Expasy.Database](N-LANS.SystemsBiology
 
 
 
+
 ### Properties
 
 #### AlternateName
@@ -27,4 +28,3 @@ _namespace: [LANS.SystemsBiology.Assembly.Expasy.Database](N-LANS.SystemsBiology
 (PR) Cross-references to PROSITE
 #### SwissProt
 (DR) Cross-references to Swiss-Prot
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.PlugIns](N-LANS.Syst
 
 The registry object for the externel system module assembly.(系统外部模块的注册表对象)
 
+
+
 ### Methods
 
 #### GetModule
@@ -55,9 +57,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.PlugIns.ModuleRegistry.Registry(S
 
 
 
-
 ### Properties
 
 #### Modules
 这个对象记录着在当前模块注册表文件之中所注册的外部系统模块
-

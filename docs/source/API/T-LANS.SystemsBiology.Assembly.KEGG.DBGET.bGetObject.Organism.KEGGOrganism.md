@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Organism](N-LANS
 
 KEGG Organisms: Complete Genomes (http://www.genome.jp/kegg/catalog/org_list.html)
 
+
+
 ### Methods
 
 #### ToArray
@@ -14,7 +16,5 @@ KEGG Organisms: Complete Genomes (http://www.genome.jp/kegg/catalog/org_list.htm
 LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Organism.KEGGOrganism.ToArray
 ```
 returns all of the organism data in an array
-
-
 
 

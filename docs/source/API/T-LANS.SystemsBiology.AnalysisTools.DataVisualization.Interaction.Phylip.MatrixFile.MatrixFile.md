@@ -74,6 +74,16 @@ When Contml is used in the gene-frequency mode (its usual, default mode), or whe
  Epsilon 0.297 0.22 0.90 1.9 1.74
  Note that in the latter case, there is no line giving the numbers of alleles at each locus. In this latter case no square-root transformation of the coordinates is done: each is assumed to give directly the position on the Brownian motion scale.
 
+> 
+>  使用phylip软件构建进化树的步骤:
+>  
+>  首先使用本类型的对象创建一个矩阵文件
+>  然后使用Phylip软件之中的gendist程序生成一个邻接矩阵
+>  之后使用neighbor/kitsch/fitch程序生成进化树
+>  使用DrawGram.jar/DrawTree.jar生成进化树的图像文件
+>  
+
+
 ### Methods
 
 #### __createMatrix
@@ -105,9 +115,7 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.MatrixFil
 从模型之中生成矩阵文件
 
 
-
 ### Properties
 
 #### _innerMATRaw
 请注意，第一行为标题行，第一列为基因组的编号列
-

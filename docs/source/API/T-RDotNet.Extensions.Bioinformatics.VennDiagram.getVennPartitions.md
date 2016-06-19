@@ -13,6 +13,7 @@ Partitions a list into Venn regions.
 
 
 
+
 ### Properties
 
 #### forceUnique
@@ -23,4 +24,3 @@ A logical value. Changed the way overlapping elements are treated if force.uniqu
 A logical value. Should the elements in each region be returned?
 #### x
 A list of vectors.
-

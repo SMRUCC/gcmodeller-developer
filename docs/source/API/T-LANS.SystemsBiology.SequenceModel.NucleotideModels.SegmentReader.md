@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.NucleotideModels](N-LANS.SystemsB
 
 The reader of the nucleotide sequence loci segment.(核酸链上面的一个片段区域的读取对象，注意，这个数据结构都是以正义链为标准的)
 
+
+
 ### Methods
 
 #### #ctor
@@ -84,11 +86,9 @@ Try parsing the DNA sequence using a specific nucleotide loci value.(假若序�
 
 
 
-
 ### Properties
 
 #### OriginalSequence
 这个属性是原始的完整的序列数据
 #### SequenceData
 返回当前阅读区域之中的序列数据，请尽量使用本属性读取序列数据，但是请小心的通过本属性写入数据，因为每一次写入数据，都会重置内部的@"F:LANS.SystemsBiology.SequenceModel.NucleotideModels.SegmentReader._innerNTsource"对象的值
-

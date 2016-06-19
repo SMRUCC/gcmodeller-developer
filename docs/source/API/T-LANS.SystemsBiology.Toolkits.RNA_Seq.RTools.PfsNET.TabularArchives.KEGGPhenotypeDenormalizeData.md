@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.TabularArchives]
 
 
 
+
 ### Properties
 
 #### PhenotypePair
 使用结果文件名来表示
-

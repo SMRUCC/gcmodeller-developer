@@ -7,6 +7,9 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.PlugIns](N-LANS.Syst
 
 External model loading operator.(外部计算模型加载对象，在加载外部计算模块的同时，还会向计算框架中的数据采集服务处理队列之中加载构造出来的数据采集服务)
 
+> 先从外部加载对象模型，当加载计算模型之后再加载数据模型
+
+
 ### Methods
 
 #### #ctor
@@ -67,9 +70,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.PlugIns.ModuleLoader.LoadModules(
 
 
 
-
 ### Properties
 
 #### DisabledModules
 下列类型的模块将不会被加载
-

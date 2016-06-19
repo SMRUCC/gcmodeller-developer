@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.Sequenc
 
 
 
+
+
 ### Methods
 
 #### Convert
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.SequenceAssembler.Al
 |Parameter Name|Remarks|
 |--------------|-------|
 |residue|-|
-
-
 
 
 

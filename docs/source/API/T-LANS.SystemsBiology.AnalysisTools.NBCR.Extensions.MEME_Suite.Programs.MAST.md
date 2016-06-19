@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Progra
 
 MAST: Motif Alignment and Search Tool
 
+
+
 ### Methods
 
 #### Invoke
@@ -19,7 +21,6 @@ mast motif_file sequence_file [options]
 |--------------|-------|
 |motifFile|file containing motifs to use; normally a MEME output file|
 |SequenceFile|search sequences in FASTA-formatted database with motifs|
-
 
 
 
@@ -77,4 +78,3 @@ score reverse complement DNA strand as a separate sequence
 use SEQUENCE p-values for motif thresholds (default: use POSITION p-values)
 #### WeakMatches
 show weak matches (mt small than p-value and small than mt*10) in angle brackets in the hit list or when the xml is converted to text
-

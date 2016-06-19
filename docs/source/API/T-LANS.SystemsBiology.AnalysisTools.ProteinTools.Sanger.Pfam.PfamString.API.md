@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.PfamStri
 
 
 
+
+
 ### Methods
 
 #### __getDomainLDM
@@ -41,8 +43,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.PfamString.API.GetDom
 |Parameter Name|Remarks|
 |--------------|-------|
 |token|-|
-
-
 
 
 

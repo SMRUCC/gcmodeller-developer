@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.BLAST.LDM](N-LANS.Syst
 
 
 
+
 ### Properties
 
 #### Family
 家族分类
 #### Genome
 这个蛋白质所处的基因组的名称
-

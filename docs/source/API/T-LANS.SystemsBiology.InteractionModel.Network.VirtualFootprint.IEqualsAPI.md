@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.VirtualFootprint](N-LA
 
 
 
+
+
 ### Methods
 
 #### __equals``1
@@ -43,8 +45,6 @@ LANS.SystemsBiology.InteractionModel.Network.VirtualFootprint.IEqualsAPI.Interse
 |--------------|-------|
 |s1|-|
 |s2|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### __exportMotifs
@@ -70,7 +72,5 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.RegpreciseAPI.ReGenerate(LANS.Sy
 当有时候向RegulatorSequerncede Fasta文件之中添加了新的Regprecise数据库之中没有的蛋白质序列数据之后，可能会出现
  TFBS序列和Regulator之间的关系无法对应的情况，则这个时候可以使用本方法来重新刷新着两个Fasta序列文件
 > 对于调控因子序列仅仅取出LocusTAG以及Description数据，TFBS文件是重新生成的
-
-
 
 

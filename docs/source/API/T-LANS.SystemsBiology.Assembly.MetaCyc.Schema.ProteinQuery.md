@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.Schema](N-LANS.SystemsBiology.
 
 
 
+
+
 ### Methods
 
 #### GetAllComponentList
@@ -18,8 +20,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.Schema.ProteinQuery.GetAllComponentList(Sys
 |Parameter Name|Remarks|
 |--------------|-------|
 |ProteinId|-|
-
-
 
 
 

@@ -7,6 +7,43 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.COG](N-LANS.SystemsBiology.Assemb
 
 
 
+> 
+>  INFORMATION STORAGE AND PROCESSING
+>  [J] Translation, ribosomal structure and biogenesis
+>  [A] RNA processing and modification
+>  [K] Transcription
+>  [L] Replication, recombination and repair
+>  [B] Chromatin structure and dynamics
+> 
+>  CELLULAR PROCESSES AND SIGNALING
+>  [D] Cell cycle control, cell division, chromosome partitioning
+>  [Y] Nuclear structure
+>  [V] Defense mechanisms
+>  [T] Signal transduction mechanisms
+>  [M] Cell wall/membrane/envelope biogenesis
+>  [N] Cell motility
+>  [Z] Cytoskeleton
+>  [W] Extracellular structures
+>  [U] Intracellular trafficking, secretion, and vesicular transport
+>  [O] Posttranslational modification, protein turnover, chaperones
+> 
+>  METABOLISM
+>  [C] Energy production and conversion
+>  [G] Carbohydrate transport and metabolism
+>  [E] Amino acid transport and metabolism
+>  [F] Nucleotide transport and metabolism
+>  [H] Coenzyme transport and metabolism
+>  [I] Lipid transport and metabolism
+>  [P] Inorganic ion transport and metabolism
+>  [Q] Secondary metabolites biosynthesis, transport and catabolism
+> 
+>  POORLY CHARACTERIZED
+>  [R] General function prediction only
+>  [S] Function unknown
+> 
+>  
+
+
 ### Methods
 
 #### __getCategory
@@ -73,8 +110,6 @@ LANS.SystemsBiology.Assembly.NCBI.COG.Function.Statistics(System.String[])
 |Parameter Name|Remarks|
 |--------------|-------|
 |lstId|List COG id|
-
-
 
 
 

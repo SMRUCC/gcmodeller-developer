@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.Analysis](N-LANS.SystemsBiology
 
 元数据Xml文件
 
+
+
 ### Methods
 
 #### ExportCsv
@@ -71,7 +73,6 @@ LANS.SystemsBiology.NCBI.Extensions.Analysis.BestHit.TrimEmpty(System.Double)
 
 
 
-
 ### Properties
 
 #### GetTopHits
@@ -80,4 +81,3 @@ LANS.SystemsBiology.NCBI.Extensions.Analysis.BestHit.TrimEmpty(System.Double)
 通过query查找的是reference的对象
 #### sp
 The species name of query.(进行当前匹配操作的物种名称，这个属性不是蛋白质的名称)
-

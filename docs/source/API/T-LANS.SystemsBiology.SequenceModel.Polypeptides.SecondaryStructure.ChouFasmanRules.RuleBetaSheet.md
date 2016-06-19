@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure.C
 
 
 
+
+
 ### Methods
 
 #### Invoke
@@ -18,8 +20,6 @@ Invoke calculation
 |Parameter Name|Remarks|
 |--------------|-------|
 |SequenceData|-|
-
-
 
 
 

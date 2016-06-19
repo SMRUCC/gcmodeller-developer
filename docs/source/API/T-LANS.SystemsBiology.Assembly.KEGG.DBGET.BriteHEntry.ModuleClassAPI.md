@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### GetModule
@@ -21,7 +23,6 @@ Get description
 
 
 
-
 ### Properties
 
 #### __getCategory
@@ -30,4 +31,3 @@ C
 B
 #### __getType
 A
-

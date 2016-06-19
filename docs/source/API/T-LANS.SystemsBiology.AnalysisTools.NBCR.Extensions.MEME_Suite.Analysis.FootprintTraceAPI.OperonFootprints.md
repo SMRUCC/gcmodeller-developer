@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 操作Operon调控相关的信息
 
+
+
 ### Methods
 
 #### __copy
@@ -59,7 +61,5 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.FootprintT
 |DOOR|-|
 
 _returns: 新拓展出来的数据以及原来的数据_
-
-
 
 

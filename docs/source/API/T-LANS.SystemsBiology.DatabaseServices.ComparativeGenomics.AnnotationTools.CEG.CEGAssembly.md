@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
+
 ### Methods
 
 #### InstallDatabase
@@ -22,11 +24,9 @@ LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.CEG.CEG
 
 
 
-
 ### Properties
 
 #### GeneClusters
 基因簇数据
 #### Updates
 本数据库文件最后所更新的时间
-

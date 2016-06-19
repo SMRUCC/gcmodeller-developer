@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.NucleotideModels](N-LANS.SystemsB
 
 片段数据，包含有在目标核酸链之上的位置信息以及用户给这个片段的自定义的标签信息
 
+
+
 ### Methods
 
 #### Get_GCContent
@@ -22,7 +24,6 @@ LANS.SystemsBiology.SequenceModel.NucleotideModels.SegmentObject.GetFasta
 将当前的核酸片段数据对象转换为FASTA对象
 
 
-
 ### Properties
 
 #### Complement
@@ -35,4 +36,3 @@ User data
 The sequence data of this site.
 #### Title
 User tag data
-

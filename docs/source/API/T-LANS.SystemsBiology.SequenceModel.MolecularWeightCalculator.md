@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel](N-LANS.SystemsBiology.SequenceMo
 
 核酸链或者多肽链分子的相对分子质量的计算工具
 
+
+
 ### Methods
 
 #### CalcMW_Nucleotides
@@ -29,8 +31,6 @@ LANS.SystemsBiology.SequenceModel.MolecularWeightCalculator.CalcMW_Polypeptide(L
 |Parameter Name|Remarks|
 |--------------|-------|
 |SequenceData|-|
-
-
 
 
 

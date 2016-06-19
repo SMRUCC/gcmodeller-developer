@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Regulon](N-LANS.SystemsBiology
 
 用于生成调控数据的数据库的接口
 
+
+
 ### Methods
 
 #### listRegulators
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Regulon](N-LANS.SystemsBiology
 LANS.SystemsBiology.InteractionModel.Regulon.IRegulationDatabase.listRegulators
 ```
 得到数据库之中的所有的调控因子的编号
-
-
 
 

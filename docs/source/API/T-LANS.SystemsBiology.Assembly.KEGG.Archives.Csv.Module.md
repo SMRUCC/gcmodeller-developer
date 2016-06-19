@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.Archives.Csv](N-LANS.SystemsBiolo
 
 
 
+
+
 ### Methods
 
 #### Imports``1
@@ -21,7 +23,6 @@ LANS.SystemsBiology.Assembly.KEGG.Archives.Csv.Module.Imports``1(``0)
 
 
 
-
 ### Properties
 
 #### Category
@@ -30,4 +31,3 @@ C
 B
 #### Type
 A
-

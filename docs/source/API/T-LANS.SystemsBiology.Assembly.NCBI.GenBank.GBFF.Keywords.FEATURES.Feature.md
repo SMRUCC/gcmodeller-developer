@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.Keywords.FEATURES](N
 
 A sequence feature site on the genome DNA sequence.(基因组序列上面的特性区域片段)
 
+
+
 ### Methods
 
 #### Add
@@ -44,7 +46,6 @@ Some key would be duplicated
 
 
 
-
 ### Properties
 
 #### __innerList
@@ -57,4 +58,3 @@ Some key would be duplicated
 The location of this feature site on the DNA chain.(本特性位点在DNA链上面的位置)
 #### SequenceData
 nt sequence of this feature site.
-

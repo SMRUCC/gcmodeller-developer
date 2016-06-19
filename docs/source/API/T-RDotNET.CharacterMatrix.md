@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A matrix of strings.
 
+
+
 ### Methods
 
 #### #ctor
@@ -39,11 +41,9 @@ Initializes this R matrix, using the values in a rectangular array.
 
 
 
-
 ### Properties
 
 #### DataSize
 Gets the size of a pointer in byte.
 #### Item
 Gets or sets the element at the specified index.
-

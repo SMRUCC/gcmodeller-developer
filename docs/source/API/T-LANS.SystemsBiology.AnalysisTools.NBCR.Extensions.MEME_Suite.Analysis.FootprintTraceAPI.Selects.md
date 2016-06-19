@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 从计算出来的footprint数据之中选出motif用来进行聚类操作
 
+
+
 ### Methods
 
 #### Select
@@ -19,8 +21,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.FootprintT
 |--------------|-------|
 |trace|-|
 |MEME|MEME DIR|
-
-
 
 
 

@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ComparativeGenomics](N-LANS.Syste
 
 
 
+
 ### Properties
 
 #### BiasList
 对@"P:LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.CAITable.BiasTable"进行展开
-

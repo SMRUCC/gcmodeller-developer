@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 
 
+
 ### Properties
 
 #### Distance
@@ -27,4 +28,3 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 相似度高低
 #### Site
 种子生成的序列
-

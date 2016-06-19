@@ -23,6 +23,18 @@ The Sequence Alignment/Map (SAM) format is a generic nucleotide alignment format
  SAM is able to store clipped alignments, spliced alignments, multi-part alignments, padded alignments and alignments in colour space. 
  The extended CIGAR string is the key to describing these types of alignments.
 
+> 
+>  SAM stands for Sequence Alignment/Map format. It is a TAB-delimited text format consisting of a
+>  header section, which is optional, and an alignment section. If present, the header must be prior to
+>  the alignments. Header lines start with `@', while alignment lines do not. Each alignment line has 11
+>  mandatory fields for essential alignment information such as mapping position, and variable number of 
+>  optional fields for flexible or aligner specific information.
+>  
+>  SAM格式的文件是一种序列比对文件，使用TAB符号进行分隔，文件的格式为一个可选的标题头部区域，标题头部使用@符号起始而比对区域则不需要
+>  每一行序列比对的数据有11个域用于储存比对信息，诸如：mapping的位置之类
+>  
+
+
 ### Methods
 
 #### Assembling
@@ -56,7 +68,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.SAM.TrimUnmappedRead
 移除没有被mapping到基因组上面的reads
 
 
-
 ### Properties
 
 #### AlignmentsReads
@@ -64,4 +75,3 @@ The object of this value is the details alignment data.
 #### Head
 If present, the header must be prior to the alignments. Header lines start With `@', while alignment lines do not.
  (文件的可选头部区域必须要在比对数据区域的前面并且每一行以@符号开始)
-

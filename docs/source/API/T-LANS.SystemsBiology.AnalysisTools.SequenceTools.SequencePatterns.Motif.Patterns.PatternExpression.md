@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Mo
 
 
 
+
 ### Properties
 
 #### __rc
 Regex complement reversed.
-

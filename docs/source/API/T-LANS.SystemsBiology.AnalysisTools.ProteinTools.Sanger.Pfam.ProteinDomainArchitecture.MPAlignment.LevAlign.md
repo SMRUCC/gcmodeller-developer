@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinD
 
 这个比对是做结构域对其的
 
+
+
 ### Methods
 
 #### #ctor
@@ -22,9 +24,7 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinDomainArchitec
 
 
 
-
 ### Properties
 
 #### StructMatched
 结构域是否是完全匹配上的
-

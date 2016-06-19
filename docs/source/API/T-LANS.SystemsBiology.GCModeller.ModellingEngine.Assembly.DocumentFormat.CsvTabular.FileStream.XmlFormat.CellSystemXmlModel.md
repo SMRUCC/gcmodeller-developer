@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 本计算模型中的所构建的细胞中的基本系统：代谢组和转录组，请注意，对于本对象的属性中的路径对象，当在编译器阶段的时候为一个绝对路径，但是当执行了保存动作之后，都将变为相对路径
 
+
+
 ### Methods
 
 #### LoadXml
@@ -47,9 +49,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 
 
 
-
 ### Properties
 
 #### ResourceCollection
 XML模型文件之中的资源连接数据都是存储在这个属性之中的，当加载的时候，就会通过本属性来讲值赋值给其他的属性
-

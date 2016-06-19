@@ -7,6 +7,9 @@ _namespace: [RDotNET.Extensions.VisualBasic.gplots](N-RDotNET.Extensions.VisualB
 
 Using function call 'get.jetColors()' to gets the colors vector
 
+> 
+>  旭仔-畜牧 564307915@qq.com
+>  
 
 
 

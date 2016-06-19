@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.COG](N-LANS.SystemsBiology.Assemb
 
 
 
+
 ### Properties
 
 #### Genetics
@@ -21,4 +22,3 @@ No function category assigned to this gene
 CELLULAR PROCESSES AND SIGNALING
 #### Unclassified
 POORLY CHARACTERIZED
-

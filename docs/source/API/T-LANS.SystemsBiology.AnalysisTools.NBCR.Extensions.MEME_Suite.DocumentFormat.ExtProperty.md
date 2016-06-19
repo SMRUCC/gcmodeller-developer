@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 
 
+
+
 ### Methods
 
 #### BoundaryOverlaps
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.ExtProperty.BoundaryOverlaps(LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.Transcript)
 ```
 上下游都分别重合不能够延伸
-
-
 
 

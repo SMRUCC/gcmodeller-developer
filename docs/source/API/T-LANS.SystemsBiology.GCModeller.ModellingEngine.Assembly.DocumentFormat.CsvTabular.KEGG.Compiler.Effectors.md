@@ -7,6 +7,11 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 本处理过程的目的是将模型之中的Regulation关系之中的Effector替换为KEGG的经过Normalization操作之后的UniqueId
 
+> 
+>  首先将KEGGCoumpound在MetaCyc_ALL之间映射
+>  
+
+
 ### Methods
 
 #### CreateDictionary
@@ -43,8 +48,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 |--------------|-------|
 |KEGGCompounds|{MetaCycId, Metabolite}|
 |MetaCycRegpreciseMapping|-|
-
-
 
 
 

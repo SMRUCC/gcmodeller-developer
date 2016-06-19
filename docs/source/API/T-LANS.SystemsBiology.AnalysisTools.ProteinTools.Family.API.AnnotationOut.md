@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.API](N-LANS.S
 
 
 
+
 ### Properties
 
 #### Family
 家族列表
 #### LocusId
 基因号
-

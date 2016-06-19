@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.TMoD](
 
 Tmod: toolbox of motif discovery, program assembly resources.
 
+
+
 ### Methods
 
 #### __checkURL
@@ -62,9 +64,7 @@ Select the fasta sequence from a fasta collection file which the fasta sequence 
 
 
 
-
 ### Properties
 
 #### MEME
 The file path of the meme program from the tmod resource collection assembly.
-

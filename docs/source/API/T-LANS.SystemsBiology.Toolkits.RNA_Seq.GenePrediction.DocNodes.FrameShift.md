@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.GenePrediction.DocNodes](N-LAN
 
 
 
+
 ### Properties
 
 #### base
@@ -17,4 +18,3 @@ At base...
 From Frame
 #### To
 To Frame
-

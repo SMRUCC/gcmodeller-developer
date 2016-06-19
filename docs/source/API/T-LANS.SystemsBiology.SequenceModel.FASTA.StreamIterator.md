@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.FASTA](N-LANS.SystemsBiology.Sequ
 
 
 
+
+
 ### Methods
 
 #### ReadStream
@@ -24,8 +26,6 @@ LANS.SystemsBiology.SequenceModel.FASTA.StreamIterator.Split(System.Int32)
 |Parameter Name|Remarks|
 |--------------|-------|
 |size|-|
-
-
 
 
 

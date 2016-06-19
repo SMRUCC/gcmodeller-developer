@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Pa
 
 使用用户指定的正则表达式搜索指定的序列数据
 
+
+
 ### Methods
 
 #### Match
@@ -19,8 +21,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Pattern.Pattern
 |--------------|-------|
 |Seq|-|
 |pattern|-|
-
-
 
 
 

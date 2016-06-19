@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### PARA_CULTIVATION_MEDIUM_TYPE
 只有两种类型：Medium和Broth，当类型为Broth的时候，细胞内的水充足
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 Resource link to the table data source.
 
+
+
 ### Methods
 
 #### get_Path
@@ -34,9 +36,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 
 
 
-
 ### Properties
 
 #### TypeId
 Type full name of the target csv table.
-

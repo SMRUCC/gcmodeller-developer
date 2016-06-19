@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 
 
+
+
 ### Methods
 
 #### CreateDictionary
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.MEME
 |Parameter Name|Remarks|
 |--------------|-------|
 |data|-|
-
-
 
 
 

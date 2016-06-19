@@ -7,6 +7,8 @@ _namespace: [gcc.ProteinDomain](N-gcc.ProteinDomain.html)_
 
 
 
+
+
 ### Methods
 
 #### GetDomains
@@ -14,7 +16,5 @@ _namespace: [gcc.ProteinDomain](N-gcc.ProteinDomain.html)_
 gcc.ProteinDomain.Rule.GetDomains
 ```
 获取本条规则中的所有的涉及到的结构域Id集合
-
-
 
 

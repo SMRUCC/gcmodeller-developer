@@ -7,6 +7,8 @@ _namespace: [RDotNET.Dynamic](N-RDotNET.Dynamic.html)_
 
 Dynamic and binding logic for S expressions
 
+
+
 ### Methods
 
 #### #ctor
@@ -55,9 +57,7 @@ Returns the enumeration of all dynamic member names.
 _returns: The list of dynamic member names_
 
 
-
 ### Properties
 
 #### Empty
 A string array of length zero
-

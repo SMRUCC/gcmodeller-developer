@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### MotifName
 请使用GUID进行赋值
 #### SitePosition
 以ATG为界限的位置
-

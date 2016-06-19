@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.Archives.Csv](N-LANS.SystemsBiolo
 
 CSV data model for storage the kegg pathway brief information.(用于向Csv文件保存数据的简单格式的代谢途径数据存储对象)
 
+
+
 ### Methods
 
 #### LoadData
@@ -22,7 +24,6 @@ LANS.SystemsBiology.Assembly.KEGG.Archives.Csv.Pathway.LoadData(System.String,Sy
 
 
 
-
 ### Properties
 
 #### Category
@@ -33,4 +34,3 @@ Phenotype Class
 Pathway object KEGG database entry id.
 #### PathwayGenes
 The enzyme gene which was involved in this pathway catalysts.
-

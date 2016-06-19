@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.WebServices.NCBI](N-LANS.Syste
 
 
 
+
 ### Properties
 
 #### eAssayOutcome_Active
@@ -20,5 +21,4 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.WebServices.NCBI](N-LANS.Syste
 #### eAssayOutcome_Inconclusive
 
 #### eAssayOutcome_Unspecified
-
 

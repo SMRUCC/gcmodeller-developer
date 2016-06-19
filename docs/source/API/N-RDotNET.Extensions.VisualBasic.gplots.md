@@ -1,6 +1,6 @@
 ﻿---
 title: RDotNET.Extensions.VisualBasic.gplots
-date: 6/16/2016 4:57:02 AM
+date: 6/19/2016 11:14:52 AM
 ---
 
 [heatmap2](T-RDotNET.Extensions.VisualBasic.gplots.heatmap2.html)

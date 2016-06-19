@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A collection of complex numbers.
 
+
+
 ### Methods
 
 #### #ctor
@@ -34,11 +36,9 @@ RDotNET.ComplexVector.SetVectorDirect(System.Numerics.Complex[])
 Efficient initialisation of R vector values from an array representation in the CLR
 
 
-
 ### Properties
 
 #### DataSize
 Gets the size of a complex number in byte.
 #### Item
 Gets or sets the element at the specified index.
-

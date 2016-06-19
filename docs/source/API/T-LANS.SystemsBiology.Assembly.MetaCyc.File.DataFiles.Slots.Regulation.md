@@ -35,6 +35,7 @@ This class describes most forms of protein, RNA or activity regulation. Regulati
 
 
 
+
 ### Properties
 
 #### AssociatedBindingSite
@@ -79,4 +80,3 @@ This slot links the regulation frame to the object that is being regulated. In t
 This slot links the regulation frame to the object that is doing the regulating, typically
  a protein, RNA or small molecule. The regulator frame will link back to the regulation
  frame using the inverse of this slot, Regulates.
-

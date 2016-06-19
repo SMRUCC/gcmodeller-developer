@@ -9,6 +9,7 @@ Iterative filtering of samples and genes with too many missing entries
 
 
 
+
 ### Properties
 
 #### datExpr
@@ -30,4 +31,3 @@ an optional 'small' number to compare the variance against. Defaults to the squa
  The reason of comparing the variance to this number, rather than zero, is that the fast way of computing variance used by this function sometimes causes small numerical overflow errors which make variance of constant vectors slightly non-zero; comparing the variance to tol rather than zero prevents the retaining of such genes as 'good genes'.
 #### verbose
 integer level of verbosity. Zero means silent, higher values make the output progressively more and more verbose.
-

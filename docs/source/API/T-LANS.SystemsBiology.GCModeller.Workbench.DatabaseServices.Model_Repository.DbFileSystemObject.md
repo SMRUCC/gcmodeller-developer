@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Rep
 
 The object which its entry information was stores in the repository database but data stores on the filesystem.
 
+
+
 ### Methods
 
 #### GetPath
@@ -25,7 +27,5 @@ LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Repository.DbFil
 LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Repository.DbFileSystemObject.VerifyData(System.String,System.String)
 ```
 本对象所指向的文件不存在或者哈希值比对不上，都会返回False
-
-
 
 

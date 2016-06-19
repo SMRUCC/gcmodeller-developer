@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
+
 ### Methods
 
 #### CompileResult
@@ -32,8 +34,6 @@ LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.Reports
 |Parameter Name|Remarks|
 |--------------|-------|
 |Path|-|
-
-
 
 
 

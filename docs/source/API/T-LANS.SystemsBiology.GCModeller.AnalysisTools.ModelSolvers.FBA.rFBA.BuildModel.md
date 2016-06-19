@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.rFBA]
 
 
 
+
+
 ### Methods
 
 #### FixError
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.rFBA.BuildModel.Fi
 |Parameter Name|Remarks|
 |--------------|-------|
 |Model|-|
-
-
 
 
 

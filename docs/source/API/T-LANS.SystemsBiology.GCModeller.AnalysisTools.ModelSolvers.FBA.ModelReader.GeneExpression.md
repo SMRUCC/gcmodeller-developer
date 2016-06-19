@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Model
 
 
 
+
+
 ### Methods
 
 #### CreateObject
@@ -16,9 +18,7 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.ModelReader.GeneEx
 需要在后续的步骤中将Regulator筛选出来
 
 
-
 ### Properties
 
 #### Regulators
 RegulatorId|Pcc|{Effectors, ...}
-

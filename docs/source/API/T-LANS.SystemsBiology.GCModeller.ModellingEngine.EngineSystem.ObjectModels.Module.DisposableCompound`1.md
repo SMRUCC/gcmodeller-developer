@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
+
 ### Methods
 
 #### CreatePeptideDisposalObject
@@ -34,11 +36,9 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.
 
 
 
-
 ### Properties
 
 #### Lambda
 介于0-1之间的数，值越大表示越不容易被降解
 #### PretendedSubstrate
 将要被降解的目标代谢物的假定产物
-

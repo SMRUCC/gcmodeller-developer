@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### get_Coefficient
@@ -24,7 +26,6 @@ If the target metabolite is the reactant of this reaction object, then return -1
 
 
 
-
 ### Properties
 
 #### _Internal_compilerLeft
@@ -33,4 +34,3 @@ If the target metabolite is the reactant of this reaction object, then return -1
 产物端
 #### Enzymes
 催化本反应过程的基因或者调控因子(列)，请注意，由于在前半部分为代谢流对象，故而Key的值不是从零开始的
-

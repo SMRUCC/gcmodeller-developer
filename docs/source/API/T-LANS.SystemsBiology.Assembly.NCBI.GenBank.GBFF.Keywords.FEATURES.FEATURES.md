@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.Keywords.FEATURES](N
 
 
 
+
+
 ### Methods
 
 #### __formatString
@@ -76,9 +78,7 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.Keywords.FEATURES.FEATURES.readBl
 
 
 
-
 ### Properties
 
 #### FEATURE_HEADER
 匹配每一个特性位点的头部标签的格式
-

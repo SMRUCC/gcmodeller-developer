@@ -10,6 +10,7 @@ Plot of normalized counts for a single gene on log scale
 
 
 
+
 ### Properties
 
 #### dds
@@ -30,4 +31,3 @@ should the function only return the data.frame of counts and covariates for cust
 whether to present log2 counts (TRUE) or to present the counts on the log scale (FALSE, default)
 #### xlab
 as in 'plot'
-

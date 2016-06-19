@@ -9,9 +9,9 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.PfamStri
 
 
 
+
 ### Properties
 
 #### Id_Handle
 在Pfam-String之中的位置，其格式为@"P:LANS.SystemsBiology.Assembly.NCBI.CDD.SmpFile.Identifier"
  _Handle*@"P:LANS.SystemsBiology.Assembly.NCBI.CDD.SmpFile.Identifier"_Handle
-

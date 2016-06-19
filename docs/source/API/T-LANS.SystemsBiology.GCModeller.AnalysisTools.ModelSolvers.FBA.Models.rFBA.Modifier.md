@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Model
 
 
 
+
 ### Properties
 
 #### modify
 突变修饰
-

@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Kernel.Obje
 
 
 
+
 ### Properties
 
 #### LeftKicks
 周期性的实验之中所剩余的刺激
-

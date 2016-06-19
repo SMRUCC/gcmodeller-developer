@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 
 
+
+
 ### Methods
 
 #### __postResult
@@ -23,9 +25,7 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.S
 
 
 
-
 ### Properties
 
 #### CountStatics
 片段按照长度的数量上的分布情况
-

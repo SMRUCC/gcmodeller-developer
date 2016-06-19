@@ -9,6 +9,7 @@ CSV格式的MPAlignment结果数据记录
 
 
 
+
 ### Properties
 
 #### Description
@@ -21,4 +22,3 @@ MPScore
 @"P:LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinDomainArchitecture.MPAlignment.MPCsvArchive.Score"/@"P:LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinDomainArchitecture.MPAlignment.MPCsvArchive.FullScore"
 #### StructMatched
 结构域是否是完全匹配上的
-

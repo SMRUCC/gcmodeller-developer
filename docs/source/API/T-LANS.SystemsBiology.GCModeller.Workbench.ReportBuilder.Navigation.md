@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Workbench.ReportBuilder](N-LANS.Syst
 
 
 
+
+
 ### Methods
 
 #### BreadcrumbNavigation
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.Workbench.ReportBuilder.Navigation.BreadcrumbNavi
 |Parameter Name|Remarks|
 |--------------|-------|
 |nag|{display, url}|
-
-
 
 
 

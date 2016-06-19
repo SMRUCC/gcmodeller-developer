@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.Regulons](N-LANS.Syste
 需要先将motif映射为长度一致的实体！
  先进行TOM全局比对，然后取match部分，之后就可以进行聚类了？
 
+
+
 ### Methods
 
 #### Mappings
@@ -24,10 +26,8 @@ LANS.SystemsBiology.InteractionModel.Network.Regulons.MotifCluster.Mappings(Syst
 
 
 
-
 ### Properties
 
 #### NullSite
 x.Bits + x.PWM.Average => 1+ATGC/4
  x.Bits + x.PWM.Average => 1+{0.25, 0.25, 0.25, 0.25}/4
-

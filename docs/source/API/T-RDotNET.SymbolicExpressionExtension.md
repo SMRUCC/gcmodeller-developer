@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 Provides extension methods for @"T:RDotNET.SymbolicExpression".
 
+
+
 ### Methods
 
 #### AsCharacter
@@ -406,9 +408,7 @@ Gets whether the specified expression is vector.
 _returns: True if the specified expression is vector._
 
 
-
 ### Properties
 
 #### engine
 A cache of the REngine - WARNING this assumes there can be only one per process, initialized once only.
-

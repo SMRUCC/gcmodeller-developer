@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.Expressi
 
 需要Effector
 
+
+
 ### Methods
 
 #### Internal_getPathwayEffector
@@ -21,7 +23,6 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationN
 
 
 
-
 ### Properties
 
 #### Effector
@@ -30,4 +31,3 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationN
 这些代谢途径都是和Effector的合成相关的，在每一个对象之中，其Value值为该代谢途径之中的所有的基因，而Key的值则表示为该代谢途径的编号，每一个对象都做加法运算，而每一个对象内部的基因对象之间都做AND逻辑运算
 #### RegulationFunctional
 继承的对象和基本对象之间的实现是有差异的，基本对象直接使用state<>0来表述，因为@"P:Microsoft.VisualBasic.DataMining.Framework.DFL_Driver.I_FactorElement.FunctionalState"已经包含有模糊逻辑判断了，只要返回非零值，就表示事件发生了，而本属性则是从头计算
-

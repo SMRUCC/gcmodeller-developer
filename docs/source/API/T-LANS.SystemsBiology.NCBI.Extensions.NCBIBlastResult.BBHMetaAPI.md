@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.NCBIBlastResult](N-LANS.Systems
 
 @"T:LANS.SystemsBiology.NCBI.Extensions.Analysis.BestHit" -> @"T:LANS.SystemsBiology.NCBI.Extensions.NCBIBlastResult.AlignmentTable"
 
+
+
 ### Methods
 
 #### DataParser
@@ -22,8 +24,6 @@ LANS.SystemsBiology.NCBI.Extensions.NCBIBlastResult.BBHMetaAPI.DataParser(LANS.S
 |visualGroup|
  由于在进行blast绘图的时候，程序是按照基因组来分组绘制的，而绘制的对象不需要显示详细的信息，所以在这里为True的话，会直接使用基因组tag来替换名称进而用于blast作图
  |
-
-
 
 
 

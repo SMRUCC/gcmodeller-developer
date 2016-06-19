@@ -7,6 +7,8 @@ _namespace: [SMRUCC.R.CRAN.Bioconductor.Web](N-SMRUCC.R.CRAN.Bioconductor.Web.ht
 
 
 
+
+
 ### Methods
 
 #### GetVersion
@@ -16,11 +18,9 @@ SMRUCC.R.CRAN.Bioconductor.Web.Version.GetVersion
 {bioconductor_version, R_required_version}
 
 
-
 ### Properties
 
 #### BiocLite
 Bioconductor repository version.
 #### R
 The R required version.
-

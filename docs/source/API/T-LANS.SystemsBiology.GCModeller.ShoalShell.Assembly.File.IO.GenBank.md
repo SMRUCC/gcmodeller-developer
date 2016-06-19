@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO](N-LANS.
 
 
 
+
+
 ### Methods
 
 #### CopyBrief
@@ -109,8 +111,6 @@ LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO.GenBank.SelectCopyFas
 |source|-|
 |copyto|-|
 |ext|只需要列举出后缀名即可，不需要额外的.或者*.|
-
-
 
 
 

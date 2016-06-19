@@ -7,6 +7,8 @@ _namespace: [RDotNet.Extensions.Bioinformatics.VennDiagram.ModelAPI](N-RDotNet.E
 
 
 
+
+
 ### Methods
 
 #### ParseName
@@ -20,7 +22,5 @@ RDotNet.Extensions.Bioinformatics.VennDiagram.ModelAPI.Extensions.ParseName(Syst
 |source|基因号列表|
 
 _returns: 猜测出基因号的物种前缀，例如XC_1184 -> XC__
-
-
 
 

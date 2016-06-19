@@ -9,6 +9,7 @@ User's decision.
 
 
 
+
 ### Properties
 
 #### Cancel
@@ -17,4 +18,3 @@ User abandoned to answer.
 User disagreed.
 #### Yes
 User agreed.
-

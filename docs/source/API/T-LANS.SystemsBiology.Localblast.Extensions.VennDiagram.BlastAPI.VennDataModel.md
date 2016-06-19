@@ -7,6 +7,14 @@ _namespace: [LANS.SystemsBiology.Localblast.Extensions.VennDiagram.BlastAPI](N-L
 
 Generates the Venn diagram data model using the bbh orthology method.(模块之中的方法可以应用于使用直系同源来创建文氏图)
 
+> 
+>  生成Venn表格所需要的步骤：
+>  1. 按照基因组进行导出序列数据
+>  2. 两两组合式的双向比对
+>  3.
+>  
+
+
 ### Methods
 
 #### __bbh
@@ -147,8 +155,6 @@ LANS.SystemsBiology.Localblast.Extensions.VennDiagram.BlastAPI.VennDataModel.Sta
 |Evalue|-|
 |Parallel|-|
 |Overrides|-|
-
-
 
 
 

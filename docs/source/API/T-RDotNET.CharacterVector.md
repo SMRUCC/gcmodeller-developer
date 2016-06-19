@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A collection of strings.
 
+
+
 ### Methods
 
 #### #ctor
@@ -34,11 +36,9 @@ RDotNET.CharacterVector.SetVectorDirect(System.String[])
 Efficient initialisation of R vector values from an array representation in the CLR
 
 
-
 ### Properties
 
 #### DataSize
 Gets the size of a pointer in byte.
 #### Item
 Gets or sets the element at the specified index.
-

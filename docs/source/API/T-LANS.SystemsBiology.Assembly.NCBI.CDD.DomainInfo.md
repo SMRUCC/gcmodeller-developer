@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.CDD](N-LANS.SystemsBiology.Assemb
 
 The query interface of the local CDD database.(CDD数据库的查询接口)
 
+
+
 ### Methods
 
 #### Query
@@ -18,8 +20,6 @@ LANS.SystemsBiology.Assembly.NCBI.CDD.DomainInfo.Query(System.String)
 |Parameter Name|Remarks|
 |--------------|-------|
 |Id|-|
-
-
 
 
 

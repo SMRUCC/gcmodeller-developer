@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.rFBA.
 
 
 
+
 ### Properties
 
 #### MappingGeneId
 催化当前这个代谢反应所涉及到的基因
-

@@ -10,8 +10,8 @@ The base class of the service object, they all needs a MYSQL data exchange modul
 
 
 
+
 ### Properties
 
 #### MYSQL
 The mysql service engine.(MYSQL数据库服务引擎)
-

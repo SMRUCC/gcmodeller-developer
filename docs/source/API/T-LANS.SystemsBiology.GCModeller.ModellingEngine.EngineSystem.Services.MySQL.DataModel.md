@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Service
 The data exchange service for the data model read from and write into the mysql database.
  (数据模型对象与数据库服务器之间的数据交换服务)
 
+
+
 ### Methods
 
 #### Commit
@@ -142,7 +144,6 @@ Update a line of data into the database table using its unique registry number.
 
 
 
-
 ### Properties
 
 #### MAX_HANDLE_SQL
@@ -150,4 +151,3 @@ Update a line of data into the database table using its unique registry number.
 #### Table
 The data table that will be operated.
  (所进行操作的数据表)
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver](N-LANS.Syst
 
 数据采集器
 
+
+
 ### Methods
 
 #### Clear
@@ -27,9 +29,7 @@ LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.DataAdapter`2.SetFiltedHa
 
 
 
-
 ### Properties
 
 #### _filtedHandles
 本列表之中的所有数据都不会被记录下来
-

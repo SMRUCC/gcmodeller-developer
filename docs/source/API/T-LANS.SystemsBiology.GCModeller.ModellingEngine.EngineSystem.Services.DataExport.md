@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Service
 
 数据库中的计算数据导出服务
 
+
+
 ### Methods
 
 #### FetchData
@@ -22,9 +24,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Services.DataExport.
 _returns: 返回所获取的数据的行数_
 
 
-
 ### Properties
 
 #### SQL_DATA_FETCH
 The sql command text for load the data from the database server.(从数据库服务器之中加载数据的SQL命令语句)
-

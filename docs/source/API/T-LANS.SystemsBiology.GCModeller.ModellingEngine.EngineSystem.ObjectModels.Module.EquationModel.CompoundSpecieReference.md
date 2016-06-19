@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
 ### Properties
 
 #### Identifier
 Guid/MetaCyc UniqueId String.(Guid或者MetaCyc数据库里面的UniqueId字符串)
 #### Stoichiometry
 化学计量数
-

@@ -10,6 +10,7 @@ A heat map is a false color image (basically image(t(x))) with a dendrogram adde
 
 
 
+
 ### Properties
 
 #### adjCol
@@ -98,4 +99,3 @@ character string indicating whether a solid "trace" line should be drawn across 
 character string giving the color for "trace" line. Defaults to "cyan".
 #### vline
 Vector of values within cells where a horizontal or vertical dotted line should be drawn. The color of the line is controlled by linecol. Horizontal lines are only plotted if trace is 'row' or 'both'. Vertical lines are only drawn if trace 'column' or 'both'. hline and vline default to the median of the breaks, linecol defaults to the value of tracecol.
-

@@ -15,6 +15,7 @@ A feature is here an interval (i.e., a range of positions) on a chromosome or a 
 
 
 
+
 ### Properties
 
 #### attributes
@@ -94,4 +95,3 @@ Integers. <start> must be less than or equal to <end>. Sequence numbering starts
 One of '+', '-' or '.'. '.' should be used when strand is not relevant, e.g. for dinucleotide repeats. 
  
  Version 2 change: This field is left empty '.' for RNA and protein features.
-

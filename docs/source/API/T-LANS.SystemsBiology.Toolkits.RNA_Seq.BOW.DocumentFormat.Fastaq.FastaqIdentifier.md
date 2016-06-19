@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.Fastaq](N-L
 
 Illumina sequence identifiers
 
+
+
 ### Methods
 
 #### IDParser
@@ -18,7 +20,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.Fastaq.FastaqIdentifier.
 |Parameter Name|Remarks|
 |--------------|-------|
 |str|-|
-
 
 
 
@@ -38,4 +39,3 @@ Tile number within the flowcell lane
 'x'-coordinate of the cluster within the tile
 #### Y
 'y'-coordinate of the cluster within the tile
-

@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### Lambda
 解离的速率
 #### ProteinComplexes
 Unique-ID
-

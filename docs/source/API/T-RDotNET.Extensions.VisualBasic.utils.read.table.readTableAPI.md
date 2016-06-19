@@ -9,6 +9,7 @@ Reads a file in table format and creates a data frame from it, with cases corres
 
 
 
+
 ### Properties
 
 #### file
@@ -21,4 +22,3 @@ The name Of the file which the data are To be read from. Each row Of the table a
 #### header
 a logical value indicating whether the file contains the names of the variables as its first line. 
  If missing, the value is determined from the file format: header is set to TRUE if and only if the first row contains one fewer field than the number of columns.
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 Annotation for the genome wide regulation network using regprecise database.
 
+
+
 ### Methods
 
 #### Install
@@ -71,9 +73,7 @@ Update tje database information of the regprecise repository
 
 
 
-
 ### Properties
 
 #### _MetaDataTable
 The meta data of the regprecise regulators.(Regprecise数据库的元数据)
-

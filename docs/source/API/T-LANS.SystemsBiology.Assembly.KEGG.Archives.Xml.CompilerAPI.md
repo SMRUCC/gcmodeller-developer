@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.Archives.Xml](N-LANS.SystemsBiolo
 
 
 
+
+
 ### Methods
 
 #### Compile
@@ -21,8 +23,6 @@ LANS.SystemsBiology.Assembly.KEGG.Archives.Xml.CompilerAPI.Compile(System.Collec
 |Modules|-|
 |Reactions|数据库之中的所有的代谢反应数据|
 |speciesCode|-|
-
-
 
 
 

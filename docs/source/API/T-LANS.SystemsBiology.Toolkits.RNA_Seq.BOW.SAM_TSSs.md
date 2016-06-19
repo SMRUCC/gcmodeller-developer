@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW](N-LANS.SystemsBiology.Too
 
 
 
+
+
 ### Methods
 
 #### SplitSaved
@@ -27,8 +29,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.SAM_TSSs.TrimForTSSs(LANS.SystemsBiolog
  会将文档里面的@"F:LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.BitFLAGS.Bit0x200",
  @"F:LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.BitFLAGS.Bit0x4"的Reads进行剔除
  |
-
-
 
 
 

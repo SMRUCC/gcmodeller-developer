@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects]
 
 
 
+
 ### Properties
 
 #### child_guid
@@ -23,4 +24,3 @@ parent_guid, child_guid: identificators of “parent” and “child” objects
 parent_type_id, child_type_id: types of “parent” and “child” objects
 #### strand
 strand: defines which DNA strand (direct or complementary) contains the element
-

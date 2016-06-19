@@ -7,13 +7,14 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH](N-L
 
 Best hit result from the binary direction blastp result.(最佳双向比对结果，BBH，直系同源)
 
+
+
 ### Methods
 
 #### ToString
 ```csharp
 LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH.BiDirectionalBesthit.ToString
 ```
-
 
 
 
@@ -25,4 +26,3 @@ COG annotiation for protein @"P:LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.A
 Annotiation for protein @"P:LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH.I_BlastQueryHit.QueryName"
 #### Length
 Protein length annotiation for protein @"P:LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH.I_BlastQueryHit.QueryName".(本蛋白质实体对象的序列长度)
-

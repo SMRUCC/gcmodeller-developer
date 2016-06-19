@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.NCBIBlastResult
 
 
 
+
+
 ### Methods
 
 #### __createHits
@@ -81,9 +83,7 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.NCBIBlastResult.BlastVisuali
 
 
 
-
 ### Properties
 
 #### ConvertFactor
 一个碱基或者一个氨基酸所对应的像素
-

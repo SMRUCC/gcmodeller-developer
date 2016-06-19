@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine.
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -20,8 +22,6 @@ Configuration 之中的配置数据总是会被非空的命令行参数所复写
 |ExternalModuleRegistry|-|
 |CommandLine|-|
 |Configuration|-|
-
-
 
 
 

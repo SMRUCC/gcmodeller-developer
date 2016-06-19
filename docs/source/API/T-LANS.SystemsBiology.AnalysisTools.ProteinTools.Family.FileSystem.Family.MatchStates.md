@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.FileSystem.Fa
 
 
 
+
 ### Properties
 
 #### MPMatch
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.FileSystem.Fa
 不是这个家族的
 #### TraceMatch
 只匹配上一个家族之中的结构域
-

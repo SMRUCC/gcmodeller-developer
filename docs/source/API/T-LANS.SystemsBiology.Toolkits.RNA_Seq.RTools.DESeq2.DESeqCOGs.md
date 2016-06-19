@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2](N-LANS.SystemsB
 
 
 
+
 ### Properties
 
 #### NumbersOfDiffDown
 为了绘图方便，这个是负数的
-

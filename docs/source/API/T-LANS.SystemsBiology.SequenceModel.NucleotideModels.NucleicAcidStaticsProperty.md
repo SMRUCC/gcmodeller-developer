@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.NucleotideModels](N-LANS.SystemsB
 
 
 
+
+
 ### Methods
 
 #### __contentCommon
@@ -65,7 +67,5 @@ _returns: A, T, G, C_
 LANS.SystemsBiology.SequenceModel.NucleotideModels.NucleicAcidStaticsProperty.Tm(System.String)
 ```
 The melting temperature of P1 is Tm(P1), which is a reference temperature for a primer to perform annealing and known as the Wallace formula
-
-
 
 

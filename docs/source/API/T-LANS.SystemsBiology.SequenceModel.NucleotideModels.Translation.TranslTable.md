@@ -44,6 +44,8 @@ Compiled by Andrzej (Anjay) Elzanowski and Jim Ostell at National Center for Bio
  
  http://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=tgencodes#SG25
 
+
+
 ### Methods
 
 #### #ctor
@@ -132,11 +134,9 @@ LANS.SystemsBiology.SequenceModel.NucleotideModels.Translation.TranslTable.Trans
 
 
 
-
 ### Properties
 
 #### CodenTable
 遗传密码子表（哈希表）
 #### TranslTable
 transl_table=@"P:LANS.SystemsBiology.SequenceModel.NucleotideModels.Translation.TranslTable.TranslTable"
-

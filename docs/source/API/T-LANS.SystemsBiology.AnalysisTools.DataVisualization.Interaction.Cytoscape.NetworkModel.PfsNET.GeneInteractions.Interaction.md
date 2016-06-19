@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 
 
+
 ### Properties
 
 #### Reactions
 仅对于两个基因共同催化一个过程的时候有用途
-

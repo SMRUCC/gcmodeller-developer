@@ -8,6 +8,8 @@ _namespace: [RDotNET.Extensions.VisualBasic](N-RDotNET.Extensions.VisualBasic.ht
 Convert the R object into a .NET object from the specific type schema information.
  (将R之中的对象内存数据转换为.NET之中指定的对象实体)
 
+
+
 ### Methods
 
 #### __createMatrix
@@ -114,8 +116,6 @@ Needs your manual type casting in your program.
 |--------------|-------|
 |RData|-|
 |Type|-|
-
-
 
 
 

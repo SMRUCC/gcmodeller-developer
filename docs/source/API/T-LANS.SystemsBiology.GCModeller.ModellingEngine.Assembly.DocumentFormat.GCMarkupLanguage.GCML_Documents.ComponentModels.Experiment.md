@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### TargetAction
@@ -16,4 +17,3 @@ Target Action List
 #### TriggedCondition
 The start time of this disturb.
  (这个干扰动作的开始时间)
-

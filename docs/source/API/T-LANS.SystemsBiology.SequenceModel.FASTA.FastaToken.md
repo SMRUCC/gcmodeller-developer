@@ -9,6 +9,8 @@ The FASTA format file of a bimolecular sequence.(Notice that this file is
  only contains on sequence.)
  FASTA格式的生物分子序列文件。(但是请注意：文件中只包含一条序列的情况，假若需要自定义所生成的FASTA文件的标题的格式，请复写@"M:LANS.SystemsBiology.SequenceModel.FASTA.FastaToken.ToString"方法)
 
+
+
 ### Methods
 
 #### #ctor
@@ -201,7 +203,6 @@ Try parsing a fasta sequence object from a string chunk value.(尝试从一个�
 
 
 
-
 ### Properties
 
 #### _InnerList
@@ -219,4 +220,3 @@ The sequence data that contains in this FASTA file.
  (包含在这个FASTA文件之中的序列数据)
 #### Title
 The first character ">" is not included in the title string data.(标题之中是不包含有FASTA数据的第一个>字符的)
-

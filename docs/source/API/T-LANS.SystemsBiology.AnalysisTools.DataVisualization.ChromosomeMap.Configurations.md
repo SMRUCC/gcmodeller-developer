@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap](
 
 配置数据的文本文件模型，保存或者读取配置数据，请使用本对象类型来执行
 
+
+
 ### Methods
 
 #### op_Implicit
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.Configurations
 |Parameter Name|Remarks|
 |--------------|-------|
 |Path|-|
-
-
 
 
 

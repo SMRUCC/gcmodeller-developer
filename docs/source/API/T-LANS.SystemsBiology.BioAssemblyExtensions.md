@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology](N-LANS.SystemsBiology.html)_
 
 
 
+
+
 ### Methods
 
 #### DirectCast``1
@@ -115,8 +117,6 @@ Current nt base is a unknown base?
 |Parameter Name|Remarks|
 |--------------|-------|
 |base|-|
-
-
 
 
 

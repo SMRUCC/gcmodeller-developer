@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
 
 根据直系同源的方法能够真的重建出Regulon么？
 
+
+
 ### Methods
 
 #### __getOperons
@@ -42,8 +44,6 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.RegulonAPI.uid(LANS.SystemsBiolo
 |Parameter Name|Remarks|
 |--------------|-------|
 |regulator|-|
-
-
 
 
 

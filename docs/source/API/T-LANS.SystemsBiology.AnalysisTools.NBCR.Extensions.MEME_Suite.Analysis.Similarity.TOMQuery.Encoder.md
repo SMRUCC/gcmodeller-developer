@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 
 
+
+
 ### Methods
 
 #### Level
@@ -20,7 +22,5 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.Similarity
 |p|0-1之间的概率值|
 
 _returns: ABCDE_
-
-
 
 

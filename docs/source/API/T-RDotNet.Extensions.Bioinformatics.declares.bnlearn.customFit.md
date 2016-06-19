@@ -12,6 +12,7 @@ custom.fit takes a set of user-specified distributions and their parameters and 
 
 
 
+
 ### Properties
 
 #### dist
@@ -20,4 +21,3 @@ a named list, with element for each node of x. See below.
 a vector Of character strings, the labels Of the discrete nodes which should be saved As ordinal random variables (bn.fit.onode) instead Of unordered factors (bn.fit.dnode).
 #### x
 an object of class bn (for bn.fit and custom.fit) or an object of class bn.fit (for bn.net).
-

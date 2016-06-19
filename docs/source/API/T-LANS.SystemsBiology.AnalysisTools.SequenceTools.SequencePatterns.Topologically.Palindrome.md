@@ -66,6 +66,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
  -- A.G. Pedersen And L.J. Jensen And H.H. St\aerfeldt And S. Brunak And D.W. 
  Ussery A DNA structural atlas of extitE. coli (2000) 299907-930
 
+
+
 ### Methods
 
 #### CreateMirrors
@@ -115,8 +117,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.P
 |Sequence|-|
 |Min|-|
 |Max|-|
-
-
 
 
 

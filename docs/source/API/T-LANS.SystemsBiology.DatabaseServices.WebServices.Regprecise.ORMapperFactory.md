@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.WebServices.Regprecise](N-LANS
 
 
 
+
+
 ### Methods
 
 #### CreateArrayMapper
@@ -42,8 +44,6 @@ create new type for table name
 |--------------|-------|
 |modBuilder|-|
 |typeName|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions](N-LANS
 
 
 
+
+
 ### Methods
 
 #### createNetwork
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.BnlearnModelling.cre
 |Parameter Name|Remarks|
 |--------------|-------|
 |Tokens|-|
-
-
 
 
 

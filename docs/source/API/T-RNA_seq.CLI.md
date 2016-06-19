@@ -7,6 +7,8 @@ _namespace: [RNA_seq](N-RNA_seq.html)_
 
 
 
+
+
 ### Methods
 
 #### sIdMapping
@@ -18,8 +20,6 @@ RNA_seq.CLI.sIdMapping(Microsoft.VisualBasic.CommandLine.CommandLine)
 |Parameter Name|Remarks|
 |--------------|-------|
 |args|-|
-
-
 
 
 

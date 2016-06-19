@@ -7,6 +7,8 @@ _namespace: [RDotNET.Devices](N-RDotNET.Devices.html)_
 
 The default IO device, using the System.Console
 
+
+
 ### Methods
 
 #### AddHistory
@@ -202,8 +204,6 @@ Write output on console.
 |output|The output message|
 |length|Parameter is ignored|
 |outputType|Parameter is ignored|
-
-
 
 
 

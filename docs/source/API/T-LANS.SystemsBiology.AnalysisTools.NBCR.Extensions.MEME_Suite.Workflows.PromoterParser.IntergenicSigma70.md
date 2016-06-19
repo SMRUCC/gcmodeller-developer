@@ -9,6 +9,31 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workfl
  
  只解析出在基因间隔区的，ORF上游100bp的序列片段，假若片段和其他的ORF发生了重叠，就缩短片段，但是不得短于25bp
 
+> 
+>  Initially, all 100 nt regions upstream of all protein encoding genes were selected from the genome. 
+>  
+>  Subsequently, these sequences were evaluated for their potential overlap With a preceding gene, 
+>  And In such cases, only the intergenic sequence was used For analysis, provided they
+>  were 25 nt Or longer.
+>  
+>  The resulting Set Of selected intergenic sequences was searched For conserved motifs using MEME, applying standard DNA
+>  parameter settings. 
+>  
+>  Only motifs reported by MEME With E-values below 10-4 were considered relevant for further analysis.
+>  
+>  Additional parameters used For selection Of candidate sequences were: 
+>  
+>  1) Zero Or One Occurrence Per Sequence (ZOOPS mode),
+>  2) a maximum of ten different motifs per sequence, And 
+>  3) each motif should be found In at least thirty-five different sequences.
+>  
+>  PWM models were constructed For the most abundantly encountered motifs, including those resembling the canonical 235 And
+>  210 elements known from general s70-dependent promoters.
+>  
+>  黄单胞菌应该长一点150bp，非严格重叠？？？？
+>  
+
+
 ### Methods
 
 #### DIPAssociation
@@ -106,8 +131,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterP
 |--------------|-------|
 |Csv|-|
 |DIPCsv|-|
-
-
 
 
 

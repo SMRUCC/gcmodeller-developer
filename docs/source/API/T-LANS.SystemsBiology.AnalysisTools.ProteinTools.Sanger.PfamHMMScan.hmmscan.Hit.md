@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan.h
 
 
 
+
 ### Properties
 
 #### Best
 --- best 1 domain ---
 #### Full
 --- full sequence ---
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.DataStorage.
 
 
 
+
+
 ### Methods
 
 #### GetRanges
@@ -31,8 +33,6 @@ LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.DataStorage.FileModel.Dat
 |Parameter Name|Remarks|
 |--------------|-------|
 |data|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions](N-LANS
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -33,8 +35,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.DataPreparations.Seq
 |InteractorA|经过多序列比对后的结果序列文件|
 |InteractorB|-|
 |InteractionPairs|-|
-
-
 
 
 

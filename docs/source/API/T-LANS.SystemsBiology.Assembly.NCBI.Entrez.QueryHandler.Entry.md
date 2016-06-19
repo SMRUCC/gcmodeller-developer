@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.Entrez.QueryHandler](N-LANS.Syste
 
 
 
+
+
 ### Methods
 
 #### __buildQuery
@@ -33,8 +35,6 @@ The BioPerl is required for download the genbank file in this function.(本函�
 |Parameter Name|Remarks|
 |--------------|-------|
 |work|保存文件的临时文件夹|
-
-
 
 
 

@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM
 
 
 
+
 ### Properties
 
 #### className
@@ -35,4 +36,3 @@ number of TF binding sites in collection
 total number of genomes that have at least one regulon in collection
 #### totalRegulogCount
 total number of regulogs in collection
-

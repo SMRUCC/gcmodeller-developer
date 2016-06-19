@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.Schema.DBLinkManager](N-LANS.S
 
 与其他的数据库之间的外键链接
 
+
+
 ### Methods
 
 #### GetFormatValue
@@ -43,7 +45,5 @@ LANS.SystemsBiology.Assembly.MetaCyc.Schema.DBLinkManager.DBLink.TryParseMetaCyc
 |strData|-|
 
 > 本方法和@"M:LANS.SystemsBiology.Assembly.MetaCyc.Schema.DBLinkManager.DBLink.TryParse(System.String)"[另外一个解析方法]的解析格式相似，仅在于TryParse方法是使用%进行分割的，由于在Csv文件中使用的是"进行分割，所以使用%符号可以避免一些不必要的字符串解析BUG
-
-
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.FileSystem](N
 
 
 
+
+
 ### Methods
 
 #### __matchTraceDef
@@ -37,9 +39,7 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.FileSystem.Family.IsThisFa
 
 
 
-
 ### Properties
 
 #### Trace
 与@"P:LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.FileSystem.Family.Domains"不同的是，这个超过60的蛋白质拥有这个结构域其就会被记录在这里
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
+
 ### Methods
 
 #### Invoke
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.FluxObject.IFluxObjectHandle.Invoke
 ```
 调用动力学模型之中的计算方法并返回计算值
-
-
 
 

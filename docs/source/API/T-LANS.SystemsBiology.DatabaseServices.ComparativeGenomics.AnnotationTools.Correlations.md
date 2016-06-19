@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 基因表达相关性的数据库服务
 
+
+
 ### Methods
 
 #### #ctor
@@ -66,8 +68,6 @@ LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.Correla
 |--------------|-------|
 |id1|-|
 |id2|-|
-
-
 
 
 

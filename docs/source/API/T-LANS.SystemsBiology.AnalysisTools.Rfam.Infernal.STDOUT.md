@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.Rfam.Infernal](N-LANS.SystemsBiol
 
 
 
+
 ### Properties
 
 #### CM
 target CM database
 #### query
 query sequence file
-

@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### MetabolismNetwork
 Reaction Handles.(指向代谢组网络中的反应对象的句柄)
 #### Name
 Unique-Id
-

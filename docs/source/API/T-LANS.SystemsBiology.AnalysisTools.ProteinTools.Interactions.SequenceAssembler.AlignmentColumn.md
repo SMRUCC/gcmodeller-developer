@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.Sequenc
 
 
 
+
+
 ### Methods
 
 #### Compute
@@ -38,7 +40,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.SequenceAssembler.Al
 获取所有的残基的集合
 
 
-
 ### Properties
 
 #### Alphabets
@@ -51,4 +52,3 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.SequenceAssembler.Al
 氨基酸残基的代码名称和其在统计列种的位置，-符号表示比对结果中的空缺
 #### SequenceCount
 序列数目，即统计的样本数
-

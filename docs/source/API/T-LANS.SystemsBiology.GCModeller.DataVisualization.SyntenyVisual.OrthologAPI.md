@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual](N-L
 
 直系同源的绘图数据模型
 
+
+
 ### Methods
 
 #### FromBBH
@@ -25,8 +27,6 @@ Creates the drawing model from the bbh result.
 |h2|-|
 |style|-|
 |width|绘图区域的宽度|
-
-
 
 
 

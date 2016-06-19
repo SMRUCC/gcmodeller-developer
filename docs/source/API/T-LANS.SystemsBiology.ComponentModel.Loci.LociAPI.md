@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ComponentModel.Loci](N-LANS.SystemsBiology.Comp
 
 
 
+
+
 ### Methods
 
 #### __tryParse
@@ -62,8 +64,6 @@ Try parse NCBI sequence dump location/@"M:LANS.SystemsBiology.ComponentModel.Loc
 |Parameter Name|Remarks|
 |--------------|-------|
 |sLoci|-|
-
-
 
 
 

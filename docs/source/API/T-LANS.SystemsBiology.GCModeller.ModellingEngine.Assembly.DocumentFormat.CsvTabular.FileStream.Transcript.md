@@ -9,10 +9,10 @@ Product of @"T:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentF
 
 
 
+
 ### Properties
 
 #### Product
 @"P:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.FileStream.Metabolite.Identifier" for its protein product.
 #### UniqueId
 @"P:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.FileStream.Metabolite.Identifier" for itself in the table of @"T:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.FileStream.Metabolite"
-

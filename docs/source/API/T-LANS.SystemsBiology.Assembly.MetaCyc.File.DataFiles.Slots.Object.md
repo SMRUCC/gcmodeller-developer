@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots](N-LANS.S
 
 The object type is the base type of the objects definition both in the namespace PGDB.DataFile and PGDB.Schemas
 
+
+
 ### Methods
 
 #### Exists
@@ -44,7 +46,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots.Object.TypeCast``1(LAN
 
 
 
-
 ### Properties
 
 #### AbbrevName
@@ -77,4 +78,3 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots.Object.TypeCast``1(LAN
 The TYPES enumerate values in each object.
 #### UNIQUE_ID_REGX
 (解析Unique-Id字段的值所需要的正则表达式)
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CARMEN](N-LANS.SystemsBiology.Ana
 
 
 
+
+
 ### Methods
 
 #### __getGeneIDAssociation
@@ -21,9 +23,7 @@ LANS.SystemsBiology.AnalysisTools.CARMEN.Reaction.__getGeneIDAssociation(LANS.Sy
 
 
 
-
 ### Properties
 
 #### rnId
 KEGG reaction Id
-

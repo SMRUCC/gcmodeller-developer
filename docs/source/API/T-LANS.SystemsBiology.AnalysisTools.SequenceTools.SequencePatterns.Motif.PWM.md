@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Mo
 
 Build probability matrix from clustal multiple sequence alignment.
 
+
+
 ### Methods
 
 #### __hi
@@ -50,8 +52,6 @@ Build probability matrix from clustal multiple sequence alignment, this matrix m
 |Parameter Name|Remarks|
 |--------------|-------|
 |fa|A fasta sequence file from the clustal multiple sequence alignment.|
-
-
 
 
 

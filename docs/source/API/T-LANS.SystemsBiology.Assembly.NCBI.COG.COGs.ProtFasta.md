@@ -11,6 +11,8 @@ prot2003-2014.fa.gz
 
  The first word of the defline always starts with "gi|<protein-id>".
 
+
+
 ### Methods
 
 #### ToString
@@ -18,7 +20,5 @@ prot2003-2014.fa.gz
 LANS.SystemsBiology.Assembly.NCBI.COG.COGs.ProtFasta.ToString
 ```
 >gi|103485499|ref|YP_615060.1| chromosomal replication initiation protein [Sphingopyxis alaskensis RB2256]
-
-
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BatchPar
 
 生成用于linux服务器上面批量运行的blast脚本
 
+
+
 ### Methods
 
 #### ScriptCallSave
@@ -34,8 +36,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BatchParallel.BashShe
 |outDIR|-|
 |evalue|-|
 |blastDIR|这个应该是linux服务器上面的位置，包含blastp+makeblastdb|
-
-
 
 
 

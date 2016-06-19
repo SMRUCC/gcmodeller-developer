@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 
 
+
+
 ### Methods
 
 #### __counts
@@ -65,8 +67,6 @@ A measure of difference between two sequences f and g (from different organisms 
 |--------------|-------|
 |f|-|
 |g|-|
-
-
 
 
 

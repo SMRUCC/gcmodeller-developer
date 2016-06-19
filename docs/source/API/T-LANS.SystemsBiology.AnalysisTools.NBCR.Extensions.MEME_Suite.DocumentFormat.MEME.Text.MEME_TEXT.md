@@ -7,6 +7,35 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 MEME - Motif discovery tool
 
+> 
+>  ********************************************************************************
+>  MEME - Motif discovery tool
+>  ********************************************************************************
+>  MEME version 3.5.4 (Release date: 3.5.4)
+>  
+>  For further information on how to interpret these results or to get
+>  a copy of the MEME software please access http://meme.nbcr.net.
+>  
+>  This file may be used as input to the MAST algorithm for searching
+>  sequence databases for matches to groups of motifs.  MAST is available
+>  for interactive use and downloading at http://meme.nbcr.net.
+>  ********************************************************************************
+>  
+>  
+>  ********************************************************************************
+>  REFERENCE
+>  ********************************************************************************
+>  If you use this program in your research, please cite:
+>  
+>  Timothy L. Bailey and Charles Elkan,
+>  "Fitting a mixture model by expectation maximization to discover
+>  motifs in biopolymers", Proceedings of the Second International
+>  Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+>  AAAI Press, Menlo Park, California, 1994.
+>  ********************************************************************************
+>  
+
+
 ### Methods
 
 #### __createBlockDiagrams
@@ -133,7 +162,5 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.MEME
 >  genome2
 >  genome3
 >  
-
-
 
 

@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 Thrown when an engine comes to an error.
 
+
+
 ### Methods
 
 #### #ctor
@@ -34,11 +36,9 @@ Sets the serialization info about the exception thrown
 
 
 
-
 ### Properties
 
 #### ErrorStatement
 The statement caused the error.
 #### Status
 The error.
-

@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlu
 
 
 
+
 ### Properties
 
 #### Charts
@@ -17,4 +18,3 @@ Number of letters in database
 Neighboring words threshold
 #### Window
 Window for multiple hits
-

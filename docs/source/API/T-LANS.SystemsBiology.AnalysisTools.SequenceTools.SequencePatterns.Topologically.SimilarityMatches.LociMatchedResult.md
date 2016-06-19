@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 
 
+
 ### Properties
 
 #### Loci
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 模糊匹配上的序列
 #### Similarity
 相似度
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### DownloadReactions
@@ -20,7 +22,5 @@ LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry.EnzymaticReaction.DownloadRe
 |Export|-|
 
 _returns: 返回成功下载的代谢途径的数目_
-
-
 
 

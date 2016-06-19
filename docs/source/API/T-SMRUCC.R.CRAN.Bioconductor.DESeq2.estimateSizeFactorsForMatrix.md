@@ -13,6 +13,10 @@ Low-level function to estimate size factors with robust regression.
  is used as the size factor for this column. Typically, one will not call this function directly,
  but use estimateSizeFactors.
 
+> 
+>  a vector with the estimates size factors, one element per column
+>  
+
 
 
 ### Properties
@@ -28,4 +32,3 @@ by default this is not provided, and the geometric means of the counts are calcu
 #### locfunc
 a function to compute a location for a sample. By default, the median is used.
  However, especially for low counts, the shorth function from genefilter may give better results.
-

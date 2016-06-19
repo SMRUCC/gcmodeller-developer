@@ -19,6 +19,7 @@ This slot specifies the directionality of a reaction. This slot is used in sligh
 
 
 
+
 ### Properties
 
 #### IrreversibleLeftToRight
@@ -43,4 +44,3 @@ The reaction occurs in both directions in physiological settings.
 #### RightToLeft
 The reaction occurs in the specified direction in physiological settings, but it is unknown 
  whether the reaction is considered irreversible.
-

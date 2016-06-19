@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver](N-LANS.Syst
 
 Driver of the GCModeller system kernel.(计算引擎核心的驱动程序)
 
+
+
 ### Methods
 
 #### __invokeDataAcquisition
@@ -34,10 +36,8 @@ LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.KernelDriver`3.Run
 The engine kernel driver running the loadded kernel object.(内核驱动程序运行已经加载的内核程序)
 
 
-
 ### Properties
 
 #### _runtimeTicks
 The current ticks since from the start of running.
  (从运行开始后到当前的时间中所流逝的内核循环次数)
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization](N-LANS.SystemsBio
 
 
 
+
+
 ### Methods
 
 #### DrawingCOGColors
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.DataVisualization.Extensions.DrawingCOGColors(Sys
 |Parameter Name|Remarks|
 |--------------|-------|
 |gdi|-|
-
-
 
 
 

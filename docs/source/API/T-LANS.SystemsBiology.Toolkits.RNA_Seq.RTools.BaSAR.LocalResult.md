@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.BaSAR](N-LANS.SystemsBi
 
 
 
+
 ### Properties
 
 #### Omega
 1D vector of the omega sampled
 #### p
 2D posterior distribution over omega and time
-

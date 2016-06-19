@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan](
 
 
 
+
 ### Properties
 
 #### HMM
@@ -20,4 +21,3 @@ target sequence database
  # HMMER 3.1b1 (May 2013); http://hmmer.org/
  # Copyright (C) 2013 Howard Hughes Medical Institute.
  # Freely distributed under the GNU General Public License (GPLv3).
-

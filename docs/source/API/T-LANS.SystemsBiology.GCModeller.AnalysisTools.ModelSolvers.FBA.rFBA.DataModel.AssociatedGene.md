@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.rFBA.
 
 
 
+
 ### Properties
 
 #### Effectors
 仅适用于调控过程，酶促反应过程不会使用到本属性{Handle, Id}
-

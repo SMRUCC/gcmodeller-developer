@@ -7,6 +7,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan](
 
 Structure containing information for an HMM profile retrieved from the PFAM database.
 
+> 
+>  http://cn.mathworks.com/help/bioinfo/ref/gethmmprof.html
+>  
+
 
 
 ### Properties
@@ -66,4 +70,3 @@ Null transition probabilities used To provide scores With log-odds values also F
  [G->F ; G->G]
 #### PfamAccessionNumber
 The protein family accession number Of the HMM profile record In the PFAM database.
-

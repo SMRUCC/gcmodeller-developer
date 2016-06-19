@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices](N-LANS.SystemsBiology.Databas
 
 
 
+
+
 ### Methods
 
 #### ContinuouParts
@@ -29,8 +31,6 @@ LANS.SystemsBiology.DatabaseServices.Extensions.IsContinuous(System.Collections.
 |Parameter Name|Remarks|
 |--------------|-------|
 |lstId|-|
-
-
 
 
 

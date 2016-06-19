@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeGeno
 
 
 
+
+
 ### Methods
 
 #### BatchDrawing
@@ -20,8 +22,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeGenomics.ShellScr
 |DIR|besthitde的批量导出的文件夹|
 |gbDIR|gbk文件夹|
 |EXPORT|绘图数据的导出文件夹|
-
-
 
 
 

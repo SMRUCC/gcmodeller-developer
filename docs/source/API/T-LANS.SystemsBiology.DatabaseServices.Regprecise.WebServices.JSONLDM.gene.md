@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM
 
 
 
+
 ### Properties
 
 #### function
@@ -21,4 +22,3 @@ name of gene
 identifier of a regulon
 #### vimssId
 identifier of gene in MicrobesOnline database
-

@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.CDD](N-LANS.SystemsBiology.Assemb
 
 
 
+
 ### Properties
 
 #### FileList
@@ -17,4 +18,3 @@ The file list of the sub database in this CDD database.
 #### FilePath
 The file path of this pn file.
  (这个pn文件的文件路径)
-

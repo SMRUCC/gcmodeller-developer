@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan](
 
 
 
+
+
 ### Methods
 
 #### Equals
@@ -20,8 +22,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan.HMMCompares.Eq
 |a|-|
 |b|-|
 |cut|-|
-
-
 
 
 

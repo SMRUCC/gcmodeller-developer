@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.StringDB.SimpleCsv](N-LANS.Sys
 
 
 
+
+
 ### Methods
 
 #### GetInteractNode
@@ -18,8 +20,6 @@ LANS.SystemsBiology.DatabaseServices.StringDB.SimpleCsv.PitrNode.GetInteractNode
 |Parameter Name|Remarks|
 |--------------|-------|
 |NodeId|-|
-
-
 
 
 

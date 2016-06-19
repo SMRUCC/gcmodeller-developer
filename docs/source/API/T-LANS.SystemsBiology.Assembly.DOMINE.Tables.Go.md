@@ -7,6 +7,14 @@ _namespace: [LANS.SystemsBiology.Assembly.DOMINE.Tables](N-LANS.SystemsBiology.A
 
 
 
+> 
+>  CREATE TABLE GO
+>  (
+>  GoTerm char(10) PRIMARY KEY,
+>  Ontology varchar(256),
+>  GoDesc varchar(256)
+>  );
+>  
 
 
 

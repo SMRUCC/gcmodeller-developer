@@ -9,8 +9,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.grDevices](N-RDotNET.Extensions.Visu
 
 
 
+
 ### Properties
 
 #### type
 Should be plotting be done using Windows GDI or cairographics?
-

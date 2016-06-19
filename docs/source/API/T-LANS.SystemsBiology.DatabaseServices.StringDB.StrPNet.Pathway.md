@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.StringDB.StrPNet](N-LANS.Syste
 
 
 
+
 ### Properties
 
 #### NotAcceptStrPSignal
@@ -19,4 +20,3 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.StringDB.StrPNet](N-LANS.Syste
 当前的这个@"P:LANS.SystemsBiology.DatabaseServices.StringDB.StrPNet.Pathway.TF"[转录调控因子]是否为TCS类型
 #### TF
 @"F:LANS.SystemsBiology.DatabaseServices.StringDB.StrPNet.Assembler.TF"中的@"P:LANS.SystemsBiology.DatabaseServices.Regprecise.RegpreciseBBH.QueryName"[标识号]
-

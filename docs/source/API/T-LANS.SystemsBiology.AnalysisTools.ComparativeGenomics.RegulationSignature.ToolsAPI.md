@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSig
 
 
 
+
+
 ### Methods
 
 #### GenerateCode
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature.ToolsA
 |Parameter Name|Remarks|
 |--------------|-------|
 |str|-|
-
-
 
 
 

@@ -9,6 +9,7 @@ Specifies the save action.
 
 
 
+
 ### Properties
 
 #### Ask
@@ -21,4 +22,3 @@ No saving.
 Saving.
 #### Suicide
 Terminates without any actions.
-

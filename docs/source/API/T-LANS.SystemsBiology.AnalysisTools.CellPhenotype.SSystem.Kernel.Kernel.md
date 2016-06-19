@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Kernel](N-L
 
 The simulation system kernel.
 
+
+
 ### Methods
 
 #### __innerTicks
@@ -27,7 +29,6 @@ Run a compiled model.(运行一个已经编译好的模型文件)
 
 
 
-
 ### Properties
 
 #### __engine
@@ -42,4 +43,3 @@ Object that action the disturbing
 Gets the system run time ticks
 #### Vars
 Store the system state.
-

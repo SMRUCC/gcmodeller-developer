@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.Archives](N-LANS.SystemsBiology.A
 
 
 
+
+
 ### Methods
 
 #### TitleParser
@@ -18,8 +20,6 @@ LANS.SystemsBiology.Assembly.KEGG.Archives.SequenceDump.TitleParser(System.Strin
 |Parameter Name|Remarks|
 |--------------|-------|
 |title|-|
-
-
 
 
 

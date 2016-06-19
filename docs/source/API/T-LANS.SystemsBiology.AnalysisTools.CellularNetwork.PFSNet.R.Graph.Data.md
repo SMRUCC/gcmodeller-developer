@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellularNetwork.PFSNet.R.Graph](N
 
 
 
+
+
 ### Methods
 
 #### Frame
@@ -46,7 +48,5 @@ simplify(graph, remove.multiple = TRUE, remove.loops = TRUE,
 |graph|-|
 
 _returns: A new graph object with the edges deleted._
-
-
 
 

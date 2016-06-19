@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 Regulation information from the MEME software and regprecise database.(使用MEME软件和regprecise数据库所生成的预测的调控信息)
 
+
+
 ### Methods
 
 #### __createRegulationObject
@@ -41,7 +43,5 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.GenomeMoti
 LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.GenomeMotifFootPrints.PredictedRegulationFootprint.OperonRegulationCopies
 ```
 将操作子的调控转换为一对一的调控描述
-
-
 
 

@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.StringDB.StrPNet](N-LANS.Syste
 
 
 
+
 ### Properties
 
 #### OperonId
 通常为属性@"P:LANS.SystemsBiology.Assembly.DOOR.GeneBrief.OperonID"的这个编号值
 #### TFPcc
 Regulator对第一个基因的Pcc值
-

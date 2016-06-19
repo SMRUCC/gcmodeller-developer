@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat](N-LANS.Sys
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -74,11 +76,9 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.PTTDbLoader.RNARnt
 *.rpt
 
 
-
 ### Properties
 
 #### _genomeContext
 整个基因组中的所有基因的集合，包括有蛋白质编码基因和RNA基因
 #### RptGenomeBrief
 *.rpt
-

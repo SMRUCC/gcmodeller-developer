@@ -10,6 +10,16 @@ Any of the above components may be omitted, but it is meaningless to supply a ti
  omitted, but if a value contains an evidence-code with no accompanying citation, the 
  leading colon must be present. The square brackets are optional.
 
+> 
+>  Examples:
+>    [123456] -- a PubMed or MEDLINE reference
+>    [SMITH95] -- a non-PubMed reference
+>    [123456:EV-IDA] -- an evidence code with associated PubMed reference
+>    [:EV-HINF] -- an evidence code with no associated reference
+>    [123456:EV-IGI:9876543:paley] -- a time- and user-stamped evidence code with associated reference
+>  
+
+
 ### Methods
 
 #### ToString
@@ -18,7 +28,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots.Citation.ToString
 ```
 
 > CITATIONS - :EV-COMP-AINF:3567386625:kaipa
-
 
 
 ### Properties
@@ -41,4 +50,3 @@ timestamp is a lisp universal time (not human readable) corresponding to the tim
 #### With
 with is a free text string that modifies the evidence-code when the citation annotates a GO term. 
  This is the "with" field described in GO documentation.
-

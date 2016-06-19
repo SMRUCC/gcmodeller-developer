@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeAlig
 
 
 
+
 ### Properties
 
 #### links
 BBH result
 #### nt
 @"P:LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeAlignment.DrawingModel.Query"的基因组序列，这个适用于计算GCSkew的
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc](N-LANS.SystemsBiology.Assembl
 
 
 
+
+
 ### Methods
 
 #### ContactLines
@@ -18,8 +20,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.Extensions.ContactLines(System.String[])
 |Parameter Name|Remarks|
 |--------------|-------|
 |source|-|
-
-
 
 
 

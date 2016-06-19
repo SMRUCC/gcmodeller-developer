@@ -9,6 +9,7 @@ The drawing model abstract of the ortholog relationship.(直系同源的绘图�
 
 
 
+
 ### Properties
 
 #### Color
@@ -17,4 +18,3 @@ You can assign the family or COG classified result for the colors.
 Query
 #### To
 BBH hit
-

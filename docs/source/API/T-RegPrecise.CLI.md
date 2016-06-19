@@ -7,6 +7,8 @@ _namespace: [RegPrecise](N-RegPrecise.html)_
 
 
 
+
+
 ### Methods
 
 #### __CORNsiteThread
@@ -142,8 +144,6 @@ RegPrecise.CLI.Supports(Microsoft.VisualBasic.CommandLine.CommandLine)
 |Parameter Name|Remarks|
 |--------------|-------|
 |args|-|
-
-
 
 
 

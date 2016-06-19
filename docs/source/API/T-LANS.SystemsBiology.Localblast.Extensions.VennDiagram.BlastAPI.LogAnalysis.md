@@ -7,6 +7,9 @@ _namespace: [LANS.SystemsBiology.Localblast.Extensions.VennDiagram.BlastAPI](N-L
 
 BLAST日志分析模块
 
+> This module its code is too old, obsolete!
+
+
 ### Methods
 
 #### Merge
@@ -30,8 +33,6 @@ LANS.SystemsBiology.Localblast.Extensions.VennDiagram.BlastAPI.LogAnalysis.TakeB
 |--------------|-------|
 |query|-|
 |subject|-|
-
-
 
 
 

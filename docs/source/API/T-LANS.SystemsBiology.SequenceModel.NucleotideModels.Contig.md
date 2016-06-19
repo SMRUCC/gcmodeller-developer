@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.NucleotideModels](N-LANS.SystemsB
 
 这个基础的模型对象只有在基因组上面的位置信息
 
+
+
 ### Methods
 
 #### #ctor
@@ -32,9 +34,7 @@ LANS.SystemsBiology.SequenceModel.NucleotideModels.Contig.GetRelatedUpstream(LAN
 
 
 
-
 ### Properties
 
 #### MappingLocation
 在参考基因组上面的Mapping得到的位置，假若需要修改位置，假若害怕影响到原有的数据的话，则请复写这个属性然后使用复制的方法得到新的位点数据
-

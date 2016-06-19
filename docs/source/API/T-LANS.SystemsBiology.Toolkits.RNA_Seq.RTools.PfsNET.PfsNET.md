@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET](N-LANS.SystemsB
 
 
 
+
 ### Properties
 
 #### Class
 1表示第一种类别，2表示第二种类型，只有这两种值
-

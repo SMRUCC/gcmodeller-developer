@@ -9,6 +9,7 @@ http://regprecise.lbl.gov/Services/rest/genomes
 
 
 
+
 ### Properties
 
 #### genomeId
@@ -17,4 +18,3 @@ genome identifier
 genome name
 #### taxonomyId
 NCBI taxonomy id
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions](N-LANS
 
 
 
+
+
 ### Methods
 
 #### Convert
@@ -56,7 +58,5 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Interactions.BeliefNetwork.GetBel
 |ProteinsConditions|蛋白质序列的排列顺序必须与计算网络时候所使用的比对序列的位置相一致，对于空白的部分请使用一个空字符串|
 
 > 假设没有缺失的序列部分，并且在这里将空缺转换为-1
-
-
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
+
 ### Methods
 
 #### DeltaHomogeneity
@@ -58,8 +60,6 @@ LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.CEG.Too
 |Parameter Name|Remarks|
 |--------------|-------|
 |DIR|一个基因组的文件夹可能包含有染色体基因组和质粒基因组的数据|
-
-
 
 
 

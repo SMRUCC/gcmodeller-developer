@@ -7,6 +7,11 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A collection of integers from -2^31 + 1 to 2^31 - 1.
 
+> 
+>  The minimum value of IntegerVector is different from that of System.Int32 in .NET Framework.
+>  
+
+
 ### Methods
 
 #### #ctor
@@ -49,7 +54,6 @@ RDotNET.IntegerVector.SetVectorDirect(System.Int32[])
 Efficient initialisation of R vector values from an array representation in the CLR
 
 
-
 ### Properties
 
 #### DataSize
@@ -58,4 +62,3 @@ Gets the size of an integer in byte.
 Gets or sets the element at the specified index.
 #### NACode
 Gets the code used for NA for integer vectors
-

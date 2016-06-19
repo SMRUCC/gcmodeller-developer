@@ -38,6 +38,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
 ### Properties
 
 #### entry_name
@@ -58,4 +59,3 @@ protein sequence
 SequenceVersion Is the version number of the sequence.
 #### uniprot_id
 UniqueIdentifier Is the primary accession number of the UniProtKB entry.
-

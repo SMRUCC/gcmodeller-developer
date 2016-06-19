@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry](N-LANS.Systems
 
 BRITE Functional Hierarchies
 
+
+
 ### Methods
 
 #### GetHPath
@@ -27,9 +29,7 @@ LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry.BriteHText.Load_ko00001
 KEGG Orthology
 
 
-
 ### Properties
 
 #### EntryId
 KEGG db-get对象名词
-

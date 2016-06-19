@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.DOOR](N-LANS.SystemsBiology.Assembly.D
 
 {OperonID, GeneId()}()
 
+
+
 ### Methods
 
 #### Select
@@ -21,9 +23,7 @@ LANS.SystemsBiology.Assembly.DOOR.OperonView.Select(System.String[])
 
 
 
-
 ### Properties
 
 #### GetOperon
 从这里得到指定DOOR编号的操纵子对象
-

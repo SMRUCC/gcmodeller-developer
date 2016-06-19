@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cir
 
 
 
+
 ### Properties
 
 #### PhenoTypeAssociations
@@ -17,4 +18,3 @@ Phenotype Class, GeneList
 Regulator, Genes
 #### RegulatorFamilies
 Family, Regulators
-

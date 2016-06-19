@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 在互补链部分的回文，由于Mirror其实就是简单重复序列，所以在这里不再编写了
 
+
+
 ### Methods
 
 #### #ctor
@@ -36,9 +38,7 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.I
 
 
 
-
 ### Properties
 
 #### _maxDist
 种子位点和回文位点之间的最大的距离
-

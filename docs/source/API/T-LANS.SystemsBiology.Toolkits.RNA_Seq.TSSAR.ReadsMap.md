@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.TSSAR](N-LANS.SystemsBiology.T
 
 统计一个rna-seq文库之中的每一个碱基的频数
 
+
+
 ### Methods
 
 #### Left
@@ -44,8 +46,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.TSSAR.ReadsMap.MapDrawing(LANS.SystemsBiolo
 |RangeEnds|-|
 |PTT|-|
 |Config|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Rep
 
 这个模块之中的命令当且仅当第一次创建数据库的时候使用，假若在已经创建了数据库的情况之下使用，则会重置整个数据库
 
+
+
 ### Methods
 
 #### UpdateGenbankEntryInfo
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Repository.DBIni
 |Parameter Name|Remarks|
 |--------------|-------|
 |dir|-|
-
-
 
 
 

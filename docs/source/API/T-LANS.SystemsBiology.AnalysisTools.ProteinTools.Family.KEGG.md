@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Family](N-LANS.Syste
 
 
 
+
+
 ### Methods
 
 #### FamilyDomains
@@ -26,7 +28,5 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.KEGG.FamilyDomains(LANS.Sy
 LANS.SystemsBiology.AnalysisTools.ProteinTools.Family.KEGG.ParsingFamilyDef(System.String)
 ```
 测试用的函数
-
-
 
 

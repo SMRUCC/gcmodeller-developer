@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.FASTA](N-LANS.SystemsBiology.Sequ
 A FASTA file that contains multiple sequence data.
  (一个包含有多条序列数据的FASTA文件)
 
+
+
 ### Methods
 
 #### #ctor
@@ -148,9 +150,7 @@ LANS.SystemsBiology.SequenceModel.FASTA.FastaFile.SaveData``1(System.Collections
 
 
 
-
 ### Properties
 
 #### SourceFile
 本FASTA数据文件对象的文件位置
-

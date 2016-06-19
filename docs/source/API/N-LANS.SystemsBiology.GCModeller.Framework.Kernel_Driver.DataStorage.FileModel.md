@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.DataStorage.FileModel
-date: 6/16/2016 4:57:00 AM
+date: 6/19/2016 11:14:50 AM
 ---
 
 [CHUNK_BUFFER_StateEnumerations](T-LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.DataStorage.FileModel.CHUNK_BUFFER_StateEnumerations.html)

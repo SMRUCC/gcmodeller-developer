@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 An expression in R environment.
 
+
+
 ### Methods
 
 #### #ctor
@@ -120,7 +122,6 @@ RDotNET.SymbolicExpression.Unpreserve
 Stops protection.
 
 
-
 ### Properties
 
 #### Engine
@@ -133,4 +134,3 @@ Gets whether this expression is protected from the garbage collection.
 An object to use to get a lock on if EnableLock is true;
 #### Type
 Gets the @"T:RDotNET.Internals.SymbolicExpressionType".
-

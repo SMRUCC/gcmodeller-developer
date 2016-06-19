@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Service
 
 数据采集服务与数据存储服务之间的中间层
 
+
+
 ### Methods
 
 #### #ctor
@@ -46,8 +48,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Services.DataAcquisi
 |Parameter Name|Remarks|
 |--------------|-------|
 |arg|提交数据的时候所需要的参数|
-
-
 
 
 

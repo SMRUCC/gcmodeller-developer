@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.dataExprMAT](N-LANS.SystemsBio
 
 Gene expression chip data.(基因芯片数据)
 
+
+
 ### Methods
 
 #### __getBirefDicts
@@ -55,8 +57,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.dataExprMAT.API.SelectLog2Genes(LANS.System
 |dat|-|
 |expr|-|
 |level|上调或者下调的log2的最低倍数|
-
-
 
 
 

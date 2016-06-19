@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.SBML.Level2](N-LANS.SystemsBiology.Ass
 
 
 
+
+
 ### Methods
 
 #### GetAllConsume
@@ -29,8 +31,6 @@ Check if the metabolite is a entry node of a model.(判断这个代谢物节点�
 |Parameter Name|Remarks|
 |--------------|-------|
 |Metabolite|-|
-
-
 
 
 

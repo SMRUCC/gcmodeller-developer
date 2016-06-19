@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots](N-LANS.S
 
 
 
+
 ### Properties
 
 #### AssumeUniqueEnzymes
@@ -119,4 +120,3 @@ This slot is the inverse of the Super-Pathways slot. It lists all the direct sub
  pathway.
 #### SuperPathways
 This slot lists direct super-pathways of a pathway.
-

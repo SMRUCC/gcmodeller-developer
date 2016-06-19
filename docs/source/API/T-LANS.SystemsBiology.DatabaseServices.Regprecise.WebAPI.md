@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### DownloadRegulatorSequence
@@ -18,8 +20,6 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.WebAPI.DownloadRegulatorSequence
 |Parameter Name|Remarks|
 |--------------|-------|
 |Regprecise|-|
-
-
 
 
 

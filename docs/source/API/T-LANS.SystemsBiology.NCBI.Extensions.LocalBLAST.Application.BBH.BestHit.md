@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH](N-L
 
 单向的最佳比对结果
 
+
+
 ### Methods
 
 #### IsMatchedBesthit
@@ -19,8 +21,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH.BestHit.IsMatched
 |--------------|-------|
 |identities|-|
 |coverage|-|
-
-
 
 
 

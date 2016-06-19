@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Repository](N-LANS.SystemsBiology.Repository.ht
 
 
 
+
+
 ### Methods
 
 #### BuildLocusHash
@@ -56,8 +58,6 @@ LANS.SystemsBiology.Repository.Installer.Install(System.String,System.Boolean)
 |Parameter Name|Remarks|
 |--------------|-------|
 |DIR|Extract location of file: all.gbk.tar.gz from NCBI FTP website.|
-
-
 
 
 

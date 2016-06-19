@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Regulon](N-LANS.SystemsBiology
 
 
 
+
 ### Properties
 
 #### LocusId
 Gene id
 #### Regulators
 Regulators gene id
-

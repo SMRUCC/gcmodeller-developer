@@ -7,6 +7,8 @@ _namespace: [SMRUCC.R.CRAN.Bioconductor.WGCNA](N-SMRUCC.R.CRAN.Bioconductor.WGCN
 
 
 
+
+
 ### Methods
 
 #### allowWGCNAThreads
@@ -54,7 +56,5 @@ SMRUCC.R.CRAN.Bioconductor.WGCNA.ScriptAPI.WGCNAnThreads
 ```
 WGCNAnThreads returns the number of threads (parallel processes) that WGCNA is currently configured to run with.
 _returns: allowWGCNAThreads, enableWGCNAThreads, and disableWGCNAThreads return the maximum number of threads WGCNA calculations will be allowed to use._
-
-
 
 

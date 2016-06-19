@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2](N-LANS.SystemsB
 
 鉴别出底表达量和休眠的基因
 
+
+
 ### Methods
 
 #### IdentifyChanges
@@ -20,8 +22,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2.SleepIdentified.IdentifyChang
 |DESEq|-|
 |samples|-|
 |diff|产生差异表达的最小的阈值，请注意，这个和明显差异的含义是不一样的|
-
-
 
 
 

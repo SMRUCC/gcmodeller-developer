@@ -7,6 +7,12 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A collection of values.
 
+> 
+>  This vector cannot contain more than one types of values.
+>  Consider to use another vector class instead.
+>  
+
+
 ### Methods
 
 #### #ctor
@@ -34,11 +40,9 @@ RDotNET.DynamicVector.SetVectorDirect(System.Object[])
 Efficient initialisation of R vector values from an array representation in the CLR
 
 
-
 ### Properties
 
 #### DataSize
 Gets the data size of each element in this vector, i.e. the offset in memory between elements.
 #### Item
 Gets or sets the element at the specified index.
-

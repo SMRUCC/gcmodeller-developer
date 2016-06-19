@@ -12,6 +12,13 @@ The class of all proteins is divided into two subclasses: protein complexes and 
  slots that are applicable to Proteins are also applicable to members of the RNA class.
  (本类型的对象会枚举所有的Component对象的UniqueID)
 
+> 
+>  Protein表对象和ProtLigandCplxe表对象相比较：
+>  Protein表中包含有所有类型的蛋白质对象，而ProtLigandCplxe则仅包含有蛋白质和小分子化合物配合的之后所形成的复合物，
+>  所以基因的产物在ProtLigandCplxe表中是无法找到的
+>  
+
+
 ### Methods
 
 #### New
@@ -19,7 +26,6 @@ The class of all proteins is divided into two subclasses: protein complexes and 
 LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots.Protein.New
 ```
 返回一个新构造出来的Protein对象
-
 
 
 ### Properties
@@ -71,4 +77,3 @@ This slot is used in proteins only in the MetaCyc DB, in which case it identifie
 This slot points from a chemically modified form of some protein, to the native unmodified
  form of that protein (e.g., from a phosphorylated form to the unphosphorylated
  form).
-

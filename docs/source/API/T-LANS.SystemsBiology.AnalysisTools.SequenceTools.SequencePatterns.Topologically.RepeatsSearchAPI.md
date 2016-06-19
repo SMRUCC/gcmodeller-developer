@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 
 
+
+
 ### Methods
 
 #### BatchSearch
@@ -89,8 +91,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.R
 |min|-|
 |max|-|
 |minappear|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A closure.
 
+
+
 ### Methods
 
 #### #ctor
@@ -34,7 +36,6 @@ Invoke this function, using named arguments provided as key-value pairs
 _returns: The result of the evaluation_
 
 
-
 ### Properties
 
 #### Arguments
@@ -43,4 +44,3 @@ Gets the arguments list.
 Gets the body.
 #### Environment
 Gets the environment.
-

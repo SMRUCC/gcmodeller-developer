@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.Analysis](N-LANS.SystemsBiology
 
 
 
+
 ### Properties
 
 #### HitName
 和query蛋白质比对上的
 #### tag
 @"P:LANS.SystemsBiology.NCBI.Extensions.Analysis.Hit.HitName"所在的物种
-

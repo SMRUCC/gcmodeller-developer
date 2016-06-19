@@ -10,8 +10,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
 ### Properties
 
 #### BasalExpressionFluxes
 对整个基因组都有效
-

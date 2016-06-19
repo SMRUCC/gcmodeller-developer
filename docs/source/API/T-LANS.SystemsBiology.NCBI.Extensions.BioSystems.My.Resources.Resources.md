@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### Culture
@@ -817,4 +818,3 @@ Looks up a localized string similar to <?xml version="1.0" ?>
  targetNamespace="http://www.ncbi.nlm.nih.gov"
  elementFormDefault="qualified"
  attributeFormDefau [rest of string was truncated]";.
-

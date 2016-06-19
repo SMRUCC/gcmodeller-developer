@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Guid](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### Generate
@@ -33,9 +35,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Guid.UidF.op_Implicit(System.Stri
 > 从Guid对象之中进行解析
 
 
-
 ### Properties
 
 #### Uid2
 Write to the serials number section.
-

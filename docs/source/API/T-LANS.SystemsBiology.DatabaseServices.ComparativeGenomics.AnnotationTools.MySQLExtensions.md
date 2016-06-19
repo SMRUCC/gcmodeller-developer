@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
+
 ### Methods
 
 #### GetMySQLClient
@@ -21,9 +23,7 @@ LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.MySQLEx
 
 
 
-
 ### Properties
 
 #### MySQL
-
 

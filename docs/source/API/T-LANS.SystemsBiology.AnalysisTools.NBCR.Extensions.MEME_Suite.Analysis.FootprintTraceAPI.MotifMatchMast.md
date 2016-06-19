@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 通过MAST来得到MEME中的Motif的结果
 
+
+
 ### Methods
 
 #### BuildVirtualFootprints
@@ -59,7 +61,5 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.FootprintT
 |direct|假若这个参数为真，则不是家族比对，则每一个文件夹都直接是比对的结果，加入为False，则说明是家族的比对，则每一个文件夹下面是家族的比对结果文件夹|
 
 _returns: 取决于参数**direct**: True -> MAST_DIR/mast.xml; False -> MAST/DIR_
-
-
 
 

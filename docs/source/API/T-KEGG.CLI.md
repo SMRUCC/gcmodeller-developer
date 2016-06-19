@@ -7,6 +7,8 @@ _namespace: [KEGG](N-KEGG.html)_
 
 
 
+
+
 ### Methods
 
 #### BuildKEGGOrthology
@@ -35,8 +37,6 @@ KEGG.CLI.DownloadReferenceMap(Microsoft.VisualBasic.CommandLine.CommandLine)
 |Parameter Name|Remarks|
 |--------------|-------|
 |argvs|-|
-
-
 
 
 

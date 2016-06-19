@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeAlig
 
 
 
+
+
 ### Methods
 
 #### BuildModel
@@ -57,8 +59,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeAlignment.Compara
 |Parameter Name|Remarks|
 |--------------|-------|
 |model|-|
-
-
 
 
 

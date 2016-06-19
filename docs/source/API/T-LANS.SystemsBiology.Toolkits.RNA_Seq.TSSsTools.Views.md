@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools](N-LANS.SystemsBiolo
 
 TSSs位点的性质的统计函数
 
+
+
 ### Methods
 
 #### UpstreamPromoter
@@ -21,8 +23,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools.Views.UpstreamPromoter(System.Col
 |DESeqCOGs|-|
 |NT|-|
 |Length|-|
-
-
 
 
 

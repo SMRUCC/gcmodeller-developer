@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### Convert
@@ -50,8 +52,6 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.RegpreciseBidirectionalBh_Method
 |--------------|-------|
 |data|-|
 |cutoff|Cutoff value for property @"P:LANS.SystemsBiology.DatabaseServices.Regprecise.RegpreciseMPBBH.Similarity", a recommended value is 0.85|
-
-
 
 
 

@@ -9,6 +9,7 @@ Enum the mainly used language.
 
 
 
+
 ### Properties
 
 #### EnUS
@@ -22,4 +23,3 @@ Following the system default language.
 #### ZhCN
 Language in Chinese simplify.
  (简体中文)
-

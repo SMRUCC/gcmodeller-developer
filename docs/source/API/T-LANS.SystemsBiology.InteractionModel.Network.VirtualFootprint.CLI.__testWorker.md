@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.VirtualFootprint.CLI](
 
 
 
+
+
 ### Methods
 
 #### __isValid
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.VirtualFootprint.CLI](
 LANS.SystemsBiology.InteractionModel.Network.VirtualFootprint.CLI.__testWorker.__isValid(LANS.SystemsBiology.InteractionModel.Network.VirtualFootprint.DocumentFormat.RegulatesFootprints)
 ```
 从比对的Regulon数据之中检测这个调控关系是否成立
-
-
 
 

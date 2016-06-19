@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
 
 Downloads the protein fasta sequence from the KEGG which was records in the regprecise regulation datasets.
 
+
+
 ### Methods
 
 #### RegulatorDownloads
@@ -22,8 +24,6 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.KEGGDownloader.RegulatorDownload
 |ErrLog|-|
 |DownloadDirectory|-|
 |FastaSaved|-|
-
-
 
 
 

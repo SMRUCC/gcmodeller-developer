@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
 ### Properties
 
 #### ExpressedTranscript
 用于调试的时候观察所使用的
-

@@ -7,6 +7,21 @@ _namespace: [RDotNET.Extensions.VisualBasic.utils.read.table](N-RDotNET.Extensio
 
 write.table prints its required argument x (after converting it to a data frame if it is not one nor a matrix) to a file or connection.
 
+> 
+>  If the table has no columns the rownames will be written only if row.names = TRUE, and vice versa.
+>  Real And complex numbers are written to the maximal possible precision.
+>  If a data frame has matrix-Like columns these will be converted To multiple columns In the result (via As.matrix) And so a character col.names Or a numeric quote should refer To the columns In the result, Not the input. Such matrix-Like columns are unquoted by Default.
+>  Any columns In a data frame which are lists Or have a Class (e.g., dates) will be converted by the appropriate As.character method: such columns are unquoted by Default. 
+>  On the other hand, any Class information For a matrix Is discarded And non-atomic (e.g., list) matrices are coerced To character.
+>  Only columns which have been converted To character will be quoted If specified by quote.
+>  The dec argument only applies To columns that are Not subject To conversion To character because they have a Class Or are part Of a matrix-Like column (Or matrix), In particular To columns Protected by I(). Use options("OutDec") To control such conversions.
+>  In almost all cases the conversion of numeric quantities Is governed by the option "scipen" (see options), but with the internal equivalent of digits = 15. 
+>  For finer control, use format to make a character matrix/data frame, And call write.table on that.
+>  These functions check For a user interrupt every 1000 lines Of output.
+>  If file Is a non-open connection, an attempt Is made To open it And Then close it after use.
+>  To write a Unix-style file on Windows, use a binary connection e.g. file = file("filename", "wb").
+>  
+
 
 
 ### Properties
@@ -38,4 +53,3 @@ either a logical value indicating whether the row names of x are to be written a
 the field separator string. Values within each row of x are separated by this string.
 #### x
 the object to be written, preferably a matrix or data frame. If not, it is attempted to coerce x to a data frame.
-

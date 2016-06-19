@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 Represents factors.
 
+
+
 ### Methods
 
 #### #ctor
@@ -75,9 +77,7 @@ Sets the value of a factor vector at an index
 
 
 
-
 ### Properties
 
 #### IsOrdered
 Gets the value which indicating the factor is ordered or not.
-

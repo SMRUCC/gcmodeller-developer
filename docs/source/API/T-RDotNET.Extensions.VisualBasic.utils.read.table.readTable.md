@@ -10,6 +10,7 @@ _namespace: [RDotNET.Extensions.VisualBasic.utils.read.table](N-RDotNET.Extensio
 
 
 
+
 ### Properties
 
 #### allowEscapes
@@ -72,4 +73,3 @@ logical. Used only when sep has been specified, and allows the stripping of lead
 #### text
 character string: if file is not supplied and this is, then data are read from the value of text via a text connection. 
  Notice that a literal string can be used to include (small) data sets within R code.
-

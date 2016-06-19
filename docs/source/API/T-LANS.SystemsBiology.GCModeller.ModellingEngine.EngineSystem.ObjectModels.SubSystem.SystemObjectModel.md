@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
 ### Properties
 
 #### I_RuntimeContainer
 当前子系统模块的上一层系统模块
-

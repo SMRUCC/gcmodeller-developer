@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 An environment object.
 
+
+
 ### Methods
 
 #### #ctor
@@ -58,9 +60,7 @@ Defines a symbol in this environment.
 
 
 
-
 ### Properties
 
 #### Parent
 Gets the parental environment.
-

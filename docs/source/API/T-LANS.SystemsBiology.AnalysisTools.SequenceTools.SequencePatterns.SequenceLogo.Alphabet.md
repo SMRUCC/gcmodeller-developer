@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Se
 
 Alphabet model in the drawing motif model, nt for 4 and aa for 20
 
+
+
 ### Methods
 
 #### CompareTo
@@ -30,11 +32,9 @@ The height of letter a in column i Is given by
  (该残基之中本类型的字母的绘制的高度)
 
 
-
 ### Properties
 
 #### Alphabet
 A alphabet character which represents one residue.(可以代表本残基的字母值)
 #### RelativeFrequency
 The relative alphabet frequency at this site position.
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.Bac_sRNA.org](N-LANS.SystemsBiology.As
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -22,8 +24,6 @@ LANS.SystemsBiology.Assembly.Bac_sRNA.org.Sequence.#ctor(System.String,System.St
 |name|-|
 |seq|The fasta sequence data|
 |loci|-|
-
-
 
 
 

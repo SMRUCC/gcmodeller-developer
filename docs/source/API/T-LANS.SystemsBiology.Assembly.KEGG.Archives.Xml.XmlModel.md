@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.Archives.Xml](N-LANS.SystemsBiolo
 
 The compile data of the target bacteria species genome database in the KEGG.(KEGG数据库之中的关于目标研究的微生物菌株的KEGG数据库之中的所有的信息的编译的集合)
 
+
+
 ### Methods
 
 #### GetAllPathways
@@ -27,11 +29,9 @@ LANS.SystemsBiology.Assembly.KEGG.Archives.Xml.XmlModel.GetMaps(System.String)
 
 
 
-
 ### Properties
 
 #### Metabolome
 The reaction information which can be annotated in this bacteria species.
 #### spCode
 The kegg species brief code.
-

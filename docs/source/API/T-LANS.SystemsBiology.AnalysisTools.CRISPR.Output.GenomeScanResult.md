@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CRISPR.Output](N-LANS.SystemsBiol
 
 CRISPR位点的基因组搜索的结果，可以使用这个对象将CRISPR的结果保存为XML格式的结果文件，最后通过xlst将结果以html的形式格式化显示出来
 
+
+
 ### Methods
 
 #### ExportFasta
@@ -22,9 +24,7 @@ LANS.SystemsBiology.AnalysisTools.CRISPR.Output.GenomeScanResult.ExportSpacerFas
 导出每一个位点之中的重复片段之间的间隔序列
 
 
-
 ### Properties
 
 #### Tag
 可以使用本标签信息进行基因组的LocusID的信息的存储
-

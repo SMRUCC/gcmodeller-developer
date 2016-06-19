@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.D
 
 
 
+
+
 ### Methods
 
 #### GetDeleteMutationModel
@@ -18,8 +20,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.
 |Parameter Name|Remarks|
 |--------------|-------|
 |ReferenceLocation|-|
-
-
 
 
 

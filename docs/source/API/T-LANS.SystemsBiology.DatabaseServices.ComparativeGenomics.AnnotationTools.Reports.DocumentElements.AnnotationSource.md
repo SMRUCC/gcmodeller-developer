@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
 ### Properties
 
 #### Hit
 The hit protein gene id.
-

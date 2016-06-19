@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlu
 
 
 
+
 ### Properties
 
 #### ReadingFrameOffSet
 ORF阅读框的偏移碱基数
-

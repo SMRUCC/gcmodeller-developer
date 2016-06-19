@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### get_PCs
@@ -22,7 +24,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 获取被本调控因子所调控的目标基因
 
 
-
 ### Properties
 
 #### Effectors
@@ -31,4 +32,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 The unique identifier of the target regulator object.(目标调控因子对象的唯一标识符，基因号)
 #### RegulatesMotif
 @"T:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.FileStream.TranscriptUnit"[目标转录单元对象]的@"P:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabular.FileStream.MotifSite.Internal_GUID"
-

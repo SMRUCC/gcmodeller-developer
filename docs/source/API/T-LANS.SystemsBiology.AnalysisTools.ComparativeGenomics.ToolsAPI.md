@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ComparativeGenomics](N-LANS.Syste
 
 
 
+
+
 ### Methods
 
 #### __colorRender
@@ -205,8 +207,6 @@ LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.ToolsAPI.SigmaCompareWith(
 |--------------|-------|
 |query|Query基因组的fasta序列的文件路径|
 |sbjDIR|将要进行比较的基因组的fasta序列文件的存放文件夹|
-
-
 
 
 

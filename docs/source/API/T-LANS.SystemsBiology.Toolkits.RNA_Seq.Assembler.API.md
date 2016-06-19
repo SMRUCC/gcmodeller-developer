@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler](N-LANS.SystemsBiolo
 
 
 
+
+
 ### Methods
 
 #### AssemblerAssembleAPI
@@ -22,8 +24,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.API.AssemblerAssembleAPI(System.C
 |ContigOverlapsDelta|建议值为40bp左右|
 |DataOverview|-|
 |sharedThreshold|默认值为文献之中的30条|
-
-
 
 
 

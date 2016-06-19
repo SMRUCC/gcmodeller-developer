@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### BasalValue
@@ -23,4 +24,3 @@ Pcc值指的是@"P:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.Docum
 Regulator对第一个基因的Pcc值
 #### TU_GUID
 请使用这个属性来唯一标记当前的对象
-

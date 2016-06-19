@@ -19,6 +19,36 @@ dRNA-seq
  is created. It specifies regions where the applied regression model does
  not converge. Hence, those regions are omitted from analysis.
 
+> 
+>  
+>  CONSIDERATIONS
+>   This is only a beta-version which was not thoroughly tested.
+> 
+>  VERSION
+>   Version 0.9.6 beta -- Distribution is modeled locally, by assuming a
+>   mixed model between
+> 
+>   Poisson-Part -> Transcribed Region (sampling zeros)
+> 
+>   Zero-Part -> Not Transcribed Region (structural zeros)
+> 
+>   The Poisson-Part is seperated from the Zero-Part by
+>   Zero-Inflated-Poisson-Model Regression Analysis. The Parameters for
+>   Skellam is the winzorized mean over the Poisson-Part.
+> 
+>  AUTHOR
+>   Fabian Amman, afabian@bioinf.uni-leipzig.de
+> 
+>  LICENCE
+>   TSSAR itself comes under GNU General Public License v2.0
+> 
+>   Please note that TSSAR uses the R libraries Skellam and VGAM. Both
+>   libraries are not our property and might have altering licencing. Please
+>   cite independantly.
+>  
+>  
+
+
 ### Methods
 
 #### Invoke
@@ -116,9 +146,7 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.TSSAR.Perl.Located(System.Collections.Gener
 
 
 
-
 ### Properties
 
 #### R
 R程序的路径
-

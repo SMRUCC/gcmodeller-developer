@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.RpsBLAST
 
 Cog Category
 
+
+
 ### Methods
 
 #### MatchCogCategory
@@ -18,8 +20,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.RpsBLAST.Whog.Whog.Ma
 |Parameter Name|Remarks|
 |--------------|-------|
 |MatchedData|Myva BLASTP result|
-
-
 
 
 

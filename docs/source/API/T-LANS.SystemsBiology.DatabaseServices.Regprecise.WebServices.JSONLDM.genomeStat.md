@@ -9,6 +9,7 @@ http://regprecise.lbl.gov/Services/rest/genomeStats
 
 
 
+
 ### Properties
 
 #### genomeId
@@ -25,4 +26,3 @@ NCBI taxonomy id
 total number of TF-controlled regulons reconstructed in genome
 #### tfSiteCount
 total number of TF binding sites in genome
-

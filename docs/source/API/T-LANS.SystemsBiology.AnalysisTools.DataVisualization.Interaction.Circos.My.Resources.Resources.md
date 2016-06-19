@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### colors
@@ -132,4 +133,3 @@ Overrides the current thread's CurrentUICulture property for all
  resource lookups using this strongly typed resource class.
 #### ResourceManager
 Returns the cached ResourceManager instance used by this class.
-

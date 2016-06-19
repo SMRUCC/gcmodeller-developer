@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.RBase](N-RDotNET.Extensions.VisualBa
 
 
 
+
+
 ### Methods
 
 #### Finite
@@ -18,8 +20,6 @@ is.finite and is.infinite return a vector of the same length as x, indicating wh
 |Parameter Name|Remarks|
 |--------------|-------|
 |x|R object to be tested: the default methods handle atomic vectors.|
-
-
 
 
 

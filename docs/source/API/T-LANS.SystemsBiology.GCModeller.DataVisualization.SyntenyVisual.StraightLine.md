@@ -7,6 +7,9 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual](N-L
 
 A model for drawing a straight line.
 
+> 
+>  这个绘图模型最简单
+>  
 
 
 

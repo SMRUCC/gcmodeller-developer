@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA](N-LA
 
 求解FBA线性规划问题的模块对象
 
+
+
 ### Methods
 
 #### #ctor
@@ -33,7 +35,5 @@ using the R program to solve the linear programming problem that from the fba mo
 |script|Generated script output|
 
 _returns: {ObjectiveFunction, FluxDistribution()}_
-
-
 
 

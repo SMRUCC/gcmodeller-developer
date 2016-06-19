@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlu
 
 
 
+
+
 ### Methods
 
 #### BlastnOutputParser
@@ -38,9 +40,7 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlus.Query.TryPa
 
 
 
-
 ### Properties
 
 #### QueryLength
 Protein length of @"P:LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlus.Query.QueryName"[the target query protein].
-

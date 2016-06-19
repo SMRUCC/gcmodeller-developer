@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.NucleotideModels.Translation](N-L
 
 transl_table=1 标准密码子表
 
+
+
 ### Methods
 
 #### IsStopCoden
@@ -44,9 +46,7 @@ LANS.SystemsBiology.SequenceModel.NucleotideModels.Translation.TranslationTable.
 
 
 
-
 ### Properties
 
 #### CodenTable
-
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.D
 
 
 
+
+
 ### Methods
 
 #### Draw
@@ -24,9 +26,7 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.
 
 
 
-
 ### Properties
 
 #### Strand
 链的方向决定箭头的方向，正向链箭头向右，反向链则箭头向左
-

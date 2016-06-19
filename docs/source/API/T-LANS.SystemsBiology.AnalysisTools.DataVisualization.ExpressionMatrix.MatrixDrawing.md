@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ExpressionMatri
 
 
 
+
+
 ### Methods
 
 #### CreateAlphabetTagSerials
@@ -52,8 +54,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ExpressionMatrix.MatrixDrawi
 |Parameter Name|Remarks|
 |--------------|-------|
 |MAT|-|
-
-
 
 
 

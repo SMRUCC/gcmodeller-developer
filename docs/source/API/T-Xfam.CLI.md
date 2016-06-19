@@ -7,6 +7,8 @@ _namespace: [Xfam](N-Xfam.html)_
 
 
 
+
+
 ### Methods
 
 #### InstallRfam
@@ -29,8 +31,6 @@ Xfam.CLI.RfamRegulatory(Microsoft.VisualBasic.CommandLine.CommandLine)
 |Parameter Name|Remarks|
 |--------------|-------|
 |args|-|
-
-
 
 
 

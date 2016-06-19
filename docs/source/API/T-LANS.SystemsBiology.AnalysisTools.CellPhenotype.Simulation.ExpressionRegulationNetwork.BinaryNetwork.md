@@ -7,6 +7,17 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.Expressi
 
 使用逻辑值来模拟计算基因表达调控网络
 
+> 
+>  这里是现实之中的约束条件：
+>  
+>  1. 合成速度：
+>  假设对于每一个碱基而言，其合成的速度是一样的，那么很显然单位时间内，越长的核酸链其合成速度越慢，即每一次迭代循环过程之中，假若该基因的长度越长，则相较于较短的核酸链产生的分子数目越少
+>  2. 降解速度：
+>  假设酶水解下一个碱基都是以相同的速度，那么水解完一条较长的核酸链很显然相较于较短的核酸链会需要更加长的时间。但是当水解掉最开始的一个碱基之后，我们假设原有的有活性的核酸链将无法再被用于翻译，故而在降解速度方面，较长的核酸链和较短的核酸链都是相同的失活速度的
+>  
+>  
+
+
 ### Methods
 
 #### __innerTicks
@@ -80,9 +91,7 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationN
 
 
 
-
 ### Properties
 
 #### NonRegulationHandles
 Gets all of the gene nodes handles collection in this expression regulation network.(获取在网络结构之上没有受到任何调控作用的基因网络节点)
-

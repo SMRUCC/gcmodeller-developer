@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.Settings
 
 
 
+
 ### Properties
 
 #### SDK
-
 

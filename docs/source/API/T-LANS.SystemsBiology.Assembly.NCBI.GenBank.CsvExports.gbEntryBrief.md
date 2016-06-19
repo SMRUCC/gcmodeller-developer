@@ -9,6 +9,7 @@ Genbank数据库的简要信息Csv表格
 
 
 
+
 ### Properties
 
 #### GC_Content
@@ -17,4 +18,3 @@ Genbank数据库的简要信息Csv表格
 基因组的编号
 #### Transposases
 转座酶
-

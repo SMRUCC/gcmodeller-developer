@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
 ### Properties
 
 #### Products
 一个@"P:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Entity.Compound.Identifier"[唯一标识符属性]，用于表示本模板分子的产物对象
-

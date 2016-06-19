@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.RpsBLAST
 
 Cog分类操作
 
+
+
 ### Methods
 
 #### #ctor
@@ -19,8 +21,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.RpsBLAST.ClassifyCOGs
 |--------------|-------|
 |Blastbin|-|
 |rpsCOG_db|Cog数据库|
-
-
 
 
 

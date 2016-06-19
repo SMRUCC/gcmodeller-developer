@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### EnzymeActivityRegulationTypes
@@ -22,4 +23,3 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 #### Weight
 本调控因子对目标调控对象的权重(可以看作为皮尔森相关系数)，对于转录调控因子而言，Key属性指的是目标motif所处的TranscriptUnit的编号，
  与@"P:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.GCML_Documents.XmlElements.SignalTransductions.Regulator.Regulates"所不同的是，@"P:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.GCML_Documents.XmlElements.SignalTransductions.Regulator.Regulates"是所调控的motif的编号
-

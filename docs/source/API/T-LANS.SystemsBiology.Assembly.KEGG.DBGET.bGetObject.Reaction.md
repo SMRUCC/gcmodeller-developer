@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject](N-LANS.SystemsB
 
 KEGG reaction annotation data.
 
+
+
 ### Methods
 
 #### __innerOrthParser
@@ -40,9 +42,7 @@ LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Reaction.GetSubstrateCompound
 得到本反应过程对象中的所有的代谢底物的KEGG编号，以便于查询和下载
 
 
-
 ### Properties
 
 #### ECNum
 标号： @"P:LANS.SystemsBiology.Assembly.Expasy.Database.Enzyme.Identification"
-

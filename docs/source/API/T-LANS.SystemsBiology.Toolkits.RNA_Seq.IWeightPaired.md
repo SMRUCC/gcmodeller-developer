@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq](N-LANS.SystemsBiology.Toolkit
 
 
 
+
+
 ### Methods
 
 #### GetValue
@@ -20,8 +22,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.IWeightPaired.GetValue(System.String,System
 |Id1|-|
 |Id2|-|
 |Parallel|-|
-
-
 
 
 

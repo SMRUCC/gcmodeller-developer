@@ -10,6 +10,7 @@ An object type that it has the ability to regulates the gene expression process.
 
 
 
+
 ### Properties
 
 #### CommonName
@@ -24,4 +25,3 @@ The unique identifier in the metacyc database of this regulator object.
 The regulates target that this regulator entity affect.(本调控因子对象所影响到的调控对象的UniqueId列表)
 #### Types
 The type of this regulator object.(本调控因子对象的类型)
-

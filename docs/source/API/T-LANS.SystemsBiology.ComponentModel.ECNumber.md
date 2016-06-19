@@ -7,6 +7,9 @@ _namespace: [LANS.SystemsBiology.ComponentModel](N-LANS.SystemsBiology.Component
 
 Enzyme Commission Number
 
+> EC-6.1.1.10
+
+
 ### Methods
 
 #### ToString
@@ -14,7 +17,6 @@ Enzyme Commission Number
 LANS.SystemsBiology.ComponentModel.ECNumber.ToString
 ```
 IDE debug
-
 
 
 ### Properties
@@ -27,4 +29,3 @@ IDE debug
 该大类之下的亚分类
 #### Type
 EC编号里面的第一个数字代表酶的分类号
-

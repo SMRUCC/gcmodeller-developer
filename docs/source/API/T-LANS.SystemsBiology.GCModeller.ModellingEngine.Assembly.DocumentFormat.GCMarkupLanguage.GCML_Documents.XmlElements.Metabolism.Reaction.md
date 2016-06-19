@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### GetStoichiometry
@@ -22,7 +24,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupL
 |Metabolite|目标代谢物对象的UniqueID属性值|
 
 _returns: 目标代谢物在本反应对象之中的化学计量数_
-
 
 
 ### Properties
@@ -43,4 +44,3 @@ Reaction Displaying title.(本生化反应对象的显示标题)
 该反应的反方向的常数
 #### Reversible
 本生化反应过程对象是否为可逆的反应对象
-

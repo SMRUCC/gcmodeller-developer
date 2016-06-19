@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workfl
 
 直接从基因的启动子区选取序列数据以及外加操纵子的第一个基因的启动子序列
 
+
+
 ### Methods
 
 #### #ctor
@@ -104,8 +106,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterP
 |Parameter Name|Remarks|
 |--------------|-------|
 |locus|需要进行解析的基因的编号的列表|
-
-
 
 
 

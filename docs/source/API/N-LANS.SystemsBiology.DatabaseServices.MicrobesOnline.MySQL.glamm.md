@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.DatabaseServices.MicrobesOnline.MySQL.glamm
-date: 6/16/2016 4:56:58 AM
+date: 6/19/2016 11:14:47 AM
 ---
 
 [amrxn](T-LANS.SystemsBiology.DatabaseServices.MicrobesOnline.MySQL.glamm.amrxn.html)

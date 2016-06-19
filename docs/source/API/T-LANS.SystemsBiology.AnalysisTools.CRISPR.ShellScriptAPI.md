@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CRISPR](N-LANS.SystemsBiology.Ana
 
 
 
+
+
 ### Methods
 
 #### ExportSpacerLoci
@@ -30,8 +32,6 @@ LANS.SystemsBiology.AnalysisTools.CRISPR.ShellScriptAPI.ScanMotif(LANS.SystemsBi
 |minS|-|
 |maxS|-|
 |p|-|
-
-
 
 
 

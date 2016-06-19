@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.GeneticClock.Co
 
 
 
+
+
 ### Methods
 
 #### DrawingDensityRule
@@ -19,8 +21,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.GeneticClock.ColorRender.Col
 |--------------|-------|
 |Gr|-|
 |ref|参考位置|
-
-
 
 
 

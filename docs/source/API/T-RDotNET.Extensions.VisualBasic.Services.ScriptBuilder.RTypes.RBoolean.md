@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.Services.ScriptBuilder.RTypes](N-RDo
 
 
 
+
+
 ### Methods
 
 #### RScript
@@ -16,11 +18,9 @@ RDotNET.Extensions.VisualBasic.Services.ScriptBuilder.RTypes.RBoolean.RScript
 @"P:RDotNET.Extensions.VisualBasic.Services.ScriptBuilder.RTypes.RBoolean.TRUE" or @"P:RDotNET.Extensions.VisualBasic.Services.ScriptBuilder.RTypes.RBoolean.FALSE"
 
 
-
 ### Properties
 
 #### FALSE
 F
 #### TRUE
 T
-

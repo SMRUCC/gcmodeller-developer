@@ -7,6 +7,9 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 表达流对象构建器，重建出目标模型的基因组、转录组
 
+> 生成模型文件中的基因、转录单元和转录组分这三张表
+
+
 ### Methods
 
 #### #ctor
@@ -69,7 +72,5 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupL
 |List|-|
 
 > !!!请注意这里！！！
-
-
 
 

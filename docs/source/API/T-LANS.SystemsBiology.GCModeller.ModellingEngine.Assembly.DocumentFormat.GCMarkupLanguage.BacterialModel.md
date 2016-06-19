@@ -8,6 +8,15 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 LansSystemsBiologyModel, this model file contains all of the required data for the GCModeller virtual cell simulation.
  (细菌细胞的计算模型文件，在本模型文件之中包含了所有的GCModeller进行模拟计算所需要的信息)
 
+> 
+>  一次基本的计算包括下面的步骤：
+>  1. FBA模型求解代谢物的浓度分布
+>  2. 根据代谢物的浓度分布计算出每一个基因的表达水平（转录水平）
+>  3. 根据调控关系计算出每一种酶分子和调控因子的浓度分布
+>  4. 下一个迭代循环直到到达最终的结束时间(RUN 命令行)
+>  
+
+
 ### Methods
 
 #### Load
@@ -35,7 +44,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupL
 
 
 
-
 ### Properties
 
 #### DispositionModels
@@ -48,4 +56,3 @@ n reactions
 一些关键的系统保留变量
 #### Width
 m metabolites
-

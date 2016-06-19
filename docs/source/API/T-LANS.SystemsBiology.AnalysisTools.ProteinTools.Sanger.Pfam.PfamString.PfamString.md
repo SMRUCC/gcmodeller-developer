@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.PfamStri
 
 This data object specific for a protein function protein domain structure.
 
+
+
 ### Methods
 
 #### get_ChouFasmanData
@@ -23,7 +25,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.PfamString.PfamString
  返回的数据可能是经过排序操作的
 
 
-
 ### Properties
 
 #### HasChouFasmanData
@@ -33,4 +34,3 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.PfamString.PfamString
 The protein sequence length
 #### PfamString
 在Pfam结构域的数据之间可能会有ChouFasman方法所计算出来的二级结构的数据
-

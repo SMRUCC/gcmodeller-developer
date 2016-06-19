@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat](N-LANS.Sys
 
 GFF (General Feature Format) specifications document
 
+
+
 ### Methods
 
 #### #ctor
@@ -54,7 +56,6 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.GFF.TryGetValue(System.C
 |--------------|-------|
 |hash|-|
 |Key|全部是小写字符|
-
 
 
 
@@ -125,4 +126,3 @@ type (##Type <type> [<seqname>])
  Protein features, for example, representing a single genomic locus or 'gene', alongside type-specific 
  features of its transcribed mRNA and translated protein sequences. If no ##Type meta-comment is 
  provided for a given GFF file, then the type is assumed to be DNA.
-

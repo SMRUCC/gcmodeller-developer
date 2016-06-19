@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.Standard
 
 
 
+
 ### Properties
 
 #### Hits
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.Standard
 目标查询序列的长度
 #### QueryName
 目标查询序列的名称
-

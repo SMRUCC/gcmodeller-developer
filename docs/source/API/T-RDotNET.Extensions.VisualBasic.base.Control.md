@@ -8,6 +8,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.base](N-RDotNET.Extensions.VisualBas
 These are the basic control-flow constructs of the R language. They function in much the same way as control statements in any Algol-like language. 
  They are all reserved words.
 
+
+
 ### Methods
 
 #### if
@@ -44,7 +46,5 @@ _returns:
  A vector of the same length and attributes (including dimensions and "class") as test and data values from the values of yes or no. 
  The mode of the answer will be coerced from logical to accommodate first any values taken from yes and then any values taken from no.
  _
-
-
 
 

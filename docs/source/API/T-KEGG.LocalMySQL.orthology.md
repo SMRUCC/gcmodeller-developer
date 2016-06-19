@@ -33,8 +33,8 @@ _namespace: [KEGG.LocalMySQL](N-KEGG.LocalMySQL.html)_
 
 
 
+
 ### Properties
 
 #### pathways
 Number of pathways that associated with this kegg orthology data
-

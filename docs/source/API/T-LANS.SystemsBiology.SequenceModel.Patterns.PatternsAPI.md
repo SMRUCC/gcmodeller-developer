@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Patterns](N-LANS.SystemsBiology.S
 
 
 
+
+
 ### Methods
 
 #### __frequency
@@ -64,8 +66,6 @@ The conservation percentage (%) Is defined as the number of genomes with the sam
 |Parameter Name|Remarks|
 |--------------|-------|
 |index|参考序列在所输入的fasta序列之中的位置，默认使用第一条序列作为参考序列|
-
-
 
 
 

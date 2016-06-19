@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.Expressi
 
 这个对象表示一个基因，即网络之中的一个节点，只有1和0这两个值的半逻辑表达式，模糊逻辑的原因是逻辑取值是基于一个随机概率的
 
+
+
 ### Methods
 
 #### #ctor
@@ -78,7 +80,6 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationN
 
 
 
-
 ### Properties
 
 #### _factor
@@ -99,4 +100,3 @@ Handle value of this node object in the network.
 当前的这个基因所受到的表达调控作用的表述
 #### RegulatorySites
 这个关系是根据footprint结果得出来的
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ComponentModel.EquaionModel](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### Equals``1
@@ -21,8 +23,6 @@ LANS.SystemsBiology.ComponentModel.EquaionModel.Equivalence.Equals``1(LANS.Syste
 |b|-|
 |cpEquals|反应物的等价性的判断方法|
 |strict|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel](N-LANS.SystemsBiology.SequenceMo
 
 The biological sequence molecular model.(蛋白质序列，核酸序列都可以使用本对象来表示)
 
+
+
 ### Methods
 
 #### Get_CompositionVector
@@ -34,7 +36,6 @@ LANS.SystemsBiology.SequenceModel.ISequenceModel.IsProteinSource(LANS.SystemsBio
 
 
 
-
 ### Properties
 
 #### AA_CHARS_ALL
@@ -47,4 +48,3 @@ The @"P:LANS.SystemsBiology.SequenceModel.ISequenceModel.SequenceData" string le
 Enumerate all of the nucleotides.(字符串常量枚举所有的核苷酸分子类型)
 #### SequenceData
 Sequence data in a string type.(字符串类型的序列数据)
-

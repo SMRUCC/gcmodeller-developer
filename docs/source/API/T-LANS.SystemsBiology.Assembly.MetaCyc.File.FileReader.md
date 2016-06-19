@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File](N-LANS.SystemsBiology.As
 Database file reader of the metacyc database.
  (MetaCyc数据库中的数据库文件的读取模块)
 
+
+
 ### Methods
 
 #### GetData
@@ -36,7 +38,5 @@ Try parse the data file.
 |objs|-|
 
 _returns: Returns error message_
-
-
 
 

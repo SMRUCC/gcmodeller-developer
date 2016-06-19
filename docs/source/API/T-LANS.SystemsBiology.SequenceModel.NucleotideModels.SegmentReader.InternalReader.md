@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.NucleotideModels.SegmentReader](N
 
 
 
+
+
 ### Methods
 
 #### __readSpanningCircularDNA
@@ -38,8 +40,6 @@ LANS.SystemsBiology.SequenceModel.NucleotideModels.SegmentReader.InternalReader.
 |--------------|-------|
 |Start|-|
 |Length|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.Schema.Metabolism](N-LANS.Syst
 
 使用一个汇总的MetaCyc数据库，根据目标物种的基因组以及蛋白质信息进行MetaCyc数据库的重建工作
 
+
+
 ### Methods
 
 #### #ctor
@@ -32,7 +34,5 @@ LANS.SystemsBiology.Assembly.MetaCyc.Schema.Metabolism.PathwayMappingTool.Downlo
 |SavedFile|-|
 
 _returns: 返回序列下载结果，当所有的序列结果都下载完成的时候，返回0，当出现没有被下载的序列的情况时，返回未被下载的序列数_
-
-
 
 

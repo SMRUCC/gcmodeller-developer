@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 转录单元为DNA分子上面的一个功能位点，信息存储组织功能
 
+
+
 ### Methods
 
 #### CreateObject
@@ -22,11 +24,9 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Feature
 
 
 
-
 ### Properties
 
 #### MotifSites
 调控因子对转录单元的调控作用是从这里开始的
 #### ProductHandlers
 指向代谢组中的代谢物的句柄值集合{geneID, productID}
-

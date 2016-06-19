@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.ComponentModel.Loci](N-LANS.SystemsBiology.Comp
 Loci segment location information on an nucleotide sequence, this object added an @"P:LANS.SystemsBiology.ComponentModel.Loci.NucleotideLocation.Strand" 
  information on @"T:LANS.SystemsBiology.ComponentModel.Loci.Location" data.(会自动根据LEFT和RIGHT的值来修正属性值)
 
+
+
 ### Methods
 
 #### #ctor
@@ -93,7 +95,6 @@ LANS.SystemsBiology.ComponentModel.Loci.NucleotideLocation.ToString
 这个函数的输出的字符串可以使用@"M:LANS.SystemsBiology.ComponentModel.Loci.LociAPI.TryParse(System.String)"方法进行解析
 
 
-
 ### Properties
 
 #### Ends
@@ -107,4 +108,3 @@ LANS.SystemsBiology.ComponentModel.Loci.NucleotideLocation.ToString
  Forward = 1; 
  Reverse = -1; 
  Unknown = 0
-

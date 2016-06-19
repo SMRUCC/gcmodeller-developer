@@ -7,6 +7,8 @@ _namespace: [MEME](N-MEME.html)_
 
 
 
+
+
 ### Methods
 
 #### #cctor
@@ -391,7 +393,5 @@ MEME.CLI.TomQuery(Microsoft.VisualBasic.CommandLine.CommandLine)
 MEME.CLI.UnionSimilarity(Microsoft.VisualBasic.CommandLine.CommandLine)
 ```
 合并相似的Motif进入下一次迭代
-
-
 
 

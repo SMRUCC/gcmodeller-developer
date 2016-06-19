@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 An expression object.
 
+
+
 ### Methods
 
 #### #ctor
@@ -45,7 +47,5 @@ Evaluates the expression in the specified environment.
 |result|The evaluation result, or null if the evaluation failed|
 
 _returns: True if the evaluation succeeded._
-
-
 
 

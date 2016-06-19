@@ -9,10 +9,10 @@ the sequence tags are expected to be ordered by best combined p-value (of contai
 
 
 
+
 ### Properties
 
 #### length
 length is in the same unit as the motifs, which is not always the same unit as the sequence
 #### Segments
 within each sequence the seg tags are expected to be ordered by start ascending
-

@@ -7,6 +7,8 @@ _namespace: [RDotNet.Extensions.Bioinformatics.bnlearn](N-RDotNet.Extensions.Bio
 
 
 
+
+
 ### Methods
 
 #### createNetwork
@@ -18,8 +20,6 @@ RDotNet.Extensions.Bioinformatics.bnlearn.BnlearnModelling`1.createNetwork(`0[])
 |Parameter Name|Remarks|
 |--------------|-------|
 |NetworkData|-|
-
-
 
 
 

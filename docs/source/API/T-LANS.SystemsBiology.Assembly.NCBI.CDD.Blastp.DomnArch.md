@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.CDD.Blastp](N-LANS.SystemsBiology
 The blast+ program alignment output log file analysis module.
  (blast+程序的序列比对日志输出文件的分析模块)
 
+
+
 ### Methods
 
 #### Load
@@ -56,8 +58,6 @@ Save the domain architecture model into a xml file.
 |Parameter Name|Remarks|
 |--------------|-------|
 |XmlFile|-|
-
-
 
 
 

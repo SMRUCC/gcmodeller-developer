@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns](N
 
 将序列特征的搜索结果转换为@"T:LANS.SystemsBiology.SequenceModel.NucleotideModels.SimpleSegment"对象类型
 
+
+
 ### Methods
 
 #### ConvertsAuto
@@ -41,8 +43,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.LociExtensions.
 |--------------|-------|
 |x|-|
 |start|-|
-
-
 
 
 

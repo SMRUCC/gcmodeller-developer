@@ -7,6 +7,28 @@ _namespace: [LANS.SystemsBiology](N-LANS.SystemsBiology.html)_
 
 ᶘ ᵒᴥᵒᶅ？？？？
 
+> 
+>   _______           _______
+>  く__,.ヘヽ.　　　　/　,ー､ 〉
+> 　　＼ ', !-─‐-i　/　/´
+>  　 ／｀ｰ'　　　 L/／｀ヽ､
+>   /　 ／,　 /|　 ,　 ,　　　 ',
+>   ｲ 　/ /-‐/　ｉ　L_ ﾊ ヽ!　 i
+>    ﾚ ﾍ 7ｲ｀ﾄ　 ﾚ'ｧ-ﾄ､!ハ|　 |
+>   !,/7 'ゞ'　　 ´i__rﾊiソ| 　 |　　　
+>   |.从"　　_　　 ,,,, / |./ 　 |
+>   ﾚ'| i＞.､,,__　_,.イ / 　.i 　|
+>     ﾚ'| | / k_７_/ﾚ'ヽ,　ﾊ.　|
+> 　　 | |/i 〈|/　 i　,.ﾍ |　i　|
+> 　　　.|/ /　ｉ： 　 ﾍ!　　＼　|
+>  　 　 kヽ>､ﾊ 　 _,.ﾍ､ 　 /､!
+> 　　　 !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
+> 　　　 ﾚ'ヽL__|___i,___,ンﾚ|ノ
+> 　　 　　　ﾄ-,/　|___./
+> 　　 　　　'ｰ'　　!_,.:
+>  
+
+
 ### Methods
 
 #### GithubRepository
@@ -14,7 +36,6 @@ _namespace: [LANS.SystemsBiology](N-LANS.SystemsBiology.html)_
 LANS.SystemsBiology.LICENSE.GithubRepository
 ```
 https://github.com/SMRUCC/GCModeller.Core
-
 
 
 ### Properties
@@ -34,4 +55,3 @@ software and other kinds of works.
 
  The licenses for most software and other practical works are designed
 to take away yo [rest of string was truncated]";.
-

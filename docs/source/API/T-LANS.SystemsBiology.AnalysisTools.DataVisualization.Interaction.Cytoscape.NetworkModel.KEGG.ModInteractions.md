@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 基因和模块之间的从属关系的示意图
 
+
+
 ### Methods
 
 #### __modProperty
@@ -33,9 +35,7 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.Networ
 
 
 
-
 ### Properties
 
 #### PathwayGene
 Label for interation pathway genes
-

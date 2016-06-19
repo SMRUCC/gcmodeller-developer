@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Progra
 
 Quantifying similarity between motifs
 
+
+
 ### Methods
 
 #### __copy
@@ -43,8 +45,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Programs.TomTOM.Loa
 |Parameter Name|Remarks|
 |--------------|-------|
 |inDIR|like F:\2015.12.21.RegPrecise\TOM\kgModules\250|
-
-
 
 
 

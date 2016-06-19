@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.PlugIns](N-LANS.Syst
 
 
 
+
 ### Properties
 
 #### Articles
@@ -19,4 +20,3 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.PlugIns](N-LANS.Syst
 ISystemFramework interface type information of the external model assembly.(外部对象模型代码的类型信息)
 #### ModelName
 Name of this computational model.(这个计算模型模块的名称)
-

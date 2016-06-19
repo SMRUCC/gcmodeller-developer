@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.XmlFile]
 
 
 
+
+
 ### Methods
 
 #### LoadFromFile
@@ -18,8 +20,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.XmlFile.BlastOutput.L
 |Parameter Name|Remarks|
 |--------------|-------|
 |XmlPath|Xml文件的文件路径|
-
-
 
 
 

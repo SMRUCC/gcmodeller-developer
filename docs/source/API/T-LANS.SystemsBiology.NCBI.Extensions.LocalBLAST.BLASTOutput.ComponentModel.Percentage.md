@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.Componen
 
 分数，百分比
 
+
+
 ### Methods
 
 #### TryParse
@@ -21,7 +23,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.ComponentModel.Percen
 
 
 
-
 ### Properties
 
 #### Denominator
@@ -30,4 +31,3 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.ComponentModel.Percen
 分子
 #### Value
 @"P:LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.ComponentModel.Percentage.Numerator"/@"P:LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.ComponentModel.Percentage.Denominator"
-

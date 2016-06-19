@@ -10,6 +10,7 @@ The class describes DNA regions that are binding sites for transcription factors
 
 
 
+
 ### Properties
 
 #### AbsCenterPos
@@ -23,4 +24,3 @@ This slot defines the extent of a binding site in base pairs. If a value for thi
  of the binding protein. Thus, a value for this slot should only be supplied here 
  if the site length for a particular transcription factor is not consistent across 
  all its sites.
-

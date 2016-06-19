@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.dataExprMAT](N-LANS.SystemsBio
 
 用来表述一个RNA-Seq结果数据的集合
 
+
+
 ### Methods
 
 #### GetCurrentRPKMsVector
@@ -69,9 +71,7 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.dataExprMAT.MatrixFrame.ToDictionary
 {GeneID, Expressions}
 
 
-
 ### Properties
 
 #### __reader
 原始数据
-

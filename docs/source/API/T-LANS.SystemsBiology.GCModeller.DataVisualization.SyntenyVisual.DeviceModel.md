@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual](N-L
 
 
 
+
 ### Properties
 
 #### Colors
 @"T:LANS.SystemsBiology.GCModeller.DataVisualization.ClMap"
 #### PTT
 {基因组的名称, PTT的文件路径}
-

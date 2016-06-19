@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.ComponentModel.Loci](N-LANS.SystemsBiology.Comp
 A location property on a sequence data. Please notice that if the loci value its left value greater than right value then this object will swap the value automaticaly.
  (一个序列片段区域的位置，请注意，当Left的大小大于Right的时候，模块会自动纠正为Left小于Right的状态，这个对象可以同时用来表示核酸序列或者蛋白质序列上面的位置)
 
+
+
 ### Methods
 
 #### ContainSite
@@ -80,7 +82,6 @@ Position equals
 
 
 
-
 ### Properties
 
 #### FragmentSize
@@ -91,4 +92,3 @@ The segment length of this location object.(目标序列片段区域的片段长
 @"T:LANS.SystemsBiology.ComponentModel.Loci.Location": Gets or set the left start value of the segment on the target sequence.(目标片段的左端起始区域，与链的方向无关)
 #### Right
 @"T:LANS.SystemsBiology.ComponentModel.Loci.Location": Gets or set the right ends value of the segment on the target sequence.(目标片段的右端结束区域，与链的方向无关)
-

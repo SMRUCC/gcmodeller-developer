@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### Culture
@@ -112,4 +113,3 @@ my $score_mode = 'd';
 my $cluster = 1;
 my $prorata = 0;
 my $consecutiv_range [rest of string was truncated]";.
-

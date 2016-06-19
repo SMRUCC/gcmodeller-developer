@@ -9,10 +9,10 @@ _namespace: [RDotNET.Extensions.VisualBasic.RBase.Vectors](N-RDotNET.Extensions.
 
 
 
+
 ### Properties
 
 #### Dim
 向量维数
 #### GET
-
 

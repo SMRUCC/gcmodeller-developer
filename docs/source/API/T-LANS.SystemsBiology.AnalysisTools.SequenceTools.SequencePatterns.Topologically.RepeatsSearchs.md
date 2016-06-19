@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 
 
+
+
 ### Methods
 
 #### __beginInit
@@ -32,9 +34,7 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.R
 
 
 
-
 ### Properties
 
 #### CountStatics
 片段按照长度的数量上的分布情况
-

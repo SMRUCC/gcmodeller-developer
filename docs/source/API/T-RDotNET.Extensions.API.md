@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions](N-RDotNET.Extensions.html)_
 
 
 
+
+
 ### Methods
 
 #### CreateCharacter
@@ -240,7 +242,5 @@ Creates a new RawVector with the specified values.
 |vector|The values.|
 
 _returns: The new vector._
-
-
 
 

@@ -10,6 +10,8 @@ ExpressionObject object equals to the
  in the datamodels.
  一个转录对象是以一个转录单元为单位的，其可以被看作为中心法则的一个实例，描述了从基因到蛋白质的整个表达过程，一个操纵子对象的表达过程
 
+
+
 ### Methods
 
 #### CreateInstance
@@ -55,7 +57,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.
 >  
 
 
-
 ### Properties
 
 #### ExpressionActivity
@@ -64,4 +65,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.
 对当前的这个中心法则处理步骤过程的转录过程起调控作用的@"T:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Feature.MotifSite`1"的列表，这个仅仅是对基因的转录调控而言的
 #### Transcripts
 转录单元所转录出来的RNA分子
-

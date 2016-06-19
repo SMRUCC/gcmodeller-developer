@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Organism](N-LANS
 
 
 
+
 ### Properties
 
 #### KEGGId
@@ -17,4 +18,3 @@ KEGG里面的物种的简称代码
 FTP url on NCBI
 #### Species
 物种全称
-

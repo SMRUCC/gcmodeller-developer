@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 对表达过程其调控作用的生物大分子，在数据模型之中，调控因子是一个调控因子对多个调控对象的，当被转换为对象模型之后，
  则变成了一个调控因子对一个调控位点或者调控对象，即在创建对象的时候，调控因子被按照调控位点进行复制拆分
 
+
+
 ### Methods
 
 #### CreateObject
@@ -29,7 +31,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Entity.
 获取当前的这个调控因子所调控的目标位点上面的所有调控因子的数量的总和
 
 
-
 ### Properties
 
 #### _Abs_Weight
@@ -44,4 +45,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Entity.
 
 #### Weight
 由Pcc计算而来，正负调控效果包含于Weight的符号之中了
-

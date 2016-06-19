@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### Culture
@@ -51,4 +52,3 @@ chomp $starttime;
 my $cmdline = $0.' '.join( ' ', @ARGV );
 
 &GetOptions( "loc [rest of string was truncated]";.
-

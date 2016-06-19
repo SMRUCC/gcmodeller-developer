@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CARMEN](N-LANS.SystemsBiology.Ana
 
 
 
+
+
 ### Methods
 
 #### __getKEGGReactionId
@@ -30,8 +32,6 @@ LANS.SystemsBiology.AnalysisTools.CARMEN.CARMEN.Merge(System.String,System.Boole
 |--------------|-------|
 |DIR|-|
 |EnzymaticOnly|是否仅返回只具有酶分子的反应过程|
-
-
 
 
 

@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Progra
 
 
 
+
 ### Properties
 
 #### LocusId
@@ -21,4 +22,3 @@ This motif match him self???
 在整条序列之中的起始位置
 #### uid
 用于映射用的
-

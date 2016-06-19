@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 
 
+
+
 ### Methods
 
 #### EquivalenceClass
@@ -36,8 +38,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.API.Im
 |ImportantNodes|-|
 |Regulations|-|
 |rankCutoff|-|
-
-
 
 
 

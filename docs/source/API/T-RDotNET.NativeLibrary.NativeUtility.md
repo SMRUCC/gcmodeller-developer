@@ -7,6 +7,8 @@ _namespace: [RDotNET.NativeLibrary](N-RDotNET.NativeLibrary.html)_
 
 Collection of utility methods for operating systems.
 
+
+
 ### Methods
 
 #### ExecCommand
@@ -93,9 +95,7 @@ Sets the PATH and R_HOME environment variables if needed.
 >  
 
 
-
 ### Properties
 
 #### IsUnix
 Is the platform a unix like (Unix or MacOX)
-

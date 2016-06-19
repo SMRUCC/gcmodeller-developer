@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ContextModel](N-LANS.SystemsBiology.ContextMode
 
 Context model of a specific genomics feature site.
 
+
+
 ### Methods
 
 #### __relUnstrand
@@ -39,7 +41,6 @@ LANS.SystemsBiology.ContextModel.Context.ToString
 Get tags data
 
 
-
 ### Properties
 
 #### Downstream
@@ -50,4 +51,3 @@ Current feature site
 The user custom tag data for this feature site.
 #### Upstream
 @"F:LANS.SystemsBiology.ContextModel.Context.Feature" its upstream region with a specific length
-

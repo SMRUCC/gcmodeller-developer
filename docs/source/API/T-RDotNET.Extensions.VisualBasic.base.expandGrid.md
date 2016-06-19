@@ -12,6 +12,7 @@ Create a data frame from all combinations of the supplied vectors or factors. Se
 
 
 
+
 ### Properties
 
 #### KEEP_OUT_ATTRS
@@ -20,4 +21,3 @@ a logical indicating the "out.attrs" attribute (see below) should be computed an
 logical specifying if character vectors are converted to factors.
 #### x
 vectors, factors or a list containing these.
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModelSolvers.FBA](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### __getObjectives
@@ -145,9 +147,7 @@ Solve a metabolism network model using the FBA method, the model data was comes 
 
 
 
-
 ### Properties
 
 #### CompileMethods
 The compiler support the metacyc database and sbml model file format currently.(编译器当前仅支持MetaCyc数据库和SBML标准模型数据源)
-

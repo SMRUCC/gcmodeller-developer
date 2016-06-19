@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Service
 
 整个计算引擎的数据采集服务的中枢控制模块
 
+
+
 ### Methods
 
 #### CloseStorageService
@@ -51,9 +53,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Services.DataAcquisi
 数据管理服务测试与数据库服务器之间的连接
 
 
-
 ### Properties
 
 #### SQL_CREATE_STORAGES_TABLE
 创建总表定义的SQL语句
-

@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.GenePrediction.DocNodes](N-LAN
 
 
 
+
 ### Properties
 
 #### AvgProb
@@ -23,4 +24,3 @@ Right End
 Start Prob
 #### Strand
 DNA Strand
-

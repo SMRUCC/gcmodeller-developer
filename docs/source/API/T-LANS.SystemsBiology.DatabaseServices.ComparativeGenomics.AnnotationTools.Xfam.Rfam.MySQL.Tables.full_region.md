@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
 ### Properties
 
 #### bit_score
 99999.99 is the approx limit from Infernal.
-

@@ -8,6 +8,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.RBase.MathExtension](N-RDotNET.Exten
 The Normal Distribution
  Density, distribution function, quantile function and random generation for the normal distribution with mean equal to mean and standard deviation equal to sd.
 
+
+
 ### Methods
 
 #### qnorm
@@ -23,8 +25,6 @@ RDotNET.Extensions.VisualBasic.RBase.MathExtension.Normal.qnorm(RDotNET.Extensio
 |sd|vector of standard deviations.|
 |lowertail|logical; if TRUE (default), probabilities are P[X ≤ x] otherwise, P[X > x].|
 |logp|logical; if TRUE, probabilities p are given as log(p).|
-
-
 
 
 

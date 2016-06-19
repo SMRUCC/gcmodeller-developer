@@ -18,6 +18,8 @@ STRING has an application programming interface (API) which enables you to get t
  
  http://[database]/[access]/[format]/[request]?[parameter]=[value]
 
+
+
 ### Methods
 
 #### DownloadInteractions
@@ -34,7 +36,6 @@ _returns: 返回成功的个数_
 > http://string-db.org/api/psi-mi/interactions?identifier=XC_1184
 
 
-
 ### Properties
 
 #### StitchEMBL
@@ -43,4 +44,3 @@ The sister database of STRING
 Main entry point of STRING
 #### StringEMBL
 Alternative entry point of STRING
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 全局比对
 
+
+
 ### Methods
 
 #### VisualLevEdit
@@ -20,8 +22,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.Similarity
 |query|-|
 |subject|-|
 |edits|-|
-
-
 
 
 

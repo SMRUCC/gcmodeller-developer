@@ -7,6 +7,8 @@ _namespace: [RDotNET.Devices](N-RDotNET.Devices.html)_
 
 A sink with (almost) no effect, similar in purpose to /dev/null
 
+
+
 ### Methods
 
 #### AddHistory
@@ -196,8 +198,6 @@ This implementation has no effect
 |output|The output message|
 |length|The output's length in byte.|
 |outputType|The output type.|
-
-
 
 
 

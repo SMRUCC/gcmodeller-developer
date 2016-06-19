@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 整合String-DB和Regprecise数据进行信号网络的绘制
 
+
+
 ### Methods
 
 #### CreateObjectNetwork
@@ -19,8 +21,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 |--------------|-------|
 |IdList|-|
 |ExportDir|函数会导出两个文件，一个用于定义节点的属性，一个用于定义节点之间的相互作用|
-
-
 
 
 

@@ -9,6 +9,11 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSig
  由于位点和下游基因构成了一条边，所以可以从整个Regprecise注释数据之中得到一个网络
  由于本全基因组调控特征可以用于表示整个基因组的调控网络，所以使用本方法将原有的三维的网络数据降维至二维DNA序列，可以很方便的使用blastn程序进行调控网络的相似度的比对工作
 
+> 
+>  采用冗余的形式来构建序列特征，这样通过blastn就可以同时比对调控网络和代谢网络，将两个三维网络降维至两个二维序列所形成的网络来进行相互比较
+>  
+
+
 ### Methods
 
 #### #ctor
@@ -45,7 +50,5 @@ LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature.Signat
 >  第二大部分为没有功能被注释出来的基因
 >  第三大部分为KEGG Pathway的注释结果
 >  
-
-
 
 

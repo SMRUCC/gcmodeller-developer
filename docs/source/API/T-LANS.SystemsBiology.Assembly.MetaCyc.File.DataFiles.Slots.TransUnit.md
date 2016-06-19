@@ -15,6 +15,8 @@ Frames in this class encode transcription units, which are defined as a set of g
  位点所控制的，那么将会在MetaCyc数据库之中分别定义与这些转录起始位点相对应的转录单元【即，每一个
  本类型的对象的属性之中，仅有一个转录起始位点属性】)
 
+
+
 ### Methods
 
 #### GetGeneIds
@@ -29,7 +31,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots.TransUnit.GetGeneIds(S
 
 
 
-
 ### Properties
 
 #### Components
@@ -40,4 +41,3 @@ The Components slot of a transcription unit lists the DNA segments within the tr
 The value of this slot should be True when it is not known to how many genes the transcription
  unit extends; that is, it is not known which is the last gene in the transcription
  unit.
-

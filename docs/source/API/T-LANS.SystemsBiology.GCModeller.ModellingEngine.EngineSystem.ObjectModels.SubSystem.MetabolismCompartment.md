@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 代谢反应所构成的网络系统对象，同时也是一个Compartment对象
 
+
+
 ### Methods
 
 #### get_DataSerializerHandles
@@ -22,7 +24,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSyst
 本方法是在初始化完毕基因表达调控系统之后进行的，因为代谢组是第一个被初始化的系统，而此时基因表达调控网络系统还是Null空值，所以本方法需要在调控网络初始化完毕之后由外部的其他对象所调用
 
 
-
 ### Properties
 
 #### DataSource
@@ -33,4 +34,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSyst
 这个不进行计算，仅作为数据观察的接口而是用，对于本部分的反应的计算的驱动，则来自于培养基对象之中
 #### TrimMetabolism
 是否从代谢组的数据中去除RNA和蛋白质的浓度
-

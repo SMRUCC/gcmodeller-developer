@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 
 
+
 ### Properties
 
 #### Name
 Site name，该目标序列的Fasta文件的文件头
 #### Start
 在整条序列之中的起始位置
-

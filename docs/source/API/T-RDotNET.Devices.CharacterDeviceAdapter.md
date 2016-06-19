@@ -7,6 +7,8 @@ _namespace: [RDotNET.Devices](N-RDotNET.Devices.html)_
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -21,9 +23,7 @@ Creates an instance.
 
 
 
-
 ### Properties
 
 #### Device
 Gets the implementation of @"T:RDotNET.Devices.ICharacterDevice" interface.
-

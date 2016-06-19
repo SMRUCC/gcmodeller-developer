@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Rep
 
 
 
+
+
 ### Methods
 
 #### Close
@@ -27,9 +29,7 @@ LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Repository.SQLEn
 
 
 
-
 ### Properties
 
 #### RepositoryRoot
 数据源的根目录
-

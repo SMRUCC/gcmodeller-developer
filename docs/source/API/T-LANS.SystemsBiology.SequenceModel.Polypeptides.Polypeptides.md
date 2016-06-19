@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Polypeptides](N-LANS.SystemsBiolo
 
 Protein polypeptide sequence.(蛋白质多肽链的一些相关操作)
 
+
+
 ### Methods
 
 #### GetCompositionVector
@@ -21,7 +23,6 @@ Get the composition vector of this polypeptide sequence.
 
 
 
-
 ### Properties
 
 #### MEGASchema
@@ -30,4 +31,3 @@ Protein sequence display color schema from MEGA software.(MEGA软件的显示蛋
 值的氨基酸字符都是大写的
 #### ToEnums
 键名字符应该是大写的字母
-

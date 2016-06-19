@@ -14,10 +14,10 @@ prot2003-2014.tab
 
 
 
+
 ### Properties
 
 #### ProtID
 protein-id
 #### RefSeq
 refseq-acc
-

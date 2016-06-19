@@ -9,6 +9,7 @@ A metabolism pathway network or its calculated sub network.(一个代谢途径�
 
 
 
+
 ### Properties
 
 #### Edges
@@ -20,4 +21,3 @@ The gene counts in the current calculated PfsNET sub network.
 Gets a specific gene node from its name property.(通过基因名来获取本网路对象之中的一个基因节点，当该节点不存在的时候会返回空值)
 #### Nodes
 The nodes in the PfsNET sub network.(网络之中的基因节点)
-

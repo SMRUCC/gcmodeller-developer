@@ -20,8 +20,8 @@ OperonPredictionSetDistances.txt,
 
 
 
+
 ### Properties
 
 #### Identifiers
 Identifiers Of genes (GI) that belong To an operon (separated by ",")
-

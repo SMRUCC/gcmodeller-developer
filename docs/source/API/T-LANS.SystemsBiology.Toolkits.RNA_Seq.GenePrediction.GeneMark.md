@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.GenePrediction](N-LANS.Systems
 
 
 
+
 ### Properties
 
 #### Model
@@ -17,4 +18,3 @@ Model file name
 Predicted genes
 #### SeqFileName
 Sequence file name
-

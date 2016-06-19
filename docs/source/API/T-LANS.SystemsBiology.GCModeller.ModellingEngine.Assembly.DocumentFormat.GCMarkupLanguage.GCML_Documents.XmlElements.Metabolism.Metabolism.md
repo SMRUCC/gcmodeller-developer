@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### ConstraintMetaboliteMaps
@@ -24,4 +25,3 @@ The collection of all of the metabolites that required in this cell model.
  (本模型中所需求的代谢物的集合)
 #### Pathways
 Metabolism pathways collection.(代谢途径的集合)
-

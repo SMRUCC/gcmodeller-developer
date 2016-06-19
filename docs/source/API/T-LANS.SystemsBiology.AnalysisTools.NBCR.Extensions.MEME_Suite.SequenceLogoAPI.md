@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite](N-LAN
 
 
 
+
+
 ### Methods
 
 #### BatchDrawing
@@ -41,8 +43,6 @@ Load the motif data from the meme text format calculation result
 |Parameter Name|Remarks|
 |--------------|-------|
 |Path|-|
-
-
 
 
 

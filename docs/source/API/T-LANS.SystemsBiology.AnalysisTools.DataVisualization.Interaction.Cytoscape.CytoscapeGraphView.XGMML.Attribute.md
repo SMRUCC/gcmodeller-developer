@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 
 
+
 ### Properties
 
 #### TypeMapping
 Maps the .NET basic data type to the cytoscape data type name.
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller](N-LANS.SystemsBiology.GCModeller.ht
 
 
 
+
+
 ### Methods
 
 #### GetMySQLClient
@@ -21,9 +23,7 @@ LANS.SystemsBiology.GCModeller.MySQLExtensions.GetMySQLClient(System.String)
 
 
 
-
 ### Properties
 
 #### MySQL
-
 

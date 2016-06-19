@@ -9,6 +9,7 @@ Specifies the restore action.
 
 
 
+
 ### Properties
 
 #### Default
@@ -17,4 +18,3 @@ The default value.
 Not restoring.
 #### Restore
 Restoring.
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 细胞内部的流对象，本对象用于表示多个生物分子之间的相互作用关系
 
+
+
 ### Methods
 
 #### InternalEventInvoke
@@ -27,9 +29,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.
 
 
 
-
 ### Properties
 
 #### get_ATP_EnergyConsumption
 当前的这个反应流对象在一次内核循环之后所消耗掉的能量
-

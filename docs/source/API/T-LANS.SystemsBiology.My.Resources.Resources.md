@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### br08001
@@ -516,4 +517,3 @@ CTA L Leu CCA P Pro CAA Q Gln CGA R Arg
 CTG L Leu CCG P Pro CAG Q Gln CGG R Arg 
 
 ATT I Ile ACT T Thr [rest of string was truncated]";.
-

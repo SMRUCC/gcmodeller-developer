@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
 ### Properties
 
 #### CompositionVector
 这些事件都是建立在序列的基础之上的，而本属性则描述了改序列的组成
-

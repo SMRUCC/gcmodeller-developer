@@ -7,6 +7,11 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.Analysis](N-LANS.SystemsBiology
 
 A collection of hits for the target query protein.
 
+> 
+>  其实这个就是相当于一个KEGG里面的SSDB BBH结果文件
+>  
+
+
 ### Methods
 
 #### __orderBySp
@@ -27,7 +32,6 @@ LANS.SystemsBiology.NCBI.Extensions.Analysis.HitCollection.Take(System.String[])
 
 
 
-
 ### Properties
 
 #### Description
@@ -38,4 +42,3 @@ Gets hits protein tag inform by hit protein locus_tag
 Query hits protein.
 #### QueryName
 The locus tag of the query protein.(主键蛋白质名称)
-

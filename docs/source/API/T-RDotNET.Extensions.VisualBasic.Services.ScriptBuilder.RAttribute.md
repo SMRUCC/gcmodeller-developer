@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.Services.ScriptBuilder](N-RDotNET.Ex
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -21,9 +23,7 @@ Declaring a R function
 
 
 
-
 ### Properties
 
 #### Name
 API token name
-

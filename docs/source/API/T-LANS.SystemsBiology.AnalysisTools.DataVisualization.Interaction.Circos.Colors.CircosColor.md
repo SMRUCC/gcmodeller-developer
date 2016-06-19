@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cir
 
 Crcos程序的所支持的颜色
 
+
+
 ### Methods
 
 #### __loadResource
@@ -52,9 +54,7 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Colors.Ci
 
 
 
-
 ### Properties
 
 #### ColorNames
 在这里是需要根据RGB的数值将其映射为文本
-

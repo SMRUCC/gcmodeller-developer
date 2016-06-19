@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 
 
+
 ### Properties
 
 #### ScannedSitesSummary
@@ -16,4 +17,3 @@ Scanned site elements
  Scanned sites are motif occurences found during the sequence scan phase
 #### TrainingSet
 Training-set elements
-

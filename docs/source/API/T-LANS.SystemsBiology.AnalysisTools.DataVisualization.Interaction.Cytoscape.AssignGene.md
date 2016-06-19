@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 将基因与相应的反应过程映射起来
 
+
+
 ### Methods
 
 #### AssignGenes
@@ -38,7 +40,5 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.Assign
 ```
 String() => {Reaction, Associated-Genes}
 _returns: {Reaction, Associated-Genes}_
-
-
 
 

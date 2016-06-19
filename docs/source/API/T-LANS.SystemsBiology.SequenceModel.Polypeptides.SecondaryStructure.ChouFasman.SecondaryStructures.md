@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure.C
 
 
 
+
 ### Properties
 
 #### AlphaHelix
@@ -19,4 +20,3 @@ Beta折叠
 Beta转角
 #### Coils
 无规则卷曲
-

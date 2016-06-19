@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools.DocumentFormat](N-LA
 
 
 
+
+
 ### Methods
 
 #### BoundaryOverlaps
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools.DocumentFormat](N-LA
 LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools.DocumentFormat.ExtProperty.BoundaryOverlaps(LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools.DocumentFormat.Transcript)
 ```
 上下游都分别重合不能够延伸
-
-
 
 

@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine.
 You should using method @"M:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine.Configuration.Configurations.Load(System.String,System.Boolean)" for data loading, because this is from the requirement of the property @"P:Microsoft.VisualBasic.ComponentModel.ITextFile.FilePath".
  (对于本对象类型，务必要使用@"M:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine.Configuration.Configurations.Load(System.String,System.Boolean)"方法进行加载，因为@"P:Microsoft.VisualBasic.ComponentModel.ITextFile.FilePath"属性需要在后面记载数据的时候被使用到)
 
+
+
 ### Methods
 
 #### Load
@@ -23,7 +25,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine.Configuration
 
 
 
-
 ### Properties
 
 #### CommitLoopsInterval
@@ -36,4 +37,3 @@ Csv data file file path.(CSV格式的实验数据文件的文件路径)
 基因突变数据，可以为一个列表或者指向一个Csv文件的文件路径
 #### KernelCycles
 The total simulation time, kernel cycles.(内核循环的次数，即本属性值表示总的模拟计算的时间)
-

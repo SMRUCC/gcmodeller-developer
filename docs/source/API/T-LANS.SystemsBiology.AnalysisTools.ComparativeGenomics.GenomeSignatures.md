@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ComparativeGenomics](N-LANS.Syste
 
 在本模块之中，所有的计算过程都是基于@"T:LANS.SystemsBiology.SequenceModel.NucleotideModels.NucleicAcid"核酸对象的
 
+
+
 ### Methods
 
 #### __counts
@@ -70,7 +72,5 @@ LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.GenomeSignatures.Dinucleot
 ```
 Dinucleotide relative abundance values (dinucleotide bias) are assessed through the odds ratio p(XY) = f(XY)/f(X)f(Y), 
  where fX denotes the frequency of the nucleotide X and fXY is the frequency of the dinucleotide XY in the sequence under study.(并行版本)
-
-
 
 

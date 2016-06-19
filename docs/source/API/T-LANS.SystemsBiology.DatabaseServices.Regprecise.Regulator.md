@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### ExportMotifs
@@ -27,11 +29,9 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.Regulator.GetMotifSite(System.St
 
 
 
-
 ### Properties
 
 #### LocusId
 该Regprecise调控因子的基因号
 #### lstOperon
 被这个调控因子所调控的基因，按照操纵子进行分组，这个适用于推断Regulon的
-

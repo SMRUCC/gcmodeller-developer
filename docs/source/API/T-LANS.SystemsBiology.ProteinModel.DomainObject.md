@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ProteinModel](N-LANS.SystemsBiology.ProteinMode
 
 Domain identifier + Domain Location
 
+
+
 ### Methods
 
 #### GetInteractionDomains
@@ -21,9 +23,7 @@ LANS.SystemsBiology.ProteinModel.DomainObject.GetInteractionDomains(LANS.Systems
 
 
 
-
 ### Properties
 
 #### Location
 百分比位置
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Progra
 
 
 
+
+
 ### Methods
 
 #### Invoke
@@ -18,7 +20,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Programs.MEME.Invok
 |Parameter Name|Remarks|
 |--------------|-------|
 |DataSet|file containing sequences in FASTA format|
-
 
 
 
@@ -106,4 +107,3 @@ weight on expected number of sites
 gap extension cost for multiple alignments
 #### XBranch
 perform x-branching
-

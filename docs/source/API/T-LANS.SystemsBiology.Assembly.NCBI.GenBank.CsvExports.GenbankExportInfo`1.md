@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.CsvExports](N-LANS.System
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -21,9 +23,7 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.CsvExports.GenbankExportInfo`1.#ctor(S
 
 
 
-
 ### Properties
 
 #### _root
 Repository root for this export source.
-

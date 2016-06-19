@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 The transcription event for a @"T:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Feature.Gene" object.(一个基因对象的转录过程)
 
+
+
 ### Methods
 
 #### CreateConstraintFlux
@@ -24,9 +26,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.
 
 
 
-
 ### Properties
 
 #### CoefficientFactor
 1表示正常表达水平，0表示缺失突变，1~0表示低量表达，>1表示过量表达
-

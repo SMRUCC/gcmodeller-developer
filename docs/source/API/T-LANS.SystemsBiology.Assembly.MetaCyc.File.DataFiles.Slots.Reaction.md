@@ -32,6 +32,8 @@ Reactions are organized into two parallel ontologies. Most reaction frames will 
  Rxn-Locations slot. The default compartment is the cytosol, so the cytosol label may be
  omitted for regular reactions. These labels are implemented as annotations in Ocelot.
 
+
+
 ### Methods
 
 #### GetCoefficient
@@ -43,7 +45,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots.Reaction.GetCoefficien
 |Parameter Name|Remarks|
 |--------------|-------|
 |MetaboliteId|-|
-
 
 
 
@@ -150,4 +151,3 @@ This slot is true in the case when this reaction occurs spontaneously, that is, 
 The value of this slot is computed automatically — its values may not be changed by the
  user. The values of the slot are computed as the union of the values of the Left and Right
  slots.
-

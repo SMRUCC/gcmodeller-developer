@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Mathema
 
 
 
+
+
 ### Methods
 
 #### Clone
@@ -27,9 +29,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.MathematicsModels.Ge
 当发生错误的时候会返回-1标记
 
 
-
 ### Properties
 
 #### _FluxObject
 不要使用@"T:Microsoft.VisualBasic.DumpNode"[Dump特性]，否则会出现无限递归
-

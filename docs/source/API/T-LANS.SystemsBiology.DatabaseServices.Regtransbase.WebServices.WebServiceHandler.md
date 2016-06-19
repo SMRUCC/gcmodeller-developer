@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regtransbase.WebServices](N-LA
 
 
 
+
+
 ### Methods
 
 #### DownloadSequenceData
@@ -23,7 +25,5 @@ LANS.SystemsBiology.DatabaseServices.Regtransbase.WebServices.WebServiceHandler.
 >  对于每一个结合位点，都有一个唯一的基因号来进行标识，故而可以通过该基因号得到物种编号，之后既可以下载调控因子的蛋白质序列
 >  对于
 >  
-
-
 
 

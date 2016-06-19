@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.Settings.Programs](N-LANS.Syst
 
 
 
+
 ### Properties
 
 #### CDD
 CDD数据库的数据文件夹的路径
-

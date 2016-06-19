@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File](N-LANS.SystemsBiology.As
 The summary database property text content in the attribute-value data file head line. 
  (在键值对的数据文件头部的说明性的数据库文件属性)
 
+
+
 ### Methods
 
 #### CreateFrom
@@ -19,8 +21,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.Property.CreateFrom(System.String[])
 |Parameter Name|Remarks|
 |--------------|-------|
 |data|-|
-
-
 
 
 

@@ -9,6 +9,7 @@ Genomics context relative abundance
 
 
 
+
 ### Properties
 
 #### Abundance
@@ -17,4 +18,3 @@ The specific features on the genome its relative abundance relative to this gene
 The gene locus_tag identifier
 #### product
 Current gene object its function annotation.
-

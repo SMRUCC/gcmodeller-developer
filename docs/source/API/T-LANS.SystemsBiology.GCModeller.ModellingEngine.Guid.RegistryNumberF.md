@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Guid](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -28,11 +30,9 @@ Convert a serials string expression to a serials object instance.
 
 
 
-
 ### Properties
 
 #### SerialNumber
 
 #### Uid2
 A none sense string, generate from the Uid object.
-

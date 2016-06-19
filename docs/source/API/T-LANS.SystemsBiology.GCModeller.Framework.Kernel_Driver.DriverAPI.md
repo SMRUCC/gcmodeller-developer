@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver](N-LANS.Syst
 
 
 
+
+
 ### Methods
 
 #### DetectedDriver
@@ -31,8 +33,6 @@ LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.DriverAPI.SetKernelLoops(
 |--------------|-------|
 |driver|-|
 |cycle|-|
-
-
 
 
 

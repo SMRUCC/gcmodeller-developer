@@ -7,6 +7,10 @@ _namespace: [RDotNET.NativeLibrary](N-RDotNET.NativeLibrary.html)_
 
 An interface definition to hide the platform specific aspects of library loading
 
+> There are probably projects 'out there' doing this already, but nothing 
+>  is obvious from a quick search. Re-consider again if you need more features.
+
+
 ### Methods
 
 #### FreeLibrary
@@ -48,8 +52,6 @@ Load a native library (DLL on windows, shared libraries on Linux and MacOS)
 |Parameter Name|Remarks|
 |--------------|-------|
 |filename|The file name (short file name) of the library to load, e.g. R.dll on Windows|
-
-
 
 
 

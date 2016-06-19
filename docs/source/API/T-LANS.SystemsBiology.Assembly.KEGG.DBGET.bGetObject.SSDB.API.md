@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.SSDB](N-LANS.Sys
 
 在KEGG之中的直系同源数据
 
+
+
 ### Methods
 
 #### HandleDownload
@@ -29,8 +31,6 @@ LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.SSDB.API.HandleDownloads(Syst
 |Parameter Name|Remarks|
 |--------------|-------|
 |EntryList|The entry point list of the kegg orthology.|
-
-
 
 
 

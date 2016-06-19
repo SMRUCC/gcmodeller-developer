@@ -7,6 +7,10 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2](N-LANS.SystemsB
 
 没有基因的表达数据，只有变化值
 
+> 
+>  请注意在这里面的treated vs untreated就是~condition的对比，可以看作为NY vs MMX
+>  
+
 
 
 ### Properties
@@ -24,4 +28,3 @@ BH adjusted p-values
 Wald test p-value: condition treated vs untreated
 #### stat
 Wald statistic: condition treated vs untreated
-

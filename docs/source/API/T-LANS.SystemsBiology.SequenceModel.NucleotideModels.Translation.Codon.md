@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.NucleotideModels.Translation](N-L
 
 密码子对象
 
+
+
 ### Methods
 
 #### #ctor
@@ -27,7 +29,6 @@ LANS.SystemsBiology.SequenceModel.NucleotideModels.Translation.Codon.CreateHashT
 生成非翻译用途的密码子列表
 
 
-
 ### Properties
 
 #### CodonValue
@@ -42,4 +43,3 @@ LANS.SystemsBiology.SequenceModel.NucleotideModels.Translation.Codon.CreateHashT
 密码子中的第二个碱基
 #### Z
 密码子中的第三个碱基
-

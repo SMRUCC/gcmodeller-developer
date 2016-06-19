@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 The sequence segment of the nucleotide repeats.(重复的核酸片段)
 
+
+
 ### Methods
 
 #### GenerateDocumentSegment
@@ -16,11 +18,9 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.R
 视图2：生成文档片段(Repeats, loci_left)
 
 
-
 ### Properties
 
 #### Locations
 重复序列的左端的位置的集合
 #### SequenceData
 The Repeats sequence data.(重复序列)
-

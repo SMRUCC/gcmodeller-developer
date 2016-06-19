@@ -45,6 +45,8 @@ The alarm data set contains the following 37 variables:
  VTUB (ventilation tube): a four-level factor With levels ZERO, LOW, NORMAL And HIGH.
  VMCH (ventilation machine): a four-level factor With levels ZERO, LOW, NORMAL And HIGH.
 
+
+
 ### Methods
 
 #### RScript
@@ -53,7 +55,5 @@ RDotNet.Extensions.Bioinformatics.declares.bnlearn.alarm.RScript
 ```
 The ALARM ("A Logical Alarm Reduction Mechanism") is a Bayesian network designed to provide an alarm message system for patient monitoring.
 > 这个是一个数据集而非一个函数来的
-
-
 
 

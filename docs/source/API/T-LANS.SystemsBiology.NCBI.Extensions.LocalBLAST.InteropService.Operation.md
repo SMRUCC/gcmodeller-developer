@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService](N-LA
 
 通用化操作
 
+
+
 ### Methods
 
 #### CreateObject
@@ -31,8 +33,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService.Operation.CreateOb
 |--------------|-------|
 |BlastBin|-|
 |FilePath|Profile file path of @"T:LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService.ProgramProfiles"|
-
-
 
 
 

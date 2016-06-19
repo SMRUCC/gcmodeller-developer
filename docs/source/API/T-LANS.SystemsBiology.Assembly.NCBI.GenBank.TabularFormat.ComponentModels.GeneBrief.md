@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.ComponentMo
 
 The gene brief information data in a ncbi PTT document.(PTT文件之中的一行，即一个基因的对象摘要信息)
 
+
+
 ### Methods
 
 #### DocumentParser
@@ -18,7 +20,6 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.ComponentModels.GeneBrie
 |Parameter Name|Remarks|
 |--------------|-------|
 |strLine|-|
-
 
 
 
@@ -40,4 +41,3 @@ Protein product functional description in the genome.
 #### Synonym
 The gene's locus_tag data.
  (我们所正常熟知的基因编号，@"T:LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.PTT"对象主要是使用这个属性值来生成字典对象的)
-

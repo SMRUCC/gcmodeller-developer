@@ -7,6 +7,11 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.CDD](N-LANS.SystemsBiology.Assemb
 
 CDD database builder.(CDD数据库构建工具)
 
+> 
+>  ftp://ftp.ncbi.nlm.nih.gov/pub/mmdb/cdd/cdd.tar.gz
+>  
+
+
 ### Methods
 
 #### ContainsId
@@ -49,9 +54,7 @@ LANS.SystemsBiology.Assembly.NCBI.CDD.DbFile.Takes(System.Collections.Generic.IE
 
 
 
-
 ### Properties
 
 #### Smp
 不存在则返回空值
-

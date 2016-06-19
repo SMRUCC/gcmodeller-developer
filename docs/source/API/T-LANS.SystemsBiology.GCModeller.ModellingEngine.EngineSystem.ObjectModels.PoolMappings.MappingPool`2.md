@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 Handler for the network node mapping in the evolution experiment.(节点映射管理器：突变与进化过程之中的映射关系)
 
+
+
 ### Methods
 
 #### ModifyMapping
@@ -34,11 +36,9 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.PoolMap
 
 
 
-
 ### Properties
 
 #### _CACHE_MappingPool
 Cache data
 #### _DICT_MappingPool
 Nodes mapping dictionary data
-

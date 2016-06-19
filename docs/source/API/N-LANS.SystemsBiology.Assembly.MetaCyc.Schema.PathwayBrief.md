@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Assembly.MetaCyc.Schema.PathwayBrief
-date: 6/16/2016 4:56:56 AM
+date: 6/19/2016 11:14:46 AM
 ---
 
 [AssignGene](T-LANS.SystemsBiology.Assembly.MetaCyc.Schema.PathwayBrief.AssignGene.html)

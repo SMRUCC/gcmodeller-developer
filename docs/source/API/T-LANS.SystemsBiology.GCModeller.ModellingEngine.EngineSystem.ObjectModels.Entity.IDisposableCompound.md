@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
 ### Properties
 
 #### Lamda
 降解系数，取值为0-1之间，当值为1的时候，表示不可降解，值越小，降解得越快
-

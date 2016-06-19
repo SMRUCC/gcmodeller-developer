@@ -7,6 +7,11 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.NCBIBlastResult](N-LANS.Systems
 
 在目标基因组之上的blast hit的结果
 
+> 
+>  Fields: query id, subject ids, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+>  
+
+
 ### Methods
 
 #### Mapper
@@ -21,9 +26,7 @@ Document line parser
 
 
 
-
 ### Properties
 
 #### SubjectIDs
 不同的编号，但是都是代表着同一个对象
-

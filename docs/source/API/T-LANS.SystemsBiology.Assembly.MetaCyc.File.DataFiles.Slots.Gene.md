@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots](N-LANS.S
 
 
 
+
 ### Properties
 
 #### Accession1
@@ -42,4 +43,3 @@ These slots encode the position of the left and right ends of the gene on the
 #### TranscriptionDirection
 This slot specifies the direction along the chromosome in which this gene is transcribed; 
  allowable values are "+" and "-".
-

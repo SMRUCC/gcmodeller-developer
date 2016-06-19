@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs](N-L
 
 
 
+
+
 ### Methods
 
 #### __alternativeBases
@@ -36,9 +38,7 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.Vcf.__checkIfBase
 
 
 
-
 ### Properties
 
 #### AltBasesNotFound
 Unexpectedly large number Of alternative bases found between sequences. Please check input file Is Not corrupted
-

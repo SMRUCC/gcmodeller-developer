@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.PrimerDesigner.IBCB.sgRNAcas.Sett
 
 GCModeller program profile session.(GCModeller的应用程序配置会话)
 
+
+
 ### Methods
 
 #### Finallize
@@ -41,7 +43,6 @@ LANS.SystemsBiology.AnalysisTools.PrimerDesigner.IBCB.sgRNAcas.Settings.Session.
 首先尝试通过配置文件得到脚本环境，假若没有配置这个值，则会尝试通过本身程序来测试，因为这个函数的调用可能是来自于Shoal脚本的
 
 
-
 ### Properties
 
 #### _LogDir
@@ -59,4 +60,3 @@ Temp data directory for this application session.(本应用程序会话的临时
 #### Templates
 Templates directory of the GCModeller inputs data.
  (在这个文件夹里面存放的是一些分析工具的输入的数据的模板文件)
-

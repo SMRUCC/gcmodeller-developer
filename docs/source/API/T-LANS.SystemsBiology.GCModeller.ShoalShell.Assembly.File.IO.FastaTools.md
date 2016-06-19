@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO](N-LANS.
 
 
 
+
+
 ### Methods
 
 #### ExportMappingBatch
@@ -19,8 +21,6 @@ LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO.FastaTools.ExportMapp
 |--------------|-------|
 |Dir|-|
 |Parallel|当服务器的内存很小的时候不建议进行并行化，否则会占用掉很大的内存空间|
-
-
 
 
 

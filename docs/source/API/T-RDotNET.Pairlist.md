@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A pairlist.
 
+
+
 ### Methods
 
 #### #ctor
@@ -29,9 +31,7 @@ Gets an enumerator over this pairlist
 _returns: The enumerator_
 
 
-
 ### Properties
 
 #### Count
 Gets the number of nodes.
-

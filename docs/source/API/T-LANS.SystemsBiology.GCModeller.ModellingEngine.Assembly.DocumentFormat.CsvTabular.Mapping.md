@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 MetaCyc数据库专用的CompoundMapping操作对象
 
+
+
 ### Methods
 
 #### EffectorMapping
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 |Parameter Name|Remarks|
 |--------------|-------|
 |Regprecise|-|
-
-
 
 
 

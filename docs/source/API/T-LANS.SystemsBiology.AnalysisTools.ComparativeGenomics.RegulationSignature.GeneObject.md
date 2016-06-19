@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSig
 
 
 
+
+
 ### Methods
 
 #### __buildRegulations
@@ -51,7 +53,6 @@ LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature.GeneOb
 调试的时候使用这个接口进行可视化
 
 
-
 ### Properties
 
 #### GeneID
@@ -64,4 +65,3 @@ KEGG Pathway的EntryID列表
 假若这个基因还是调控因子的话，则这个属性值不会为空并且@"P:LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature.GeneObject.Regulations"也不为空
 #### TFMotifs
 {MotifFamilyName, ATG relative Distance}
-

@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2
-date: 6/16/2016 4:57:01 AM
+date: 6/19/2016 11:14:51 AM
 ---
 
 [DESeq](T-LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.DESeq2.DESeq.html)

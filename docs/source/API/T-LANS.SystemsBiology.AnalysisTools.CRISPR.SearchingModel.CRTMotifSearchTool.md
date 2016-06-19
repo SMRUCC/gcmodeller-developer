@@ -10,6 +10,8 @@ CRT's search for CRISPRs is based on finding a series of
  distance and then extending these exact k-mer
  matches to the actual repeat length.
 
+
+
 ### Methods
 
 #### ExactKMerMatches
@@ -41,7 +43,5 @@ The approach taken is this paper is to read the characters to the left or right 
 >  每一个窗口数据都会被当作为候选的CRISPR位点
 >  当达到匹配条件的时候，搜索空间会被限制在一个很小的范围内
 >  
-
-
 
 

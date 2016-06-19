@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MiST2](N-LANS.SystemsBiology.Assembly.
 
 Signal Transduction Protein
 
+
+
 ### Methods
 
 #### GetDomainArchitecture
@@ -19,9 +21,7 @@ LANS.SystemsBiology.Assembly.MiST2.Transducin.GetDomainArchitecture
 >  
 
 
-
 ### Properties
 
 #### ImageUrl
 Image file url
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeGeno
 
 
 
+
+
 ### Methods
 
 #### __nextLeft
@@ -61,7 +63,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeGenomics.GeneObje
 _returns: 函数返回下一个基因对象的左端的坐标的@"P:System.Drawing.Point.X"_
 
 
-
 ### Properties
 
 #### geneName
@@ -70,4 +71,3 @@ _returns: 函数返回下一个基因对象的左端的坐标的@"P:System.Drawi
 基因号
 #### offsets
 编号标签与ORF图形之间在水平位置上面的位移
-

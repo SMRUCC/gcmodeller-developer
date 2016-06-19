@@ -13,6 +13,7 @@ Generate all combinations of the elements of x taken m at a time. If x is a posi
 
 
 
+
 ### Properties
 
 #### FUN
@@ -23,4 +24,3 @@ number of elements to choose.
 logical indicating if the result should be simplified to an array (typically a matrix); if FALSE, the function returns a list. Note that when simplify = TRUE as by default, the dimension of the result is simply determined from FUN(1st combination) (for efficiency reasons). This will badly fail if FUN(u) is not of constant length.
 #### x
 vector source for combinations, or integer n for x <- seq_len(n).
-

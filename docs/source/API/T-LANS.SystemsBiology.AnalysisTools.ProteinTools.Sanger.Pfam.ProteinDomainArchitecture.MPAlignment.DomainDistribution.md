@@ -9,8 +9,8 @@ Domain position specifc distributions
 
 
 
+
 ### Properties
 
 #### Distribution
 Position collection for this @"P:LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinDomainArchitecture.MPAlignment.DomainDistribution.DomainId"[domain object item]
-

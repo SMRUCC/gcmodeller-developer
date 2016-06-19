@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A sequence of byte values.
 
+
+
 ### Methods
 
 #### #ctor
@@ -54,11 +56,9 @@ Sets the values of this RawVector
 
 
 
-
 ### Properties
 
 #### DataSize
 Gets the size of a byte value in byte.
 #### Item
 Gets or sets the element at the specified index.
-

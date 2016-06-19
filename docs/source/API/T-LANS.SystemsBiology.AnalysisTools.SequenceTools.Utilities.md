@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools](N-LANS.SystemsBiol
 
 Sequence Utilities
 
+
+
 ### Methods
 
 #### __imperfectsPalindromeTask
@@ -127,6 +129,17 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.HairpinksBatch(Microso
 |args|-|
 
 
+#### MirrorContext
+```csharp
+LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.MirrorContext(Microsoft.VisualBasic.CommandLine.CommandLine)
+```
+过滤得到基因组上下文之中的上游回文位点
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|args|-|
+
+
 #### MirrorGroups
 ```csharp
 LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.MirrorGroups(Microsoft.VisualBasic.CommandLine.CommandLine)
@@ -214,8 +227,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.Utilities.Trim(Microsoft.VisualB
 |Parameter Name|Remarks|
 |--------------|-------|
 |args|-|
-
-
 
 
 

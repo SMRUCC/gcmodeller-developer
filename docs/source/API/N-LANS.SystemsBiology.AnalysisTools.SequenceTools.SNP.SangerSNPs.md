@@ -1,10 +1,11 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs
-date: 6/16/2016 4:56:56 AM
+date: 6/19/2016 11:14:45 AM
 ---
 
-[AlignmentMinusfile](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.AlignmentMinusfile.html)
-[FastaMinusofMinussnpMinussites](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.FastaMinusofMinussnpMinussites.html)
-[PhylibMinusofMinussnpMinussites](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.PhylibMinusofMinussnpMinussites.html)
+[Phylip](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.Phylip.html)
+[SNPsAlignment](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.SNPsAlignment.html)
+[SNPsFasta](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.SNPsFasta.html)
 [SNPSites](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.SNPSites.html)
+[SNPsPhylib](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.SNPsPhylib.html)
 [Vcf](T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs.Vcf.html)

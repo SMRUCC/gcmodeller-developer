@@ -7,6 +7,9 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BatchPar
 
 The batch blast module for the preparations of the Venn diagram drawing data model.(为文氏图的绘制准备数据的批量blast模块)
 
+> 这里面的方法都是完全的两两组合的BBH
+
+
 ### Methods
 
 #### __blastpHandle
@@ -106,10 +109,8 @@ The parallel edition for the invoke function @"M:LANS.SystemsBiology.NCBI.Extens
 
 
 
-
 ### Properties
 
 #### RecommendedThreads
 The recommended num_threads parameter for the blast operation base on the current system hardware information.
  (根据当前的系统硬件配置所推荐的num_threads参数)
-

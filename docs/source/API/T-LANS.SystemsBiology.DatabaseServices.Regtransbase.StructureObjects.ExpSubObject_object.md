@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects]
 
 
 
+
 ### Properties
 
 #### obj_guid
@@ -19,4 +20,3 @@ obj_type_id: type of regulatory element
 order_num: number of regulatory element in the list of regulatory element for current experiment
 #### strand
 strand: defines which DNA strand (direct or complementary) contains the element
-

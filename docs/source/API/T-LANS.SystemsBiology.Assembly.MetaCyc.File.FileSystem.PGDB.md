@@ -8,6 +8,9 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.FileSystem](N-LANS.System
 The MetaCyc database file reader object.
  (MetaCyc数据库文件的读取对象)
 
+> DataFiles
+
+
 ### Methods
 
 #### Add
@@ -68,7 +71,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.FileSystem.PGDB.Save(System.String)
 
 
 
-
 ### Properties
 
 #### AddingMethods
@@ -86,4 +88,3 @@ All of the chemical compounds and biomolecule that defines in this table.
 Regulation rule of the gene expression and enzyme activity.(对基因表达过程的调控以及酶活力的调节)
 #### WholeGenome
 Get the whole genome sequence data for this species bacteria.
-

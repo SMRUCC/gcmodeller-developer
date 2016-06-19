@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.COG.COGs](N-LANS.SystemsBiology.A
 cog2003-2014.csv
  CSV table row for COG, Contains list of orthology domains. Comma-delimited,
 
+
+
 ### Methods
 
 #### LoadDocument
@@ -21,7 +23,6 @@ LANS.SystemsBiology.Assembly.NCBI.COG.COGs.COGTable.LoadDocument(System.String)
 |Parameter Name|Remarks|
 |--------------|-------|
 |path|-|
-
 
 
 
@@ -59,4 +60,3 @@ LANS.SystemsBiology.Assembly.NCBI.COG.COGs.COGTable.LoadDocument(System.String)
 <protein-length>
 #### Start
 <domain-start>
-

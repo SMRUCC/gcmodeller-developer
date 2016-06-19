@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.Documen
 
 
 
+
 ### Properties
 
 #### CO
@@ -21,4 +22,3 @@ Program.
 Read group. Unordered multiple @RG lines are allowed.
 #### SQ
 Reference sequence dictionary. The order of @SQ lines defines the alignment sorting order.
-

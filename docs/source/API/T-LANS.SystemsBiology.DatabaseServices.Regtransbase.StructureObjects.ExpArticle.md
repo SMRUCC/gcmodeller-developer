@@ -10,6 +10,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects]
 
 
 
+
 ### Properties
 
 #### art_abstract
@@ -34,4 +35,3 @@ pkg_guid: id of the package, containing the article (here and below)
 pmid: article PubMedID
 #### title
 title: article title
-

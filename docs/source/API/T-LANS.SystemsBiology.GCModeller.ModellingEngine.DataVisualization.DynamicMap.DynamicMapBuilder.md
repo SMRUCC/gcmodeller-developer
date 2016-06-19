@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.DataVisualization.Dy
 
 构建动态的虚拟细胞内的网络
 
+
+
 ### Methods
 
 #### Expressing
@@ -19,8 +21,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.DataVisualization.DynamicMap.Dyna
 |--------------|-------|
 |CentralDogma|-|
 |GeneId|-|
-
-
 
 
 

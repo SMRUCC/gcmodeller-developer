@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.Archives.Xml.Nodes](N-LANS.System
 
 
 
+
+
 ### Methods
 
 #### ContainsRxn
@@ -33,9 +35,7 @@ LANS.SystemsBiology.Assembly.KEGG.Archives.Xml.Nodes.EC_Mapping.IsECEquals(Syste
 
 
 
-
 ### Properties
 
 #### locusId
 酶分子的基因编号
-

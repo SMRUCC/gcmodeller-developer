@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject](N-LANS.SystemsB
 
 The kegg pathway annotation data.
 
+
+
 ### Methods
 
 #### __parseHTML_ModuleList
@@ -74,7 +76,6 @@ Is current pathway object contains the specific module information?(当前的代
 
 
 
-
 ### Properties
 
 #### Compound
@@ -85,4 +86,3 @@ The kegg compound entry collection data in this pathway.
 The module entry collection data in this pathway.
 #### Name
 The name value of this pathway object
-

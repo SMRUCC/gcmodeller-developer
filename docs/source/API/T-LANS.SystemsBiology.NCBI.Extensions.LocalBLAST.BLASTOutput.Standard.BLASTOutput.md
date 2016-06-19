@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.Standard
 
 An analysis tool for local blast log file.(本地BLAST日志文件分析对象)
 
+
+
 ### Methods
 
 #### ExportBestHit
@@ -14,7 +16,5 @@ An analysis tool for local blast log file.(本地BLAST日志文件分析对象)
 LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.Standard.BLASTOutput.ExportBestHit(System.Double,System.Double)
 ```
 获取本日志文件中的最好的序列比对匹配结果
-
-
 
 

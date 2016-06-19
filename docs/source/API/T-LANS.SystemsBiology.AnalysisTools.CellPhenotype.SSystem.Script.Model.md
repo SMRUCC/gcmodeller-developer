@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Script](N-L
 
 可以被保存至文件的脚本模型对象
 
+
+
 ### Methods
 
 #### Load
@@ -34,7 +36,6 @@ Load from a script file.
 
 
 
-
 ### Properties
 
 #### Experiments
@@ -51,4 +52,3 @@ The user define function.
 #### Vars
 A collection of the system variables.
  (系统中的运行变量的集合)
-

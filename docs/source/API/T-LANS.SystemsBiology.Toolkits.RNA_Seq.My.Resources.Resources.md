@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### BaSAR
@@ -86,4 +87,3 @@ library(WGCNA);
 library(flashClust);
 
 # The following setting is important, do not [rest of string was truncated]";.
-

@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure.C
 
 
 
+
 ### Properties
 
 #### _A
@@ -53,4 +54,3 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure.C
 酪氨酸（Y）
 #### f
 f(i), f(i+1), f(i+2), f(i+3)
-

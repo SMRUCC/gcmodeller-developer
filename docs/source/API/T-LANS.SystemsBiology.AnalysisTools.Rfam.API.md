@@ -26,6 +26,8 @@ Rfam is a database of structure-annotated multiple sequence alignments,
  Zero licence. See ftp://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/COPYING for
  more information.
 
+
+
 ### Methods
 
 #### RfamAnalysisBatch
@@ -41,8 +43,6 @@ LANS.SystemsBiology.AnalysisTools.Rfam.API.RfamAnalysisBatch(System.String,Syste
 |PTT_DIR|-|
 |locusPrefix|-|
 |offset|用于合并位点的偏移量|
-
-
 
 
 

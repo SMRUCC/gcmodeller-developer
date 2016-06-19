@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.Regulons.RegulatesGrap
 
 
 
+
 ### Properties
 
 #### Regulates
 位点是通过这个基因列表来调控代谢途径的
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA](N-LA
 
 
 
+
+
 ### Methods
 
 #### Coefficient
@@ -32,8 +34,6 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.PhenoCoefficient.C
 |fluxs|-|
 |rpkm|-|
 |samples|-|
-
-
 
 
 

@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### Culture
@@ -91,4 +92,3 @@ Result <- PfsNET.Evaluate File1 $MAT1 File2 $MAT2 File3 $NET b $Beta t1 $t1 t2 $
 $Result > {3}/{4}.xml.
 #### ResourceManager
 Returns the cached ResourceManager instance used by this class.
-

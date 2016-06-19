@@ -9,10 +9,10 @@ Generalized Topological Overlap Measure, taking into account interactions of hig
 
 
 
+
 ### Properties
 
 #### adjMat
 adjacency matrix. See details below.
 #### degree
 Integer specifying the maximum degree To be calculated.
-

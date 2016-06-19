@@ -9,6 +9,7 @@ GO Annotation File (GAF) Format 2.0
 
 
 
+
 ### Properties
 
 #### AnnotationExtension
@@ -168,4 +169,3 @@ Also referred to as with, from or the with/from column
  Identifiers from the Center for Biological Sequence Analysis (CBS), however, represent tools used to find homology 
  or sequence similarity; these identifiers can be used in the with column for ISS annotations.
  The with column may not be used with the evidence codes IDA, TAS, NAS, or ND.
-

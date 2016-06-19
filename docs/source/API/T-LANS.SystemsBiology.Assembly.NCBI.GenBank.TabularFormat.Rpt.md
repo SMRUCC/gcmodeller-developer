@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat](N-LANS.Sys
 
 
 
+
+
 ### Methods
 
 #### Load``1
@@ -21,9 +23,7 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Rpt.Load``1(System.Strin
 
 
 
-
 ### Properties
 
 #### Size
 The chromesome DNA total length in bp
-

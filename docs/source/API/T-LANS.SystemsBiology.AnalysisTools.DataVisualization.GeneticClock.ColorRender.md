@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.GeneticClock](N
 
 获取值大小梯度颜色
 
+
+
 ### Methods
 
 #### #ctor
@@ -69,8 +71,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.GeneticClock.ColorRender.Int
 |Parameter Name|Remarks|
 |--------------|-------|
 |data|-|
-
-
 
 
 

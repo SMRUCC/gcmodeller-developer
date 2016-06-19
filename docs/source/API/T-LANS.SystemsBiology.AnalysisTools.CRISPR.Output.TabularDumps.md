@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CRISPR.Output](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### BatchTrimConserved
@@ -33,8 +35,6 @@ LANS.SystemsBiology.AnalysisTools.CRISPR.Output.TabularDumps.RemoveConserved(LAN
 |besthit|-|
 |CDSInfo|-|
 |data|-|
-
-
 
 
 

@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Pa
 
 
 
+
 ### Properties
 
 #### Left
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Pa
 该序列片段的长度
 #### Sequence
 序列片段
-

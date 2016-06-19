@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET](N-LANS.SystemsB
 PFSNet computes signifiance of subnetworks generated through a process that selects genes in a pathway based on fuzzy scoring and a majority voting procedure.
  (一个程序仅一个实例，是否是因为将Module修改为Class的原因所以导致了在64位服务器上面的Java初始化失败？？？？)
 
+
+
 ### Methods
 
 #### Evaluate
@@ -37,8 +39,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.PfsNETRInvoke.InitializeSessi
 |--------------|-------|
 |java_class|-|
 |R_HOME|-|
-
-
 
 
 

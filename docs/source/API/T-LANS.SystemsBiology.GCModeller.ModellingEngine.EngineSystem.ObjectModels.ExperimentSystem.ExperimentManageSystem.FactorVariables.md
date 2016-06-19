@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 本类型的实验是通过控制代谢物的浓度来进行的，故而@"F:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.ExperimentSystem.ExperimentManageSystem.FactorVariables.Target"所指向的目标对象为@"P:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSystem.MetabolismCompartment.Metabolites"
 
+
+
 ### Methods
 
 #### CreateObject
@@ -19,7 +21,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Experim
 |--------------|-------|
 |ModelBase|目标对象之中的@"P:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.GCML_Documents.ComponentModels.Experiment.TriggedCondition"[触发条件]为一个纯数字|
 |MetabolismSystem|-|
-
 
 
 
@@ -51,4 +52,3 @@ Target
 Method for get the current value of target
 #### TargetInvoke_SetValue
 Method for set the value for target
-

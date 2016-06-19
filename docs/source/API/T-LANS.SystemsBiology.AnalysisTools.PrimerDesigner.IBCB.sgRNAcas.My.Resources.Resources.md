@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### check_sgRNA_seq
@@ -187,4 +188,3 @@ use Getopt::Long;
 # #
 # AUTHOR : Xie Shengsong #
 # [rest of string was truncated]";.
-

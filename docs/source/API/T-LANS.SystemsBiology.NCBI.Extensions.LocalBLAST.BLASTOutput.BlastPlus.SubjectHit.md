@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlu
 
 
 
+
+
 ### Methods
 
 #### GetItems
@@ -22,7 +24,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlus.SubjectHit.
 > 请不要在这里使用.AsParallel拓展方法，以保持各个片段的顺序关系
 
 
-
 ### Properties
 
 #### Length
@@ -31,4 +32,3 @@ hit蛋白质序列的全长
 高分区的hit片段的长度
 #### QueryLocation
 Hit position on the query sequence.
-

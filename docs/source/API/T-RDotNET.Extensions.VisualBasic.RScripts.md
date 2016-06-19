@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic](N-RDotNET.Extensions.VisualBasic.ht
 
 
 
+
+
 ### Methods
 
 #### c
@@ -160,9 +162,7 @@ Normalize the file path as the URL format in Unix system.
 
 
 
-
 ### Properties
 
 #### NA
 "NA" 字符串，而不是NA空值常量
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions](N-LANS.SystemsBiology.NCBI.Ext
 
 ShoalShell API interface for ncbi localblast operations.
 
+
+
 ### Methods
 
 #### Blastn
@@ -77,8 +79,6 @@ LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.LoadUltraLargeSizeBlastOutput
 |--------------|-------|
 |path|-|
 |chunk_size|是以1024*1024为基础的，本参数的值应该小于768，最大不应该超过800，否则程序会崩溃.对于1GB以内的日志文件，可以考虑100|
-
-
 
 
 

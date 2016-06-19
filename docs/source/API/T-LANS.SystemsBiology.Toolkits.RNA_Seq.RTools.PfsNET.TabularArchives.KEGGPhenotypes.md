@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.TabularArchives]
 
 
 
+
+
 ### Methods
 
 #### CalculationWeights
@@ -16,9 +18,7 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.TabularArchives.KEGGPhenotype
 计算同一种分类的
 
 
-
 ### Properties
 
 #### Percentage
 Sigma(@"P:LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.PfsNET.TabularArchives.SubNETCsvObject.weight2")
-

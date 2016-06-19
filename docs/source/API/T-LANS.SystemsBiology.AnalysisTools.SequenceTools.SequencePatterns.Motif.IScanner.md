@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Mo
 
 
 
+
+
 ### Methods
 
 #### FindLocation
@@ -21,7 +23,5 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.IScanner.
 |Loci|-|
 
 > 这个位置查找函数是OK的
-
-
 
 

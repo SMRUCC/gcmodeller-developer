@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ComponentModel.Loci](N-LANS.SystemsBiology.Comp
 
 The extension method for the location object operations.
 
+
+
 ### Methods
 
 #### FragmentAssembly
@@ -42,8 +44,6 @@ LANS.SystemsBiology.ComponentModel.Loci.Loci_API.Merge``1(``0,``0)
 |--------------|-------|
 |a|-|
 |b|-|
-
-
 
 
 

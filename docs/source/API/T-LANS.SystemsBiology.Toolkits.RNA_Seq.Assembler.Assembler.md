@@ -7,6 +7,12 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler](N-LANS.SystemsBiolo
 
 在进行装配的时候应该尽量的在两个reads的左端错开一个距离，否则会装配完没有剩余（非线程安全）
 
+> 
+>  两部分的reads的重叠的原则：
+>  丰度必须要接近，对于丰度不同的两个reads则可能是两个transcript的了
+>  
+
+
 ### Methods
 
 #### #ctor
@@ -77,7 +83,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.Assembler.ReversedDeltaPrediction
 
 
 
-
 ### Properties
 
 #### ForwardsReadsBuffer
@@ -87,4 +92,3 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.Assembler.ReversedDeltaPrediction
 反向的数据已经从大到小排过序了的
 #### Transcripts
 装配得到的转录对象的在基因组上面的转录的内容
-

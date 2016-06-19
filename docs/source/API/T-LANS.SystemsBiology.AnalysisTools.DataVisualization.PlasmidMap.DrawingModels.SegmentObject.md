@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.PlasmidMap.Draw
 
 
 
+
+
 ### Methods
 
 #### CreateBackwardModel
@@ -88,9 +90,7 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.PlasmidMap.DrawingModels.Seg
 
 
 
-
 ### Properties
 
 #### Direction
 0表示没有方向，1表示正向，-1表示反向
-

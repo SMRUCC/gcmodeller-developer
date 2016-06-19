@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Reflection](N-L
 
 
 
+
+
 ### Methods
 
 #### CType``1
@@ -89,7 +91,5 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Reflection.FileStream.SplitS
 |SlotName|-|
 
 > SlotName:  SLOT-NAME
-
-
 
 

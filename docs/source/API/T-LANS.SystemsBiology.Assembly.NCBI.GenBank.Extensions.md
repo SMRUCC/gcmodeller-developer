@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank](N-LANS.SystemsBiology.As
 
 
 
+
+
 ### Methods
 
 #### __protShort
@@ -49,7 +51,5 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.Extensions.GeneList(LANS.SystemsBiolog
 ```
 
 _returns: {locus_tag, gene}_
-
-
 
 

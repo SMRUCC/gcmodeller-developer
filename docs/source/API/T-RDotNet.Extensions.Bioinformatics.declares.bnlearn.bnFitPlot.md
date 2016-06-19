@@ -10,6 +10,7 @@ Plot fitted Bayesian networks
 
 
 
+
 ### Properties
 
 #### fitted
@@ -20,4 +21,3 @@ the label of the x axis, of the y axis, and the plot title.
 the label of the x axis, of the y axis, and the plot title.
 #### ylab
 the label of the x axis, of the y axis, and the plot title.
-

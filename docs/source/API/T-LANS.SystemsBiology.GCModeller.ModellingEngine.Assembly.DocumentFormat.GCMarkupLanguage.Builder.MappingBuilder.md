@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 在模型中的对象间建立连接
 
+
+
 ### Methods
 
 #### GeneLinkMetabolism
@@ -37,8 +39,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupL
 |--------------|-------|
 |EnzymeId|-|
 |EnzymeList|-|
-
-
 
 
 

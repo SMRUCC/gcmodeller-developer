@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.Assembler](N-LANS.Sy
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -32,11 +34,9 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.Assembler.DirectionalAssembler.As
 
 
 
-
 ### Properties
 
 #### readsBufferChunk
 初始的聚合结果
 #### resultBuffer
 返回得到的结果
-

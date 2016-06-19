@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.Schema.TransportReaction](N-LA
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -18,8 +20,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.Schema.TransportReaction.CompoundSpecies.#c
 |Parameter Name|Remarks|
 |--------------|-------|
 |strValue|-|
-
-
 
 
 

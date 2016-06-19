@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller](N-LANS.SystemsBiology.GCModeller.ht
 
 
 
+
+
 ### Methods
 
 #### ExportData
@@ -40,8 +42,6 @@ LANS.SystemsBiology.GCModeller.CLI.Register(Microsoft.VisualBasic.CommandLine.Co
 |Parameter Name|Remarks|
 |--------------|-------|
 |CommandLine|-|
-
-
 
 
 

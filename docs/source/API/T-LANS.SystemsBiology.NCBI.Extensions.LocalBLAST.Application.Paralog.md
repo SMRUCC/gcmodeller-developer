@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application](N-LANS.
 
 
 
+
+
 ### Methods
 
 #### ExportParalog
@@ -20,8 +22,6 @@ Exports the blastp paralog hits.
 |blastp|-|
 |coverage|-|
 |identities|-|
-
-
 
 
 

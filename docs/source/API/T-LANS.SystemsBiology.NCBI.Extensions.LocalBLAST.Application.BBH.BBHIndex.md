@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH](N-L
 
 可以使用这个对象来表述@"T:LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH.I_BlastQueryHit"的所有派生类
 
+
+
 ### Methods
 
 #### BuildHitsHash
@@ -23,11 +25,9 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH.BBHIndex.BuildHit
 
 
 
-
 ### Properties
 
 #### Properties
 动态属性
 #### Property
 请注意这个属性进行字典的读取的时候，假若不存在，则会返回空字符串，不会报错
-

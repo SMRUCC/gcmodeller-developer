@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles](N-LANS.Systems
 
 This class describes most forms of protein, RNA or activity regulation.
 
+
+
 ### Methods
 
 #### GetRegulationsByRegulator
@@ -18,8 +20,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Regulations.GetRegulationsBy
 |Parameter Name|Remarks|
 |--------------|-------|
 |Regulator|Regulator的UniqueID属性值|
-
-
 
 
 

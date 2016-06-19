@@ -10,6 +10,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure](
  ^ - @"F:LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure.ChouFasman.SecondaryStructures.BetaTurn";
  & - @"F:LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure.ChouFasman.SecondaryStructures.Coils"
 
+
+
 ### Methods
 
 #### Calculate
@@ -21,8 +23,6 @@ LANS.SystemsBiology.SequenceModel.Polypeptides.SecondaryStructure.ChouFasman.Cal
 |Parameter Name|Remarks|
 |--------------|-------|
 |sequence|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 片段在正向链找得到自己的反向片段
 
+
+
 ### Methods
 
 #### #ctor
@@ -33,8 +35,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.M
 |currentRemoves|-|
 |currentStat|-|
 |currLen|-|
-
-
 
 
 

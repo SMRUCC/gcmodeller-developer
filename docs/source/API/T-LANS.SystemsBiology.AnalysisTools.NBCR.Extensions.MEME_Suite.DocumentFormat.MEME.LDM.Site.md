@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 生成@"T:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.MEME.LDM.Motif"位点的序列
 
+
+
 ### Methods
 
 #### InternalParser
@@ -27,7 +29,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.MEME
 @"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.MEME.LDM.Site.Name":@"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.MEME.LDM.Site.Start"
 
 
-
 ### Properties
 
 #### Name
@@ -38,4 +39,3 @@ Site name，该目标序列的Fasta文件的文件头，一般是基因号
 用作分析的原始序列的长度
 #### Start
 在整条序列之中的起始位置
-

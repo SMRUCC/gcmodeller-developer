@@ -9,10 +9,10 @@ XML文件里面的字符串的转义，这个主要是针对MetaCyc数据库里�
 
 
 
+
 ### Properties
 
 #### Escape
 保存在文件之中的转义字符串
 #### Original
 原来的特殊符号字符串
-

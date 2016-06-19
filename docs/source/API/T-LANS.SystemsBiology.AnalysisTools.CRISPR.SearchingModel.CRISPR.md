@@ -13,6 +13,8 @@ Clustered Regularly Interspersed Short Palindromic Repeats
  remove the threat. It has been well documented that CRISPRs evolve rapidly in response 
  to their environment, leading to a wide variation of spacer sequences.
 
+
+
 ### Methods
 
 #### RepeatStringAt
@@ -38,9 +40,7 @@ CRISPRÎ»µãÖ®ÖÐµÄÖØ¸´Æ¬¶ÎÖ®¼äµÄ¼ä¸ôÐòÁÐ£¬ÕâÐ
 
 
 
-
 ### Properties
 
 #### Repeats
 ÖØ¸´Æ¬¶ÎµÄÆðÊ¼Î»µãÁÐ±í
-

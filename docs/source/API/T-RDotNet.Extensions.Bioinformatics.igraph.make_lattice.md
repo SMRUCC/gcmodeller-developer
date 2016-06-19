@@ -10,6 +10,7 @@ make_lattice is a flexible function, it can create lattices of arbitrary dimensi
 
 
 
+
 ### Properties
 
 #### circular
@@ -26,4 +27,3 @@ Integer constant, for regular lattices, the size of the lattice in each dimensio
 Logical, if TRUE directed lattices will be mutually connected.
 #### nei
 The distance within which (inclusive) the neighbors on the lattice will be connected. This parameter is not used right now.
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Patterns.Clustal](N-LANS.SystemsB
 
 Semi-Residue(半残基，出现概率不是百分之百的)
 
+
+
 ### Methods
 
 #### __allocBlock
@@ -51,7 +53,6 @@ LANS.SystemsBiology.SequenceModel.Patterns.Clustal.SR.FromAlign(System.Collectio
 
 
 
-
 ### Properties
 
 #### Block
@@ -62,4 +63,3 @@ LANS.SystemsBiology.SequenceModel.Patterns.Clustal.SR.FromAlign(System.Collectio
 在多重比对之中的序列上面的位置
 #### Residue
 残基符号
-

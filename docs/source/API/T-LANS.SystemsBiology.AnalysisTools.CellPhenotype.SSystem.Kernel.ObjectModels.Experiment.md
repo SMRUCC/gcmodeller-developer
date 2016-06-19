@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype.SSystem.Kernel.Obje
 
 
 
+
 ### Properties
 
 #### Id
@@ -23,4 +24,3 @@ The counts of the kicks.
 #### Start
 The start time of this disturb.
  (这个干扰动作的开始时间)
-

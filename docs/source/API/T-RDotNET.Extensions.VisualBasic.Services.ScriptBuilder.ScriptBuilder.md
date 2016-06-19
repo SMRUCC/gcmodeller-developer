@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.Services.ScriptBuilder](N-RDotNET.Ex
 
 
 
+
+
 ### Methods
 
 #### op_Addition
@@ -31,8 +33,6 @@ Append
 |--------------|-------|
 |sb|-|
 |s|-|
-
-
 
 
 

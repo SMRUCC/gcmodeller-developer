@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.RCSB.PDB.Keywords](N-LANS.SystemsBiolo
 
 
 
+
+
 ### Methods
 
 #### InternalParser
@@ -24,11 +26,9 @@ LANS.SystemsBiology.Assembly.RCSB.PDB.Keywords.AtomUnit.InternalParser(System.St
 
 
 
-
 ### Properties
 
 #### AA_ID
 氨基酸的名称简写
 #### AA_IDX
 当前的氨基酸分子在Fasta序列之中的残基位置
-

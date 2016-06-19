@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
+
 ### Methods
 
 #### setup_ATP_Compensate
@@ -21,9 +23,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSyst
 
 
 
-
 ### Properties
 
 #### ATP_Compensate
 假若模型中的ATP合成模型不能够完成的，话，可以试试这个对象进行ATP的补偿，这个方法会尝试将ATP合成有关的酶与ATP的量相联系起来
-

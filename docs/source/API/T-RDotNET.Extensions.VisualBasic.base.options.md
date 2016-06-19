@@ -8,6 +8,11 @@ _namespace: [RDotNET.Extensions.VisualBasic.base](N-RDotNET.Extensions.VisualBas
 Allow the user to set and examine a variety of global options which affect the way in which R computes and displays its results.
  (由于options函数会设置环境变量，由于设置的变量很少，但是大部分参数为逻辑值，所以在这里使用RExpression类型来防止默认为True的参数被误设置为False)
 
+> 
+>  Invoking options() with no arguments returns a list with the current values of the options. Note that not all options listed below are set initially. To access the value of a single option, one should use, e.g., getOption("width") rather than options("width") which is a list of length one.
+>  For options(), a list of all set options sorted by name. For options(name), a list of length one containing the set value, or NULL if it is unset. For uses setting one or more options, a list with the previous values of the options changed (returned invisibly).
+>  
+
 
 
 ### Properties
@@ -226,4 +231,3 @@ controls the maximum number Of columns On a line used In printing vectors, matri
 #### windowsTimeout
 (Windows-only) integer vector of length 2 representing two times in milliseconds. 
  These control the double-buffering of windows devices when that Is enabled: the first Is the delay after plotting finishes (Default 100) And the second Is the update interval during continuous plotting (Default 500). The values at the time the device Is opened are used.
-

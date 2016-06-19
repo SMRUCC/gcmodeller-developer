@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
 ### Properties
 
 #### clan_id
 Added. Add author?
-

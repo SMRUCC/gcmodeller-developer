@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite](N-LAN
 
 Motif在序列上面的搜索结果
 
+
+
 ### Methods
 
 #### MatchInterGeneLoci
@@ -19,8 +21,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.FimoTable.MatchInte
 |--------------|-------|
 |Table|-|
 |anno|@"T:LANS.SystemsBiology.Assembly.NCBI.GenBank.CsvExports.GeneDumpInfo"Csv文件的文件路径|
-
-
 
 
 

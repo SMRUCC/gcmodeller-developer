@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Programs](N-LANS.Sys
 
 请注意：当目标FASTA序列文件的文件路径中的空格字符过多的时候，BLAST+程序组将不能够很好的工作，故而当程序出错的时候，请检查文件路径是否存在此问题
 
+
+
 ### Methods
 
 #### Blastp
@@ -36,7 +38,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Programs.BLASTPlus.GetManual
 Get USAGE, DESCRIPTION and ARGUMENTS
 
 
-
 ### Properties
 
 #### MolTypeNucleotide
@@ -45,4 +46,3 @@ The nucleotide molecular type value for the makeblastdb operation.(用于makebla
 The protein molecular type value for the makeblastdb operation.(用于makeblastdb操作所需要的蛋白质分子的命令行参数值)
 #### Version
 Gets the blast program group version.(获取blast程序组的版本信息)
-

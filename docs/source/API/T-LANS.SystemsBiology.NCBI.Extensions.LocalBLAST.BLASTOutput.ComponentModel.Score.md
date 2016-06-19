@@ -9,6 +9,7 @@ Query和Subject之间的比对得分
 
 
 
+
 ### Properties
 
 #### _DOUBLE
@@ -17,4 +18,3 @@ Query和Subject之间的比对得分
 E-value 期望值
 #### Identities
 相似度
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat](N-LANS.Sys
 
 
 
+
+
 ### Methods
 
 #### GetDbEntries
@@ -30,8 +32,6 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.DbAPI.GetGb(System.Strin
 |--------------|-------|
 |DIR|-|
 |locus|-|
-
-
 
 
 

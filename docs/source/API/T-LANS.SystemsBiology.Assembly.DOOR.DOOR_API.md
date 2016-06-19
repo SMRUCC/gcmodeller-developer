@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.DOOR](N-LANS.SystemsBiology.Assembly.D
 
 
 
+
+
 ### Methods
 
 #### CreateOperonView
@@ -35,8 +37,6 @@ LANS.SystemsBiology.Assembly.DOOR.DOOR_API.LoadDocument(System.String[],System.S
 |Parameter Name|Remarks|
 |--------------|-------|
 |s_Data|-|
-
-
 
 
 

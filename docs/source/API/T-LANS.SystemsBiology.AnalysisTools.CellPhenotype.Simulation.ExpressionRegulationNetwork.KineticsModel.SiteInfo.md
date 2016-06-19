@@ -10,6 +10,7 @@ This object represents a regulatory motif site in the gene promoter region.
 
 
 
+
 ### Properties
 
 #### Position
@@ -17,4 +18,3 @@ The position id value of the current regulatory site or the ATG distance of this
  (调控位点的编号或者说是当前的这个调控位点距离ATG的距离)
 #### Regulators
 该位点之上的调控因子
-

@@ -9,8 +9,8 @@ The dynamics kinetics expression of calculates the system behavior.(这个动力
 
 
 
+
 ### Properties
 
 #### Value
 Get the value of the target expression object in current time.(获取本对象在当前时间点上的值)
-

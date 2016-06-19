@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService](N-LA
 
 
 
+
 ### Properties
 
 #### _innerBLASTBinDIR
@@ -19,4 +20,3 @@ The blast output file path of the last time blast operation.(上一次执行BLAS
 Gets the directory which contains the local blast program group.(本地blast程序组所在的文件夹)
 #### NumThreads
 The cpu core number usage of the blast operation.(进行blast操作所需要的线程数)
-

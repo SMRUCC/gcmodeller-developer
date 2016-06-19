@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 
 
+
+
 ### Methods
 
 #### Compare
@@ -24,8 +26,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.Similarity
 |minW|
  The  minimal width of the motif hsp fragment size, default is 6 residue, this is recommended by meme program.
  |
-
-
 
 
 

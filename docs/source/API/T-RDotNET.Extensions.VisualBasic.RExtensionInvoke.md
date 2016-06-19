@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic](N-RDotNET.Extensions.VisualBasic.ht
 
 Wrapper for R engine script invoke.
 
+
+
 ### Methods
 
 #### Library
@@ -35,8 +37,6 @@ RDotNET.Extensions.VisualBasic.RExtensionInvoke.WriteLine(RDotNET.REngine,RDotNE
 |Parameter Name|Remarks|
 |--------------|-------|
 |script|-|
-
-
 
 
 

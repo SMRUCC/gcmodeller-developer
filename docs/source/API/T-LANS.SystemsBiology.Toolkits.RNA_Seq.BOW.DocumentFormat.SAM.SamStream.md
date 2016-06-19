@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM](N-LANS
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -43,10 +45,8 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.SamStream.ReadBlock(
 
 
 
-
 ### Properties
 
 #### Head
 If present, the header must be prior to the alignments. Header lines start With `@', while alignment lines do not.
  (文件的可选头部区域必须要在比对数据区域的前面并且每一行以@符号开始)
-

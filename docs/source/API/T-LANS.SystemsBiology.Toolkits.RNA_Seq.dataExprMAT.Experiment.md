@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.dataExprMAT](N-LANS.SystemsBio
 
 
 
+
+
 ### Methods
 
 #### __sampleTable
@@ -29,8 +31,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.dataExprMAT.Experiment.GetSamples(System.St
 |Parameter Name|Remarks|
 |--------------|-------|
 |expr|<a/b>|<c/d>|<e/f>|....|
-
-
 
 
 

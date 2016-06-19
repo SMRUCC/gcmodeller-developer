@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.PlugIns.ISystemFrame
 
 
 
+
+
 ### Methods
 
 #### CreateServiceInstanceSerials
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.PlugIns.ISystemFrame
 LANS.SystemsBiology.GCModeller.ModellingEngine.PlugIns.ISystemFrameworkEntry.ISystemFramework.CreateServiceInstanceSerials
 ```
 从本系统模块之中创建一个数据采集服务对象实例
-
-
 
 

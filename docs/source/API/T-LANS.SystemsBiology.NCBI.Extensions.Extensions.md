@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions](N-LANS.SystemsBiology.NCBI.Ext
 
 
 
+
+
 ### Methods
 
 #### BlastpSearch
@@ -44,8 +46,6 @@ Is this collection of the besthit data is empty or nothing?
 |Parameter Name|Remarks|
 |--------------|-------|
 |data|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A collection of Boolean values.
 
+
+
 ### Methods
 
 #### #ctor
@@ -35,11 +37,9 @@ RDotNET.LogicalVector.SetVectorDirect(System.Boolean[])
 Efficient initialisation of R vector values from an array representation in the CLR
 
 
-
 ### Properties
 
 #### DataSize
 Gets the size of a Boolean value in byte.
 #### Item
 Gets or sets the element at the specified index.
-

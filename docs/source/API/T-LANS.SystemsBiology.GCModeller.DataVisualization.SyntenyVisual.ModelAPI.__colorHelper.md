@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual.Mode
 
 
 
+
+
 ### Methods
 
 #### GetColor
@@ -19,8 +21,6 @@ LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual.ModelAPI.__colorH
 |--------------|-------|
 |a|-|
 |b|-|
-
-
 
 
 

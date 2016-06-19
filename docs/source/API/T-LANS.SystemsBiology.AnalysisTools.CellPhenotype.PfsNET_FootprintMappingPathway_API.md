@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellPhenotype](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### __createNetwork
@@ -59,9 +61,7 @@ LANS.SystemsBiology.AnalysisTools.CellPhenotype.PfsNET_FootprintMappingPathway_A
 
 
 
-
 ### Properties
 
 #### PID
 Current process id to avoid the disruption of the PfsNET calculation data.
-

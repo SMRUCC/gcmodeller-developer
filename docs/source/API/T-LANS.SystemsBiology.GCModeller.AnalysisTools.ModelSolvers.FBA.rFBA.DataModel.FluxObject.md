@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.rFBA.
 
 一个代谢反应对象或者转录调控过程
 
+
+
 ### Methods
 
 #### GetCoefficient
@@ -21,9 +23,7 @@ Left为消耗，负值；Right为合成项，正值，当不存在的时候返�
 
 
 
-
 ### Properties
 
 #### AssociatedRegulationGenes
 催化本反应过程的基因或者调控因子(列)，请注意，由于在前半部分为代谢流对象，故而Key的值不是从零开始的
-

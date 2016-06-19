@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap](
 
 
 
+
+
 ### Methods
 
 #### __drawChromosomeSites
@@ -28,7 +30,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingDevice.
 
 
 
-
 ### Properties
 
 #### _ScaleFactor
@@ -43,4 +44,3 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingDevice.
 核酸序列的1MB的长度数值
 #### rlMain
 标尺的数值
-

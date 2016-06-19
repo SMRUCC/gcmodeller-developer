@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 REngine handles R environment through evaluation of R statement.
 
+
+
 ### Methods
 
 #### #ctor
@@ -260,7 +262,6 @@ Assign a value to a name in a specific environment.
 
 
 
-
 ### Properties
 
 #### BaseNamespace
@@ -294,4 +295,3 @@ Native pointer to the SEXP representing NA for strings (character vectors in R t
 Gets the NULL value.
 #### UnboundValue
 Gets the unbound value.
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel](N-LANS.SystemsBiology.Interac
 
 默认的的相互作用的方向为从A到B
 
+
+
 ### Methods
 
 #### Equals
@@ -19,8 +21,6 @@ LANS.SystemsBiology.InteractionModel.Interaction`1.Equals(System.String,System.S
 |--------------|-------|
 |objA|-|
 |objB|-|
-
-
 
 
 

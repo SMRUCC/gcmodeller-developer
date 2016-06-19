@@ -67,6 +67,8 @@ KEGG MODULE is a collection of manually defined functional units, called KEGG mo
  
  Kanehisa, M., Goto, S., Sato, Y., Kawashima, M., Furumichi, M., And Tanabe, M.; Data, information, knowledge And principle back to metabolism in KEGG. Nucleic Acids Res. 42, D199–D205 (2014). [pubmed] [pdf]
 
+
+
 ### Methods
 
 #### GetPathwayGenes
@@ -74,7 +76,5 @@ KEGG MODULE is a collection of manually defined functional units, called KEGG mo
 LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Module.GetPathwayGenes
 ```
 得到当前的模块之中的基因的编号的列表，这是个安全的函数，不会返回空值
-
-
 
 

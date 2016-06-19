@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Docume
 
 转录本对象，包含有基本的基因结构：ATG-TGA，TSSs，TTS以及链的方向，表达量的高低
 
+
+
 ### Methods
 
 #### Copy``1
@@ -27,7 +29,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.DocumentFormat.Tran
 
 
 
-
 ### Properties
 
 #### Left
@@ -42,4 +43,3 @@ Htseq-Count raw/GeneLength
 @"T:LANS.SystemsBiology.SequenceModel.NucleotideModels.Contig".Strands
 #### TSSsShared
 5'UTR左端的共享的reads计数
-

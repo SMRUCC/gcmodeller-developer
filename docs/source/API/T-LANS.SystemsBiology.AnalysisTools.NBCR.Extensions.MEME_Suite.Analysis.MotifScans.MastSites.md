@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 使用某一个Motif的MEME模型扫描整个基因组的结果
 
+
+
 ### Methods
 
 #### __createObject
@@ -48,7 +50,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.MotifScans
 只要是@"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.MotifScans.MastSites.Regulators"或者@"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.MotifScans.MastSites.Sites"这两个指向Regprecise数据库之中的记录的任意一个属性为空，则本函数返回真
 
 
-
 ### Properties
 
 #### Regulators
@@ -57,4 +58,3 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.MotifScans
 在Regprecise之中的调控位点的记录，这个是通过meme模型来获取的，然后再根据这个就可以找到调控因子了，再结合bbh结果就可以计算出预测的调控关系了
 #### Trace
 Motif的来源，一般是meme的数据源
-

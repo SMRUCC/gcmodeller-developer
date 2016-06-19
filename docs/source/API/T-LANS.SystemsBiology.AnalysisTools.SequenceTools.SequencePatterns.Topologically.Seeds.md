@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 
 
+
+
 ### Methods
 
 #### ExtendSequence
@@ -31,8 +33,6 @@ Initialize the nucleotide repeats seeds.(初始化序列片段的搜索种子)
 |--------------|-------|
 |chars|-|
 |length|-|
-
-
 
 
 

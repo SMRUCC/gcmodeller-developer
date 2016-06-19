@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA](N-LA
 
 
 
+
+
 ### Methods
 
 #### CreateObject
@@ -21,8 +23,6 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.ModelWriter.Create
 |RPKMColumn|**Pcc**中的某一列的列标|
 |Regulations|-|
 |EffectorMappings|从Regprecise到MetaCyc数据库对象的关系映射|
-
-
 
 
 

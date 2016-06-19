@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.RCSB.PDB](N-LANS.SystemsBiology.Assemb
 
 
 
+
+
 ### Methods
 
 #### Load
@@ -28,9 +30,7 @@ LANS.SystemsBiology.Assembly.RCSB.PDB.PDB.LoadDocument(System.String[])
 > {Head, value}
 
 
-
 ### Properties
 
 #### AminoAcidSequenceData
 已经经过了排序操作了的
-

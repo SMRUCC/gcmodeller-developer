@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO](N-LANS.
 
 
 
+
+
 ### Methods
 
 #### DownloadGBK
@@ -21,7 +23,5 @@ LANS.SystemsBiology.GCModeller.ShoalShell.Assembly.File.IO.WebServices.DownloadG
 |export|保存的文件夹|
 
 _returns: 返回下载成功的文件数目_
-
-
 
 

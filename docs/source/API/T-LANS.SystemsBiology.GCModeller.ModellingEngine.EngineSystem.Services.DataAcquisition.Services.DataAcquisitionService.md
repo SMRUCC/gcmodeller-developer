@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Service
 
 数据采集服务的基类型
 
+
+
 ### Methods
 
 #### Connect
@@ -27,9 +29,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Services.DataAcquisi
 这个是应用于@"M:LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Services.DataAcquisition.ManageSystem.DumpData.WriteDumpData"[DUMP数据]的
 
 
-
 ### Properties
 
 #### CommitInterval
 向数据库服务器提交计算数据的时间间隔
-

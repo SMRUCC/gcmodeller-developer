@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.SBML.ExportServices](N-LANS.SystemsBio
 
 
 
+
+
 ### Methods
 
 #### __getModel
@@ -20,8 +22,6 @@ LANS.SystemsBiology.Assembly.SBML.ExportServices.KEGG.__getModel(LANS.SystemsBio
 |rxn|-|
 |allCompounds|-|
 |filterNonEnzyme|只会生成非酶促反应的数据|
-
-
 
 
 

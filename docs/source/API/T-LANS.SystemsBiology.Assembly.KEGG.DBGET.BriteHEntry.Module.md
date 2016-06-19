@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry](N-LANS.Systems
 
 KEGG里面的模块的入口点的定义数据
 
+
+
 ### Methods
 
 #### DownloadModules
@@ -46,7 +48,6 @@ LANS.SystemsBiology.Assembly.KEGG.DBGET.BriteHEntry.Module.TrimPath(System.Strin
 
 
 
-
 ### Properties
 
 #### Category
@@ -57,4 +58,3 @@ A
 KO
 #### SubCategory
 C
-

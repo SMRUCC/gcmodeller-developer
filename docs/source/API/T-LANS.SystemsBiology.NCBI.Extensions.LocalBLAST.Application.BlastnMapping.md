@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application](N-LANS.
 
 Blastn Mapping for fastaq
 
+
+
 ### Methods
 
 #### __createObject
@@ -66,7 +68,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BlastnMapping.TrimAss
  进行可用的alignment mapping结果的筛选
 
 
-
 ### Properties
 
 #### Gaps
@@ -79,4 +80,3 @@ Perfect?
 在进行装配的时候是以基因组上面的链方向以及位置为基准的
 #### Unique
 Unique?(这个属性值应该从blastn日志之中导出mapping数据的时候就执行了的)
-

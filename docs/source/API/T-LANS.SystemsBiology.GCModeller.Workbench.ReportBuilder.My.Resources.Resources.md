@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### Culture
@@ -57,4 +58,3 @@ marginwidth="0"
 style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #fafafa; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; [rest of string was truncated]";.
 #### ResourceManager
 Returns the cached ResourceManager instance used by this class.
-

@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A vector of S expressions
 
+
+
 ### Methods
 
 #### #ctor
@@ -34,11 +36,9 @@ RDotNET.ExpressionVector.SetVectorDirect(RDotNET.Expression[])
 Efficient initialisation of R vector values from an array representation in the CLR
 
 
-
 ### Properties
 
 #### DataSize
 Gets the size of a pointer in byte.
 #### Item
 Gets/sets the expression for an index
-

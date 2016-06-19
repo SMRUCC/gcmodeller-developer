@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.Schema.PathwayBrief](N-LANS.Sy
 
 将基因与相应的反应过程映射起来
 
+
+
 ### Methods
 
 #### AssignGenes
@@ -49,7 +51,5 @@ LANS.SystemsBiology.Assembly.MetaCyc.Schema.PathwayBrief.AssignGene.Performance
 ```
 String() => {Reaction, Associated-Genes}
 _returns: {Reaction, Associated-Genes}_
-
-
 
 

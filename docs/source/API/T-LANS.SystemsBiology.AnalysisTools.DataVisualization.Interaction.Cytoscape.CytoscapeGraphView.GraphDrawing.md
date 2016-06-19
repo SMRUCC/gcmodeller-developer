@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 
 
+
+
 ### Methods
 
 #### getSize
@@ -32,8 +34,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.Cytosc
 |refMap|参考代谢途径|
 |map|需要进行Mapping的KEGG物种编号|
 |Size|-|
-
-
 
 
 

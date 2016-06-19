@@ -15,6 +15,7 @@ A restriction enzyme or restriction endonuclease is a special type of biological
 
 
 
+
 ### Properties
 
 #### Cut
@@ -44,4 +45,3 @@ Code used to identify the structure of a protein in the PDB database of protein 
 Sequence of DNA recognized by the enzyme and to which it specifically binds.
 #### Source
 Organism that naturally produces the enzyme.
-

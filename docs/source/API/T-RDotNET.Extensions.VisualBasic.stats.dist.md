@@ -9,6 +9,7 @@ This function computes and returns the distance matrix computed by using the spe
 
 
 
+
 ### Properties
 
 #### method
@@ -17,4 +18,3 @@ the distance measure to be used. This must be one of "euclidean", "maximum", "ma
 The power of the Minkowski distance.
 #### x
 a numeric matrix, data frame or "dist" object.
-

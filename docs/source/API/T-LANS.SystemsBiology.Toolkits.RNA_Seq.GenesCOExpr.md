@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq](N-LANS.SystemsBiology.Toolkit
 
 Gene co-expression analysis.(基因共表达分析)
 
+
+
 ### Methods
 
 #### Calculate
@@ -76,8 +78,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.GenesCOExpr.SortMaxliklyhood(LANS.SystemsBi
 |pccData|-|
 |Id|-|
 |cutOff|Pcc value cut off, all of the item have the value large than cutoff value will be return.|
-
-
 
 
 

@@ -7,6 +7,9 @@ _namespace: [LANS.SystemsBiology.Localblast.Extensions.VennDiagram.GCModeller.Fi
 
 
 
+> 由于可能会修改参数然后在调用的这种情况出现，所以这里的数据可能需要实时更新，所以不再使用属性的简写形式了
+
+
 ### Methods
 
 #### GetLocalBlast
@@ -63,7 +66,6 @@ LANS.SystemsBiology.Localblast.Extensions.VennDiagram.GCModeller.FileSystem.File
 
 
 
-
 ### Properties
 
 #### CDD
@@ -80,4 +82,3 @@ Regprecise数据库之中的调控因子蛋白质的摘要Dump信息
 regulations.xml文件在GCModeller数据库之中的位置
 #### RepositoryRoot
 The root directory for stores the GCModeller database such as fasta sequence for annotation.
-

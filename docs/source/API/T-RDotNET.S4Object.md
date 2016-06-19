@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 An S4 object
 
+
+
 ### Methods
 
 #### #ctor
@@ -48,7 +50,6 @@ Is a slot name valid.
 _returns: whether a slot name is present in the object_
 
 
-
 ### Properties
 
 #### dotSlotNamesFunc
@@ -60,4 +61,3 @@ Gets the number of slot names
 #### SlotNames
 Gets the slot names for this object. The values are cached once retrieved the first time. 
  Note this is equivalent to the function '.slotNames' in R, not 'slotNames'
-

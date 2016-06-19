@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.WebServices.NCBI](N-LANS.Syste
 
 
 
+
 ### Properties
 
 #### ChainsMatchRings
@@ -44,5 +45,4 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.WebServices.NCBI](N-LANS.Syste
 #### StripHydrogenSpecified
 
 #### ToWebEnv
-
 

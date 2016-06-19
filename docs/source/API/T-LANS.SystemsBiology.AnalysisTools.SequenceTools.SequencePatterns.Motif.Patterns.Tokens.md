@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Mo
 
 
 
+
 ### Properties
 
 #### Expression
@@ -21,4 +22,3 @@ x={a,b}
 {n}, {m,n}, n
 #### Residue
 ATGCN
-

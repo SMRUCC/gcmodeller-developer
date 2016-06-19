@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat](N-LANS.Sys
 
 
 
+
 ### Properties
 
 #### COG
@@ -23,4 +24,3 @@ Protein name
 Replicon Accession
 #### RepliconName
 #Replicon Name
-

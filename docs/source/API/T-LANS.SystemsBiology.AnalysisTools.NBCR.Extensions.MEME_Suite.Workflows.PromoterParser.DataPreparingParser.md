@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workfl
 
 按照给定的代谢途径或者其他的规则分组取出启动子序列，这个对象是考虑了操纵子的情况的
 
+
+
 ### Methods
 
 #### #ctor
@@ -42,8 +44,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterP
 |--------------|-------|
 |stringDIR|-|
 |ExportDir|-|
-
-
 
 
 

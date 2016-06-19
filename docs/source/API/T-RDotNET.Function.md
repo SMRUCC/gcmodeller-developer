@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A function is one of closure, built-in function, or special function.
 
+
+
 ### Methods
 
 #### #ctor
@@ -79,8 +81,6 @@ Executes the function. Match the function arguments by name.
 |--------------|-------|
 |argNames|The names of the arguments. These can be empty strings for unnamed function arguments|
 |args|The arguments passed to the function|
-
-
 
 
 

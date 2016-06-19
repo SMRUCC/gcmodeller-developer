@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.DOOR.CsvModel](N-LANS.SystemsBiology.A
 
 
 
+
 ### Properties
 
 #### Direction
@@ -19,4 +20,3 @@ _namespace: [LANS.SystemsBiology.Assembly.DOOR.CsvModel](N-LANS.SystemsBiology.A
 结构基因
 #### NumOfGenes
 结构基因的数目
-

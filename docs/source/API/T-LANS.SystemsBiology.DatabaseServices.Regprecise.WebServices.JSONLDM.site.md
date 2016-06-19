@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM
 
 
 
+
 ### Properties
 
 #### geneLocusTag
@@ -23,4 +24,3 @@ identifier of regulon
 score of a regualtory site
 #### sequence
 sequence of a regualtory site
-

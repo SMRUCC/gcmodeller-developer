@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### Culture
@@ -83,4 +84,3 @@ text-align: center;
 padding-top: 13%;
 padding-bottom: 13%;
 margin-bottom [rest of string was truncated]";.
-

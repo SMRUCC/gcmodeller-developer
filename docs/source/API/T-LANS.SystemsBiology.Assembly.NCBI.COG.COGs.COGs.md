@@ -55,6 +55,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.COG.COGs](N-LANS.SystemsBiology.A
  accessible. This accession table will be updated as soon as RefSeq Is
  stable.
 
+
+
 ### Methods
 
 #### GroupRelease
@@ -78,8 +80,6 @@ LANS.SystemsBiology.Assembly.NCBI.COG.COGs.COGs.SaveRelease(System.String,System
 |--------------|-------|
 |Fasta|prot2003-2014.fasta|
 |Export|数据按照基因组分组到处的结果所保存的文件夹|
-
-
 
 
 

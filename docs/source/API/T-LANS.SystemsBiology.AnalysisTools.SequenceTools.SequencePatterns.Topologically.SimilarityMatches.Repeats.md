@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 模糊匹配重复的序列片段
 
+
+
 ### Methods
 
 #### __generateSeeds
@@ -62,8 +64,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.S
 |Min|-|
 |Max|-|
 |cutoff|-|
-
-
 
 
 

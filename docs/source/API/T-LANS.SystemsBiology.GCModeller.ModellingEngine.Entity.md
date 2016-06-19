@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine](N-LANS.SystemsBiolo
 
 
 
+
 ### Properties
 
 #### Compartment
@@ -19,4 +20,3 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine](N-LANS.SystemsBiolo
 数量
 #### uid
 The unique-id
-

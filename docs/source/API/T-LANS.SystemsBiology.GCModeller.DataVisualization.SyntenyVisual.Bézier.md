@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual](N-L
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -21,9 +23,7 @@ LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual.Bézier.#ctor(Sys
 
 
 
-
 ### Properties
 
 #### Turnp
 出现转折的长度的百分比
-

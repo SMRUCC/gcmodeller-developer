@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.Expasy.Database](N-LANS.SystemsBiology
 
 ENZYME nomenclature database.(Expasy数据库之中的enzyme.dat注释文件)
 
+
+
 ### Methods
 
 #### CreateObject
@@ -33,9 +35,7 @@ LANS.SystemsBiology.Assembly.Expasy.Database.NomenclatureDB.GetSwissProtEntries(
 
 
 
-
 ### Properties
 
 #### DataItem
 当目标编号不存在于Expasy数据库之中的时候会返回空值
-

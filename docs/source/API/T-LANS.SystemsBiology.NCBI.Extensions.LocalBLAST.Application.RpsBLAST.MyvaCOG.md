@@ -9,8 +9,8 @@ Protein cog category using myva database.
 
 
 
+
 ### Properties
 
 #### Category
 COG category
-

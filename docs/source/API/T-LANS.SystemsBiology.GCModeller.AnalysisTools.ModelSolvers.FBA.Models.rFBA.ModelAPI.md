@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Model
 
 
 
+
+
 ### Methods
 
 #### DumpModel
@@ -18,8 +20,6 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Models.rFBA.ModelA
 |Parameter Name|Remarks|
 |--------------|-------|
 |model|-|
-
-
 
 
 

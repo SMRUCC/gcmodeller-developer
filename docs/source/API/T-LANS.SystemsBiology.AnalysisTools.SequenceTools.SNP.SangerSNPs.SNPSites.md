@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SNP.SangerSNPs](N-L
 
 SNP functions entry point at here
 
+
+
 ### Methods
 
 #### OutputSNPSites
@@ -55,8 +57,6 @@ SNPs from the input alignment fasta file
 |output_reference|-|
 |pure_mode|-|
 |output_monomorphic|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ComparativeGenomics](N-LANS.Syste
 
 MEASURES OF DIFFERENCES WITHIN AND BETWEEN GENOMES.(比较两条核酸序列之间的差异性)
 
+
+
 ### Methods
 
 #### __bias
@@ -44,8 +46,6 @@ LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.DifferenceMeasurement.Simi
 |Parameter Name|Remarks|
 |--------------|-------|
 |sigma|value from the calculation of function @"M:LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.DifferenceMeasurement.Sigma(LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.NucleicAcid,LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.NucleicAcid)"|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 
 统计出每一个Module之中有多少个代谢途径
 
+
+
 ### Methods
 
 #### BuildModules
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cyt
 LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Cytoscape.NetworkModel.PathwayModuleFilter.BuildModules(Microsoft.VisualBasic.ComponentModel.KeyValuePair[])
 ```
 {ModuleId, Module_GeneId()}
-
-
 
 

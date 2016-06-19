@@ -7,6 +7,16 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual](N-L
 
 
 
+> 
+>  ---+-------
+>     |
+>     \
+>      \
+>       |
+>  -----+-----
+>  
+
+
 ### Methods
 
 #### #ctor
@@ -21,9 +31,7 @@ LANS.SystemsBiology.GCModeller.DataVisualization.SyntenyVisual.Polyline.#ctor(Sy
 
 
 
-
 ### Properties
 
 #### Turnp
 出现转折的长度的百分比
-

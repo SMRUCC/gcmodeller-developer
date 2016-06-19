@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CellularNetwork.PFSNet.DataStruct
 
 The gene expression data samples file.(基因的表达数据样本)
 
+
+
 ### Methods
 
 #### CreateApplyFunctionCache
@@ -32,11 +34,9 @@ Load the PfsNET file1 and file2 data into the memory.(加载PfsNET计算数据�
 
 
 
-
 ### Properties
 
 #### ExperimentValues
 This gene's expression value in the different experiment condition.(同一个基因在不同实验之下的表达值)
 #### Samples
 Gets the sample counts of current gene expression data.(获取基因表达数据样本数目)
-

@@ -9,6 +9,7 @@ Motif的Csv文件输出格式之1
 
 
 
+
 ### Properties
 
 #### gStart
@@ -23,4 +24,3 @@ Motif的Csv文件输出格式之1
 位点在链上面的方向
 #### Tag
 一些其他的用户的自定义的数据
-

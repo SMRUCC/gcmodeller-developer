@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.RBase](N-RDotNET.Extensions.VisualBa
 
 R function bridge to VisualBasic
 
+
+
 ### Methods
 
 #### All
@@ -158,7 +160,5 @@ _returns: The warning message as character string, invisibly._
 RDotNET.Extensions.VisualBasic.RBase.PrimitiveAPI.Warnings
 ```
 Warnings and its print method print the variable last.warning in a pleasing form.
-
-
 
 

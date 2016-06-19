@@ -9,6 +9,7 @@ Enumerates all of the 20 amino acids.(枚举20种常见的氨基酸)
 
 
 
+
 ### Properties
 
 #### Alanine
@@ -57,4 +58,3 @@ TrP(W) 色氨酸
 Tyr(Y) 酪氨酸
 #### Valine
 Val(V) 结氨酸
-

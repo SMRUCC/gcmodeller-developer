@@ -16,6 +16,8 @@ _namespace: [LANS.SystemsBiology.ContextModel](N-LANS.SystemsBiology.ContextMode
  rels = genome.GetAroundRelated(loci, True)
  ```
 
+
+
 ### Methods
 
 #### __delegate
@@ -98,8 +100,6 @@ Gets the stranded gene object data source.
 |Parameter Name|Remarks|
 |--------------|-------|
 |strand|-|
-
-
 
 
 

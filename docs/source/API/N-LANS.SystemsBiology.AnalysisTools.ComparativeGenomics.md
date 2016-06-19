@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.AnalysisTools.ComparativeGenomics
-date: 6/16/2016 4:56:55 AM
+date: 6/19/2016 11:14:44 AM
 ---
 
 [CAITable](T-LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.CAITable.html)

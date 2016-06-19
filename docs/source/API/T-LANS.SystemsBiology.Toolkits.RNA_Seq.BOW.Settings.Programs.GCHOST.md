@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Settings.Programs](N-LANS.
 
 
 
+
 ### Properties
 
 #### SDK
-
 

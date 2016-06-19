@@ -26,6 +26,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.Documen
  10 SEQ String \*|[A-Za-z=.]+ segment SEQuence
  11 QUAL String [!-~]+ ASCII of Phred-scaled base QUALity+33
 
+
+
 ### Methods
 
 #### #ctor
@@ -52,7 +54,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.Ali
 |--------------|-------|
 |RangeStart|-|
 |RangeEnds|-|
-
 
 
 
@@ -177,4 +178,3 @@ observed Template LENgth
  to the rightmost mapped base. The leftmost segment has a plus sign And the rightmost has a
  minus sign. The sign Of segments In the middle Is undefined. It Is Set As 0 For Single-segment
  template Or when the information Is unavailable.
-

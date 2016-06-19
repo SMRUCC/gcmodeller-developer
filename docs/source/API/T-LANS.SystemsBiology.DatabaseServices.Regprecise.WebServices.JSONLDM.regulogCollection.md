@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM
 
 
 
+
 ### Properties
 
 #### className
@@ -19,4 +20,3 @@ identifier of collection
 type of regulog collection
 #### name
 collection name
-

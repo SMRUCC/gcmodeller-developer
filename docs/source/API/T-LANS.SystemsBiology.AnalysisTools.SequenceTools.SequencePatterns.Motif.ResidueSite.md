@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Mo
 
 A column in the motif
 
+
+
 ### Methods
 
 #### #ctor
@@ -39,11 +41,9 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.ResidueSi
 ATGC -> TACG
 
 
-
 ### Properties
 
 #### Bits
 Information content
 #### PWM
 ATGC/
-

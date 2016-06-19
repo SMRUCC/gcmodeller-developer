@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices](N-LANS
 
 
 
+
 ### Properties
 
 #### Regulator
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices](N-LANS
 @"P:LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM.regulator.regulonId"
 #### Site
 @"P:LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM.site.geneLocusTag":@"P:LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM.site.position"
-

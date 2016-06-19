@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.TSSsTools.Transcriptome.UTRs](
 
 For each gene, identify its 5'UTR and 3'UTR based on the expression data.
 
+
+
 ### Methods
 
 #### __analysis
@@ -122,7 +124,5 @@ _returns: 程序会尝试延伸，假若不能够继续延伸，则认为是转�
  由于序列片段之间会存在重叠的情况，所以在计算之前需要先分区，将序列分割为非重叠的状态，即序列片段之间的最小距离要满足一个用户自定义的基因间隔区的最小距离
  
  _
-
-
 
 

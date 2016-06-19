@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.Patterns](N-LANS.SystemsBiology.S
 
 
 
+
 ### Properties
 
 #### IsConserved
 Is this residue conserved in this motif?
-

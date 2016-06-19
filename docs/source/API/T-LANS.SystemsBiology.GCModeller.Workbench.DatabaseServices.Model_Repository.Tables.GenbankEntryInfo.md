@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Rep
 
 
 
+
+
 ### Methods
 
 #### GetPath
@@ -29,8 +31,6 @@ Only using for the development when you have change the definition of this table
 |Parameter Name|Remarks|
 |--------------|-------|
 |DB|-|
-
-
 
 
 

@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Programs.CLIArgument
 
 
 
+
 ### Properties
 
 #### BestHitOverhang
@@ -197,4 +198,3 @@ X-dropoff value (in bits) for preliminary gapped extensions
 X-dropoff value (in bits) for final gapped alignment
 #### XDropUngap
 X-dropoff value (in bits) for ungapped extensions
-

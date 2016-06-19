@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite](N-LAN
 
 
 
+
+
 ### Methods
 
 #### Convert
@@ -67,8 +69,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.STAMP.ParseMatches(
 |--------------|-------|
 |OriginalFile|输入到STAMP服务器中的原始数据|
 |Matches|从STAMP服务器获取的匹配数据|
-
-
 
 
 

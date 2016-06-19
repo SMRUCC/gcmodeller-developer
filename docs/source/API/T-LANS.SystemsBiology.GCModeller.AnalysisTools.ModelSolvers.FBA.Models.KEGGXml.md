@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Model
 
 
 
+
+
 ### Methods
 
 #### __countsMapping
@@ -40,8 +42,6 @@ LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.Models.KEGGXml.Set
 |Parameter Name|Remarks|
 |--------------|-------|
 |factors|代谢反应编号|
-
-
 
 
 

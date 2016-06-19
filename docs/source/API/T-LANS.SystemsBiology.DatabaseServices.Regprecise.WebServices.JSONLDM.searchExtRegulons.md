@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM
 
 
 
+
 ### Properties
 
 #### foundObjName
@@ -21,4 +22,3 @@ name Of genome
 the name Of regulator
 #### regulonId
 identifier Of regulon
-

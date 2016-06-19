@@ -9,6 +9,7 @@ _namespace: [RDotNET.Extensions.VisualBasic.stats](N-RDotNET.Extensions.VisualBa
 
 
 
+
 ### Properties
 
 #### addExpr
@@ -53,4 +54,3 @@ numeric matrix of the values to be plotted.
 main, x- and y-axis titles; defaults to none.
 #### ylab
 main, x- and y-axis titles; defaults to none.
-

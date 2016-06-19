@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.D
 
 长方形
 
+
+
 ### Methods
 
 #### Draw
@@ -21,8 +23,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.
 |Location|左上角的位置|
 |FlagLength|无用参数|
 |FLAG_HEIGHT|高度|
-
-
 
 
 

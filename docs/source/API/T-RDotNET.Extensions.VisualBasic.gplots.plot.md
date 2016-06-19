@@ -9,6 +9,7 @@ _namespace: [RDotNET.Extensions.VisualBasic.gplots](N-RDotNET.Extensions.VisualB
 
 
 
+
 ### Properties
 
 #### showSetLogicLabel
@@ -20,4 +21,3 @@ Character scaling of the smallest group counts
 #### x
 Either a list list containing vectors of names or indices of group intersections,
  or a data frame containing boolean indicators of group intersectionship (see below)
-

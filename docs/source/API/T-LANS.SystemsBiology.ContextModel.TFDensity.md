@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.ContextModel](N-LANS.SystemsBiology.ContextMode
 
 Calculates the relative density of the TF on each gene on the genome.
 
+
+
 ### Methods
 
 #### __getCisGenes``1
@@ -50,8 +52,6 @@ LANS.SystemsBiology.ContextModel.TFDensity.DensityCis``1(LANS.SystemsBiology.Con
 |ranges|
  This value is set to 20000bp is more perfect works on the bacteria genome, probably...
  |
-
-
 
 
 

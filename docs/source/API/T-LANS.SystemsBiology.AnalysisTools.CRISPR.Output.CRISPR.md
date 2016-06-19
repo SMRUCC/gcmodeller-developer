@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CRISPR.Output](N-LANS.SystemsBiol
 
 
 
+
 ### Properties
 
 #### RepeatLocis
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CRISPR.Output](N-LANS.SystemsBiol
 last_left + last_length
 #### SpacerLocis
 每一个CRISPR位点之中的重复片段之间的间隔序列（外源DNA片段）
-

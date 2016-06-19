@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### CARMEN
@@ -97,4 +98,3 @@ Looks up a localized resource of type System.Byte[].
 Looks up a localized resource of type System.Byte[].
 #### WriteSBML3_1
 Looks up a localized resource of type System.Byte[].
-

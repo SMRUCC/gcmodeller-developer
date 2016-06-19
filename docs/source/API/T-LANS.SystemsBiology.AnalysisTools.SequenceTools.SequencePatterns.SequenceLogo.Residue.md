@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Se
 
 A drawing site in the sequence logo drawing.(所绘制的序列logo图之中的一个位点)
 
+
+
 ### Methods
 
 #### CalculatesBits
@@ -39,7 +41,6 @@ Hi is the uncertainty (sometimes called the Shannon entropy) of position i
  但是频率是零的时候怎么处理？？？
 
 
-
 ### Properties
 
 #### Address
@@ -51,4 +52,3 @@ Display this site as a single alphabet, and this property is used for generates 
 #### Bits
 The total height of the letters depicts the information content Of the position, In bits.
  (Bits的值是和比对的序列的数量是有关系的)
-

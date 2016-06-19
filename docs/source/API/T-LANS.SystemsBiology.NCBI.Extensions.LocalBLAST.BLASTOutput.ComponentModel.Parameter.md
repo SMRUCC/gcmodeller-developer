@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.Componen
 
 
 
+
+
 ### Methods
 
 #### __blastnParser
@@ -18,8 +20,6 @@ Blastn和Blastp的分数的项目是不一样的
 |Parameter Name|Remarks|
 |--------------|-------|
 |line|-|
-
-
 
 
 

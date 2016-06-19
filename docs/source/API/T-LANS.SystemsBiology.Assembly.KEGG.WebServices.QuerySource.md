@@ -7,6 +7,21 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.WebServices](N-LANS.SystemsBiolog
 
 Meta data for query KEGG database
 
+> 
+>  The example format as:
+>  
+>  Nostoc sp. PCC 7120
+>  #
+>  alr4156
+>  alr4157
+>  alr1320
+>  all0862
+>  all2134
+>  all2133
+>  ......
+>  
+
+
 ### Methods
 
 #### QuerySpCode
@@ -19,8 +34,6 @@ Gets the brief code of the organism name in the KEGG database.
 |Parameter Name|Remarks|
 |--------------|-------|
 |offline|Work in offline mode?|
-
-
 
 
 

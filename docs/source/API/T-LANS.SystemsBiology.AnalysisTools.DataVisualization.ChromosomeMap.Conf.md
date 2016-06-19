@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap](
 
 
 
+
 ### Properties
 
 #### LineLength
@@ -25,4 +26,3 @@ This section will configure the drawing size options
  Both specific the size property: 12000,8000
  Which means the drawing script will generate a image file in resolution of width is value 12000 pixels and image height 
  is 8000 pixels.
-

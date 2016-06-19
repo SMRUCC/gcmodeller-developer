@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.Schema.Reflection](N-LANS.Syst
 
 表示所标识的域为表与表之间的外键
 
+
+
 ### Methods
 
 #### #ctor
@@ -19,8 +21,6 @@ LANS.SystemsBiology.Assembly.MetaCyc.Schema.Reflection.ExternalKey.#ctor(System.
 |--------------|-------|
 |NameList|表名称列表，每一个表之间使用逗号分隔|
 |Direction|-|
-
-
 
 
 

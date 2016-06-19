@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART](N-LANS.System
 
 
 
+
+
 ### Methods
 
 #### BuildCache
@@ -108,8 +110,6 @@ SBH -> MPAlignment，这个方法特别适用于调控因子的同源比对操�
 |Parameter Name|Remarks|
 |--------------|-------|
 |args|-|
-
-
 
 
 

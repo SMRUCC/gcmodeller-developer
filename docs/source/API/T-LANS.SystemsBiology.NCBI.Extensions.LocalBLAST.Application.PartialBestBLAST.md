@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application](N-LANS.
 
 部分最佳比对BLAST
 
+
+
 ### Methods
 
 #### Peformance
@@ -25,9 +27,7 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.PartialBestBLAST.Pefo
 _returns: 返回双相匹配的BestHit列表_
 
 
-
 ### Properties
 
 #### LocalBLAST
 本地BLAST的中间服务
-

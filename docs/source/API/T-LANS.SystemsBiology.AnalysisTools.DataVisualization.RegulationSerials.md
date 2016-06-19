@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### CompareDrawing
@@ -19,8 +21,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.RegulationSerials.CompareDra
 |--------------|-------|
 |source|-|
 |IDList|-|
-
-
 
 
 

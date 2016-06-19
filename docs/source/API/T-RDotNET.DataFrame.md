@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A data frame.
 
+
+
 ### Methods
 
 #### #ctor
@@ -78,7 +80,6 @@ RDotNET.DataFrame.SetVectorDirect(RDotNET.DynamicVector[])
 Efficient initialisation of R vector values from an array representation in the CLR
 
 
-
 ### Properties
 
 #### ColumnCount
@@ -93,4 +94,3 @@ Gets or sets the element at the specified names.
 Gets the number of data sets.
 #### RowNames
 Gets the names of rows.
-

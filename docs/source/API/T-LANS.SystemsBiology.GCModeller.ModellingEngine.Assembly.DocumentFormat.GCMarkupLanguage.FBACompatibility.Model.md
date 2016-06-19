@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### MAT
 编译好的代谢组矩阵
 #### Reactions
 反应对象的UniqueID值列表
-

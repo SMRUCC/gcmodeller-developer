@@ -10,6 +10,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.WebServices.JSONLDM
 
 
 
+
 ### Properties
 
 #### effector
@@ -30,4 +31,3 @@ name of a regulator
 identifier of a regulog
 #### regulonId
 identifier of a regulon
-

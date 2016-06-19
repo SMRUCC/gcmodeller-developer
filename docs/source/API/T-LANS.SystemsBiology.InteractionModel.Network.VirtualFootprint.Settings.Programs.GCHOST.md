@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.VirtualFootprint.Setti
 
 
 
+
 ### Properties
 
 #### SDK
-
 

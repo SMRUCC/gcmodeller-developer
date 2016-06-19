@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles](N-LANS.Systems
 All of the data file object in the metacyc database will be inherits from this class object type.
  (在MetaCyc数据库之中的所有元素对象都必须要继承自此对象类型)
 
+
+
 ### Methods
 
 #### Add
@@ -104,7 +106,6 @@ Takes a sub list of the elements that were pointed by the unique-id collection.
 
 
 
-
 ### Properties
 
 #### AttributeList
@@ -113,4 +114,3 @@ BaseType Attribute List is empty.
 Get a object from current list object using its @"P:LANS.SystemsBiology.Assembly.MetaCyc.File.DataFiles.Slots.Object.Identifier"[unique-id] property.(根据一个对象的Unique-Id字段的值来获取该目标对象，查询失败则返回空值)
 #### NumOfTokens
 The length of the current list objetc.(当前的列表对象的长度)
-

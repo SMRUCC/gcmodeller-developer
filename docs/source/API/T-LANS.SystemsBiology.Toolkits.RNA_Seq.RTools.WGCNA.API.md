@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.WGCNA](N-LANS.SystemsBi
 
 
 
+
+
 ### Methods
 
 #### CallInvoke
@@ -19,8 +21,6 @@ LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.WGCNA.API.CallInvoke(System.String,S
 |--------------|-------|
 |dataExpr|The text encoding of this document should be ASCII, or the data reading in the R will be failed!(转录组数据的csv文件的位置，请注意！，数据文件都必须是ASCII编码的)|
 |GeneIdLabel|使用这个参数来修改Id映射|
-
-
 
 
 

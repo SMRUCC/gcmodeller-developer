@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
 ### Properties
 
 #### Identifier
 Current object that define in the MetaCyc database.(当前所定义的MetaCyc数据库对象的唯一标识符)
-

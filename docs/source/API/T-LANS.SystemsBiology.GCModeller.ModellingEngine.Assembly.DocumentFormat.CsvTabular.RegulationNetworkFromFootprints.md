@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 编译调控模型
 
+
+
 ### Methods
 
 #### CompileFootprintsData
@@ -32,8 +34,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 |Regulators|-|
 |Effectors|-|
 |Regprecise|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phy
 
 
 
+
+
 ### Methods
 
 #### GenerateDocument
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phy
 LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phylip.MatrixFile.NeighborMatrix.GenerateDocument
 ```
 直接对文氏矩阵进行转置然后去除蛋白质的名称既可以了
-
-
 
 

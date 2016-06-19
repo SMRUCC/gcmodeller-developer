@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.SequenceModel.NucleotideModels](N-LANS.SystemsB
 
 
 
+
+
 ### Methods
 
 #### Putative_mRNA
@@ -20,8 +22,6 @@ LANS.SystemsBiology.SequenceModel.NucleotideModels.mRNA.Putative_mRNA(System.Str
 |Nt|请注意这个函数总是从左往右进行计算的，所以请确保这个参数是正义链的或者反义链的已经反向互补了|
 |ATG|-|
 |TGA|-|
-
-
 
 
 

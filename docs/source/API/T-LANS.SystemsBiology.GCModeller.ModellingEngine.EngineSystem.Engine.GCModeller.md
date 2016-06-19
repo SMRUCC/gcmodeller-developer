@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine]
 
 
 
+
+
 ### Methods
 
 #### ConnectDataService
@@ -54,7 +56,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine.GCModeller.Me
 
 
 
-
 ### Properties
 
 #### args
@@ -63,4 +64,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Engine.GCModeller.Me
 整个系统中的计算核心模块
 #### KernelProfile
 计算引擎的配置数据
-

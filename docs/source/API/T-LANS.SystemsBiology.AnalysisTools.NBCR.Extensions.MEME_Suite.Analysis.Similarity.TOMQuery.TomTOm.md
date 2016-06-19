@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 various motif column comparison functions and score combination methods
 
+
+
 ### Methods
 
 #### Compare
@@ -66,8 +68,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.Similarity
 |Parameter Name|Remarks|
 |--------------|-------|
 |x|-|
-
-
 
 
 

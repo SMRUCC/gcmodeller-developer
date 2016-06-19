@@ -16,6 +16,8 @@ Clustal Omega(多序列比对工具)
 
  Check http : //www.clustal.org for more information And updates.
 
+
+
 ### Methods
 
 #### #ctor
@@ -52,5 +54,7 @@ LANS.SystemsBiology.AnalysisTools.ClustalOrg.Clustal.MultipleAlignment(System.St
 
 
 
+### Properties
 
+#### CLUSTAL_ARGUMENTS
 

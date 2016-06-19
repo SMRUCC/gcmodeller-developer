@@ -11,8 +11,8 @@ Makes a truth table of the inputs.
 
 
 
+
 ### Properties
 
 #### x
 A short vector.
-

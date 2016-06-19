@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinD
 
 Tools for comparing the protein domain structure similarity.
 
+
+
 ### Methods
 
 #### __alignDomain
@@ -71,8 +73,6 @@ Domain position specific alignment
 |ds1|-|
 |ds2|-|
 |high_Scoring_thresholds|高分比对的计算阈值|
-
-
 
 
 

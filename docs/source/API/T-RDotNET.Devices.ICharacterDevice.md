@@ -7,6 +7,8 @@ _namespace: [RDotNET.Devices](N-RDotNET.Devices.html)_
 
 A console class handles user's inputs and outputs.
 
+
+
 ### Methods
 
 #### AddHistory
@@ -203,8 +205,6 @@ Write output on console.
 |output|The output message|
 |length|The output's length in byte.|
 |outputType|The output type.|
-
-
 
 
 

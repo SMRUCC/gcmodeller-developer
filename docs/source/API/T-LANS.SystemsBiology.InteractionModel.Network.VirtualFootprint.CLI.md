@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.VirtualFootprint](N-LA
 
 
 
+
+
 ### Methods
 
 #### __copy
@@ -109,8 +111,6 @@ LANS.SystemsBiology.InteractionModel.Network.VirtualFootprint.CLI.TFDensity(Micr
 |Parameter Name|Remarks|
 |--------------|-------|
 |args|-|
-
-
 
 
 

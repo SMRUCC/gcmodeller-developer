@@ -10,6 +10,7 @@ The link line drawing style for the ortholog between the query and bbh hit.
 
 
 
+
 ### Properties
 
 #### Bézier
@@ -18,4 +19,3 @@ The link line drawing style for the ortholog between the query and bbh hit.
 折线
 #### Straight
 直线
-

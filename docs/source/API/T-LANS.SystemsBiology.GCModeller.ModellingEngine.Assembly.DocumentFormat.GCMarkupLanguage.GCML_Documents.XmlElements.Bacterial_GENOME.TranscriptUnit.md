@@ -9,6 +9,12 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
  对于一个转录单元而言，其只有一个基因的时候就仅表示该基因对象，当拥有多个基
  因的时候，则表示为一个操纵元。
 
+> 
+>  在形成调控网络的时候，调控因子对启动子的调控作用被转换为对转录单元的调控作用
+>  在这里认为一个转录单元仅有一个启动子单元
+>  
+
+
 ### Methods
 
 #### ContainsGene
@@ -45,7 +51,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupL
 
 
 
-
 ### Properties
 
 #### BasalLevel
@@ -62,4 +67,3 @@ An object handle collection of the gene object that defines in the genome namesp
 Promoter gene unique-id, point to the item @"P:LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.GCML_Documents.ComponentModels.T_MetaCycEntity`1.Identifier"
 #### RegulatedMotifs
 本转录单元的调控因子以及调控位点
-

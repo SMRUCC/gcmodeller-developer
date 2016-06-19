@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### AsMetabolites
@@ -69,9 +71,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupL
 
 
 
-
 ### Properties
 
 #### RegulationTypes
 All of the gene expression regulation types that listed in the MetaCyc database.(在MetaCyc数据库中所列举的所有基因表达调控类型)
-

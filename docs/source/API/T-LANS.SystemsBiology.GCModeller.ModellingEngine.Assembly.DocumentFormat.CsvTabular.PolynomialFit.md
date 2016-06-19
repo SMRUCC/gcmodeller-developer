@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 The original works was comes from here: http://www.vb-helper.com/howto_net_polynomial_least_squares.html
 
+
+
 ### Methods
 
 #### ErrorSquared
@@ -43,8 +45,6 @@ Find the least squares linear fit.
 |--------------|-------|
 |points|-|
 |degree|-|
-
-
 
 
 

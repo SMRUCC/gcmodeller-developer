@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### Matches
@@ -19,8 +21,6 @@ Match enzyme between the target genome and uniprot
 |--------------|-------|
 |UniprotBesthits|-|
 |SabiorkEnzyme|-|
-
-
 
 
 

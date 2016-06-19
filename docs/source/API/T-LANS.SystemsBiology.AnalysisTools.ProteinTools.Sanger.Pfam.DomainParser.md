@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam](N-LANS.
 
 
 
+
+
 ### Methods
 
 #### __domainFilter
@@ -64,8 +66,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.DomainParser.Parser(L
 |coverage|-|
 |identities|暂时无用|
 |offset|-|
-
-
 
 
 

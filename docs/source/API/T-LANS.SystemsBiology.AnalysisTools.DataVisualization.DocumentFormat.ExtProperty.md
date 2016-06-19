@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.DocumentFormat]
 
 
 
+
+
 ### Methods
 
 #### BoundaryOverlaps
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.DocumentFormat]
 LANS.SystemsBiology.AnalysisTools.DataVisualization.DocumentFormat.ExtProperty.BoundaryOverlaps(LANS.SystemsBiology.AnalysisTools.DataVisualization.DocumentFormat.Transcript)
 ```
 上下游都分别重合不能够延伸
-
-
 
 

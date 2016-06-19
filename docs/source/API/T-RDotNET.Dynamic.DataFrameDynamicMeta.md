@@ -7,6 +7,8 @@ _namespace: [RDotNET.Dynamic](N-RDotNET.Dynamic.html)_
 
 Dynamic and binding logic for R data frames
 
+
+
 ### Methods
 
 #### #ctor
@@ -41,7 +43,5 @@ RDotNET.Dynamic.DataFrameDynamicMeta.GetDynamicMemberNames
 ```
 Returns the enumeration of all dynamic member names.
 _returns: The list of dynamic member names_
-
-
 
 

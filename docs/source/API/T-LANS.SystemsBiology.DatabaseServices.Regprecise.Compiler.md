@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### __genomePartitions
@@ -44,8 +46,6 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.Compiler.SitesFamilyCategory(Sys
 |--------------|-------|
 |repositoryDIR|为了保持简洁性，没有引用配置项目。。。需要手动设定数据源|
 |genomePartitioning|当一个家族里面的序列数太多的时候是否需要按照基因组进行分组，默认不分组|
-
-
 
 
 

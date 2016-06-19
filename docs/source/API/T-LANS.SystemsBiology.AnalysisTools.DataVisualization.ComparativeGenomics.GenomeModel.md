@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ComparativeGeno
 
 
 
+
 ### Properties
 
 #### SegmentOffset
 假若是一个完整的基因组，则这个属性为0
-

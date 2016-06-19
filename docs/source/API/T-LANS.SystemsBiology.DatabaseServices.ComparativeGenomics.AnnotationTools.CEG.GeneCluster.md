@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
+
 ### Methods
 
 #### GenerateDatabase
@@ -18,8 +20,6 @@ LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.CEG.Gen
 |Parameter Name|Remarks|
 |--------------|-------|
 |Db|CEG数据库的数据文件夹|
-
-
 
 
 

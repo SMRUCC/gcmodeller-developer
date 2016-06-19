@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.NCBIBlastResult](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### DescriptionSubstituted
@@ -48,8 +50,6 @@ Save as XML
 |--------------|-------|
 |Path|-|
 |encoding|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART](N-LANS.System
 
 
 
+
+
 ### Methods
 
 #### Compile
@@ -32,8 +34,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CompileDomains.Performance(
 |Parameter Name|Remarks|
 |--------------|-------|
 |QueryInput|将要进行编译的目标蛋白质数据库|
-
-
 
 
 

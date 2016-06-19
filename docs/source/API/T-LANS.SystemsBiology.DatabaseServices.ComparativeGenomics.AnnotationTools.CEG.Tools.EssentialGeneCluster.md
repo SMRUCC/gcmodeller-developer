@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
 ### Properties
 
 #### ClusterID
@@ -19,4 +20,3 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 终止位置
 #### St
 起始位置
-

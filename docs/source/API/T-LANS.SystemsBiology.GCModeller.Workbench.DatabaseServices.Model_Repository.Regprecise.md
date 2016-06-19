@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Rep
 
 Regulator entry inforamtion for the regprecise regulators.
 
+
+
 ### Methods
 
 #### GetPath
@@ -21,9 +23,7 @@ LANS.SystemsBiology.GCModeller.Workbench.DatabaseServices.Model_Repository.Regpr
 
 
 
-
 ### Properties
 
 #### SpeciesCode
 Species code on KEGG.
-

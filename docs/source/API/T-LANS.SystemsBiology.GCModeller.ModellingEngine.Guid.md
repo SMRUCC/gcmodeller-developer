@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine](N-LANS.SystemsBiolo
 The Global Unique Identifier object using for identify a model component in the database.
  (用于在数据库之中标识一个模型组件对象的全局唯一标识符对象)
 
+
+
 ### Methods
 
 #### AbsolutelyEqual
@@ -77,8 +79,6 @@ Convert a guid string into a guid object instance.
 |Parameter Name|Remarks|
 |--------------|-------|
 |GUID|The target guid string.(目标待转换的GUID字符串)|
-
-
 
 
 

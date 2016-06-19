@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver](N-LANS.Syst
 
 Model file of class type @"T:LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.LDM.ModelBaseType" compiler.
 
+
+
 ### Methods
 
 #### Compile
@@ -44,8 +46,6 @@ LANS.SystemsBiology.GCModeller.Framework.Kernel_Driver.Compiler`1.WriteProperty(
 |--------------|-------|
 |argvs|-|
 |Model|-|
-
-
 
 
 

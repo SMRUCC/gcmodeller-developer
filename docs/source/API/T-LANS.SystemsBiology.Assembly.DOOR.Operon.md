@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.DOOR](N-LANS.SystemsBiology.Assembly.D
 
 @"P:LANS.SystemsBiology.Assembly.DOOR.Operon.Genes"[操纵子中的基因]在构造函数之中已经进行过按照转录方向排序操作了的
 
+
+
 ### Methods
 
 #### ConvertToCsvData
@@ -51,7 +53,6 @@ LANS.SystemsBiology.Assembly.DOOR.Operon.IndexOf(System.String)
 
 
 
-
 ### Properties
 
 #### Genes
@@ -77,4 +78,3 @@ Door数据库之中的操纵子编号
 Structure genes.
  (这个操纵子对象之中的结构基因，请注意@"P:LANS.SystemsBiology.Assembly.DOOR.Operon.Genes"属性和这个属性一样，都是可以返回当前的这个Operon里面的所有的结构基因，
  只不过本属性是没有经过排序的，而@"P:LANS.SystemsBiology.Assembly.DOOR.Operon.Genes"属性里面的对象都是按照基因组上下文的顺序进行排序操作了的)
-

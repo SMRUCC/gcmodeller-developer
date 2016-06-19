@@ -22,6 +22,12 @@ Differential analysis of count data – the DESeq2 package
  Another vignette, “Beginner’s guide to using the DESeq2 package”, covers similar material but at a slower
  pace, including the generation Of count tables from FASTQ files.
 
+> 
+>  Welcome to 'DESeq'. For improved performance, usability and functionality, please consider migrating to 'DESeq2'.
+>  虽然模块的名称是DESeq，但是在R之中实际调用的包确是DESeq2
+>  
+
+
 ### Methods
 
 #### DESeq2
@@ -94,7 +100,5 @@ Counting reads with summarizeOverlaps, Perform overlap queries between reads and
 >  ## mode funtions
 >  Union(features, reads, ignore.strand=FALSE, inter.feature=TRUE)
 >  
-
-
 
 

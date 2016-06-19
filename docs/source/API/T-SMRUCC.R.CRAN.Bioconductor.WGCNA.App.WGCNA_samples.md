@@ -9,8 +9,8 @@ _namespace: [SMRUCC.R.CRAN.Bioconductor.WGCNA.App](N-SMRUCC.R.CRAN.Bioconductor.
 
 
 
+
 ### Properties
 
 #### hclust
 建议使用average方法
-

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinD
 
 从双向比对结果之中根据PfamString结果来取等价的蛋白质
 
+
+
 ### Methods
 
 #### AlignProteins
@@ -70,8 +72,6 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.Pfam.ProteinDomainArchitec
 |--------------|-------|
 |Besthits|-|
 |subjects|-|
-
-
 
 
 

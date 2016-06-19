@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.Keywords](N-LANS.Sys
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -18,8 +20,6 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.GBFF.Keywords.VERSION.#ctor(System.Str
 |Parameter Name|Remarks|
 |--------------|-------|
 |v|version string|
-
-
 
 
 

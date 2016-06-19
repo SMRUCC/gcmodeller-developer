@@ -22,6 +22,7 @@ This class describes sites of interest (such as binding sites, modification site
 
 
 
+
 ### Properties
 
 #### AttachedGroup
@@ -53,4 +54,3 @@ For a feature that consists of a single amino acid or some number of noncontiguo
 #### RightEndPosition
 For a feature that consists of a contiguous linear stretch of amino acids, this slot encodes
  the residue number of the rightmost amino acid, relative to the start of the protein.
-

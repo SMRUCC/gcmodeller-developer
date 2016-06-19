@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.RBase.Vectors](N-RDotNET.Extensions.
 
 
 
+
+
 ### Methods
 
 #### op_Addition
@@ -89,8 +91,6 @@ RDotNET.Extensions.VisualBasic.RBase.Vectors.Vector.op_UnaryNegation(RDotNET.Ext
 |Parameter Name|Remarks|
 |--------------|-------|
 |v1|-|
-
-
 
 
 

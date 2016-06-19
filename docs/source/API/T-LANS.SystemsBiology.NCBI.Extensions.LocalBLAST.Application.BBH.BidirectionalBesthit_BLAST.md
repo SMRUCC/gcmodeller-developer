@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH](N-L
 
 A tight link between orthologs and bidirectional best hits in bacterial and archaeal genomes. BBH.(通过BLASTP操作来获取两个基因组之间的相同的蛋白质对象)
 
+
+
 ### Methods
 
 #### Paralogs
@@ -37,9 +39,7 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.Application.BBH.BidirectionalBest
 _returns: 返回双相匹配的BestHit列表_
 
 
-
 ### Properties
 
 #### _LocalBLASTService
 本地BLAST的中间服务
-

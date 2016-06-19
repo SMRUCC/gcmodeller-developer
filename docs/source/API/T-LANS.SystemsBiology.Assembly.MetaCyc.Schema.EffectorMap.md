@@ -9,8 +9,8 @@ Regprecise Effector与MetaCyc Compounds Mapping
 
 
 
+
 ### Properties
 
 #### EffectorAlias
 @"P:LANS.SystemsBiology.Assembly.MetaCyc.Schema.ICompoundObject.CommonNames"
-

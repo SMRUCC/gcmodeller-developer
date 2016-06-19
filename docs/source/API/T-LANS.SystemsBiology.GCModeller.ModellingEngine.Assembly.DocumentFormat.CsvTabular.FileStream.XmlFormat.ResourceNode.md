@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFor
 
 
 
+
+
 ### Methods
 
 #### CopyFile
@@ -35,11 +37,9 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.CsvTabula
 
 
 
-
 ### Properties
 
 #### ResourceCategory
 The data storage directory name.(数据文件的存储目录)
 #### TYPE_ID
 The file reader required this property to located the resources
-

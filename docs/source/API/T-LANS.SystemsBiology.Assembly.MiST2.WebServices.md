@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.MiST2](N-LANS.SystemsBiology.Assembly.
 
 
 
+
+
 ### Methods
 
 #### Download
@@ -32,8 +34,6 @@ LANS.SystemsBiology.Assembly.MiST2.WebServices.DownloadData(System.String)
 |Parameter Name|Remarks|
 |--------------|-------|
 |speciesCode|MiST2数据库内的物种编码|
-
-
 
 
 

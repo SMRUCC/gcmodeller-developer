@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CRISPR.SearchingModel](N-LANS.Sys
 
 Boyer Moore algorithm copyright by Michael Lecuyer 1998. Slight modification below.
 
+
+
 ### Methods
 
 #### __search
@@ -44,7 +46,6 @@ Using this function to search the pattern occurring in the target text data.
 
 
 
-
 ### Properties
 
 #### d
@@ -58,5 +59,4 @@ Bytes of a partial match found at the end of a text buffer.
 #### pat
 Byte representation of pattern
 #### patLen
-
 

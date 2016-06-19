@@ -7,6 +7,8 @@ _namespace: [GCModeller.Configuration](N-GCModeller.Configuration.html)_
 
 
 
+
+
 ### Methods
 
 #### GetMySQLClient
@@ -21,9 +23,7 @@ GCModeller.Configuration.MySQLExtensions.GetMySQLClient(System.String)
 
 
 
-
 ### Properties
 
 #### MySQL
-
 

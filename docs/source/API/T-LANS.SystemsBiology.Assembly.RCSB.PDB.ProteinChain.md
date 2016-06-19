@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.Assembly.RCSB.PDB](N-LANS.SystemsBiology.Assemb
 
 
 
+
 ### Properties
 
 #### InterfaceOnSurface
 {@"P:LANS.SystemsBiology.Assembly.RCSB.PDB.ProteinChain.ChainId"[ChainId], SurfaceSite}
-

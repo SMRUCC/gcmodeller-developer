@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Reactome.OwlDocument](N-LANS.S
 
 
 
+
+
 ### Methods
 
 #### __initDoc
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Reactome.OwlDocument](N-LANS.S
 LANS.SystemsBiology.DatabaseServices.Reactome.OwlDocument.DocumentFile.__initDoc
 ```
 在执行查询之前必须要执行本方法
-
-
 
 

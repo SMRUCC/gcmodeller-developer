@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat](N-LANS.Sys
 
 
 
+
+
 ### Methods
 
 #### attributeTokens
@@ -53,9 +55,7 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.FeatureParser.ToString(L
 生成gff文件之中的一行的基因组特性位点的数据
 
 
-
 ### Properties
 
 #### SplitRegxExpression
 A regex expression string that use for split the line text.
-

@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.Rfam](N-LANS.SystemsBiology.Analy
 
 
 
+
 ### Properties
 
 #### Hit
 数据库之中得到的匹配记录
 #### LocusId
 可以在这里给RNA自定义基因的编号
-

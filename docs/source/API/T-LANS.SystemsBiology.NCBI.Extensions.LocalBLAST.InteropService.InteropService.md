@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService](N-LA
 
 InteropService to the local blast program.(对本地BLAST程序的中间服务)
 
+
+
 ### Methods
 
 #### Blastn
@@ -72,7 +74,6 @@ Try invoke the blast program based on its program name as the executable file na
 
 
 
-
 ### Properties
 
 #### LastBLASTOutputFilePath
@@ -81,4 +82,3 @@ Get the last blast operation output log file path.(获取上一次BLAST操作的
 Gets the command line parameter of the nucleotide sequence molecular type.(获取核酸序列类型的分子序列的命令行参数的值)
 #### MolTypeProtein
 Gets the command line parameter of the protein sequence molecular type.(获取蛋白质分子序列的命令行参数的值)
-

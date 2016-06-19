@@ -7,6 +7,8 @@ _namespace: [KEGG](N-KEGG.html)_
 
 
 
+
+
 ### Methods
 
 #### GetMySQLClient
@@ -21,9 +23,7 @@ KEGG.MySQLExtensions.GetMySQLClient(System.String)
 
 
 
-
 ### Properties
 
 #### MySQL
-
 

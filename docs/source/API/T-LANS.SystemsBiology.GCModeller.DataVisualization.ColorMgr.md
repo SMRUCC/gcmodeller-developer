@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization](N-LANS.SystemsBio
 
 
 
+
+
 ### Methods
 
 #### GetEntityColor
@@ -32,7 +34,6 @@ LANS.SystemsBiology.GCModeller.DataVisualization.ColorMgr.GetValue(System.String
 
 
 
-
 ### Properties
 
 #### __categories
@@ -41,4 +42,3 @@ Array of @"P:LANS.SystemsBiology.GCModeller.DataVisualization.ClMap.map"
 @"P:LANS.SystemsBiology.GCModeller.DataVisualization.ClMap.map" --> @"T:System.Drawing.Color"
 #### __entityMaps
 @"P:LANS.SystemsBiology.GCModeller.DataVisualization.ClMap.Identifier" --> @"P:LANS.SystemsBiology.GCModeller.DataVisualization.ClMap.map"
-

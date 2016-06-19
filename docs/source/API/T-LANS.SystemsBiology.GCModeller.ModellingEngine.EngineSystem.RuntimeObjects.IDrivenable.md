@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Runtime
 This system framework type object have a handle to running the network simulation.
  (这个系统框架对象具备有一个可以驱动整个网络模型的方法句柄)
 
+
+
 ### Methods
 
 #### __innerTicks
@@ -19,8 +21,6 @@ The System Driver Handle
 |Parameter Name|Remarks|
 |--------------|-------|
 |KernelCycle|-|
-
-
 
 
 

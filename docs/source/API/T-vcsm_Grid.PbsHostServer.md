@@ -7,6 +7,8 @@ _namespace: [vcsm_Grid](N-vcsm_Grid.html)_
 
 Pbs任务提交和数据处理服务器
 
+
+
 ### Methods
 
 #### __protocolImplementer
@@ -25,7 +27,5 @@ vcsm_Grid.PbsHostServer.__protocolImplementer(System.Int64,Microsoft.VisualBasic
 vcsm_Grid.PbsHostServer.InternalThreadsDetection
 ```
 计算线程的状态检测线程，每隔一段时间刷新一次线程的数据
-
-
 
 

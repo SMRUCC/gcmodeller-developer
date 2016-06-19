@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.Expasy.AnnotationsTool](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### __enzymeClassify
@@ -54,8 +56,6 @@ LANS.SystemsBiology.Assembly.Expasy.AnnotationsTool.API.InvokeAnnotations(LANS.S
 |--------------|-------|
 |Expasy|-|
 |Aligned|经过筛选之后的之后比对结果|
-
-
 
 
 

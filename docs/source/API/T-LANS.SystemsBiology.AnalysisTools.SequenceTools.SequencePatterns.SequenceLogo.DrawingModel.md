@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Se
 
 Drawing model for the sequence logo visualization.
 
+
+
 ### Methods
 
 #### AAResidue
@@ -43,11 +45,9 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.SequenceLogo.Dr
 
 
 
-
 ### Properties
 
 #### ModelsId
 This drawing display title.
 #### Residues
 The motif model is consist of a sequence of residue sites.
-

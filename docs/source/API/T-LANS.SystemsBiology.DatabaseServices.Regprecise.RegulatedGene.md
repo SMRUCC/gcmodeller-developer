@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### DocParser
@@ -29,8 +31,6 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.RegulatedGene.ParseDoc(System.St
 |Parameter Name|Remarks|
 |--------------|-------|
 |path|-|
-
-
 
 
 

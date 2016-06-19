@@ -7,6 +7,8 @@ _namespace: [RDotNet.Extensions.Bioinformatics.bnlearn](N-RDotNet.Extensions.Bio
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -25,7 +27,5 @@ RDotNet.Extensions.Bioinformatics.bnlearn.NetworkParameters.#ctor(System.String)
 RDotNet.Extensions.Bioinformatics.bnlearn.NetworkParameters.GetNetworkParameters(System.Int32)
 ```
 Get Bayesian network parameters
-
-
 
 

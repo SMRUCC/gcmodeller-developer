@@ -9,6 +9,7 @@ _namespace: [RDotNET.Extensions.VisualBasic.stats](N-RDotNET.Extensions.VisualBa
 
 
 
+
 ### Properties
 
 #### diag
@@ -21,4 +22,3 @@ further arguments, passed to other methods.
 logical value indicating whether the upper triangle of the distance matrix should be printed by print.dist.
 #### x
 a numeric matrix, data frame or "dist" object.
-

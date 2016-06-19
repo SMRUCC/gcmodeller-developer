@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 对一个基因对象的表达过程中的一个步骤的描述
 
+
+
 ### Methods
 
 #### CreateInstance
@@ -22,7 +24,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.
 
 
 
-
 ### Properties
 
 #### _Regulations
@@ -35,4 +36,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.
 调控因子对本过程对象的调控作用的总和大小
 #### Template
 本步骤的信息来源：模板分子对象
-

@@ -11,6 +11,14 @@ wavelets: A package of functions for computing wavelet filters, wavelet transfor
  computing and plotting wavelet transform filters that are used in the above decompositions as well as 
  multiresolution analyses.
 
+> 
+>  信号的奇异性检测         
+>  信号的突变点和奇异点等不规则部分通常包含重要信息。一般信号的奇异性分为两种情况：
+>  （1）信号在某一时刻其幅值发生突变，引起信号的非连续，这种类型的突变称为第一类型的间断点；   
+>  （2）信号在外观上很光滑，幅值没有发生突变，但是信号的一阶微分有突变发生且一阶微分不连续，这种类型的突变称为第二类型的间断点。
+>  
+
+
 ### Methods
 
 #### DWT
@@ -65,7 +73,5 @@ Maximal Overlap Discrete Wavelet Transform.
 |nlevels|An integer specifying the level of the decomposition. By default this is the value J such that the length of X is at least as great as the length of the level J wavelet filter, but less than the length of the level J+1 wavelet filter. Thus, j <= log((N-1)/(L-1)+1), where N is the length of X.|
 
 > Returns an object of class modwt, which is an S4 object with slots
-
-
 
 

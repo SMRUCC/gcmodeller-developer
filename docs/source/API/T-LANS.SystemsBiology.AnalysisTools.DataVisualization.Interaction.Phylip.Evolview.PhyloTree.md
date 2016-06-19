@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Phy
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -157,7 +159,6 @@ Oct 25, 2013; this is a recursive function
 
 
 
-
 ### Properties
 
 #### AllNodes
@@ -168,5 +169,4 @@ Oct 25, 2013; this is a recursive function
  leaf nodes and leaf node names.
  *******************************************************
 #### treeFormat
-
 

@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.D
 
 染色体上面的一个基因的绘图模型
 
+
+
 ### Methods
 
 #### Draw
@@ -36,7 +38,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.
 
 
 
-
 ### Properties
 
 #### CommonName
@@ -45,4 +46,3 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.ChromosomeMap.DrawingModels.
 基因号
 #### Product
 基因功能注释文字
-

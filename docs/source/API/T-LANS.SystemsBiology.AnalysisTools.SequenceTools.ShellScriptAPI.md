@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools](N-LANS.SystemsBiol
 
 
 
+
+
 ### Methods
 
 #### PatternSearchA
@@ -14,7 +16,5 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools](N-LANS.SystemsBiol
 LANS.SystemsBiology.AnalysisTools.SequenceTools.ShellScriptAPI.PatternSearchA(LANS.SystemsBiology.SequenceModel.FASTA.FastaFile,System.String,System.String)
 ```
 使用正则表达式搜索目标序列
-
-
 
 

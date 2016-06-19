@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.NCBI.GenBank](N-LANS.SystemsBiology.As
 
 Genbank export methods collection.
 
+
+
 ### Methods
 
 #### BatchExport
@@ -104,8 +106,6 @@ LANS.SystemsBiology.Assembly.NCBI.GenBank.gbExportService.LoadGbkSource(System.S
 |--------------|-------|
 |source|-|
 |ext|文件类型的拓展名称|
-
-
 
 
 

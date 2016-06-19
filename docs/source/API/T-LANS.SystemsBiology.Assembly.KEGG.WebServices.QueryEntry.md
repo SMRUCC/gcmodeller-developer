@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.WebServices](N-LANS.SystemsBiolog
 
 
 
+
 ### Properties
 
 #### LocusId
@@ -19,4 +20,3 @@ LANS.SystemsBiology.Assembly.KEGG.WebServices.WebRequest.QueryEntry
  be get from method @"M:LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Organism.EntryAPI.GetOrganismList".(KEGG
  数据库中的物种ID编号的简写形式，NCBI数据库中的标准的物种编号可以通过方法@"M:LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Organism.EntryAPI.GetOrganismList"
  来进行映射)
-

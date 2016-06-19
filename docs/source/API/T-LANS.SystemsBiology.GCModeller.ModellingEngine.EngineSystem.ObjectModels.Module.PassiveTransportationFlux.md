@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
+
 ### Methods
 
 #### CreateObject
@@ -23,9 +25,7 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Module.
 
 
 
-
 ### Properties
 
 #### FluxValue
 The molecule interaction event dynamics result.
-

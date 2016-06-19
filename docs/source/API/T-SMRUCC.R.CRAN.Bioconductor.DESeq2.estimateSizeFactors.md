@@ -11,6 +11,19 @@ Estimate the size factors for a DESeqDataSet
  The estimated size factors can be accessed using sizeFactors.
  Alternative library size estimators can also be supplied using sizeFactors.
 
+> 
+>  Typically, the function is called with the idiom:
+> 
+>  dds <- estimateSizeFactors(dds)
+> 
+>  See DESeq For a description Of the use Of size factors In the GLM.
+>  One should Call this Function after DESeqDataSet unless size factors are manually specified With sizeFactors.
+>  Alternatively, gene-specific normalization factors For Each sample can be provided Using normalizationFactors
+>  which will always preempt sizeFactors In calculations.
+> 
+>  Internally, the function calls estimateSizeFactorsForMatrix, which provides more details on the calculation.
+>  
+
 
 
 ### Properties
@@ -38,4 +51,3 @@ either "ratio" or "iterate". "ratio" uses the standard median ratio method intro
  which can be used even when all genes contain a sample with a zero. This estimator iterates
  between estimating the dispersion with a design of ~1, and finding a size factor vector by
  numerically optimizing the likelihood of the ~1 model.
-

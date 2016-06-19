@@ -17,10 +17,10 @@ Definition: Imposes ordering on a step in a biochemical pathway.
 
 
 
+
 ### Properties
 
 #### disjointWith
 owl:disjointWith
 #### subClassOf
 rdfs:subClassOf
-

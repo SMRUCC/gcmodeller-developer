@@ -9,10 +9,10 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite](N-LAN
 
 
 
+
 ### Properties
 
 #### TF
 目标基因组内被匹配到的调控因子
 #### TFPcc
 @"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.MatchedResult.TF"和@"P:LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.MatchedResult.OperonPromoter"
-

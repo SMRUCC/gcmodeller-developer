@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 ReactorMachine is a subsystem for entities’ interactions, running the cell system network.(培养基，以及细胞子模块系统的基本类型)
 
+
+
 ### Methods
 
 #### CreateServiceSerials
@@ -14,7 +16,6 @@ ReactorMachine is a subsystem for entities’ interactions, running the cell sys
 LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSystem.ReactorMachine`1.CreateServiceSerials
 ```
 从本系统模块实例之中创建一个不带有数据存储服务连接参数的数据采集服务对象实例
-
 
 
 ### Properties
@@ -25,4 +26,3 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSyst
 当前的子系统模块内的子模块组件对象的集合构成了当前的子系统模块
 #### SystemActivityLoad
 总流量的Log值
-

@@ -9,6 +9,7 @@ A strongly-typed resource class, for looking up localized strings, etc.
 
 
 
+
 ### Properties
 
 #### bioc_style
@@ -84,4 +85,3 @@ Looks up a localized string similar to <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 
  <meta name="robots" content="all" />
  <meta property="og:image" content="http://bioconductor.org/images/logo/jpg/bioconductor_logo_rgb.jpg" />
  <title [rest of string was truncated]";.
-

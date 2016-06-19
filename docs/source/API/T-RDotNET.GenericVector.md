@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A generic list. This is also known as list in R.
 
+
+
 ### Methods
 
 #### #ctor
@@ -53,11 +55,9 @@ Converts into a @"T:RDotNET.Pairlist".
 _returns: The pairlist._
 
 
-
 ### Properties
 
 #### DataSize
 Gets the size of each item in this vector
 #### Item
 Gets or sets the element at the specified index.
-

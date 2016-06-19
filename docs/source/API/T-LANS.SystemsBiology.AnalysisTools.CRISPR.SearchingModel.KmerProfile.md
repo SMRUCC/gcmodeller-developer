@@ -9,8 +9,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.CRISPR.SearchingModel](N-LANS.Sys
 
 
 
+
 ### Properties
 
 #### k
 Succession of similarly spaced repeats of length k..(CRISPR片段的长度)
-

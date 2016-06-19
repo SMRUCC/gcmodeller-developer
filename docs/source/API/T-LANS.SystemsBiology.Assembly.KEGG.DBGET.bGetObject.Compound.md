@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject](N-LANS.SystemsB
 
 
 
+
+
 ### Methods
 
 #### FetchTo
@@ -23,9 +25,7 @@ LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Compound.FetchTo(System.Strin
 _returns: 返回成功下载的对象的数目_
 
 
-
 ### Properties
 
 #### InvolvedReactions
 The @"P:LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Compound.Entry"[compound] was involved in these reactions. (http://www.kegg.jp/dbget-bin/www_bget?rn:[KEGG_Reaction_ID])
-

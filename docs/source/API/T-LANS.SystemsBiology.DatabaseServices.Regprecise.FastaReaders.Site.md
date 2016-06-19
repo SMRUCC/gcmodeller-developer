@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.Regprecise.FastaReaders](N-LAN
 调控位点的数据
  > geneLocusTag:position|geneVIMSSId|regulonId|score|Bacteria
 
+
+
 ### Methods
 
 #### Load
@@ -19,7 +21,6 @@ LANS.SystemsBiology.DatabaseServices.Regprecise.FastaReaders.Site.Load(System.St
 |Parameter Name|Remarks|
 |--------------|-------|
 |fasta|位点Fasta文件的文件路径|
-
 
 
 
@@ -38,4 +39,3 @@ identifier of regulon
 score of a regualtory site
 #### SequenceData
 Motif sequence
-

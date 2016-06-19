@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan](
 
 
 
+
+
 ### Methods
 
 #### __probability
@@ -46,7 +48,5 @@ LANS.SystemsBiology.AnalysisTools.ProteinTools.Sanger.PfamHMMScan.HMMParserAPI.N
 > 
 >  因为ln1=0，有些时候是0概率的，ln0会计算不出来，这个时候使用*代替
 >  
-
-
 
 

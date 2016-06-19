@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Repository](N-LANS.SystemsBiology.Repository.ht
 
 
 
+
 ### Properties
 
 #### accId
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.Repository](N-LANS.SystemsBiology.Repository.ht
 基因的编号
 #### name
 /gene="基因名"
-

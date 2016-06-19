@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.InteractionModel.Network.Regulons](N-LANS.Syste
 
 
 
+
+
 ### Methods
 
 #### BuildNetwork
@@ -18,8 +20,6 @@ LANS.SystemsBiology.InteractionModel.Network.Regulons.NetAPI.BuildNetwork(System
 |Parameter Name|Remarks|
 |--------------|-------|
 |virtualFootprints|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [Circos_CLITools](N-Circos_CLITools.html)_
 
 
 
+
+
 ### Methods
 
 #### GCSkew
@@ -18,8 +20,6 @@ Circos_CLITools.CLI.GCSkew(Microsoft.VisualBasic.CommandLine.CommandLine)
 |Parameter Name|Remarks|
 |--------------|-------|
 |args|-|
-
-
 
 
 

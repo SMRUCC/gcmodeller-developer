@@ -7,6 +7,11 @@ _namespace: [LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlu
 
 2.2.28版本的BLAST+程序的日志输出文件
 
+> 
+>  默认的文件编码是@"P:System.Text.Encoding.UTF8"
+>  
+
+
 ### Methods
 
 #### __generateLine
@@ -62,8 +67,6 @@ LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.BLASTOutput.BlastPlus.v228.SBHLin
 |Query|-|
 |coverage|-|
 |identities|-|
-
-
 
 
 

@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic](N-RDotNET.Extensions.VisualBasic.ht
 
 
 
+
+
 ### Methods
 
 #### Packages
@@ -18,8 +20,6 @@ RDotNET.Extensions.VisualBasic.Install.Packages(System.String)
 |Parameter Name|Remarks|
 |--------------|-------|
 |packageName|-|
-
-
 
 
 

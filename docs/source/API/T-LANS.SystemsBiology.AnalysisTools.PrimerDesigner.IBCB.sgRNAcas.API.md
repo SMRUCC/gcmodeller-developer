@@ -11,6 +11,8 @@ sgRNAcas9 --- a tool for fast designing CRISPR sgRNA with high specificity.
  Xie S, Shen B, Zhang C, Huang X * and Zhang Y *. sgRNAcas9: a software package for designing CRISPR sgRNA and evaluating potential off-target cleavage sites. PloS one, 2014
  Please send bug reports to: ssxieinfo@gmail.com
 
+
+
 ### Methods
 
 #### sgRNAcas
@@ -36,9 +38,7 @@ sgRNAcas9 --- a tool for fast designing CRISPR sgRNA with high specificity
 
 
 
-
 ### Properties
 
 #### PerlScriptBin
 Perl脚本程序的存放的文件夹
-

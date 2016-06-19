@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectM
 
 
 
+
+
 ### Methods
 
 #### SetupMutation
@@ -19,7 +21,6 @@ LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.SubSyst
 |--------------|-------|
 |UniqueId|-|
 |Factor|大于0的一个数字，当值为0的时候表示缺失突变，当值为1的时候表示正常表达，当值大于1的时候表示过量表达|
-
 
 
 
@@ -43,4 +44,3 @@ Gets the gene object counts value in current gene expression regulation network.
 转录所需要的RNA聚合酶复合物
 #### TranslationDataSource
 获取每一种mRNA分子的实时表达量
-

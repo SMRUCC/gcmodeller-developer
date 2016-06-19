@@ -9,8 +9,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.grDevices](N-RDotNET.Extensions.Visu
 
 
 
+
 ### Properties
 
 #### compression
 the type Of compression To be used.
-

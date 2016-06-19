@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.DataVisualization](N-LANS.Systems
 
 
 
+
+
 ### Methods
 
 #### LoadTextureResource
@@ -21,8 +23,6 @@ LANS.SystemsBiology.AnalysisTools.DataVisualization.TextureResourceLoader.LoadTe
 |Size|-|
 |IntervalWidth|纹理模块之间在水平上的间隔宽度|
 |IntervalHeight|纹理模块之间在竖直方向上的间隔宽度|
-
-
 
 
 

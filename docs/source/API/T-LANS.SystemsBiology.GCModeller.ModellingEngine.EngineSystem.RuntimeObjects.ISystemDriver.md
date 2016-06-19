@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.Runtime
 
 This type of object can running the cell system events as a network.
 
+
+
 ### Methods
 
 #### RegisterEvent
@@ -18,8 +20,6 @@ The event object which can be running by this driver object.
 |Parameter Name|Remarks|
 |--------------|-------|
 |Event|-|
-
-
 
 
 

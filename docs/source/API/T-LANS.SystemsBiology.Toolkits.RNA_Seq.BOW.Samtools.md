@@ -18,6 +18,8 @@ SAMtools is a set of utilities for interacting with and post-processing short DN
  quality information, and user-specified annotations - SAMtools reduces the effort needed to use SAM/BAM files by 
  hiding low-level details.
 
+
+
 ### Methods
 
 #### Assembly
@@ -125,8 +127,6 @@ Viewing the output with TView. Now that we've generated the files, we can view t
 |--------------|-------|
 |Bam|-|
 |Fasta|-|
-
-
 
 
 

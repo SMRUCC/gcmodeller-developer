@@ -7,6 +7,8 @@ _namespace: [RDotNET](N-RDotNET.html)_
 
 A symbol object.
 
+
+
 ### Methods
 
 #### #ctor
@@ -22,7 +24,6 @@ Creates a symbol.
 
 
 
-
 ### Properties
 
 #### Internal
@@ -31,4 +32,3 @@ Gets the internal function.
 Gets and sets the name.
 #### Value
 Gets the symbol value.
-

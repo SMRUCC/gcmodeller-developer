@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -20,8 +22,6 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.S
 |Sequence|-|
 |Min|-|
 |Max|-|
-
-
 
 
 

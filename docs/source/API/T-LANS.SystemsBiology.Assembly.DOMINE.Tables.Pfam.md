@@ -7,6 +7,15 @@ _namespace: [LANS.SystemsBiology.Assembly.DOMINE.Tables](N-LANS.SystemsBiology.A
 
 
 
+> 
+>  CREATE TABLE PFAM
+>  (
+>  DomainAcc char(7) PRIMARY KEY,
+>  DomainId varchar(256),
+>  DomainDesc varchar(256),
+>  InterproId char(10)
+>  );
+>  
 
 
 

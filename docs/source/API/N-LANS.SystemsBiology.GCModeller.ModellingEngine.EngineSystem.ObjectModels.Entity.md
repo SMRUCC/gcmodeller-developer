@@ -1,6 +1,6 @@
 ﻿---
 title: LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Entity
-date: 6/16/2016 4:57:01 AM
+date: 6/19/2016 11:14:50 AM
 ---
 
 [CompartmentExchangesVirtualCompound](T-LANS.SystemsBiology.GCModeller.ModellingEngine.EngineSystem.ObjectModels.Entity.CompartmentExchangesVirtualCompound.html)

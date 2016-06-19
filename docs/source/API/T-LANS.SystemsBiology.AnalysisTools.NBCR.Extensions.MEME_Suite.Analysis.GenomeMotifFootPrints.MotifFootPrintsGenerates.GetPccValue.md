@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analys
 
 使用Lambda表达式有一个很严重的BUG，只能够使用本方法来消除这个BUG了
 
+
+
 ### Methods
 
 #### GetPcc
@@ -19,8 +21,6 @@ LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.GenomeMoti
 |--------------|-------|
 |RegulatorId|-|
 |ORF|-|
-
-
 
 
 

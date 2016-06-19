@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.Toolkits.RNA_Seq.GenePrediction.NCBIWebMaster](
 
 
 
+
+
 ### Methods
 
 #### #ctor
@@ -31,8 +33,6 @@ The GeneMark family of gene finding programs has been used for prokaryotic genom
  0 partial/circular;
  1 linear
  |
-
-
 
 
 

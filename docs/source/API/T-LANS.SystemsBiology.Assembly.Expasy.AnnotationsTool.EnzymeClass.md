@@ -9,6 +9,7 @@ _namespace: [LANS.SystemsBiology.Assembly.Expasy.AnnotationsTool](N-LANS.Systems
 
 
 
+
 ### Properties
 
 #### EC_Class
@@ -17,4 +18,3 @@ _namespace: [LANS.SystemsBiology.Assembly.Expasy.AnnotationsTool](N-LANS.Systems
 {[EC] Annotation}
 #### KEGG_ENTRIES
 KEGG数据库之中的Reaction的编号: {[KEGG_Reaction_Entry] Reaction}
-

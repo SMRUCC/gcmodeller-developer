@@ -7,6 +7,8 @@ _namespace: [RDotNET.Extensions.VisualBasic.gplots](N-RDotNET.Extensions.VisualB
 
 
 
+
+
 ### Methods
 
 #### __getMaps
@@ -67,7 +69,6 @@ RDotNET.Extensions.VisualBasic.gplots.heatmap2OUT.TreeBuilder(System.String,Syst
 
 
 
-
 ### Properties
 
 #### breaks
@@ -80,4 +81,3 @@ RDotNET.Extensions.VisualBasic.gplots.heatmap2OUT.TreeBuilder(System.String,Syst
 heatmap.2行聚类的结果，(基因)
 #### rowInd
 基因的排列顺序
-

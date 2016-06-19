@@ -8,6 +8,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns](N
 Simple site information of the TF motif site.
  (简单的Motif位点)
 
+
+
 ### Methods
 
 #### #ctor
@@ -22,11 +24,9 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.MotifLog.#ctor(
 
 
 
-
 ### Properties
 
 #### InPromoterRegion
 当前的这个位点对象是否是在启动子区
 #### Location
 基因组上下文之中的位置的描述
-

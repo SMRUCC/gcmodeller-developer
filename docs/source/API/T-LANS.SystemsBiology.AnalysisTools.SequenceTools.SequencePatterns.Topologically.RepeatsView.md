@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.To
 
 
 
+
+
 ### Methods
 
 #### ToVector``1
@@ -22,11 +24,9 @@ LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Topologically.R
 
 
 
-
 ### Properties
 
 #### Hot
 平均距离越小，则热度越高
  位点越多，热度越高
  片段越长，热度越高
-

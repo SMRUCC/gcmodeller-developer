@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.GCModeller.DataVisualization](N-LANS.SystemsBio
 
 
 
+
+
 ### Methods
 
 #### __directlyMapping
@@ -58,8 +60,6 @@ LANS.SystemsBiology.GCModeller.DataVisualization.RenderingColor.InitCOGColors(Sy
 |Parameter Name|Remarks|
 |--------------|-------|
 |categories|当不为空的时候，会返回一个列表，其中空字符串会被排除掉，故而在返回值之中需要自己添加一个空值的默认颜色|
-
-
 
 
 

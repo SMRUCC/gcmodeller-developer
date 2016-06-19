@@ -24,6 +24,9 @@ A fasta object which is specific for the uniprot fasta title parsing.(专门用�
  ProteinExistence Is the numerical value describing the evidence for the existence of the protein.
  SequenceVersion Is the version number of the sequence.
 
+> http://www.uniprot.org/help/fasta-headers
+
+
 ### Methods
 
 #### CreateObject
@@ -52,7 +55,6 @@ Load the uniprot fasta sequence file.
 
 
 
-
 ### Properties
 
 #### EntryName
@@ -70,4 +72,3 @@ ProteinName Is the recommended name of the UniProtKB entry as annotated in the R
 SequenceVersion Is the version number of the sequence.
 #### UniprotID
 UniqueIdentifier Is the primary accession number of the UniProtKB entry.
-

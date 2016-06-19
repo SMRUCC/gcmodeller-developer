@@ -7,6 +7,8 @@ _namespace: [LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.Annotation
 
 
 
+
+
 ### Methods
 
 #### InstallDatabase
@@ -19,8 +21,6 @@ LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.Uniprot
 |--------------|-------|
 |UniprotSprot|-|
 |InstalledRoot|数据库将要安装的路径|
-
-
 
 
 

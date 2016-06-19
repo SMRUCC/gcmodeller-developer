@@ -9,6 +9,7 @@ For convenience, we describe levels of sigma-differences for some reference exam
 
 
 
+
 ### Properties
 
 #### Close
@@ -23,4 +24,3 @@ For convenience, we describe levels of sigma-differences for some reference exam
 (sigma >= 190; human vs E. coli, E. coli vs Sulfolobus, M. jannaschii vs Halobacterium).
 #### WeaklySimilar
 (90 <= sigma <= 120; human vs sea urchin, M. genitalium vs M. pneumoniae).
-

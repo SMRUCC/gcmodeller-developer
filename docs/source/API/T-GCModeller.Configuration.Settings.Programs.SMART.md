@@ -9,8 +9,8 @@ _namespace: [GCModeller.Configuration.Settings.Programs](N-GCModeller.Configurat
 
 
 
+
 ### Properties
 
 #### CDD
 CDD数据库的数据文件夹的路径
-

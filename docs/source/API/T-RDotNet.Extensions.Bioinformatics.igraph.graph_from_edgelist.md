@@ -11,10 +11,10 @@ graph_from_edgelist creates a graph from an edge list. Its argument is a two-col
 
 
 
+
 ### Properties
 
 #### directed
 Whether to create a directed graph.
 #### el
 The edge list, a two column matrix, character or numeric.
-
