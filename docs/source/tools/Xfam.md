@@ -1,10 +1,10 @@
 ---
 title: Xfam
 tags: [maunal, tools]
-date: 6/13/2016 12:26:47 AM
+date: 7/7/2016 6:52:20 PM
 ---
 # GCModeller [version 1.0.0.0]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/Xfam.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/Xfam.exe
 **Root namespace**: Xfam.CLI
 
 
@@ -36,7 +36,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Export.Blastn /in <blastout.txt> [/out <blastn.Csv>]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Export.Blastn /in <blastout.txt> [/out <blastn.Csv>]
   Example:      Xfam /Export.Blastn 
 ```
 
@@ -46,7 +46,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Export.Blastn.Batch /in <blastout.DIR> [/out outDIR /large /num_threads <-1> /no_parallel]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Export.Blastn.Batch /in <blastout.DIR> [/out outDIR /large /num_threads <-1> /no_parallel]
   Example:      Xfam /Export.Blastn.Batch 
 ```
 
@@ -56,7 +56,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Export.hmmscan /in <input_hmmscan.txt> [/evalue 1e-5 /out <pfam.csv>]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Export.hmmscan /in <input_hmmscan.txt> [/evalue 1e-5 /out <pfam.csv>]
   Example:      Xfam /Export.hmmscan 
 ```
 
@@ -66,7 +66,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Export.hmmsearch /in <input_hmmsearch.txt> /prot <query.fasta> [/out <pfam.csv>]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Export.hmmsearch /in <input_hmmsearch.txt> [/prot <query.fasta> /out <pfam.csv>]
   Example:      Xfam /Export.hmmsearch 
 ```
 
@@ -76,7 +76,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Export.Pfam.UltraLarge /in <blastOUT.txt> [/out <out.csv> /evalue <0.00001> /coverage <0.85> /offset <0.1>]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Export.Pfam.UltraLarge /in <blastOUT.txt> [/out <out.csv> /evalue <0.00001> /coverage <0.85> /offset <0.1>]
   Example:      Xfam /Export.Pfam.UltraLarge 
 ```
 
@@ -86,7 +86,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Load.cmscan /in <stdout.txt> [/out <out.Xml>]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Load.cmscan /in <stdout.txt> [/out <out.Xml>]
   Example:      Xfam /Load.cmscan 
 ```
 
@@ -96,7 +96,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Load.cmsearch /in <stdio.txt> /out <out.Xml>
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Load.cmsearch /in <stdio.txt> /out <out.Xml>
   Example:      Xfam /Load.cmsearch 
 ```
 
@@ -106,7 +106,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Rfam /in <blastMappings.Csv.DIR> /PTT <pttDIR> [/prefix <sp_prefix> /out <out.Rfam.csv> /offset 10 /non-directed]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Rfam /in <blastMappings.Csv.DIR> /PTT <pttDIR> [/prefix <sp_prefix> /out <out.Rfam.csv> /offset 10 /non-directed]
   Example:      Xfam /Rfam 
 ```
 
@@ -122,13 +122,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /prefix
 ##### Help for command '/Rfam.Align':
 
 **Prototype**: Xfam.CLI::Int32 RfamAlignment(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Rfam.Align /query <sequence.fasta> [/rfam <DIR> /out <outDIR> /num_threads -1 /ticks 1000]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Rfam.Align /query <sequence.fasta> [/rfam <DIR> /out <outDIR> /num_threads -1 /ticks 1000]
   Example:      Xfam /Rfam.Align 
 ```
 
@@ -145,13 +147,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /formatdb
 ##### Help for command '/Rfam.GenomicsContext':
 
 **Prototype**: Xfam.CLI::Int32 RfamGenomicsContext(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Rfam.GenomicsContext /in <scan_sites.Csv> /PTT <genome.PTT> [/dist 500 /out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Rfam.GenomicsContext /in <scan_sites.Csv> /PTT <genome.PTT> [/dist 500 /out <out.csv>]
   Example:      Xfam /Rfam.GenomicsContext 
 ```
 
@@ -161,7 +165,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Rfam.Regulatory /query <RfamilyMappings.csv> /mast <mastsites.csv> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Rfam.Regulatory /query <RfamilyMappings.csv> /mast <mastsites.csv> [/out <out.csv>]
   Example:      Xfam /Rfam.Regulatory 
 ```
 
@@ -171,7 +175,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Rfam.Regulons /in <cmsearch.hits.csv> /regulons <regprecise.regulons.hits.csv> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Rfam.Regulons /in <cmsearch.hits.csv> /regulons <regprecise.regulons.hits.csv> [/out <out.csv>]
   Example:      Xfam /Rfam.Regulons 
 ```
 
@@ -181,7 +185,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Rfam.SeedsDb.Dump /in <rfam.seed> [/out <rfam.csv>]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Rfam.SeedsDb.Dump /in <rfam.seed> [/out <rfam.csv>]
   Example:      Xfam /Rfam.SeedsDb.Dump 
 ```
 
@@ -191,7 +195,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe /Rfam.Sites.Seq /nt <nt.fasta> /sites <sites.csv> [/out out.fasta]
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe /Rfam.Sites.Seq /nt <nt.fasta> /sites <sites.csv> [/out out.fasta]
   Example:      Xfam /Rfam.Sites.seq 
 ```
 
@@ -201,7 +205,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Xfam.exe --Install.Rfam /seed <rfam.seed>
+  Usage:        G:\GCModeller\manual\bin\Xfam.exe --Install.Rfam /seed <rfam.seed>
   Example:      Xfam --Install.Rfam 
 ```
 

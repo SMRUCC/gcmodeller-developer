@@ -1,6 +1,6 @@
 ﻿---
 title: RDotNET.Extensions.VisualBasic.base.Extremes
-date: 6/19/2016 11:14:52 AM
+date: 7/7/2016 5:40:23 PM
 ---
 
 [extremes](T-RDotNET.Extensions.VisualBasic.base.Extremes.extremes.html)

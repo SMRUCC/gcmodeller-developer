@@ -1,10 +1,10 @@
 ---
 title: RNA-seq
 tags: [maunal, tools]
-date: 6/13/2016 12:26:42 AM
+date: 7/7/2016 6:51:55 PM
 ---
 # GCModeller [version 1.0.0.0]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/RNA-seq.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/RNA-seq.exe
 **Root namespace**: RNA_seq.CLI
 
 
@@ -12,12 +12,14 @@ All of the command that available in this program has been list below:
 
 |Function API|Info|
 |------------|----|
+|/Clustering||
 |/Data.Frame|Generates the data input for the DESeq2 R package.|
 |/DataFrame.RPKMs|Merges the RPKM csv data files.|
 |/DEGs||
 |/DEGs.UpDown||
 |/DESeq2||
 |/DOOR.Corrects||
+|/fq2fa||
 |/Group.n||
 |/HT-seq|Count raw reads for DESeq2 analysis.|
 |/log2.selects||
@@ -31,13 +33,23 @@ All of the command that available in this program has been list below:
 
 ## Commands
 --------------------------
+##### Help for command '/Clustering':
+
+**Prototype**: RNA_seq.CLI::Int32 Clustering(Microsoft.VisualBasic.CommandLine.CommandLine)
+
+```
+  Information:  
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /Clustering /in <fq> /kmax <int> [/out <out.Csv>]
+  Example:      RNA-seq /Clustering 
+```
+
 ##### Help for command '/Data.Frame':
 
 **Prototype**: RNA_seq.CLI::Int32 Df(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Generates the data input for the DESeq2 R package.
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /Data.Frame /in <in.DIR> /ptt <genome.ptt> [/out out.csv]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /Data.Frame /in <in.DIR> /ptt <genome.ptt> [/out out.csv]
   Example:      RNA-seq /Data.Frame 
 ```
 
@@ -53,13 +65,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /in
 ##### Help for command '/DataFrame.RPKMs':
 
 **Prototype**: RNA_seq.CLI::Int32 MergeRPKMs(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Merges the RPKM csv data files.
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /DataFrame.RPKMs /in <in.DIR> [/trim /out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /DataFrame.RPKMs /in <in.DIR> [/trim /out <out.csv>]
   Example:      RNA-seq /DataFrame.RPKMs 
 ```
 
@@ -69,7 +83,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /DEGs /in <diff.csv> [/out <degs.csv> /log_fold 2]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /DEGs /in <diff.csv> [/out <degs.csv> /log_fold 2]
   Example:      RNA-seq /DEGs 
 ```
 
@@ -79,7 +93,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /DEGs.UpDown /in <diff.csv> /sample.table <sampleTable.Csv> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /DEGs.UpDown /in <diff.csv> /sample.table <sampleTable.Csv> [/out <outDIR>]
   Example:      RNA-seq /DEGs.UpDown 
 ```
 
@@ -89,7 +103,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /DESeq2 /sample.table <sampleTable.csv> /raw <raw.txt.DIR> /ptt <genome.ptt> [/design <design, default: ~condition>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /DESeq2 /sample.table <sampleTable.csv> /raw <raw.txt.DIR> /ptt <genome.ptt> [/design <design, default: ~condition>]
   Example:      RNA-seq /DESeq2 
 ```
 
@@ -99,8 +113,18 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /DOOR.Corrects /DOOR <genome.opr> /pcc <pcc.dat> [/out <out.opr> /pcc-cut <0.45>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /DOOR.Corrects /DOOR <genome.opr> /pcc <pcc.dat> [/out <out.opr> /pcc-cut <0.45>]
   Example:      RNA-seq /DOOR.Corrects 
+```
+
+##### Help for command '/fq2fa':
+
+**Prototype**: RNA_seq.CLI::Int32 Fq2fa(Microsoft.VisualBasic.CommandLine.CommandLine)
+
+```
+  Information:  
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /fq2fa /in <fastaq> [/out <fasta>]
+  Example:      RNA-seq /fq2fa 
 ```
 
 ##### Help for command '/Group.n':
@@ -109,7 +133,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /Group.n /in <dataset.csv> [/locus_map <locus> /out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /Group.n /in <dataset.csv> [/locus_map <locus> /out <out.csv>]
   Example:      RNA-seq /Group.n 
 ```
 
@@ -119,7 +143,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Count raw reads for DESeq2 analysis.
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /Ht-seq /in <in.sam> /gff <genome.gff> [/out <out.txt> /mode <union, intersection_strict, intersection_nonempty; default:intersection_nonempty> /rpkm /feature <CDS>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /Ht-seq /in <in.sam> /gff <genome.gff> [/out <out.txt> /mode <union, intersection_strict, intersection_nonempty; default:intersection_nonempty> /rpkm /feature <CDS>]
   Example:      RNA-seq /HT-seq 
 ```
 
@@ -140,13 +164,16 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /Mode
+##### /feature
 ##### Help for command '/log2.selects':
 
 **Prototype**: RNA_seq.CLI::Int32 Log2Selects(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /log2.selects /log2 <rpkm.log2.csv> /data <dataset.csv> [/locus_map <locus> /factor 1 /out <out.dataset.csv>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /log2.selects /log2 <rpkm.log2.csv> /data <dataset.csv> [/locus_map <locus> /factor 1 /out <out.dataset.csv>]
   Example:      RNA-seq /log2.selects 
 ```
 
@@ -156,7 +183,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /PCC /expr <expr.matrix.csv> [/out <out.dat>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /PCC /expr <expr.matrix.csv> [/out <out.dat>]
   Example:      RNA-seq /PCC 
 ```
 
@@ -166,7 +193,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /RPKM /raw <raw_count.txt> /gff <genome.gff> [/out <expr.out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /RPKM /raw <raw_count.txt> /gff <genome.gff> [/out <expr.out.csv>]
   Example:      RNA-seq /RPKM 
 ```
 
@@ -176,7 +203,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /RPKM.Log2 /in <RPKM.csv> /cond <conditions> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /RPKM.Log2 /in <RPKM.csv> /cond <conditions> [/out <out.csv>]
   Example:      RNA-seq /RPKM.Log2 
 ```
 
@@ -192,13 +219,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /cond
 ##### Help for command '/sid.map':
 
 **Prototype**: RNA_seq.CLI::Int32 sIdMapping(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /sid.map /gff <genome.gff> /raw <htseq-count.txt> [/out <out.txt>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /sid.map /gff <genome.gff> /raw <htseq-count.txt> [/out <out.txt>]
   Example:      RNA-seq /sid.map 
 ```
 
@@ -208,7 +237,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /SPCC /expr <expr.matrix.csv> [/out <out.dat>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /SPCC /expr <expr.matrix.csv> [/out <out.dat>]
   Example:      RNA-seq /SPCC 
 ```
 
@@ -218,7 +247,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /Stat.Changes /deseq <deseq.result.csv> /sample <sampletable.csv> [/out <out.csv> /levels <1000> /diff <0.5>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /Stat.Changes /deseq <deseq.result.csv> /sample <sampletable.csv> [/out <out.csv> /levels <1000> /diff <0.5>]
   Example:      RNA-seq /Stat.Changes 
 ```
 
@@ -228,7 +257,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Generates the cytoscape network model from WGCNA analysis.
-  Usage:        F:\GCModeller\GCModeller-x64\RNA-seq.exe /WGCNA /data <dataExpr.csv> /anno <annotations.csv> [/out <DIR.Out> /mods <color.list> /from.DESeq /id.map <GeneId>]
+  Usage:        G:\GCModeller\manual\bin\RNA-seq.exe /WGCNA /data <dataExpr.csv> /anno <annotations.csv> [/out <DIR.Out> /mods <color.list> /from.DESeq /id.map <GeneId>]
   Example:      RNA-seq /WGCNA 
 ```
 
@@ -278,3 +307,9 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /data
+##### /anno
+##### /mods
+##### /out
+##### /From.Deseq

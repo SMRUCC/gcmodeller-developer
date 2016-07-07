@@ -1,11 +1,11 @@
 ---
 title: GCModeller
 tags: [maunal, tools]
-date: 6/13/2016 12:26:37 AM
+date: 7/7/2016 6:51:34 PM
 ---
 # GCModeller [version 1.0.2.3]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/GCModeller.exe
-**Root namespace**: LANS.SystemsBiology.GCModeller.CLI
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/GCModeller.exe
+**Root namespace**: xGCModeller.CLI
 
 
 All of the command that available in this program has been list below:
@@ -36,51 +36,51 @@ All of the command that available in this program has been list below:
 --------------------------
 ##### Help for command '/Draw.Comparative':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 DrawMultipleAlignments(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 DrawMultipleAlignments(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe /Draw.Comparative /in <meta.Xml> /PTT <PTT_DIR> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe /Draw.Comparative /in <meta.Xml> /PTT <PTT_DIR> [/out <outDIR>]
   Example:      GCModeller /Draw.Comparative 
 ```
 
 ##### Help for command '/init.manuals':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 InitManuals(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 InitManuals(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe /init.manuals
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe /init.manuals
   Example:      GCModeller /init.manuals 
 ```
 
 ##### Help for command '/Install.genbank':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 InstallGenbank(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 InstallGenbank(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe /Install.genbank /imports <all_genbanks.DIR> [/refresh]
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe /Install.genbank /imports <all_genbanks.DIR> [/refresh]
   Example:      GCModeller /Install.genbank 
 ```
 
 ##### Help for command '/Located.AppData':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 LocatedAppData(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 LocatedAppData(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe 
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe 
   Example:      GCModeller /Located.AppData 
 ```
 
 ##### Help for command '/Visual.BBH':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 BBHVisual(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 BBHVisual(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe /Visual.BBH /in <bbh.Xml> /PTT <genome.PTT> /density <genomes.density.DIR> [/limits <sp-list.txt> /out <image.png>]
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe /Visual.BBH /in <bbh.Xml> /PTT <genome.PTT> /density <genomes.density.DIR> [/limits <sp-list.txt> /out <image.png>]
   Example:      GCModeller /Visual.BBH 
 ```
 
@@ -97,33 +97,35 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /PTT
 ##### Help for command '--Drawing.ChromosomeMap':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 DrawingChrMap(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 DrawingChrMap(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Drawing the chromosomes map from the PTT object as the basically genome information source.
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe --Drawing.ChromosomeMap /ptt <genome.ptt> [/conf <config.inf> /out <dir.export> /COG <cog.csv>]
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe --Drawing.ChromosomeMap /ptt <genome.ptt> [/conf <config.inf> /out <dir.export> /COG <cog.csv>]
   Example:      GCModeller --Drawing.ChromosomeMap 
 ```
 
 ##### Help for command '--Drawing.ClustalW':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 DrawClustalW(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 DrawClustalW(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe --Drawing.ClustalW /in <align.fasta> [/out <out.png> /dot.Size 10]
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe --Drawing.ClustalW /in <align.fasta> [/out <out.png> /dot.Size 10]
   Example:      GCModeller --Drawing.ClustalW 
 ```
 
 ##### Help for command 'export':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 ExportData(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 ExportData(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Export the calculation data from a specific data table in the mysql database server.
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe export -mysql <mysql_connection_string> [-o <output_save_file/dir> -t <table_name>]
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe export -mysql <mysql_connection_string> [-o <output_save_file/dir> -t <table_name>]
   Example:      GCModeller export export -t all -o ~/Desktop/ -mysql "http://localhost:8080/client?user=username%password=password%database=database"
 ```
 
@@ -152,113 +154,117 @@ Default is desktop directory and table name combination
 
 ```
 
+#### Accepted Types
+##### -mysql
+##### -t
+##### -o
 ##### Help for command '--Gendist.From.Self.Overviews':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 SelfOverviewAsMAT(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 SelfOverviewAsMAT(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe --Gendist.From.Self.Overviews /blast_out <blast_out.txt>
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe --Gendist.From.Self.Overviews /blast_out <blast_out.txt>
   Example:      GCModeller --Gendist.From.Self.Overviews 
 ```
 
 ##### Help for command '--Gendist.From.SelfMPAlignment':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 SelfMPAlignmentAsMAT(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 SelfMPAlignmentAsMAT(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe --Gendist.From.SelfMPAlignment /aln <mpalignment.csv>
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe --Gendist.From.SelfMPAlignment /aln <mpalignment.csv>
   Example:      GCModeller --Gendist.From.SelfMPAlignment 
 ```
 
 ##### Help for command '--Get.Subset.lstID':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 GetSubsetID(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 GetSubsetID(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe --Get.Subset.lstID /subset <lstID.txt> /lstID <lstID.csv>
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe --Get.Subset.lstID /subset <lstID.txt> /lstID <lstID.csv>
   Example:      GCModeller --Get.Subset.lstID 
 ```
 
 ##### Help for command 'help':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 About()
+**Prototype**: xGCModeller.CLI::Int32 About()
 
 ```
   Information:  Show help information about this program.
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe gc help
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe gc help
   Example:      GCModeller help gc help
 ```
 
 ##### Help for command '-imports':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 Imports(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 Imports(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe -imports <genbank_file/genbank_directory>
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe -imports <genbank_file/genbank_directory>
   Example:      GCModeller -imports 
 ```
 
 ##### Help for command '--install.MYSQL':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 InstallMySQL(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 InstallMySQL(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe --install.MYSQL /user <userName> /pass <password> /repository <host_ipAddress> [/port 3306 /database <GCModeller>]
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe --install.MYSQL /user <userName> /pass <password> /repository <host_ipAddress> [/port 3306 /database <GCModeller>]
   Example:      GCModeller --install.MYSQL 
 ```
 
 ##### Help for command '--install-CDD':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 InstallCDD(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 InstallCDD(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe --install-CDD /cdd <cdd.DIR>
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe --install-CDD /cdd <cdd.DIR>
   Example:      GCModeller --install-CDD 
 ```
 
 ##### Help for command '--install-COGs':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 InstallCOGs(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 InstallCOGs(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Install the COGs database into the GCModeller database.
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe --install-COGs /COGs <Dir.COGs>
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe --install-COGs /COGs <Dir.COGs>
   Example:      GCModeller --install-COGs 
 ```
 
 ##### Help for command '--Interpro.Build':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 BuildFamilies(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 BuildFamilies(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe --Interpro.Build /xml <interpro.xml>
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe --Interpro.Build /xml <interpro.xml>
   Example:      GCModeller --Interpro.Build 
 ```
 
 ##### Help for command '--ls':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 List(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 List(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Listing all of the available GCModeller CLI tools commands.
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe 
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe 
   Example:      GCModeller --ls 
 ```
 
 ##### Help for command '--user.create':
 
-**Prototype**: LANS.SystemsBiology.GCModeller.CLI::Int32 Register(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: xGCModeller.CLI::Int32 Register(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\GCModeller.exe 
+  Usage:        G:\GCModeller\manual\bin\GCModeller.exe 
   Example:      GCModeller --user.create 
 ```
 

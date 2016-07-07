@@ -1,10 +1,10 @@
 ---
 title: PLAS
 tags: [maunal, tools]
-date: 6/13/2016 12:26:40 AM
+date: 7/7/2016 6:51:49 PM
 ---
 # GCModeller [version 1.0.0.0]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/PLAS.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/PLAS.exe
 **Root namespace**: PLAS.CLI
 
 
@@ -23,7 +23,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Compile a script file or sbml file into the plas model file.
-  Usage:        F:\GCModeller\GCModeller-x64\PLAS.exe compile -i <file> -f <script/sbml> -o <output_file> [/auto-fix]
+  Usage:        G:\GCModeller\manual\bin\PLAS.exe compile -i <file> -f <script/sbml> -o <output_file> [/auto-fix]
   Example:      PLAS Compile compile -i "/home/xieguigang/proj/metacyc/xcc8004/17.0/data/metabolic-reactions.sbml" -f sbml -o "/home/xieguigang/Desktop/xcc8004.xml"
 ```
 
@@ -33,7 +33,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  run a model file of the biochemical network system.
-  Usage:        F:\GCModeller\GCModeller-x64\PLAS.exe run -i <model_file> -f <script/model/sbml> -chart <T/F> -o <output_csv>
+  Usage:        G:\GCModeller\manual\bin\PLAS.exe run -i <model_file> -f <script/model/sbml> -chart <T/F> -o <output_csv>
   Example:      PLAS Run run -i "/home/xieguigang/proj/xcc8004.sbml" -f sbml -chart T -o "/home/xieguigang/Desktop/xcc8004.csv"
 ```
 
@@ -69,3 +69,8 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### -i
+##### -o
+##### -f
+##### -chart

@@ -1,10 +1,10 @@
 ---
 title: gcc
 tags: [maunal, tools]
-date: 6/13/2016 12:26:37 AM
+date: 7/7/2016 6:51:33 PM
 ---
 # GCModeller [version 1.0.0.0]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/gcc.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/gcc.exe
 **Root namespace**: gcc.CLI
 
 
@@ -24,7 +24,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\gcc.exe -add_replacement -old <old_value> -new <new_value>
+  Usage:        G:\GCModeller\manual\bin\gcc.exe -add_replacement -old <old_value> -new <new_value>
   Example:      gcc -add_replacement 
 ```
 
@@ -34,7 +34,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\gcc.exe -add_rule -rulefile <path> -db <datadir> -model <path> [-grep <scriptText>]
+  Usage:        G:\GCModeller\manual\bin\gcc.exe -add_rule -rulefile <path> -db <datadir> -model <path> [-grep <scriptText>]
   Example:      gcc -add_rule 
 ```
 
@@ -65,13 +65,18 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### -rulefile
+##### -db
+##### -model
+##### -grep
 ##### Help for command 'compile_metacyc':
 
 **Prototype**: gcc.CLI::Int32 CompileMetaCyc(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  compile a metacyc database into a gcml(genetic clock markup language) model file.
-  Usage:        F:\GCModeller\GCModeller-x64\gcc.exe compile_metacyc -i <data_dir> -o <output_file>
+  Usage:        G:\GCModeller\manual\bin\gcc.exe compile_metacyc -i <data_dir> -o <output_file>
   Example:      gcc compile_metacyc compile_metacyc -i ~/Documents/ecoli/ -o ~/Desktop/ecoli.xml
 ```
 
@@ -92,3 +97,6 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### -i
+##### -o

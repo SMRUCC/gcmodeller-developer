@@ -1,6 +1,6 @@
 ﻿---
 title: RDotNET.Extensions.VisualBasic.Graphics
-date: 6/19/2016 11:14:52 AM
+date: 7/7/2016 5:40:24 PM
 ---
 
 [GraphicsDevice](T-RDotNET.Extensions.VisualBasic.Graphics.GraphicsDevice.html)

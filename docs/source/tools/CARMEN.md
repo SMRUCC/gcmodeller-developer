@@ -1,10 +1,10 @@
 ---
 title: CARMEN
 tags: [maunal, tools]
-date: 6/13/2016 12:26:15 AM
+date: 7/7/2016 6:51:25 PM
 ---
 # GCModeller [version 1.0.0.0]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/CARMEN.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/CARMEN.exe
 **Root namespace**: CARMENTools.CLI
 
 
@@ -24,7 +24,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\CARMEN.exe /Export.Anno /in <inDIR> [/out <out.Csv>]
+  Usage:        G:\GCModeller\manual\bin\CARMEN.exe /Export.Anno /in <inDIR> [/out <out.Csv>]
   Example:      CARMEN /Export.Anno 
 ```
 
@@ -34,7 +34,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Download the Avaliable organism name And available pathways' name.
-  Usage:        F:\GCModeller\GCModeller-x64\CARMEN.exe --lstId.Downloads [/o <out.DIR>]
+  Usage:        G:\GCModeller\manual\bin\CARMEN.exe --lstId.Downloads [/o <out.DIR>]
   Example:      CARMEN --lstId.Downloads 
 ```
 
@@ -44,7 +44,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\CARMEN.exe --Reconstruct.KEGG.Online /sp <organism> [/pathway <KEGG.pathwayId> /out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\CARMEN.exe --Reconstruct.KEGG.Online /sp <organism> [/pathway <KEGG.pathwayId> /out <outDIR>]
   Example:      CARMEN --Reconstruct.KEGG.Online 
 ```
 

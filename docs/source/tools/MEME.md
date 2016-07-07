@@ -1,10 +1,10 @@
 ---
 title: MEME
 tags: [maunal, tools]
-date: 6/13/2016 12:26:38 AM
+date: 7/7/2016 6:51:40 PM
 ---
 # GCModeller [version 1.34.0.2]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/MEME.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/MEME.exe
 **Root namespace**: MEME.CLI
 
 
@@ -33,8 +33,8 @@ All of the command that available in this program has been list below:
 |/MEME.Batch|Batch meme task by using tmod toolbox.|
 |/MEME.LDMs||
 |/Motif.BuildRegulons||
-|/Motif.Info|Assign the phenotype information And genomic context Info for the motif sites.|
-|/Motif.Info.Batch||
+|/Motif.Info|Assign the phenotype information And genomic context Info for the motif sites. [SimpleSegment] -> [MotifLog]|
+|/Motif.Info.Batch|[SimpleSegment] -> [MotifLog]|
 |/Motif.Similarity|Export of the calculation result from the tomtom program.|
 |/MotifHits.Regulation||
 |/Parser.DEGs||
@@ -58,7 +58,8 @@ All of the command that available in this program has been list below:
 |/RfamSites||
 |/seq.logo||
 |/Similarity.Union|Motif iteration step 3|
-|/Site.MAST_Scan||
+|/Site.MAST_Scan|[MAST.Xml] -> [SimpleSegment]|
+|/Site.MAST_Scan.Batch|[MAST.Xml] -> [SimpleSegment]|
 |/Site.RegexScan||
 |/site.scan||
 |/SiteHits.Footprints|Generates the regulation information.|
@@ -91,7 +92,7 @@ All of the command that available in this program has been list below:
 |mast.compile.bulk|Genome wide step 1|
 |--modules.regulates|Exports the Venn diagram model for the module regulations.|
 |Motif.Locates||
-|MotifScan||
+|MotifScan|Scan for the motif site by using fragment similarity.|
 |--pathway.regulates|Associates of the pathway regulation information for the predicted virtual footprint information.|
 |Regprecise.Compile|The repository parameter is a directory path which is the regprecise database root directory in the GCModeller directory, if you didn't know how to set this value, please leave it blank.|
 |regulators.bbh|Compiles for the regulators in the bacterial genome mapped on the regprecise database using bbh method.|
@@ -113,7 +114,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Select bbh result for the regulators in RegPrecise database from the regulon bbh data.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /BBH.Select.Regulators /in <bbh.csv> /db <regprecise_downloads.DIR> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /BBH.Select.Regulators /in <bbh.csv> /db <regprecise_downloads.DIR> [/out <out.csv>]
   Example:      MEME /BBH.Select.Regulators 
 ```
 
@@ -123,7 +124,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Build.FamilyDb /prot <RegPrecise.prot.fasta> /pfam <pfam-string.csv> [/out <out.Xml>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Build.FamilyDb /prot <RegPrecise.prot.fasta> /pfam <pfam-string.csv> [/out <out.Xml>]
   Example:      MEME /Build.FamilyDb 
 ```
 
@@ -133,7 +134,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Copys /in <inDIR> [/out <outDIR> /file <meme.txt>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Copys /in <inDIR> [/out <outDIR> /file <meme.txt>]
   Example:      MEME /Copys 
 ```
 
@@ -143,7 +144,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Copys.DIR /in <inDIR> /out <outDIR>
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Copys.DIR /in <inDIR> /out <outDIR>
   Example:      MEME /Copys.DIR 
 ```
 
@@ -153,7 +154,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /CORN /in <operons.csv> /mast <mastDIR> /PTT <genome.ptt> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /CORN /in <operons.csv> /mast <mastDIR> /PTT <genome.ptt> [/out <out.csv>]
   Example:      MEME /CORN 
 ```
 
@@ -163,7 +164,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /EXPORT.MotifDraws /in <virtualFootprints.csv> /MEME <meme.txt.DIR> /KEGG <KEGG_Modules/Pathways.DIR> [/pathway /out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /EXPORT.MotifDraws /in <virtualFootprints.csv> /MEME <meme.txt.DIR> /KEGG <KEGG_Modules/Pathways.DIR> [/pathway /out <outDIR>]
   Example:      MEME /EXPORT.MotifDraws 
 ```
 
@@ -173,7 +174,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Motif iteration step 1
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Export.MotifSites /in <meme.txt> [/out <outDIR> /batch]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Export.MotifSites /in <meme.txt> [/out <outDIR> /batch]
   Example:      MEME /Export.MotifSites 
 ```
 
@@ -183,7 +184,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe 
+  Usage:        G:\GCModeller\manual\bin\MEME.exe 
   Example:      MEME /Export.Regprecise.Motifs 
 ```
 
@@ -193,7 +194,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Motif iteration step 2
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Export.Similarity.Hits /in <inDIR> [/out <out.Csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Export.Similarity.Hits /in <inDIR> [/out <out.Csv>]
   Example:      MEME /Export.Similarity.Hits 
 ```
 
@@ -203,7 +204,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  3 - Generates the regulation footprints.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Footprints /footprints <footprints.xml> /coor <name/DIR> /DOOR <genome.opr> /maps <bbhMappings.Csv> [/out <out.csv> /cuts <0.65> /extract]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Footprints /footprints <footprints.xml> /coor <name/DIR> /DOOR <genome.opr> /maps <bbhMappings.Csv> [/out <out.csv> /cuts <0.65> /extract]
   Example:      MEME /Footprints 
 ```
 
@@ -219,13 +220,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /extract
 ##### Help for command '/Hits.Context':
 
 **Prototype**: MEME.CLI::Int32 HitContext(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  2
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Hits.Context /footprints <footprints.Xml> /PTT <genome.PTT> [/out <out.Xml> /RegPrecise <RegPrecise.Regulations.Xml>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Hits.Context /footprints <footprints.Xml> /PTT <genome.PTT> [/out <out.Xml> /RegPrecise <RegPrecise.Regulations.Xml>]
   Example:      MEME /Hits.Context 
 ```
 
@@ -235,7 +238,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /LDM.Compares /query <query.LDM.Xml> /sub <subject.LDM.Xml> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /LDM.Compares /query <query.LDM.Xml> /sub <subject.LDM.Xml> [/out <outDIR>]
   Example:      MEME /LDM.Compares 
 ```
 
@@ -245,7 +248,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /LDM.MaxW [/in <sourceDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /LDM.MaxW [/in <sourceDIR>]
   Example:      MEME /LDM.MaxW 
 ```
 
@@ -255,7 +258,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /LDM.Selects /trace <footprints.xml> /meme <memeDIR> [/out <outDIR> /named]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /LDM.Selects /trace <footprints.xml> /meme <memeDIR> [/out <outDIR> /named]
   Example:      MEME /LDM.Selects 
 ```
 
@@ -265,7 +268,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /MAST.MotifMatches /meme <meme.txt.DIR> /mast <MAST_OUT.DIR> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /MAST.MotifMatches /meme <meme.txt.DIR> /mast <MAST_OUT.DIR> [/out <out.csv>]
   Example:      MEME /MAST.MotifMatches 
 ```
 
@@ -275,7 +278,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  1
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /MAST.MotifMatchs.Family /meme <meme.txt.DIR> /mast <MAST_OUT.DIR> [/out <out.Xml>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /MAST.MotifMatchs.Family /meme <meme.txt.DIR> /mast <MAST_OUT.DIR> [/out <out.Xml>]
   Example:      MEME /MAST.MotifMatchs.Family 
 ```
 
@@ -285,7 +288,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /mast.Regulations /in <mastSites.Csv> /correlation <sp_name/DIR> /DOOR <DOOR.opr> [/out <footprint.csv> /cut <0.65>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /mast.Regulations /in <mastSites.Csv> /correlation <sp_name/DIR> /DOOR <DOOR.opr> [/out <footprint.csv> /cut <0.65>]
   Example:      MEME /mast.Regulations 
 ```
 
@@ -295,7 +298,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /MAST_LDM.Build /source <sourceDIR> [/out <exportDIR:=./> /evalue <1e-3>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /MAST_LDM.Build /source <sourceDIR> [/out <exportDIR:=./> /evalue <1e-3>]
   Example:      MEME /MAST_LDM.Build 
 ```
 
@@ -305,7 +308,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Batch meme task by using tmod toolbox.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /MEME.Batch /in <inDIR> [/out <outDIR> /evalue <1> /nmotifs <30> /mod <zoops> /maxw <100>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /MEME.Batch /in <inDIR> [/out <outDIR> /evalue <1> /nmotifs <30> /mod <zoops> /maxw <100>]
   Example:      MEME /MEME.Batch 
 ```
 
@@ -326,13 +329,16 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /in
+##### /out
 ##### Help for command '/MEME.LDMs':
 
 **Prototype**: MEME.CLI::Int32 MEME2LDM(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /MEME.LDMs /in <meme.txt> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /MEME.LDMs /in <meme.txt> [/out <outDIR>]
   Example:      MEME /MEME.LDMs 
 ```
 
@@ -342,7 +348,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Motif.BuildRegulons /meme <meme.txt.DIR> /model <FootprintTrace.xml> /DOOR <DOOR.opr> /maps <bbhmappings.csv> /corrs <name/DIR> [/cut <0.65> /out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Motif.BuildRegulons /meme <meme.txt.DIR> /model <FootprintTrace.xml> /DOOR <DOOR.opr> /maps <bbhmappings.csv> /corrs <name/DIR> [/cut <0.65> /out <outDIR>]
   Example:      MEME /Motif.BuildRegulons 
 ```
 
@@ -351,8 +357,8 @@ All of the command that available in this program has been list below:
 **Prototype**: MEME.CLI::Int32 MotifInfo(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
-  Information:  Assign the phenotype information And genomic context Info for the motif sites.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Motif.Info /loci <loci.csv> /motifs <motifs.DIR> [/gff <genome.gff> /atg-dist 250 /out <out.csv>]
+  Information:  Assign the phenotype information And genomic context Info for the motif sites. [SimpleSegment] -> [MotifLog]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Motif.Info /loci <loci.csv> [/motifs <motifs.DIR> /gff <genome.gff> /atg-dist 250 /out <out.csv>]
   Example:      MEME /Motif.Info 
 ```
 
@@ -373,13 +379,16 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /loci
+##### /motifs
 ##### Help for command '/Motif.Info.Batch':
 
 **Prototype**: MEME.CLI::Int32 MotifInfoBatch(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
-  Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Motif.Info.Batch /in <sites.csv.inDIR> /gffs <gff.DIR> /motifs <regulogs.motiflogs.MEME.DIR> [/num_threads -1 /atg-dist 350 /out <out.DIR>]
+  Information:  [SimpleSegment] -> [MotifLog]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Motif.Info.Batch /in <sites.csv.inDIR> /gffs <gff.DIR> [/motifs <regulogs.motiflogs.MEME.DIR> /num_threads -1 /atg-dist 350 /out <out.DIR>]
   Example:      MEME /Motif.Info.Batch 
 ```
 
@@ -393,20 +402,23 @@ All of the command that available in this program has been list below:
     Example:      /motifs ""
 
    [/num_threads]
-    Description:  Default is -1, means auto config of the threads number.
+    Description:  Default Is -1, means auto config of the threads number.
 
     Example:      /num_threads ""
 
 
 ```
 
+#### Accepted Types
+##### /motifs
+##### /num_threads
 ##### Help for command '/Motif.Similarity':
 
 **Prototype**: MEME.CLI::Int32 MEMETOM_MotifSimilarity(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Export of the calculation result from the tomtom program.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Motif.Similarity /in <tomtom.DIR> /motifs <MEME_OUT.DIR> [/out <out.csv> /bp.var]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Motif.Similarity /in <tomtom.DIR> /motifs <MEME_OUT.DIR> [/out <out.csv> /bp.var]
   Example:      MEME /Motif.Similarity 
 ```
 
@@ -416,7 +428,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /MotifHits.Regulation /hits <motifHits.Csv> /source <meme.txt.DIR> /PTT <genome.PTT> /correlates <sp/DIR> /bbh <bbhh.csv> [/out <out.footprints.Csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /MotifHits.Regulation /hits <motifHits.Csv> /source <meme.txt.DIR> /PTT <genome.PTT> /correlates <sp/DIR> /bbh <bbhh.csv> [/out <out.footprints.Csv>]
   Example:      MEME /MotifHits.Regulation 
 ```
 
@@ -426,7 +438,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.DEGs /degs <deseq2.csv> /PTT <genomePTT.DIR> /door <genome.opr> /out <out.DIR> [/log-fold 2]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.DEGs /degs <deseq2.csv> /PTT <genomePTT.DIR> /door <genome.opr> /out <out.DIR> [/log-fold 2]
   Example:      MEME /Parser.DEGs 
 ```
 
@@ -436,7 +448,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.Locus /locus <locus.txt> /PTT <genomePTT.DIR> /DOOR <genome.opr> [/out <out.DIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.Locus /locus <locus.txt> /PTT <genomePTT.DIR> /DOOR <genome.opr> [/out <out.DIR>]
   Example:      MEME /Parser.Locus 
 ```
 
@@ -446,7 +458,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.Log2 /in <log2.csv> /PTT <genomePTT.DIR> /DOOR <genome.opr> [/factor 1 /out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.Log2 /in <log2.csv> /PTT <genomePTT.DIR> /DOOR <genome.opr> [/factor 1 /out <outDIR>]
   Example:      MEME /Parser.Log2 
 ```
 
@@ -456,7 +468,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.MAST /sites <mastsites.csv> /ptt <genome-context.pttDIR> /door <genome.opr> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.MAST /sites <mastsites.csv> /ptt <genome-context.pttDIR> /door <genome.opr> [/out <outDIR>]
   Example:      MEME /Parser.MAST 
 ```
 
@@ -466,7 +478,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.Modules /KEGG.Modules <KEGG.modules.DIR> /PTT <genomePTT.DIR> /DOOR <genome.opr> [/locus <union/initx/locus, default:=union> /out <fasta.outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.Modules /KEGG.Modules <KEGG.modules.DIR> /PTT <genomePTT.DIR> /DOOR <genome.opr> [/locus <union/initx/locus, default:=union> /out <fasta.outDIR>]
   Example:      MEME /Parser.Modules 
 ```
 
@@ -476,7 +488,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.Operon /in <footprint.csv> /PTT <PTTDIR> [/out <outDIR> /family /offset <50> /all]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.Operon /in <footprint.csv> /PTT <PTTDIR> [/out <outDIR> /family /offset <50> /all]
   Example:      MEME /Parser.Operon 
 ```
 
@@ -492,13 +504,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /family
 ##### Help for command '/Parser.Pathway':
 
 **Prototype**: MEME.CLI::Int32 PathwayParser(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.Pathway /KEGG.Pathways <KEGG.pathways.DIR> /PTT <genomePTT.DIR> /DOOR <genome.opr> [/locus <union/initx/locus, default:=union> /out <fasta.outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.Pathway /KEGG.Pathways <KEGG.pathways.DIR> /PTT <genomePTT.DIR> /DOOR <genome.opr> [/locus <union/initx/locus, default:=union> /out <fasta.outDIR>]
   Example:      MEME /Parser.Pathway 
 ```
 
@@ -508,7 +522,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.RegPrecise.Operons /operon <operons.Csv> /PTT <PTT_DIR> [/corn /DOOR <genome.opr> /id <null> /locus <union/initx/locus, default:=union> /out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.RegPrecise.Operons /operon <operons.Csv> /PTT <PTT_DIR> [/corn /DOOR <genome.opr> /id <null> /locus <union/initx/locus, default:=union> /out <outDIR>]
   Example:      MEME /Parser.RegPrecise.Operons 
 ```
 
@@ -518,7 +532,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.Regulon /inDIR <regulons.inDIR> /out <fasta.outDIR> /PTT <genomePTT.DIR> [/door <genome.opr>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.Regulon /inDIR <regulons.inDIR> /out <fasta.outDIR> /PTT <genomePTT.DIR> [/door <genome.opr>]
   Example:      MEME /Parser.Regulon 
 ```
 
@@ -528,7 +542,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.Regulon.gb /inDIR <regulons.inDIR> /out <fasta.outDIR> /gb <genbank.gbk> [/door <genome.opr>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.Regulon.gb /inDIR <regulons.inDIR> /out <fasta.outDIR> /gb <genbank.gbk> [/door <genome.opr>]
   Example:      MEME /Parser.Regulon.gb 
 ```
 
@@ -538,7 +552,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Parser.Regulon.Merged /in <merged.Csv> /out <fasta.outDIR> /PTT <genomePTT.DIR> [/DOOR <genome.opr>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Parser.Regulon.Merged /in <merged.Csv> /out <fasta.outDIR> /PTT <genomePTT.DIR> [/DOOR <genome.opr>]
   Example:      MEME /Parser.Regulon.Merged 
 ```
 
@@ -548,7 +562,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Regulator.Motifs /bbh <bbh.csv> /regprecise <genome.DIR> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Regulator.Motifs /bbh <bbh.csv> /regprecise <genome.DIR> [/out <outDIR>]
   Example:      MEME /Regulator.Motifs 
 ```
 
@@ -558,7 +572,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Regulator.Motifs.Test /hits <familyHits.Csv> /motifs <motifHits.Csv> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Regulator.Motifs.Test /hits <familyHits.Csv> /motifs <motifHits.Csv> [/out <out.csv>]
   Example:      MEME /Regulator.Motifs.Test 
 ```
 
@@ -568,7 +582,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /regulon.export /in <sw-tom_out.DIR> /ref <regulon.bbh.xml.DIR> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /regulon.export /in <sw-tom_out.DIR> /ref <regulon.bbh.xml.DIR> [/out <out.csv>]
   Example:      MEME /regulon.export 
 ```
 
@@ -578,7 +592,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Regulon.Reconstruct /bbh <bbh.csv> /genome <RegPrecise.genome.xml> /door <operon.door> [/out <outfile.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Regulon.Reconstruct /bbh <bbh.csv> /genome <RegPrecise.genome.xml> /door <operon.door> [/out <outfile.csv>]
   Example:      MEME /Regulon.Reconstruct 
 ```
 
@@ -588,7 +602,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Regulon.Reconstruct2 /bbh <bbh.csv> /genome <RegPrecise.genome.DIR> /door <operons.opr> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Regulon.Reconstruct2 /bbh <bbh.csv> /genome <RegPrecise.genome.DIR> /door <operons.opr> [/out <outDIR>]
   Example:      MEME /Regulon.Reconstruct2 
 ```
 
@@ -598,7 +612,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Doing the regulon reconstruction job in batch mode.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Regulon.Reconstructs /bbh <bbh_EXPORT_csv.DIR> /genome <RegPrecise.genome.DIR> [/door <operon.door> /out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Regulon.Reconstructs /bbh <bbh_EXPORT_csv.DIR> /genome <RegPrecise.genome.DIR> [/door <operon.door> /out <outDIR>]
   Example:      MEME /Regulon.Reconstructs 
 ```
 
@@ -624,13 +638,17 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /bbh
+##### /genome
+##### /door
 ##### Help for command '/Regulon.Test':
 
 **Prototype**: MEME.CLI::Int32 RegulonTest(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Regulon.Test /in <meme.txt> /reg <genome.bbh.regulon.xml> /bbh <maps.bbh.Csv>
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Regulon.Test /in <meme.txt> /reg <genome.bbh.regulon.xml> /bbh <maps.bbh.Csv>
   Example:      MEME /Regulon.Test 
 ```
 
@@ -640,7 +658,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /RfamSites /source <sourceDIR> [/out <out.fastaDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /RfamSites /source <sourceDIR> [/out <out.fastaDIR>]
   Example:      MEME /RfamSites 
 ```
 
@@ -650,7 +668,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /seq.logo /in <meme.txt> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /seq.logo /in <meme.txt> [/out <outDIR>]
   Example:      MEME /seq.logo 
 ```
 
@@ -660,7 +678,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Motif iteration step 3
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Similarity.Union /in <preSource.fasta.DIR> /meme <meme.txt.DIR> /hits <similarity_hist.Csv> [/out <out.DIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Similarity.Union /in <preSource.fasta.DIR> /meme <meme.txt.DIR> /hits <similarity_hist.Csv> [/out <out.DIR>]
   Example:      MEME /Similarity.Union 
 ```
 
@@ -669,9 +687,33 @@ All of the command that available in this program has been list below:
 **Prototype**: MEME.CLI::Int32 SiteMASTScan(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
-  Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Site.MAST_Scan /mast <mast.xml> [/batch /out <out.csv>]
+  Information:  [MAST.Xml] -> [SimpleSegment]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Site.MAST_Scan /mast <mast.xml/DIR> [/batch /out <out.csv>]
   Example:      MEME /Site.MAST_Scan 
+```
+
+
+
+  Parameters information:
+```
+       [/batch]
+    Description:  If this parameter presented in the CLI, then the parameter /mast will be used as a DIR.
+
+    Example:      /batch ""
+
+
+```
+
+#### Accepted Types
+##### /batch
+##### Help for command '/Site.MAST_Scan.Batch':
+
+**Prototype**: MEME.CLI::Int32 SiteMASTScanBatch(Microsoft.VisualBasic.CommandLine.CommandLine)
+
+```
+  Information:  [MAST.Xml] -> [SimpleSegment]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Site.MAST_Scan /mast <mast.xml.DIR> [/out <out.csv.DIR> /num_threads <-1>]
+  Example:      MEME /Site.MAST_Scan.Batch 
 ```
 
 ##### Help for command '/Site.RegexScan':
@@ -680,7 +722,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Site.RegexScan /meme <meme.txt> /nt <nt.fasta> [/batch /out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Site.RegexScan /meme <meme.txt> /nt <nt.fasta> [/batch /out <out.csv>]
   Example:      MEME /Site.RegexScan 
 ```
 
@@ -690,7 +732,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /site.scan /query <LDM.xml> /subject <subject.fasta> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /site.scan /query <LDM.xml> /subject <subject.fasta> [/out <outDIR>]
   Example:      MEME /site.scan 
 ```
 
@@ -700,7 +742,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Generates the regulation information.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /SiteHits.Footprints /sites <MotifSiteHits.Csv> /bbh <bbh.Csv> /meme <meme.txt_DIR> /PTT <genome.PTT> /DOOR <DOOR.opr> [/queryHash /out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /SiteHits.Footprints /sites <MotifSiteHits.Csv> /bbh <bbh.Csv> /meme <meme.txt_DIR> /PTT <genome.PTT> /DOOR <DOOR.opr> [/queryHash /out <out.csv>]
   Example:      MEME /SiteHits.Footprints 
 ```
 
@@ -710,7 +752,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /SWTOM.Compares /query <query.meme.txt> /subject <subject.meme.txt> [/out <outDIR> /no-HTML]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /SWTOM.Compares /query <query.meme.txt> /subject <subject.meme.txt> [/out <outDIR> /no-HTML]
   Example:      MEME /SWTOM.Compares 
 ```
 
@@ -720,7 +762,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /SWTOM.Compares.Batch /query <query.meme.DIR> /subject <subject.meme.DIR> [/out <outDIR> /no-HTML]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /SWTOM.Compares.Batch /query <query.meme.DIR> /subject <subject.meme.DIR> [/out <outDIR> /no-HTML]
   Example:      MEME /SWTOM.Compares.Batch 
 ```
 
@@ -730,7 +772,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /SWTOM.LDM /query <ldm.xml> /subject <ldm.xml> [/out <outDIR> /method <pcc/ed/sw; default:=pcc>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /SWTOM.LDM /query <ldm.xml> /subject <ldm.xml> [/out <outDIR> /method <pcc/ed/sw; default:=pcc>]
   Example:      MEME /SWTOM.LDM 
 ```
 
@@ -740,7 +782,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /SWTOM.Query /query <meme.txt> [/out <outDIR> /method <pcc> /bits.level 1.6 /minW 6 /no-HTML]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /SWTOM.Query /query <meme.txt> [/out <outDIR> /method <pcc> /bits.level 1.6 /minW 6 /no-HTML]
   Example:      MEME /SWTOM.Query 
 ```
 
@@ -756,13 +798,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /no-HTML
 ##### Help for command '/SWTOM.Query.Batch':
 
 **Prototype**: MEME.CLI::Int32 SWTomQueryBatch(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /SWTOM.Query.Batch /query <meme.txt.DIR> [/out <outDIR> /SW-offset 0.6 /method <pcc> /bits.level 1.5 /minW 4 /SW-threshold 0.75 /tom-threshold 0.75 /no-HTML]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /SWTOM.Query.Batch /query <meme.txt.DIR> [/out <outDIR> /SW-offset 0.6 /method <pcc> /bits.level 1.5 /minW 4 /SW-threshold 0.75 /tom-threshold 0.75 /no-HTML]
   Example:      MEME /SWTOM.Query.Batch 
 ```
 
@@ -778,13 +822,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /no-HTML
 ##### Help for command '/Tom.Query':
 
 **Prototype**: MEME.CLI::Int32 TomQuery(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Tom.Query /query <ldm.xml/meme.txt> [/out <outDIR> /method <pcc/ed; default:=pcc> /cost <0.7> /threshold <0.65> /meme]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Tom.Query /query <ldm.xml/meme.txt> [/out <outDIR> /method <pcc/ed; default:=pcc> /cost <0.7> /threshold <0.65> /meme]
   Example:      MEME /Tom.Query 
 ```
 
@@ -794,7 +840,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Tom.Query.Batch /query <inDIR> [/out <outDIR> /method <pcc/ed; default:=pcc> /cost 0.7 /threshold <0.65>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Tom.Query.Batch /query <inDIR> [/out <outDIR> /method <pcc/ed; default:=pcc> /cost 0.7 /threshold <0.65>]
   Example:      MEME /Tom.Query.Batch 
 ```
 
@@ -804,7 +850,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /TomTOM /query <meme.txt> /subject <LDM.xml> [/out <outDIR> /method <pcc/ed; default:=pcc> /cost <0.7> /threshold <0.3>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /TomTOM /query <meme.txt> /subject <LDM.xml> [/out <outDIR> /method <pcc/ed; default:=pcc> /cost <0.7> /threshold <0.3>]
   Example:      MEME /TomTOM 
 ```
 
@@ -814,7 +860,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /TomTom.LDM /query <ldm.xml> /subject <ldm.xml> [/out <outDIR> /method <pcc/ed/sw; default:=sw> /cost <0.7> /threshold <0.65>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /TomTom.LDM /query <ldm.xml> /subject <ldm.xml> [/out <outDIR> /method <pcc/ed/sw; default:=sw> /cost <0.7> /threshold <0.65>]
   Example:      MEME /TomTom.LDM 
 ```
 
@@ -824,7 +870,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /TomTOM.Similarity /in <TOM_OUT.DIR> [/out <out.Csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /TomTOM.Similarity /in <TOM_OUT.DIR> [/out <out.Csv>]
   Example:      MEME /TomTOM.Similarity 
 ```
 
@@ -834,7 +880,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /TOMTOM.Similarity.Batch /in <inDIR> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /TOMTOM.Similarity.Batch /in <inDIR> [/out <out.csv>]
   Example:      MEME /TOMTOM.Similarity.Batch 
 ```
 
@@ -844,7 +890,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /TomTom.Sites.Groups /in <similarity.csv> /meme <meme.DIR> [/grep <regex> /out <out.DIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /TomTom.Sites.Groups /in <similarity.csv> /meme <meme.DIR> [/grep <regex> /out <out.DIR>]
   Example:      MEME /TomTom.Sites.Groups 
 ```
 
@@ -854,7 +900,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe /Trim.MastSite /in <mastSite.Csv> /locus <locus_tag> /correlations <DIR/name> [/out <out.csv> /cut <0.65>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe /Trim.MastSite /in <mastSite.Csv> /locus <locus_tag> /correlations <DIR/name> [/out <out.csv> /cut <0.65>]
   Example:      MEME /Trim.MastSite 
 ```
 
@@ -864,7 +910,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Genome wide step 2
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --build.Regulations /bbh <regprecise.bbhMapped.csv> /mast <mastSites.csv> [/cutoff <0.6> /out <out.csv> /sp <spName> /DOOR <genome.opr> /DOOR.extract]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --build.Regulations /bbh <regprecise.bbhMapped.csv> /mast <mastSites.csv> [/cutoff <0.6> /out <out.csv> /sp <spName> /DOOR <genome.opr> /DOOR.extract]
   Example:      MEME --build.Regulations 
 ```
 
@@ -880,13 +926,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /DOOR.extract
 ##### Help for command '--build.Regulations.From.Motifs':
 
 **Prototype**: MEME.CLI::Int32 BuildFromMotifSites(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --build.Regulations.From.Motifs /bbh <regprecise.bbhMapped.csv> /motifs <motifSites.csv> [/cutoff <0.6> /sp <spName> /out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --build.Regulations.From.Motifs /bbh <regprecise.bbhMapped.csv> /motifs <motifSites.csv> [/cutoff <0.6> /sp <spName> /out <out.csv>]
   Example:      MEME --build.Regulations.From.Motifs 
 ```
 
@@ -896,7 +944,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --CExpr.WGCNA /mods <CytoscapeNodes.txt> /genome <genome.DIR|*.PTT;*.fna> /out <DIR.out>
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --CExpr.WGCNA /mods <CytoscapeNodes.txt> /genome <genome.DIR|*.PTT;*.fna> /out <DIR.out>
   Example:      MEME --CExpr.WGCNA 
 ```
 
@@ -906,7 +954,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Download Regprecise database from Web API
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe Download.Regprecise [/work ./ /save <saveXml>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe Download.Regprecise [/work ./ /save <saveXml>]
   Example:      MEME Download.Regprecise 
 ```
 
@@ -916,7 +964,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --Dump.KEGG.Family /in <in.fasta> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --Dump.KEGG.Family /in <in.fasta> [/out <out.csv>]
   Example:      MEME --Dump.KEGG.Family 
 ```
 
@@ -932,13 +980,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /in
 ##### Help for command '--family.statics':
 
 **Prototype**: MEME.CLI::Int32 FamilyStatics(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --family.statics /sites <motifSites.csv> /mods <directory.kegg_modules>
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --family.statics /sites <motifSites.csv> /mods <directory.kegg_modules>
   Example:      MEME --family.statics 
 ```
 
@@ -948,7 +998,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --Get.Intergenic /PTT <genome.ptt> /nt <genome.fasta> [/o <out.fasta> /len 100 /strict]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --Get.Intergenic /PTT <genome.ptt> /nt <genome.fasta> [/o <out.fasta> /len 100 /strict]
   Example:      MEME --Get.Intergenic 
 ```
 
@@ -958,7 +1008,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --GetFasta /bbh <bbhh.csv> /id <subject_id> /regprecise <regprecise.fasta>
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --GetFasta /bbh <bbhh.csv> /id <subject_id> /regprecise <regprecise.fasta>
   Example:      MEME --GetFasta 
 ```
 
@@ -968,7 +1018,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --hits.diff /query <bbhh.csv> /subject <bbhh.csv> [/reverse]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --hits.diff /query <bbhh.csv> /subject <bbhh.csv> [/reverse]
   Example:      MEME --hits.diff 
 ```
 
@@ -978,7 +1028,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --Intersect.Max /query <bbhh.csv> /subject <bbhh.csv>
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --Intersect.Max /query <bbhh.csv> /subject <bbhh.csv>
   Example:      MEME --Intersect.Max 
 ```
 
@@ -988,7 +1038,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --logo.Batch -in <inDIR> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --logo.Batch -in <inDIR> [/out <outDIR>]
   Example:      MEME --logo.Batch 
 ```
 
@@ -998,7 +1048,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --mapped-Back /meme <meme.text> /mast <mast.xml> /ptt <genome.ptt> [/out <out.csv> /offset <10> /atg-dist <250>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --mapped-Back /meme <meme.text> /mast <mast.xml> /ptt <genome.ptt> [/out <out.csv> /offset <10> /atg-dist <250>]
   Example:      MEME --mapped-Back 
 ```
 
@@ -1008,7 +1058,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe mast.compile /mast <mast.xml> /ptt <genome.ptt> [/no-meme /no-regInfo /p-value 1e-3 /mast-ldm <DIR default:=GCModeller/Regprecise/MEME/MAST_LDM> /atg-dist 250]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe mast.compile /mast <mast.xml> /ptt <genome.ptt> [/no-meme /no-regInfo /p-value 1e-3 /mast-ldm <DIR default:=GCModeller/Regprecise/MEME/MAST_LDM> /atg-dist 250]
   Example:      MEME mast.compile 
 ```
 
@@ -1018,7 +1068,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Genome wide step 1
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe mast.compile.bulk /source <source_dir> [/ptt <genome.ptt> /atg-dist <500> /no-meme /no-regInfo /p-value 1e-3 /mast-ldm <DIR default:=GCModeller/Regprecise/MEME/MAST_LDM> /related.all]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe mast.compile.bulk /source <source_dir> [/ptt <genome.ptt> /atg-dist <500> /no-meme /no-regInfo /p-value 1e-3 /mast-ldm <DIR default:=GCModeller/Regprecise/MEME/MAST_LDM> /related.all]
   Example:      MEME mast.compile.bulk 
 ```
 
@@ -1034,13 +1084,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /no-meme
 ##### Help for command '--modules.regulates':
 
 **Prototype**: MEME.CLI::Int32 ModuleRegulates(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Exports the Venn diagram model for the module regulations.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --modules.regulates /in <virtualfootprints.csv> [/out <out.DIR> /mods <KEGG_modules.DIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --modules.regulates /in <virtualfootprints.csv> [/out <out.DIR> /mods <KEGG_modules.DIR>]
   Example:      MEME --modules.regulates 
 ```
 
@@ -1057,13 +1109,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /in
 ##### Help for command 'Motif.Locates':
 
 **Prototype**: MEME.CLI::Int32 MotifLocites(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe Motif.Locates -ptt <bacterial_genome.ptt> -meme <meme.txt> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe Motif.Locates -ptt <bacterial_genome.ptt> -meme <meme.txt> [/out <out.csv>]
   Example:      MEME Motif.Locates 
 ```
 
@@ -1072,8 +1126,8 @@ All of the command that available in this program has been list below:
 **Prototype**: MEME.CLI::Int32 MotifScan(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
-  Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe MotifScan -nt <nt.fasta> /motif <motifLDM.xml/LDM_Name/FamilyName> [/delta <default:80> /delta2 <default:70> /offSet <default:5> /out <saved.csv>]
+  Information:  Scan for the motif site by using fragment similarity.
+  Usage:        G:\GCModeller\manual\bin\MEME.exe MotifScan -nt <nt.fasta> /motif <motifLDM.xml/LDM_Name/FamilyName> [/delta <default:80> /delta2 <default:70> /offSet <default:5> /out <saved.csv>]
   Example:      MEME MotifScan 
 ```
 
@@ -1083,7 +1137,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Associates of the pathway regulation information for the predicted virtual footprint information.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --pathway.regulates -footprints <virtualfootprint.csv> /pathway <DIR.KEGG.Pathways> [/out <./PathwayRegulations/>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --pathway.regulates -footprints <virtualfootprint.csv> /pathway <DIR.KEGG.Pathways> [/out <./PathwayRegulations/>]
   Example:      MEME --pathway.regulates 
 ```
 
@@ -1093,7 +1147,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  The repository parameter is a directory path which is the regprecise database root directory in the GCModeller directory, if you didn't know how to set this value, please leave it blank.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe Regprecise.Compile [<repository>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe Regprecise.Compile [<repository>]
   Example:      MEME Regprecise.Compile 
 ```
 
@@ -1103,7 +1157,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Compiles for the regulators in the bacterial genome mapped on the regprecise database using bbh method.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe regulators.bbh /bbh <bbhDIR/bbh.index.Csv> [/save <save.csv> /direct /regulons /maps <genome.gb>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe regulators.bbh /bbh <bbhDIR/bbh.index.Csv> [/save <save.csv> /direct /regulons /maps <genome.gb>]
   Example:      MEME regulators.bbh 
 ```
 
@@ -1119,13 +1173,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /regulons
 ##### Help for command 'regulators.compile':
 
 **Prototype**: MEME.CLI::Int32 RegulatorsCompile()
 
 ```
   Information:  Regprecise regulators data source compiler.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe 
+  Usage:        G:\GCModeller\manual\bin\MEME.exe 
   Example:      MEME regulators.compile 
 ```
 
@@ -1135,7 +1191,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --site.Match /meme <meme.text> /mast <mast.xml> /out <out.csv> [/ptt <genome.ptt> /len <150,200,250,300,350,400,450,500>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --site.Match /meme <meme.text> /mast <mast.xml> /out <out.csv> [/ptt <genome.ptt> /len <150,200,250,300,350,400,450,500>]
   Example:      MEME --site.Match 
 ```
 
@@ -1151,13 +1207,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /len
 ##### Help for command '--site.Matches':
 
 **Prototype**: MEME.CLI::Int32 SiteMatches(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --site.Matches /meme <DIR.meme.text> /mast <DIR.mast.xml> /out <out.csv> [/ptt <genome.ptt>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --site.Matches /meme <DIR.meme.text> /mast <DIR.mast.xml> /out <out.csv> [/ptt <genome.ptt>]
   Example:      MEME --site.Matches 
 ```
 
@@ -1167,7 +1225,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Using this function for processing the meme text output from the tmod toolbox.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --site.Matches.text /meme <DIR.meme.text> /mast <DIR.mast.xml> /out <out.csv> [/ptt <genome.ptt> /fasta <original.fasta.DIR>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --site.Matches.text /meme <DIR.meme.text> /mast <DIR.mast.xml> /out <out.csv> [/ptt <genome.ptt> /fasta <original.fasta.DIR>]
   Example:      MEME --site.Matches.text 
 ```
 
@@ -1177,7 +1235,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Statics of the PCC correlation distribution of the regulation
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --site.stat /in <footprints.csv> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --site.stat /in <footprints.csv> [/out <out.csv>]
   Example:      MEME --site.stat 
 ```
 
@@ -1187,7 +1245,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --TCS.Module.Regulations /MiST2 <MiST2.xml> /footprint <footprints.csv> /Pathways <KEGG_Pathways.DIR>
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --TCS.Module.Regulations /MiST2 <MiST2.xml> /footprint <footprints.csv> /Pathways <KEGG_Pathways.DIR>
   Example:      MEME --TCS.Module.Regulations 
 ```
 
@@ -1197,7 +1255,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe --TCS.Regulations /TCS <DIR.TCS.csv> /modules <DIR.mod.xml> /regulations <virtualfootprint.csv>
+  Usage:        G:\GCModeller\manual\bin\MEME.exe --TCS.Regulations /TCS <DIR.TCS.csv> /modules <DIR.mod.xml> /regulations <virtualfootprint.csv>
   Example:      MEME --TCS.Regulations 
 ```
 
@@ -1207,7 +1265,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Associate the dip information with the Sigma 70 virtual footprints.
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe VirtualFootprint.DIP vf.csv <csv> dip.csv <csv>
+  Usage:        G:\GCModeller\manual\bin\MEME.exe VirtualFootprint.DIP vf.csv <csv> dip.csv <csv>
   Example:      MEME VirtualFootprint.DIP 
 ```
 
@@ -1217,7 +1275,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Download Regprecise database from REST API
-  Usage:        F:\GCModeller\GCModeller-x64\MEME.exe wGet.Regprecise [/repository-export <dir.export, default: ./> /updates]
+  Usage:        G:\GCModeller\manual\bin\MEME.exe wGet.Regprecise [/repository-export <dir.export, default: ./> /updates]
   Example:      MEME wGet.Regprecise 
 ```
 

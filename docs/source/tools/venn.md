@@ -1,10 +1,10 @@
 ---
 title: venn
 tags: [maunal, tools]
-date: 6/13/2016 12:26:46 AM
+date: 7/7/2016 6:52:14 PM
 ---
 # GCModeller [version 1.3.11.2]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/venn.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/venn.exe
 **Root namespace**: LANS.SystemsBiology.AnalysisTools.DataVisualization.VennDiagramTools.CLI
 
 
@@ -22,7 +22,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Draw the venn diagram from a csv data file, you can specific the diagram drawing options from this command switch value. The generated venn dragram will be saved as tiff file format.
-  Usage:        F:\GCModeller\GCModeller-x64\venn.exe .Draw -i <csv_file> [-t <diagram_title> -o <_diagram_saved_path> -s <partitions_option_pairs> -rbin <r_bin_directory>]
+  Usage:        G:\GCModeller\manual\bin\venn.exe .Draw -i <csv_file> [-t <diagram_title> -o <_diagram_saved_path> -s <partitions_option_pairs> -rbin <r_bin_directory>]
   Example:      venn .Draw .Draw -i /home/xieguigang/Desktop/genomes.csv -t genome-compared -o ~/Desktop/xcc8004.tiff -s "Xcc8004,blue,Xcc 8004;ecoli,green,Ecoli. K12;pa14,yellow,PA14;ftn,black,FTN;aciad,red,ACIAD"
 ```
 
@@ -67,3 +67,9 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### -i
+##### -t
+##### -o
+##### -s
+##### -rbin

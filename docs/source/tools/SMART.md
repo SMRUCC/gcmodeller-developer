@@ -1,11 +1,11 @@
 ---
 title: SMART
 tags: [maunal, tools]
-date: 6/13/2016 12:26:44 AM
+date: 7/7/2016 6:52:06 PM
 ---
 # GCModeller [version 1.123.0.0]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/SMART.exe
-**Root namespace**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/SMART.exe
+**Root namespace**: ProteinTools.SMART.CLI
 
 
 All of the command that available in this program has been list below:
@@ -33,31 +33,31 @@ All of the command that available in this program has been list below:
 --------------------------
 ##### Help for command '--align':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 Align(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 Align(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --align /query <query.csv> /subject <subject.csv> [/out <out.DIR> /inst]
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --align /query <query.csv> /subject <subject.csv> [/out <out.DIR> /inst]
   Example:      SMART --align 
 ```
 
 ##### Help for command '--align.family':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FamilyAlign(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 FamilyAlign(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --align.family /In <In.bbh.csv> /query <query-pfam.csv> /subject <subject-pfam.csv> [/out <out.DIR> /mp <mp-align:0.65> /lev <lev-align:0.65>]
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --align.family /In <In.bbh.csv> /query <query-pfam.csv> /subject <subject-pfam.csv> [/out <out.DIR> /mp <mp-align:0.65> /lev <lev-align:0.65>]
   Example:      SMART --align.family 
 ```
 
 ##### Help for command '-build_cache':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 BuildCache(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 BuildCache(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe -build_cache -i <fsa_file> [-o <export_file> -db <cdd_db_name> -cdd <cdd_db_path> -grep_script <script>]
+  Usage:        G:\GCModeller\manual\bin\SMART.exe -build_cache -i <fsa_file> [-o <export_file> -db <cdd_db_name> -cdd <cdd_db_path> -grep_script <script>]
   Example:      SMART -build_cache 
 ```
 
@@ -73,33 +73,35 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### -cdd
 ##### Help for command '-buildsmart':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 BuildSmart(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 BuildSmart(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe 
+  Usage:        G:\GCModeller\manual\bin\SMART.exe 
   Example:      SMART -buildsmart 
 ```
 
 ##### Help for command 'convert':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 Convert(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 Convert(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe convert -i <input_file> [-o <xml_file>]
+  Usage:        G:\GCModeller\manual\bin\SMART.exe convert -i <input_file> [-o <xml_file>]
   Example:      SMART convert 
 ```
 
 ##### Help for command 'export':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 Export(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 Export(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe export -keyword <keyword_list> [-m <any/all>] -o <export_file> [-d <db_name> -casesense <T/F>]
+  Usage:        G:\GCModeller\manual\bin\SMART.exe export -keyword <keyword_list> [-m <any/all>] -o <export_file> [-d <db_name> -casesense <T/F>]
   Example:      SMART export 
 ```
 
@@ -120,33 +122,36 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### -d
+##### -keyword
 ##### Help for command '--Export.Domains':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 ExportRegpreciseDomains(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 ExportRegpreciseDomains(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Export.Domains /in <pfam-string.csv>
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --Export.Domains /in <pfam-string.csv>
   Example:      SMART --Export.Domains 
 ```
 
 ##### Help for command '--Export.Pfam-String':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 ExportPfamString(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 ExportPfamString(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Export.Pfam-String /in <blast_out.txt>
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --Export.Pfam-String /in <blast_out.txt>
   Example:      SMART --Export.Pfam-String 
 ```
 
 ##### Help for command '--Family.Align':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FamilyClassify(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 FamilyClassify(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Family Annotation by MPAlignment
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Family.Align /query <pfam-string.csv> [/threshold 0.65 /mp 0.65 /Name <null>]
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --Family.Align /query <pfam-string.csv> [/threshold 0.65 /mp 0.65 /Name <null>]
   Example:      SMART --Family.Align 
 ```
 
@@ -162,33 +167,35 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /Name
 ##### Help for command '--Family.Domains':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FamilyDomains(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 FamilyDomains(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Build the Family database for the protein family annotation by MPAlignment.
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Family.Domains /regprecise <regulators.fasta> /pfam <pfam-string.csv>
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --Family.Domains /regprecise <regulators.fasta> /pfam <pfam-string.csv>
   Example:      SMART --Family.Domains 
 ```
 
 ##### Help for command '--Family.Stat':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FamilyStat(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 FamilyStat(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Family.Stat /in <anno_out.csv>
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --Family.Stat /in <anno_out.csv>
   Example:      SMART --Family.Stat 
 ```
 
 ##### Help for command 'grep':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 Grep(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 Grep(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  The gene id in the blast output log file are not well format for reading and program processing, so before you generate the venn diagram you should call this command to parse the gene id from the log file. You can also done this id parsing job using other tools.
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe grep -i <xml_log_file> -q <script_statements> -h <script_statements>
+  Usage:        G:\GCModeller\manual\bin\SMART.exe grep -i <xml_log_file> -q <script_statements> -h <script_statements>
   Example:      SMART grep grep -i C:\Users\WORKGROUP\Desktop\blast_xml_logs\1__8004_ecoli_prot.log.xml -q "tokens | 4" -h "'tokens | 2';'tokens ' ' 0'"
 ```
 
@@ -221,43 +228,46 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### -q
+##### -h
 ##### Help for command '--manual-Build':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 ManualBuild(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 ManualBuild(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --manual-Build /pfam-string <pfam-string.csv> /name <familyName>
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --manual-Build /pfam-string <pfam-string.csv> /name <familyName>
   Example:      SMART --manual-Build 
 ```
 
 ##### Help for command '--MPAlignment':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 SBHAlignment(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 SBHAlignment(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --MPAlignment /sbh <sbh.csv> /query <pfam-string.csv> /subject <pfam-string.csv> [/mp <0.65> /out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --MPAlignment /sbh <sbh.csv> /query <pfam-string.csv> /subject <pfam-string.csv> [/mp <0.65> /out <out.csv>]
   Example:      SMART --MPAlignment 
 ```
 
 ##### Help for command 'pure_domain':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FiltePureDomain(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 FiltePureDomain(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe pure_domain -i <input_smart_log> -o <output_file>
+  Usage:        G:\GCModeller\manual\bin\SMART.exe pure_domain -i <input_smart_log> -o <output_file>
   Example:      SMART pure_domain 
 ```
 
 ##### Help for command '--SelfAlign':
 
-**Prototype**: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 SelfAlign(Microsoft.VisualBasic.CommandLine.CommandLine)
+**Prototype**: ProteinTools.SMART.CLI::Int32 SelfAlign(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --SelfAlign /query <pfam-string.csv> /subject <subject.csv> /aln <mpalignment.csv> [/lstID <lstID.txt> /mp <0.65> /id <id>]
+  Usage:        G:\GCModeller\manual\bin\SMART.exe --SelfAlign /query <pfam-string.csv> /subject <subject.csv> /aln <mpalignment.csv> [/lstID <lstID.txt> /mp <0.65> /id <id>]
   Example:      SMART --SelfAlign 
 ```
 
@@ -278,3 +288,6 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /lstID
+##### /id

@@ -1,10 +1,10 @@
 ---
 title: Shoal
 tags: [maunal, tools]
-date: 6/13/2016 12:26:44 AM
+date: 7/7/2016 6:52:04 PM
 ---
 # ShoalShell [version 1.2.258.2033]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/Shoal.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/Shoal.exe
 **Root namespace**: Microsoft.VisualBasic.Shoal.CLI
 
 
@@ -31,7 +31,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Start the shoal shell in debug output mode.
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe /debug listener_port <listen_port> [-work <working_Dir>]
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe /debug listener_port <listen_port> [-work <working_Dir>]
   Example:      Shoal /debug 
 ```
 
@@ -41,7 +41,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Execute one script line, this command is useful for the shoal API development and debugging.
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe :: <scriptline>
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe :: <scriptline>
   Example:      Shoal :: shoal :: "hello world!" -> msgbox title "This is a hello world tesing example!"
 ```
 
@@ -51,7 +51,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Start the shoal shell in the current directory, not using the directory in the profile data.
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe 
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe 
   Example:      Shoal ~ 
 ```
 
@@ -61,7 +61,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe 
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe 
   Example:      Shoal --logs.show 
 ```
 
@@ -71,7 +71,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Register the shellscript API module assembly DLL or assembly exe file to the shellscript type registry.
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe -register_modules -path <assemnly_dll_file> [-module_name <string_name>]
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe -register_modules -path <assemnly_dll_file> [-module_name <string_name>]
   Example:      Shoal -register_modules 
 ```
 
@@ -92,13 +92,16 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### -path
+##### -module_name
 ##### Help for command '-scan.plugins':
 
 **Prototype**: Microsoft.VisualBasic.Shoal.CLI::Int32 ScanPlugins(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  Scanning all of the avaliable shoal plugin modules in the specific directory and install all of them into the shoal registry.
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe -scan.plugins -dir <dir>[ -ext *.*/*.dll/*.exe/*.lib /top_only /clean]
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe -scan.plugins -dir <dir>[ -ext *.*/*.dll/*.exe/*.lib /top_only /clean]
   Example:      Shoal -scan.plugins -scan.plugins -dir ./ -ext *.dll
 ```
 
@@ -108,7 +111,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Setting up the shoal environment variables, you can using var command to view all of the avaliable variable in the shoal shell.
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe set <var_Name> <string_value>
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe set <var_Name> <string_value>
   Example:      Shoal set set lastdirasinit true
 ```
 
@@ -118,7 +121,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Start the shoal shell using the user custom data.
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe -start -init_dir <inits_dir> -registry <regustry_xml> -imports <dll_paths>
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe -start -init_dir <inits_dir> -registry <regustry_xml> -imports <dll_paths>
   Example:      Shoal -start 
 ```
 
@@ -128,7 +131,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Get the environment variable value in the shoal shell, if a variable name is not specific, then the shoal will list all of the variable value in shoal.
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe var [<var_Name>]
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe var [<var_Name>]
   Example:      Shoal var var registry_location
 ```
 
@@ -138,7 +141,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Print the version of the shoal shell in the console.
-  Usage:        F:\GCModeller\GCModeller-x64\Shoal.exe 
+  Usage:        G:\GCModeller\manual\bin\Shoal.exe 
   Example:      Shoal --version 
 ```
 

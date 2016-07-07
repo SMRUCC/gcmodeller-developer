@@ -1,10 +1,10 @@
 ---
 title: RegPrecise
 tags: [maunal, tools]
-date: 6/13/2016 12:26:41 AM
+date: 7/7/2016 6:51:53 PM
 ---
 # GCModeller [version 1.0.0.0]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/RegPrecise.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/RegPrecise.exe
 **Root namespace**: RegPrecise.CLI
 
 
@@ -52,7 +52,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Build.Operons /bbh <bbh.csv> /PTT <genome.PTT> /TF-bbh <bbh.csv> [/tfHit_hash /out <out.csv> /regprecise <regprecise.Xml>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Build.Operons /bbh <bbh.csv> /PTT <genome.PTT> /TF-bbh <bbh.csv> [/tfHit_hash /out <out.csv> /regprecise <regprecise.Xml>]
   Example:      RegPrecise /Build.Operons 
 ```
 
@@ -70,13 +70,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /bbh
 ##### Help for command '/Build.Regulons.Batch':
 
 **Prototype**: RegPrecise.CLI::Int32 RegulonBatchBuilder(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Build.Regulons.Batch /bbh <bbh.DIR> /PTT <PTT.DIR> /tf-bbh <tf-bbh.DIR> /regprecise <regprecise.Xml> [/num_threads <-1> /hits_hash /out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Build.Regulons.Batch /bbh <bbh.DIR> /PTT <PTT.DIR> /tf-bbh <tf-bbh.DIR> /regprecise <regprecise.Xml> [/num_threads <-1> /hits_hash /out <outDIR>]
   Example:      RegPrecise /Build.Regulons.Batch 
 ```
 
@@ -89,7 +91,7 @@ All of the command that available in this program has been list below:
                i) are orthologous; 
                ii) have cantiodate transcription factor binding sites. 
                Collect all linked components. Two operons from two different genomes are called orthologous if they share at least one orthologous gene.
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /CORN /in <regulons.DIR> /motif-sites <motiflogs.csv.DIR> /sites <motiflogs.csv> /ref <regulons.Csv> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /CORN /in <regulons.DIR> /motif-sites <motiflogs.csv.DIR> /sites <motiflogs.csv> /ref <regulons.Csv> [/out <out.csv>]
   Example:      RegPrecise /CORN 
 ```
 
@@ -99,7 +101,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /CORN.Batch /sites <motiflogs.gff.sites.Csv.DIR> /regulons <regprecise.regulons.csv.DIR> [/name <name> /out <outDIR> /num_threads <-1>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /CORN.Batch /sites <motiflogs.gff.sites.Csv.DIR> /regulons <regprecise.regulons.csv.DIR> [/name <name> /out <outDIR> /num_threads <-1> /null-regprecise]
   Example:      RegPrecise /CORN.Batch 
 ```
 
@@ -107,12 +109,75 @@ All of the command that available in this program has been list below:
 
   Parameters information:
 ```
-       [/name]
+    /sites
+    Description:  
+    Example:      /sites ""
+
+/regulons
+    Description:  
+    Example:      /regulons ""
+
+   [/name]
     Description:  
 
     Example:      /name ""
 
 
+```
+
+#### Accepted Types
+##### /sites
+**Decalre**:  _SMRUCC.genomics.Analysis.SequenceTools.SequencePatterns.MotifLog_
+Example: 
+```json
+{
+    "Complement": "System.String",
+    "Ends": 0,
+    "ID": "System.String",
+    "SequenceData": "System.String",
+    "Start": 0,
+    "Strand": "System.String",
+    "ATGDist": 0,
+    "BiologicalProcess": "System.String",
+    "Family": "System.String",
+    "Location": "System.String",
+    "Regulog": "System.String",
+    "Taxonomy": "System.String",
+    "tag": "System.String",
+    "tags": [
+        
+    ]
+}
+```
+
+##### /regulons
+**Decalre**:  _SMRUCC.genomics.Data.Regprecise.RegPreciseOperon_
+Example: 
+```json
+{
+    "BiologicalProcess": "System.String",
+    "Effector": "System.String",
+    "Operon": [
+        "System.String"
+    ],
+    "Pathway": "System.String",
+    "Regulators": [
+        "System.String"
+    ],
+    "Strand": "System.String",
+    "TF_trace": "System.String",
+    "bbh": [
+        "System.String"
+    ],
+    "source": "System.String"
+}
+```
+
+##### /name
+**Decalre**:  _System.String_
+Example: 
+```json
+"System.String"
 ```
 
 ##### Help for command '/CORN.thread':
@@ -121,8 +186,166 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /CORN.thread /hit <regulons.Csv> /hit-sites <motiflogs.csv> /sites <query.motiflogs.csv> /ref <query.regulons.Csv> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /CORN.thread /hit <regulons.Csv> /hit-sites <motiflogs.csv> /sites <query.motiflogs.csv> /ref <query.regulons.Csv> [/null-regprecise /out <out.csv>]
   Example:      RegPrecise /CORN.thread 
+```
+
+
+
+  Parameters information:
+```
+    /hit
+    Description:  
+    Example:      /hit ""
+
+/hit-sites
+    Description:  
+    Example:      /hit-sites ""
+
+/sites
+    Description:  
+    Example:      /sites ""
+
+/ref
+    Description:  
+    Example:      /ref ""
+
+   [/null-regprecise]
+    Description:  Does the motif log data have the RegPrecise database value? If this parameter is presented that which it means the site data have no RegPrecise data.
+
+    Example:      /null-regprecise ""
+
+   [/out]
+    Description:  
+    Example:      /out ""
+
+
+```
+
+#### Accepted Types
+##### /hit
+**Decalre**:  _SMRUCC.genomics.Data.Regprecise.RegPreciseOperon_
+Example: 
+```json
+{
+    "BiologicalProcess": "System.String",
+    "Effector": "System.String",
+    "Operon": [
+        "System.String"
+    ],
+    "Pathway": "System.String",
+    "Regulators": [
+        "System.String"
+    ],
+    "Strand": "System.String",
+    "TF_trace": "System.String",
+    "bbh": [
+        "System.String"
+    ],
+    "source": "System.String"
+}
+```
+
+##### /hit-sites
+**Decalre**:  _SMRUCC.genomics.Analysis.SequenceTools.SequencePatterns.MotifLog_
+Example: 
+```json
+{
+    "Complement": "System.String",
+    "Ends": 0,
+    "ID": "System.String",
+    "SequenceData": "System.String",
+    "Start": 0,
+    "Strand": "System.String",
+    "ATGDist": 0,
+    "BiologicalProcess": "System.String",
+    "Family": "System.String",
+    "Location": "System.String",
+    "Regulog": "System.String",
+    "Taxonomy": "System.String",
+    "tag": "System.String",
+    "tags": [
+        
+    ]
+}
+```
+
+##### /sites
+**Decalre**:  _SMRUCC.genomics.Analysis.SequenceTools.SequencePatterns.MotifLog_
+Example: 
+```json
+{
+    "Complement": "System.String",
+    "Ends": 0,
+    "ID": "System.String",
+    "SequenceData": "System.String",
+    "Start": 0,
+    "Strand": "System.String",
+    "ATGDist": 0,
+    "BiologicalProcess": "System.String",
+    "Family": "System.String",
+    "Location": "System.String",
+    "Regulog": "System.String",
+    "Taxonomy": "System.String",
+    "tag": "System.String",
+    "tags": [
+        
+    ]
+}
+```
+
+##### /ref
+**Decalre**:  _SMRUCC.genomics.Data.Regprecise.RegPreciseOperon_
+Example: 
+```json
+{
+    "BiologicalProcess": "System.String",
+    "Effector": "System.String",
+    "Operon": [
+        "System.String"
+    ],
+    "Pathway": "System.String",
+    "Regulators": [
+        "System.String"
+    ],
+    "Strand": "System.String",
+    "TF_trace": "System.String",
+    "bbh": [
+        "System.String"
+    ],
+    "source": "System.String"
+}
+```
+
+##### /null-regprecise
+**Decalre**:  _System.Boolean_
+Example: 
+```json
+true
+```
+
+##### /out
+**Decalre**:  _SMRUCC.genomics.Analysis.SequenceTools.SequencePatterns.MotifLog_
+Example: 
+```json
+{
+    "Complement": "System.String",
+    "Ends": 0,
+    "ID": "System.String",
+    "SequenceData": "System.String",
+    "Start": 0,
+    "Strand": "System.String",
+    "ATGDist": 0,
+    "BiologicalProcess": "System.String",
+    "Family": "System.String",
+    "Location": "System.String",
+    "Regulog": "System.String",
+    "Taxonomy": "System.String",
+    "tag": "System.String",
+    "tags": [
+        
+    ]
+}
 ```
 
 ##### Help for command '/DOOR.Merge':
@@ -131,7 +354,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /DOOR.Merge /in <operon.csv> /DOOR <genome.opr> [/out <out.opr>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /DOOR.Merge /in <operon.csv> /DOOR <genome.opr> [/out <out.opr>]
   Example:      RegPrecise /DOOR.Merge 
 ```
 
@@ -141,7 +364,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Download.Motifs /imports <RegPrecise.DIR> [/export <EXPORT_DIR>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Download.Motifs /imports <RegPrecise.DIR> [/export <EXPORT_DIR>]
   Example:      RegPrecise /Download.Motifs 
 ```
 
@@ -151,7 +374,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Download Regprecise database from Web API
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe Download.Regprecise [/work ./ /save <saveXml>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe Download.Regprecise [/work ./ /save <saveXml>]
   Example:      RegPrecise /Download.Regprecise 
 ```
 
@@ -161,7 +384,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Effector.FillNames /in <effectors.csv> /compounds <metacyc.compounds> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Effector.FillNames /in <effectors.csv> /compounds <metacyc.compounds> [/out <out.csv>]
   Example:      RegPrecise /Effector.FillNames 
 ```
 
@@ -171,7 +394,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Exports all of the fasta sequence of the TF regulator from the download RegPrecsie FASTA database.
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Export.Regulators /imports <regprecise.downloads.DIR> /Fasta <regprecise.fasta> [/locus-out /out <out.fasta>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Export.Regulators /imports <regprecise.downloads.DIR> /Fasta <regprecise.fasta> [/locus-out /out <out.fasta>]
   Example:      RegPrecise /Export.Regulators 
 ```
 
@@ -187,13 +410,15 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### /locus-out
 ##### Help for command '/Family.Hits':
 
 **Prototype**: RegPrecise.CLI::Int32 FamilyHits(Microsoft.VisualBasic.CommandLine.CommandLine)
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Family.Hits /bbh <bbh.csv> [/regprecise <RegPrecise.Xml> /pfamKey <query.pfam-string> /out <out.DIR>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Family.Hits /bbh <bbh.csv> [/regprecise <RegPrecise.Xml> /pfamKey <query.pfam-string> /out <out.DIR>]
   Example:      RegPrecise /Family.Hits 
 ```
 
@@ -203,7 +428,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Download protein fasta sequence from KEGG database.
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe Fasta.Downloads /source <sourceDIR> [/out <outDIR> /keggTools <kegg.exe>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe Fasta.Downloads /source <sourceDIR> [/out <outDIR> /keggTools <kegg.exe>]
   Example:      RegPrecise /Fasta.Downloads 
 ```
 
@@ -213,7 +438,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Fetches /ncbi <all_gbk.DIR> /imports <inDIR> /out <outDIR>
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Fetches /ncbi <all_gbk.DIR> /imports <inDIR> /out <outDIR>
   Example:      RegPrecise /Fetches 
 ```
 
@@ -223,7 +448,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Fetches.Thread /gbk <gbkDIR> /query <query.txt> /out <outDIR>
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Fetches.Thread /gbk <gbkDIR> /query <query.txt> /out <outDIR>
   Example:      RegPrecise /Fetches.Thread 
 ```
 
@@ -233,7 +458,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Gets.Sites.Genes /in <tf.bbh.csv> /sites <motiflogs.csv> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Gets.Sites.Genes /in <tf.bbh.csv> /sites <motiflogs.csv> [/out <out.csv>]
   Example:      RegPrecise /Gets.Sites.Genes 
 ```
 
@@ -243,7 +468,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /heap.supports /in <inDIR> [/out <out.Csv> /T /l]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /heap.supports /in <inDIR> [/out <out.Csv> /T /l]
   Example:      RegPrecise /heap.Supports 
 ```
 
@@ -253,7 +478,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /install.motifs /imports <motifs.DIR>
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /install.motifs /imports <motifs.DIR>
   Example:      RegPrecise /install.motifs 
 ```
 
@@ -263,7 +488,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Maps.Effector /imports <RegPrecise.DIR> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Maps.Effector /imports <RegPrecise.DIR> [/out <out.csv>]
   Example:      RegPrecise /Maps.Effector 
 ```
 
@@ -273,7 +498,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Merge.CORN /in <inDIR> [/out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Merge.CORN /in <inDIR> [/out <outDIR>]
   Example:      RegPrecise /Merge.CORN 
 ```
 
@@ -283,7 +508,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Merge.RegPrecise.Fasta [/in <inDIR> /out outDIR /offline]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Merge.RegPrecise.Fasta [/in <inDIR> /out outDIR /offline]
   Example:      RegPrecise /Merge.RegPrecise.Fasta 
 ```
 
@@ -293,7 +518,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Prot_Motifs.EXPORT.pfamString /in <motifs.json> /PTT <genome.ptt> [/out <pfam-string.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Prot_Motifs.EXPORT.pfamString /in <motifs.json> /PTT <genome.ptt> [/out <pfam-string.csv>]
   Example:      RegPrecise /Prot_Motifs.EXPORT.pfamString 
 ```
 
@@ -303,7 +528,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Prot_Motifs.PfamString /in <RegPrecise.Download_DIR> [/fasta <RegPrecise.fasta> /out <pfam-string.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Prot_Motifs.PfamString /in <RegPrecise.Download_DIR> [/fasta <RegPrecise.fasta> /out <pfam-string.csv>]
   Example:      RegPrecise /Prot_Motifs.PfamString 
 ```
 
@@ -313,7 +538,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Download protein domain motifs structures from KEGG ssdb.
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /ProtMotifs.Downloads /source <source.DIR> [/kegg.Tools <./kegg.exe>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /ProtMotifs.Downloads /source <source.DIR> [/kegg.Tools <./kegg.exe>]
   Example:      RegPrecise /ProtMotifs.Downloads 
 ```
 
@@ -323,7 +548,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Repository.Fetch /imports <RegPrecise.Xml> /genbank <NCBI_Genbank_DIR> [/full /out <outDIR>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Repository.Fetch /imports <RegPrecise.Xml> /genbank <NCBI_Genbank_DIR> [/full /out <outDIR>]
   Example:      RegPrecise /Repository.Fetch 
 ```
 
@@ -333,7 +558,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Rfam.Regulates /in <RegPrecise.regulons.csv> /rfam <rfam_search.csv> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Rfam.Regulates /in <RegPrecise.regulons.csv> /rfam <rfam_search.csv> [/out <out.csv>]
   Example:      RegPrecise /Rfam.Regulates 
 ```
 
@@ -343,7 +568,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Select.TF.BBH /bbh <bbh.csv> /imports <RegPrecise.downloads.DIR> [/out <out.bbh.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Select.TF.BBH /bbh <bbh.csv> /imports <RegPrecise.downloads.DIR> [/out <out.bbh.csv>]
   Example:      RegPrecise /Select.TF.BBH 
 ```
 
@@ -353,7 +578,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /Select.TF.Pfam-String /pfam-string <RegPrecise.pfam-string.csv> /imports <regprecise.downloads.DIR> [/out <TF.pfam-string.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /Select.TF.Pfam-String /pfam-string <RegPrecise.pfam-string.csv> /imports <regprecise.downloads.DIR> [/out <TF.pfam-string.csv>]
   Example:      RegPrecise /Select.TF.Pfam-String 
 ```
 
@@ -363,7 +588,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  
-  Usage:        F:\GCModeller\GCModeller-x64\RegPrecise.exe /siRNA.Maps /in <siRNA.csv> /hits <blastn.csv> [/out <out.csv>]
+  Usage:        G:\GCModeller\manual\bin\RegPrecise.exe /siRNA.Maps /in <siRNA.csv> /hits <blastn.csv> [/out <out.csv>]
   Example:      RegPrecise /siRNA.Maps 
 ```
 

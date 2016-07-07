@@ -1,10 +1,10 @@
 ---
 title: Settings
 tags: [maunal, tools]
-date: 6/13/2016 12:26:43 AM
+date: 7/7/2016 6:52:02 PM
 ---
 # Settings [version 1.0.0.0]
-**Module AssemblyName**: file:///F:/GCModeller/GCModeller-x64/Settings.exe
+**Module AssemblyName**: file:///G:/GCModeller/manual/bin/Settings.exe
 **Root namespace**: GCModeller.Configuration.CLI
 
 
@@ -23,7 +23,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Setting up the configuration data node.
-  Usage:        F:\GCModeller\GCModeller-x64\Settings.exe Set <varName> <value>
+  Usage:        G:\GCModeller\manual\bin\Settings.exe Set <varName> <value>
   Example:      Settings Set Set java /usr/lib/java/java.bin
 ```
 
@@ -33,7 +33,7 @@ All of the command that available in this program has been list below:
 
 ```
   Information:  Gets the settings value.
-  Usage:        F:\GCModeller\GCModeller-x64\Settings.exe var [varName]
+  Usage:        G:\GCModeller\manual\bin\Settings.exe var [varName]
   Example:      Settings var 
 ```
 
@@ -49,3 +49,5 @@ All of the command that available in this program has been list below:
 
 ```
 
+#### Accepted Types
+##### [VarName]
