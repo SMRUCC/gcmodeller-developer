@@ -1,0 +1,12 @@
+*.cache 
+*.sqlite
+*.suo
+
+.vs/slnx.sqlite
+App/
+publish/
+*.sqlite-journal
+
+node_modules/
+obj/
+*.dll
