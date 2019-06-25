@@ -4,5 +4,5 @@
 <?vb $community_active = "active" ?>
 <?vb $div_push = "push" ?>
 <?vb
-    Dim $content As <%= ./community.resource.vbhtml %>
+    Dim $content As <%= ./articles.resource.vbhtml %>
 ?>
