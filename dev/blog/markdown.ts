@@ -1,4 +1,4 @@
-﻿namespace vanillavb.app {
+﻿namespace blog {
 
     /**
      * Website markdown to html render

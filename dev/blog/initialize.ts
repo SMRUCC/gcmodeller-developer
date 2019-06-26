@@ -1,6 +1,6 @@
 ﻿/// <reference path="markdown.ts" />
 
-namespace vanillavb.app {
+namespace blog {
 
     let config: markedjs.option = markedjs.option.Defaults;
     let vbcodeStyle: vscode.CSS = vscode.VisualStudio;
