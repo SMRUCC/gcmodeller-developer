@@ -131,6 +131,21 @@ var blog;
         return h1.innerText;
     }
     blog.updateArticle = updateArticle;
+    var dateTagPattern = /[<][!][-]{2,}\s+\d+([-]\d+){2}\s+[-]{2,}>/g;
+    function tryParseDate(markdown) {
+        var dateFind = markdown.match(dateTagPattern);
+        var dateStr = dateFind ? dateFind[0] : "";
+        dateFind = dateStr.match(/\d+([-]\d+){2}/g);
+        dateStr = dateFind ? dateFind[0] : null;
+        var time;
+        if (dateStr) {
+            time = new Date(Date.parse(dateStr));
+        }
+        else {
+            time = new Date();
+        }
+        return time;
+    }
     /**
      * Render a given markdown document to html and display on the document body
      *
@@ -148,9 +163,7 @@ var blog;
             else {
                 html = marked(markdown, config);
             }
-            var date = markdown.match(/[<][!][-]{2,}\s+\d+([-]\d+){2}\s+[-]{2,}>/g)[0];
-            var time = new Date(Date.parse(date.match(/\d+([-]\d+){2}/g)[0]));
-            var title = blog.updateArticle(html, time);
+            var title = blog.updateArticle(html, tryParseDate(markdown));
             // push stack
             var frame = new NamedValue(title, $ts.location.hash({
                 trimprefix: false

@@ -73,6 +73,26 @@ namespace blog {
         return h1.innerText;
     }
 
+    const dateTagPattern: RegExp = /[<][!][-]{2,}\s+\d+([-]\d+){2}\s+[-]{2,}>/g;
+
+    function tryParseDate(markdown: string): Date {
+        let dateFind = markdown.match(dateTagPattern);
+        let dateStr = dateFind ? dateFind[0] : "";
+
+        dateFind = dateStr.match(/\d+([-]\d+){2}/g);
+        dateStr = dateFind ? dateFind[0] : null;
+
+        let time: Date;
+
+        if (dateStr) {
+            time = new Date(Date.parse(dateStr));
+        } else {
+            time = new Date();
+        }
+
+        return time;
+    }
+
     /**
      * Render a given markdown document to html and display on the document body
      * 
@@ -93,9 +113,7 @@ namespace blog {
                 html = marked(markdown, config);
             }
 
-            let date: string = markdown.match(/[<][!][-]{2,}\s+\d+([-]\d+){2}\s+[-]{2,}>/g)[0];
-            let time: Date = new Date(Date.parse(date.match(/\d+([-]\d+){2}/g)[0]));
-            let title: string = blog.updateArticle(html, time);
+            let title: string = blog.updateArticle(html, tryParseDate(markdown));
             // push stack
             let frame = new NamedValue<string>(title, $ts.location.hash(<Internal.hashArgument>{
                 trimprefix: false
