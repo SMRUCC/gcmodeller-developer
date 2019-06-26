@@ -10,3 +10,5 @@ publish/
 node_modules/
 obj/
 *.dll
+*.lock
+*.ide
