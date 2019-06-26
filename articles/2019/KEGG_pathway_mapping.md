@@ -1,3 +1,13 @@
 # KEGG pathway annotation
 
 <!-- 2018-10-02 -->
+
+<iframe src="https://player.bilibili.com/player.html?aid=34529020&cid=60489773&page=1" 
+			scrolling="no" 
+			border="0" 
+			frameborder="no" 
+			framespacing="0" 
+			allowfullscreen="true" 
+			width="720" 
+			height="480"> 
+		</iframe>
