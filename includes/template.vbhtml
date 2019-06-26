@@ -18,7 +18,7 @@
 		<div class="row">
 		
 		<p id="goback">
-<img src="css/back.svg" style="width: 32px; border: none; border: radius 0px; box-shadow: none; " /> <span id="previous-article-title"></span>
+<i class="fa fa-arrow-left" aria-hidden="true"></i> <span id="previous-article-title"></span>
 </p>
 		</div>
 		<!-- 添加上这个<div>标签之后可以防止在高度比较低的时候出现错位的现象 -->
