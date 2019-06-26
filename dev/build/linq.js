@@ -3215,6 +3215,133 @@ var DOM;
         }
     }
 })(DOM || (DOM = {}));
+var DOM;
+(function (DOM) {
+    var InputValueGetter;
+    (function (InputValueGetter) {
+        /**
+         * Query meta tag content value by name
+         *
+         * @param allowQueryParent 当当前的文档之中不存在目标meta标签的时候，
+         *    如果当前文档为iframe文档，则是否允许继续往父节点的文档做查询？
+         *    默认为False，即只在当前文档环境之中进行查询操作
+         * @param Default 查询失败的时候所返回来的默认值
+        */
+        function metaValue(name, Default, allowQueryParent) {
+            if (Default === void 0) { Default = null; }
+            if (allowQueryParent === void 0) { allowQueryParent = false; }
+            var selector = "meta[name~=\"" + name + "\"]";
+            var meta = document.querySelector(selector);
+            var getContent = function () {
+                if (meta) {
+                    var content = meta.getAttribute("content");
+                    return content ? content : Default;
+                }
+                else {
+                    if (TypeScript.logging.outputWarning) {
+                        console.warn(selector + " not found in current context!");
+                    }
+                    return Default;
+                }
+            };
+            if (!meta && allowQueryParent) {
+                meta = parent.window
+                    .document
+                    .querySelector(selector);
+            }
+            return getContent();
+        }
+        InputValueGetter.metaValue = metaValue;
+        function getValue(id, strict) {
+            if (strict === void 0) { strict = true; }
+            var input = $ts(Internal.Handlers.EnsureNodeId(id));
+            switch (input.tagName) {
+                case "input": return inputValue(input);
+                case "select": return selectOptionValues(input);
+                case "textarea": return largeText(input);
+                default:
+                    if (strict) {
+                        throw "Get value of <" + input.tagName + "> is not supported!";
+                    }
+                    else {
+                        // 强制读取目标节点的value属性值
+                        return input.getAttribute("value");
+                    }
+            }
+        }
+        InputValueGetter.getValue = getValue;
+        function inputValue(input) {
+            if (input.type == "checkbox") {
+                return checkboxInput(input);
+            }
+            else {
+                return input.value;
+            }
+        }
+        InputValueGetter.inputValue = inputValue;
+        /**
+         * 这个函数所返回来的值是和checkbox的数量相关的，
+         * 1. 如果有多个checkbox，则会返回一个数组
+         * 2. 反之如果只有一个checkbox，则只会返回一个逻辑值，用来表示是否选中该选项
+        */
+        function checkboxInput(input) {
+            var inputs = document.getElementsByName(input.name);
+            var values = [];
+            if (inputs.length == 1) {
+                return input.checked;
+            }
+            else {
+                inputs.forEach(function (box) {
+                    var value = box.value;
+                    if (box.checked) {
+                        values.push(value);
+                    }
+                });
+                return values;
+            }
+        }
+        InputValueGetter.checkboxInput = checkboxInput;
+        ;
+        /**
+         * 获取被选中的选项的值的列表
+        */
+        function selectOptionValues(input) {
+            var selects = getSelectedOptions(input);
+            var values = [];
+            for (var _i = 0, selects_1 = selects; _i < selects_1.length; _i++) {
+                var sel = selects_1[_i];
+                var value = sel.value;
+                if (!value) {
+                    value = sel.innerText;
+                }
+                values.push(value);
+            }
+            return values;
+        }
+        InputValueGetter.selectOptionValues = selectOptionValues;
+        /**
+         * return array containing references to selected option elements
+        */
+        function getSelectedOptions(sel) {
+            var opts = [];
+            var opt;
+            // loop through options in select list
+            for (var i = 0, len = sel.options.length; i < len; i++) {
+                opt = sel.options[i];
+                // check if selected
+                if (opt.selected) {
+                    // add to array of option elements to return from this function
+                    opts.push(opt);
+                }
+            }
+            return opts;
+        }
+        InputValueGetter.getSelectedOptions = getSelectedOptions;
+        function largeText(text) {
+        }
+        InputValueGetter.largeText = largeText;
+    })(InputValueGetter = DOM.InputValueGetter || (DOM.InputValueGetter = {}));
+})(DOM || (DOM = {}));
 var data;
 (function (data_1) {
     /**
@@ -3321,6 +3448,7 @@ var data;
 /// <reference path="../../Data/StringHelpers/PathHelper.ts" />
 /// <reference path="../Modes.ts" />
 /// <reference path="../../DOM/Document.ts" />
+/// <reference path="../../DOM/InputValueGetter.ts" />
 /// <reference path="../../Data/Range.ts" />
 /**
  * The internal implementation of the ``$ts`` object.
@@ -4360,133 +4488,6 @@ var DOM;
         }
     }
     DOM.addEvent = addEvent;
-})(DOM || (DOM = {}));
-var DOM;
-(function (DOM) {
-    var InputValueGetter;
-    (function (InputValueGetter) {
-        /**
-         * Query meta tag content value by name
-         *
-         * @param allowQueryParent 当当前的文档之中不存在目标meta标签的时候，
-         *    如果当前文档为iframe文档，则是否允许继续往父节点的文档做查询？
-         *    默认为False，即只在当前文档环境之中进行查询操作
-         * @param Default 查询失败的时候所返回来的默认值
-        */
-        function metaValue(name, Default, allowQueryParent) {
-            if (Default === void 0) { Default = null; }
-            if (allowQueryParent === void 0) { allowQueryParent = false; }
-            var selector = "meta[name~=\"" + name + "\"]";
-            var meta = document.querySelector(selector);
-            var getContent = function () {
-                if (meta) {
-                    var content = meta.getAttribute("content");
-                    return content ? content : Default;
-                }
-                else {
-                    if (TypeScript.logging.outputWarning) {
-                        console.warn(selector + " not found in current context!");
-                    }
-                    return Default;
-                }
-            };
-            if (!meta && allowQueryParent) {
-                meta = parent.window
-                    .document
-                    .querySelector(selector);
-            }
-            return getContent();
-        }
-        InputValueGetter.metaValue = metaValue;
-        function getValue(id, strict) {
-            if (strict === void 0) { strict = true; }
-            var input = $ts(Internal.Handlers.EnsureNodeId(id));
-            switch (input.tagName) {
-                case "input": return inputValue(input);
-                case "select": return selectOptionValues(input);
-                case "textarea": return largeText(input);
-                default:
-                    if (strict) {
-                        throw "Get value of <" + input.tagName + "> is not supported!";
-                    }
-                    else {
-                        // 强制读取目标节点的value属性值
-                        return input.getAttribute("value");
-                    }
-            }
-        }
-        InputValueGetter.getValue = getValue;
-        function inputValue(input) {
-            if (input.type == "checkbox") {
-                return checkboxInput(input);
-            }
-            else {
-                return input.value;
-            }
-        }
-        InputValueGetter.inputValue = inputValue;
-        /**
-         * 这个函数所返回来的值是和checkbox的数量相关的，
-         * 1. 如果有多个checkbox，则会返回一个数组
-         * 2. 反之如果只有一个checkbox，则只会返回一个逻辑值，用来表示是否选中该选项
-        */
-        function checkboxInput(input) {
-            var inputs = document.getElementsByName(input.name);
-            var values = [];
-            if (inputs.length == 1) {
-                return input.checked;
-            }
-            else {
-                inputs.forEach(function (box) {
-                    var value = box.value;
-                    if (box.checked) {
-                        values.push(value);
-                    }
-                });
-                return values;
-            }
-        }
-        InputValueGetter.checkboxInput = checkboxInput;
-        ;
-        /**
-         * 获取被选中的选项的值的列表
-        */
-        function selectOptionValues(input) {
-            var selects = getSelectedOptions(input);
-            var values = [];
-            for (var _i = 0, selects_1 = selects; _i < selects_1.length; _i++) {
-                var sel = selects_1[_i];
-                var value = sel.value;
-                if (!value) {
-                    value = sel.innerText;
-                }
-                values.push(value);
-            }
-            return values;
-        }
-        InputValueGetter.selectOptionValues = selectOptionValues;
-        /**
-         * return array containing references to selected option elements
-        */
-        function getSelectedOptions(sel) {
-            var opts = [];
-            var opt;
-            // loop through options in select list
-            for (var i = 0, len = sel.options.length; i < len; i++) {
-                opt = sel.options[i];
-                // check if selected
-                if (opt.selected) {
-                    // add to array of option elements to return from this function
-                    opts.push(opt);
-                }
-            }
-            return opts;
-        }
-        InputValueGetter.getSelectedOptions = getSelectedOptions;
-        function largeText(text) {
-        }
-        InputValueGetter.largeText = largeText;
-    })(InputValueGetter = DOM.InputValueGetter || (DOM.InputValueGetter = {}));
 })(DOM || (DOM = {}));
 var DOM;
 (function (DOM) {

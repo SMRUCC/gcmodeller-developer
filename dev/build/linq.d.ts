@@ -1259,6 +1259,36 @@ declare namespace DOM {
     */
     function AddHTMLTable<T extends {}>(rows: T[] | IEnumerator<T>, div: string, headers?: string[] | IEnumerator<string> | IEnumerator<MapTuple<string, string>> | MapTuple<string, string>[], attrs?: Internal.TypeScriptArgument): void;
 }
+declare namespace DOM {
+    module InputValueGetter {
+        /**
+         * Query meta tag content value by name
+         *
+         * @param allowQueryParent 当当前的文档之中不存在目标meta标签的时候，
+         *    如果当前文档为iframe文档，则是否允许继续往父节点的文档做查询？
+         *    默认为False，即只在当前文档环境之中进行查询操作
+         * @param Default 查询失败的时候所返回来的默认值
+        */
+        function metaValue(name: string, Default?: string, allowQueryParent?: boolean): string;
+        function getValue(id: string, strict?: boolean): any;
+        function inputValue(input: HTMLInputElement): any;
+        /**
+         * 这个函数所返回来的值是和checkbox的数量相关的，
+         * 1. 如果有多个checkbox，则会返回一个数组
+         * 2. 反之如果只有一个checkbox，则只会返回一个逻辑值，用来表示是否选中该选项
+        */
+        function checkboxInput(input: HTMLInputElement): boolean | any[];
+        /**
+         * 获取被选中的选项的值的列表
+        */
+        function selectOptionValues(input: HTMLSelectElement): any;
+        /**
+         * return array containing references to selected option elements
+        */
+        function getSelectedOptions(sel: HTMLSelectElement): HTMLOptionElement[];
+        function largeText(text: HTMLTextAreaElement): any;
+    }
+}
 declare namespace data {
     /**
      * A numeric range model.
@@ -1652,36 +1682,6 @@ declare namespace DOM {
      * @param fn 对事件名称所指定的事件进行处理的工作函数，这个工作函数应该具备有一个事件对象作为函数参数
     */
     function addEvent(el: any, type: string, fn: (event: Event) => void): void;
-}
-declare namespace DOM {
-    module InputValueGetter {
-        /**
-         * Query meta tag content value by name
-         *
-         * @param allowQueryParent 当当前的文档之中不存在目标meta标签的时候，
-         *    如果当前文档为iframe文档，则是否允许继续往父节点的文档做查询？
-         *    默认为False，即只在当前文档环境之中进行查询操作
-         * @param Default 查询失败的时候所返回来的默认值
-        */
-        function metaValue(name: string, Default?: string, allowQueryParent?: boolean): string;
-        function getValue(id: string, strict?: boolean): any;
-        function inputValue(input: HTMLInputElement): any;
-        /**
-         * 这个函数所返回来的值是和checkbox的数量相关的，
-         * 1. 如果有多个checkbox，则会返回一个数组
-         * 2. 反之如果只有一个checkbox，则只会返回一个逻辑值，用来表示是否选中该选项
-        */
-        function checkboxInput(input: HTMLInputElement): boolean | any[];
-        /**
-         * 获取被选中的选项的值的列表
-        */
-        function selectOptionValues(input: HTMLSelectElement): any;
-        /**
-         * return array containing references to selected option elements
-        */
-        function getSelectedOptions(sel: HTMLSelectElement): HTMLOptionElement[];
-        function largeText(text: HTMLTextAreaElement): any;
-    }
 }
 declare namespace DOM {
     class node {
