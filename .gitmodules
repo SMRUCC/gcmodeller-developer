@@ -1,3 +1,6 @@
 [submodule "dev/data.ts"]
 	path = dev/Linq.ts
 	url = https://github.com/GCModeller-Cloud/data.ts.git
+[submodule "dev/marked"]
+	path = dev/marked
+	url = https://github.com/BioDeep/marked.git
