@@ -9,7 +9,7 @@ declare module Activator {
     * @param names object的属性名称列表
     * @param init 使用这个函数为该属性指定一个初始值
    */
-    function EmptyObject<V>(names: string[] | IEnumerator<string>, init: () => V): object;
+    function EmptyObject<V>(names: string[] | IEnumerator<string>, init: (() => V) | V): object;
     /**
      * 从键值对集合创建object对象，键名或者名称属性会作为object对象的属性名称
     */

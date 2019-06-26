@@ -93,7 +93,7 @@ var blog;
         // initialize styles and events
         window.onhashchange = blog.loadDocument;
         config.renderer = new blog.markdown();
-        vbcodeStyle.lineHeight = "5px";
+        // vbcodeStyle.lineHeight = "5px";
         blog.renderDocument(getTargetFile());
     }
     blog.initialize = initialize;
