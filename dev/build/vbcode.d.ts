@@ -12,6 +12,7 @@ declare namespace vscode {
         type: string;
         directive: string;
         globalFont: CanvasHelper.CSSFont;
+        lineHeight: string;
     }
     function defaultStyle(): CSS;
     function applyStyle(div: string | IHTMLElement, style?: CSS): void;
@@ -22,6 +23,7 @@ declare namespace vscode {
     */
     class tokenStyler {
         private hashHandler;
+        private parseTOC;
         private code;
         private rowList;
         /**
@@ -57,7 +59,7 @@ declare namespace vscode {
          * 上一次添加的符号是一个预处理符号
         */
         readonly LastDirective: boolean;
-        constructor(hashHandler: Delegate.Sub);
+        constructor(hashHandler: Delegate.Sub, parseTOC: boolean);
         private tagClass;
         append(token: string): void;
         /**
@@ -65,6 +67,10 @@ declare namespace vscode {
         */
         appendLine(token?: string): void;
         private buildHashLink;
+        /**
+         * 尝试将剩余的缓存数据写入结果数据之中
+        */
+        flush(): void;
         private appendNewRow;
         directive(token: string): void;
         type(token: string): void;
@@ -90,7 +96,7 @@ declare namespace vscode {
         /**
          * @param chars A chars enumerator
         */
-        constructor(hashHandler: Delegate.Sub, chars: Pointer<string>);
+        constructor(hashHandler: Delegate.Sub, chars: Pointer<string>, parseTOC: boolean);
         /**
          * Get source file document highlight result
         */
@@ -144,7 +150,7 @@ declare namespace vscode {
      * @param code VB.NET source code in plain text.
      * @param style 可以传递一个null值来使用css进行样式的渲染
     */
-    function highlight(code: string, display: string | IHTMLElement, style?: CSS, hashhandler?: Delegate.Sub): TOC.Summary;
+    function highlight(code: string, display: string | IHTMLElement, style?: CSS, hashhandler?: Delegate.Sub, parseTOC?: boolean): TOC.Summary;
 }
 declare namespace vscode.github {
     /**

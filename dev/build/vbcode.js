@@ -24,7 +24,8 @@ var vscode;
             globalFont: {
                 fontName: "Consolas",
                 size: { pixel: 11 }
-            }
+            },
+            lineHeight: "11px"
         };
     }
     vscode.defaultStyle = defaultStyle;
@@ -40,7 +41,7 @@ var vscode;
         $ts.select(".line-hash").attr("style", "color: #3c3e3e; text-decoration: none;");
         CanvasHelper.CSSFont.applyCSS(preview, style.globalFont);
         // set additional styles.
-        preview.style.lineHeight = "1.125em;";
+        preview.style.lineHeight = style.lineHeight;
     }
     vscode.applyStyle = applyStyle;
 })(vscode || (vscode = {}));
@@ -51,8 +52,9 @@ var vscode;
     */
     var tokenStyler = /** @class */ (function () {
         //#endregion
-        function tokenStyler(hashHandler) {
+        function tokenStyler(hashHandler, parseTOC) {
             this.hashHandler = hashHandler;
+            this.parseTOC = parseTOC;
             this.code = new StringBuilder("", "<br />\n");
             this.rowList = [];
             /**
@@ -156,7 +158,9 @@ var vscode;
                 this.lastTypeKeyword = false;
                 this.lastDirective = false;
                 this.lastToken = token;
-                this.summary.insertSymbol(token, vscode.TOC.symbolTypes.symbol, this.lineNumber);
+                if (this.parseTOC) {
+                    this.summary.insertSymbol(token, vscode.TOC.symbolTypes.symbol, this.lineNumber);
+                }
             }
             this.lastNewLine = false;
         };
@@ -192,6 +196,17 @@ var vscode;
                 });
             }
         };
+        /**
+         * 尝试将剩余的缓存数据写入结果数据之中
+        */
+        tokenStyler.prototype.flush = function () {
+            if (TypeScript.logging.outputEverything) {
+                console.log(this.code);
+            }
+            if (this.code.Length > 0) {
+                this.appendNewRow();
+            }
+        };
         tokenStyler.prototype.appendNewRow = function () {
             // 构建新的row对象，然后将原来的代码字符串缓存清空
             var L = this.lineNumber;
@@ -215,7 +230,9 @@ var vscode;
             this.lastTypeKeyword = false;
             this.lastNewLine = false;
             this.lastDirective = false;
-            this.summary.insertSymbol(token, vscode.TOC.symbolTypes.symbol, this.lineNumber);
+            if (this.parseTOC) {
+                this.summary.insertSymbol(token, vscode.TOC.symbolTypes.symbol, this.lineNumber);
+            }
         };
         tokenStyler.prototype.comment = function (token) {
             this.code.AppendLine(this.tagClass(tokenStyler.highlightURLs(token), "comment"));
@@ -254,7 +271,9 @@ var vscode;
             else {
                 this.lastTypeKeyword = false;
             }
-            this.summary.insertSymbol(token, vscode.TOC.symbolTypes.keyword, this.lineNumber);
+            if (this.parseTOC) {
+                this.summary.insertSymbol(token, vscode.TOC.symbolTypes.keyword, this.lineNumber);
+            }
             this.lastNewLine = false;
             this.lastDirective = false;
         };
@@ -277,7 +296,7 @@ var vscode;
         /**
          * @param chars A chars enumerator
         */
-        function VBParser(hashHandler, chars) {
+        function VBParser(hashHandler, chars, parseTOC) {
             this.chars = chars;
             this.escapes = {
                 string: false,
@@ -285,7 +304,7 @@ var vscode;
                 keyword: false // VB之中使用[]进行关键词的转义操作
             };
             this.token = [];
-            this.code = new vscode.tokenStyler(hashHandler);
+            this.code = new vscode.tokenStyler(hashHandler, parseTOC);
         }
         /**
          * Get source file document highlight result
@@ -294,6 +313,10 @@ var vscode;
             while (!this.chars.EndRead) {
                 this.walkChar(this.chars.Next);
             }
+            if (this.token.length > 0) {
+                this.walkNewLine();
+            }
+            this.code.flush();
             return this.code;
         };
         VBParser.peekNextToken = function (chars, allowNewLine) {
@@ -514,7 +537,7 @@ var vscode;
      * All of the VB keywords that following type names
     */
     vscode.TypeDefine = [
-        "As", "Class", "Structure", "Module", "Imports", "Of", "New", "GetType"
+        "As", "Class", "Structure", "Module", "Imports", "Of", "New", "GetType", "Implements", "Inherits"
     ];
     /**
      * 在VB.NET之中，单词与单词之间的分隔符列表
@@ -542,7 +565,7 @@ var vscode;
             console.log(words);
         }
         return words;
-    })("\n        |AddHandler|AddressOf|Alias|And|AndAlso|As|\n        |Boolean|ByRef|Byte|\n        |Call|Case|Catch|CBool|CByte|CChar|CDate|CDec|CDbl|Char|CInt|Class|CLng|CObj|Const|Continue|CSByte|CShort|CSng|CStr|CType|CUInt|CULng|CUShort|\n        |Date|Decimal|Declare|Default|Delegate|Dim|DirectCast|Do|Double|\n        |Each|Else|ElseIf|End|EndIf|Enum|Erase|Error|Event|Exit|\n        |False|Finally|For|Friend|Function|\n        |Get|GetType|GetXMLNamespace|Global|GoSub|GoTo|\n        |Handles|\n        |If|Implements|Imports|In|Inherits|Integer|Interface|Is|IsNot|\n        |Let|Lib|Like|Long|Loop|\n        |Me|Mod|Module|MustInherit|MustOverride|MyBase|MyClass|My|\n        |Namespace|Narrowing|New|Next|Not|Nothing|NotInheritable|NotOverridable|NameOf|\n        |Object|Of|On|Operator|Option|Optional|Or|OrElse|Overloads|Overridable|Overrides|\n        |ParamArray|Partial|Private|Property|Protected|Public|\n        |RaiseEvent|ReadOnly|ReDim|REM|RemoveHandler|Resume|Return|\n        |SByte|Select|Set|Shadows|Shared|Short|Single|Static|Step|Stop|String|Structure|Sub|SyncLock|\n        |Then|Throw|To|True|Try|TryCast|TypeOf|\n        |Variant|\n        |Wend|\n        |UInteger|ULong|UShort|Using|\n        |When|While|Widening|With|WithEvents|WriteOnly|\n        |Xor|\n        |Yield|\n    ");
+    })("\n        |AddHandler|AddressOf|Alias|And|AndAlso|As|Ascending|\n        |Boolean|ByRef|Byte|By|\n        |Call|Case|Catch|CBool|CByte|CChar|CDate|CDec|CDbl|Char|CInt|Class|CLng|CObj|Const|Continue|CSByte|CShort|CSng|CStr|CType|CUInt|CULng|CUShort|\n        |Date|Decimal|Declare|Default|Delegate|Dim|DirectCast|Do|Double|Distinct|Descending|\n        |Each|Else|ElseIf|End|EndIf|Enum|Erase|Error|Event|Exit|\n        |False|Finally|For|Friend|Function|From|\n        |Get|GetType|GetXMLNamespace|Global|GoSub|GoTo|\n        |Handles|\n        |If|Implements|Imports|In|Inherits|Integer|Interface|Is|IsNot|\n        |Let|Lib|Like|Long|Loop|\n        |Me|Mod|Module|MustInherit|MustOverride|MyBase|MyClass|My|\n        |Namespace|Narrowing|New|Next|Not|Nothing|NotInheritable|NotOverridable|NameOf|\n        |Object|Of|On|Operator|Option|Optional|Or|OrElse|Overloads|Overridable|Overrides|Order|\n        |ParamArray|Partial|Private|Property|Protected|Public|\n        |RaiseEvent|ReadOnly|ReDim|REM|RemoveHandler|Resume|Return|\n        |SByte|Select|Set|Shadows|Shared|Short|Single|Static|Step|Stop|String|Structure|Sub|SyncLock|\n        |Then|Throw|To|True|Try|TryCast|TypeOf|\n        |Variant|\n        |Wend|\n        |UInteger|ULong|UShort|Using|Union|\n        |When|While|Widening|With|WithEvents|WriteOnly|Where|\n        |Xor|\n        |Yield|\n    ");
     /**
      * 一般用于高亮markdown之中的代码转换结果部分：``<pre class="vbnet">``
     */
@@ -552,7 +575,10 @@ var vscode;
         var codeList = $ts.select(className);
         for (var _i = 0, _a = codeList.ToArray(); _i < _a.length; _i++) {
             var code = _a[_i];
-            vscode.highlight(code.innerText, code, style);
+            if (TypeScript.logging.outputEverything) {
+                console.log(code.innerText);
+            }
+            vscode.highlight(code.innerText, code, style, null, false);
             if (code.tagName.toLowerCase() == "pre") {
                 code.style.border = "none";
                 code.style.padding = "0px";
@@ -579,11 +605,12 @@ var vscode;
      * @param code VB.NET source code in plain text.
      * @param style 可以传递一个null值来使用css进行样式的渲染
     */
-    function highlight(code, display, style, hashhandler) {
+    function highlight(code, display, style, hashhandler, parseTOC) {
         if (style === void 0) { style = vscode.VisualStudio; }
         if (hashhandler === void 0) { hashhandler = null; }
+        if (parseTOC === void 0) { parseTOC = true; }
         var pcode = new Pointer(Strings.ToCharArray(code));
-        var html = new vscode.VBParser(hashhandler, pcode).GetTokens();
+        var html = new vscode.VBParser(hashhandler, pcode, parseTOC).GetTokens();
         var container = $ts("<tbody>");
         var preview = $ts("<table>", { class: "pre" }).display(container);
         for (var _i = 0, _a = html.rows; _i < _a.length; _i++) {
@@ -743,14 +770,14 @@ var vscode;
         /**
          * 在VB之中用于类型申明的关键词
         */
-        TOC.typeDeclares = TypeInfo.EmptyObject(["Class", "Structure", "Enum", "Module", "Delegate", "Interface"], true);
-        TOC.fieldDeclares = TypeInfo.EmptyObject(["Dim", "Public", "Private", "Friend", "Protected", "ReadOnly", "Const", "Shared"], true);
+        TOC.typeDeclares = Activator.EmptyObject(["Class", "Structure", "Enum", "Module", "Delegate", "Interface"], true);
+        TOC.fieldDeclares = Activator.EmptyObject(["Dim", "Public", "Private", "Friend", "Protected", "ReadOnly", "Const", "Shared"], true);
         TOC.propertyDeclare = "Property";
         TOC.operatorDeclare = "Operator";
         TOC.functionDeclare = "Function";
         TOC.subroutineDeclare = "Sub";
         TOC.endStack = "End";
-        TOC.operatorKeywords = TypeInfo.EmptyObject(["And", "Or", "Not", "AndAlso", "OrElse", "Xor", "IsTrue", "IsFalse", "CType", "Like"], true);
+        TOC.operatorKeywords = Activator.EmptyObject(["And", "Or", "Not", "AndAlso", "OrElse", "Xor", "IsTrue", "IsFalse", "CType", "Like"], true);
         var symbolTypes;
         (function (symbolTypes) {
             /**
