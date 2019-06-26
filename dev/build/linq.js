@@ -3603,7 +3603,7 @@ var Internal;
             var sel = $ts(query, {
                 context: context
             });
-            var options = DOM.getSelectedOptions(sel);
+            var options = DOM.InputValueGetter.getSelectedOptions(sel);
             return new DOMEnumerator(options);
         };
         ts.select.getOption = function (query, context) {
@@ -3611,7 +3611,7 @@ var Internal;
             var sel = $ts(query, {
                 context: context
             });
-            var options = DOM.getSelectedOptions(sel);
+            var options = DOM.InputValueGetter.getSelectedOptions(sel);
             if (options.length == 0) {
                 return null;
             }
@@ -4403,7 +4403,7 @@ var DOM;
             var input = $ts(Internal.Handlers.EnsureNodeId(id));
             switch (input.tagName) {
                 case "input": return inputValue(input);
-                case "select": return selectOptions(input);
+                case "select": return selectOptionValues(input);
                 case "textarea": return largeText(input);
                 default:
                     if (strict) {
