@@ -10,5 +10,4 @@ publish/
 node_modules/
 obj/
 *.dll
-/dev/marked
-/dev/Linq.ts
+/dev
