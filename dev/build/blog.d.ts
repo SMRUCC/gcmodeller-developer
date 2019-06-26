@@ -23,5 +23,5 @@ declare namespace blog {
      *
      * @param ref The document fullname reference or file basename
     */
-    function renderDocument(ref: string): void;
+    function renderDocument(url: string): void;
 }

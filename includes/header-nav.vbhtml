@@ -10,8 +10,7 @@
 		<section class="top-bar-section">
 			<!-- Right Nav Section -->
 			<ul class="left">
-				<li class="$index_active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-				<li class="$code_active"><a href="articles.html"><i class="fa fa-code"></i> Articles</a></li>				
+				<li class="$index_active"><a href="#"><i class="fa fa-code"></i> Developer Posts</a></li>			
 			</ul>
 			<ul class="right">
 				<li class="has-form right">

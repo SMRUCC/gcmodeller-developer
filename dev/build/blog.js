@@ -151,9 +151,8 @@ var blog;
      *
      * @param ref The document fullname reference or file basename
     */
-    function renderDocument(ref) {
+    function renderDocument(url) {
         var count = 0;
-        var url = getTargetFile(ref);
         var renderDocumentInternal = function (markdown) {
             var html;
             if (Strings.Empty(markdown, true)) {

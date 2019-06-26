@@ -98,9 +98,8 @@ namespace blog {
      * 
      * @param ref The document fullname reference or file basename 
     */
-    export function renderDocument(ref: string) {
-        let count: number = 0;
-        let url: string = getTargetFile(ref);
+    export function renderDocument(url: string) {
+        let count: number = 0;      
         let renderDocumentInternal = function (markdown: string) {
             let html: string;
 
