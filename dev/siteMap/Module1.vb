@@ -38,12 +38,16 @@ Module Module1
             .Select(AddressOf LCase) _
             .ToArray
         Dim title = markdown.Match("[#].+", RegexICMul).TrimStart("#"c).TrimNewLine.Trim
+        Dim authors = tags.Where(Function(s) s.StartsWith("@")).ToArray
+        Dim externalLinks = tags.Where(Function(s) s.StartsWith("&")).Select(Function(s) s.TrimStart("&"c).Trim).ToArray
 
         Return New article With {
             .url = path.GetFullPath.Replace(root, ""),
             .time = If(time.StringEmpty, Now, Date.Parse(time)).UnixTimeStamp,
             .topics = topics,
-            .title = title
+            .title = title,
+            .authors = authors,
+            .external_links = externalLinks
         }
     End Function
 
@@ -59,8 +63,14 @@ End Class
 Public Class article
 
     Public Property title As String
+    ''' <summary>
+    ''' url of the markdown document of current article
+    ''' </summary>
+    ''' <returns></returns>
     Public Property url As String
     Public Property topics As String()
+    Public Property authors As String()
     Public Property time As Long
+    Public Property external_links As String()
 
 End Class
