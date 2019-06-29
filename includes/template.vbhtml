@@ -6,6 +6,7 @@
 
 <head>
 	<%= ../includes/head.vbhtml %>
+	<%= ../includes/script-includes.vbhtml %>
 </head>
 
 <body>
@@ -35,9 +36,7 @@
 
 	<footer>
 		<%= ../includes/footer.vbhtml %>
-	</footer>
-
-	<%= ../includes/script-includes.vbhtml %>
+	</footer>	
 
 </body>
 
