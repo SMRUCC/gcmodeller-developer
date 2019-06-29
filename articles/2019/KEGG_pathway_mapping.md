@@ -1,7 +1,7 @@
 # KEGG pathway annotation
 
 <!-- 2018-10-02 -->
-<!-- :: user,dev -->
+<!-- :: course,dev,kegg,blastp -->
 
 <iframe src="https://player.bilibili.com/player.html?aid=34529020&cid=60489773&page=1" 
 			scrolling="no" 
