@@ -1,4 +1,5 @@
-﻿Imports Microsoft.VisualBasic.Serialization.JSON
+﻿Imports Microsoft.VisualBasic.Linq
+Imports Microsoft.VisualBasic.Serialization.JSON
 Imports r = System.Text.RegularExpressions.Regex
 
 Module Module1
@@ -28,10 +29,20 @@ Module Module1
                         Return text.Trim
                     End Function) _
             .ToArray
-        ' Dim time =  
+        Dim time = tags.FirstOrDefault(Function(s) s.IsPattern("\d+([-]\d+){2}"))
+        Dim topics = tags.Where(Function(s) s.StartsWith("::")) _
+            .Select(Function(s) s.StringSplit("[;,]")) _
+            .IteratesALL _
+            .Distinct _
+            .Select(AddressOf LCase) _
+            .ToArray
+        Dim title = markdown.Match("[#].+", RegexICMul).TrimStart("#"c).TrimNewLine.Trim
 
         Return New article With {
-            .url = path.Replace(root, "")
+            .url = path.Replace(root, ""),
+            .time = If(time.StringEmpty, Now, Date.Parse(time)),
+            .topics = topics,
+            .title = title
         }
     End Function
 
