@@ -43,7 +43,7 @@ Module Module1
         Dim externalLinks = tags.Where(Function(s) s.StartsWith("&")).Select(Function(s) s.TrimStart("&"c).Trim).ToArray
 
         Return New article With {
-            .url = path.GetFullPath.TrimSuffix.Replace(root, ""),
+            .url = path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, ""),
             .time = If(time.StringEmpty, Now, Date.Parse(time)).UnixTimeStamp,
             .topics = topics,
             .title = title,
