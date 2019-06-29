@@ -12,7 +12,8 @@ Module Module1
     Sub scanArticles(root As String)
         Call New DbJson With {
             .lastupdated = Now.UnixTimeStamp,
-            .articles = root.EnumerateFiles("*.md") _
+            .articles = root.ListFiles("*.md") _
+                .Where(Function(path) Not path.BaseName.TextEquals("readme")) _
                 .Select(Function(path) parseArticle(path, root.GetDirectoryFullPath)) _
                 .ToArray
         }.GetJson _
