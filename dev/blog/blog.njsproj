@@ -37,6 +37,9 @@
   <ItemGroup>
     <TypeScriptCompile Include="initialize.ts" />
     <TypeScriptCompile Include="markdown.ts" />
+    <TypeScriptCompile Include="database.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
