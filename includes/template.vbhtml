@@ -16,12 +16,6 @@
 
 		$content
 
-		<div class="row">
-		
-		<p id="goback">
-<i class="fa fa-arrow-left" aria-hidden="true"></i> <span id="previous-article-title"></span>
-</p>
-		</div>
 		<!-- 添加上这个<div>标签之后可以防止在高度比较低的时候出现错位的现象 -->
 		<!--
 			2018-1-1
