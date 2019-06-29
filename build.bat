@@ -1,4 +1,3 @@
 @echo off
 
-REM build by Yilia vbscript tool for HTML5
-"./App/Yilia.exe" /generate /wwwroot "./" /publish "./publish"
+"App\sitemap\siteMap.exe" "D:\developer.gcmodeller.org\gcmodeller-hexo\articles"
