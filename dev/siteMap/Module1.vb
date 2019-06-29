@@ -1,5 +1,6 @@
 ﻿Imports Microsoft.VisualBasic.Linq
 Imports Microsoft.VisualBasic.Serialization.JSON
+Imports Microsoft.VisualBasic.ValueTypes
 Imports r = System.Text.RegularExpressions.Regex
 
 Module Module1
@@ -10,9 +11,9 @@ Module Module1
 
     Sub scanArticles(root As String)
         Call New DbJson With {
-            .lastupdated = Now,
+            .lastupdated = Now.UnixTimeStamp,
             .articles = root.EnumerateFiles("*.md") _
-                .Select(Function(path) parseArticle(path, root)) _
+                .Select(Function(path) parseArticle(path, root.GetDirectoryFullPath)) _
                 .ToArray
         }.GetJson _
          .SaveTo($"{root}/db.json")
@@ -31,7 +32,7 @@ Module Module1
             .ToArray
         Dim time = tags.FirstOrDefault(Function(s) s.IsPattern("\d+([-]\d+){2}"))
         Dim topics = tags.Where(Function(s) s.StartsWith("::")) _
-            .Select(Function(s) s.StringSplit("[;,]")) _
+            .Select(Function(s) s.Trim(":"c, " "c).StringSplit("[;,]")) _
             .IteratesALL _
             .Distinct _
             .Select(AddressOf LCase) _
@@ -39,8 +40,8 @@ Module Module1
         Dim title = markdown.Match("[#].+", RegexICMul).TrimStart("#"c).TrimNewLine.Trim
 
         Return New article With {
-            .url = path.Replace(root, ""),
-            .time = If(time.StringEmpty, Now, Date.Parse(time)),
+            .url = path.GetFullPath.Replace(root, ""),
+            .time = If(time.StringEmpty, Now, Date.Parse(time)).UnixTimeStamp,
             .topics = topics,
             .title = title
         }
@@ -51,7 +52,7 @@ End Module
 Public Class DbJson
 
     Public Property articles As article()
-    Public Property lastupdated As Date
+    Public Property lastupdated As Long
 
 End Class
 
@@ -60,6 +61,6 @@ Public Class article
     Public Property title As String
     Public Property url As String
     Public Property topics As String()
-    Public Property time As Date
+    Public Property time As Long
 
 End Class
