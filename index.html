@@ -68,8 +68,8 @@
 		<section class="top-bar-section">
 			<!-- Right Nav Section -->
 			<ul class="left">
-				<li class="active"><a href="#"><i class="fa fa-code"></i> Developer Home</a></li>		
-<li class=""><a href="./post.html"><i class="fa fa-book" aria-hidden="true"></i> Post</a></li>						
+				<li class="active"><a href="/"><i class="fa fa-code"></i> Developer Home</a></li>		
+<li class=""><a href="/post.html"><i class="fa fa-book" aria-hidden="true"></i> Post</a></li>						
 			</ul>
 			<ul class="right">
 				<li class="has-form right">
@@ -91,9 +91,21 @@
 
 		<div class="row">
     <div class="small-12 column" id="article">
-        
+        <!-- 总的介绍性的文章 -->
     </div>
 </div>
+
+<script>
+.getText("/articles/README.md", markdown => {
+let config = markedjs.option.Defaults;
+let html = marked(markdown, config);
+
+// update article content
+("#article").innerHTML = html;
+// and then highligh vb code block
+vscode.highlightVB(vbcodeStyle);
+});
+</script>
 
 		<div class="row">
 		
