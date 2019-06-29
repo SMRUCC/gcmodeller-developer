@@ -1,6 +1,7 @@
 *.cache 
 *.sqlite
 *.suo
+bin/
 
 .vs/slnx.sqlite
 App/
@@ -12,3 +13,4 @@ obj/
 *.dll
 *.lock
 *.ide
+/dev/.vs/siteMap/v16/Server/sqlite3
