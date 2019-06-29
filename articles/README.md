@@ -16,3 +16,7 @@ The GCModeller is developed in VisualStudio and write with VisualBasic language,
 
 A user developer is not involved in the development in master branch of GCModeller source tree, and they are more likely students, teachers, or engineers actually. For apply GCModeller into their research works, they usually make the CLI scripting or make secondary development upon the GCModeller application libraries. All of the article with ``#course`` topic tag is prepare for this kind of blog readers.
 
+<div class="right show-for-medium-up">
+                <i class="fa fa-fw fa-users" style="font-size: 7em"></i>
+            </div>
+
