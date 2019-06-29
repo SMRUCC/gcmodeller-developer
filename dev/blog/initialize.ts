@@ -17,7 +17,7 @@ namespace blog {
             pathFallback = `/articles/${fileName}.md`;
         } else {
             // show home page
-            pathFallback = "/README.md";
+            pathFallback = null;
         }
 
         return pathFallback;
@@ -146,13 +146,13 @@ namespace blog {
         }
 
         if (isNullOrUndefined(url)) {
-            // stop render when path is nothing
-            return;
+            // render the index page when url is null
+            blog.initializeTree();
+        } else {
+            // fetch markdown document from server and run renderer
+            $ts.getText(url, renderDocumentInternal, {
+                nullForNotFound: true
+            });
         }
-
-        // fetch markdown document from server and run renderer
-        $ts.getText(url, renderDocumentInternal, {
-            nullForNotFound: true
-        });
     }
 }

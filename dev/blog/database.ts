@@ -41,6 +41,7 @@
 
         let main = $ts("#article");
 
+        main.clear();
         displays.ForEach(g => main.appendChild(g));
     }
 }
