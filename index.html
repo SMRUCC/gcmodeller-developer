@@ -95,17 +95,7 @@
     </div>
 </div>
 
-<script>
-.getText("/articles/README.md", markdown => {
-let config = markedjs.option.Defaults;
-let html = marked(markdown, config);
-
-// update article content
-("#article").innerHTML = html;
-// and then highligh vb code block
-vscode.highlightVB(vbcodeStyle);
-});
-</script>
+<script src="/lib/index.js"></script>
 
 		<!-- 添加上这个<div>标签之后可以防止在高度比较低的时候出现错位的现象 -->
 		<!--
