@@ -119,7 +119,7 @@ namespace blog {
             }));
 
             if (history.length == 0) {
-                $ts("#goback").hide();
+                $ts("#goback-row").hide();
             } else {
                 let back = history[history.length - 1];
                 let a = $ts("<a>", {
@@ -131,7 +131,7 @@ namespace blog {
                         }
 
                         if (back.value == window.location.hash) {
-                            $ts("goback").hide();
+                            $ts("goback-row").hide();
                         } else {
                             window.location.hash = back.value;
                         }
@@ -139,7 +139,7 @@ namespace blog {
                 }).display(back.name);
 
                 $ts("#previous-article-title").display(a);
-                $ts("#goback").show();
+                $ts("#goback-row").show();
             }
 
             history.push(frame);

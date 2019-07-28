@@ -151,7 +151,7 @@ var blog;
                 trimprefix: false
             }));
             if (history.length == 0) {
-                $ts("#goback").hide();
+                $ts("#goback-row").hide();
             }
             else {
                 let back = history[history.length - 1];
@@ -163,7 +163,7 @@ var blog;
                             history.pop();
                         }
                         if (back.value == window.location.hash) {
-                            $ts("goback").hide();
+                            $ts("goback-row").hide();
                         }
                         else {
                             window.location.hash = back.value;
@@ -171,7 +171,7 @@ var blog;
                     }
                 }).display(back.name);
                 $ts("#previous-article-title").display(a);
-                $ts("#goback").show();
+                $ts("#goback-row").show();
             }
             history.push(frame);
         };
