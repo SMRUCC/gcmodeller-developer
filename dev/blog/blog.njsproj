@@ -35,6 +35,7 @@
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="iframe_resize.ts" />
     <TypeScriptCompile Include="initialize.ts" />
     <TypeScriptCompile Include="markdown.ts" />
     <TypeScriptCompile Include="database.ts">
