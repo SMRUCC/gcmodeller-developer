@@ -22,6 +22,17 @@ var blog;
         static isFullName(href) {
             return href.toLowerCase().indexOf("://") > -1;
         }
+        blockquote(quote) {
+            let lines = Strings.lineTokens(quote);
+            let text = "";
+            let doi;
+            for (let line of lines) {
+                doi = line.match(/DOI[:]\s*.+?/ig)[0];
+                line = line.replace(doi, `<strong>${doi}</strong>`);
+                text = text + line + "<br />";
+            }
+            return `<blockquote>${text}</blockquote>`;
+        }
         code(code, infostring, escaped) {
             var lang = (infostring || '').match(/\S*/)[0];
             if (this.options.highlight) {

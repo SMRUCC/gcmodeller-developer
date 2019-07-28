@@ -8,6 +8,7 @@ declare namespace blog {
     class markdown extends markedjs.htmlRenderer {
         image(href: string, title: string, text: string): string;
         private static isFullName;
+        blockquote(quote: string): string;
         code(code: string, infostring: string, escaped: boolean): string;
     }
 }

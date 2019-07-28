@@ -27,6 +27,20 @@
             return href.toLowerCase().indexOf("://") > -1;
         }
 
+        public blockquote(quote: string): string {
+            let lines = Strings.lineTokens(quote);
+            let text = "";
+            let doi: string;
+
+            for (let line of lines) {
+                doi = line.match(/DOI[:]\s*.+?/ig)[0];
+                line = line.replace(doi, `<strong>${doi}</strong>`);
+                text = text + line + "<br />";
+            }
+
+            return `<blockquote>${text}</blockquote>`;
+        }
+
         public code(code: string, infostring: string, escaped: boolean): string {
             var lang = (infostring || '').match(/\S*/)[0];
 
