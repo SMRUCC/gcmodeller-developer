@@ -41,6 +41,16 @@ table.pre {
 	line-height: 0px !important;	
 }
 
+table.pre tbody tr td, table tr td {
+	line-height: 0px !important;	
+	padding-right: 0px !important;
+	font-weight: bolder;
+}
+
+td.lines {
+	padding-right: 0px !important;
+}
+
 /*
 code {
   font-weight: normal;
