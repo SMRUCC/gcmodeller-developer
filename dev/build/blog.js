@@ -220,6 +220,7 @@ var blog;
         });
         let main = $ts("#article");
         main.clear();
+        main.appendChild($ts("<h1>").display("Articles"));
         displays.ForEach(g => main.appendChild(g));
     }
 })(blog || (blog = {}));
