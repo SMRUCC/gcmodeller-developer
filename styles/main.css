@@ -47,6 +47,12 @@ table.pre tbody tr td, table tr td {
 	font-weight: bolder;
 }
 
+span.post-time {
+	color: rgb(130,130,130);
+	font-size: 0.8em;
+	line-height: 1.25rem;
+}
+
 td.lines {
 	padding-right: 0px !important;
 }

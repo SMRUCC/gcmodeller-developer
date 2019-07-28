@@ -50,7 +50,7 @@ namespace blog {
 
         h1 = $ts("#article").getElementsByTagName("h1")[0];
         dateTag = $ts("<span>", {
-            style: "color: rgb(100,100,100); font-size: 0.8em;"
+            class:"post-time"            
         }).display("#" + time.toLocaleDateString() + "#")
 
         let diff = Date.now() - time.getTime();
@@ -66,7 +66,7 @@ namespace blog {
                 }).display(`This article is posted ${days} days before, information in this article may be obsolete...`);
 
                 dateTag.insertAdjacentElement("afterend", warn);
-                dateTag.insertAdjacentElement("afterend", $ts("<br>"));
+                // dateTag.insertAdjacentElement("afterend", $ts("<br>"));
             }
         }
 

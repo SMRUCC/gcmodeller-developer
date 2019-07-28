@@ -93,7 +93,7 @@ var blog;
         $ts("#article").innerHTML = html;
         h1 = $ts("#article").getElementsByTagName("h1")[0];
         dateTag = $ts("<span>", {
-            style: "color: rgb(100,100,100); font-size: 0.8em;"
+            class: "post-time"
         }).display("#" + time.toLocaleDateString() + "#");
         let diff = Date.now() - time.getTime();
         let days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -105,7 +105,7 @@ var blog;
                     class: "alert-box info"
                 }).display(`This article is posted ${days} days before, information in this article may be obsolete...`);
                 dateTag.insertAdjacentElement("afterend", warn);
-                dateTag.insertAdjacentElement("afterend", $ts("<br>"));
+                // dateTag.insertAdjacentElement("afterend", $ts("<br>"));
             }
         }
         // and then highligh vb code block
