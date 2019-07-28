@@ -38,6 +38,7 @@ var markedjs;
                     tables: true,
                     xhtml: false,
                     debug: false,
+                    addcodeTag: true,
                     // grammers
                     inline: new markedjs.inline(),
                     block: new markedjs.block()
@@ -497,7 +498,7 @@ var markedjs;
             var inline = options.inline;
             _this.links = links;
             _this.rules = options.inline.normal;
-            _this.renderer = _this.options.renderer || new markedjs.htmlRenderer();
+            _this.renderer = _this.options.renderer || new markedjs.htmlRenderer(_this.options);
             _this.renderer.options = _this.options;
             if (!_this.links) {
                 throw new Error('Tokens array requires a `links` property.');
@@ -1080,7 +1081,7 @@ var markedjs;
             var _this = _super.call(this, options) || this;
             _this.tokens = [];
             _this.token = null;
-            _this.options.renderer = _this.options.renderer || new markedjs.htmlRenderer();
+            _this.options.renderer = _this.options.renderer || new markedjs.htmlRenderer(_this.options);
             _this.renderer = _this.options.renderer;
             _this.renderer.options = _this.options;
             return _this;
@@ -1348,8 +1349,8 @@ var markedjs;
 (function (markedjs) {
     var htmlRenderer = /** @class */ (function (_super) {
         __extends(htmlRenderer, _super);
-        function htmlRenderer() {
-            return _super.call(this, null) || this;
+        function htmlRenderer(opt) {
+            return _super.call(this, opt) || this;
         }
         htmlRenderer.prototype.html = function (text) {
             return text;
@@ -1367,17 +1368,24 @@ var markedjs;
                     code = out;
                 }
             }
+            code = (escaped ? code : markedjs.helpers.escape.doescape(code, true));
             if (!lang) {
-                return '<pre><code>'
-                    + (escaped ? code : markedjs.helpers.escape.doescape(code, true))
-                    + '</code></pre>';
+                if (this.options.addcodeTag) {
+                    return "<pre><code>" + code + "</code></pre>";
+                }
+                else {
+                    return "<pre>" + code + "</pre>";
+                }
             }
-            return '<pre><code class="'
-                + this.options.langPrefix
-                + markedjs.helpers.escape.doescape(lang, true)
-                + '">'
-                + (escaped ? code : markedjs.helpers.escape.doescape(code, true))
-                + '</code></pre>\n';
+            else {
+                lang = this.options.langPrefix + markedjs.helpers.escape.doescape(lang, true);
+                if (this.options.addcodeTag) {
+                    return "<pre><code class=\"" + lang + "\">" + code + "</code></pre>\n";
+                }
+                else {
+                    return "<pre class=\"" + lang + "\">" + code + "</pre>\n";
+                }
+            }
         };
         ;
         htmlRenderer.prototype.blockquote = function (quote) {

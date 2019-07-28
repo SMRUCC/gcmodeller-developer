@@ -32,20 +32,20 @@ var blog;
                 }
             }
             if (!lang) {
-                return '<pre><code>'
+                return '<pre>'
                     + (escaped ? code : markedjs.helpers.escape.doescape(code, true))
-                    + '</code></pre>';
+                    + '</pre>';
             }
             else if (lang != "vbnet") {
                 let highlight = window.hljs
                     .highlightAuto(code)
                     .value;
-                code = `<pre><code class="highlight ${lang} hljs">${highlight}</code></pre>`;
+                code = `<pre class="highlight ${lang} hljs">${highlight}</pre>`;
                 return code;
             }
-            return '<pre><code class="highlight ' + lang + '">'
+            return '<pre class="highlight ' + lang + '">'
                 + (escaped ? code : markedjs.helpers.escape.doescape(code, true))
-                + '</code></pre>\n';
+                + '</pre>\n';
         }
     }
     blog.markdown = markdown;
@@ -73,8 +73,9 @@ var blog;
     function initialize() {
         // initialize styles and events
         window.onhashchange = blog.loadDocument;
-        config.renderer = new blog.markdown();
-        vbcodeStyle.lineHeight = "5px";
+        config.addcodeTag = false;
+        config.renderer = new blog.markdown(config);
+        console.log(config);
         blog.renderDocument(getTargetFile());
     }
     blog.initialize = initialize;
@@ -90,8 +91,6 @@ var blog;
         let dateTag;
         // update article content
         $ts("#article").innerHTML = html;
-        // and then highligh vb code block
-        vscode.highlightVB(vbcodeStyle);
         h1 = $ts("#article").getElementsByTagName("h1")[0];
         dateTag = $ts("<span>", {
             style: "color: rgb(100,100,100); font-size: 0.8em;"
@@ -109,6 +108,8 @@ var blog;
                 dateTag.insertAdjacentElement("afterend", $ts("<br>"));
             }
         }
+        // and then highligh vb code block
+        vscode.highlightVB(vbcodeStyle);
         return h1.innerText;
     }
     blog.updateArticle = updateArticle;

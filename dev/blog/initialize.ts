@@ -26,8 +26,10 @@ namespace blog {
     export function initialize() {
         // initialize styles and events
         window.onhashchange = blog.loadDocument;
-        config.renderer = new markdown();
-        vbcodeStyle.lineHeight = "5px";
+        config.addcodeTag = false;
+        config.renderer = new markdown(config);        
+
+        console.log(config);
 
         blog.renderDocument(getTargetFile());
     }
@@ -45,8 +47,6 @@ namespace blog {
 
         // update article content
         $ts("#article").innerHTML = html;
-        // and then highligh vb code block
-        vscode.highlightVB(vbcodeStyle);
 
         h1 = $ts("#article").getElementsByTagName("h1")[0];
         dateTag = $ts("<span>", {
@@ -69,6 +69,9 @@ namespace blog {
                 dateTag.insertAdjacentElement("afterend", $ts("<br>"));
             }
         }
+
+        // and then highligh vb code block
+        vscode.highlightVB(vbcodeStyle);
 
         return h1.innerText;
     }

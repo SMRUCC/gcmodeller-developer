@@ -39,22 +39,22 @@
                 }
             }
             if (!lang) {
-                return '<pre><code>'
+                return '<pre>'
                     + (escaped ? code : markedjs.helpers.escape.doescape(code, true))
-                    + '</code></pre>';
+                    + '</pre>';
             } else if (lang != "vbnet") {
                 let highlight: string = (<any>window).hljs
                     .highlightAuto(code)
                     .value;
 
-                code = `<pre><code class="highlight ${lang} hljs">${highlight}</code></pre>`;
+                code = `<pre class="highlight ${lang} hljs">${highlight}</pre>`;
 
                 return code;
             }
 
-            return '<pre><code class="highlight ' + lang + '">'
+            return '<pre class="highlight ' + lang + '">'
                 + (escaped ? code : markedjs.helpers.escape.doescape(code, true))
-                + '</code></pre>\n';
+                + '</pre>\n';
         }
     }
 }

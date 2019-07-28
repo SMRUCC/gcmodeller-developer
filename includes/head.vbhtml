@@ -21,11 +21,11 @@
 <meta class="foundation-mq-topbar" />
 
 <link rel="shortcut icon" href="logo.png" />
+<link rel="stylesheet" href="styles/main.css" />
 <link rel="stylesheet" href="styles/normalize.css" />
 <link rel="stylesheet" href="styles/foundation.css" />
 <link rel="stylesheet" href="styles/font-awesome.css" />
 <link rel="stylesheet" href="styles/css.css" />
-<link rel="stylesheet" href="styles/main.css" />
 
 <script type="text/javascript">
 	function searchURL() {

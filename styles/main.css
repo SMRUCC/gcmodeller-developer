@@ -32,6 +32,15 @@ h6 {
 	width: 100%;	
 }
 
+table.pre {
+	line-height: 0px !important;
+	padding-left: 0px !important;
+}
+
+.pre tr {
+	line-height: 0px !important;	
+}
+
 /*
 code {
   font-weight: normal;

@@ -6,6 +6,7 @@ declare namespace markedjs {
         headerIds: boolean;
         headerPrefix: string;
         highlight: (code: string, lang: string, callback?: highlightCallback) => string;
+        addcodeTag: boolean;
         langPrefix: string;
         mangle: boolean;
         pedantic: boolean;
@@ -307,7 +308,7 @@ declare namespace markedjs {
 }
 declare namespace markedjs {
     class htmlRenderer extends component implements Renderer {
-        constructor();
+        constructor(opt: option);
         html(text: string): string;
         text(text: string): string;
         code(code: string, infostring: string, escaped: boolean): string;
