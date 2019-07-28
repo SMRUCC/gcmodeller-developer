@@ -28,11 +28,11 @@
 <meta class="foundation-mq-topbar" />
 
 <link rel="shortcut icon" href="logo.png" />
+<link rel="stylesheet" href="styles/main.css" />
 <link rel="stylesheet" href="styles/normalize.css" />
 <link rel="stylesheet" href="styles/foundation.css" />
 <link rel="stylesheet" href="styles/font-awesome.css" />
 <link rel="stylesheet" href="styles/css.css" />
-<link rel="stylesheet" href="styles/main.css" />
 
 <script type="text/javascript">
 	function searchURL() {
@@ -96,14 +96,9 @@
     </div>
 </div>
 
-		<div class="row">
-		
-		<p id="goback">
-<i class="fa fa-arrow-left" aria-hidden="true"></i> <span id="previous-article-title"></span>
-</p>
-		</div>
-
 <script type="text/javascript" src="lib/blog.min.js"></script>
+
+
 
 		<!-- 添加上这个<div>标签之后可以防止在高度比较低的时候出现错位的现象 -->
 		<!--
@@ -114,7 +109,14 @@
 			在这里将push字符串替换为一个变量来进行内容格式的控制
 		-->
 		<div id="push"></div>
-
+	
+				<div id="goback-row" class="row" style="display: none;">
+		
+		<p id="goback">
+<i class="fa fa-arrow-left" aria-hidden="true"></i> <span id="previous-article-title"></span>
+</p>
+		</div>
+		
 	</div>
 
 	<footer>
@@ -150,6 +152,8 @@
 </body>
 
 </html>
+
+
 
 
 
