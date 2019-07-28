@@ -27,7 +27,7 @@ var blog;
             let text = "";
             let doi;
             for (let line of lines) {
-                doi = line.match(/DOI[:]\s*.+?/ig)[0];
+                doi = line.match(/DOI[:]\s*(\S)+/ig)[0];
                 line = line.replace(doi, `<strong>${doi}</strong>`);
                 text = text + line + "<br />";
             }
