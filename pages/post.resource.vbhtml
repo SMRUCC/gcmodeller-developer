@@ -4,11 +4,5 @@
     </div>
 </div>
 
-		<div class="row">
-		
-		<p id="goback">
-<i class="fa fa-arrow-left" aria-hidden="true"></i> <span id="previous-article-title"></span>
-</p>
-		</div>
-
 <script type="text/javascript" src="lib/blog.min.js"></script>
+

@@ -6,3 +6,7 @@
 <?vb
     Dim $content As <%= ./post.resource.vbhtml %>
 ?>
+
+<?vb
+	Dim $after_content As <%= post.back.vbhtml %>
+?>

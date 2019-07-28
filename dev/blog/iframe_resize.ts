@@ -1,6 +1,4 @@
-﻿/// <reference path="../linq.d.ts" />
-
-$ts(function () {
+﻿$ts(function () {
     let size = DOM.clientSize();
     let iframe = document.getElementsByTagName("iframe");
 
@@ -13,8 +11,8 @@ $ts(function () {
             let w: number = parseInt((/\d+/ig).exec(frame.width)[0]);
             let h: number = parseInt((/\d+/ig).exec(frame.height)[0]);
 
-            iframe.item(i).width = `${size[0]}px`;
-            iframe.item(i).height = `${size[0] * h / w}px`;
+            frame.width = `${size[0]}px`;
+            frame.height = `${size[0] * h / w}px`;
         }
     }
 });

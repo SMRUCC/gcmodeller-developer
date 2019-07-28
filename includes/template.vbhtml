@@ -25,7 +25,9 @@
 			在这里将push字符串替换为一个变量来进行内容格式的控制
 		-->
 		<div id="$div_push"></div>
-
+	
+		$after_content
+		
 	</div>
 
 	<footer>
