@@ -5,12 +5,15 @@ var blog;
     */
     class markdown extends markedjs.htmlRenderer {
         image(href, title, text) {
+            let hash = $ts.location.hash();
+            let docFolder = $ts(hash.split("/"));
+            docFolder = docFolder.Take(docFolder.Count - 1);
             href = markedjs.helpers.cleanUrl(this.options.sanitize, this.options.baseUrl, href);
             if (href === null) {
                 return text;
             }
             else if (!markdown.isFullName(href)) {
-                href = `/docs/${href}`;
+                href = `/articles/${docFolder.JoinBy("/")}/${href}`;
             }
             var out = '<img src="' + href + '" alt="' + text + '"';
             if (title) {

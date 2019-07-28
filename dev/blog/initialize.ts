@@ -9,7 +9,7 @@ namespace blog {
      * A stack for enable back to previous article
     */
     let history: NamedValue<string>[] = [];
-
+  
     function getTargetFile(fileName: string = $ts.location.hash()): string {
         let pathFallback: string;
 

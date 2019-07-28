@@ -6,20 +6,26 @@
     export class markdown extends markedjs.htmlRenderer {
 
         public image(href: string, title: string, text: string): string {
+            let hash = $ts.location.hash();
+            let docFolder = $ts(hash.split("/"));
+
+            docFolder = docFolder.Take(docFolder.Count - 1);
             href = markedjs.helpers.cleanUrl(this.options.sanitize, this.options.baseUrl, href);
 
             if (href === null) {
                 return text;
-            }
-            else if (!markdown.isFullName(href)) {
-                href = `/docs/${href}`;
+            } else if (!markdown.isFullName(href)) {
+                href = `/articles/${docFolder.JoinBy("/")}/${href}`;
             }
 
             var out = '<img src="' + href + '" alt="' + text + '"';
+
             if (title) {
                 out += ' title="' + title + '"';
             }
+
             out += this.options.xhtml ? '/>' : '>';
+
             return out;
         }
 
