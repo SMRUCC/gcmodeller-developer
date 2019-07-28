@@ -94,16 +94,16 @@ var blog;
         vscode.highlightVB(vbcodeStyle);
         h1 = $ts("#article").getElementsByTagName("h1")[0];
         dateTag = $ts("<span>", {
-            style: "color: grey; font-size: 0.8em;"
+            style: "color: rgb(100,100,100); font-size: 0.8em;"
         }).display("#" + time.toLocaleDateString() + "#");
         let diff = Date.now() - time.getTime();
         let days = Math.floor(diff / (1000 * 60 * 60 * 24));
         if (!isNullOrUndefined(h1)) {
             document.title = h1.innerText;
-            h1.insertAdjacentElement("afterend", dateTag);
+            h1.insertAdjacentElement("afterend", $ts("<p>").display(dateTag));
             if (days > 30) {
-                let warn = $ts("<p>", {
-                    style: "color: lightgrey; background-color: yellow;"
+                let warn = $ts("<div>", {
+                    class: "alert-box info"
                 }).display(`This article is posted ${days} days before, information in this article may be obsolete...`);
                 dateTag.insertAdjacentElement("afterend", warn);
                 dateTag.insertAdjacentElement("afterend", $ts("<br>"));
