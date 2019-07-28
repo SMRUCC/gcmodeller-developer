@@ -46,6 +46,9 @@ The cli command ``/UniProt.KO.faa`` takes one required input file and an optiona
 
 Then, we could use the reference sequence database for bbh search
 
+![](kegg_mapping/sbh.png)
+![](kegg_mapping/bbh.png)
+
 
 ```vbnet
 ''' <summary>
