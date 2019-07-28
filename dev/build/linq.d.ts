@@ -256,6 +256,7 @@ declare class IEnumerator<T> extends LINQIterator<T> {
      *     element test pass by the ``predicate`` function.
     */
     Where(predicate: (e: T) => boolean): IEnumerator<T>;
+    Which(predicate: (e: T) => boolean, first?: boolean): number | IEnumerator<number>;
     /**
      * Get the min value in current sequence.
      * (求取这个序列集合的最小元素，使用这个函数要求序列之中的元素都必须能够被转换为数值)
@@ -414,14 +415,14 @@ declare class DOMEnumerator<T extends HTMLElement> extends IEnumerator<T> {
      * @returns 函数总是会返回所设置的或者读取得到的属性值的字符串集合
     */
     attr(attrName: string, val?: string | IEnumerator<string> | string[] | ((x: T) => string)): IEnumerator<string>;
-    AddClass(className: string): DOMEnumerator<T>;
-    AddEvent(eventName: string, handler: (sender: T, event: Event) => void): void;
+    addClass(className: string): DOMEnumerator<T>;
+    addEvent(eventName: string, handler: (sender: T, event: Event) => void): void;
     onChange(handler: (sender: T, event: Event) => void): void;
     /**
      * 为当前的html节点集合添加鼠标点击事件处理函数
     */
     onClick(handler: (sender: T, event: MouseEvent) => void): void;
-    RemoveClass(className: string): DOMEnumerator<T>;
+    removeClass(className: string): DOMEnumerator<T>;
     /**
      * 通过设置css之中的display值来将集合之中的所有的节点元素都隐藏掉
     */
@@ -433,7 +434,7 @@ declare class DOMEnumerator<T extends HTMLElement> extends IEnumerator<T> {
     /**
      * 将所选定的节点批量删除
     */
-    Delete(): void;
+    delete(): void;
 }
 declare namespace Internal.Handlers {
     function hasKey(object: object, key: string): boolean;
@@ -1587,44 +1588,41 @@ declare class SlideWindow<T> extends IEnumerator<T> {
     */
     static Split<T>(src: T[] | IEnumerator<T>, winSize: number, step?: number): IEnumerator<SlideWindow<T>>;
 }
-declare namespace DOM {
+/**
+ * 序列之中的元素下标的操作方法集合
+*/
+declare namespace Which {
     /**
-     * HTML文档节点的查询类型
+     * 查找出所给定的逻辑值集合之中的所有true的下标值
     */
-    enum QueryTypes {
-        NoQuery = 0,
+    function Is(booleans: boolean[] | IEnumerator<boolean>): IEnumerator<number>;
+    /**
+     * 默认的通用类型的比较器对象
+    */
+    class DefaultCompares<T> {
         /**
-         * 表达式为 #xxx
-         * 按照节点的id编号进行查询
-         *
-         * ``<tag id="xxx">``
+         * 一个用于比较通用类型的数值转换器对象
         */
-        id = 1,
-        /**
-         * 表达式为 .xxx
-         * 按照节点的class名称进行查询
-         *
-         * ``<tag class="xxx">``
-        */
-        class = 10,
-        /**
-         * 表达式为 xxx
-         * 按照节点的名称进行查询
-         *
-         * ``<xxx ...>``
-        */
-        tagName = -100,
-        /**
-         * query meta tag content value by name
-         *
-         * ``@xxxx``
-         *
-         * ```html
-         * <meta name="user-login" content="xieguigang" />
-         * ```
-        */
-        QueryMeta = 200
+        private as_numeric;
+        compares(a: T, b: T): number;
+        static default<T>(): (a: T, b: T) => number;
     }
+    /**
+     * 查找出序列之中最大的元素的序列下标编号
+     *
+     * @param x 所给定的数据序列
+     * @param compare 默认是将x序列之中的元素转换为数值进行大小的比较的
+    */
+    function Max<T>(x: IEnumerator<T>, compare?: (a: T, b: T) => number): number;
+    /**
+     * 查找出序列之中最小的元素的序列下标编号
+     *
+     * @param x 所给定的数据序列
+     * @param compare 默认是将x序列之中的元素转换为数值进行大小的比较的
+    */
+    function Min<T>(x: IEnumerator<T>, compare?: (a: T, b: T) => number): number;
+}
+declare namespace DOM {
     class Query {
         type: QueryTypes;
         singleNode: boolean;
@@ -1663,6 +1661,45 @@ declare namespace DOM {
 }
 declare namespace DOM {
     /**
+     * HTML文档节点的查询类型
+    */
+    enum QueryTypes {
+        NoQuery = 0,
+        /**
+         * 表达式为 #xxx
+         * 按照节点的id编号进行查询
+         *
+         * ``<tag id="xxx">``
+        */
+        id = 1,
+        /**
+         * 表达式为 .xxx
+         * 按照节点的class名称进行查询
+         *
+         * ``<tag class="xxx">``
+        */
+        class = 10,
+        /**
+         * 表达式为 xxx
+         * 按照节点的名称进行查询
+         *
+         * ``<xxx ...>``
+        */
+        tagName = -100,
+        /**
+         * query meta tag content value by name
+         *
+         * ``@xxxx``
+         *
+         * ```html
+         * <meta name="user-login" content="xieguigang" />
+         * ```
+        */
+        QueryMeta = 200
+    }
+}
+declare namespace DOM.Events {
+    /**
      * Execute a given function when the document is ready.
      * It is called when the DOM is ready which can be prior to images and other external content is loaded.
      *
@@ -1672,8 +1709,10 @@ declare namespace DOM {
      * @param fn A function that without any parameters
      * @param loadComplete + ``interactive``: The document has finished loading. We can now access the DOM elements.
      *                     + ``complete``: The page is fully loaded.
+     * @param iframe Event execute on document from target iframe.
+     *
     */
-    function ready(fn: () => void, loadComplete?: string[]): void;
+    function ready(fn: () => void, loadComplete?: string[], iframe?: HTMLIFrameElement): void;
     /**
      * 向一个给定的HTML元素或者HTML元素的集合之中的对象添加给定的事件
      *
@@ -2138,6 +2177,9 @@ declare namespace Framework.Extensions {
     function extend<V>(from: V, to?: V): V;
 }
 declare namespace TypeScript {
+    function gc(): {};
+}
+declare namespace TypeScript {
     /**
      * Console logging helper
     */
@@ -2197,39 +2239,16 @@ declare module Router {
     */
     function goto(link: string, appId: string, hashKey: (link: string) => string, stack?: Window): void;
 }
-/**
- * 序列之中的元素下标的操作方法集合
-*/
-declare namespace Which {
+declare namespace TypeScript {
     /**
-     * 查找出所给定的逻辑值集合之中的所有true的下标值
+     * https://github.com/natewatson999/js-gc
     */
-    function Is(booleans: boolean[] | IEnumerator<boolean>): IEnumerator<number>;
-    /**
-     * 默认的通用类型的比较器对象
-    */
-    class DefaultCompares<T> {
+    module garbageCollect {
         /**
-         * 一个用于比较通用类型的数值转换器对象
+         * try to do garbageCollect by invoke this function
         */
-        private as_numeric;
-        compares(a: T, b: T): number;
-        static default<T>(): (a: T, b: T) => number;
+        const handler: Delegate.Func<any>;
     }
-    /**
-     * 查找出序列之中最大的元素的序列下标编号
-     *
-     * @param x 所给定的数据序列
-     * @param compare 默认是将x序列之中的元素转换为数值进行大小的比较的
-    */
-    function Max<T>(x: IEnumerator<T>, compare?: (a: T, b: T) => number): number;
-    /**
-     * 查找出序列之中最小的元素的序列下标编号
-     *
-     * @param x 所给定的数据序列
-     * @param compare 默认是将x序列之中的元素转换为数值进行大小的比较的
-    */
-    function Min<T>(x: IEnumerator<T>, compare?: (a: T, b: T) => number): number;
 }
 declare namespace Internal {
     class Arguments {

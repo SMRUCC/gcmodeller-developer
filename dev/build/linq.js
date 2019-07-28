@@ -1,27 +1,13 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 var Activator;
 (function (Activator) {
     /**
      * @param properties 如果这个属性定义集合是一个object，则应该是一个IProperty接口的字典对象
     */
     function CreateInstance(properties) {
-        var target = Object.create({});
-        var propertyInfo;
+        let target = Object.create({});
+        let propertyInfo;
         if (Array.isArray(properties)) {
-            for (var _i = 0, _a = properties; _i < _a.length; _i++) {
-                var property = _a[_i];
+            for (let property of properties) {
                 propertyInfo = property.value;
                 Object.defineProperty(target, property.name, {
                     get: propertyInfo.get,
@@ -30,9 +16,9 @@ var Activator;
             }
         }
         else {
-            for (var name_1 in properties) {
-                propertyInfo = properties[name_1];
-                Object.defineProperty(target, name_1, {
+            for (let name in properties) {
+                propertyInfo = properties[name];
+                Object.defineProperty(target, name, {
                     get: propertyInfo.get,
                     set: propertyInfo.set
                 });
@@ -52,21 +38,21 @@ var Activator;
         if (typeof init == "function") {
             // 通过函数来进行初始化，则每一个属性值可能会不一样
             // 例如使用随机数函数来初始化
-            var create_1 = init;
+            let create = init;
             if (Array.isArray(names)) {
-                names.forEach(function (name) { return obj[name] = create_1(); });
+                names.forEach(name => obj[name] = create());
             }
             else {
-                names.ForEach(function (name) { return obj[name] = create_1(); });
+                names.ForEach(name => obj[name] = create());
             }
         }
         else {
             // 直接是一个值的时候，则所有的属性值都是一样的          
             if (Array.isArray(names)) {
-                names.forEach(function (name) { return obj[name] = init; });
+                names.forEach(name => obj[name] = init);
             }
             else {
-                names.ForEach(function (name) { return obj[name] = init; });
+                names.ForEach(name => obj[name] = init);
             }
         }
         return obj;
@@ -76,36 +62,36 @@ var Activator;
      * 从键值对集合创建object对象，键名或者名称属性会作为object对象的属性名称
     */
     function CreateObject(nameValues) {
-        var obj = {};
-        var type = TypeInfo.typeof(nameValues);
+        let obj = {};
+        let type = TypeInfo.typeof(nameValues);
         if (type.IsArray && type.class == "MapTuple") {
-            nameValues.forEach(function (map) { return obj[map.key] = map.value; });
+            nameValues.forEach(map => obj[map.key] = map.value);
         }
         else if (type.IsArray && type.class == "NamedValue") {
-            nameValues.forEach(function (nv) { return obj[nv.name] = nv.value; });
+            nameValues.forEach(nv => obj[nv.name] = nv.value);
         }
         else if (type.class == "IEnumerator") {
             var seq = nameValues;
             type = seq.ElementType;
             if (type.class == "MapTuple") {
                 nameValues
-                    .ForEach(function (map) {
+                    .ForEach(map => {
                     obj[map.key] = map.value;
                 });
             }
             else if (type.class == "NamedValue") {
                 nameValues
-                    .ForEach(function (nv) {
+                    .ForEach(nv => {
                     obj[nv.name] = nv.value;
                 });
             }
             else {
                 console.error(type);
-                throw "Unsupport data type: " + type.class;
+                throw `Unsupport data type: ${type.class}`;
             }
         }
         else {
-            throw "Unsupport data type: " + JSON.stringify(type);
+            throw `Unsupport data type: ${JSON.stringify(type)}`;
         }
         return obj;
     }
@@ -118,14 +104,11 @@ var data;
         /**
          * 对占位符的匹配结果
         */
-        var match = /** @class */ (function () {
-            function match() {
-            }
-            match.prototype.toString = function () {
+        class match {
+            toString() {
                 return JSON.stringify(this);
-            };
-            return match;
-        }());
+            }
+        }
         sprintf.match = match;
         /**
          * 格式化占位符
@@ -204,11 +187,7 @@ var data;
          * string formatted by the usual printf conventions. See below for more details.
          * You must specify the string and how to format the variables in it.
         */
-        function doFormat(format) {
-            var argv = [];
-            for (var _i = 1; _i < arguments.length; _i++) {
-                argv[_i - 1] = arguments[_i];
-            }
+        function doFormat(format, ...argv) {
             if (typeof arguments == "undefined") {
                 return null;
             }
@@ -232,7 +211,7 @@ var data;
             }
             if (argv.length < convCount) {
                 // 格式化参数的数量少于占位符的数量，则抛出错误
-                throw "Mismatch format argument numbers (" + argv.length + " !== " + convCount + ")!";
+                throw `Mismatch format argument numbers (${argv.length} !== ${convCount})!`;
             }
             else {
                 return sprintf.doSubstitute(parsed.matches, parsed.strings);
@@ -297,8 +276,7 @@ var data;
             return newString + strings[i];
         }
         sprintf.doSubstitute = doSubstitute;
-        function convert(match, nosign) {
-            if (nosign === void 0) { nosign = false; }
+        function convert(match, nosign = false) {
             if (nosign) {
                 match.sign = '';
             }
@@ -352,58 +330,47 @@ var data;
  * }
  * ```
 */
-var LINQIterator = /** @class */ (function () {
-    function LINQIterator(array) {
+class LINQIterator {
+    constructor(array) {
         this.i = 0;
         this.sequence = array;
     }
     /**
      * 实现迭代器的关键元素之1
     */
-    LINQIterator.prototype[Symbol.iterator] = function () { return this; };
-    Object.defineProperty(LINQIterator.prototype, "Count", {
-        /**
-         * The number of elements in the data sequence.
-        */
-        get: function () {
-            return this.sequence.length;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    LINQIterator.prototype.reset = function () {
+    [Symbol.iterator]() { return this; }
+    /**
+     * The number of elements in the data sequence.
+    */
+    get Count() {
+        return this.sequence.length;
+    }
+    reset() {
         this.i = 0;
         return this;
-    };
+    }
     /**
      * 实现迭代器的关键元素之2
     */
-    LINQIterator.prototype.next = function () {
+    next() {
         return this.i < this.sequence.length ?
             { value: this.sequence[this.i++], done: false } :
             { value: undefined, done: true };
-    };
-    return LINQIterator;
-}());
+    }
+}
 //// <reference path="Enumerator.ts" />
 /**
  * The linq pipline implements at here. (在这个模块之中实现具体的数据序列算法)
 */
 var Enumerable;
 (function (Enumerable) {
-    function Range(from, to, steps) {
-        if (steps === void 0) { steps = 1; }
+    function Range(from, to, steps = 1) {
         return new data.NumericRange(from, to).PopulateNumbers(steps);
     }
     Enumerable.Range = Range;
-    function Min() {
-        var v = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            v[_i] = arguments[_i];
-        }
-        var min = 99999999999;
-        for (var _a = 0, v_1 = v; _a < v_1.length; _a++) {
-            var x = v_1[_a];
+    function Min(...v) {
+        let min = 99999999999;
+        for (let x of v) {
             if (x < min) {
                 min = x;
             }
@@ -417,7 +384,7 @@ var Enumerable;
     */
     function Select(source, project) {
         var projections = [];
-        source.forEach(function (o, i) {
+        source.forEach((o, i) => {
             projections.push(project(o, i));
         });
         return new IEnumerator(projections);
@@ -429,8 +396,8 @@ var Enumerable;
     */
     function OrderBy(source, key) {
         // array clone
-        var clone = source.slice();
-        clone.sort(function (a, b) {
+        var clone = [...source];
+        clone.sort((a, b) => {
             // a - b
             return key(a) - key(b);
         });
@@ -440,7 +407,7 @@ var Enumerable;
     }
     Enumerable.OrderBy = OrderBy;
     function OrderByDescending(source, key) {
-        return Enumerable.OrderBy(source, function (e) {
+        return Enumerable.OrderBy(source, (e) => {
             // b - a
             return -key(e);
         });
@@ -492,7 +459,7 @@ var Enumerable;
     Enumerable.TakeWhile = TakeWhile;
     function Where(source, predicate) {
         var takes = [];
-        source.forEach(function (o) {
+        source.forEach(o => {
             if (true == predicate(o)) {
                 takes.push(o);
             }
@@ -537,7 +504,7 @@ var Enumerable;
     */
     function GroupBy(source, getKey, compares) {
         var tree = new algorithm.BTree.binaryTree(compares);
-        source.forEach(function (obj) {
+        source.forEach(obj => {
             var key = getKey(obj);
             var list = tree.find(key);
             if (list) {
@@ -548,43 +515,42 @@ var Enumerable;
             }
         });
         console.log(tree);
-        return tree.AsEnumerable().Select(function (node) {
+        return tree.AsEnumerable().Select(node => {
             return new Group(node.key, node.value);
         });
     }
     Enumerable.GroupBy = GroupBy;
     function AllKeys(sequence) {
         return From(sequence)
-            .Select(function (o) { return Object.keys(o); })
+            .Select(o => Object.keys(o))
             .Unlist()
             .Distinct()
             .ToArray();
     }
     Enumerable.AllKeys = AllKeys;
-    var JoinHelper = /** @class */ (function () {
-        function JoinHelper(x, y) {
+    class JoinHelper {
+        constructor(x, y) {
             this.xset = x;
             this.yset = y;
             this.keysT = AllKeys(x);
             this.keysU = AllKeys(y);
         }
-        JoinHelper.prototype.JoinProject = function (x, y) {
+        JoinProject(x, y) {
             var out = {};
-            this.keysT.forEach(function (k) { return out[k] = x[k]; });
-            this.keysU.forEach(function (k) { return out[k] = y[k]; });
+            this.keysT.forEach(k => out[k] = x[k]);
+            this.keysU.forEach(k => out[k] = y[k]);
             return out;
-        };
-        JoinHelper.prototype.Union = function (tKey, uKey, compare, project) {
-            if (project === void 0) { project = this.JoinProject; }
+        }
+        Union(tKey, uKey, compare, project = this.JoinProject) {
             var tree = this.buildUtree(uKey, compare);
             var output = [];
             var keyX = new algorithm.BTree.binaryTree(compare);
-            this.xset.forEach(function (x) {
+            this.xset.forEach(x => {
                 var key = tKey(x);
                 var list = tree.find(key);
                 if (list) {
                     // 有交集，则进行叠加投影
-                    list.forEach(function (y) { return output.push(project(x, y)); });
+                    list.forEach(y => output.push(project(x, y)));
                     if (!keyX.find(key)) {
                         keyX.add(key);
                     }
@@ -594,7 +560,7 @@ var Enumerable;
                     output.push(project(x, {}));
                 }
             });
-            this.yset.forEach(function (y) {
+            this.yset.forEach(y => {
                 var key = uKey(y);
                 if (!keyX.find(key)) {
                     // 没有和X进行join，则需要union到最终的结果之中
@@ -603,10 +569,10 @@ var Enumerable;
                 }
             });
             return new IEnumerator(output);
-        };
-        JoinHelper.prototype.buildUtree = function (uKey, compare) {
+        }
+        buildUtree(uKey, compare) {
             var tree = new algorithm.BTree.binaryTree(compare);
-            this.yset.forEach(function (obj) {
+            this.yset.forEach(obj => {
                 var key = uKey(obj);
                 var list = tree.find(key);
                 if (list) {
@@ -617,17 +583,16 @@ var Enumerable;
                 }
             });
             return tree;
-        };
-        JoinHelper.prototype.LeftJoin = function (tKey, uKey, compare, project) {
-            if (project === void 0) { project = this.JoinProject; }
+        }
+        LeftJoin(tKey, uKey, compare, project = this.JoinProject) {
             var tree = this.buildUtree(uKey, compare);
             var output = [];
-            this.xset.forEach(function (x) {
+            this.xset.forEach(x => {
                 var key = tKey(x);
                 var list = tree.find(key);
                 if (list) {
                     // 有交集，则进行叠加投影
-                    list.forEach(function (y) { return output.push(project(x, y)); });
+                    list.forEach(y => output.push(project(x, y)));
                 }
                 else {
                     // 没有交集，则投影空对象
@@ -635,9 +600,8 @@ var Enumerable;
                 }
             });
             return new IEnumerator(output);
-        };
-        return JoinHelper;
-    }());
+        }
+    }
     Enumerable.JoinHelper = JoinHelper;
 })(Enumerable || (Enumerable = {}));
 /// <reference path="Iterator.ts" />
@@ -648,8 +612,7 @@ var Enumerable;
  *
  * (这个枚举器类型是构建出一个Linq查询表达式所必须的基础类型，这是一个静态的集合，不会发生元素的动态添加或者删除)
 */
-var IEnumerator = /** @class */ (function (_super) {
-    __extends(IEnumerator, _super);
+class IEnumerator extends LINQIterator {
     //#endregion
     /**
      * 可以从一个数组或者枚举器构建出一个Linq序列
@@ -657,20 +620,16 @@ var IEnumerator = /** @class */ (function (_super) {
      * @param source The enumerator data source, this constructor will perform
      *       a sequence copy action on this given data source sequence at here.
     */
-    function IEnumerator(source) {
-        return _super.call(this, IEnumerator.getArray(source)) || this;
+    constructor(source) {
+        super(IEnumerator.getArray(source));
     }
-    Object.defineProperty(IEnumerator.prototype, "ElementType", {
-        //#region "readonly property"
-        /**
-         * 获取序列的元素类型
-        */
-        get: function () {
-            return TypeInfo.typeof(this.First);
-        },
-        enumerable: true,
-        configurable: true
-    });
+    //#region "readonly property"
+    /**
+     * 获取序列的元素类型
+    */
+    get ElementType() {
+        return TypeInfo.typeof(this.First);
+    }
     ;
     /**
      * Get the element value at a given index position
@@ -678,89 +637,77 @@ var IEnumerator = /** @class */ (function (_super) {
      *
      * @param index index value should be an integer value.
     */
-    IEnumerator.prototype.ElementAt = function (index) {
-        if (index === void 0) { index = null; }
+    ElementAt(index = null) {
         if (!index) {
             index = 0;
         }
         else if (typeof index == "string") {
-            throw "Item index='" + index + "' must be an integer!";
+            throw `Item index='${index}' must be an integer!`;
         }
         return this.sequence[index];
-    };
-    IEnumerator.getArray = function (source) {
+    }
+    static getArray(source) {
         if (!source) {
             return [];
         }
         else if (Array.isArray(source)) {
             // 2018-07-31 为了防止外部修改source导致sequence数组被修改
             // 在这里进行数组复制，防止出现这种情况
-            return source.slice();
+            return [...source];
         }
         else {
-            return source.sequence.slice();
+            return [...source.sequence];
         }
-    };
-    IEnumerator.prototype.indexOf = function (x) {
+    }
+    indexOf(x) {
         return this.sequence.indexOf(x);
-    };
-    Object.defineProperty(IEnumerator.prototype, "First", {
-        /**
-         * Get the first element in this sequence
-        */
-        get: function () {
-            return this.sequence[0];
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(IEnumerator.prototype, "Last", {
-        /**
-         * Get the last element in this sequence
-        */
-        get: function () {
-            return this.sequence[this.Count - 1];
-        },
-        enumerable: true,
-        configurable: true
-    });
+    }
+    /**
+     * Get the first element in this sequence
+    */
+    get First() {
+        return this.sequence[0];
+    }
+    /**
+     * Get the last element in this sequence
+    */
+    get Last() {
+        return this.sequence[this.Count - 1];
+    }
     /**
      * If the sequence length is zero, then returns the default value.
     */
-    IEnumerator.prototype.FirstOrDefault = function (Default) {
-        if (Default === void 0) { Default = null; }
+    FirstOrDefault(Default = null) {
         if (this.Count == 0) {
             return Default;
         }
         else {
             return this.sequence[0];
         }
-    };
+    }
     /**
      * 两个序列求总和
     */
-    IEnumerator.prototype.Union = function (another, tKey, uKey, compare, project) {
-        if (project === void 0) { project = null; }
+    Union(another, tKey, uKey, compare, project = null) {
         if (!Array.isArray(another)) {
             another = another.ToArray();
         }
         var join = new Enumerable.JoinHelper(this.sequence, another);
         return join.Union(tKey, uKey, compare, project);
-    };
+    }
     /**
      * 如果在another序列之中找不到对应的对象，则当前序列会和一个空对象合并
      * 如果another序列之中有多余的元素，即该元素在当前序列之中找不到的元素，会被扔弃
      *
      * @param project 如果这个参数被忽略掉了的话，将会直接进行属性的合并
     */
-    IEnumerator.prototype.Join = function (another, tKey, uKey, compare, project) {
-        if (project === void 0) { project = null; }
+    Join(another, tKey, uKey, compare, project = null) {
         if (!Array.isArray(another)) {
             another = another.ToArray();
         }
         var join = new Enumerable.JoinHelper(this.sequence, another);
         return join.LeftJoin(tKey, uKey, compare, project);
-    };
+    }
     /**
      * Projects each element of a sequence into a new form.
      *
@@ -772,9 +719,9 @@ var IEnumerator = /** @class */ (function (_super) {
      *          whose elements are the result of invoking the
      *          transform function on each element of source.
     */
-    IEnumerator.prototype.Select = function (selector) {
+    Select(selector) {
         return Enumerable.Select(this.sequence, selector);
-    };
+    }
     /**
      * Groups the elements of a sequence according to a key selector function.
      * The keys are compared by using a comparer and each group's elements
@@ -783,7 +730,7 @@ var IEnumerator = /** @class */ (function (_super) {
      * @param compares 注意，javascript在进行中文字符串的比较的时候存在bug，如果当key的类型是字符串的时候，
      *                 在这里需要将key转换为数值进行比较，遇到中文字符串可能会出现bug
     */
-    IEnumerator.prototype.GroupBy = function (keySelector, compares) {
+    GroupBy(keySelector, compares) {
         if (isNullOrUndefined(compares)) {
             var x = keySelector(this.First);
             switch (typeof x) {
@@ -791,7 +738,7 @@ var IEnumerator = /** @class */ (function (_super) {
                     compares = Strings.CompareTo;
                     break;
                 case "number":
-                    compares = (function (x, y) { return x - y; });
+                    compares = ((x, y) => x - y);
                     break;
                 case "boolean":
                     compares = (function (x, y) {
@@ -812,7 +759,7 @@ var IEnumerator = /** @class */ (function (_super) {
             }
         }
         return Enumerable.GroupBy(this.sequence, keySelector, compares);
-    };
+    }
     /**
      * Filters a sequence of values based on a predicate.
      *
@@ -821,52 +768,65 @@ var IEnumerator = /** @class */ (function (_super) {
      * @returns Sub sequence of the current sequence with all
      *     element test pass by the ``predicate`` function.
     */
-    IEnumerator.prototype.Where = function (predicate) {
+    Where(predicate) {
         return Enumerable.Where(this.sequence, predicate);
-    };
+    }
+    Which(predicate, first = true) {
+        let index;
+        if (!first) {
+            index = [];
+        }
+        for (var i = 0; i < this.sequence.length; i++) {
+            if (predicate(this.sequence[i])) {
+                if (first) {
+                    return i;
+                }
+                else {
+                    index.push(i);
+                }
+            }
+        }
+        return new IEnumerator(index);
+    }
     /**
      * Get the min value in current sequence.
      * (求取这个序列集合的最小元素，使用这个函数要求序列之中的元素都必须能够被转换为数值)
     */
-    IEnumerator.prototype.Min = function (project) {
-        if (project === void 0) { project = function (e) { return DataExtensions.as_numeric(e); }; }
+    Min(project = (e) => DataExtensions.as_numeric(e)) {
         return Enumerable.OrderBy(this.sequence, project).First;
-    };
+    }
     /**
      * Get the max value in current sequence.
      * (求取这个序列集合的最大元素，使用这个函数要求序列之中的元素都必须能够被转换为数值)
     */
-    IEnumerator.prototype.Max = function (project) {
-        if (project === void 0) { project = function (e) { return DataExtensions.as_numeric(e); }; }
+    Max(project = (e) => DataExtensions.as_numeric(e)) {
         return Enumerable.OrderByDescending(this.sequence, project).First;
-    };
+    }
     /**
      * 求取这个序列集合的平均值，使用这个函数要求序列之中的元素都必须能够被转换为数值
     */
-    IEnumerator.prototype.Average = function (project) {
-        if (project === void 0) { project = null; }
+    Average(project = null) {
         if (this.Count == 0) {
             return 0;
         }
         else {
             return this.Sum(project) / this.sequence.length;
         }
-    };
+    }
     /**
      * 求取这个序列集合的和，使用这个函数要求序列之中的元素都必须能够被转换为数值
     */
-    IEnumerator.prototype.Sum = function (project) {
-        if (project === void 0) { project = null; }
+    Sum(project = null) {
         var x = 0;
         if (!project)
-            project = function (e) {
+            project = (e) => {
                 return Number(e);
             };
         for (var i = 0; i < this.sequence.length; i++) {
             x += project(this.sequence[i]);
         }
         return x;
-    };
+    }
     /**
      * Sorts the elements of a sequence in ascending order according to a key.
      *
@@ -875,9 +835,9 @@ var IEnumerator = /** @class */ (function (_super) {
      * @returns An ``System.Linq.IOrderedEnumerable<T>`` whose elements are
      *          sorted according to a key.
     */
-    IEnumerator.prototype.OrderBy = function (key) {
+    OrderBy(key) {
         return Enumerable.OrderBy(this.sequence, key);
-    };
+    }
     /**
      * Sorts the elements of a sequence in descending order according to a key.
      *
@@ -886,53 +846,52 @@ var IEnumerator = /** @class */ (function (_super) {
      * @returns An ``System.Linq.IOrderedEnumerable<T>`` whose elements are
      *          sorted in descending order according to a key.
     */
-    IEnumerator.prototype.OrderByDescending = function (key) {
+    OrderByDescending(key) {
         return Enumerable.OrderByDescending(this.sequence, key);
-    };
+    }
     /**
      * 取出序列之中的前n个元素
     */
-    IEnumerator.prototype.Take = function (n) {
+    Take(n) {
         return Enumerable.Take(this.sequence, n);
-    };
+    }
     /**
      * 跳过序列的前n个元素之后返回序列之中的所有剩余元素
     */
-    IEnumerator.prototype.Skip = function (n) {
+    Skip(n) {
         return Enumerable.Skip(this.sequence, n);
-    };
+    }
     /**
      * 序列元素的位置反转
     */
-    IEnumerator.prototype.Reverse = function () {
+    Reverse() {
         var rseq = this.ToArray().reverse();
         return new IEnumerator(rseq);
-    };
+    }
     /**
      * Returns elements from a sequence as long as a specified condition is true.
      * (与Where类似，只不过这个函数只要遇到第一个不符合条件的，就会立刻终止迭代)
     */
-    IEnumerator.prototype.TakeWhile = function (predicate) {
+    TakeWhile(predicate) {
         return Enumerable.TakeWhile(this.sequence, predicate);
-    };
+    }
     /**
      * Bypasses elements in a sequence as long as a specified condition is true
      * and then returns the remaining elements.
     */
-    IEnumerator.prototype.SkipWhile = function (predicate) {
+    SkipWhile(predicate) {
         return Enumerable.SkipWhile(this.sequence, predicate);
-    };
+    }
     /**
      * 判断这个序列之中的所有元素是否都满足特定条件
     */
-    IEnumerator.prototype.All = function (predicate) {
+    All(predicate) {
         return Enumerable.All(this.sequence, predicate);
-    };
+    }
     /**
      * 判断这个序列之中的任意一个元素是否满足特定的条件
     */
-    IEnumerator.prototype.Any = function (predicate) {
-        if (predicate === void 0) { predicate = null; }
+    Any(predicate = null) {
         if (predicate) {
             return Enumerable.Any(this.sequence, predicate);
         }
@@ -944,27 +903,25 @@ var IEnumerator = /** @class */ (function (_super) {
                 return true;
             }
         }
-    };
+    }
     /**
      * 对序列中的元素进行去重
     */
-    IEnumerator.prototype.Distinct = function (key) {
-        if (key === void 0) { key = function (o) { return o.toString(); }; }
+    Distinct(key = o => o.toString()) {
         return this
             .GroupBy(key, Strings.CompareTo)
-            .Select(function (group) { return group.First; });
-    };
+            .Select(group => group.First);
+    }
     /**
      * 将序列按照符合条件的元素分成区块
      *
      * @param isDelimiter 一个用于判断当前的元素是否是分割元素的函数
      * @param reserve 是否保留下这个分割对象？默认不保留
     */
-    IEnumerator.prototype.ChunkWith = function (isDelimiter, reserve) {
-        if (reserve === void 0) { reserve = false; }
+    ChunkWith(isDelimiter, reserve = false) {
         var chunks = new List();
         var buffer = [];
-        this.sequence.forEach(function (x) {
+        this.sequence.forEach(x => {
             if (isDelimiter(x)) {
                 chunks.Add(buffer);
                 if (reserve) {
@@ -982,7 +939,7 @@ var IEnumerator = /** @class */ (function (_super) {
             chunks.Add(buffer);
         }
         return chunks;
-    };
+    }
     /**
      * Performs the specified action for each element in an array.
      *
@@ -990,9 +947,9 @@ var IEnumerator = /** @class */ (function (_super) {
      * calls the callbackfn function one time for each element in the array.
      *
     */
-    IEnumerator.prototype.ForEach = function (callbackfn) {
+    ForEach(callbackfn) {
         this.sequence.forEach(callbackfn);
-    };
+    }
     /**
      * Contract the data sequence to string
      *
@@ -1001,19 +958,18 @@ var IEnumerator = /** @class */ (function (_super) {
      *
      * @returns A contract string.
     */
-    IEnumerator.prototype.JoinBy = function (deli, toString) {
-        if (toString === void 0) { toString = function (x) {
-            if (typeof x === "string") {
-                return x;
-            }
-            else {
-                return x.toString();
-            }
-        }; }
-        return this.Select(function (x) { return toString(x); })
+    JoinBy(deli, toString = (x) => {
+        if (typeof x === "string") {
+            return x;
+        }
+        else {
+            return x.toString();
+        }
+    }) {
+        return this.Select(x => toString(x))
             .ToArray()
             .join(deli);
-    };
+    }
     /**
      * 如果当前的这个数据序列之中的元素的类型是某一种元素类型的集合，或者该元素
      * 可以描述为另一种类型的元素的集合，则可以通过这个函数来进行降维操作处理。
@@ -1021,14 +977,13 @@ var IEnumerator = /** @class */ (function (_super) {
      * @param project 这个投影函数描述了如何将某一种类型的元素降维至另外一种元素类型的集合。
      * 如果这个函数被忽略掉的话，会尝试强制将当前集合的元素类型转换为目标元素类型的数组集合。
     */
-    IEnumerator.prototype.Unlist = function (project) {
-        if (project === void 0) { project = function (obj) { return obj; }; }
+    Unlist(project = (obj) => obj) {
         var list = [];
-        this.ForEach(function (a) {
-            project(a).forEach(function (x) { return list.push(x); });
+        this.ForEach(a => {
+            project(a).forEach(x => list.push(x));
         });
         return new IEnumerator(list);
-    };
+    }
     //#region "conversion"
     /**
      * This function returns a clone copy of the source sequence.
@@ -1036,52 +991,48 @@ var IEnumerator = /** @class */ (function (_super) {
      * @param clone If this parameter is false, then this function will
      * returns the origin array sequence directly.
     */
-    IEnumerator.prototype.ToArray = function (clone) {
-        if (clone === void 0) { clone = true; }
+    ToArray(clone = true) {
         if (clone) {
-            return this.sequence.slice();
+            return [...this.sequence];
         }
         else {
             return this.sequence;
         }
-    };
+    }
     /**
      * 将当前的这个不可变的只读序列对象转换为可动态增添删除元素的列表对象
     */
-    IEnumerator.prototype.ToList = function () {
+    ToList() {
         return new List(this.sequence);
-    };
+    }
     /**
      * 将当前的这个数据序列对象转换为键值对字典对象，方便用于数据的查找操作
     */
-    IEnumerator.prototype.ToDictionary = function (keySelector, elementSelector) {
-        if (elementSelector === void 0) { elementSelector = function (X) {
-            return X;
-        }; }
+    ToDictionary(keySelector, elementSelector = (X) => {
+        return X;
+    }) {
         var maps = {};
-        this.sequence.forEach(function (x) {
+        this.sequence.forEach(x => {
             // 2018-08-11 键名只能够是字符串类型的
             var key = keySelector(x);
             var value = elementSelector(x);
             maps[key] = value;
         });
         return new Dictionary(maps);
-    };
+    }
     /**
      * 将当前的这个数据序列转换为包含有内部位置指针数据的指针对象
     */
-    IEnumerator.prototype.ToPointer = function () {
+    ToPointer() {
         return new Pointer(this);
-    };
+    }
     /**
      * 将当前的这个序列转换为一个滑窗数据的集合
     */
-    IEnumerator.prototype.SlideWindows = function (winSize, step) {
-        if (step === void 0) { step = 1; }
+    SlideWindows(winSize, step = 1) {
         return SlideWindow.Split(this, winSize, step);
-    };
-    return IEnumerator;
-}(LINQIterator));
+    }
+}
 /// <reference path="../Collections/Abstract/Enumerator.ts" />
 // 2018-12-06
 // 为了方便书写代码，在其他脚本之中添加变量类型申明，在这里就不进行命名空间的包裹了
@@ -1090,20 +1041,19 @@ var IEnumerator = /** @class */ (function (_super) {
 //  * @param tagName The name of an element.
 // */
 // createElement<K extends keyof HTMLElementTagNameMap>(tagName: K, options ?: ElementCreationOptions): HTMLElementTagNameMap[K];
-var DOMEnumerator = /** @class */ (function (_super) {
-    __extends(DOMEnumerator, _super);
+class DOMEnumerator extends IEnumerator {
     /**
      * 1. IEnumerator
      * 2. NodeListOf
      * 3. HTMLCollection
     */
-    function DOMEnumerator(elements) {
-        return _super.call(this, DOMEnumerator.ensureElements(elements)) || this;
+    constructor(elements) {
+        super(DOMEnumerator.ensureElements(elements));
     }
     /**
      * 这个函数确保所传递进来的集合总是输出一个数组，方便当前的集合对象向其基类型传递数据源
     */
-    DOMEnumerator.ensureElements = function (elements) {
+    static ensureElements(elements) {
         var type = TypeInfo.typeof(elements);
         var list;
         /**
@@ -1118,7 +1068,7 @@ var DOMEnumerator = /** @class */ (function (_super) {
         */
         if (type.class == "NodeList") {
             list = [];
-            elements.forEach(function (x) { return list.push(x); });
+            elements.forEach(x => list.push(x));
         }
         else if (type.class == "HTMLCollection") {
             var collection = elements;
@@ -1131,12 +1081,11 @@ var DOMEnumerator = /** @class */ (function (_super) {
             list = Framework.Extensions.EnsureArray(elements);
         }
         // 在最后进行元素拓展
-        for (var _i = 0, list_1 = list; _i < list_1.length; _i++) {
-            var node = list_1[_i];
+        for (var node of list) {
             TypeExtensions.Extends(node);
         }
         return list;
-    };
+    }
     /**
      * 使用这个函数进行节点值的设置或者获取
      *
@@ -1144,40 +1093,39 @@ var DOMEnumerator = /** @class */ (function (_super) {
      *
      * @param value 如果需要批量清除节点之中的值的话，需要传递一个空字符串，而非空值
     */
-    DOMEnumerator.prototype.val = function (value) {
-        if (value === void 0) { value = null; }
+    val(value = null) {
         if (isNullOrUndefined(value)) {
-            return this.Select(function (element) { return DOMEnumerator.getVal(element); });
+            return this.Select(element => DOMEnumerator.getVal(element));
         }
         else {
             if (typeof value == "string" || typeof value == "number") {
                 // 所有元素都设置同一个值
-                this.ForEach(function (e) { return DOMEnumerator.setVal(e, value); });
+                this.ForEach(e => DOMEnumerator.setVal(e, value));
             }
             else if (Array.isArray(value)) {
-                this.ForEach(function (e, i) { return DOMEnumerator.setVal(e, value[i]); });
+                this.ForEach((e, i) => DOMEnumerator.setVal(e, value[i]));
             }
             else {
-                this.ForEach(function (e, i) { return DOMEnumerator.setVal(e, value.ElementAt(i)); });
+                this.ForEach((e, i) => DOMEnumerator.setVal(e, value.ElementAt(i)));
             }
         }
-    };
-    DOMEnumerator.setVal = function (element, text) {
+    }
+    static setVal(element, text) {
         if (element instanceof HTMLInputElement) {
             element.value = text;
         }
         else {
             element.textContent = text;
         }
-    };
-    DOMEnumerator.getVal = function (element) {
+    }
+    static getVal(element) {
         if (element instanceof HTMLInputElement) {
             return element.value;
         }
         else {
             return element.textContent;
         }
-    };
+    }
     /**
      * 使用这个函数设置或者获取属性值
      *
@@ -1188,11 +1136,10 @@ var DOMEnumerator = /** @class */ (function (_super) {
      *
      * @returns 函数总是会返回所设置的或者读取得到的属性值的字符串集合
     */
-    DOMEnumerator.prototype.attr = function (attrName, val) {
-        if (val === void 0) { val = null; }
+    attr(attrName, val = null) {
         if (val) {
             if (typeof val == "function") {
-                return this.Select(function (x) {
+                return this.Select(x => {
                     var value = val(x);
                     x.setAttribute(attrName, value);
                     return value;
@@ -1200,7 +1147,7 @@ var DOMEnumerator = /** @class */ (function (_super) {
             }
             else {
                 var array = Framework.Extensions.EnsureArray(val, this.Count);
-                return this.Select(function (x, i) {
+                return this.Select((x, i) => {
                     var value = array[i];
                     x.setAttribute(attrName, value);
                     return value;
@@ -1208,78 +1155,77 @@ var DOMEnumerator = /** @class */ (function (_super) {
             }
         }
         else {
-            return this.Select(function (x) { return x.getAttribute(attrName); });
+            return this.Select(x => x.getAttribute(attrName));
         }
-    };
-    DOMEnumerator.prototype.AddClass = function (className) {
-        this.ForEach(function (x) {
-            if (!x.classList.contains(className)) {
-                x.classList.add(className);
+    }
+    addClass(className) {
+        this.ForEach(node => {
+            if (!node.classList.contains(className)) {
+                node.classList.add(className);
             }
         });
         return this;
-    };
-    DOMEnumerator.prototype.AddEvent = function (eventName, handler) {
-        this.ForEach(function (element) {
+    }
+    addEvent(eventName, handler) {
+        this.ForEach(element => {
             var event = function (Event) {
                 handler(element, Event);
             };
-            DOM.addEvent(element, eventName, event);
+            DOM.Events.addEvent(element, eventName, event);
         });
-    };
-    DOMEnumerator.prototype.onChange = function (handler) {
-        this.AddEvent("onchange", handler);
-    };
+    }
+    onChange(handler) {
+        this.addEvent("onchange", handler);
+    }
     /**
      * 为当前的html节点集合添加鼠标点击事件处理函数
     */
-    DOMEnumerator.prototype.onClick = function (handler) {
-        this.ForEach(function (element) {
+    onClick(handler) {
+        this.ForEach(element => {
             element.onclick = function (ev) {
                 handler(this, ev);
                 return false;
             };
         });
-    };
-    DOMEnumerator.prototype.RemoveClass = function (className) {
-        this.ForEach(function (x) {
+    }
+    removeClass(className) {
+        this.ForEach(x => {
             if (x.classList.contains(className)) {
                 x.classList.remove(className);
             }
         });
         return this;
-    };
+    }
     /**
      * 通过设置css之中的display值来将集合之中的所有的节点元素都隐藏掉
     */
-    DOMEnumerator.prototype.hide = function () {
-        this.ForEach(function (x) { return x.style.display = "none"; });
+    hide() {
+        this.ForEach(x => x.style.display = "none");
         return this;
-    };
+    }
     /**
      * 通过设置css之中的display值来将集合之中的所有的节点元素都显示出来
     */
-    DOMEnumerator.prototype.show = function () {
-        this.ForEach(function (x) { return x.style.display = "block"; });
+    show() {
+        this.ForEach(x => x.style.display = "block");
         return this;
-    };
+    }
     /**
      * 将所选定的节点批量删除
     */
-    DOMEnumerator.prototype.Delete = function () {
-        this.ForEach(function (x) { return x.parentNode.removeChild(x); });
-    };
-    return DOMEnumerator;
-}(IEnumerator));
+    delete() {
+        this.ForEach(x => x.parentNode.removeChild(x));
+    }
+}
 /// <reference path="../../../DOM/DOMEnumerator.ts" />
 var Internal;
 (function (Internal) {
     var Handlers;
     (function (Handlers) {
-        var events = {
+        const events = {
             onclick: "onclick"
         };
-        var eventFuncNames = Object.keys(events);
+        const eventFuncNames = Object.keys(events);
         function hasKey(object, key) {
             // hasOwnProperty = Object.prototype.hasOwnProperty
             return object ? window.hasOwnProperty.call(object, key) : false;
@@ -1303,10 +1249,8 @@ var Internal;
         /**
          * 字符串格式的值意味着对html文档节点的查询
         */
-        var stringEval = /** @class */ (function () {
-            function stringEval() {
-            }
-            stringEval.ensureArguments = function (args) {
+        class stringEval {
+            static ensureArguments(args) {
                 if (isNullOrUndefined(args)) {
                     return Internal.Arguments.Default();
                 }
@@ -1321,13 +1265,12 @@ var Internal;
                     }
                     return opts;
                 }
-            };
+            }
             /**
              * @param query 函数会在这里自动的处理转义问题
              * @param context 默认为当前的窗口文档
             */
-            stringEval.select = function (query, context) {
-                if (context === void 0) { context = window; }
+            static select(query, context = window) {
                 // https://mathiasbynens.be/notes/css-escapes
                 var cssSelector = query.replace(":", "\\:");
                 // 返回节点集合
@@ -1341,12 +1284,12 @@ var Internal;
                     nodes = context.querySelectorAll(cssSelector);
                 }
                 else {
-                    throw "Unsupported context type: " + TypeInfo.getClass(context);
+                    throw `Unsupported context type: ${TypeInfo.getClass(context)}`;
                 }
                 var it = new DOMEnumerator(nodes);
                 return it;
-            };
-            stringEval.prototype.doEval = function (expr, type, args) {
+            }
+            doEval(expr, type, args) {
                 var query = DOM.Query.parseQuery(expr);
                 var argument = stringEval.ensureArguments(args);
                 // 默认查询的上下文环境为当前的文档
@@ -1358,7 +1301,7 @@ var Internal;
                         .getElementById(query.expression);
                     if (isNullOrUndefined(node)) {
                         if (TypeScript.logging.outputWarning) {
-                            console.warn("Unable to found a node which its ID='" + expr + "'!");
+                            console.warn(`Unable to found a node which its ID='${expr}'!`);
                         }
                         return null;
                     }
@@ -1384,26 +1327,25 @@ var Internal;
                 }
                 else {
                     if (TypeScript.logging.outputEverything) {
-                        console.warn("Apply querySelector for expression: '" + query.expression + "', no typescript extension was made!");
+                        console.warn(`Apply querySelector for expression: '${query.expression}', no typescript extension was made!`);
                     }
                     // 只返回第一个满足条件的节点
                     return context
                         .document
                         .querySelector(query.expression);
                 }
-            };
+            }
             /**
              * 创建新的HTML节点元素
             */
-            stringEval.createNew = function (expr, args, context) {
-                if (context === void 0) { context = window; }
+            static createNew(expr, args, context = window) {
                 var declare = DOM.ParseNodeDeclare(expr);
                 var node = context
                     .document
                     .createElement(declare.tag);
                 // 赋值节点申明的字符串表达式之中所定义的属性
                 declare.attrs
-                    .forEach(function (attr) {
+                    .forEach(attr => {
                     if (eventFuncNames.indexOf(attr.name) < 0) {
                         node.setAttribute(attr.name, attr.value);
                     }
@@ -1418,8 +1360,8 @@ var Internal;
                 else {
                     return new HTMLTsElement(node);
                 }
-            };
-            stringEval.setAttributes = function (node, attrs) {
+            }
+            static setAttributes(node, attrs) {
                 var setAttr = function (name) {
                     if (eventFuncNames.indexOf(name) > -1) {
                         return;
@@ -1427,7 +1369,7 @@ var Internal;
                     if (name == "class") {
                         var classVals = attrs[name];
                         if (Array.isArray(classVals)) {
-                            classVals.forEach(function (c) { return node.classList.add(c); });
+                            classVals.forEach(c => node.classList.add(c));
                         }
                         else {
                             node.setAttribute(name, classVals);
@@ -1456,20 +1398,19 @@ var Internal;
                         node.setAttribute(name, attrs[name]);
                     }
                 };
-                Internal.Arguments.nameFilter(attrs).forEach(function (name) { return setAttr(name); });
+                Internal.Arguments.nameFilter(attrs).forEach(name => setAttr(name));
                 // 添加事件
                 if (hasKey(attrs, events.onclick)) {
-                    var onclick_1 = attrs[events.onclick];
-                    if (typeof onclick_1 == "string") {
-                        node.setAttribute(events.onclick, onclick_1);
+                    let onclick = attrs[events.onclick];
+                    if (typeof onclick == "string") {
+                        node.setAttribute(events.onclick, onclick);
                     }
                     else {
-                        node.onclick = onclick_1;
+                        node.onclick = onclick;
                     }
                 }
-            };
-            return stringEval;
-        }());
+            }
+        }
         Handlers.stringEval = stringEval;
     })(Handlers = Internal.Handlers || (Internal.Handlers = {}));
 })(Internal || (Internal = {}));
@@ -1488,34 +1429,28 @@ var Internal;
             /**
              * HTML document query handler
             */
-            string: function () { return new Handlers.stringEval(); },
+            string: () => new Handlers.stringEval(),
             /**
              * Create a linq object
             */
-            array: function () { return new arrayEval(); },
-            NodeListOf: function () { return new DOMCollection(); },
-            HTMLCollection: function () { return new DOMCollection(); }
+            array: () => new arrayEval(),
+            NodeListOf: () => new DOMCollection(),
+            HTMLCollection: () => new DOMCollection()
         };
         /**
          * Create a Linq Enumerator
         */
-        var arrayEval = /** @class */ (function () {
-            function arrayEval() {
-            }
-            arrayEval.prototype.doEval = function (expr, type, args) {
+        class arrayEval {
+            doEval(expr, type, args) {
                 return From(expr);
-            };
-            return arrayEval;
-        }());
-        Handlers.arrayEval = arrayEval;
-        var DOMCollection = /** @class */ (function () {
-            function DOMCollection() {
             }
-            DOMCollection.prototype.doEval = function (expr, type, args) {
+        }
+        Handlers.arrayEval = arrayEval;
+        class DOMCollection {
+            doEval(expr, type, args) {
                 return new DOMEnumerator(expr);
-            };
-            return DOMCollection;
-        }());
+            }
+        }
         Handlers.DOMCollection = DOMCollection;
     })(Handlers = Internal.Handlers || (Internal.Handlers = {}));
 })(Internal || (Internal = {}));
@@ -1556,8 +1491,7 @@ var DataExtensions;
      *
      * @returns 键值对形式的字典对象
     */
-    function parseQueryString(queryString, lowerName) {
-        if (lowerName === void 0) { lowerName = false; }
+    function parseQueryString(queryString, lowerName = false) {
         // stuff after # is not part of query string, so get rid of it
         // split our query string into its component parts
         var arr = queryString.split('#')[0].split('&');
@@ -1620,10 +1554,10 @@ var DataExtensions;
             return null;
         }
         if (typeof obj === 'number') {
-            return function (x) { return x; };
+            return x => x;
         }
         else if (typeof obj === 'boolean') {
-            return function (x) {
+            return x => {
                 if (x == true) {
                     return 1;
                 }
@@ -1633,25 +1567,24 @@ var DataExtensions;
             };
         }
         else if (typeof obj == 'undefined') {
-            return function (x) { return 0; };
+            return x => 0;
         }
         else if (typeof obj == 'string') {
-            return function (x) {
+            return x => {
                 return Strings.Val(x);
             };
         }
         else {
             // 其他的所有情况都转换为零
-            return function (x) { return 0; };
+            return x => 0;
         }
     }
     DataExtensions.AsNumeric = AsNumeric;
     /**
      * @param fill 进行向量填充的初始值，可能不适用于引用类型，推荐应用于初始的基元类型
     */
-    function Dim(len, fill) {
-        if (fill === void 0) { fill = null; }
-        var vector = [];
+    function Dim(len, fill = null) {
+        let vector = [];
         for (var i = 0; i < len; i++) {
             vector.push(fill);
         }
@@ -1662,69 +1595,55 @@ var DataExtensions;
 /**
  * 描述了一个键值对集合
 */
-var MapTuple = /** @class */ (function () {
+class MapTuple {
     /**
      * 创建一个新的键值对集合
      *
     */
-    function MapTuple(key, value) {
-        if (key === void 0) { key = null; }
-        if (value === void 0) { value = null; }
+    constructor(key = null, value = null) {
         this.key = key;
         this.value = value;
     }
-    MapTuple.prototype.valueOf = function () {
+    valueOf() {
         return this.value;
-    };
-    MapTuple.prototype.ToArray = function () {
+    }
+    ToArray() {
         return [this.key, this.value];
-    };
-    MapTuple.prototype.toString = function () {
-        return "[" + this.key.toString() + ", " + this.value.toString() + "]";
-    };
-    return MapTuple;
-}());
+    }
+    toString() {
+        return `[${this.key.toString()}, ${this.value.toString()}]`;
+    }
+}
 /**
  * 描述了一个带有名字属性的变量值
 */
-var NamedValue = /** @class */ (function () {
-    function NamedValue(name, val) {
-        if (name === void 0) { name = null; }
-        if (val === void 0) { val = null; }
+class NamedValue {
+    constructor(name = null, val = null) {
         this.name = name;
         this.value = val;
     }
-    Object.defineProperty(NamedValue.prototype, "TypeOfValue", {
-        /**
-         * 获取得到变量值的类型定义信息
-        */
-        get: function () {
-            return TypeInfo.typeof(this.value);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NamedValue.prototype, "IsEmpty", {
-        /**
-         * 这个之对象是否是空的？
-        */
-        get: function () {
-            return Strings.Empty(this.name) && (!this.value || this.value == undefined);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    NamedValue.prototype.valueOf = function () {
+    /**
+     * 获取得到变量值的类型定义信息
+    */
+    get TypeOfValue() {
+        return TypeInfo.typeof(this.value);
+    }
+    /**
+     * 这个之对象是否是空的？
+    */
+    get IsEmpty() {
+        return Strings.Empty(this.name) && (!this.value || this.value == undefined);
+    }
+    valueOf() {
         return this.value;
-    };
-    NamedValue.prototype.ToArray = function () {
+    }
+    ToArray() {
         return [this.name, this.value];
-    };
-    NamedValue.prototype.toString = function () {
+    }
+    toString() {
         return this.name;
-    };
-    return NamedValue;
-}());
+    }
+}
 /// <reference path="../Collections/Map.ts" />
 /**
  * TypeScript string helpers.
@@ -1761,7 +1680,7 @@ var Strings;
         var exp = Math.floor(Math.log(bytes) / Math.log(1000));
         var symbol = symbols[exp];
         var val = (bytes / Math.pow(1000, Math.floor(exp)));
-        return Strings.sprintf("%.2f " + symbol, val);
+        return Strings.sprintf(`%.2f ${symbol}`, val);
     }
     Strings.Lanudry = Lanudry;
     /**
@@ -1845,13 +1764,12 @@ var Strings;
      *
      * @param decimals 默认是保留3位有效数字的
     */
-    function round(x, decimals) {
-        if (decimals === void 0) { decimals = 3; }
+    function round(x, decimals = 3) {
         var floatX = typeof x == "number" ? x : parseFloat(x);
         var n = Math.pow(10, decimals);
         if (isNaN(floatX)) {
             if (TypeScript.logging.outputWarning) {
-                console.warn("Invalid number value: '" + x + "'");
+                console.warn(`Invalid number value: '${x}'`);
             }
             return false;
         }
@@ -1915,8 +1833,7 @@ var Strings;
      *
      * @param tag 分割name和value的分隔符，默认是一个空白符号
     */
-    function GetTagValue(str, tag) {
-        if (tag === void 0) { tag = " "; }
+    function GetTagValue(str, tag = " ") {
         if (!str) {
             return new NamedValue();
         }
@@ -1941,10 +1858,10 @@ var Strings;
      * 取出大文本之中指定的前n行文本
     */
     function PeekLines(text, n) {
-        var p = 0;
-        var out = [];
+        let p = 0;
+        let out = [];
         for (var i = 0; i < n; i++) {
-            var pn = text.indexOf("\n", p);
+            let pn = text.indexOf("\n", p);
             if (pn > -1) {
                 out.push(text.substr(p, pn - p));
                 p = pn;
@@ -1961,8 +1878,8 @@ var Strings;
      * Get all regex pattern matches in target text value.
     */
     function getAllMatches(text, pattern) {
-        var match = null;
-        var out = [];
+        let match = null;
+        let out = [];
         if (typeof pattern == "string") {
             pattern = new RegExp(pattern);
         }
@@ -1988,8 +1905,7 @@ var Strings;
      *
      * @returns 这个函数总是会确保返回来的值不是空值，如果输入的字符串参数为空值，则会直接返回零长度的空字符串
     */
-    function Trim(str, chars) {
-        if (chars === void 0) { chars = null; }
+    function Trim(str, chars = null) {
         if (Strings.Empty(str, false)) {
             return "";
         }
@@ -1998,44 +1914,42 @@ var Strings;
         }
         if (typeof chars == "string") {
             chars = From(Strings.ToCharArray(chars))
-                .Select(function (c) { return c.charCodeAt(0); })
+                .Select(c => c.charCodeAt(0))
                 .ToArray(false);
         }
         return function (chars) {
             return From(Strings.ToCharArray(str))
-                .SkipWhile(function (c) { return chars.indexOf(c.charCodeAt(0)) > -1; })
+                .SkipWhile(c => chars.indexOf(c.charCodeAt(0)) > -1)
                 .Reverse()
-                .SkipWhile(function (c) { return chars.indexOf(c.charCodeAt(0)) > -1; })
+                .SkipWhile(c => chars.indexOf(c.charCodeAt(0)) > -1)
                 .Reverse()
                 .JoinBy("");
         }(chars);
     }
     Strings.Trim = Trim;
-    function LTrim(str, chars) {
-        if (chars === void 0) { chars = " "; }
+    function LTrim(str, chars = " ") {
         if (Strings.Empty(str, false)) {
             return "";
         }
         if (typeof chars == "string") {
             chars = From(Strings.ToCharArray(chars))
-                .Select(function (c) { return c.charCodeAt(0); })
+                .Select(c => c.charCodeAt(0))
                 .ToArray(false);
         }
         return function (chars) {
             return From(Strings.ToCharArray(str))
-                .SkipWhile(function (c) { return chars.indexOf(c.charCodeAt(0)) > -1; })
+                .SkipWhile(c => chars.indexOf(c.charCodeAt(0)) > -1)
                 .JoinBy("");
         }(chars);
     }
     Strings.LTrim = LTrim;
-    function RTrim(str, chars) {
-        if (chars === void 0) { chars = " "; }
+    function RTrim(str, chars = " ") {
         if (Strings.Empty(str, false)) {
             return "";
         }
         if (typeof chars == "string") {
             chars = From(Strings.ToCharArray(chars))
-                .Select(function (c) { return c.charCodeAt(0); })
+                .Select(c => c.charCodeAt(0))
                 .ToArray(false);
         }
         var strChars = Strings.ToCharArray(str);
@@ -2060,8 +1974,7 @@ var Strings;
      *
      * @param stringAsFactor 假若这个参数为真的话，那么字符串``undefined``或者``NULL``以及``null``也将会被当作为空值处理
     */
-    function Empty(str, stringAsFactor) {
-        if (stringAsFactor === void 0) { stringAsFactor = false; }
+    function Empty(str, stringAsFactor = false) {
         if (!str) {
             return true;
         }
@@ -2084,8 +1997,7 @@ var Strings;
      *
      * @param stringAsFactor 如果这个参数为真，则``\t``和``\s``等也会被当作为空白
     */
-    function Blank(str, stringAsFactor) {
-        if (stringAsFactor === void 0) { stringAsFactor = false; }
+    function Blank(str, stringAsFactor = false) {
         if (!str || IsPattern(str, /\s+/g)) {
             return true;
         }
@@ -2153,8 +2065,7 @@ var Strings;
      * @returns A character array, all of the string element in the array
      *      is one character length.
     */
-    function ToCharArray(str, charCode) {
-        if (charCode === void 0) { charCode = false; }
+    function ToCharArray(str, charCode = false) {
         var cc = [];
         var strLen = str.length;
         if (charCode) {
@@ -2215,9 +2126,7 @@ var Strings;
     /**
      * @param charsPerLine 每一行文本之中的字符数量的最大值
     */
-    function WrappingLines(text, charsPerLine, lineTrim) {
-        if (charsPerLine === void 0) { charsPerLine = 200; }
-        if (lineTrim === void 0) { lineTrim = false; }
+    function WrappingLines(text, charsPerLine = 200, lineTrim = false) {
         var sb = "";
         var lines = Strings.lineTokens(text);
         var p;
@@ -2247,56 +2156,42 @@ var Strings;
 /**
  * 类似于反射类型
 */
-var TypeInfo = /** @class */ (function () {
-    function TypeInfo() {
+class TypeInfo {
+    /**
+     * 是否是js之中的基础类型？
+    */
+    get IsPrimitive() {
+        return !this.class;
     }
-    Object.defineProperty(TypeInfo.prototype, "IsPrimitive", {
-        /**
-         * 是否是js之中的基础类型？
-        */
-        get: function () {
-            return !this.class;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(TypeInfo.prototype, "IsArray", {
-        /**
-         * 是否是一个数组集合对象？
-        */
-        get: function () {
-            return this.typeOf == "array";
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(TypeInfo.prototype, "IsEnumerator", {
-        /**
-         * 是否是一个枚举器集合对象？
-        */
-        get: function () {
-            return this.typeOf == "object" && this.class == "IEnumerator";
-        },
-        enumerable: true,
-        configurable: true
-    });
+    /**
+     * 是否是一个数组集合对象？
+    */
+    get IsArray() {
+        return this.typeOf == "array";
+    }
+    /**
+     * 是否是一个枚举器集合对象？
+    */
+    get IsEnumerator() {
+        return this.typeOf == "object" && this.class == "IEnumerator";
+    }
     /**
      * 当前的对象是某种类型的数组集合对象
     */
-    TypeInfo.prototype.IsArrayOf = function (genericType) {
+    IsArrayOf(genericType) {
         return this.IsArray && this.class == genericType;
-    };
+    }
     /**
      * 获取得到类型名称
     */
-    TypeInfo.getClass = function (obj) {
+    static getClass(obj) {
         var type = typeof obj;
         var isObject = type == "object";
         var isArray = Array.isArray(obj);
         var isNull = isNullOrUndefined(obj);
         return TypeInfo.getClassInternal(obj, isArray, isObject, isNull);
-    };
-    TypeInfo.getClassInternal = function (obj, isArray, isObject, isNull) {
+    }
+    static getClassInternal(obj, isArray, isObject, isNull) {
         if (isArray) {
             var x = obj[0];
             var className;
@@ -2322,11 +2217,11 @@ var TypeInfo = /** @class */ (function () {
         else {
             return "";
         }
-    };
+    }
     /**
      * 获取某一个对象的类型信息
     */
-    TypeInfo.typeof = function (obj) {
+    static typeof(obj) {
         var type = typeof obj;
         var isObject = type == "object";
         var isArray = Array.isArray(obj);
@@ -2344,11 +2239,11 @@ var TypeInfo = /** @class */ (function () {
             typeInfo.methods = TypeInfo.GetObjectMethods(obj);
         }
         return typeInfo;
-    };
+    }
     /**
      * 获取object对象上所定义的所有的函数
     */
-    TypeInfo.GetObjectMethods = function (obj) {
+    static GetObjectMethods(obj) {
         var res = [];
         for (var m in obj) {
             if (typeof obj[m] == "function") {
@@ -2356,23 +2251,22 @@ var TypeInfo = /** @class */ (function () {
             }
         }
         return res;
-    };
-    TypeInfo.prototype.toString = function () {
+    }
+    toString() {
         if (this.typeOf == "object") {
-            return "<" + this.typeOf + "> " + this.class;
+            return `<${this.typeOf}> ${this.class}`;
         }
         else {
             return this.typeOf;
         }
-    };
+    }
     /**
      * MetaReader对象和字典相似，只不过是没有类型约束，并且为只读集合
     */
-    TypeInfo.CreateMetaReader = function (nameValues) {
+    static CreateMetaReader(nameValues) {
         return new TypeScript.Data.MetaReader(Activator.CreateObject(nameValues));
-    };
-    return TypeInfo;
-}());
+    }
+}
 /**
  * JavaScript MD5 1.0.1
  * https://github.com/blueimp/JavaScript-MD5
@@ -2574,7 +2468,7 @@ var MD5;
         return MD5.binl2rstr(hash);
     }
     MD5.rstr_hmac_md5 = rstr_hmac_md5;
-    var hex_tab = '0123456789abcdef';
+    const hex_tab = '0123456789abcdef';
     /**
      * Convert a raw string to a hex string
     */
@@ -2617,9 +2511,7 @@ var MD5;
     /**
      * 利用这个函数来进行字符串的MD5值的计算操作
     */
-    function calculate(string, key, raw) {
-        if (key === void 0) { key = null; }
-        if (raw === void 0) { raw = null; }
+    function calculate(string, key = null, raw = null) {
         if (!key) {
             if (!raw) {
                 return MD5.hex_md5(string);
@@ -2641,15 +2533,14 @@ var Internal;
      *
      * 这个对象是调用堆栈``StackFrame``片段对象的序列集合
     */
-    var StackTrace = /** @class */ (function (_super) {
-        __extends(StackTrace, _super);
-        function StackTrace(frames) {
-            return _super.call(this, frames) || this;
+    class StackTrace extends IEnumerator {
+        constructor(frames) {
+            super(frames);
         }
         /**
          * 导出当前的程序运行位置的调用堆栈信息
         */
-        StackTrace.Dump = function () {
+        static Dump() {
             var err = new Error().stack.split("\n");
             var trace = From(err)
                 //   1 是第一行 err 字符串, 
@@ -2657,26 +2548,25 @@ var Internal;
                 .Skip(1 + 1)
                 .Select(Internal.StackFrame.Parse);
             return new StackTrace(trace);
-        };
+        }
         /**
          * 获取函数调用者的名称的帮助函数
         */
-        StackTrace.GetCallerMember = function () {
+        static GetCallerMember() {
             var trace = StackTrace.Dump().ToArray();
             // index = 1 是GetCallerMemberName这个函数的caller的栈片段
             // index = 2 就是caller的caller的栈片段，即该caller的CallerMemberName
             var caller = trace[1 + 1];
             return caller;
-        };
-        StackTrace.prototype.toString = function () {
+        }
+        toString() {
             var sb = new StringBuilder();
-            this.ForEach(function (frame) {
-                sb.AppendLine("  at " + frame.toString());
+            this.ForEach(frame => {
+                sb.AppendLine(`  at ${frame.toString()}`);
             });
             return sb.toString();
-        };
-        return StackTrace;
-    }(IEnumerator));
+        }
+    }
     Internal.StackTrace = StackTrace;
 })(Internal || (Internal = {}));
 /// <reference path="./Abstract/Enumerator.ts" />
@@ -2688,38 +2578,31 @@ var Internal;
  * IEnumerator<MapTuple<string, V>>
  * ```
 */
-var Dictionary = /** @class */ (function (_super) {
-    __extends(Dictionary, _super);
+class Dictionary extends IEnumerator {
     /**
      * 将目标对象转换为一个类型约束的映射序列集合
     */
-    function Dictionary(maps) {
-        if (maps === void 0) { maps = null; }
-        var _this = _super.call(this, Dictionary.ObjectMaps(maps)) || this;
+    constructor(maps = null) {
+        super(Dictionary.ObjectMaps(maps));
         if (isNullOrUndefined(maps)) {
-            _this.maps = {};
+            this.maps = {};
         }
         else if (Array.isArray(maps)) {
-            _this.maps = Activator.CreateObject(maps);
+            this.maps = Activator.CreateObject(maps);
         }
         else if (TypeInfo.typeof(maps).class == "IEnumerator") {
-            _this.maps = Activator.CreateObject(maps);
+            this.maps = Activator.CreateObject(maps);
         }
         else {
-            _this.maps = maps;
+            this.maps = maps;
         }
-        return _this;
     }
-    Object.defineProperty(Dictionary.prototype, "Object", {
-        /**
-         * 返回一个被复制的当前的map对象
-        */
-        get: function () {
-            return Framework.Extensions.extend(this.maps);
-        },
-        enumerable: true,
-        configurable: true
-    });
+    /**
+     * 返回一个被复制的当前的map对象
+    */
+    get Object() {
+        return Framework.Extensions.extend(this.maps);
+    }
     ///**
     // * 可以使用``for (var [key, value] of Maps) {}``的语法来进行迭代
     //*/
@@ -2737,8 +2620,7 @@ var Dictionary = /** @class */ (function (_super) {
      *
      * @param key 键名或者序列的索引号
     */
-    Dictionary.prototype.Item = function (key) {
-        if (key === void 0) { key = null; }
+    Item(key = null) {
         if (!key) {
             key = Internal.StackTrace.GetCallerMember().memberName;
         }
@@ -2748,40 +2630,32 @@ var Dictionary = /** @class */ (function (_super) {
         else {
             return this.sequence[key].value;
         }
-    };
-    Object.defineProperty(Dictionary.prototype, "Keys", {
-        /**
-         * 获取这个字典对象之中的所有的键名
-        */
-        get: function () {
-            return From(Object.keys(this.maps));
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Dictionary.prototype, "Values", {
-        /**
-         * 获取这个字典对象之中的所有的键值
-        */
-        get: function () {
-            return this.Select(function (m) { return m.value; });
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Dictionary.FromMaps = function (maps) {
+    }
+    /**
+     * 获取这个字典对象之中的所有的键名
+    */
+    get Keys() {
+        return From(Object.keys(this.maps));
+    }
+    /**
+     * 获取这个字典对象之中的所有的键值
+    */
+    get Values() {
+        return this.Select(m => m.value);
+    }
+    static FromMaps(maps) {
         return new Dictionary(maps);
-    };
-    Dictionary.FromNamedValues = function (values) {
+    }
+    static FromNamedValues(values) {
         return new Dictionary(Activator.CreateObject(values));
-    };
-    Dictionary.MapSequence = function (maps) {
+    }
+    static MapSequence(maps) {
         return new IEnumerator(this.ObjectMaps(maps));
-    };
+    }
     /**
      * 将目标对象转换为一个类型约束的映射序列集合
     */
-    Dictionary.ObjectMaps = function (maps) {
+    static ObjectMaps(maps) {
         var type = TypeInfo.typeof(maps);
         if (isNullOrUndefined(maps)) {
             return [];
@@ -2794,41 +2668,40 @@ var Dictionary = /** @class */ (function (_super) {
         }
         else {
             return From(Object.keys(maps))
-                .Select(function (key) { return new MapTuple(key, maps[key]); })
+                .Select(key => new MapTuple(key, maps[key]))
                 .ToArray();
         }
-    };
+    }
     /**
      * 查看这个字典集合之中是否存在所给定的键名
     */
-    Dictionary.prototype.ContainsKey = function (key) {
+    ContainsKey(key) {
         return key in this.maps;
-    };
+    }
     /**
      * 向这个字典对象之中添加一个键值对，请注意，如果key已经存在这个字典对象中了，这个函数会自动覆盖掉key所对应的原来的值
     */
-    Dictionary.prototype.Add = function (key, value) {
+    Add(key, value) {
         this.maps[key] = value;
         this.sequence = Dictionary.ObjectMaps(this.maps);
         return this;
-    };
+    }
     /**
      * 删除一个给定键名所指定的键值对
     */
-    Dictionary.prototype.Delete = function (key) {
+    Delete(key) {
         if (key in this.maps) {
             delete this.maps[key];
             this.sequence = Dictionary.ObjectMaps(this.maps);
         }
         return this;
-    };
-    return Dictionary;
-}(IEnumerator));
+    }
+}
 /// <reference path="./sprintf.ts" />
 /// <reference path="../../Collections/DictionaryMaps.ts" />
 var TypeScript;
 (function (TypeScript) {
-    var URLPatterns;
+    let URLPatterns;
     (function (URLPatterns) {
         URLPatterns.hostNamePattern = /:\/\/(www[0-9]?\.)?(.[^/:]+)/i;
         /**
@@ -2843,11 +2716,11 @@ var TypeScript;
     /**
      * URL组成字符串解析模块
     */
-    var URL = /** @class */ (function () {
+    class URL {
         /**
          * 在这里解析一个URL字符串
         */
-        function URL(url) {
+        constructor(url) {
             // http://localhost/router.html#http://localhost/b.html
             var token = Strings.GetTagValue(url, "://");
             this.protocol = token.name;
@@ -2863,22 +2736,16 @@ var TypeScript;
             var args = URL.UrlQuery(token.value);
             this.queryArguments = Dictionary
                 .MapSequence(args)
-                .Select(function (m) { return new NamedValue(m.key, m.value); });
+                .Select(m => new NamedValue(m.key, m.value));
         }
-        Object.defineProperty(URL.prototype, "query", {
-            /**
-             * URL查询参数
-            */
-            get: function () {
-                return this.queryArguments.ToArray(false);
-            },
-            enumerable: true,
-            configurable: true
-        });
+        /**
+         * URL查询参数
+        */
+        get query() {
+            return this.queryArguments.ToArray(false);
+        }
         ;
-        URL.prototype.getArgument = function (queryName, caseSensitive, Default) {
-            if (caseSensitive === void 0) { caseSensitive = true; }
-            if (Default === void 0) { Default = ""; }
+        getArgument(queryName, caseSensitive = true, Default = "") {
             if (Strings.Empty(queryName, false)) {
                 return "";
             }
@@ -2886,53 +2753,53 @@ var TypeScript;
                 queryName = queryName.toLowerCase();
             }
             return this.queryArguments
-                .Where(function (map) { return caseSensitive ? map.name == queryName : map.name.toLowerCase() == queryName; })
+                .Where(map => caseSensitive ? map.name == queryName : map.name.toLowerCase() == queryName)
                 .FirstOrDefault({ value: Default })
                 .value;
-        };
+        }
         /**
          * 将URL之中的query部分解析为字典对象
         */
-        URL.UrlQuery = function (args) {
+        static UrlQuery(args) {
             if (args) {
                 return DataExtensions.parseQueryString(args, false);
             }
             else {
                 return {};
             }
-        };
+        }
         /**
          * 跳转到url之中的hash编号的文档位置处
          *
          * @param hash ``#xxx``文档节点编号表达式
         */
-        URL.JumpToHash = function (hash) {
+        static JumpToHash(hash) {
             // Getting Y of target element
             // Go there directly or some transition
             window.scrollTo(0, $ts(hash).offsetTop);
-        };
+        }
         /**
          * Set url hash without url jump in document
         */
-        URL.SetHash = function (hash) {
+        static SetHash(hash) {
             if (history.pushState) {
                 history.pushState(null, null, hash);
             }
             else {
                 location.hash = hash;
             }
-        };
+        }
         /**
          * 获取得到当前的url
         */
-        URL.WindowLocation = function () {
+        static WindowLocation() {
             return new URL(window.location.href);
-        };
-        URL.prototype.toString = function () {
+        }
+        toString() {
             var query = From(this.query)
-                .Select(function (q) { return q.name + "=" + encodeURIComponent(q.value); })
+                .Select(q => `${q.name}=${encodeURIComponent(q.value)}`)
                 .JoinBy("&");
-            var url = this.protocol + "://" + this.origin + "/" + this.path;
+            var url = `${this.protocol}://${this.origin}/${this.path}`;
             if (query) {
                 url = url + "?" + query;
             }
@@ -2940,14 +2807,14 @@ var TypeScript;
                 url = url + "#" + this.hash;
             }
             return url;
-        };
-        URL.Refresh = function (url) {
-            return url + "&refresh=" + Math.random() * 10000;
-        };
+        }
+        static Refresh(url) {
+            return `${url}&refresh=${Math.random() * 10000}`;
+        }
         /**
          * 获取所给定的URL之中的host名称字符串，如果解析失败会返回空值
         */
-        URL.getHostName = function (url) {
+        static getHostName(url) {
             var match = url.match(URLPatterns.hostNamePattern);
             if (match != null && match.length > 2 && typeof match[2] === 'string' && match[2].length > 0) {
                 return match[2];
@@ -2955,19 +2822,18 @@ var TypeScript;
             else {
                 return null;
             }
-        };
+        }
         /**
          * 将目标文本之中的所有的url字符串匹配出来
         */
-        URL.ParseAllUrlStrings = function (text) {
-            var urls = [];
-            for (var _i = 0, _a = Strings.getAllMatches(text, URLPatterns.urlPattern); _i < _a.length; _i++) {
-                var url = _a[_i];
+        static ParseAllUrlStrings(text) {
+            let urls = [];
+            for (let url of Strings.getAllMatches(text, URLPatterns.urlPattern)) {
                 urls.push(url[0]);
             }
             return urls;
-        };
-        URL.IsWellFormedUriString = function (uri) {
+        }
+        static IsWellFormedUriString(uri) {
             var matches = uri.match(URLPatterns.uriPattern);
             if (isNullOrUndefined(matches)) {
                 return false;
@@ -2979,9 +2845,8 @@ var TypeScript;
             else {
                 return false;
             }
-        };
-        return URL;
-    }());
+        }
+    }
     TypeScript.URL = URL;
 })(TypeScript || (TypeScript = {}));
 var TsLinq;
@@ -2989,7 +2854,7 @@ var TsLinq;
     /**
      * String helpers for the file path string.
     */
-    var PathHelper;
+    let PathHelper;
     (function (PathHelper) {
         /**
          * 只保留文件名（已经去除了文件夹路径以及文件名最后的拓展名部分）
@@ -3111,11 +2976,9 @@ var DOM;
      *                    如果目标容器是一个``<select>``标签的时候，则要求selectName和className都必须要是空值
      * @param items 这个数组应该是一个``[title => value]``的键值对列表
     */
-    function AddSelectOptions(items, containerID, selectName, className) {
-        if (selectName === void 0) { selectName = null; }
-        if (className === void 0) { className = null; }
+    function AddSelectOptions(items, containerID, selectName = null, className = null) {
         var options = From(items)
-            .Select(function (item) { return "<option value=\"" + item.value + "\">" + item.key + "</option>"; })
+            .Select(item => `<option value="${item.value}">${item.key}</option>`)
             .JoinBy("\n");
         var html;
         if (isNullOrUndefined(selectName) && isNullOrUndefined(className)) {
@@ -3123,9 +2986,12 @@ var DOM;
             html = options;
         }
         else {
-            html = "\n                <select class=\"" + className + "\" multiple name=\"" + selectName + "\">\n                    " + options + "\n                </select>";
+            html = `
+                <select class="${className}" multiple name="${selectName}">
+                    ${options}
+                </select>`;
         }
-        $ts("#" + containerID).innerHTML = html;
+        $ts(`#${containerID}`).innerHTML = html;
     }
     DOM.AddSelectOptions = AddSelectOptions;
     /**
@@ -3135,9 +3001,7 @@ var DOM;
      *    + 如果这个参数不为空值，则会显示这个参数所指定的列出来
      *    + 可以通过``map [propertyName => display title]``来控制表头的标题输出
     */
-    function CreateHTMLTableNode(rows, headers, attrs) {
-        if (headers === void 0) { headers = null; }
-        if (attrs === void 0) { attrs = null; }
+    function CreateHTMLTableNode(rows, headers = null, attrs = null) {
         var thead = $ts("<thead>");
         var tbody = $ts("<tbody>");
         var fields;
@@ -3150,16 +3014,16 @@ var DOM;
         var rowHTML = function (r) {
             var tr = $ts("<tr>");
             // 在这里将会控制列的显示
-            fields.forEach(function (m) { return tr.appendChild($ts("<td>").display(r[m.key])); });
+            fields.forEach(m => tr.appendChild($ts("<td>").display(r[m.key])));
             return tr;
         };
         if (Array.isArray(rows)) {
-            rows.forEach(function (r) { return tbody.appendChild(rowHTML(r)); });
+            rows.forEach(r => tbody.appendChild(rowHTML(r)));
         }
         else {
-            rows.ForEach(function (r) { return tbody.appendChild(rowHTML(r)); });
+            rows.ForEach(r => tbody.appendChild(rowHTML(r)));
         }
-        fields.forEach(function (r) { return thead.appendChild($ts("<th>").display(r.value)); });
+        fields.forEach(r => thead.appendChild($ts("<th>", { id: r.value }).display(r.value)));
         return $ts("<table>", attrs)
             .asExtends
             .append(thead)
@@ -3174,10 +3038,8 @@ var DOM;
      * @param div 新生成的table将会被添加在这个div之中，应该是一个带有``#``符号的节点id查询表达式
      * @param attrs ``<table>``的属性值，包括id，class等
     */
-    function AddHTMLTable(rows, div, headers, attrs) {
-        if (headers === void 0) { headers = null; }
-        if (attrs === void 0) { attrs = null; }
-        var id = div + "-table";
+    function AddHTMLTable(rows, div, headers = null, attrs = null) {
+        var id = `${div}-table`;
         if (attrs) {
             if (!attrs.id) {
                 attrs.id = id;
@@ -3196,7 +3058,7 @@ var DOM;
         var type = TypeInfo.typeof(headers);
         if (type.IsArrayOf("string")) {
             return From(headers)
-                .Select(function (h) { return new MapTuple(h, h); })
+                .Select(h => new MapTuple(h, h))
                 .ToArray();
         }
         else if (type.IsArrayOf(TypeExtensions.DictionaryMap)) {
@@ -3204,20 +3066,20 @@ var DOM;
         }
         else if (type.IsEnumerator && typeof headers.First == "string") {
             return headers
-                .Select(function (h) { return new MapTuple(h, h); })
+                .Select(h => new MapTuple(h, h))
                 .ToArray();
         }
         else if (type.IsEnumerator && TypeInfo.getClass(headers.First) == TypeExtensions.DictionaryMap) {
             return headers.ToArray();
         }
         else {
-            throw "Invalid sequence type: " + type.class;
+            throw `Invalid sequence type: ${type.class}`;
         }
     }
 })(DOM || (DOM = {}));
 var DOM;
 (function (DOM) {
-    var InputValueGetter;
+    let InputValueGetter;
     (function (InputValueGetter) {
         /**
          * Query meta tag content value by name
@@ -3227,10 +3089,8 @@ var DOM;
          *    默认为False，即只在当前文档环境之中进行查询操作
          * @param Default 查询失败的时候所返回来的默认值
         */
-        function metaValue(name, Default, allowQueryParent) {
-            if (Default === void 0) { Default = null; }
-            if (allowQueryParent === void 0) { allowQueryParent = false; }
-            var selector = "meta[name~=\"" + name + "\"]";
+        function metaValue(name, Default = null, allowQueryParent = false) {
+            var selector = `meta[name~="${name}"]`;
             var meta = document.querySelector(selector);
             var getContent = function () {
                 if (meta) {
@@ -3239,7 +3099,7 @@ var DOM;
                 }
                 else {
                     if (TypeScript.logging.outputWarning) {
-                        console.warn(selector + " not found in current context!");
+                        console.warn(`${selector} not found in current context!`);
                     }
                     return Default;
                 }
@@ -3252,16 +3112,15 @@ var DOM;
             return getContent();
         }
         InputValueGetter.metaValue = metaValue;
-        function getValue(id, strict) {
-            if (strict === void 0) { strict = true; }
-            var input = $ts(Internal.Handlers.EnsureNodeId(id));
+        function getValue(id, strict = true) {
+            let input = $ts(Internal.Handlers.EnsureNodeId(id));
             switch (input.tagName) {
                 case "input": return inputValue(input);
                 case "select": return selectOptionValues(input);
                 case "textarea": return largeText(input);
                 default:
                     if (strict) {
-                        throw "Get value of <" + input.tagName + "> is not supported!";
+                        throw `Get value of <${input.tagName}> is not supported!`;
                     }
                     else {
                         // 强制读取目标节点的value属性值
@@ -3306,10 +3165,9 @@ var DOM;
          * 获取被选中的选项的值的列表
         */
         function selectOptionValues(input) {
-            var selects = getSelectedOptions(input);
-            var values = [];
-            for (var _i = 0, selects_1 = selects; _i < selects_1.length; _i++) {
-                var sel = selects_1[_i];
+            let selects = getSelectedOptions(input);
+            let values = [];
+            for (let sel of selects) {
                 var value = sel.value;
                 if (!value) {
                     value = sel.innerText;
@@ -3348,14 +3206,13 @@ var data;
      * A numeric range model.
      * (一个数值范围)
     */
-    var NumericRange = /** @class */ (function () {
+    class NumericRange {
         // #endregion
         // #region Constructors (1)
         /**
          * Create a new numeric range object
         */
-        function NumericRange(min, max) {
-            if (max === void 0) { max = null; }
+        constructor(min, max = null) {
             if (typeof min == "number" && (!isNullOrUndefined(max))) {
                 this.min = min;
                 this.max = max;
@@ -3366,28 +3223,20 @@ var data;
                 this.max = range.max;
             }
         }
-        Object.defineProperty(NumericRange.prototype, "range", {
-            /**
-             * ``[min, max]``
-            */
-            get: function () {
-                return [this.min, this.max];
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(NumericRange.prototype, "Length", {
-            // #endregion
-            // #region Public Accessors (1)
-            /**
-             * The delta length between the max and the min value.
-            */
-            get: function () {
-                return this.max - this.min;
-            },
-            enumerable: true,
-            configurable: true
-        });
+        /**
+         * ``[min, max]``
+        */
+        get range() {
+            return [this.min, this.max];
+        }
+        // #endregion
+        // #region Public Accessors (1)
+        /**
+         * The delta length between the max and the min value.
+        */
+        get Length() {
+            return this.max - this.min;
+        }
         // #endregion
         // #region Public Static Methods (1)
         /**
@@ -3395,52 +3244,50 @@ var data;
          *
          * @param numbers A given numeric data sequence.
         */
-        NumericRange.Create = function (numbers) {
+        static Create(numbers) {
             var seq = Array.isArray(numbers) ?
                 $ts(numbers) :
                 numbers;
             var min = seq.Min();
             var max = seq.Max();
             return new NumericRange(min, max);
-        };
+        }
         // #endregion
         // #region Public Methods (3)
         /**
          * 判断目标数值是否在当前的这个数值范围之内
         */
-        NumericRange.prototype.IsInside = function (x) {
+        IsInside(x) {
             return x >= this.min && x <= this.max;
-        };
+        }
         /**
          * 将一个位于此区间内的实数映射到另外一个区间之中
         */
-        NumericRange.prototype.ScaleMapping = function (x, range) {
+        ScaleMapping(x, range) {
             var percentage = (x - this.min) / this.Length;
             var y = percentage * (range.max - range.min) + range.min;
             return y;
-        };
+        }
         /**
          * Get a numeric sequence within current range with a given step
          *
          * @param step The delta value of the step forward,
          *      by default is 10% of the range length.
         */
-        NumericRange.prototype.PopulateNumbers = function (step) {
-            if (step === void 0) { step = (this.Length / 10); }
+        PopulateNumbers(step = (this.Length / 10)) {
             var data = [];
             for (var x = this.min; x < this.max; x += step) {
                 data.push(x);
             }
             return data;
-        };
+        }
         /**
          * Display the range in format ``[min, max]``
         */
-        NumericRange.prototype.toString = function () {
-            return "[" + this.min + ", " + this.max + "]";
-        };
-        return NumericRange;
-    }());
+        toString() {
+            return `[${this.min}, ${this.max}]`;
+        }
+    }
     data_1.NumericRange = NumericRange;
 })(data || (data = {}));
 /// <reference path="./Abstracts/TS.ts" />
@@ -3461,8 +3308,8 @@ var Internal;
     */
     function Static() {
         var handle = Internal.Handlers.Shared;
-        var ins = function (any, args) { return queryFunction(handle, any, args); };
-        var stringEval = handle.string();
+        var ins = (any, args) => queryFunction(handle, any, args);
+        const stringEval = handle.string();
         ins.mode = Modes.production;
         ins = extendsUtils(ins, stringEval);
         ins = extendsLINQ(ins);
@@ -3485,10 +3332,9 @@ var Internal;
                 }
             });
         };
-        ts.getText = function (url, callback, options) {
-            if (options === void 0) { options = {
-                nullForNotFound: false
-            }; }
+        ts.getText = function (url, callback, options = {
+            nullForNotFound: false
+        }) {
             HttpHelpers.GetAsyn(urlSolver(url), function (text, code) {
                 if (code != 200) {
                     if (options.nullForNotFound) {
@@ -3518,9 +3364,8 @@ var Internal;
             });
         };
         ts.location = buildURLHelper();
-        ts.parseURL = (function (url) { return new TypeScript.URL(url); });
-        ts.goto = function (url, opt) {
-            if (opt === void 0) { opt = { currentFrame: false, lambda: false }; }
+        ts.parseURL = (url => new TypeScript.URL(url));
+        ts.goto = function (url, opt = { currentFrame: false, lambda: false }) {
             if (url.charAt(0) == "#") {
                 // url是一个文档节点id表达式，则执行文档内跳转
                 TypeScript.URL.JumpToHash(url);
@@ -3538,16 +3383,12 @@ var Internal;
     }
     function buildURLHelper() {
         var url = TypeScript.URL.WindowLocation();
-        var location = function (arg, caseSensitive, Default) {
-            if (caseSensitive === void 0) { caseSensitive = true; }
-            if (Default === void 0) { Default = ""; }
+        var location = function (arg, caseSensitive = true, Default = "") {
             return url.getArgument(arg, caseSensitive, Default);
         };
         location.path = url.path || "/";
         location.fileName = url.fileName;
-        location.hash = function (arg, urlhash) {
-            if (arg === void 0) { arg = { trimprefix: true, doJump: false }; }
-            if (urlhash === void 0) { urlhash = null; }
+        location.hash = function (arg = { trimprefix: true, doJump: false }, urlhash = null) {
             if (!isNullOrUndefined(urlhash)) {
                 if (((typeof arg == "boolean") && (arg === true)) || arg.doJump) {
                     window.location.hash = urlhash;
@@ -3576,7 +3417,7 @@ var Internal;
         };
         return location;
     }
-    var querySymbols = [":", "_"];
+    const querySymbols = [":", "_"];
     function isValidSymbol(c) {
         if (querySymbols.indexOf(c) > -1) {
             return true;
@@ -3590,12 +3431,11 @@ var Internal;
      *
      * @param url 对于meta标签，只会转义字符串最开始的url部分
     */
-    function urlSolver(url, currentFrame) {
+    function urlSolver(url, currentFrame = false) {
         // var url = "@view:task/user/xyz";
         // 在这里指定标签规则：
         // 1. 以@符号起始，能够包含的符号为冒号:，下划线_，字母和数字，其他的符号都会被看作为结束符号
         // 2. meta查询标签必须位于url字符串的起始位置，否则不进行解析
-        if (currentFrame === void 0) { currentFrame = false; }
         if (url.charAt(0) == "@") {
             // 可能是对meta标签的查询
             // 去除第一个@标记符号之后进行查询
@@ -3641,14 +3481,10 @@ var Internal;
         }
     }
     function extendsUtils(ts, stringEval) {
-        ts.imports = function (jsURL, callback, onErrorResumeNext, echo) {
-            if (callback === void 0) { callback = DoNothing; }
-            if (onErrorResumeNext === void 0) { onErrorResumeNext = false; }
-            if (echo === void 0) { echo = false; }
+        ts.imports = function (jsURL, callback = DoNothing, onErrorResumeNext = false, echo = false) {
             return new HttpHelpers.Imports(jsURL, onErrorResumeNext, echo).doLoad(callback);
         };
-        ts.eval = function (script, lzw, callback) {
-            if (lzw === void 0) { lzw = false; }
+        ts.eval = function (script, lzw = false, callback) {
             if (lzw) {
                 script = LZW.decode(script);
             }
@@ -3662,8 +3498,7 @@ var Internal;
                 console.log(fun);
             }
             if (Array.isArray(fun)) {
-                for (var _i = 0, fun_1 = fun; _i < fun_1.length; _i++) {
-                    var p = fun_1[_i];
+                for (let p of fun) {
                     envir.eval(p.toString());
                 }
             }
@@ -3674,8 +3509,7 @@ var Internal;
                 envir.eval(fun.toString());
             }
         };
-        ts.text = function (id, htmlText) {
-            if (htmlText === void 0) { htmlText = false; }
+        ts.text = function (id, htmlText = false) {
             var nodeID = Internal.Handlers.EnsureNodeId(id);
             var node = stringEval.doEval(nodeID, null, null);
             return htmlText ? node.innerHTML : node.innerText;
@@ -3711,8 +3545,8 @@ var Internal;
         };
         ts.from = From;
         ts.csv = {
-            toObjects: function (data) { return csv.dataframe.Parse(data).Objects(); },
-            toText: function (data) { return csv.toDataFrame(data).buildDoc(); }
+            toObjects: (data) => csv.dataframe.Parse(data).Objects(),
+            toText: data => csv.toDataFrame(data).buildDoc()
         };
         ts.evalHTML = {
             table: DOM.CreateHTMLTableNode,
@@ -3722,20 +3556,17 @@ var Internal;
         return ts;
     }
     function extendsSelector(ts) {
-        ts.select = function (query, context) {
-            if (context === void 0) { context = window; }
+        ts.select = function (query, context = window) {
             return Internal.Handlers.stringEval.select(query, context);
         };
-        ts.select.getSelectedOptions = function (query, context) {
-            if (context === void 0) { context = window; }
+        ts.select.getSelectedOptions = function (query, context = window) {
             var sel = $ts(query, {
                 context: context
             });
             var options = DOM.InputValueGetter.getSelectedOptions(sel);
             return new DOMEnumerator(options);
         };
-        ts.select.getOption = function (query, context) {
-            if (context === void 0) { context = window; }
+        ts.select.getOption = function (query, context = window) {
             var sel = $ts(query, {
                 context: context
             });
@@ -3757,14 +3588,22 @@ var Internal;
         // ERROR - "eval" cannot be redeclared in strict mode
         //
         var queryEval = typeOf in handle ? handle[typeOf]() : null;
-        if (type.IsArray) {
+        var isHtmlCollection = (typeOf == "object") && (type.class == "HTMLCollection" || type.class == "NodeListOf");
+        if (isHtmlCollection) {
+            return Internal.Handlers.Shared.HTMLCollection().doEval(any, type, args);
+        }
+        else if (type.IsArray) {
             // 转化为序列集合对象，相当于from函数                
             return queryEval.doEval(any, type, args);
         }
         else if (type.typeOf == "function") {
             // 当html文档加载完毕之后就会执行传递进来的这个
             // 函数进行初始化
-            DOM.ready(any);
+            if (TypeScript.logging.outputEverything && !isNullOrUndefined(args) && TypeInfo.getClass(args) == "HTMLIFrameElement") {
+                console.log("Apply a new ready event on iframe:");
+                console.log(args);
+            }
+            DOM.Events.ready(any, ["interactive", "complete"], args);
         }
         else if (!isNullOrUndefined(eval)) {
             // 对html文档之中的节点元素进行查询操作
@@ -3775,12 +3614,12 @@ var Internal;
             // Fix for js compress tool error:
             //
             // ERROR - the "eval" object cannot be reassigned in strict mode
-            var unsureEval = handle[type.class];
+            let unsureEval = handle[type.class];
             if (!isNullOrUndefined(unsureEval)) {
                 return unsureEval().doEval(any, type, args);
             }
             else {
-                throw "Unsupported data type: " + type.toString();
+                throw `Unsupported data type: ${type.toString()}`;
             }
         }
     }
@@ -3809,10 +3648,7 @@ if (typeof String.prototype['startsWith'] != 'function') {
  * @param callback 如果这个函数之中存在有HTML文档的操作，则可能会需要将代码放在``$ts(() => {...})``之中，
  *     等待整个html文档加载完毕之后再做程序的执行，才可能会得到正确的执行结果
 */
-function $imports(jsURL, callback, onErrorResumeNext, echo) {
-    if (callback === void 0) { callback = DoNothing; }
-    if (onErrorResumeNext === void 0) { onErrorResumeNext = false; }
-    if (echo === void 0) { echo = false; }
+function $imports(jsURL, callback = DoNothing, onErrorResumeNext = false, echo = false) {
     return new HttpHelpers
         .Imports(jsURL, onErrorResumeNext, echo)
         .doLoad(callback);
@@ -3825,7 +3661,7 @@ function $include(jsURL) {
     if (typeof jsURL == "string") {
         jsURL = [jsURL];
     }
-    $ts(function () { return jsURL.forEach(function (js) {
+    $ts(() => jsURL.forEach(js => {
         var script = $ts("<script>", {
             type: "text/javascript",
             src: js
@@ -3834,14 +3670,12 @@ function $include(jsURL) {
             document.body.removeChild(script);
         };
         document.body.appendChild(script);
-    }); });
+    }));
 }
 /**
  * 计算字符串的MD5值字符串
 */
-function md5(string, key, raw) {
-    if (key === void 0) { key = null; }
-    if (raw === void 0) { raw = null; }
+function md5(string, key = null, raw = null) {
     return MD5.calculate(string, key, raw);
 }
 /**
@@ -3908,8 +3742,7 @@ function LoadText(id) {
  *
  * @param url get query string from url (optional) or window
 */
-function getAllUrlParams(url) {
-    if (url === void 0) { url = window.location.href; }
+function getAllUrlParams(url = window.location.href) {
     if (url.indexOf("?") > -1) {
         // if query string exists
         var queryString = Strings.GetTagValue(url, '?').value;
@@ -3928,8 +3761,7 @@ function getAllUrlParams(url) {
  * @param url 这个参数支持对meta标签数据的查询操作
  * @param currentFrame 如果这个参数为true，则不会进行父页面的跳转操作
 */
-function Goto(url, currentFrame) {
-    if (currentFrame === void 0) { currentFrame = false; }
+function Goto(url, currentFrame = false) {
     var win = window;
     if (!currentFrame) {
         // 从最顶层的文档页面进行跳转
@@ -3944,8 +3776,8 @@ function Goto(url, currentFrame) {
 function base64_decode(stream) {
     var data = Strings.lineTokens(stream);
     var base64Str = From(data)
-        .Where(function (s) { return s && s.length > 0; })
-        .Select(function (s) { return s.trim(); })
+        .Where(s => s && s.length > 0)
+        .Select(s => s.trim())
         .JoinBy("");
     var text = Base64.decode(base64Str);
     return text;
@@ -3963,8 +3795,7 @@ function DoNothing() {
  * @param name 所保存的文件名
  * @param options 配置参数，直接留空使用默认值就好了
 */
-function saveSvgAsPng(svg, name, options) {
-    if (options === void 0) { options = CanvasHelper.saveSvgAsPng.Options.Default(); }
+function saveSvgAsPng(svg, name, options = CanvasHelper.saveSvgAsPng.Options.Default()) {
     return CanvasHelper.saveSvgAsPng.Encoder.saveSvgAsPng(svg, name, options);
 }
 /**
@@ -3980,14 +3811,14 @@ function saveSvgAsPng(svg, name, options) {
  * string formatted by the usual printf conventions. See below for more details.
  * You must specify the string and how to format the variables in it.
 */
-var sprintf = data.sprintf.doFormat;
-var executeJavaScript = "javascript:void(0);";
+const sprintf = data.sprintf.doFormat;
+const executeJavaScript = "javascript:void(0);";
 /**
  * 对于这个函数的返回值还需要做类型转换
  *
  * 如果是节点查询或者创建的话，可以使用``asExtends``属性来获取``HTMLTsElememnt``拓展对象
 */
-var $ts = Internal.Static();
+const $ts = Internal.Static();
 /**
  * 从文档之中查询或者创建一个新的图像标签元素
 */
@@ -4031,112 +3862,89 @@ var TypeExtensions;
 /**
  * 按照某一个键值进行分组的集合对象
 */
-var Group = /** @class */ (function (_super) {
-    __extends(Group, _super);
-    function Group(key, group) {
-        var _this = _super.call(this, group) || this;
-        _this.Key = key;
-        return _this;
+class Group extends IEnumerator {
+    constructor(key, group) {
+        super(group);
+        this.Key = key;
     }
-    Object.defineProperty(Group.prototype, "Group", {
-        /**
-         * Group members, readonly property.
-        */
-        get: function () {
-            return this.sequence;
-        },
-        enumerable: true,
-        configurable: true
-    });
+    /**
+     * Group members, readonly property.
+    */
+    get Group() {
+        return this.sequence;
+    }
     /**
      * 创建一个键值对映射序列，这些映射都具有相同的键名
     */
-    Group.prototype.ToMaps = function () {
-        var _this = this;
+    ToMaps() {
         return From(this.sequence)
-            .Select(function (x) { return new MapTuple(_this.Key, x); })
+            .Select(x => new MapTuple(this.Key, x))
             .ToArray();
-    };
-    return Group;
-}(IEnumerator));
+    }
+}
 /// <reference path="./Abstract/Enumerator.ts" />
 /**
  * 表示一个动态列表对象
 */
-var List = /** @class */ (function (_super) {
-    __extends(List, _super);
-    function List(src) {
-        if (src === void 0) { src = null; }
-        return _super.call(this, src || []) || this;
+class List extends IEnumerator {
+    constructor(src = null) {
+        super(src || []);
     }
     /**
      * 可以使用这个方法进行静态代码的链式添加
     */
-    List.prototype.Add = function (x) {
+    Add(x) {
         this.sequence.push(x);
         return this;
-    };
+    }
     /**
      * 批量的添加
     */
-    List.prototype.AddRange = function (x) {
-        var _this = this;
+    AddRange(x) {
         if (Array.isArray(x)) {
-            x.forEach(function (o) { return _this.sequence.push(o); });
+            x.forEach(o => this.sequence.push(o));
         }
         else {
-            x.ForEach(function (o) { return _this.sequence.push(o); });
+            x.ForEach(o => this.sequence.push(o));
         }
         return this;
-    };
+    }
     /**
      * 查找给定的元素在当前的这个列表之中的位置，不存在则返回-1
     */
-    List.prototype.IndexOf = function (x) {
+    IndexOf(x) {
         return this.sequence.indexOf(x);
-    };
+    }
     /**
      * 返回列表之中的第一个元素，然后删除第一个元素，剩余元素整体向前平移一个单位
     */
-    List.prototype.Pop = function () {
+    Pop() {
         var x1 = this.First;
         this.sequence = this.sequence.slice(1);
         return x1;
-    };
-    return List;
-}(IEnumerator));
-var Matrix = /** @class */ (function (_super) {
-    __extends(Matrix, _super);
+    }
+}
+class Matrix extends IEnumerator {
     /**
      * [m, n], m列n行
     */
-    function Matrix(m, n, fill) {
-        if (fill === void 0) { fill = null; }
-        return _super.call(this, Matrix.emptyMatrix(m, n, fill)) || this;
+    constructor(m, n, fill = null) {
+        super(Matrix.emptyMatrix(m, n, fill));
     }
-    Object.defineProperty(Matrix.prototype, "rows", {
-        get: function () {
-            return this.sequence.length;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Matrix.prototype, "columns", {
-        get: function () {
-            return this.sequence[0].length;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Matrix.emptyMatrix = function (m, n, fill) {
-        var matrix = [];
+    get rows() {
+        return this.sequence.length;
+    }
+    get columns() {
+        return this.sequence[0].length;
+    }
+    static emptyMatrix(m, n, fill) {
+        let matrix = [];
         for (var i = 0; i < n; i++) {
             matrix.push(DataExtensions.Dim(m, fill));
         }
         return matrix;
-    };
-    Matrix.prototype.M = function (i, j, val) {
-        if (val === void 0) { val = null; }
+    }
+    M(i, j, val = null) {
         if (isNullOrUndefined(val)) {
             // get
             return this.sequence[i][j];
@@ -4144,19 +3952,18 @@ var Matrix = /** @class */ (function (_super) {
         else {
             this.sequence[i][j] = val;
         }
-    };
-    Matrix.prototype.column = function (i, set) {
-        if (set === void 0) { set = null; }
+    }
+    column(i, set = null) {
         if (isNullOrUndefined(set)) {
             // get
-            var col = [];
+            let col = [];
             for (var j = 0; j < this.rows; j++) {
                 col.push(this.sequence[j][i]);
             }
             return col;
         }
         else {
-            var col = void 0;
+            let col;
             if (Array.isArray(set)) {
                 col = set;
             }
@@ -4168,9 +3975,8 @@ var Matrix = /** @class */ (function (_super) {
             }
             return null;
         }
-    };
-    Matrix.prototype.row = function (i, set) {
-        if (set === void 0) { set = null; }
+    }
+    row(i, set = null) {
         if (isNullOrUndefined(set)) {
             // get
             return this.sequence[i];
@@ -4183,85 +3989,67 @@ var Matrix = /** @class */ (function (_super) {
                 this.sequence[i] = set.ToArray(false);
             }
         }
-    };
-    Matrix.prototype.toString = function () {
-        return "[" + this.rows + ", " + this.columns + "]";
-    };
-    return Matrix;
-}(IEnumerator));
+    }
+    toString() {
+        return `[${this.rows}, ${this.columns}]`;
+    }
+}
 /// <reference path="./Abstract/Enumerator.ts" />
 /**
  * A data sequence object with a internal index pointer.
 */
-var Pointer = /** @class */ (function (_super) {
-    __extends(Pointer, _super);
-    function Pointer(src) {
-        var _this = _super.call(this, src) || this;
+class Pointer extends IEnumerator {
+    constructor(src) {
+        super(src);
         // 2018-09-02 在js里面，数值必须要进行初始化
         // 否则会出现NA初始值，导致使用EndRead属性判断失败
         // 可能会导致死循环的问题出现
-        _this.p = 0;
-        return _this;
+        this.p = 0;
     }
-    Object.defineProperty(Pointer.prototype, "EndRead", {
-        /**
-         * The index pointer is at the end of the data sequence?
-        */
-        get: function () {
-            return this.p >= this.Count;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Pointer.prototype, "Current", {
-        /**
-         * Get the element value in current location i;
-        */
-        get: function () {
-            return this.sequence[this.p];
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Pointer.prototype, "Next", {
-        /**
-         * Get current index element value and then move the pointer
-         * to next position.
-        */
-        get: function () {
-            var x = this.Current;
-            this.p = this.p + 1;
-            return x;
-        },
-        enumerable: true,
-        configurable: true
-    });
+    /**
+     * The index pointer is at the end of the data sequence?
+    */
+    get EndRead() {
+        return this.p >= this.Count;
+    }
+    /**
+     * Get the element value in current location i;
+    */
+    get Current() {
+        return this.sequence[this.p];
+    }
+    /**
+     * Get current index element value and then move the pointer
+     * to next position.
+    */
+    get Next() {
+        var x = this.Current;
+        this.p = this.p + 1;
+        return x;
+    }
     /**
      * Just move the pointer to the next position and then
      * returns current pointer object.
     */
-    Pointer.prototype.MoveNext = function () {
+    MoveNext() {
         this.p = this.p + 1;
         return this;
-    };
+    }
     /**
      * 以当前的位置为基础，得到偏移后的位置的值，但不会改变现有的指针的位置值
     */
-    Pointer.prototype.Peek = function (offset) {
+    Peek(offset) {
         return this.sequence[this.p + offset];
-    };
-    return Pointer;
-}(IEnumerator));
+    }
+}
 /// <reference path="./Abstract/Enumerator.ts" />
 /**
  * 序列之中的对某一个区域的滑窗操作结果对象
 */
-var SlideWindow = /** @class */ (function (_super) {
-    __extends(SlideWindow, _super);
-    function SlideWindow(index, src) {
-        var _this = _super.call(this, src) || this;
-        _this.index = index;
-        return _this;
+class SlideWindow extends IEnumerator {
+    constructor(index, src) {
+        super(src);
+        this.index = index;
     }
     /**
      * 创建指定片段长度的滑窗对象
@@ -4269,8 +4057,7 @@ var SlideWindow = /** @class */ (function (_super) {
      * @param winSize 滑窗片段的长度
      * @param step 滑窗的步进长度，默认是一个步进
     */
-    SlideWindow.Split = function (src, winSize, step) {
-        if (step === void 0) { step = 1; }
+    static Split(src, winSize, step = 1) {
         if (!Array.isArray(src)) {
             src = src.ToArray();
         }
@@ -4284,15 +4071,192 @@ var SlideWindow = /** @class */ (function (_super) {
             windows.push(new SlideWindow(i, chunk));
         }
         return new IEnumerator(windows);
-    };
-    return SlideWindow;
-}(IEnumerator));
+    }
+}
+/**
+ * 序列之中的元素下标的操作方法集合
+*/
+var Which;
+(function (Which) {
+    /**
+     * 查找出所给定的逻辑值集合之中的所有true的下标值
+    */
+    function Is(booleans) {
+        if (Array.isArray(booleans)) {
+            booleans = new IEnumerator(booleans);
+        }
+        return booleans
+            .Select((flag, i) => {
+            return {
+                flag: flag, index: i
+            };
+        })
+            .Where(t => t.flag)
+            .Select(t => t.index);
+    }
+    Which.Is = Is;
+    /**
+     * 默认的通用类型的比较器对象
+    */
+    class DefaultCompares {
+        constructor() {
+            /**
+             * 一个用于比较通用类型的数值转换器对象
+            */
+            this.as_numeric = null;
+        }
+        compares(a, b) {
+            if (!this.as_numeric) {
+                this.as_numeric = DataExtensions.AsNumeric(a);
+                if (!this.as_numeric) {
+                    this.as_numeric = DataExtensions.AsNumeric(b);
+                }
+            }
+            if (!this.as_numeric) {
+                // a 和 b 都是null或者undefined
+                // 认为这两个空值是相等的
+                // 则this.as_numeric会在下一个循环之中被赋值
+                return 0;
+            }
+            else {
+                return this.as_numeric(a) - this.as_numeric(b);
+            }
+        }
+        static default() {
+            return new DefaultCompares().compares;
+        }
+    }
+    Which.DefaultCompares = DefaultCompares;
+    /**
+     * 查找出序列之中最大的元素的序列下标编号
+     *
+     * @param x 所给定的数据序列
+     * @param compare 默认是将x序列之中的元素转换为数值进行大小的比较的
+    */
+    function Max(x, compare = DefaultCompares.default()) {
+        var xMax = null;
+        var iMax = 0;
+        for (var i = 0; i < x.Count; i++) {
+            if (compare(x.ElementAt(i), xMax) > 0) {
+                // x > xMax
+                xMax = x.ElementAt(i);
+                iMax = i;
+            }
+        }
+        return iMax;
+    }
+    Which.Max = Max;
+    /**
+     * 查找出序列之中最小的元素的序列下标编号
+     *
+     * @param x 所给定的数据序列
+     * @param compare 默认是将x序列之中的元素转换为数值进行大小的比较的
+    */
+    function Min(x, compare = DefaultCompares.default()) {
+        return Max(x, (a, b) => -compare(a, b));
+    }
+    Which.Min = Min;
+})(Which || (Which = {}));
+var DOM;
+(function (DOM) {
+    class Query {
+        /**
+         * + ``#`` by id
+         * + ``.`` by claSS
+         * + ``&`` SINGLE NODE
+         * + ``@`` read meta tag
+         * + ``&lt;>`` create new tag
+        */
+        static parseQuery(expr) {
+            var isSingle = false;
+            if (expr.charAt(0) == "&") {
+                isSingle = true;
+                expr = expr.substr(1);
+            }
+            else {
+                isSingle = false;
+            }
+            return Query.parseExpression(expr, isSingle);
+        }
+        /**
+         * by node id
+        */
+        static getById(id) {
+            return {
+                type: DOM.QueryTypes.id,
+                singleNode: true,
+                expression: id
+            };
+        }
+        /**
+         * by class name
+        */
+        static getByClass(className, isSingle) {
+            return {
+                type: DOM.QueryTypes.class,
+                singleNode: isSingle,
+                expression: className
+            };
+        }
+        /**
+         * by tag name
+        */
+        static getByTag(tag, isSingle) {
+            return {
+                type: DOM.QueryTypes.tagName,
+                singleNode: isSingle,
+                expression: tag
+            };
+        }
+        /**
+         * create new node
+        */
+        static createElement(expr) {
+            return {
+                type: DOM.QueryTypes.NoQuery,
+                singleNode: true,
+                expression: expr
+            };
+        }
+        static queryMeta(expr) {
+            return {
+                type: DOM.QueryTypes.QueryMeta,
+                singleNode: true,
+                expression: expr
+            };
+        }
+        static isSelectorQuery(expr) {
+            var hasMultiple = expr.indexOf(" ") > -1;
+            var isNodeCreate = expr.charAt(0) == "<" && expr.charAt(expr.length - 1) == ">";
+            return hasMultiple && !isNodeCreate;
+        }
+        static parseExpression(expr, isSingle) {
+            var prefix = expr.charAt(0);
+            if (Query.isSelectorQuery(expr)) {
+                // 可能是复杂查询表达式
+                return {
+                    type: DOM.QueryTypes.tagName,
+                    singleNode: isSingle,
+                    expression: expr
+                };
+            }
+            switch (prefix) {
+                case "#": return this.getById(expr.substr(1));
+                case ".": return this.getByClass(expr, isSingle);
+                case "<": return this.createElement(expr);
+                case "@": return this.queryMeta(expr.substr(1));
+                default: return this.getByTag(expr, isSingle);
+            }
+        }
+    }
+    DOM.Query = Query;
+})(DOM || (DOM = {}));
 var DOM;
 (function (DOM) {
     /**
      * HTML文档节点的查询类型
     */
-    var QueryTypes;
+    let QueryTypes;
     (function (QueryTypes) {
         QueryTypes[QueryTypes["NoQuery"] = 0] = "NoQuery";
         /**
@@ -4327,189 +4291,111 @@ var DOM;
         */
         QueryTypes[QueryTypes["QueryMeta"] = 200] = "QueryMeta";
     })(QueryTypes = DOM.QueryTypes || (DOM.QueryTypes = {}));
-    var Query = /** @class */ (function () {
-        function Query() {
-        }
+})(DOM || (DOM = {}));
+var DOM;
+(function (DOM) {
+    var Events;
+    (function (Events) {
         /**
-         * + ``#`` by id
-         * + ``.`` by claSS
-         * + ``&`` SINGLE NODE
-         * + ``@`` read meta tag
-         * + ``&lt;>`` create new tag
+         * Execute a given function when the document is ready.
+         * It is called when the DOM is ready which can be prior to images and other external content is loaded.
+         *
+         * 可以处理多个函数作为事件，也可以通过loadComplete函数参数来指定准备完毕的状态
+         * 默认的状态是interactive即只需要加载完DOM既可以开始立即执行函数
+         *
+         * @param fn A function that without any parameters
+         * @param loadComplete + ``interactive``: The document has finished loading. We can now access the DOM elements.
+         *                     + ``complete``: The page is fully loaded.
+         * @param iframe Event execute on document from target iframe.
+         *
         */
-        Query.parseQuery = function (expr) {
-            var isSingle = false;
-            if (expr.charAt(0) == "&") {
-                isSingle = true;
-                expr = expr.substr(1);
+        function ready(fn, loadComplete = ["interactive", "complete"], iframe = null) {
+            let docObj = isNullOrUndefined(iframe) ? document :
+                (isNullOrUndefined(iframe.contentDocument) ? iframe.contentWindow.document : iframe.contentDocument);
+            if (typeof fn !== 'function') {
+                // Sanity check
+                return;
+            }
+            else if (isNullOrUndefined(docObj)) {
+                if ($ts.mode == Modes.production) {
+                    console.warn("Target document object is nothing! Current event will not be handled....");
+                    return;
+                }
+                else if ($ts.mode == Modes.debug) {
+                    console.warn("Target document object is nothing! Current event will not be handled....");
+                    console.log("target iframe:");
+                    console.warn(iframe.contentWindow);
+                    return;
+                }
+            }
+            else if (TypeScript.logging.outputEverything) {
+                console.log("Add Document.ready event handler.");
+                console.log(`document.readyState = ${docObj.readyState}`);
+            }
+            // 2018-12-25 "interactive", "complete" 这两种状态都可以算作是DOM已经准备好了
+            if (loadComplete.indexOf(docObj.readyState) > -1) {
+                // If document is already loaded, run method
+                return fn();
             }
             else {
-                isSingle = false;
+                // Otherwise, wait until document is loaded
+                docObj.addEventListener('DOMContentLoaded', fn, false);
             }
-            return Query.parseExpression(expr, isSingle);
-        };
+        }
+        Events.ready = ready;
         /**
-         * by node id
+         * 向一个给定的HTML元素或者HTML元素的集合之中的对象添加给定的事件
+         *
+         * @param el HTML节点元素或者节点元素的集合
+         * @param type 事件的名称字符串
+         * @param fn 对事件名称所指定的事件进行处理的工作函数，这个工作函数应该具备有一个事件对象作为函数参数
         */
-        Query.getById = function (id) {
-            return {
-                type: QueryTypes.id,
-                singleNode: true,
-                expression: id
-            };
-        };
-        /**
-         * by class name
-        */
-        Query.getByClass = function (className, isSingle) {
-            return {
-                type: QueryTypes.class,
-                singleNode: isSingle,
-                expression: className
-            };
-        };
-        /**
-         * by tag name
-        */
-        Query.getByTag = function (tag, isSingle) {
-            return {
-                type: QueryTypes.tagName,
-                singleNode: isSingle,
-                expression: tag
-            };
-        };
-        /**
-         * create new node
-        */
-        Query.createElement = function (expr) {
-            return {
-                type: QueryTypes.NoQuery,
-                singleNode: true,
-                expression: expr
-            };
-        };
-        Query.queryMeta = function (expr) {
-            return {
-                type: QueryTypes.QueryMeta,
-                singleNode: true,
-                expression: expr
-            };
-        };
-        Query.isSelectorQuery = function (expr) {
-            var hasMultiple = expr.indexOf(" ") > -1;
-            var isNodeCreate = expr.charAt(0) == "<" && expr.charAt(expr.length - 1) == ">";
-            return hasMultiple && !isNodeCreate;
-        };
-        Query.parseExpression = function (expr, isSingle) {
-            var prefix = expr.charAt(0);
-            if (Query.isSelectorQuery(expr)) {
-                // 可能是复杂查询表达式
-                return {
-                    type: QueryTypes.tagName,
-                    singleNode: isSingle,
-                    expression: expr
-                };
+        function addEvent(el, type, fn) {
+            if (document.addEventListener) {
+                if (el && (el.nodeName) || el === window) {
+                    el.addEventListener(type, fn, false);
+                }
+                else if (el && el.length) {
+                    for (var i = 0; i < el.length; i++) {
+                        addEvent(el[i], type, fn);
+                    }
+                }
             }
-            switch (prefix) {
-                case "#": return this.getById(expr.substr(1));
-                case ".": return this.getByClass(expr, isSingle);
-                case "<": return this.createElement(expr);
-                case "@": return this.queryMeta(expr.substr(1));
-                default: return this.getByTag(expr, isSingle);
-            }
-        };
-        return Query;
-    }());
-    DOM.Query = Query;
-})(DOM || (DOM = {}));
-var DOM;
-(function (DOM) {
-    /**
-     * Execute a given function when the document is ready.
-     * It is called when the DOM is ready which can be prior to images and other external content is loaded.
-     *
-     * 可以处理多个函数作为事件，也可以通过loadComplete函数参数来指定准备完毕的状态
-     * 默认的状态是interactive即只需要加载完DOM既可以开始立即执行函数
-     *
-     * @param fn A function that without any parameters
-     * @param loadComplete + ``interactive``: The document has finished loading. We can now access the DOM elements.
-     *                     + ``complete``: The page is fully loaded.
-    */
-    function ready(fn, loadComplete) {
-        if (loadComplete === void 0) { loadComplete = ["interactive", "complete"]; }
-        if (typeof fn !== 'function') {
-            // Sanity check
-            return;
-        }
-        else if (TypeScript.logging.outputEverything) {
-            console.log("Add Document.ready event handler.");
-            console.log("document.readyState = " + document.readyState);
-        }
-        // 2018-12-25 "interactive", "complete" 这两种状态都可以算作是DOM已经准备好了
-        if (loadComplete.indexOf(document.readyState) > -1) {
-            // If document is already loaded, run method
-            return fn();
-        }
-        else {
-            // Otherwise, wait until document is loaded
-            document.addEventListener('DOMContentLoaded', fn, false);
-        }
-    }
-    DOM.ready = ready;
-    /**
-     * 向一个给定的HTML元素或者HTML元素的集合之中的对象添加给定的事件
-     *
-     * @param el HTML节点元素或者节点元素的集合
-     * @param type 事件的名称字符串
-     * @param fn 对事件名称所指定的事件进行处理的工作函数，这个工作函数应该具备有一个事件对象作为函数参数
-    */
-    function addEvent(el, type, fn) {
-        if (document.addEventListener) {
-            if (el && (el.nodeName) || el === window) {
-                el.addEventListener(type, fn, false);
-            }
-            else if (el && el.length) {
-                for (var i = 0; i < el.length; i++) {
-                    addEvent(el[i], type, fn);
+            else {
+                if (el && el.nodeName || el === window) {
+                    el.attachEvent('on' + type, () => {
+                        return fn.call(el, window.event);
+                    });
+                }
+                else if (el && el.length) {
+                    for (var i = 0; i < el.length; i++) {
+                        addEvent(el[i], type, fn);
+                    }
                 }
             }
         }
-        else {
-            if (el && el.nodeName || el === window) {
-                el.attachEvent('on' + type, function () {
-                    return fn.call(el, window.event);
-                });
-            }
-            else if (el && el.length) {
-                for (var i = 0; i < el.length; i++) {
-                    addEvent(el[i], type, fn);
-                }
-            }
-        }
-    }
-    DOM.addEvent = addEvent;
+        Events.addEvent = addEvent;
+    })(Events = DOM.Events || (DOM.Events = {}));
 })(DOM || (DOM = {}));
 var DOM;
 (function (DOM) {
-    var node = /** @class */ (function () {
-        function node() {
-        }
-        node.FromNode = function (htmlNode) {
+    class node {
+        static FromNode(htmlNode) {
             var n = new node();
             n.tagName = htmlNode.tagName;
             n.id = htmlNode.id;
             n.classList = this.tokenList(htmlNode.classList);
             n.attrs = this.nameValueMaps(htmlNode.attributes);
             return n;
-        };
-        node.tokenList = function (tokens) {
+        }
+        static tokenList(tokens) {
             var list = [];
             for (var i = 0; i < tokens.length; i++) {
                 list.push(tokens.item(i));
             }
             return list;
-        };
-        node.nameValueMaps = function (attrs) {
+        }
+        static nameValueMaps(attrs) {
             var list = [];
             var attr;
             var map;
@@ -4519,9 +4405,8 @@ var DOM;
                 list.push(map);
             }
             return list;
-        };
-        return node;
-    }());
+        }
+    }
     DOM.node = node;
 })(DOM || (DOM = {}));
 var DOM;
@@ -4544,8 +4429,8 @@ var DOM;
         if (tagValue.value.length > 0) {
             // 使用正则表达式进行解析
             attrs = From(tagValue.value.match(DOM.attrs))
-                .Where(function (s) { return s.length > 0; })
-                .Select(function (s) {
+                .Where(s => s.length > 0)
+                .Select(s => {
                 var attr = Strings.GetTagValue(s, "=");
                 var val = attr.value.trim();
                 val = val.substr(1, val.length - 2);
@@ -4564,22 +4449,18 @@ var DOM;
 /**
  * TypeScript脚本之中的HTML节点元素的类型代理接口
 */
-var HTMLTsElement = /** @class */ (function () {
-    function HTMLTsElement(node) {
+class HTMLTsElement {
+    /**
+     * 可以从这里获取得到原生的``HTMLElement``对象用于操作
+    */
+    get HTMLElement() {
+        return this.node;
+    }
+    constructor(node) {
         this.node = node instanceof HTMLElement ?
             node :
             node.node;
     }
-    Object.defineProperty(HTMLTsElement.prototype, "HTMLElement", {
-        /**
-         * 可以从这里获取得到原生的``HTMLElement``对象用于操作
-        */
-        get: function () {
-            return this.node;
-        },
-        enumerable: true,
-        configurable: true
-    });
     /**
      * 这个拓展函数总是会将节点中的原来的内容清空，然后显示html函数参数
      * 所给定的内容
@@ -4587,7 +4468,7 @@ var HTMLTsElement = /** @class */ (function () {
      * @param html 当这个参数为一个无参数的函数的时候，主要是用于生成一个比较复杂的文档节点而使用的;
      *    如果为字符串文本类型，则是直接将文本当作为HTML代码赋值给当前的这个节点对象的innerHTML属性;
     */
-    HTMLTsElement.prototype.display = function (html) {
+    display(html) {
         if (!html) {
             this.HTMLElement.innerHTML = "";
         }
@@ -4609,36 +4490,36 @@ var HTMLTsElement = /** @class */ (function () {
             parent.appendChild(node);
         }
         return this;
-    };
+    }
     /**
      * Clear all of the contents in current html element node.
     */
-    HTMLTsElement.prototype.clear = function () {
+    clear() {
         this.HTMLElement.innerHTML = "";
         return this;
-    };
-    HTMLTsElement.prototype.text = function (innerText) {
+    }
+    text(innerText) {
         this.HTMLElement.innerText = innerText;
         return this;
-    };
-    HTMLTsElement.prototype.addClass = function (className) {
+    }
+    addClass(className) {
         var node = this.HTMLElement;
         if (!node.classList.contains(className)) {
             node.classList.add(className);
         }
         return this;
-    };
-    HTMLTsElement.prototype.removeClass = function (className) {
+    }
+    removeClass(className) {
         var node = this.HTMLElement;
         if (node.classList.contains(className)) {
             node.classList.remove(className);
         }
         return this;
-    };
+    }
     /**
      * 在当前的HTML文档节点之中添加一个新的文档节点
     */
-    HTMLTsElement.prototype.append = function (node) {
+    append(node) {
         if (node instanceof HTMLTsElement) {
             this.HTMLElement.appendChild(node.HTMLElement);
         }
@@ -4649,23 +4530,22 @@ var HTMLTsElement = /** @class */ (function () {
             this.HTMLElement.appendChild(node());
         }
         return this;
-    };
+    }
     /**
      * 将css的display属性值设置为block用来显示当前的节点
     */
-    HTMLTsElement.prototype.show = function () {
+    show() {
         this.HTMLElement.style.display = "block";
         return this;
-    };
+    }
     /**
      * 将css的display属性值设置为none来隐藏当前的节点
     */
-    HTMLTsElement.prototype.hide = function () {
+    hide() {
         this.HTMLElement.style.display = "none";
         return this;
-    };
-    return HTMLTsElement;
-}());
+    }
+}
 /**
  * 在这里对原生的html节点进行拓展
 */
@@ -4717,7 +4597,7 @@ var TypeExtensions;
             node.innerHTML = "";
             return node;
         };
-        obj.selects = function (cssSelector) { return Internal.Handlers.stringEval.select(cssSelector, node); };
+        obj.selects = cssSelector => Internal.Handlers.stringEval.select(cssSelector, node);
         // 用这个方法可以很方便的从现有的节点进行转换
         // 也可以直接使用new进行构造
         obj.asExtends = extendsNode;
@@ -4734,8 +4614,8 @@ var TypeScript;
         /**
          * 这个对象可以自动的将调用者的函数名称作为键名进行对应的键值的读取操作
         */
-        var MetaReader = /** @class */ (function () {
-            function MetaReader(meta) {
+        class MetaReader {
+            constructor(meta) {
                 this.meta = meta;
             }
             /**
@@ -4743,8 +4623,7 @@ var TypeScript;
              *
              * > https://stackoverflow.com/questions/280389/how-do-you-find-out-the-caller-function-in-javascript
             */
-            MetaReader.prototype.GetValue = function (key) {
-                if (key === void 0) { key = null; }
+            GetValue(key = null) {
                 if (!key) {
                     key = Internal.StackTrace.GetCallerMember().memberName;
                 }
@@ -4754,34 +4633,28 @@ var TypeScript;
                 else {
                     return null;
                 }
-            };
-            return MetaReader;
-        }());
+            }
+        }
         Data.MetaReader = MetaReader;
     })(Data = TypeScript.Data || (TypeScript.Data = {}));
 })(TypeScript || (TypeScript = {}));
 /// <reference path="../Collections/Abstract/Enumerator.ts" />
 var TsLinq;
 (function (TsLinq) {
-    var PriorityQueue = /** @class */ (function (_super) {
-        __extends(PriorityQueue, _super);
-        function PriorityQueue() {
-            return _super.call(this, []) || this;
+    class PriorityQueue extends IEnumerator {
+        constructor() {
+            super([]);
         }
-        Object.defineProperty(PriorityQueue.prototype, "Q", {
-            /**
-             * 队列元素
-            */
-            get: function () {
-                return this.sequence;
-            },
-            enumerable: true,
-            configurable: true
-        });
+        /**
+         * 队列元素
+        */
+        get Q() {
+            return this.sequence;
+        }
         /**
          *
         */
-        PriorityQueue.prototype.enqueue = function (obj) {
+        enqueue(obj) {
             var last = this.Last;
             var q = this.Q;
             var x = new QueueItem(obj);
@@ -4790,8 +4663,8 @@ var TsLinq;
                 last.below = x;
                 x.above = last;
             }
-        };
-        PriorityQueue.prototype.extract = function (i) {
+        }
+        extract(i) {
             var q = this.Q;
             var x_above = q[i - 1];
             var x_below = q[i + 1];
@@ -4803,22 +4676,20 @@ var TsLinq;
                 x_below.above = x_above;
             }
             return x;
-        };
-        PriorityQueue.prototype.dequeue = function () {
+        }
+        dequeue() {
             return this.extract(0);
-        };
-        return PriorityQueue;
-    }(IEnumerator));
+        }
+    }
     TsLinq.PriorityQueue = PriorityQueue;
-    var QueueItem = /** @class */ (function () {
-        function QueueItem(x) {
+    class QueueItem {
+        constructor(x) {
             this.value = x;
         }
-        QueueItem.prototype.toString = function () {
+        toString() {
             return this.value.toString();
-        };
-        return QueueItem;
-    }());
+        }
+    }
     TsLinq.QueueItem = QueueItem;
 })(TsLinq || (TsLinq = {}));
 /**
@@ -4833,26 +4704,24 @@ var algorithm;
          *
          * ``{key => value}``
         */
-        var binaryTree = /** @class */ (function () {
+        class binaryTree {
             /**
              * 构建一个二叉树对象
              *
              * @param comparer 这个函数指针描述了如何进行两个对象之间的比较操作，如果这个函数参数使用默认值的话
              *                 则只能够针对最基本的数值，逻辑变量进行操作
             */
-            function binaryTree(comparer) {
-                if (comparer === void 0) { comparer = function (a, b) {
-                    var x = DataExtensions.as_numeric(a);
-                    var y = DataExtensions.as_numeric(b);
-                    return x - y;
-                }; }
+            constructor(comparer = (a, b) => {
+                var x = DataExtensions.as_numeric(a);
+                var y = DataExtensions.as_numeric(b);
+                return x - y;
+            }) {
                 this.compares = comparer;
             }
             /**
              * 向这个二叉树对象之中添加一个子节点
             */
-            binaryTree.prototype.add = function (term, value) {
-                if (value === void 0) { value = null; }
+            add(term, value = null) {
                 var np = this.root;
                 var cmp = 0;
                 if (!np) {
@@ -4889,13 +4758,13 @@ var algorithm;
                         }
                     }
                 }
-            };
+            }
             /**
              * 根据key值查找一个节点，然后获取该节点之中与key所对应的值
              *
              * @returns 如果这个函数返回空值，则表示可能未找到目标子节点
             */
-            binaryTree.prototype.find = function (term) {
+            find(term) {
                 var np = this.root;
                 var cmp = 0;
                 while (np) {
@@ -4912,21 +4781,20 @@ var algorithm;
                 }
                 // not exists
                 return null;
-            };
+            }
             /**
              * 将这个二叉树对象转换为一个节点的数组
             */
-            binaryTree.prototype.ToArray = function () {
+            ToArray() {
                 return BTree.binaryTreeExtensions.populateNodes(this.root);
-            };
+            }
             /**
              * 将这个二叉树对象转换为一个Linq查询表达式所需要的枚举器类型
             */
-            binaryTree.prototype.AsEnumerable = function () {
+            AsEnumerable() {
                 return new IEnumerator(this.ToArray());
-            };
-            return binaryTree;
-        }());
+            }
+        }
         BTree.binaryTree = binaryTree;
     })(BTree = algorithm.BTree || (algorithm.BTree = {}));
 })(algorithm || (algorithm = {}));
@@ -4937,7 +4805,7 @@ var algorithm;
         /**
          * data extension module for binary tree nodes data sequence
         */
-        var binaryTreeExtensions;
+        let binaryTreeExtensions;
         (function (binaryTreeExtensions) {
             /**
              * Convert a binary tree object as a node array.
@@ -4976,21 +4844,17 @@ var algorithm;
         /**
          * A binary tree node.
         */
-        var node = /** @class */ (function () {
-            function node(key, value, left, right) {
-                if (value === void 0) { value = null; }
-                if (left === void 0) { left = null; }
-                if (right === void 0) { right = null; }
+        class node {
+            constructor(key, value = null, left = null, right = null) {
                 this.key = key;
                 this.left = left;
                 this.right = right;
                 this.value = value;
             }
-            node.prototype.toString = function () {
+            toString() {
                 return this.key.toString();
-            };
-            return node;
-        }());
+            }
+        }
         BTree.node = node;
     })(BTree = algorithm.BTree || (algorithm.BTree = {}));
 })(algorithm || (algorithm = {}));
@@ -5007,8 +4871,8 @@ var algorithm;
 */
 var Base64;
 (function (Base64) {
-    var base64Pattern = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$/g;
-    var keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+    const base64Pattern = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$/g;
+    const keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
     /**
      * 简单的检测一下所给定的字符串是否是有效的base64字符串
     */
@@ -5200,9 +5064,9 @@ var LZW;
 })(LZW || (LZW = {}));
 var Levenshtein;
 (function (Levenshtein) {
-    var defaultScore = {
-        insert: function (x) { return 1; },
-        delete: function (x) { return 1; },
+    const defaultScore = {
+        insert: x => 1,
+        delete: x => 1,
         substitute: function (s, t) {
             if (s == t) {
                 return 0;
@@ -5212,22 +5076,21 @@ var Levenshtein;
             }
         }
     };
-    function DistanceMatrix(source, target, score) {
-        if (score === void 0) { score = defaultScore; }
-        var src = Strings.ToCharArray(source, true);
-        var tar = Strings.ToCharArray(target, true);
+    function DistanceMatrix(source, target, score = defaultScore) {
+        let src = Strings.ToCharArray(source, true);
+        let tar = Strings.ToCharArray(target, true);
         if (src.length == 0 && tar.length == 0) {
             return [[0]];
         }
         if (src.length == 0) {
-            return [[$ts(tar).Sum(function (c) { return score.insert(c); })]];
+            return [[$ts(tar).Sum(c => score.insert(c))]];
         }
         else if (tar.length == 0) {
-            return [[$ts(src).Sum(function (c) { return score.delete(c); })]];
+            return [[$ts(src).Sum(c => score.delete(c))]];
         }
-        var ns = src.length + 1;
-        var nt = tar.length + 1;
-        var d = new Matrix(ns, nt, 0.0);
+        let ns = src.length + 1;
+        let nt = tar.length + 1;
+        let d = new Matrix(ns, nt, 0.0);
         d.column(0, Enumerable.Range(0, ns - 1));
         d.row(0, Enumerable.Range(0, nt - 1));
         for (var j = 1; j < nt; j++) {
@@ -5238,21 +5101,24 @@ var Levenshtein;
         return d.ToArray(false);
     }
     Levenshtein.DistanceMatrix = DistanceMatrix;
-    function ComputeDistance(source, target, score) {
-        if (score === void 0) { score = defaultScore; }
-        var d = DistanceMatrix(source, target, score);
-        var distance = d[d.length - 1][d[0].length - 1];
+    function ComputeDistance(source, target, score = defaultScore) {
+        let d = DistanceMatrix(source, target, score);
+        let distance = d[d.length - 1][d[0].length - 1];
         return distance;
     }
     Levenshtein.ComputeDistance = ComputeDistance;
 })(Levenshtein || (Levenshtein = {}));
-var StringBuilder = /** @class */ (function () {
+class StringBuilder {
+    /**
+     * 返回得到当前的缓冲区的字符串数据长度大小
+    */
+    get Length() {
+        return this.buffer.length;
+    }
     /**
      * @param newLine 换行符的文本，默认为纯文本格式，也可以指定为html格式的换行符``<br />``
     */
-    function StringBuilder(str, newLine) {
-        if (str === void 0) { str = null; }
-        if (newLine === void 0) { newLine = "\n"; }
+    constructor(str = null, newLine = "\n") {
         if (!str) {
             this.buffer = "";
         }
@@ -5264,35 +5130,23 @@ var StringBuilder = /** @class */ (function () {
         }
         this.newLine = newLine;
     }
-    Object.defineProperty(StringBuilder.prototype, "Length", {
-        /**
-         * 返回得到当前的缓冲区的字符串数据长度大小
-        */
-        get: function () {
-            return this.buffer.length;
-        },
-        enumerable: true,
-        configurable: true
-    });
     /**
      * 向当前的缓冲之中添加目标文本
     */
-    StringBuilder.prototype.Append = function (text) {
+    Append(text) {
         this.buffer = this.buffer + text;
         return this;
-    };
+    }
     /**
      * 向当前的缓冲之中添加目标文本病在最末尾添加一个指定的换行符
     */
-    StringBuilder.prototype.AppendLine = function (text) {
-        if (text === void 0) { text = ""; }
+    AppendLine(text = "") {
         return this.Append(text + this.newLine);
-    };
-    StringBuilder.prototype.toString = function () {
+    }
+    toString() {
         return this.buffer + "";
-    };
-    return StringBuilder;
-}());
+    }
+}
 /**
  * 实现这个类需要重写下面的方法实现：
  *
@@ -5310,27 +5164,18 @@ var StringBuilder = /** @class */ (function () {
  *
  * + ``protected getCurrentAppPage(): string``
 */
-var Bootstrap = /** @class */ (function () {
-    function Bootstrap() {
+class Bootstrap {
+    get appStatus() {
+        return this.status;
+    }
+    get appHookMsg() {
+        return this.hookUnload;
+    }
+    constructor() {
         this.status = "Sleep";
         this.hookUnload = null;
     }
-    Object.defineProperty(Bootstrap.prototype, "appStatus", {
-        get: function () {
-            return this.status;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Bootstrap.prototype, "appHookMsg", {
-        get: function () {
-            return this.hookUnload;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Bootstrap.prototype.Init = function () {
-        var _this = this;
+    Init() {
         var vm = this;
         var currentAppName = this.getCurrentAppPage();
         var awake;
@@ -5343,20 +5188,20 @@ var Bootstrap = /** @class */ (function () {
         // 必须要当前的App名称和当前的页面app一致的时候这个App的运行才会被触发
         if (!awake) {
             if (TypeScript.logging.outputEverything) {
-                console.log("%c[" + TypeInfo.typeof(this).class + "] Continue Sleep as: TRUE = " + currentAppName + " <> " + this.appName, "color:green;");
+                console.log(`%c[${TypeInfo.typeof(this).class}] Continue Sleep as: TRUE = ${currentAppName} <> ${this.appName}`, "color:green;");
             }
             return;
         }
         else if (TypeScript.logging.outputEverything) {
-            console.log("%c[" + TypeInfo.typeof(this).class + "] App(name:=" + this.appName + ") Init...", "color:blue;");
+            console.log(`%c[${TypeInfo.typeof(this).class}] App(name:=${this.appName}) Init...`, "color:blue;");
         }
         // attach event handlers
-        $ts(function () { return _this.OnDocumentReady(); });
+        $ts(() => this.OnDocumentReady());
         // 2019-1-7 因为js是解释执行的，所以OnWindowLoad函数里面的代码之中的this，
         // 可能会被解释为window对象
         // 从而导致出现bug，所以在这里需要使用一个函数的封装来避免这个问题
-        window.onload = function () { return _this.OnWindowLoad(); };
-        window.onbeforeunload = function () { return _this.OnWindowUnload(); };
+        window.onload = () => this.OnWindowLoad();
+        window.onbeforeunload = () => this.OnWindowUnload();
         window.onhashchange = function () {
             var hash = window.location.hash;
             var val = hash.substr(1);
@@ -5364,46 +5209,45 @@ var Bootstrap = /** @class */ (function () {
         };
         this.init();
         this.status = "Running";
-    };
+    }
     /**
      * Event handler on document is ready
     */
-    Bootstrap.prototype.OnDocumentReady = function () {
+    OnDocumentReady() {
         // do nothing
-    };
+    }
     /**
      * Event handler on Window loaded
     */
-    Bootstrap.prototype.OnWindowLoad = function () {
+    OnWindowLoad() {
         // do nothing
-    };
-    Bootstrap.prototype.OnWindowUnload = function () {
+    }
+    OnWindowUnload() {
         if (!Strings.Empty(this.hookUnload, true)) {
             return this.hookUnload;
         }
-    };
-    Bootstrap.prototype.unhook = function () {
+    }
+    unhook() {
         this.hookUnload = null;
-    };
+    }
     /**
      * Event handler on url hash link changed
     */
-    Bootstrap.prototype.OnHashChanged = function (hash) {
+    OnHashChanged(hash) {
         // do nothing
-    };
+    }
     /**
      * 这个函数默认是取出url query之中的app参数字符串作为应用名称
      *
      * @returns 如果没有定义app参数，则默认是返回``/``作为名称
     */
-    Bootstrap.prototype.getCurrentAppPage = function () {
+    getCurrentAppPage() {
         return getAllUrlParams().Item("app") || "/";
-    };
-    Bootstrap.prototype.toString = function () {
-        return "[" + this.status + "] " + this.appName;
-    };
-    return Bootstrap;
-}());
+    }
+    toString() {
+        return `[${this.status}] ${this.appName}`;
+    }
+}
 var Framework;
 (function (Framework) {
     var Extensions;
@@ -5411,8 +5255,7 @@ var Framework;
         /**
          * 确保所传递进来的参数输出的是一个序列集合对象
         */
-        function EnsureCollection(data, n) {
-            if (n === void 0) { n = -1; }
+        function EnsureCollection(data, n = -1) {
             return new IEnumerator(EnsureArray(data, n));
         }
         Extensions.EnsureCollection = EnsureCollection;
@@ -5423,15 +5266,14 @@ var Framework;
          * @param n 如果data数据序列长度不足，则会使用null进行补充，n为任何小于data长度的正实数都不会进行补充操作，
          *     相反只会返回前n个元素，如果n是负数，则不进行任何操作
         */
-        function EnsureArray(data, n) {
-            if (n === void 0) { n = -1; }
+        function EnsureArray(data, n = -1) {
             var type = TypeInfo.typeof(data);
             var array;
             if (type.IsEnumerator) {
                 array = data.ToArray();
             }
             else if (type.IsArray) {
-                array = data.slice();
+                array = [...data];
             }
             else {
                 var x = data;
@@ -5469,8 +5311,7 @@ var Framework;
          *
          * @param to If `to` is null, a deep clone of `from` is returned
         */
-        function extend(from, to) {
-            if (to === void 0) { to = null; }
+        function extend(from, to = null) {
             if (from == null || typeof from != "object")
                 return from;
             if (from.constructor != Object && from.constructor != Array)
@@ -5493,53 +5334,44 @@ var Framework;
 })(Framework || (Framework = {}));
 var TypeScript;
 (function (TypeScript) {
-    var warningLevel = Modes.development;
-    var anyoutputLevel = Modes.debug;
-    var errorOnly = Modes.production;
+    function gc() {
+        return TypeScript.garbageCollect.handler();
+    }
+    TypeScript.gc = gc;
+})(TypeScript || (TypeScript = {}));
+var TypeScript;
+(function (TypeScript) {
+    const warningLevel = Modes.development;
+    const anyoutputLevel = Modes.debug;
+    const errorOnly = Modes.production;
     /**
      * Console logging helper
     */
-    var logging = /** @class */ (function () {
-        function logging() {
+    class logging {
+        /**
+         * 应用程序的开发模式：只会输出框架的警告信息
+        */
+        static get outputWarning() {
+            return $ts.mode <= warningLevel;
         }
-        Object.defineProperty(logging, "outputWarning", {
-            /**
-             * 应用程序的开发模式：只会输出框架的警告信息
-            */
-            get: function () {
-                return $ts.mode <= warningLevel;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(logging, "outputEverything", {
-            /**
-             * 框架开发调试模式：会输出所有的调试信息到终端之上
-            */
-            get: function () {
-                return $ts.mode == anyoutputLevel;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(logging, "outputError", {
-            /**
-             * 生产模式：只会输出错误信息
-            */
-            get: function () {
-                return $ts.mode == errorOnly;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        logging.log = function (obj, color) {
-            if (color === void 0) { color = "black"; }
+        /**
+         * 框架开发调试模式：会输出所有的调试信息到终端之上
+        */
+        static get outputEverything() {
+            return $ts.mode == anyoutputLevel;
+        }
+        /**
+         * 生产模式：只会输出错误信息
+        */
+        static get outputError() {
+            return $ts.mode == errorOnly;
+        }
+        static log(obj, color = "black") {
             if (this.outputEverything) {
                 console.log(obj);
             }
-        };
-        return logging;
-    }());
+        }
+    }
     TypeScript.logging = logging;
 })(TypeScript || (TypeScript = {}));
 /// <reference path="../DOM/DOMEnumerator.ts" />
@@ -5561,23 +5393,21 @@ var Router;
      * @param option 通过这个参数来设置是否为大小写不敏感模式？
      *
     */
-    function CaseInsensitive(option) {
-        if (option === void 0) { option = true; }
+    function CaseInsensitive(option = true) {
         caseSensitive = !option;
     }
     Router.CaseInsensitive = CaseInsensitive;
     /**
      * @param module 默认的模块是``/``，即如果服务器为php服务器的话，则默认为index.php
     */
-    function AddAppHandler(app, module) {
-        if (module === void 0) { module = "/"; }
+    function AddAppHandler(app, module = "/") {
         if (isNullOrUndefined(webApp)) {
             webApp = {};
         }
         if (!(module in webApp)) {
             webApp[module] = new Dictionary({});
         }
-        doModule(module, function (apps) { return apps.Add(app.appName, app); });
+        doModule(module, apps => apps.Add(app.appName, app));
     }
     Router.AddAppHandler = AddAppHandler;
     function doModule(module, action) {
@@ -5586,7 +5416,7 @@ var Router;
     /**
      * fix for index.php, VBServerScript etc.
     */
-    var indexModule = {
+    const indexModule = {
         "/": "general",
         "index.php": "php server",
         "index.perl": "perl server",
@@ -5597,8 +5427,7 @@ var Router;
         "index.asp": "VB6 server",
         "index.aspx": "VB.NET server"
     };
-    function getAppSummary(app, module) {
-        if (module === void 0) { module = "/"; }
+    function getAppSummary(app, module = "/") {
         var type = TypeInfo.typeof(app);
         var info = {
             module: module,
@@ -5610,17 +5439,15 @@ var Router;
         return info;
     }
     Router.getAppSummary = getAppSummary;
-    function RunApp(module) {
-        if (module === void 0) { module = "/"; }
+    function RunApp(module = "/") {
         if (module in webApp) {
-            doModule(module, function (apps) { return apps.Select(function (app) { return app.value.Init(); }); });
+            doModule(module, apps => apps.Select(app => app.value.Init()));
         }
         else if (module == "index" || module in indexModule) {
             var runInit = false;
-            for (var _i = 0, _a = Object.keys(indexModule); _i < _a.length; _i++) {
-                var index = _a[_i];
+            for (var index of Object.keys(indexModule)) {
                 if (index in webApp) {
-                    doModule(index, function (apps) { return apps.Select(function (app) { return app.value.Init(); }); });
+                    doModule(index, apps => apps.Select(app => app.value.Init()));
                     runInit = true;
                     break;
                 }
@@ -5630,36 +5457,33 @@ var Router;
             }
         }
         else {
-            throw "Module \"" + module + "\" is not exists in your web app.";
+            throw `Module "${module}" is not exists in your web app.`;
         }
         if (TypeScript.logging.outputEverything) {
             // 在console中显示table
             var summary = [];
-            Object.keys(webApp).forEach(function (module) {
-                doModule(module, function (apps) {
-                    apps.ForEach(function (app) { return summary.push(getAppSummary(app.value, module)); });
+            Object.keys(webApp).forEach(module => {
+                doModule(module, apps => {
+                    apps.ForEach(app => summary.push(getAppSummary(app.value, module)));
                 });
             });
             console.table(summary);
         }
     }
     Router.RunApp = RunApp;
-    var routerLink = "router-link";
+    const routerLink = "router-link";
     function queryKey(argName) {
-        return function (link) { return getAllUrlParams(link).Item(argName); };
+        return link => getAllUrlParams(link).Item(argName);
     }
     Router.queryKey = queryKey;
     function moduleName() {
-        return function (link) { return (new TypeScript.URL(link)).fileName; };
+        return link => (new TypeScript.URL(link)).fileName;
     }
     Router.moduleName = moduleName;
     /**
      * 父容器页面注册视图容器对象
     */
-    function register(appId, hashKey, frameRegister) {
-        if (appId === void 0) { appId = "app"; }
-        if (hashKey === void 0) { hashKey = null; }
-        if (frameRegister === void 0) { frameRegister = true; }
+    function register(appId = "app", hashKey = null, frameRegister = true) {
         var aLink;
         var gethashKey;
         if (!hashLinks) {
@@ -5668,7 +5492,7 @@ var Router;
             });
         }
         if (!hashKey) {
-            gethashKey = function (link) { return (new TypeScript.URL(link)).fileName; };
+            gethashKey = link => (new TypeScript.URL(link)).fileName;
         }
         else if (typeof hashKey == "string") {
             gethashKey = Router.queryKey(hashKey);
@@ -5677,13 +5501,13 @@ var Router;
             gethashKey = hashKey;
         }
         aLink = $ts(".router");
-        aLink.attr("router-link", function (link) { return link.href; });
+        aLink.attr("router-link", link => link.href);
         aLink.attr("href", "javascript:void(0);");
-        aLink.onClick(function (link, click) {
+        aLink.onClick((link, click) => {
             Router.goto(link.getAttribute("router-link"), appId, gethashKey);
         });
         aLink.attr(routerLink)
-            .ForEach(function (link) {
+            .ForEach(link => {
             hashLinks.Add(gethashKey(link), link);
         });
         // 假设当前的url之中有hash的话，还需要根据注册的路由配置进行跳转显示
@@ -5693,11 +5517,11 @@ var Router;
     Router.register = register;
     function clientResize(appId) {
         var app = $ts("#" + appId);
-        var frame = $ts("#" + appId + "-frame");
+        var frame = $ts(`#${appId}-frame`);
         var size = DOM.clientSize();
         if (!app) {
             if (TypeScript.logging.outputWarning) {
-                console.warn("[#" + appId + "] not found!");
+                console.warn(`[#${appId}] not found!`);
             }
         }
         else {
@@ -5740,8 +5564,7 @@ var Router;
     /**
      * 因为link之中可能存在查询参数，所以必须要在web服务器上面测试
     */
-    function goto(link, appId, hashKey, stack) {
-        if (stack === void 0) { stack = null; }
+    function goto(link, appId, hashKey, stack = null) {
         if (!Router.IsTopWindowStack()) {
             parent.Router.goto(link, appId, hashKey, parent);
         }
@@ -5755,121 +5578,136 @@ var Router;
     }
     Router.goto = goto;
 })(Router || (Router = {}));
-/**
- * 序列之中的元素下标的操作方法集合
-*/
-var Which;
-(function (Which) {
+var TypeScript;
+(function (TypeScript) {
     /**
-     * 查找出所给定的逻辑值集合之中的所有true的下标值
+     * https://github.com/natewatson999/js-gc
     */
-    function Is(booleans) {
-        if (Array.isArray(booleans)) {
-            booleans = new IEnumerator(booleans);
-        }
-        return booleans
-            .Select(function (flag, i) {
-            return {
-                flag: flag, index: i
-            };
-        })
-            .Where(function (t) { return t.flag; })
-            .Select(function (t) { return t.index; });
-    }
-    Which.Is = Is;
-    /**
-     * 默认的通用类型的比较器对象
-    */
-    var DefaultCompares = /** @class */ (function () {
-        function DefaultCompares() {
-            /**
-             * 一个用于比较通用类型的数值转换器对象
-            */
-            this.as_numeric = null;
-        }
-        DefaultCompares.prototype.compares = function (a, b) {
-            if (!this.as_numeric) {
-                this.as_numeric = DataExtensions.AsNumeric(a);
-                if (!this.as_numeric) {
-                    this.as_numeric = DataExtensions.AsNumeric(b);
+    let garbageCollect;
+    (function (garbageCollect) {
+        /**
+         * try to do garbageCollect by invoke this function
+        */
+        garbageCollect.handler = getHandler();
+        function getHandler() {
+            if (typeof window.require === "function") {
+                let require = window.require;
+                try {
+                    require("v8").setFlagsFromString('--expose_gc');
+                    if (window.global != null) {
+                        let global = window.global;
+                        if (typeof global.gc == "function") {
+                            return global.gc;
+                        }
+                    }
+                    var vm = require("vm");
+                    if (vm != null) {
+                        if (typeof vm.runInNewContext == "function") {
+                            var k = vm.runInNewContext("gc");
+                            return function () {
+                                k();
+                                return;
+                            };
+                        }
+                    }
+                }
+                catch (e) { }
+            }
+            if (typeof window !== 'undefined') {
+                if (window.CollectGarbage) {
+                    return window.CollectGarbage;
+                }
+                if (window.gc) {
+                    return window.gc;
+                }
+                if (window.opera) {
+                    if (window.opera.collect) {
+                        return window.opera.collect;
+                    }
+                }
+                //if ((<any>window).QueryInterface) {
+                //    return (<any>window).QueryInterface((<any>Components).interfaces.nsIInterfaceRequestor).getInterface((<any>Components).interfaces.nsIDOMWindowUtils).garbageCollect;
+                //}
+            }
+            //if (typeof ProfilerAgent !== 'undefined') {
+            //    if (ProfilerAgent.collectGarbage) {
+            //        return ProfilerAgent.collectGarbage;
+            //    }
+            //}
+            if (typeof window.global !== 'undefined') {
+                let global = window.global;
+                if (global.gc) {
+                    return global.gc;
                 }
             }
-            if (!this.as_numeric) {
-                // a 和 b 都是null或者undefined
-                // 认为这两个空值是相等的
-                // 则this.as_numeric会在下一个循环之中被赋值
-                return 0;
-            }
-            else {
-                return this.as_numeric(a) - this.as_numeric(b);
-            }
-        };
-        DefaultCompares.default = function () {
-            return new DefaultCompares().compares;
-        };
-        return DefaultCompares;
-    }());
-    Which.DefaultCompares = DefaultCompares;
-    /**
-     * 查找出序列之中最大的元素的序列下标编号
-     *
-     * @param x 所给定的数据序列
-     * @param compare 默认是将x序列之中的元素转换为数值进行大小的比较的
-    */
-    function Max(x, compare) {
-        if (compare === void 0) { compare = DefaultCompares.default(); }
-        var xMax = null;
-        var iMax = 0;
-        for (var i = 0; i < x.Count; i++) {
-            if (compare(x.ElementAt(i), xMax) > 0) {
-                // x > xMax
-                xMax = x.ElementAt(i);
-                iMax = i;
-            }
+            //if (typeof Duktape == 'object') {
+            //    if (typeof Duktape.gc) {
+            //        return Duktape.gc;
+            //    }
+            //}
+            //if (typeof Packages !== 'undefined') {
+            //    if (typeof Packages.java !== 'undefined') {
+            //        if (Packages.java.lang) {
+            //            if (Packages.java.lang) {
+            //                if (Packages.java.lang.System) {
+            //                    return Packages.java.lang.System.gc;
+            //                }
+            //            }
+            //        }
+            //    }
+            //}
+            //if (typeof java !== 'undefined') {
+            //    if (java.lang) {
+            //        if (java.lang) {
+            //            if (java.lang.System) {
+            //                return java.lang.System.gc;
+            //            }
+            //        }
+            //    }
+            //}
+            //if (typeof Java !== 'undefined') {
+            //    if (java.type) {
+            //        return Java.type('java.lang.System').gc;
+            //    }
+            //}
+            //if (typeof CollectGarbage == "function") {
+            //    return CollectGarbage;
+            //}
+            //if (typeof jerry_gc == "function") {
+            //    return jerry_gc;
+            //}
+            return function () {
+                if (TypeScript.logging.outputEverything) {
+                    console.log("There is no gc handler could be found currently....");
+                }
+            };
         }
-        return iMax;
-    }
-    Which.Max = Max;
-    /**
-     * 查找出序列之中最小的元素的序列下标编号
-     *
-     * @param x 所给定的数据序列
-     * @param compare 默认是将x序列之中的元素转换为数值进行大小的比较的
-    */
-    function Min(x, compare) {
-        if (compare === void 0) { compare = DefaultCompares.default(); }
-        return Max(x, function (a, b) { return -compare(a, b); });
-    }
-    Which.Min = Min;
-})(Which || (Which = {}));
+    })(garbageCollect = TypeScript.garbageCollect || (TypeScript.garbageCollect = {}));
+})(TypeScript || (TypeScript = {}));
 var Internal;
 (function (Internal) {
-    var Arguments = /** @class */ (function () {
-        function Arguments() {
-        }
+    class Arguments {
         /**
          * 在创建新的节点的时候，会有一个属性值的赋值过程，
          * 该赋值过程会需要使用这个函数来过滤Arguments的属性值，否则该赋值过程会将Arguments
          * 里面的属性名也进行赋值，可能会造成bug
         */
-        Arguments.nameFilter = function (args) {
-            var _this = this;
+        static nameFilter(args) {
             return From(Object.keys(args))
-                .Where(function (name) { return _this.ArgumentNames.indexOf(name) == -1; })
+                .Where(name => this.ArgumentNames.indexOf(name) == -1)
                 .ToArray();
-        };
-        Arguments.Default = function () {
+        }
+        static Default() {
             return {
                 caseInSensitive: false,
                 nativeModel: true,
                 defaultValue: "",
                 context: window
             };
-        };
-        //#endregion
-        Arguments.ArgumentNames = Object.keys(Arguments.Default());
-        return Arguments;
-    }());
+        }
+    }
+    //#endregion
+    Arguments.ArgumentNames = Object.keys(Arguments.Default());
     Internal.Arguments = Arguments;
 })(Internal || (Internal = {}));
 var Internal;
@@ -5877,13 +5715,11 @@ var Internal;
     /**
      * 调用堆栈之中的某一个栈片段信息
     */
-    var StackFrame = /** @class */ (function () {
-        function StackFrame() {
+    class StackFrame {
+        toString() {
+            return `${this.caller} [as ${this.memberName}](${this.file}:${this.line}:${this.column})`;
         }
-        StackFrame.prototype.toString = function () {
-            return this.caller + " [as " + this.memberName + "](" + this.file + ":" + this.line + ":" + this.column + ")";
-        };
-        StackFrame.Parse = function (line) {
+        static Parse(line) {
             var frame = new StackFrame();
             var file = StackFrame.getFileName(line);
             var caller = line.replace(file, "").trim().substr(3);
@@ -5895,10 +5731,10 @@ var Internal;
                 caller = "<HTML\\Document>";
             }
             var position = $ts(file.match(/([:]\d+){2}$/m)[0].split(":"));
-            var posStrLen = (position.Select(function (s) { return s.length; }).Sum() + 2);
+            var posStrLen = (position.Select(s => s.length).Sum() + 2);
             var location = From(position)
-                .Where(function (s) { return s.length > 0; })
-                .Select(function (x) { return Strings.Val(x); })
+                .Where(s => s.length > 0)
+                .Select(x => Strings.Val(x))
                 .ToArray();
             frame.file = file.substr(0, file.length - posStrLen);
             var alias = caller.match(/\[.+\]/);
@@ -5919,19 +5755,18 @@ var Internal;
             frame.line = location[0];
             frame.column = location[1];
             return frame;
-        };
-        StackFrame.getFileName = function (line) {
+        }
+        static getFileName(line) {
             var matches = line.match(/\(.+\)/);
             if (!matches || matches.length == 0) {
                 // 2018-09-14 可能是html文件之中
-                return "(" + line.substr(6).trim() + ")";
+                return `(${line.substr(6).trim()})`;
             }
             else {
                 return matches[0];
             }
-        };
-        return StackFrame;
-    }());
+        }
+    }
     Internal.StackFrame = StackFrame;
 })(Internal || (Internal = {}));
 var TypeScript;
@@ -5939,12 +5774,12 @@ var TypeScript;
     /**
      * 性能计数器
     */
-    var Benchmark = /** @class */ (function () {
-        function Benchmark() {
+    class Benchmark {
+        constructor() {
             this.start = (new Date).getTime();
             this.lastCheck = this.start;
         }
-        Benchmark.prototype.Tick = function () {
+        Tick() {
             var now = (new Date).getTime();
             var checkpoint = new CheckPoint();
             checkpoint.start = this.start;
@@ -5953,28 +5788,20 @@ var TypeScript;
             checkpoint.sinceLastCheck = now - this.lastCheck;
             this.lastCheck = now;
             return checkpoint;
-        };
-        return Benchmark;
-    }());
+        }
+    }
     TypeScript.Benchmark = Benchmark;
     /**
      * 单位都是毫秒
     */
-    var CheckPoint = /** @class */ (function () {
-        function CheckPoint() {
+    class CheckPoint {
+        /**
+         * 获取从``time``到当前时间所流逝的毫秒计数
+        */
+        get elapsedMilisecond() {
+            return (new Date).getTime() - this.time;
         }
-        Object.defineProperty(CheckPoint.prototype, "elapsedMilisecond", {
-            /**
-             * 获取从``time``到当前时间所流逝的毫秒计数
-            */
-            get: function () {
-                return (new Date).getTime() - this.time;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        return CheckPoint;
-    }());
+    }
     TypeScript.CheckPoint = CheckPoint;
 })(TypeScript || (TypeScript = {}));
 var Cookies;
@@ -6007,7 +5834,7 @@ var Cookies;
         exp.setTime(exp.getTime() - 1);
         if (cval != null) {
             var expires = exp.toGMTString();
-            expires = name + "=" + cval + ";expires=" + expires;
+            expires = `${name}=${cval};expires=${expires}`;
             document.cookie = expires;
         }
     }
@@ -6039,7 +5866,6 @@ var CanvasHelper;
      * found this trick at http://talideon.com/weblog/2005/02/detecting-broken-images-js.cfm
     */
     function imageOk(img) {
-        "use strict";
         // During the onload event, IE correctly identifies any images that
         // weren't downloaded as not complete. Others should too. Gecko-based
         // browsers act like NS4 in that they report this incorrectly.
@@ -6059,16 +5885,14 @@ var CanvasHelper;
     /**
      * @param size [width, height]
     */
-    function createCanvas(size, id, title, display) {
-        "use strict";
-        if (display === void 0) { display = "block"; }
+    function createCanvas(size, id, title, display = "block") {
         // size the canvas
         var canvas = $ts("<canvas>", {
             width: size[0],
             height: size[1],
             id: id,
             title: title,
-            style: "display: " + display + ";"
+            style: `display: ${display};`
         });
         // check for canvas support before attempting anything
         if (!canvas.getContext) {
@@ -6092,42 +5916,38 @@ var CanvasHelper;
         return true;
     }
     CanvasHelper.supportsText = supportsText;
-    var fontSize = /** @class */ (function () {
-        function fontSize() {
+    class fontSize {
+        constructor() {
             this.sizes = [];
         }
-        fontSize.prototype.toString = function () {
+        toString() {
             return fontSize.css(this);
-        };
-        fontSize.css = function (size) {
+        }
+        static css(size) {
             if (size.point) {
-                return size.point + "pt";
+                return `${size.point}pt`;
             }
             else if (size.percent) {
-                return size.percent + "%";
+                return `${size.percent}%`;
             }
             else if (size.em) {
-                return size.em + "em";
+                return `${size.em}em`;
             }
             else {
                 return size.pixel.toString();
             }
-        };
-        return fontSize;
-    }());
-    CanvasHelper.fontSize = fontSize;
-    var CSSFont = /** @class */ (function () {
-        function CSSFont() {
         }
-        CSSFont.prototype.apply = function (node) {
+    }
+    CanvasHelper.fontSize = fontSize;
+    class CSSFont {
+        apply(node) {
             CSSFont.applyCSS(node, this);
-        };
-        CSSFont.applyCSS = function (node, font) {
+        }
+        static applyCSS(node, font) {
             node.style.fontFamily = font.fontName;
             node.style.fontSize = fontSize.css(font.size);
-        };
-        return CSSFont;
-    }());
+        }
+    }
     CanvasHelper.CSSFont = CSSFont;
 })(CanvasHelper || (CanvasHelper = {}));
 var CanvasHelper;
@@ -6249,21 +6069,19 @@ var CanvasHelper;
          *
          * error on line 2 at column 14: XML declaration allowed only at the start of the document
         */
-        saveSvgAsPng.doctype = "<?xml version=\"1.0\" standalone=\"no\"?>\n            <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\" [<!ENTITY nbsp \"&#160;\">]>";
+        saveSvgAsPng.doctype = `<?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [<!ENTITY nbsp "&#160;">]>`;
         /**
          * https://github.com/exupero/saveSvgAsPng
         */
-        var Encoder = /** @class */ (function () {
-            function Encoder() {
-            }
-            Encoder.prepareSvg = function (el, options, cb) {
-                if (options === void 0) { options = new saveSvgAsPng.Options(); }
+        class Encoder {
+            static prepareSvg(el, options = new saveSvgAsPng.Options(), cb) {
                 saveSvgAsPng.requireDomNode(el);
                 options.scale = options.scale || 1;
                 options.responsive = options.responsive || false;
-                saveSvgAsPng.inlineImages(el, function () { return Encoder.doInlineImages(el, options, cb); });
-            };
-            Encoder.doInlineImages = function (el, options, cb) {
+                saveSvgAsPng.inlineImages(el, () => Encoder.doInlineImages(el, options, cb));
+            }
+            static doInlineImages(el, options, cb) {
                 var outer = $ts("<div>");
                 var clone = el.cloneNode(true);
                 var width, height;
@@ -6322,7 +6140,7 @@ var CanvasHelper;
                     // here all fonts are inlined, so that we can render them properly.
                     var s = $ts('<style>', {
                         type: 'text/css'
-                    }).display("<![CDATA[\n" + css + "\n]]>");
+                    }).display(`<![CDATA[\n${css}\n]]>`);
                     var defs = $ts('<defs>').display(s);
                     clone.insertBefore(defs, clone.firstChild);
                     if (cb) {
@@ -6331,20 +6149,19 @@ var CanvasHelper;
                         cb(outHtml, width, height);
                     }
                 }
-            };
-            Encoder.svgAsDataUri = function (el, options, cb) {
-                if (cb === void 0) { cb = null; }
+            }
+            static svgAsDataUri(el, options, cb = null) {
                 this.prepareSvg(el, options, function (svg) {
                     var uri = 'data:image/svg+xml;base64,' + window.btoa(saveSvgAsPng.reEncode(saveSvgAsPng.doctype + svg));
                     if (cb) {
                         cb(uri);
                     }
                 });
-            };
+            }
             /**
              * 将svg转换为base64 data uri
             */
-            Encoder.convertToPng = function (src, w, h, options) {
+            static convertToPng(src, w, h, options) {
                 var canvas = $ts('<canvas>', {
                     width: w,
                     height: h
@@ -6378,9 +6195,8 @@ var CanvasHelper;
                     }
                 }
                 return png;
-            };
-            Encoder.svgAsPngUri = function (el, options, cb) {
-                if (options === void 0) { options = new saveSvgAsPng.Options(); }
+            }
+            static svgAsPngUri(el, options = new saveSvgAsPng.Options(), cb) {
                 saveSvgAsPng.requireDomNode(el);
                 options.encoderType = options.encoderType || 'image/png';
                 options.encoderOptions = options.encoderOptions || 0.8;
@@ -6402,12 +6218,12 @@ var CanvasHelper;
                         image.src = uri;
                     });
                 }
-            };
-            Encoder.saveSvg = function (el, name, options) {
+            }
+            static saveSvg(el, name, options) {
                 saveSvgAsPng.requireDomNode(el);
                 options = options || {};
-                this.svgAsDataUri(el, options, function (uri) { return DOM.download(name, uri); });
-            };
+                this.svgAsDataUri(el, options, uri => DOM.download(name, uri));
+            }
             /**
              * 将指定的SVG节点保存为png图片
              *
@@ -6415,8 +6231,7 @@ var CanvasHelper;
              * @param name 所保存的文件名
              * @param options 配置参数，直接留空使用默认值就好了
             */
-            Encoder.saveSvgAsPng = function (svg, name, options) {
-                if (options === void 0) { options = saveSvgAsPng.Options.Default(); }
+            static saveSvgAsPng(svg, name, options = saveSvgAsPng.Options.Default()) {
                 if (typeof svg == "string") {
                     svg = $ts(svg);
                     saveSvgAsPng.requireDomNode(svg);
@@ -6424,10 +6239,9 @@ var CanvasHelper;
                 else {
                     saveSvgAsPng.requireDomNode(svg);
                 }
-                this.svgAsPngUri(svg, options, function (uri) { return DOM.download(name, uri); });
-            };
-            return Encoder;
-        }());
+                this.svgAsPngUri(svg, options, uri => DOM.download(name, uri));
+            }
+        }
         saveSvgAsPng.Encoder = Encoder;
     })(saveSvgAsPng = CanvasHelper.saveSvgAsPng || (CanvasHelper.saveSvgAsPng = {}));
 })(CanvasHelper || (CanvasHelper = {}));
@@ -6435,10 +6249,8 @@ var CanvasHelper;
 (function (CanvasHelper) {
     var saveSvgAsPng;
     (function (saveSvgAsPng) {
-        var Options = /** @class */ (function () {
-            function Options() {
-            }
-            Options.Default = function () {
+        class Options {
+            static Default() {
                 return {
                     encoderType: "image/png",
                     encoderOptions: 0.8,
@@ -6447,14 +6259,11 @@ var CanvasHelper;
                     left: 0,
                     top: 0
                 };
-            };
-            return Options;
-        }());
-        saveSvgAsPng.Options = Options;
-        var styles = /** @class */ (function () {
-            function styles() {
             }
-            styles.doStyles = function (el, options, cssLoadedCallback) {
+        }
+        saveSvgAsPng.Options = Options;
+        class styles {
+            static doStyles(el, options, cssLoadedCallback) {
                 var css = "";
                 // each font that has extranl link is saved into queue, and processed
                 // asynchronously
@@ -6477,8 +6286,8 @@ var CanvasHelper;
                 }
                 // Now all css is processed, it's time to handle scheduled fonts
                 this.processFontQueue(fontsQueue, css, cssLoadedCallback);
-            };
-            styles.processCssRules = function (el, rules, options, sheetHref, fontsQueue) {
+            }
+            static processCssRules(el, rules, options, sheetHref, fontsQueue) {
                 var css = "";
                 for (var j = 0, match; j < rules.length; j++, match = null) {
                     var rule = rules[j];
@@ -6491,7 +6300,7 @@ var CanvasHelper;
                     }
                     catch (err) {
                         if (TypeScript.logging.outputWarning) {
-                            console.warn("The following CSS rule has an invalid selector: \"" + rule + "\"", err);
+                            console.warn(`The following CSS rule has an invalid selector: "${rule}"`, err);
                         }
                     }
                     try {
@@ -6501,7 +6310,7 @@ var CanvasHelper;
                     }
                     catch (err) {
                         if (TypeScript.logging.outputWarning) {
-                            console.warn("Invalid CSS selector \"" + selectorText + "\"", err);
+                            console.warn(`Invalid CSS selector "${selectorText}"`, err);
                         }
                     }
                     if (match) {
@@ -6554,8 +6363,8 @@ var CanvasHelper;
                     }
                 }
                 return css;
-            };
-            styles.processFontQueue = function (queue, css, cssLoadedCallback) {
+            }
+            static processFontQueue(queue, css, cssLoadedCallback) {
                 var style = this;
                 if (queue.length > 0) {
                     // load fonts one by one until we have anything in the queue:
@@ -6594,7 +6403,7 @@ var CanvasHelper;
                         style.processFontQueue(queue, css, cssLoadedCallback);
                     }
                     function updateFontStyle(font, fontInBase64) {
-                        var dataUrl = "url(\"data:" + font.format + ";base64," + fontInBase64 + "\")";
+                        var dataUrl = `url("data:${font.format};base64,${fontInBase64}")`;
                         css += font.text.replace(font.fontUrlRegexp, dataUrl) + '\n';
                         // schedule next font download on next tick.
                         setTimeout(function () {
@@ -6602,8 +6411,8 @@ var CanvasHelper;
                         }, 0);
                     }
                 }
-            };
-            styles.getFontMimeTypeFromUrl = function (fontUrl) {
+            }
+            static getFontMimeTypeFromUrl(fontUrl) {
                 var extensions = Object.keys(supportedFormats);
                 for (var i = 0; i < extensions.length; ++i) {
                     var extension = extensions[i];
@@ -6614,15 +6423,14 @@ var CanvasHelper;
                 }
                 this.warnFontNotSupport(fontUrl);
                 return 'application/octet-stream';
-            };
-            styles.warnFontNotSupport = function (fontUrl) {
+            }
+            static warnFontNotSupport(fontUrl) {
                 // If you see this error message, you probably need to update code above.
-                console.warn("Unknown font format for " + fontUrl + "; Fonts may not be working correctly");
-            };
-            return styles;
-        }());
+                console.warn(`Unknown font format for ${fontUrl}; Fonts may not be working correctly`);
+            }
+        }
         saveSvgAsPng.styles = styles;
-        var supportedFormats = {
+        const supportedFormats = {
             'woff2': 'font/woff2',
             'woff': 'font/woff',
             'otf': 'application/x-font-opentype',
@@ -6631,11 +6439,8 @@ var CanvasHelper;
             'sfnt': 'application/font-sfnt',
             'svg': 'image/svg+xml'
         };
-        var font = /** @class */ (function () {
-            function font() {
-            }
-            return font;
-        }());
+        class font {
+        }
     })(saveSvgAsPng = CanvasHelper.saveSvgAsPng || (CanvasHelper.saveSvgAsPng = {}));
 })(CanvasHelper || (CanvasHelper = {}));
 /// <reference path="../../Data/Encoder/Base64.ts" />
@@ -6644,14 +6449,12 @@ var HttpHelpers;
     /**
      * Javascript动态加载帮助函数
     */
-    var Imports = /** @class */ (function () {
+    class Imports {
         /**
          * @param modules javascript脚本文件的路径集合
          * @param onErrorResumeNext On Error Resume Next Or Just Break
         */
-        function Imports(modules, onErrorResumeNext, echo) {
-            if (onErrorResumeNext === void 0) { onErrorResumeNext = false; }
-            if (echo === void 0) { echo = true; }
+        constructor(modules, onErrorResumeNext = false, echo = true) {
             this.i = 0;
             /**
              * 当脚本执行的时候抛出异常的时候是否继续执行下去？
@@ -6668,18 +6471,16 @@ var HttpHelpers;
             this.onErrorResumeNext = onErrorResumeNext;
             this.echo = echo;
         }
-        Imports.prototype.nextScript = function () {
+        nextScript() {
             var url = this.jsURL[this.i++];
             return url;
-        };
+        }
         /**
          * 开始进行异步的脚本文件加载操作
          *
          * @param callback 在所有指定的脚本文件都完成了加载操作之后所调用的异步回调函数
         */
-        Imports.prototype.doLoad = function (callback) {
-            var _this = this;
-            if (callback === void 0) { callback = DoNothing; }
+        doLoad(callback = DoNothing) {
             var url = this.nextScript();
             if (Strings.Empty(url, true)) {
                 // 已经加载完所有的脚本了
@@ -6687,14 +6488,14 @@ var HttpHelpers;
                 callback();
             }
             else {
-                HttpHelpers.GetAsyn(url, function (script, code) { return _this.doExec(url, script, code, callback); });
+                HttpHelpers.GetAsyn(url, (script, code) => this.doExec(url, script, code, callback));
             }
-        };
+        }
         /**
          * 完成向服务器的数据请求操作之后
          * 加载代码文本
         */
-        Imports.prototype.doExec = function (url, script, code, callback) {
+        doExec(url, script, code, callback) {
             switch (code) {
                 case 200:
                     try {
@@ -6725,13 +6526,12 @@ var HttpHelpers;
                     this.errors.push(url);
             }
             this.doLoad(callback);
-        };
+        }
         /**
          * @param script 这个函数可以支持base64字符串格式的脚本的动态加载
          * @param context 默认是添加在当前文档窗口环境之中
         */
-        Imports.doEval = function (script, callback, context) {
-            if (context === void 0) { context = window; }
+        static doEval(script, callback, context = window) {
             if (Base64.isValidBase64String(script)) {
                 script = Base64.decode(script);
             }
@@ -6739,11 +6539,11 @@ var HttpHelpers;
             if (callback) {
                 callback();
             }
-        };
+        }
         /**
          * 得到相对于当前路径而言的目标脚本全路径
         */
-        Imports.getFullPath = function (url) {
+        static getFullPath(url) {
             var location = $ts.location.path;
             if (url.charAt(0) == "/") {
                 // 是一个绝对路径
@@ -6752,9 +6552,8 @@ var HttpHelpers;
             else {
             }
             console.log(location);
-        };
-        return Imports;
-    }());
+        }
+    }
     HttpHelpers.Imports = Imports;
 })(HttpHelpers || (HttpHelpers = {}));
 var HttpHelpers;
@@ -6816,7 +6615,7 @@ var HttpHelpers;
         var http = new XMLHttpRequest();
         http.open("GET", url, true);
         http.onreadystatechange = function () {
-            var contentType = this.getResponseHeader('content-type');
+            let contentType = this.getResponseHeader('content-type');
             if (isNullOrUndefined(contentType)) {
                 contentType = this.getResponseHeader('Content-Type');
             }
@@ -6855,8 +6654,7 @@ var HttpHelpers;
      * @param url 函数会通过POST方式将文件数据上传到这个url所指定的服务器资源位置
      *
     */
-    function UploadFile(url, postData, fileName, callback) {
-        if (fileName === void 0) { fileName = null; }
+    function UploadFile(url, postData, fileName = null, callback) {
         var data = new FormData();
         if (postData instanceof File) {
             data.append("filename", postData.name);
@@ -6878,15 +6676,14 @@ var HttpHelpers;
      * + ``type``属性，用来设置``Content-type``
      * + ``data``属性，可以是``formData``或者一个``object``
     */
-    var PostData = /** @class */ (function () {
-        function PostData() {
+    class PostData {
+        constructor() {
             this.sendContentType = true;
         }
-        PostData.prototype.toString = function () {
+        toString() {
             return this.type;
-        };
-        return PostData;
-    }());
+        }
+    }
     HttpHelpers.PostData = PostData;
 })(HttpHelpers || (HttpHelpers = {}));
 /// <reference path="../Collections/Abstract/Enumerator.ts" />
@@ -6898,38 +6695,29 @@ var csv;
     /**
      * Common Format and MIME Type for Comma-Separated Values (CSV) Files
     */
-    var contentType = "text/csv";
+    const contentType = "text/csv";
     /**
      * ``csv``文件模型
     */
-    var dataframe = /** @class */ (function (_super) {
-        __extends(dataframe, _super);
+    class dataframe extends IEnumerator {
         /**
          * 从行序列之中构建出一个csv对象模型
         */
-        function dataframe(rows) {
-            return _super.call(this, rows) || this;
+        constructor(rows) {
+            super(rows);
         }
-        Object.defineProperty(dataframe.prototype, "headers", {
-            /**
-             * Csv文件的第一行作为header
-            */
-            get: function () {
-                return new IEnumerator(this.sequence[0]);
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(dataframe.prototype, "contents", {
-            /**
-             * 获取除了第一行作为``header``数据的剩余的所有的行数据
-            */
-            get: function () {
-                return this.Skip(1);
-            },
-            enumerable: true,
-            configurable: true
-        });
+        /**
+         * Csv文件的第一行作为header
+        */
+        get headers() {
+            return new IEnumerator(this.sequence[0]);
+        }
+        /**
+         * 获取除了第一行作为``header``数据的剩余的所有的行数据
+        */
+        get contents() {
+            return this.Skip(1);
+        }
         /**
          * 获取指定列名称的所有的行的列数据
          *
@@ -6937,41 +6725,40 @@ var csv;
          *
          * @returns 该使用名称所指定的列的所有的内容字符串的枚举序列对象
         */
-        dataframe.prototype.Column = function (name) {
+        Column(name) {
             var index = this.sequence[0].indexOf(name);
             if (index == -1) {
                 return new IEnumerator([]);
             }
             else {
-                return this.Select(function (r) { return r.ElementAt(index); });
+                return this.Select(r => r.ElementAt(index));
             }
-        };
+        }
         /**
          * 向当前的数据框对象之中添加一行数据
         */
-        dataframe.prototype.AppendLine = function (line) {
+        AppendLine(line) {
             this.sequence.push(line);
             return this;
-        };
+        }
         /**
          * 向当前的数据框对象之中添加多行数据
         */
-        dataframe.prototype.AppendRows = function (data) {
-            var _this = this;
+        AppendRows(data) {
             if (Array.isArray(data)) {
-                data.forEach(function (r) { return _this.sequence.push(r); });
+                data.forEach(r => this.sequence.push(r));
             }
             else {
-                data.ForEach(function (r) { return _this.sequence.push(r); });
+                data.ForEach(r => this.sequence.push(r));
             }
             return this;
-        };
+        }
         /**
          * 将当前的这个数据框对象转换为csv文本内容
         */
-        dataframe.prototype.buildDoc = function () {
-            return this.Select(function (r) { return r.rowLine; }).JoinBy("\n");
-        };
+        buildDoc() {
+            return this.Select(r => r.rowLine).JoinBy("\n");
+        }
         /**
          * 使用反射操作将csv文档转换为特定类型的对象数据序列
          *
@@ -6982,24 +6769,22 @@ var csv;
          *
          * @returns 这个函数返回类型约束的对象Linq序列集合
         */
-        dataframe.prototype.Objects = function (fieldMaps, activator) {
-            if (fieldMaps === void 0) { fieldMaps = {}; }
-            if (activator === void 0) { activator = function () {
-                return {};
-            }; }
+        Objects(fieldMaps = {}, activator = () => {
+            return {};
+        }) {
             var header = dataframe.ensureMapsAll(fieldMaps, this.headers.ToArray());
             var objs = this
                 .Skip(1)
-                .Select(function (r) {
+                .Select(r => {
                 var o = activator();
-                r.ForEach(function (c, i) {
+                r.ForEach((c, i) => {
                     o[header(i)] = c;
                 });
                 return o;
             });
             return objs;
-        };
-        dataframe.ensureMapsAll = function (fieldMaps, headers) {
+        }
+        static ensureMapsAll(fieldMaps, headers) {
             for (var i = 0; i < headers.length; i++) {
                 var column = headers[i];
                 if (column in fieldMaps) {
@@ -7013,7 +6798,7 @@ var csv;
             return function (i) {
                 return fieldMaps[headers[i]];
             };
-        };
+        }
         /**
          * 使用ajax将csv文件保存到服务器
          *
@@ -7021,14 +6806,12 @@ var csv;
          * @param callback ajax异步回调，默认是打印返回结果到终端之上
          *
         */
-        dataframe.prototype.save = function (url, fileName, callback) {
-            if (fileName === void 0) { fileName = "upload.csv"; }
-            if (callback === void 0) { callback = function (response) {
-                console.log(response);
-            }; }
+        save(url, fileName = "upload.csv", callback = (response) => {
+            console.log(response);
+        }) {
             var file = this.buildDoc();
             HttpHelpers.UploadFile(url, file, fileName, callback);
-        };
+        }
         /**
          * 使用ajax GET加载csv文件数据，不推荐使用这个方法处理大型的csv文件数据
          *
@@ -7036,10 +6819,7 @@ var csv;
          *                 如果这个参数不是空值，则以异步的方式工作，此时函数会返回空值
          * @param parseText 如果url返回来的数据之中还包含有其他的信息，则会需要这个参数来进行csv文本数据的解析
         */
-        dataframe.Load = function (url, callback, parseText) {
-            var _this = this;
-            if (callback === void 0) { callback = null; }
-            if (parseText === void 0) { parseText = this.defaultContent; }
+        static Load(url, callback = null, parseText = this.defaultContent) {
             if (callback == null || callback == undefined) {
                 // 同步
                 var load = parseText(HttpHelpers.GET(url));
@@ -7048,43 +6828,42 @@ var csv;
             }
             else {
                 // 异步
-                HttpHelpers.GetAsyn(url, function (text, code, contentType) {
+                HttpHelpers.GetAsyn(url, (text, code, contentType) => {
                     if (code == 200) {
                         var load = parseText(text, contentType);
-                        var tsv = _this.isTsv(load);
+                        var tsv = this.isTsv(load);
                         var data = dataframe.Parse(load.content, tsv);
                         console.log(data.headers);
                         callback(data);
                     }
                     else {
-                        throw "Error while load csv data source, http " + code + ": " + text;
+                        throw `Error while load csv data source, http ${code}: ${text}`;
                     }
                 });
             }
             return null;
-        };
-        dataframe.isTsv = function (load) {
+        }
+        static isTsv(load) {
             var type = load.type.trim();
             var tsv = (type == "tsv") || (type == "#tsv");
             return tsv;
-        };
+        }
         /**
          * 默认是直接加个csv标签将格式设为默认的csv文件
         */
-        dataframe.defaultContent = function (content) {
+        static defaultContent(content) {
             return {
                 type: "csv",
                 content: content
             };
-        };
+        }
         /**
          * 将所给定的文本文档内容解析为数据框对象
          *
          * @param tsv 所需要进行解析的文本内容是否为使用``<TAB>``作为分割符的tsv文本文件？
          *   默认不是，即默认使用逗号``,``作为分隔符的csv文本文件。
         */
-        dataframe.Parse = function (text, tsv) {
-            if (tsv === void 0) { tsv = false; }
+        static Parse(text, tsv = false) {
             var parse = tsv ? csv_1.row.ParseTsv : csv_1.row.Parse;
             var allTextLines = $ts.from(text.split(/\n/));
             var rows;
@@ -7101,16 +6880,15 @@ var csv;
                 rows = allTextLines.Select(parse);
             }
             return new dataframe(rows);
-        };
-        return dataframe;
-    }(IEnumerator));
+        }
+    }
     csv_1.dataframe = dataframe;
 })(csv || (csv = {}));
 var csv;
 (function (csv) {
     var HTML;
     (function (HTML) {
-        var bootstrap = ["table", "table-hover"];
+        const bootstrap = ["table", "table-hover"];
         /**
          * 将数据框对象转换为HTMl格式的表格对象的html代码
          *
@@ -7119,20 +6897,26 @@ var csv;
          *
          * @returns 表格的HTML代码
         */
-        function toHTMLTable(data, tblClass) {
-            if (tblClass === void 0) { tblClass = bootstrap; }
+        function toHTMLTable(data, tblClass = bootstrap) {
             var th = data.headers
-                .Select(function (h) { return "<th>" + h + "</th>"; })
+                .Select(h => `<th>${h}</th>`)
                 .JoinBy("\n");
             var tr = data.contents
-                .Select(function (r) { return r.Select(function (c) { return "<td>" + c + "</td>"; }).JoinBy(""); })
-                .Select(function (r) { return "<tr>" + r + "</tr>"; })
+                .Select(r => r.Select(c => `<td>${c}</td>`).JoinBy(""))
+                .Select(r => `<tr>${r}</tr>`)
                 .JoinBy("\n");
-            return "\n            <table class=\"" + tblClass + "\">\n                <thead>\n                    <tr>" + th + "</tr>\n                </thead>\n                <tbody>\n                    " + tr + "\n                </tbody>\n            </table>";
+            return `
+            <table class="${tblClass}">
+                <thead>
+                    <tr>${th}</tr>
+                </thead>
+                <tbody>
+                    ${tr}
+                </tbody>
+            </table>`;
         }
         HTML.toHTMLTable = toHTMLTable;
-        function createHTMLTable(data, tblClass) {
-            if (tblClass === void 0) { tblClass = bootstrap; }
+        function createHTMLTable(data, tblClass = bootstrap) {
             return toHTMLTable(csv.toDataFrame(data), tblClass);
         }
         HTML.createHTMLTable = createHTMLTable;
@@ -7143,36 +6927,27 @@ var csv;
     /**
      * csv文件之中的一行数据，相当于当前行的列数据的集合
     */
-    var row = /** @class */ (function (_super) {
-        __extends(row, _super);
-        function row(cells) {
-            return _super.call(this, cells) || this;
+    class row extends IEnumerator {
+        constructor(cells) {
+            super(cells);
         }
-        Object.defineProperty(row.prototype, "columns", {
-            /**
-             * 当前的这一个行对象的列数据集合
-             *
-             * 注意，你无法通过直接修改这个数组之中的元素来达到修改这个行之中的值的目的
-             * 因为这个属性会返回这个行的数组值的复制对象
-            */
-            get: function () {
-                return this.sequence.slice();
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(row.prototype, "rowLine", {
-            /**
-             * 这个只读属性仅用于生成csv文件
-            */
-            get: function () {
-                return From(this.columns)
-                    .Select(row.autoEscape)
-                    .JoinBy(",");
-            },
-            enumerable: true,
-            configurable: true
-        });
+        /**
+         * 当前的这一个行对象的列数据集合
+         *
+         * 注意，你无法通过直接修改这个数组之中的元素来达到修改这个行之中的值的目的
+         * 因为这个属性会返回这个行的数组值的复制对象
+        */
+        get columns() {
+            return [...this.sequence];
+        }
+        /**
+         * 这个只读属性仅用于生成csv文件
+        */
+        get rowLine() {
+            return From(this.columns)
+                .Select(row.autoEscape)
+                .JoinBy(",");
+        }
         /**
          * Returns the index of the first occurrence of a value in an array.
          *
@@ -7184,46 +6959,44 @@ var csv;
          *
          * @returns 如果这个函数返回-1则表示找不到
         */
-        row.prototype.indexOf = function (value, fromIndex) {
-            if (fromIndex === void 0) { fromIndex = null; }
+        indexOf(value, fromIndex = null) {
             if (isNullOrUndefined(fromIndex)) {
                 return this.sequence.indexOf(value);
             }
             else {
                 return this.sequence.indexOf(value, fromIndex);
             }
-        };
-        row.prototype.ProjectObject = function (headers) {
+        }
+        ProjectObject(headers) {
             var obj = {};
             var data = this.columns;
             if (Array.isArray(headers)) {
-                headers.forEach(function (h, i) {
+                headers.forEach((h, i) => {
                     obj[h] = data[i];
                 });
             }
             else {
-                headers.ForEach(function (h, i) {
+                headers.ForEach((h, i) => {
                     obj[h] = data[i];
                 });
             }
             return obj;
-        };
-        row.autoEscape = function (c) {
+        }
+        static autoEscape(c) {
             if (c.indexOf(",") > -1) {
-                return "\"" + c + "\"";
+                return `"${c}"`;
             }
             else {
                 return c;
             }
-        };
-        row.Parse = function (line) {
+        }
+        static Parse(line) {
             return new row(csv.CharsParser(line));
-        };
-        row.ParseTsv = function (line) {
+        }
+        static ParseTsv(line) {
             return new row(csv.CharsParser(line, "\t"));
-        };
-        return row;
-    }(IEnumerator));
+        }
+    }
     csv.row = row;
 })(csv || (csv = {}));
 /// <reference path="../Collections/Pointer.ts" />
@@ -7234,14 +7007,12 @@ var csv;
      * > https://github.com/xieguigang/sciBASIC/blame/701f9d0e6307a779bb4149c57a22a71572f1e40b/Data/DataFrame/IO/csv/Tokenizer.vb#L97
      *
     */
-    function CharsParser(s, delimiter, quot) {
-        if (delimiter === void 0) { delimiter = ","; }
-        if (quot === void 0) { quot = '"'; }
+    function CharsParser(s, delimiter = ",", quot = '"') {
         var tokens = [];
         var temp = [];
         var openStack = false;
         var buffer = From(Strings.ToCharArray(s)).ToPointer();
-        var dblQuot = new RegExp("[" + quot + "]{2}", 'g');
+        var dblQuot = new RegExp(`[${quot}]{2}`, 'g');
         var cellStr = function () {
             // https://stackoverflow.com/questions/1144783/how-to-replace-all-occurrences-of-a-string-in-javascript
             // 2018-09-02
@@ -7319,8 +7090,7 @@ var csv;
      * 当前的token对象之中是否是转义的起始，即当前的token之中的最后一个符号
      * 是否是转义符<paramref name="escape"/>?
     */
-    function StartEscaping(buffer, escape) {
-        if (escape === void 0) { escape = "\\"; }
+    function StartEscaping(buffer, escape = "\\") {
         if (IsNullOrEmpty(buffer)) {
             return false;
         }
@@ -7343,9 +7113,9 @@ var csv;
         var seq = Array.isArray(data) ? new IEnumerator(data) : data;
         var header = $ts(Object.keys(seq.First));
         var rows = seq
-            .Select(function (obj) {
+            .Select(obj => {
             var columns = header
-                .Select(function (ref, i) {
+                .Select((ref, i) => {
                 return toString(obj[ref]);
             });
             return new csv.row(columns);
