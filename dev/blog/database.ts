@@ -22,6 +22,7 @@
     let blogDb: database;
 
     export function initializeTree() {
+        $ts("goback-row").hide();
         $ts.get(dbfile, json => buildIndex(<any>json));
     }
 

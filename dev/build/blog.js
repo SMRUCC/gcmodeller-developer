@@ -203,6 +203,7 @@ var blog;
     const dbfile = "/articles/db.json";
     let blogDb;
     function initializeTree() {
+        $ts("goback-row").hide();
         $ts.get(dbfile, json => buildIndex(json));
     }
     blog.initializeTree = initializeTree;
@@ -222,7 +223,6 @@ var blog;
         displays.ForEach(g => main.appendChild(g));
     }
 })(blog || (blog = {}));
-/// <reference path="../linq.d.ts" />
 $ts(function () {
     let size = DOM.clientSize();
     let iframe = document.getElementsByTagName("iframe");
@@ -233,8 +233,8 @@ $ts(function () {
             let frame = iframe.item(i);
             let w = parseInt((/\d+/ig).exec(frame.width)[0]);
             let h = parseInt((/\d+/ig).exec(frame.height)[0]);
-            iframe.item(i).width = `${size[0]}px`;
-            iframe.item(i).height = `${size[0] * h / w}px`;
+            frame.width = `${size[0]}px`;
+            frame.height = `${size[0] * h / w}px`;
         }
     }
 });
