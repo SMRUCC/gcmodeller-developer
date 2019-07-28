@@ -46,6 +46,33 @@ The cli command ``/UniProt.KO.faa`` takes one required input file and an optiona
 
 Then, we could use the reference sequence database for bbh search
 
+
+```vbnet
+''' <summary>
+''' 阈值筛选应该是发生在sbh导出的时候，在这里将不会做任何阈值筛选操作
+''' </summary>
+''' <param name="args"></param>
+''' <returns></returns>
+<ExportAPI("/UniProt.KO.assign")>
+<Usage("/UniProt.KO.assign /in <query_vs_uniprot.KO.besthit> [/bbh <uniprot_vs_query.KO.besthit> /out <out.KO.csv>]")>
+<Description("Assign KO number to query from Uniprot reference sequence database alignment result.")>
+<Argument("/in", False, CLITypes.File, PipelineTypes.std_in,
+			AcceptTypes:={GetType(BestHit)},
+			Extensions:="*.csv",
+			Description:="The sbh result of the alignment: query vs uniprot.KO.")>
+<Argument("/bbh", True, CLITypes.File,
+			AcceptTypes:={GetType(BestHit)},
+			Extensions:="*.csv",
+			Description:="If this argument is presents in the cli input, then it means we use the bbh method for assign the KO number to query. 
+			Both ``/in`` and ``/bbh`` is not top best selection output. The input file for this argument should be the result of ``/SBH.Export.Large``
+			command, and ``/keeps_raw.queryName`` option should be enabled for keeps the taxonomy information.")>
+<Argument("/out", True, CLITypes.File, PipelineTypes.std_out,
+			AcceptTypes:={},
+			Extensions:="*.csv",
+			Description:="Use the eggHTS command ``/proteins.KEGG.plot`` for export the final KO number assignment result table.")>
+Public Function UniProtKOAssign(args As CommandLine) As Integer
+```
+
 ### References
 
 > [1] KEGG: Kyoto Encyclopedia of Genes and Genomes. DOI: 10.1093/nar/27.1.29
