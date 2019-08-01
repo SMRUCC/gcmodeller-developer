@@ -1,0 +1,81 @@
+﻿<h1>KEGG pathway annotation</h1>
+
+<p><!-- 2018-10-02 --><br />
+<!-- :: course,dev,kegg,blastp --></p>
+
+<div align="center">
+
+<iframe src="//player.bilibili.com/player.html?aid=58675156&cid=102313656&page=1" 
+            scrolling="no" 
+            border="0" 
+            frameborder="no" 
+            framespacing="0" 
+            allowfullscreen="true" 
+            width="720" 
+            height="480"> 
+        </iframe>
+<br />
+<br />
+</div>
+
+<p>For reconstruct the KEGG pathway network, we need the protein annotation data source from the UniProt database. We can export all of the protein sequence which with <code>KO</code> number have been assigned from Uniprot as the reference sequence. For build such reference sequence database, we can use the <code>/Uniprot.KO.faa</code> command from GCModeller <code>localblast</code> tool, for export the reference protein sequence.</p>
+
+<pre><code class="vbnet">''' &lt;summary&gt;
+''' 从uniprot数据库之中导出具有KO编号的所有蛋白序列
+''' &lt;/summary&gt;
+''' &lt;param name="args"&gt;&lt;/param&gt;
+''' &lt;returns&gt;&lt;/returns&gt;
+&lt;ExportAPI("/UniProt.KO.faa")&gt;
+&lt;Usage("/UniProt.KO.faa /in &lt;uniprot.xml&gt; [/lineBreak &lt;default=120&gt; /out &lt;proteins.faa&gt;]")&gt;
+&lt;Description("Export all of the protein sequence from the Uniprot database which have KO number been assigned.")&gt;
+&lt;Argument("/in", False, CLITypes.File, PipelineTypes.std_in,
+    Extensions:="*.Xml",
+    Description:="The Uniprot database which is downloaded from the Uniprot website or ftp site.")&gt;
+&lt;Argument("/out", True, CLITypes.File, PipelineTypes.std_out,
+    AcceptTypes:={GetType(FastaFile)},
+    Extensions:="*.faa, *.fasta, *.fa",
+    Description:="The file path of the export protein sequence, title of each sequence consist with these fields: ``KO|uniprot_id fullName|scientificName``")&gt;
+&lt;Group(CLIGrouping.UniProtTools)&gt;
+Public Function ExportKOFromUniprot(args As CommandLine) As Integer
+</code></pre>
+
+<p>The cli command <code>/UniProt.KO.faa</code> takes one required input file and an optional output file parameter. The input file for this command could be download from Uniprot ftp site, you can download such Uniprot database for one specific genome from the Uniprot taxonomy entry or just download all of the bacteria genome data(Which could be up to 5GB to download).</p>
+
+<p>Then, we could use the reference sequence database for bbh search</p>
+
+<p><img src="kegg_mapping/sbh.png" alt="" /><br />
+<img src="kegg_mapping/bbh.png" alt="" /></p>
+
+<pre><code class="vbnet">''' &lt;summary&gt;
+''' 阈值筛选应该是发生在sbh导出的时候，在这里将不会做任何阈值筛选操作
+''' &lt;/summary&gt;
+''' &lt;param name="args"&gt;&lt;/param&gt;
+''' &lt;returns&gt;&lt;/returns&gt;
+&lt;ExportAPI("/UniProt.KO.assign")&gt;
+&lt;Usage("/UniProt.KO.assign /in &lt;query_vs_uniprot.KO.besthit&gt; [/bbh &lt;uniprot_vs_query.KO.besthit&gt; /out &lt;out.KO.csv&gt;]")&gt;
+&lt;Description("Assign KO number to query from Uniprot reference sequence database alignment result.")&gt;
+&lt;Argument("/in", False, CLITypes.File, PipelineTypes.std_in,
+        AcceptTypes:={GetType(BestHit)},
+        Extensions:="*.csv",
+        Description:="The sbh result of the alignment: query vs uniprot.KO.")&gt;
+&lt;Argument("/bbh", True, CLITypes.File,
+        AcceptTypes:={GetType(BestHit)},
+        Extensions:="*.csv",
+        Description:="If this argument is presents in the cli input, then it means we use the bbh method for assign the KO number to query. 
+        Both ``/in`` and ``/bbh`` is not top best selection output. The input file for this argument should be the result of ``/SBH.Export.Large``
+        command, and ``/keeps_raw.queryName`` option should be enabled for keeps the taxonomy information.")&gt;
+&lt;Argument("/out", True, CLITypes.File, PipelineTypes.std_out,
+        AcceptTypes:={},
+        Extensions:="*.csv",
+        Description:="Use the eggHTS command ``/proteins.KEGG.plot`` for export the final KO number assignment result table.")&gt;
+Public Function UniProtKOAssign(args As CommandLine) As Integer
+</code></pre>
+
+<h3>References</h3>
+
+<blockquote>
+  <p>[1] KEGG: Kyoto Encyclopedia of Genes and Genomes. DOI: 10.1093/nar/27.1.29<br />
+  [2] Gapped BLAST and PSI-BLAST: a new generation of protein database search programs. DOI: 10.1093/nar/25.17.3389<br />
+  [3] The use of gene clusters to infer functional coupling. DOI: 10.1073/pnas.96.6.2896<br />
+  [4] Bidirectional Best Hits Miss Many Orthologs in Duplication-Rich Clades such as Plants and Animals. DOI: 10.1093/gbe/evt132</p>
+</blockquote>
