@@ -48,7 +48,7 @@ Module Module1
         Dim authors = tags.Where(Function(s) s.StartsWith("@")).ToArray
         Dim externalLinks = tags.Where(Function(s) s.StartsWith("&")).Select(Function(s) s.TrimStart("&"c).Trim).ToArray
         Dim relPath As String = path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "")
-        Dim static$ = $"{root}/static/{relPath.Replace(".md", ".html")}"
+        Dim static$ = $"{root}/static/{relPath}.html"
 
         Call Module1.markdown.Transform(markdown).SaveTo([static], Encoding.UTF8)
 
