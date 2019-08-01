@@ -44,7 +44,7 @@ Module Module1
 
         Return New article With {
             .url = path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, ""),
-            .time = If(time.StringEmpty, Now, Date.Parse(time)).UnixTimeStamp,
+            .time = If(time.StringEmpty, Now, Date.Parse(time)),
             .topics = topics,
             .title = title,
             .authors = authors,
@@ -72,7 +72,7 @@ Public Class article
 
     Public Property topics As String()
     Public Property authors As String()
-    Public Property time As Long
+    Public Property time As String
     Public Property external_links As String()
 
 End Class
