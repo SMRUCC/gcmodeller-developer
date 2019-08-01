@@ -1,9 +1,13 @@
-﻿Imports Microsoft.VisualBasic.Linq
+﻿Imports System.Text
+Imports Microsoft.VisualBasic.Linq
+Imports Microsoft.VisualBasic.MIME.Markup.MarkDown
 Imports Microsoft.VisualBasic.Serialization.JSON
 Imports Microsoft.VisualBasic.ValueTypes
 Imports r = System.Text.RegularExpressions.Regex
 
 Module Module1
+
+    ReadOnly markdown As New MarkdownHTML
 
     Sub Main()
         Call scanArticles(App.Command)
@@ -14,7 +18,9 @@ Module Module1
             .lastupdated = Now.UnixTimeStamp,
             .articles = root.ListFiles("*.md") _
                 .Where(Function(path) Not path.BaseName.TextEquals("readme")) _
-                .Select(Function(path) parseArticle(path, root.GetDirectoryFullPath)) _
+                .Select(Function(path)
+                            Return parseArticle(path, root.GetDirectoryFullPath)
+                        End Function) _
                 .ToArray
         }.GetJson _
          .SaveTo($"{root}/db.json")
@@ -41,9 +47,13 @@ Module Module1
         Dim title = markdown.Match("[#].+", RegexICMul).TrimStart("#"c).TrimNewLine.Trim
         Dim authors = tags.Where(Function(s) s.StartsWith("@")).ToArray
         Dim externalLinks = tags.Where(Function(s) s.StartsWith("&")).Select(Function(s) s.TrimStart("&"c).Trim).ToArray
+        Dim relPath As String = path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "")
+        Dim static$ = $"{root}/static/{relPath.Replace(".md", ".html")}"
+
+        Call Module1.markdown.Transform(markdown).SaveTo([static], Encoding.UTF8)
 
         Return New article With {
-            .url = path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, ""),
+            .url = relPath,
             .time = If(time.StringEmpty, Now, Date.Parse(time)),
             .topics = topics,
             .title = title,
