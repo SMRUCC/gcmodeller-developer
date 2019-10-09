@@ -3,6 +3,8 @@
 <!-- 2019-10-04 -->
 <!-- :: course,dev,gsea,go,gene ontology -->
 
+<iframe src="//player.bilibili.com/player.html?aid=69931805&cid=121168664&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 ## 背景信息
 
 > 大洪水过去后， 诺亚的三个儿子的后裔形成了人类的三大支系，居住在世界各地，遍布地面。那时候人们的语言、口音都没有分别。他们在往东边迁移的时候，在示拿这个地方遇见一片平原，就在那里住下。因为在平原上，用作建筑的石料很不易得到，他们就发明了制造砖的方法，用泥作成方块，再用火烧透，他们就拿砖当石头，又拿石漆当灰泥，建造起繁华的巴比伦城。
