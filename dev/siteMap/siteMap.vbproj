@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{70B5338C-5698-4906-94EE-447DB3D1A274}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>siteMap.Module1</StartupObject>
+    <StartupObject>siteMap.Program</StartupObject>
     <RootNamespace>siteMap</RootNamespace>
     <AssemblyName>siteMap</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -114,7 +114,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="JSON.vb" />
+    <Compile Include="Articles.vb" />
+    <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

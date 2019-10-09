@@ -1,16 +1,36 @@
 ﻿Imports System.Text
+Imports Microsoft.VisualBasic.Language
 Imports Microsoft.VisualBasic.Linq
 Imports Microsoft.VisualBasic.MIME.Markup.MarkDown
 Imports Microsoft.VisualBasic.Serialization.JSON
+Imports Microsoft.VisualBasic.Text.Parser.HtmlParser
+Imports Microsoft.VisualBasic.Text.Xml
 Imports Microsoft.VisualBasic.ValueTypes
 Imports r = System.Text.RegularExpressions.Regex
 
-Module Module1
+Module Articles
 
     ReadOnly markdown As New MarkdownHTML
 
-    Sub Main()
-        Call scanArticles(App.Command)
+    Sub createTOC(root$, save$)
+        If save.StringEmpty Then
+            Return
+        End If
+
+        Dim htmls = root.ListFiles("*.html") _
+            .Select(Function(path)
+                        Return <a href=<%= path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "") %>><%= path.BaseName %></a>
+                    End Function) _
+            .Select(Function(a) a.ToString) _
+            .JoinBy(vbCrLf)
+
+        Call sprintf(<html>
+                         <body>
+                             <h1>Articles</h1>
+
+                             %s
+                         </body>
+                     </html>, htmls)
     End Sub
 
     Sub scanArticles(root As String)
@@ -50,7 +70,14 @@ Module Module1
         Dim relPath As String = path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "")
         Dim static$ = $"{root}/static/{relPath}.html"
 
-        Call Module1.markdown.Transform(markdown).SaveTo([static], Encoding.UTF8)
+        With Articles.markdown.Transform(markdown)
+            Call sprintf(<html>
+                             <head>
+                                 <title><%= .Match("<h1>.+?</h1>", RegexICSng).GetValue %></title>
+                             </head>
+                             <body>%s</body>
+                         </html>, .ByRef).SaveTo([static], Encoding.UTF8)
+        End With
 
         Return New article With {
             .url = relPath,
@@ -61,28 +88,4 @@ Module Module1
             .external_links = externalLinks
         }
     End Function
-
 End Module
-
-Public Class DbJson
-
-    Public Property articles As article()
-    Public Property lastupdated As Long
-
-End Class
-
-Public Class article
-
-    Public Property title As String
-    ''' <summary>
-    ''' url of the markdown document of current article
-    ''' </summary>
-    ''' <returns></returns>
-    Public Property url As String
-
-    Public Property topics As String()
-    Public Property authors As String()
-    Public Property time As String
-    Public Property external_links As String()
-
-End Class
