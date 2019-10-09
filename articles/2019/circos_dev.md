@@ -1,3 +1,4 @@
-# Circos Development
+# Circos作图环境封装
 
-<!-- 2019-07-01 --><!-- :: dev -->
+<!-- 2019-10-04 -->
+<!-- :: course,dev,circos -->

@@ -20,3 +20,5 @@ A user developer is not involved in the development in master branch of GCModell
                 <i class="fa fa-fw fa-users" style="font-size: 7em"></i>
             </div>
 
+Watch videos about GCModeller:
+[https://space.bilibili.com/15451227/channel/detail?cid=85174](https://space.bilibili.com/15451227/channel/detail?cid=85174)
