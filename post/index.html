@@ -27,12 +27,12 @@
 <meta class="foundation-mq-small" />
 <meta class="foundation-mq-topbar" />
 
-<link rel="shortcut icon" href="logo.png" />
-<link rel="stylesheet" href="styles/main.css" />
-<link rel="stylesheet" href="styles/normalize.css" />
-<link rel="stylesheet" href="styles/foundation.css" />
-<link rel="stylesheet" href="styles/font-awesome.css" />
-<link rel="stylesheet" href="styles/css.css" />
+<link rel="shortcut icon" href="/logo.png" />
+<link rel="stylesheet" href="/styles/main.css" />
+<link rel="stylesheet" href="/styles/normalize.css" />
+<link rel="stylesheet" href="/styles/foundation.css" />
+<link rel="stylesheet" href="/styles/font-awesome.css" />
+<link rel="stylesheet" href="/styles/css.css" />
 
 <script type="text/javascript">
 	function searchURL() {
@@ -43,11 +43,11 @@
 		window.location = url;
 	}
 </script>
-	<script type="text/javascript" src="lib/jquery.js"></script>
-<script type="text/javascript" src="lib/foundation.js"></script>
-<script type="text/javascript" src="lib/linq.min.js"></script>
-<script type="text/javascript" src="lib/marked.min.js"></script>
-<script type="text/javascript" src="lib/vbcode.min.js"></script>
+	<script type="text/javascript" src="/lib/jquery.js"></script>
+<script type="text/javascript" src="/lib/foundation.js"></script>
+<script type="text/javascript" src="/lib/linq.min.js"></script>
+<script type="text/javascript" src="/lib/marked.min.js"></script>
+<script type="text/javascript" src="/lib/vbcode.min.js"></script>
 
 <script type="text/javascript">
 	$(document).foundation();
@@ -61,7 +61,7 @@
 	<nav class="top-bar" data-topbar="">
 		<ul class="title-area">
 			<li class="name">
-				<h1><a href="https://gcmodeller.org/"><img alt="GCModeller Logo" src="DNA.png" id="header-logo">GCModeller</a></h1>
+				<h1><a href="https://gcmodeller.org/"><img alt="GCModeller Logo" src="/DNA.png" id="header-logo">GCModeller</a></h1>
 			</li>
 			<li class="toggle-topbar"><a href="#">Menu</a></li>
 		</ul>
@@ -69,8 +69,8 @@
 		<section class="top-bar-section">
 			<!-- Right Nav Section -->
 			<ul class="left">
-				<li class=""><a href="/"><i class="fa fa-code" aria-hidden="true"></i> Developer Home</a></li>		
-				<li class="active"><a href="/post.html"><i class="fa fa-book" aria-hidden="true"></i> Post</a></li>						
+				<li class="$index_active"><a href="/"><i class="fa fa-code" aria-hidden="true"></i> Developer Home</a></li>		
+				<li class="active"><a href="/post/"><i class="fa fa-book" aria-hidden="true"></i> Post</a></li>						
 			</ul>
 			<ul class="right">
 				<li class="has-form right">
@@ -96,9 +96,14 @@
     </div>
 </div>
 
-<script type="text/javascript" src="lib/blog.min.js"></script>
+<script type="text/javascript" src="/lib/blog.min.js"></script>
 
-
+		<div id="goback-row" class="row" style="display: none;">
+		
+		<p id="goback">
+<i class="fa fa-arrow-left" aria-hidden="true"></i> <span id="previous-article-title"></span>
+</p>
+		</div>
 
 		<!-- 添加上这个<div>标签之后可以防止在高度比较低的时候出现错位的现象 -->
 		<!--
@@ -110,12 +115,7 @@
 		-->
 		<div id="push"></div>
 	
-				<div id="goback-row" class="row" style="display: none;">
-		
-		<p id="goback">
-<i class="fa fa-arrow-left" aria-hidden="true"></i> <span id="previous-article-title"></span>
-</p>
-		</div>
+		$after_content
 		
 	</div>
 
@@ -152,8 +152,6 @@
 </body>
 
 </html>
-
-
 
 
 
