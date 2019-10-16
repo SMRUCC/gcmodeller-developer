@@ -4,7 +4,7 @@
     </div>
 </div>
 
-<script type="text/javascript" src="lib/blog.min.js"></script>
+<script type="text/javascript" src="/lib/blog.min.js"></script>
 
 		<div id="goback-row" class="row" style="display: none;">
 		
