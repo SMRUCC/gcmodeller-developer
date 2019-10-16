@@ -19,7 +19,7 @@ Module Articles
 
         Dim htmls = root.ListFiles("*.html") _
             .Select(Function(path)
-                        Return <a href=<%= path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "") %>><%= path.BaseName %></a>
+                        Return <a href=<%= path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "") & ".html" %>><%= path.BaseName %></a>
                     End Function) _
             .Select(Function(a) a.ToString) _
             .JoinBy(vbCrLf)
@@ -30,7 +30,7 @@ Module Articles
 
                              %s
                          </body>
-                     </html>, htmls)
+                     </html>, htmls).SaveTo(save)
     End Sub
 
     Sub scanArticles(root As String)
