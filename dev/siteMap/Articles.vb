@@ -19,12 +19,18 @@ Module Articles
 
         Dim htmls = root.ListFiles("*.html") _
             .Select(Function(path)
-                        Return <a href=<%= path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "") & ".html" %>><%= path.BaseName %></a>
+                        Return <p>
+                                   <a href=<%= path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "") & ".html" %>>
+                                       <%= path.BaseName %>
+                                   </a>
+                               </p>
                     End Function) _
             .Select(Function(a) a.ToString) _
             .JoinBy(vbCrLf)
 
         Call sprintf(<html>
+                         <title>Table of Contents</title>
+
                          <body>
                              <h1>Articles</h1>
 
