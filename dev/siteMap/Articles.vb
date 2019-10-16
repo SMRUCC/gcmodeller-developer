@@ -15,6 +15,8 @@ Module Articles
     Sub createTOC(root$, save$)
         If save.StringEmpty Then
             Return
+        Else
+            root = root.GetFullPath.TrimSuffix.Replace("\", "/").Trim("/"c)
         End If
 
         Dim htmls = root.ListFiles("*.html") _
