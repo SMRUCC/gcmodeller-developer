@@ -1,5 +1,5 @@
 declare namespace markedjs {
-    class option {
+    export class option {
         baseUrl: string;
         breaks: boolean;
         gfm: boolean;
@@ -26,6 +26,7 @@ declare namespace markedjs {
     interface highlightCallback {
         (err: string, code: number | string): void;
     }
+    export {};
 }
 declare module markedjs.helpers {
     module escape {

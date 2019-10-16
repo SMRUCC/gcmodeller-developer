@@ -14,3 +14,4 @@ obj/
 *.lock
 *.ide
 /dev/.vs/siteMap/v16/Server/sqlite3
+*.map
