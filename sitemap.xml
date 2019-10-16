@@ -7,6 +7,12 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>http://developer.gcmodeller.org/post.html</loc>
+    <priority>1</priority>
+    <lastmod>2019-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>http://developer.gcmodeller.org/articles/static/2019/circos_dev.html</loc>
     <priority>1</priority>
     <lastmod>2019-10-16</lastmod>
