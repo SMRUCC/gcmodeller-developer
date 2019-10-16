@@ -71,7 +71,7 @@ Module Articles
             .Select(AddressOf LCase) _
             .ToArray
         Dim title = markdown.Match("[#].+", RegexICMul).TrimStart("#"c).TrimNewLine.Trim
-        Dim authors = tags.Where(Function(s) s.StartsWith("@")).ToArray
+        Dim authors = tags.Where(Function(s) s.StartsWith("@")).Select(Function(a) a.Trim("@"c, " "c)).ToArray
         Dim externalLinks = tags.Where(Function(s) s.StartsWith("&")).Select(Function(s) s.TrimStart("&"c).Trim).ToArray
         Dim relPath As String = path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "")
         Dim static$ = $"{root}/static/{relPath}.html"
