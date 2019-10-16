@@ -75,19 +75,32 @@ Module Articles
         Dim externalLinks = tags.Where(Function(s) s.StartsWith("&")).Select(Function(s) s.TrimStart("&"c).Trim).ToArray
         Dim relPath As String = path.GetFullPath.TrimSuffix.Replace("\", "/").Replace(root, "")
         Dim static$ = $"{root}/static/{relPath}.html"
+        Dim pub_date$ = If(time.StringEmpty, Now, Date.Parse(time)).ToString
 
         With Articles.markdown.Transform(markdown)
             Call sprintf(<html>
+                             <meta name="pub_date" content=<%= pub_date %>/>
+
+                             <meta property="og:title" content=<%= title %>/>
+                             <meta property="og:site_name" content="GCModeller Developer"/>
+                             <meta property="og:url" content=<%= "https://developer.gcmodeller.org" & relPath %>/>
+                             <meta property="og:description" content=<%= title %>/>
+                             <meta property="og:image" content="/logo.png"/>
+                             <meta property="og:image:width" content="1200"/>
+                             <meta property="og:type" content="article"/>
+                             <meta property="article:publisher" content="https://gcmodeller.org/"/>
+                             <meta property="article:author" content=<%= authors.JoinBy("; ") %>/>
+
                              <head>
-                                 <title><%= .Match("<h1>.+?</h1>", RegexICSng).GetValue %></title>
+                                 <title><%= title %></title>
                              </head>
-                             <body>%s</body>
+                             <body class="main">%s</body>
                          </html>, .ByRef).SaveTo([static], Encoding.UTF8)
         End With
 
         Return New article With {
             .url = relPath,
-            .time = If(time.StringEmpty, Now, Date.Parse(time)),
+            .time = pub_date,
             .topics = topics,
             .title = title,
             .authors = authors,
