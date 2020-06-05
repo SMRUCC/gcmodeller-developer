@@ -297,6 +297,7 @@ declare class IEnumerator<T> extends LINQIterator<T> {
      * Split a sequence by elements count
     */
     Split(size: number): IEnumerator<T[]>;
+    subset(indexer: number[] | boolean[]): IEnumerator<T>;
     /**
      * 取出序列之中的前n个元素
     */
@@ -435,6 +436,7 @@ declare class DOMEnumerator<T extends HTMLElement> extends IEnumerator<T> {
      * @returns 函数总是会返回所设置的或者读取得到的属性值的字符串集合
     */
     attr(attrName: string, val?: string | IEnumerator<string> | string[] | ((x: T) => string)): IEnumerator<string>;
+    style(styleVal: string): DOMEnumerator<T>;
     addClass(className: string): DOMEnumerator<T>;
     addEvent(eventName: string, handler: (sender: T, event: Event) => void): void;
     onChange(handler: (sender: T, event: Event) => void): void;
@@ -472,6 +474,8 @@ declare namespace Internal.Handlers {
     class stringEval implements IEval<string> {
         private static ensureArguments;
         /**
+         * Node selection by css selector
+         *
          * @param query 函数会在这里自动的处理转义问题
          * @param context 默认为当前的窗口文档
         */
@@ -503,7 +507,7 @@ declare namespace Internal.Handlers {
         /**
          * Create a linq object
         */
-        array: () => arrayEval<unknown>;
+        array: () => arrayEval<{}>;
         NodeListOf: () => DOMCollection<HTMLElement>;
         HTMLCollection: () => DOMCollection<HTMLElement>;
     };
@@ -592,10 +596,12 @@ declare module Strings {
     const A: number;
     const Z: number;
     const numericPattern: RegExp;
+    const integerPattern: RegExp;
     /**
      * 判断所给定的字符串文本是否是任意实数的正则表达式模式
     */
     function isNumericPattern(text: string): boolean;
+    function isIntegerPattern(text: string): boolean;
     /**
      * 尝试将任意类型的目标对象转换为数值类型
      *
@@ -878,7 +884,13 @@ declare namespace Internal {
          * + 如果这个参数为``production``，则不会在浏览器的console上面输出调试相关的信息，你会得到一个比较干净的console输出窗口
         */
         mode: Modes;
-        <T extends HTMLElement>(nodes: NodeListOf<T>): DOMEnumerator<T>;
+        /**
+         * 将一个通过类名称或者标签名称进行选择的节点列表转换为一个节点枚举器
+         *
+         * ##### 20191030 在这里为了重载的兼容性，nodes参数就从原来的T泛型变更为现在Element基本类型
+        */
+        <T extends HTMLElement>(nodes: NodeListOf<Element>): DOMEnumerator<T>;
+        <T extends HTMLElement>(nodes: HTMLCollectionOf<T>): DOMEnumerator<T>;
         <T extends HTMLElement & Node & ChildNode>(nodes: NodeListOf<T>): DOMEnumerator<T>;
         /**
          * Extends the properties and methods of the given original html element node.
@@ -971,6 +983,10 @@ declare namespace Internal {
         typeof<T extends object>(any: T): TypeScript.Reflection.TypeInfo;
         clone<T>(obj: T): T;
         /**
+         * Get unix timestamp of current time
+        */
+        unixtimestamp(): number;
+        /**
          * isNullOrUndefined
         */
         isNullOrEmpty(obj: any): boolean;
@@ -1020,6 +1036,10 @@ declare namespace Internal {
         */
         parseURL(url: string): TypeScript.URL;
         /**
+         * Url solver of the meta reference value.
+        */
+        url(reference: string, currentFrame?: boolean): string;
+        /**
          * 从当前页面跳转到给定的链接页面
          *
          * @param url 链接，也支持meta查询表达式，如果是以``#``起始的文档节点id表达式，则会在文档内跳转到目标节点位置
@@ -1031,6 +1051,10 @@ declare namespace Internal {
          * 针对csv数据序列的操作帮助对象
         */
         csv: IcsvHelperApi;
+        /**
+         * 将目标字符串解释为一个逻辑值
+        */
+        parseBool(text: string): boolean;
         /**
          * 解析的结果为``filename.ext``的完整文件名格式
          *
@@ -1290,12 +1314,18 @@ declare enum Modes {
 */
 declare namespace DOM {
     /**
+     * 判断当前的页面是否显示在一个iframe之中
+     *
+     * https://stackoverflow.com/questions/326069/how-to-identify-if-a-webpage-is-being-loaded-inside-an-iframe-or-directly-into-t
+    */
+    function inIframe(): boolean;
+    /**
      * File download helper
      *
      * @param name The file save name for download operation
      * @param uri The file object to download
     */
-    function download(name: string, uri: string | DataURI): void;
+    function download(name: string, uri: string | DataURI, isUrl?: boolean): void;
     /**
      * 尝试获取当前的浏览器的大小
     */
@@ -1453,7 +1483,7 @@ declare namespace DOM {
         /**
          * return array containing references to selected option elements
         */
-        function getSelectedOptions(sel: HTMLSelectElement | DOMEnumerator<HTMLInputElement>): string[] | HTMLOptionElement[];
+        function getSelectedOptions(sel: HTMLSelectElement | DOMEnumerator<HTMLInputElement>): string | false | string[] | HTMLOptionElement[];
         function largeText(text: HTMLTextAreaElement): any;
     }
 }
@@ -1519,11 +1549,24 @@ declare namespace data {
         toString(): string;
     }
 }
+declare namespace csv {
+    /**
+     * 将对象序列转换为``dataframe``对象
+     *
+     * 这个函数只能够转换object类型的数据，对于基础类型将不保证能够正常工作
+     *
+     * @param data 因为这个对象序列对象是具有类型约束的，所以可以直接从第一个
+     *    元素对象之中得到所有的属性名称作为csv文件头的数据
+    */
+    function toDataFrame<T extends object>(data: IEnumerator<T> | T[]): dataframe;
+    function isTsvFile(content: string): boolean;
+}
 /**
  * The internal implementation of the ``$ts`` object.
 */
 declare namespace Internal {
     const StringEval: Handlers.stringEval;
+    function typeGenericElement<T extends HTMLElement>(query: string | HTMLElement, args?: Internal.TypeScriptArgument): T;
     /**
      * 对``$ts``对象的内部实现过程在这里
     */
@@ -1599,7 +1642,8 @@ declare function getAllUrlParams(url?: string): Dictionary<string>;
  * @param url 这个参数支持对meta标签数据的查询操作
  * @param currentFrame 如果这个参数为true，则不会进行父页面的跳转操作
 */
-declare function Goto(url: string, currentFrame?: boolean): void;
+declare function $goto(url: string, currentFrame?: boolean): void;
+declare function $download(url: string, rename?: string): void;
 /**
  * 这个函数会自动处理多行的情况
 */
@@ -1640,12 +1684,13 @@ declare const $ts: Internal.TypeScript;
 /**
  * 从文档之中查询或者创建一个新的图像标签元素
 */
-declare function $image(query: string, args?: Internal.TypeScriptArgument): IHTMLImageElement;
+declare const $image: (query: string | HTMLElement, args?: Internal.TypeScriptArgument) => IHTMLImageElement;
 /**
  * 从文档之中查询或者创建一个新的输入标签元素
 */
-declare function $input(query: string, args?: Internal.TypeScriptArgument): IHTMLInputElement;
-declare function $link(query: string, args?: Internal.TypeScriptArgument): IHTMLLinkElement;
+declare const $input: (query: string | HTMLElement, args?: Internal.TypeScriptArgument) => IHTMLInputElement;
+declare const $link: (query: string | HTMLElement, args?: Internal.TypeScriptArgument) => IHTMLLinkElement;
+declare const $iframe: (query: string | HTMLElement, args?: Internal.TypeScriptArgument) => HTMLIFrameElement;
 interface IProperty {
     get: () => any;
     set: (value: any) => void;
@@ -2011,9 +2056,16 @@ interface HTMLExtensions {
     any: any;
     /**
      * 将当前的html文档节点元素之中的显示内容替换为参数所给定的html内容
+     *
+     * @param html 可以为文档文本字符串内容，也可以是一个节点对象的实例，或者不需要参数的生成器函数
     */
     display(html: string | HTMLElement | HTMLTsElement | (() => HTMLElement)): IHTMLElement;
-    append(html: string | HTMLElement | HTMLTsElement | (() => HTMLElement)): IHTMLElement;
+    /**
+     * 将一个或者多个文档节点对象添加至当前的节点之中
+     *
+     * @returns 这个函数返回当前的文档节点对象实例
+    */
+    appendElement(...html: (string | HTMLElement | HTMLTsElement | (() => HTMLElement))[]): IHTMLElement;
     /**
      * @param reset If this parameter is true, then it means all of the style that this node have will be clear up.
     */
@@ -2037,7 +2089,14 @@ interface HTMLExtensions {
     */
     onClassChanged(className: string, action: Delegate.Sub, includesRemoves?: boolean): void;
     /**
-     * Set attribute value of current html element node.
+     * Set/Delete attribute value of current html element node.
+     *
+     * @param name HTMLelement attribute name
+     * @param value The attribute value to be set, if this parameter is value nothing,
+     *     then it means delete the target attribute from the given html node element.
+     *
+     * @returns This function will returns the source html element node after
+     *          the node attribute operation.
     */
     attr(name: string, value: string): IHTMLElement;
     /**
@@ -2683,7 +2742,7 @@ declare namespace Framework.Extensions {
     function extend<V>(from: V, to?: V): V;
 }
 declare namespace TypeScript {
-    function gc(): unknown;
+    function gc(): {};
 }
 declare namespace TypeScript {
     /**
@@ -2724,14 +2783,12 @@ declare namespace Internal {
         static Default(): Arguments;
     }
 }
-declare namespace Linq.TsQuery {
+declare namespace Internal {
     /**
-        在这里主要包含有对$ts函数的实现的具体代码
+        在这里主要包含有对$ts静态函数符号的实现的具体代码
      
      
      */
-}
-declare namespace Internal {
 }
 declare namespace Internal {
     interface IURL {
@@ -2795,9 +2852,14 @@ declare namespace Internal {
          * @returns 返回被选中的项目的value属性值
         */
         getOption(query: string, context?: Window): string;
+        getSelects(id: string): HTMLSelectElement;
     }
     interface IcsvHelperApi {
+        /**
+         * parse the given text into dataframe object.
+        */
         (data: string, isTsv?: boolean | ((data: string) => boolean)): csv.dataframe;
+        isTsvFile(data: string): boolean;
         /**
          * 将csv文档文本进行解析，然后反序列化为js对象的集合
         */
@@ -2806,8 +2868,15 @@ declare namespace Internal {
          * 将js的对象序列进行序列化，构建出csv格式的文本文档字符串数据
         */
         toText<T>(data: IEnumerator<T> | T[], outTsv?: boolean): string;
+        /**
+         * build csv or tsv from target object sequence and then encode as base64 uri
+        */
         toUri<T>(data: IEnumerator<T> | T[], outTsv?: boolean): DataURI;
     }
+}
+declare namespace Internal {
+}
+declare namespace Internal {
     /**
      * 这个参数对象模型主要是针对创建HTML对象的
     */
@@ -2829,6 +2898,10 @@ declare namespace Internal {
         text?: string;
         visible?: boolean;
         alt?: string;
+        checked?: boolean;
+        selected?: boolean;
+        autofocus?: boolean;
+        placeholder?: string;
         /**
          * 应用于``<a>``标签进行文件下载重命名文件所使用的
         */
@@ -2848,14 +2921,33 @@ declare namespace Internal {
         */
         value?: string | number | boolean;
         for?: string;
+        role?: string;
+        tabindex?: number;
+        "max-width"?: string;
+        frameborder?: string;
+        border?: string;
+        marginwidth?: string;
+        marginheight?: string;
+        scrolling?: string;
+        allowtransparency?: string;
         /**
          * 处理HTML节点对象的点击事件，这个属性值应该是一个无参数的函数来的
         */
         onclick?: Delegate.Sub | string;
         onmouseover?: Delegate.Sub | string;
+        /**
+         * 主要是应用于输入控件
+        */
+        onchange?: Delegate.Sub | string;
         "data-toggle"?: string;
         "data-target"?: string;
         "aria-hidden"?: boolean;
+        "aria-label"?: string;
+        "aria-live"?: string;
+        "aria-haspopup"?: boolean;
+        "aria-owns"?: string;
+        "aria-expanded"?: boolean;
+        "aria-labelledby"?: string;
         usemap?: string;
         shape?: string;
         coords?: string;
@@ -2911,6 +3003,7 @@ declare namespace TypeScript {
     }
 }
 declare module Cookies {
+    function setCookie(name: string, value: string, exdays?: number): void;
     /**
      * Cookie 不存在，函数会返回空字符串
     */
@@ -3258,6 +3351,7 @@ declare namespace csv {
          *   默认不是，即默认使用逗号``,``作为分隔符的csv文本文件。
         */
         static Parse(text: string, tsv?: boolean): dataframe;
+        static head(allTextLines: IEnumerator<string>, parse: (line: string) => row): string[][];
     }
     interface content {
         /**
@@ -3321,16 +3415,4 @@ declare namespace csv {
      *
     */
     function CharsParser(s: string, delimiter?: string, quot?: string): string[];
-}
-declare namespace csv {
-    /**
-     * 将对象序列转换为``dataframe``对象
-     *
-     * 这个函数只能够转换object类型的数据，对于基础类型将不保证能够正常工作
-     *
-     * @param data 因为这个对象序列对象是具有类型约束的，所以可以直接从第一个
-     *    元素对象之中得到所有的属性名称作为csv文件头的数据
-    */
-    function toDataFrame<T extends object>(data: IEnumerator<T> | T[]): dataframe;
-    function isTsvFile(content: string): boolean;
 }

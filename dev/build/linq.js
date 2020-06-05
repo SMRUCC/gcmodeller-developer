@@ -1,17 +1,10 @@
-var __spreadArrays = (this && this.__spreadArrays) || function () {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
             function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
         return extendStatics(d, b);
-    };
+    }
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -446,7 +439,7 @@ var Enumerable;
     */
     function OrderBy(source, key) {
         // array clone
-        var clone = __spreadArrays(source);
+        var clone = source.slice();
         clone.sort(function (a, b) {
             // a - b
             return key(a) - key(b);
@@ -571,7 +564,7 @@ var Enumerable;
                 tree.add(key, [obj]);
             }
         }
-        TypeScript.logging.log(tree);
+        // TypeScript.logging.log(tree);
         return tree
             .AsEnumerable()
             .Select(function (node) {
@@ -640,7 +633,7 @@ var IEnumerator = /** @class */ (function (_super) {
      * 在明确类型信息的情况下进行强制类型转换
     */
     IEnumerator.prototype.ctype = function () {
-        return new IEnumerator(__spreadArrays(this.sequence));
+        return new IEnumerator(this.sequence.slice());
     };
     IEnumerator.getArray = function (source) {
         if (!source) {
@@ -649,10 +642,10 @@ var IEnumerator = /** @class */ (function (_super) {
         else if (Array.isArray(source)) {
             // 2018-07-31 为了防止外部修改source导致sequence数组被修改
             // 在这里进行数组复制，防止出现这种情况
-            return __spreadArrays(source);
+            return source.slice();
         }
         else {
-            return __spreadArrays(source.sequence);
+            return source.sequence.slice();
         }
     };
     IEnumerator.prototype.indexOf = function (x) {
@@ -883,6 +876,26 @@ var IEnumerator = /** @class */ (function (_super) {
         }
         return new IEnumerator(seq);
     };
+    IEnumerator.prototype.subset = function (indexer) {
+        var index;
+        if (typeof indexer[0] == "boolean") {
+            index = [];
+            for (var i = 0; i < indexer.length; i++) {
+                if (indexer[i]) {
+                    index.push(i);
+                }
+            }
+        }
+        else {
+            index = indexer;
+        }
+        var subsetOutput = [];
+        for (var _i = 0, index_1 = index; _i < index_1.length; _i++) {
+            var i = index_1[_i];
+            subsetOutput.push(this.sequence[i]);
+        }
+        return new IEnumerator(subsetOutput);
+    };
     /**
      * 取出序列之中的前n个元素
     */
@@ -987,7 +1000,9 @@ var IEnumerator = /** @class */ (function (_super) {
      *
     */
     IEnumerator.prototype.ForEach = function (callbackfn) {
-        this.sequence.forEach(callbackfn);
+        this.sequence.forEach(function (value, index, array) {
+            callbackfn(value, index);
+        });
     };
     /**
      * Contract the data sequence to string
@@ -1039,7 +1054,7 @@ var IEnumerator = /** @class */ (function (_super) {
     IEnumerator.prototype.ToArray = function (clone) {
         if (clone === void 0) { clone = true; }
         if (clone) {
-            return __spreadArrays(this.sequence);
+            return this.sequence.slice();
         }
         else {
             return this.sequence;
@@ -1247,6 +1262,11 @@ var DOMEnumerator = /** @class */ (function (_super) {
             return this.Select(function (x) { return x.getAttribute(attrName); });
         }
     };
+    DOMEnumerator.prototype.style = function (styleVal) {
+        var css = DOM.CSS.parseStylesheet(styleVal);
+        this.ForEach(function (e) { return DOM.CSS.Setter.setStyle(e, css); });
+        return this;
+    };
     DOMEnumerator.prototype.addClass = function (className) {
         this.ForEach(function (node) {
             if (!node.classList.contains(className)) {
@@ -1344,7 +1364,8 @@ var Internal;
     (function (Handlers) {
         var events = {
             onclick: "onclick",
-            onmouseover: "onmouseover"
+            onmouseover: "onmouseover",
+            onchange: "onchange"
         };
         var eventFuncNames = Object.keys(events);
         function hasKey(object, key) {
@@ -1390,6 +1411,8 @@ var Internal;
                 }
             };
             /**
+             * Node selection by css selector
+             *
              * @param query 函数会在这里自动的处理转义问题
              * @param context 默认为当前的窗口文档
             */
@@ -1437,10 +1460,20 @@ var Internal;
                     }
                 }
                 else if (query.type == DOM.QueryTypes.NoQuery) {
+                    // create a new node
                     return stringEval.createNew(expr, argument, context);
                 }
                 else if (!query.singleNode) {
-                    return stringEval.select(query.expression, context);
+                    // query by class
+                    if (query.type == DOM.QueryTypes.class) {
+                        // 不通过css select来选择class可以获取更好的代码执行性能
+                        var nodes = document.getElementsByClassName(query.expression);
+                        var it = new DOMEnumerator(nodes);
+                        return it;
+                    }
+                    else {
+                        return stringEval.select(query.expression, context);
+                    }
                 }
                 else if (query.type == DOM.QueryTypes.QueryMeta) {
                     // meta标签查询默认是可以在父节点文档之中查询的
@@ -1452,7 +1485,18 @@ var Internal;
                         console.warn("Apply querySelector for expression: '" + query.expression + "', no typescript extension was made!");
                     }
                     // 只返回第一个满足条件的节点
-                    return Handlers.Selector.selectElementsUnderContext(query, context);
+                    var element = Handlers.Selector.selectElementsUnderContext(query, context);
+                    if (!isNullOrUndefined(element)) {
+                        if (argument.nativeModel) {
+                            return TypeExtensions.Extends(element);
+                        }
+                        else {
+                            return new HTMLTsElement(element);
+                        }
+                    }
+                    else {
+                        return null;
+                    }
                 }
             };
             /**
@@ -1528,6 +1572,7 @@ var Internal;
                 Internal.Arguments.nameFilter(attrs).forEach(function (name) { return setAttr(name); });
                 this.hookEvt(node, events.onclick, attrs);
                 this.hookEvt(node, events.onmouseover, attrs);
+                this.hookEvt(node, events.onchange, attrs);
             };
             /**
              * 添加事件
@@ -1545,6 +1590,9 @@ var Internal;
                                 break;
                             case events.onmouseover:
                                 node.onmouseover = evt;
+                                break;
+                            case events.onchange:
+                                node.onchange = evt;
                                 break;
                             default:
                                 TypeScript.logging.log(evtName, TypeScript.ConsoleColors.Yellow);
@@ -1777,6 +1825,7 @@ var Strings;
     Strings.A = "A".charCodeAt(0);
     Strings.Z = "Z".charCodeAt(0);
     Strings.numericPattern = /[-]?\d+(\.\d+)?/g;
+    Strings.integerPattern = /[0-9]+/g;
     /**
      * 判断所给定的字符串文本是否是任意实数的正则表达式模式
     */
@@ -1784,6 +1833,10 @@ var Strings;
         return IsPattern(text, Strings.numericPattern);
     }
     Strings.isNumericPattern = isNumericPattern;
+    function isIntegerPattern(text) {
+        return IsPattern(text, Strings.integerPattern);
+    }
+    Strings.isIntegerPattern = isIntegerPattern;
     /**
      * 尝试将任意类型的目标对象转换为数值类型
      *
@@ -3275,45 +3328,65 @@ var Modes;
 var DOM;
 (function (DOM) {
     /**
+     * 判断当前的页面是否显示在一个iframe之中
+     *
+     * https://stackoverflow.com/questions/326069/how-to-identify-if-a-webpage-is-being-loaded-inside-an-iframe-or-directly-into-t
+    */
+    function inIframe() {
+        try {
+            return window.self !== window.top;
+        }
+        catch (e) {
+            return true;
+        }
+    }
+    DOM.inIframe = inIframe;
+    /**
      * File download helper
      *
      * @param name The file save name for download operation
      * @param uri The file object to download
     */
-    function download(name, uri) {
-        if (navigator.msSaveOrOpenBlob) {
+    function download(name, uri, isUrl) {
+        if (isUrl === void 0) { isUrl = false; }
+        if (!isUrl && navigator.msSaveOrOpenBlob) {
             navigator.msSaveOrOpenBlob(DataExtensions.uriToBlob(uri), name);
         }
         else {
-            downloadImpl(name, uri);
+            downloadImpl(name, uri, isUrl);
         }
     }
     DOM.download = download;
-    function downloadImpl(name, uri) {
+    function downloadImpl(name, uri, isUrl) {
         var saveLink = $ts('<a>');
         var downloadSupported = 'download' in saveLink;
         if (downloadSupported) {
             saveLink.download = name;
             saveLink.style.display = 'none';
             document.body.appendChild(saveLink);
-            try {
-                var blob = DataExtensions.uriToBlob(uri);
-                var url = URL.createObjectURL(blob);
-                saveLink.href = url;
-                saveLink.onclick = function () {
-                    requestAnimationFrame(function () {
-                        URL.revokeObjectURL(url);
-                    });
-                };
-            }
-            catch (e) {
-                if (TypeScript.logging.outputWarning) {
-                    console.warn('This browser does not support object URLs. Falling back to string URL.');
-                }
-                if (typeof uri !== "string") {
-                    uri = DataExtensions.toUri(uri);
-                }
+            if (isUrl && typeof uri == "string") {
                 saveLink.href = uri;
+            }
+            else {
+                try {
+                    var blob = DataExtensions.uriToBlob(uri);
+                    var url_1 = URL.createObjectURL(blob);
+                    saveLink.href = url_1;
+                    saveLink.onclick = function () {
+                        requestAnimationFrame(function () {
+                            URL.revokeObjectURL(url_1);
+                        });
+                    };
+                }
+                catch (e) {
+                    if (TypeScript.logging.outputWarning) {
+                        console.warn('This browser does not support object URLs. Falling back to string URL.');
+                    }
+                    if (typeof uri !== "string") {
+                        uri = DataExtensions.toUri(uri);
+                    }
+                    saveLink.href = uri;
+                }
             }
             saveLink.click();
             document.body.removeChild(saveLink);
@@ -3516,7 +3589,10 @@ var TypeScript;
         };
         logging.table = function (objects) {
             if (this.outputEverything) {
-                if (typeof objects == "string") {
+                if (isNullOrUndefined(objects)) {
+                    objects = [];
+                }
+                else if (typeof objects == "string") {
                     objects = JSON.parse(objects);
                 }
                 else if (!Array.isArray(objects)) {
@@ -3766,6 +3842,14 @@ var DOM;
                     }
                 }
             }
+            else if (sel instanceof HTMLInputElement) {
+                if (sel.checked) {
+                    return sel.value;
+                }
+                else {
+                    return false;
+                }
+            }
             else {
                 return sel
                     .Where(function (i) { return i.checked; })
@@ -3809,9 +3893,7 @@ var DOM;
             if (!started) {
                 setInterval(backgroundInternal, 10);
                 started = true;
-                if (TypeScript.logging.outputEverything) {
-                    console.log("Start background worker...");
-                }
+                TypeScript.logging.log("Start background worker...", TypeScript.ConsoleColors.DarkBlue);
             }
         }
         Events.Add = Add;
@@ -3926,6 +4008,47 @@ var data;
     }());
     data_1.NumericRange = NumericRange;
 })(data || (data = {}));
+var csv;
+(function (csv) {
+    /**
+     * 将对象序列转换为``dataframe``对象
+     *
+     * 这个函数只能够转换object类型的数据，对于基础类型将不保证能够正常工作
+     *
+     * @param data 因为这个对象序列对象是具有类型约束的，所以可以直接从第一个
+     *    元素对象之中得到所有的属性名称作为csv文件头的数据
+    */
+    function toDataFrame(data) {
+        var seq = Array.isArray(data) ? new IEnumerator(data) : data;
+        var header = $ts(Object.keys(seq.First));
+        var rows = seq
+            .Select(function (obj) {
+            var columns = header
+                .Select(function (ref, i) {
+                return toString(obj[ref]);
+            });
+            return new csv.row(columns);
+        });
+        return new csv.dataframe([new csv.row(header)]).AppendRows(rows);
+    }
+    csv.toDataFrame = toDataFrame;
+    function toString(obj) {
+        if (isNullOrUndefined(obj)) {
+            // 这个对象值是空的，所以在csv文件之中是空字符串
+            return "";
+        }
+        else {
+            return "" + obj;
+        }
+    }
+    function isTsvFile(content) {
+        var lines = Strings.lineTokens(content);
+        var countTab = $from(lines).Select(function (l) { return Strings.Count(l, "\t"); }).Average();
+        var countComma = $from(lines).Select(function (l) { return Strings.Count(l, ","); }).Average();
+        return countTab >= countComma;
+    }
+    csv.isTsvFile = isTsvFile;
+})(csv || (csv = {}));
 /// <reference path="./Abstracts/TS.ts" />
 /// <reference path="../../Data/StringHelpers/URL.ts" />
 /// <reference path="../../Data/StringHelpers/PathHelper.ts" />
@@ -3935,28 +4058,39 @@ var data;
 /// <reference path="../../DOM/Events/CustomEvents.ts" />
 /// <reference path="../../Data/Range.ts" />
 /// <reference path="../Reflection/Reflector.ts" />
+/// <reference path="../../csv/doc.ts" />
 /**
  * The internal implementation of the ``$ts`` object.
 */
 var Internal;
 (function (Internal) {
     Internal.StringEval = new Internal.Handlers.stringEval();
+    function typeGenericElement(query, args) {
+        if (typeof query == "string") {
+            return Internal.StringEval.doEval(query, null, args);
+        }
+        else {
+            return query;
+        }
+    }
+    Internal.typeGenericElement = typeGenericElement;
     /**
      * 对``$ts``对象的内部实现过程在这里
     */
     function Static() {
         var handle = Internal.Handlers.Shared;
-        var ins = function (any, args) { return queryFunction(handle, any, args); };
+        var symbolInstance = function (any, args) { return queryFunction(handle, any, args); };
         var stringEval = handle.string();
-        ins.mode = Modes.production;
-        ins = extendsUtils(ins, stringEval);
-        ins = extendsLINQ(ins);
-        ins = extendsHttpHelpers(ins);
-        ins = extendsSelector(ins);
-        return ins;
+        symbolInstance.mode = Modes.production;
+        symbolInstance = extendsUtils(symbolInstance, stringEval);
+        symbolInstance = extendsLINQ(symbolInstance);
+        symbolInstance = extendsHttpHelpers(symbolInstance);
+        symbolInstance = extendsSelector(symbolInstance);
+        return symbolInstance;
     }
     Internal.Static = Static;
     function extendsHttpHelpers(ts) {
+        ts.url = urlSolver;
         ts.post = function (url, data, callback, options) {
             var contentType = HttpHelpers.measureContentType(data);
             var post = {
@@ -4035,11 +4169,11 @@ var Internal;
             }
             else if (opt.lambda) {
                 return function () {
-                    Goto(url, opt.currentFrame);
+                    $goto(url, opt.currentFrame);
                 };
             }
             else {
-                Goto(url, opt.currentFrame);
+                $goto(url, opt.currentFrame);
             }
         };
         return ts;
@@ -4112,8 +4246,8 @@ var Internal;
             // 因为url可能会带有@，所以可能会出现误查询的情况，所以在这里默认值设置为url
             // 当误查询的时候就会查询不到结果的时候，就可以返回当前的url值了
             var tag = [];
-            var c;
-            var metaQuery;
+            var c = void 0;
+            var metaQuery = void 0;
             // 第一个符号是@符号，跳过
             for (var i = 1; i < url.length; i++) {
                 if (isValidSymbol(c = url.charAt(i))) {
@@ -4197,13 +4331,57 @@ var Internal;
             if (htmlText === void 0) { htmlText = false; }
             var nodeID = Internal.Handlers.makesureElementIdSelector(id);
             var node = stringEval.doEval(nodeID, null, null);
-            return htmlText ? node.innerHTML : node.innerText;
+            var text = htmlText ? node.innerHTML : node.innerText;
+            TypeScript.logging.log(text, TypeScript.ConsoleColors.DarkGreen);
+            return text;
         };
         ts.loadJSON = function (id) {
             return JSON.parse(ts.text(id));
         };
+        var TRUE = {
+            "✔": true,
+            "T": true,
+            "true": true,
+            "True": true,
+            "TRUE": true,
+            "yes": true,
+            "success": true,
+            "pass": true
+        };
+        var FALSE = {
+            "✘": false,
+            "F": false,
+            "false": false,
+            "FALSE": false,
+            "False": false,
+            "wrong": false,
+            "failure": false
+        };
         // file path helpers
         ts.parseFileName = TypeScript.PathHelper.fileName;
+        ts.parseBool = function (text) {
+            if (isNullOrUndefined(text)) {
+                return false;
+            }
+            else if (typeof text == "number") {
+                return text !== 0;
+            }
+            else if (text in TRUE) {
+                return true;
+            }
+            else if (text in FALSE) {
+                return false;
+            }
+            else {
+                // all of the none null value will be interpret as boolean true
+                return true;
+            }
+        };
+        ts.unixtimestamp = function () {
+            var d = new Date();
+            var timestamp = Math.round(d.getTime());
+            return timestamp;
+        };
         /**
          * 得到不带有拓展名的文件名部分的字符串
          *
@@ -4240,6 +4418,7 @@ var Internal;
             }
             return csv.dataframe.Parse(data, isTsv);
         };
+        ts.csv.isTsvFile = csv.isTsvFile;
         ts.csv.toObjects = function (data) { return csv.dataframe.Parse(data, csv.isTsvFile(data)).Objects(); };
         ts.csv.toText = function (data, tsvOut) {
             if (tsvOut === void 0) { tsvOut = false; }
@@ -4261,17 +4440,28 @@ var Internal;
         return ts;
     }
     function extendsSelector(ts) {
+        var DOMquery = Internal.Handlers.Shared.string();
         ts.select = function (query, context) {
             if (context === void 0) { context = window; }
-            return Internal.Handlers.stringEval.select(query, context);
+            var dom = Internal.Handlers.stringEval.select(query, context);
+            if (dom.Count == 0) {
+                TypeScript.logging.warning("select query of '" + query + "' returns no data...");
+            }
+            return dom;
         };
+        ts.select.getSelects = (function (id) { return DOMquery.doEval(id, null, null); });
         ts.select.getSelectedOptions = function (query, context) {
             if (context === void 0) { context = window; }
             var sel = $ts(query, {
                 context: context
             });
             var options = DOM.InputValueGetter.getSelectedOptions(sel);
-            return new DOMEnumerator(options);
+            if (Array.isArray(options) && typeof options[0] == "string") {
+                return options;
+            }
+            else {
+                return new DOMEnumerator(options);
+            }
         };
         ts.select.getOption = function (query, context) {
             if (context === void 0) { context = window; }
@@ -4279,7 +4469,10 @@ var Internal;
                 context: context
             });
             var options = DOM.InputValueGetter.getSelectedOptions(sel);
-            if (options.length == 0) {
+            if (typeof options == "boolean") {
+                return options;
+            }
+            else if (options.length == 0) {
                 return null;
             }
             else {
@@ -4485,7 +4678,7 @@ function getAllUrlParams(url) {
  * @param url 这个参数支持对meta标签数据的查询操作
  * @param currentFrame 如果这个参数为true，则不会进行父页面的跳转操作
 */
-function Goto(url, currentFrame) {
+function $goto(url, currentFrame) {
     if (currentFrame === void 0) { currentFrame = false; }
     var win = window;
     if (!currentFrame) {
@@ -4494,6 +4687,10 @@ function Goto(url, currentFrame) {
         win = window.top;
     }
     win.location.href = Internal.urlSolver(url, currentFrame);
+}
+function $download(url, rename) {
+    if (rename === void 0) { rename = null; }
+    DOM.download(rename, url, true);
 }
 /**
  * 这个函数会自动处理多行的情况
@@ -4548,18 +4745,33 @@ var $ts = Internal.Static();
 /**
  * 从文档之中查询或者创建一个新的图像标签元素
 */
-function $image(query, args) {
-    return Internal.StringEval.doEval(query, null, args);
-}
+var $image = function (query, args) {
+    return Internal.typeGenericElement(query, args);
+};
 /**
  * 从文档之中查询或者创建一个新的输入标签元素
 */
-function $input(query, args) {
-    return Internal.StringEval.doEval(query, null, args);
-}
-function $link(query, args) {
-    return Internal.StringEval.doEval(query, null, args);
-}
+var $input = function (query, args) {
+    return Internal.typeGenericElement(query, args);
+};
+var $link = function (query, args) {
+    return Internal.typeGenericElement(query, args);
+};
+var $iframe = function (query, args) {
+    return Internal.typeGenericElement(query, args);
+};
+//namespace RequireGlobal {
+//    /**
+//     * Linq???????????
+//     * 
+//     * ``$ts``????????????????????????????
+//     * 
+//     * @param source ?????????????
+//    */
+//    export function $from<T>(source: T[] | IEnumerator<T>): IEnumerator<T> {
+//        return new IEnumerator<T>(source);
+//    }
+//}
 /// <reference path="./Collections/Map.ts" />
 var TypeExtensions;
 (function (TypeExtensions) {
@@ -5149,7 +5361,7 @@ var DOM;
             }
             switch (prefix) {
                 case "#": return this.getById(expr.substr(1));
-                case ".": return this.getByClass(expr, isSingle);
+                case ".": return this.getByClass(expr.substr(1), isSingle);
                 case "!": return this.getByName(expr.substr(1), isSingle);
                 case "<": return this.createElement(expr);
                 case "@": return this.queryMeta(expr.substr(1));
@@ -5441,27 +5653,29 @@ var DOM;
             }
             Setter.css = css;
             function setStyle(node, style) {
-                var css = node.style;
-                TypeScript.logging.log(style);
                 for (var _i = 0, style_1 = style; _i < style_1.length; _i++) {
                     var declare = style_1[_i];
-                    applyStyle(css, declare.name, declare.value);
+                    applyStyle(node, declare.name, declare.value);
                 }
             }
             Setter.setStyle = setStyle;
-            function applyStyle(style, name, value) {
+            /**
+             * 20200427
+             * 似乎直接应用于style属性上并不会起作用，所以在这里修改为应用于节点元素的style上
+            */
+            function applyStyle(styledNode, name, value) {
                 switch (name.toLowerCase()) {
                     case "color":
-                        style.color = value;
+                        styledNode.style.color = value;
                         break;
                     case "background-color":
-                        style.backgroundColor = value;
+                        styledNode.style.backgroundColor = value;
                         break;
                     case "font-size":
-                        style.fontSize = value;
+                        styledNode.style.fontSize = value;
                         break;
                     default:
-                        style[name] = value;
+                        styledNode.style[name] = value;
                         TypeScript.logging.warning("Set style '" + name + "' is not implements yet...");
                 }
             }
@@ -5507,8 +5721,8 @@ var DOM;
                 }
             }
             else if (TypeScript.logging.outputEverything) {
-                console.log("Add Document.ready event handler.");
-                console.log("document.readyState = " + docObj.readyState);
+                TypeScript.logging.log("Add Document.ready event handler.", TypeScript.ConsoleColors.Green);
+                TypeScript.logging.log("document.readyState = " + docObj.readyState, TypeScript.ConsoleColors.Green);
             }
             // 2018-12-25 "interactive", "complete" 这两种状态都可以算作是DOM已经准备好了
             if (loadComplete.indexOf(docObj.readyState) > -1) {
@@ -5714,6 +5928,15 @@ var HTMLTsElement = /** @class */ (function () {
 */
 var TypeExtensions;
 (function (TypeExtensions) {
+    function appendElement(extendsNode, html) {
+        if (typeof html == "string") {
+            html = $ts("<span>").display(html);
+        }
+        else if (typeof html == "function") {
+            html = html();
+        }
+        extendsNode.append(html);
+    }
     /**
      * 在原生节点模式之下对输入的给定的节点对象添加拓展方法
      *
@@ -5747,11 +5970,17 @@ var TypeExtensions;
             extendsNode.display(html);
             return node;
         };
-        obj.append = function (html) {
-            if (typeof html == "string") {
-                html = $ts("<span>").display(html);
+        obj.appendElement = function (html) {
+            // a(args[])
+            if (Array.isArray(html)) {
+                html.forEach(function (n) { return appendElement(extendsNode, n); });
             }
-            extendsNode.append(html);
+            else {
+                // a(a,b,c,d,...)
+                for (var i = 0; i < arguments.length; i++) {
+                    appendElement(extendsNode, arguments[i]);
+                }
+            }
             return node;
         };
         obj.show = function () {
@@ -5789,7 +6018,12 @@ var TypeExtensions;
                 value = Internal.urlSolver(value, true);
                 TypeScript.logging.log("set_attr " + name + "='" + value + "'");
             }
-            node.setAttribute(name, value);
+            if (isNullOrUndefined(value)) {
+                node.removeAttribute(name);
+            }
+            else {
+                node.setAttribute(name, value);
+            }
             return node;
         };
         obj.interactive = function (enable) {
@@ -5800,6 +6034,8 @@ var TypeExtensions;
             else {
                 node.style.pointerEvents = "none";
                 node.style.opacity = "0.4";
+                node.style.filter = "grayscale(100%)";
+                node.style.webkitFilter = "grayscale(100%)";
             }
         };
         // 用这个方法可以很方便的从现有的节点进行转换
@@ -7378,7 +7614,7 @@ var Router;
     /**
      * meta标签中的app值
     */
-    Router.appName = DOM.InputValueGetter.metaValue("app");
+    Router.appName = typeof document == "undefined" ? null : DOM.InputValueGetter.metaValue("app");
     function isCaseSensitive() {
         return caseSensitive;
     }
@@ -7749,7 +7985,7 @@ var Framework;
                 array = data.ToArray();
             }
             else if (type.isArray) {
-                array = __spreadArrays(data);
+                array = data.slice();
             }
             else {
                 var x = data;
@@ -7828,7 +8064,7 @@ var TypeScript;
         */
         garbageCollect.handler = getHandler();
         function getHandler() {
-            if (typeof window.require === "function") {
+            if (typeof window != "undefined" && typeof window.require === "function") {
                 var require_1 = window.require;
                 try {
                     require_1("v8").setFlagsFromString('--expose_gc');
@@ -7872,7 +8108,7 @@ var TypeScript;
             //        return ProfilerAgent.collectGarbage;
             //    }
             //}
-            if (typeof window.global !== 'undefined') {
+            if (typeof window !== 'undefined' && typeof window.global !== 'undefined') {
                 var global_2 = window.global;
                 if (global_2.gc) {
                     return global_2.gc;
@@ -7943,7 +8179,7 @@ var Internal;
                 caseInSensitive: false,
                 nativeModel: true,
                 defaultValue: "",
-                context: window
+                context: typeof window == "undefined" ? null : window
             };
         };
         //#endregion
@@ -8059,6 +8295,17 @@ var TypeScript;
 })(TypeScript || (TypeScript = {}));
 var Cookies;
 (function (Cookies) {
+    // username=Bill Gates; expires=Sun, 31 Dec 2017 12:00:00 UTC; path=/
+    function setCookie(name, value, exdays) {
+        if (exdays === void 0) { exdays = 0; }
+        var d = new Date();
+        var expires;
+        throw "not implements";
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        expires = "expires=" + d.toUTCString();
+        document.cookie = name + "=" + value + "; " + expires + "; path=/";
+    }
+    Cookies.setCookie = setCookie;
     /**
      * Cookie 不存在，函数会返回空字符串
     */
@@ -9238,6 +9485,10 @@ var csv;
                     .replace("\n", "");
             });
             TypeScript.logging.log("Document data is a " + (tsv ? "tsv" : "csv") + " file.", TypeScript.ConsoleColors.Blue);
+            if ($ts.mode == Modes.debug) {
+                console.log("Peeks of your input table data:");
+                console.table(this.head(allTextLines, parse));
+            }
             if (Strings.Empty(allTextLines.Last)) {
                 // 2019-1-2 因为文本文件很有可能是以空行结尾的
                 // 所以在这里需要做下额外的判断
@@ -9251,6 +9502,13 @@ var csv;
                 rows = allTextLines.Select(parse);
             }
             return new dataframe(rows);
+        };
+        dataframe.head = function (allTextLines, parse) {
+            return allTextLines
+                .Take(6)
+                .Select(parse)
+                .Select(function (r) { return r.ToArray(false); })
+                .ToArray();
         };
         return dataframe;
     }(IEnumerator));
@@ -9306,7 +9564,7 @@ var csv;
              * 因为这个属性会返回这个行的数组值的复制对象
             */
             get: function () {
-                return __spreadArrays(this.sequence);
+                return this.sequence.slice();
             },
             enumerable: true,
             configurable: true
@@ -9478,46 +9736,5 @@ var csv;
             return buffer[buffer.length - 1] == escape;
         }
     }
-})(csv || (csv = {}));
-var csv;
-(function (csv) {
-    /**
-     * 将对象序列转换为``dataframe``对象
-     *
-     * 这个函数只能够转换object类型的数据，对于基础类型将不保证能够正常工作
-     *
-     * @param data 因为这个对象序列对象是具有类型约束的，所以可以直接从第一个
-     *    元素对象之中得到所有的属性名称作为csv文件头的数据
-    */
-    function toDataFrame(data) {
-        var seq = Array.isArray(data) ? new IEnumerator(data) : data;
-        var header = $ts(Object.keys(seq.First));
-        var rows = seq
-            .Select(function (obj) {
-            var columns = header
-                .Select(function (ref, i) {
-                return toString(obj[ref]);
-            });
-            return new csv.row(columns);
-        });
-        return new csv.dataframe([new csv.row(header)]).AppendRows(rows);
-    }
-    csv.toDataFrame = toDataFrame;
-    function toString(obj) {
-        if (isNullOrUndefined(obj)) {
-            // 这个对象值是空的，所以在csv文件之中是空字符串
-            return "";
-        }
-        else {
-            return "" + obj;
-        }
-    }
-    function isTsvFile(content) {
-        var lines = Strings.lineTokens(content);
-        var countTab = $from(lines).Select(function (l) { return Strings.Count(l, "\t"); }).Average();
-        var countComma = $from(lines).Select(function (l) { return Strings.Count(l, ","); }).Average();
-        return countTab >= countComma;
-    }
-    csv.isTsvFile = isTsvFile;
 })(csv || (csv = {}));
 //# sourceMappingURL=linq.js.map
