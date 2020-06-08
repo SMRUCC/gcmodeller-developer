@@ -1,0 +1,1456 @@
+<div class="widget widget-ArticleFulltext widget-instance-OUP_Article_FullText_Widget">
+    <div class="module-widget">
+        <div class="widget-items" data-widgetname="ArticleFulltext">
+
+            <h2 scrollto-destination="38315093" id="38315093"
+                class="abstract-title">
+                Abstract
+            </h2>
+            <section class="abstract">
+                <p class="chapter-para">
+                    KEGG (Kyoto Encyclopedia of Genes and
+                    Genomes) is a knowledge base for systematic analysis of gene
+                    functions, linking genomic information with higher order
+                    functional information. The genomic information is stored in
+                    the GENES database, which is a collection of gene catalogs
+                    for all the completely sequenced genomes and some partial
+                    genomes with up-to-date annotation of gene functions. The
+                    higher order functional information is stored in the PATHWAY
+                    database, which contains graphical representations of
+                    cellular processes, such as metabolism, membrane transport,
+                    signal transduction and cell cycle. The PATHWAY database is
+                    supplemented by a set of ortholog group tables for the
+                    information about conserved subpathways (pathway motifs),
+                    which are often encoded by positionally coupled genes on the
+                    chromosome and which are especially useful in predicting
+                    gene functions. A third database in KEGG is LIGAND for the
+                    information about chemical compounds, enzyme molecules and
+                    enzymatic reactions. KEGG provides Java graphics tools for
+                    browsing genome maps, comparing two genome maps and
+                    manipulating expression maps, as well as computational tools
+                    for sequence comparison, graph comparison and path
+                    computation. The KEGG databases are daily updated and made
+                    freely available (http://www.genome.ad.jp/kegg/ ).
+                </p>
+            </section>
+            <div class="article-metadata-panel clearfix">
+                <div class="article-metadata-taxonomies">
+                </div>
+                <div class="article-metadata-tocSections">
+                    <div class="article-metadata-tocSections-title">
+                        Issue
+                        Section:
+                    </div>
+                    <a href="/nar/search-results?f_TocHeadingTitle=Article">Article</a>
+                </div>
+            </div>
+            <p class="chapter-para">
+                Received September 29, 1999; Accepted
+                October 4, 1999.
+            </p>
+            <h2 scrollto-destination="38315096" id="38315096"
+                class="section-title">
+                INTRODUCTION
+            </h2>
+            <p class="chapter-para">
+                While the genome sequencing projects rapidly
+                determine gene catalogs for an increasing number of organisms,
+                functional annotation of individual genes is still largely
+                incomplete. KEGG (Kyoto Encyclopedia of Genes and Genomes) is an
+                effort to link genomic information with higher order functional
+                information by computerizing current knowledge on cellular
+                processes and by standardizing gene annotations. Generally
+                speaking, the biological function of the living cell is a result
+                of many interacting molecules; it cannot be attributed to just a
+                single gene or a single molecule (
+                <a reveal-id="GKD027C1"
+                   data-open="GKD027C1"
+                   class="link link-ref link-reveal xref-default">1</a>). The
+                functional assignment in KEGG is a process of linking a set of
+                genes in the genome with a network of interacting molecules in
+                the cell, such as a pathway or a complex, representing a higher
+                order biological function.
+            </p>
+            <p class="chapter-para">
+                The KEGG project was initiated in May 1995
+                under the Human Genome Program of the Ministry of Education,
+                Science, Sports and Culture in Japan (
+                <a reveal-id="GKD027C2"
+                   data-open="GKD027C2"
+                   class="link link-ref link-reveal xref-default">2</a>). All
+                the data in KEGG and associated software tools are made
+                available as part of the Japanese GenomeNet service (
+                <a reveal-id="GKD027C3" data-open="GKD027C3"
+                   class="link link-ref link-reveal xref-default">3</a>). KEGG
+                consists of three databases: PATHWAY for representation of
+                higher order functions in terms of the network of interacting
+                molecules, GENES for the collection of gene catalogs for all the
+                completely sequenced genomes and some partial genomes, and
+                LIGAND (
+                <a reveal-id="GKD027C4" data-open="GKD027C4"
+                   class="link link-ref link-reveal xref-default">4</a>) for
+                the collection of chemical compounds in the cell, enzyme
+                molecules and enzymatic reactions. The overall architecture of
+                the KEGG system is basically the same as previously reported (
+                <a reveal-id="GKD027C5" data-open="GKD027C5"
+                   class="link link-ref link-reveal xref-default">5</a>). The
+                user may enter the KEGG system top-down starting from the
+                pathway (functional) information or bottom-up starting from the
+                genomic information at the KEGG table of contents page
+                (http://www.genome.ad.jp/kegg/kegg2.html ).
+            </p>
+            <h2 scrollto-destination="38315099" id="38315099"
+                class="section-title">
+                GENOMIC INFORMATION
+            </h2>
+            <h3 scrollto-destination="38315100" id="38315100"
+                class="section-title">
+                GENES database
+            </h3>
+            <p class="chapter-para">
+                The current status of the KEGG databases is
+                summarized in Table
+                <a reveal-id="GKD027TB1"
+                   data-open="GKD027TB1"
+                   class="link link-ref link-reveal xref-default">1</a>. During
+                the past year, we have made every effort to keep up with the
+                data increase of complete genome sequences, and also with the
+                imminent data explosion of gene expression profiles. The number
+                of GENES entries for just 29 species—human, mouse,
+                <em>Drosophila</em>,
+                <em>Arabidopsis</em>,
+                <em>Schizosaccharomyce pombe</em>, and 24&nbsp;completely
+                sequenced genomes—totals ~110 000 entries, which is already
+                larger than the number of entries in the well-annotated
+                SWISS-PROT database (
+                <a reveal-id="GKD027C6"
+                   data-open="GKD027C6"
+                   class="link link-ref link-reveal xref-default">6</a>). The
+                GENES database contains the bare minimum information for each
+                gene as shown in Table
+                <a reveal-id="GKD027TB2"
+                   data-open="GKD027TB2"
+                   class="link link-ref link-reveal xref-default">2</a>, but it
+                is intended to be a resource containing up-to-date, standardized
+                descriptions of gene functions. GENES also serves as a gateway
+                to a number of other resources containing more detailed
+                information.
+            </p>
+            <p class="chapter-para">
+                We developed various computational tools
+                for the maintenance of the GENES database, especially for
+                extraction of information from GenBank, which is not a trivial
+                task, and for assisting systematic annotation of gene functions.
+                The overall flow of both computerized and manual processes is
+                illustrated in Figure
+                <a reveal-id="GKD027F1"
+                   data-open="GKD027F1"
+                   class="link link-ref link-reveal xref-default">1</a>. A
+                web-based annotation tool is used, together with other
+                computational tools, to assign EC numbers, to assign ortholog
+                identifiers, to incorporate new experimental evidence from
+                literature, and to annotate predictions based on pathway
+                construction. As described below, the ortholog identifiers will
+                be used as primary keys for automatic matching of genes in the
+                genome and gene products in the pathway.
+            </p>
+            <h3 scrollto-destination="38315103" id="38315103"
+                class="section-title">
+                Gene expression profiles
+            </h3>
+            <p class="chapter-para">
+                The backbone retrieval system for the GENES
+                database is the DBGET/LinkDB system (
+                <a reveal-id="GKD027C7"
+                   data-open="GKD027C7"
+                   class="link link-ref link-reveal xref-default">7</a>), but
+                there are additional ways of accessing this database. One is the
+                Java-based genome map browser for graphical manipulation of gene
+                positions on the chromosome. The other is what we call the
+                hierarchical text browser for handling functional hierarchy of
+                gene catalogs. Here we report another Java graphics browser, the
+                expression map browser, for analysis of gene expression profiles
+                obtained by cDNA microarray or oligonucleotide array
+                experiments. The vast amount of data generated by such
+                functional genomics experiments are likely to contain valuable
+                information, which will supplement genomic sequence information
+                toward understanding higher biological functions of the cell. A
+                preliminary version of the expression map browser is linked to
+                both the KEGG pathway data and the genome map data, so that the
+                user may examine if, for example, a group of co-regulated genes
+                are also correlated in the pathway or are encoded in a cluster
+                of genes on the chromosome.
+            </p>
+            <h2 scrollto-destination="38315105" id="38315105"
+                class="section-title">
+                PATHWAY INFORMATION
+            </h2>
+            <h3 scrollto-destination="38315106" id="38315106"
+                class="section-title">
+                PATHWAY database
+            </h3>
+            <p class="chapter-para">
+                Currently the best organized part of the
+                KEGG/PATHWAY database is metabolism, which is represented by ~90
+                graphical diagrams for the reference metabolic pathways. Each
+                reference pathway can be viewed as a network of enzymes or a
+                network of EC numbers. Once enzyme genes are identified in the
+                genome based on sequence similarity and positional correlation
+                of genes, and the EC numbers are properly assigned,
+                organism-specific pathways can be constructed computationally by
+                correlating genes in the genome with gene products (enzymes) in
+                the reference pathways according to the matching EC numbers. We
+                are trying to extend this mechanism to include various
+                regulatory pathways, such as signal transduction, cell cycle and
+                apoptosis. There are, however, two major problems in automating
+                the construction of regulatory pathways.
+            </p>
+            <p class="chapter-para">
+                Because the metabolic pathway, especially
+                for intermediary metabolism, is well conserved among most
+                organisms from mammals to bacteria, it is possible to manually
+                draw one reference pathway and then to computationally generate
+                many organism-specific pathways. In contrast, the regulatory
+                pathways are far more divergent and are difficult to combine
+                into common reference pathway diagrams. Thus, we basically draw
+                a pathway diagram separately for each organism. At the same
+                time, we are trying to identify groups of organisms that share
+                common pathways or assemblies and whose diagrams may be
+                combined. Examples include one common apoptosis pathway diagram
+                for human and mouse, three ribosome assembly diagrams separately
+                for bacteria, archaea and eukaryotes.
+            </p>
+            <p class="chapter-para">
+                The other related problem is the absence of
+                proper identifiers for functions in the regulatory pathways. The
+                EC numbers in the metabolic pathways play roles as identifiers
+                of the nodes (enzymes) and also as keys for linking with the
+                genomic information. We are preparing for the introduction of
+                the ortholog identifiers to extend such capabilities of the EC
+                numbers. The ortholog identifiers will be used to identify nodes
+                (proteins) in the regulatory pathways and also to link with the
+                genomic information. In addition, the ortholog identifiers will
+                replace the EC numbers in the metabolic pathways in order to
+                distinguish multiple genes that match one EC number, for
+                example, different subunits of an enzyme complex or different
+                genes expressed under different conditions.
+            </p>
+            <h3 scrollto-destination="38315110" id="38315110"
+                class="section-title">
+                Ortholog group tables
+            </h3>
+            <p class="chapter-para">
+                Orthologs are identified in KEGG not only by
+                sequence similarity of individual genes but also by examining if
+                all constituent members are found for a functional group, such
+                as a conserved subpathway or a molecular complex. The KEGG
+                ortholog group table is a representation of three features:
+                whether an organism contains a complete set of genes that
+                constitutes a functional group, whether those genes are
+                physically coupled on the chromosome, and what are orthologous
+                genes among different organisms. Currently there are 61 ortholog
+                group tables, which contain, for example, a gene cluster in the
+                genome coding for a functionally related enzyme cluster in the
+                metabolic pathway. In KEGG such correlated clusters are first
+                detected by a heuristic graph comparison algorithm, and then
+                manually edited and compiled into the ortholog group tables.
+                There are two types of graph comparisons that we use:
+                genome–pathway and genome–genome comparisons (
+                <a reveal-id="GKD027C1" data-open="GKD027C1"
+                   class="link link-ref link-reveal xref-default">1</a>). An
+                ortholog group table is a composite of such pairwise
+                comparisons, representing a conserved portion of the pathway, or
+                what we call a pathway motif.
+            </p>
+            <h3 scrollto-destination="38315112" id="38315112"
+                class="section-title">
+                Generalized protein–protein interaction
+            </h3>
+            <p class="chapter-para">
+                The KEGG pathway representation focuses on
+                the network of gene products, mostly proteins but including
+                functional RNAs. As illustrated in Figure
+                <a reveal-id="GKD027F2" data-open="GKD027F2"
+                   class="link link-ref link-reveal xref-default">2</a>, the
+                metabolic pathway is a network of indirect protein–protein
+                interactions, which is actually a network of enzyme–enzyme
+                relations. In contrast, the regulatory pathway often consists of
+                direct protein–protein interactions, such as binding and
+                phosphorylation, and another class of indirect protein–protein
+                interactions, which are relations of transcription factors and
+                transcribed gene products via gene expressions. The generalized
+                protein–protein interaction network that includes these three
+                types of interactions is an abstract network, but it is
+                especially useful to link with genomic information because the
+                nodes (gene products) of this network can be directly correlated
+                with the nodes (genes) in the genome. With this concept of
+                generalized protein–protein interaction network, we are
+                expanding the collection of manually drawn reference pathway
+                diagrams.
+            </p>
+            <h2 scrollto-destination="38315114" id="38315114"
+                class="section-title">
+                AVAILABILITY
+            </h2>
+            <p class="chapter-para">
+                All the data in KEGG and associated analysis
+                tools are provided as part of the Japanese GenomeNet service (
+                <a reveal-id="GKD027C3" data-open="GKD027C3"
+                   class="link link-ref link-reveal xref-default">3</a>) at
+                http://www.genome.ad.jp/
+            </p>
+            <p class="chapter-para">
+                The Internet version of KEGG in GenomeNet
+                can be accessed at the following address:
+                http://www.genome.ad.jp/kegg/
+            </p>
+            <p class="chapter-para">
+                For strictly academic research purposes at
+                academic institutions the KEGG mirror server package may be
+                installed. The package, which also includes a minimal set of
+                DBGET/LinkDB, can be obtained from the KEGG anonymous FTP site:
+                ftp://kegg.genome.ad.jp/
+            </p>
+            <p class="chapter-para">
+                The mirror package runs on a Solaris, IRIX
+                or Linux machine. The individual databases PATHWAY, GENES and
+                LIGAND can also be mirrored or obtained by anonymous FTP.
+            </p>
+            <h2 scrollto-destination="38315119" id="38315119"
+                class="section-title">
+                ACKNOWLEDGEMENTS
+            </h2>
+            <p class="chapter-para">
+                We thank the present and past KEGG project
+                members for their excellent work. We also thank Kotaro Shiraishi
+                for developing the KEGG annotation tool and other useful
+                programs. This work was supported by a Grant-in-Aid for
+                Scientific Research on the Priority Area ‘Genome Science’ from
+                the Ministry of Education, Science, Sports and Culture of Japan.
+                The computational resource was provided by the Supercomputer
+                Laboratory, Institute for Chemical Research, Kyoto University.
+            </p>
+            <p class="chapter-para">
+                <span id="FN1"></span>
+            </p>
+            <div content-id="FN1">
+                <div class="fn">
+                    <span class="label fn-label">
+                        <a rel="nofollow"
+                           fn-id="FN1"
+                           class="js-end-note-link end-note-link">*</a>
+                    </span>
+                    <p class="chapter-para">
+                        To whom correspondence should be
+                        addressed. Tel: +81 774 38 3270; Fax: +81 774 38 3269;
+                        Email: kanehisa@kuicr.kyoto-u.ac.jp
+                    </p>
+                </div>
+            </div>
+            <p></p>
+            <a id="38315123" scrollto-destination="38315123"></a>
+            <div id="GKD027F1" data-id="GKD027F1" class="fig fig-section">
+                <div class="graphic-wrap">
+                    <img class="content-image"
+                         src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/28/1/10.1093_nar_28.1.27/2/m_gkd02701.jpeg?Expires=1594009311&amp;Signature=hKVv8VDZiWIa7OLCJ1BKBqj7KVadoxXMlupJAXiqFeUHVlB0MDZnvoVk-1hOrizWiVhCb-nbceHjXmKJE2PtbP3Mm5SJq~RGk815ApE9MI5q3ORO3T4ObAU~r7mqyPVybbuBMBrtKiUPC25G7fENA3jgAJMjlWfJM058~N-tv-PbXUystRuj2hpeHFmEEYpwjR5Oc-Ix-58x-YlbeOJA67H7ob0~I2RKbMlUE3O4jcrH30pJKChY8w~j9tuhQJ6xjwOQz4OwWEBO4bpin4O2WTGsWz6SL~ktZSPI3wMbIZF1EMYjJlSYATpuivViVzYmDiZ9wlc4cdBfLpUbNHjV3g__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+                         alt="Figure 1. Procedures used to organize and annotate the GENES database."
+                         path-from-xml="gkd02701.jpeg">
+                    <div class="fig-orig original-slide">
+                        <a class="fig-view-orig js-view-large openInAnotherWindow"
+                           href="/view-large/figure/38315123/gkd02701.jpeg"
+                           path-from-xml="gkd02701.jpeg" target="_blank">
+                            Open
+                            in new tab
+                        </a>
+                        <a section="38315123"
+                           href="/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/28/1/10.1093_nar_28.1.27/2/gkd02701.jpeg?Expires=1594009311&amp;Signature=fpUr9CRDgQZqNghGCLUL5mKgNT~ScyxfT4LsONbPNJua7pSTDo3WwX9CimcdNecd8~n17I8Y51bNX-GEvx0SyQ~IQMrYaEvLVBj5beReYnjOUcH3gKktFXoDNxUm7zUO5zX4p9HXQ~QZvPw3wpzhukoXXMxZ4nGT1vhc-MBfJglpuuqmiycnGOc2j8sNmm~afb2PAbLSuwqPk~Gaw9KX-P4R8zPQ~-psjdCdvAN8suDFuUFTnFu0Ob6BOSi8yUYaTNOAIYiJyue8aj8MRTlq87XtP0y1EcwYqblGfMJ3BttxzdkuQCSwlW56ZjPTgAxTL5qdo9iDQJg7O85U-iGcZQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=38315123&amp;ar=2384332&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5127"
+                           class="download-slide" path-from-xml="gkd02701.jpeg"
+                           target="">Download slide</a>
+                    </div>
+                </div>
+                <div class="caption fig-caption">
+                    <p class="chapter-para">
+                        <strong>Figure 1.</strong>
+                        Procedures used to organize and annotate the GENES
+                        database.
+                    </p>
+                </div>
+            </div>
+            <div content-id="GKD027F1" class="fig fig-modal reveal-modal"
+                 style="display: block;">
+                <div class="graphic-wrap">
+                    <img class="content-image"
+                         src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/28/1/10.1093_nar_28.1.27/2/m_gkd02701.jpeg?Expires=1594009311&amp;Signature=hKVv8VDZiWIa7OLCJ1BKBqj7KVadoxXMlupJAXiqFeUHVlB0MDZnvoVk-1hOrizWiVhCb-nbceHjXmKJE2PtbP3Mm5SJq~RGk815ApE9MI5q3ORO3T4ObAU~r7mqyPVybbuBMBrtKiUPC25G7fENA3jgAJMjlWfJM058~N-tv-PbXUystRuj2hpeHFmEEYpwjR5Oc-Ix-58x-YlbeOJA67H7ob0~I2RKbMlUE3O4jcrH30pJKChY8w~j9tuhQJ6xjwOQz4OwWEBO4bpin4O2WTGsWz6SL~ktZSPI3wMbIZF1EMYjJlSYATpuivViVzYmDiZ9wlc4cdBfLpUbNHjV3g__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+                         alt="Figure 1. Procedures used to organize and annotate the GENES database."
+                         path-from-xml="gkd02701.jpeg">
+                    <div class="fig-orig original-slide">
+                        <a class="fig-view-orig js-view-large openInAnotherWindow"
+                           href="/view-large/figure/38315123/gkd02701.jpeg"
+                           path-from-xml="gkd02701.jpeg" target="_blank">
+                            Open
+                            in new tab
+                        </a>
+                        <a section="38315123"
+                           href="/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/28/1/10.1093_nar_28.1.27/2/gkd02701.jpeg?Expires=1594009311&amp;Signature=fpUr9CRDgQZqNghGCLUL5mKgNT~ScyxfT4LsONbPNJua7pSTDo3WwX9CimcdNecd8~n17I8Y51bNX-GEvx0SyQ~IQMrYaEvLVBj5beReYnjOUcH3gKktFXoDNxUm7zUO5zX4p9HXQ~QZvPw3wpzhukoXXMxZ4nGT1vhc-MBfJglpuuqmiycnGOc2j8sNmm~afb2PAbLSuwqPk~Gaw9KX-P4R8zPQ~-psjdCdvAN8suDFuUFTnFu0Ob6BOSi8yUYaTNOAIYiJyue8aj8MRTlq87XtP0y1EcwYqblGfMJ3BttxzdkuQCSwlW56ZjPTgAxTL5qdo9iDQJg7O85U-iGcZQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=38315123&amp;ar=2384332&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5127"
+                           class="download-slide" path-from-xml="gkd02701.jpeg"
+                           target="">Download slide</a>
+                    </div>
+                </div>
+                <div class="caption fig-caption">
+                    <p class="chapter-para">
+                        <strong>Figure 1.</strong>
+                        Procedures used to organize and annotate the GENES
+                        database.
+                    </p>
+                </div>
+            </div>
+            <a id="38315124" scrollto-destination="38315124"></a>
+            <div id="GKD027F2" data-id="GKD027F2" class="fig fig-section">
+                <div class="graphic-wrap">
+                    <img class="content-image"
+                         src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/28/1/10.1093_nar_28.1.27/2/m_gkd02702.jpeg?Expires=1594009311&amp;Signature=RjT21atrym5zGk6lS3TG5v~dBrqssQt9ubx30JUIea5I73SWr1gudnvZ-eqIDh~vxcYhnWc0ZxM240HzyRUqi67ZJ~cTPfKPoGQNunF9Njl3YiMjvo0ukTv7qk-nC3q-m1bhrWkqo~Uqp15I5OOY5FluEUv1DccJpRWYzW991u08SQjUbJeaQNCy1EjNLLn0A0YnbvIIS6~mqMUeEf-BdM5OO8ehvADA96a2qii-c4hpYsmE1oPqoe7dlOgbiNAMN0W5NSRAlm~1xC16iKpzoKouf7xsW97G3BX7qHnTqjqZH4~jKpm8rP20FoiIbvBz130gZE3JJ094065t0wTrPQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+                         alt="Figure 2. The generalized protein–protein interaction includes an indirect protein–protein interaction by two successive enzymes, a direct protein–protein interaction, and another indirect protein–protein interaction by gene expression. The nodes of the generalized protein–protein interaction network are gene products, which can be directly correlated with genes in the genome."
+                         path-from-xml="gkd02702.jpeg">
+                    <div class="fig-orig original-slide">
+                        <a class="fig-view-orig js-view-large openInAnotherWindow"
+                           href="/view-large/figure/38315124/gkd02702.jpeg"
+                           path-from-xml="gkd02702.jpeg" target="_blank">
+                            Open
+                            in new tab
+                        </a>
+                        <a section="38315124"
+                           href="/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/28/1/10.1093_nar_28.1.27/2/gkd02702.jpeg?Expires=1594009311&amp;Signature=Y533tSAsunOvLH9T6iZoxihTkfjyoQuQ5346BuwJ080l4H63vs8EkWf1WAMcljiftp6EF1N2jGKLoWVCPnYqdbCAyudipvAfQ5iD2P3MsNoWJNwU1hDDhXd3LwKWacW0mQnGtfIksAdnkMYpMaUhF66BO6S342BS~1m3xTjU-7-7GRukVwPi40K-2ApFsxsiNY94QMWuIfKFcp261mfO-47b2WOzIYwb4gB3kY66P-QGc-EpvtxKV47FZ5txuTfpeQFgqHypy79VLQ18X7ReBs13-B4L-RY8-OU2EgqYO48Tr02dNCaq-3XNPF2rFECbaUtfQ4AyByZVW0AzqrTcPQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=38315124&amp;ar=2384332&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5127"
+                           class="download-slide" path-from-xml="gkd02702.jpeg"
+                           target="">Download slide</a>
+                    </div>
+                </div>
+                <div class="caption fig-caption">
+                    <p class="chapter-para">
+                        <strong>Figure 2.</strong> The
+                        generalized protein–protein interaction includes an
+                        indirect protein–protein interaction by two successive
+                        enzymes, a direct protein–protein interaction, and
+                        another indirect protein–protein interaction by gene
+                        expression. The nodes of the generalized protein–protein
+                        interaction network are gene products, which can be
+                        directly correlated with genes in the genome.
+                    </p>
+                </div>
+            </div>
+            <div content-id="GKD027F2" class="fig fig-modal reveal-modal"
+                 style="display: block;">
+                <div class="graphic-wrap">
+                    <img class="content-image"
+                         src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/28/1/10.1093_nar_28.1.27/2/m_gkd02702.jpeg?Expires=1594009311&amp;Signature=RjT21atrym5zGk6lS3TG5v~dBrqssQt9ubx30JUIea5I73SWr1gudnvZ-eqIDh~vxcYhnWc0ZxM240HzyRUqi67ZJ~cTPfKPoGQNunF9Njl3YiMjvo0ukTv7qk-nC3q-m1bhrWkqo~Uqp15I5OOY5FluEUv1DccJpRWYzW991u08SQjUbJeaQNCy1EjNLLn0A0YnbvIIS6~mqMUeEf-BdM5OO8ehvADA96a2qii-c4hpYsmE1oPqoe7dlOgbiNAMN0W5NSRAlm~1xC16iKpzoKouf7xsW97G3BX7qHnTqjqZH4~jKpm8rP20FoiIbvBz130gZE3JJ094065t0wTrPQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+                         alt="Figure 2. The generalized protein–protein interaction includes an indirect protein–protein interaction by two successive enzymes, a direct protein–protein interaction, and another indirect protein–protein interaction by gene expression. The nodes of the generalized protein–protein interaction network are gene products, which can be directly correlated with genes in the genome."
+                         path-from-xml="gkd02702.jpeg">
+                    <div class="fig-orig original-slide">
+                        <a class="fig-view-orig js-view-large openInAnotherWindow"
+                           href="/view-large/figure/38315124/gkd02702.jpeg"
+                           path-from-xml="gkd02702.jpeg" target="_blank">
+                            Open
+                            in new tab
+                        </a>
+                        <a section="38315124"
+                           href="/DownloadFile/DownloadImage.aspx?image=https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/28/1/10.1093_nar_28.1.27/2/gkd02702.jpeg?Expires=1594009311&amp;Signature=Y533tSAsunOvLH9T6iZoxihTkfjyoQuQ5346BuwJ080l4H63vs8EkWf1WAMcljiftp6EF1N2jGKLoWVCPnYqdbCAyudipvAfQ5iD2P3MsNoWJNwU1hDDhXd3LwKWacW0mQnGtfIksAdnkMYpMaUhF66BO6S342BS~1m3xTjU-7-7GRukVwPi40K-2ApFsxsiNY94QMWuIfKFcp261mfO-47b2WOzIYwb4gB3kY66P-QGc-EpvtxKV47FZ5txuTfpeQFgqHypy79VLQ18X7ReBs13-B4L-RY8-OU2EgqYO48Tr02dNCaq-3XNPF2rFECbaUtfQ4AyByZVW0AzqrTcPQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&amp;sec=38315124&amp;ar=2384332&amp;xsltPath=~/UI/app/XSLT&amp;imagename=&amp;siteId=5127"
+                           class="download-slide" path-from-xml="gkd02702.jpeg"
+                           target="">Download slide</a>
+                    </div>
+                </div>
+                <div class="caption fig-caption">
+                    <p class="chapter-para">
+                        <strong>Figure 2.</strong> The
+                        generalized protein–protein interaction includes an
+                        indirect protein–protein interaction by two successive
+                        enzymes, a direct protein–protein interaction, and
+                        another indirect protein–protein interaction by gene
+                        expression. The nodes of the generalized protein–protein
+                        interaction network are gene products, which can be
+                        directly correlated with genes in the genome.
+                    </p>
+                </div>
+            </div>
+            <a id="38315125" scrollto-destination="38315125"></a>
+            <div content-id="GKD027TB1"
+                 class="table-modal table-full-width-wrap"
+                 style="display: block;">
+                <div class="table-wrap table-wide" table-width="2"
+                     table-min-width-for-wide="">
+                    <div id="GKD027TB1" class="table-wrap-title"
+                         data-id="GKD027TB1">
+                        <span class="label">
+                            <strong>
+                                Table
+                                1.
+                            </strong>
+                        </span>
+                        <div class="caption">
+                            <p class="chapter-para">
+                                The summary of KEGG release
+                                12.0 (October 1999)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="table-overflow">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Database&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>PATHWAY&nbsp;</td>
+                                    <td>
+                                        2706 entries for pathway diagrams
+                                        constructed from 143 manually drawn
+                                        diagrams&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>GENES&nbsp;</td>
+                                    <td>
+                                        110 018 entries in 24 complete genomes
+                                        and 12 partial genomes&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>LIGAND&nbsp;</td>
+                                    <td>
+                                        5645 entries in the COMPOUND
+                                        section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        3705 entries in the ENZYME section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        5207 reactions in the REACTION
+                                        section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Auxiliary data&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Ortholog group table&nbsp;</td>
+                                    <td>61 tables&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Genome map&nbsp;</td>
+                                    <td>
+                                        23 complete genomes and one partial
+                                        genome&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Comparative genome map&nbsp;</td>
+                                    <td>
+                                        23 × 23 complete genome
+                                        comparisons&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expression map&nbsp;</td>
+                                    <td>Four sets of expression maps&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Gene catalog&nbsp;</td>
+                                    <td>53 catalogs&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Molecular catalog&nbsp;</td>
+                                    <td>Eight catalogs&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Disease catalog&nbsp;</td>
+                                    <td>Three catalogs&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div content-id="GKD027TB1" class="table-modal">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Database&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>PATHWAY&nbsp;</td>
+                                    <td>
+                                        2706 entries for pathway diagrams
+                                        constructed from 143 manually drawn
+                                        diagrams&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>GENES&nbsp;</td>
+                                    <td>
+                                        110 018 entries in 24 complete genomes
+                                        and 12 partial genomes&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>LIGAND&nbsp;</td>
+                                    <td>
+                                        5645 entries in the COMPOUND
+                                        section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        3705 entries in the ENZYME section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        5207 reactions in the REACTION
+                                        section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Auxiliary data&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Ortholog group table&nbsp;</td>
+                                    <td>61 tables&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Genome map&nbsp;</td>
+                                    <td>
+                                        23 complete genomes and one partial
+                                        genome&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Comparative genome map&nbsp;</td>
+                                    <td>
+                                        23 × 23 complete genome
+                                        comparisons&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expression map&nbsp;</td>
+                                    <td>Four sets of expression maps&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Gene catalog&nbsp;</td>
+                                    <td>53 catalogs&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Molecular catalog&nbsp;</td>
+                                    <td>Eight catalogs&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Disease catalog&nbsp;</td>
+                                    <td>Three catalogs&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="graphic-wrap">
+                        <a class="fig-view-orig openInAnotherWindow btn js-view-large"
+                           href="/view-large/38315125" target="_blank">
+                            Open in
+                            new tab
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="table-full-width-wrap">
+                <div class="table-wrap table-wide" table-width="2"
+                     table-min-width-for-wide="">
+                    <div id="GKD027TB1" class="table-wrap-title"
+                         data-id="GKD027TB1">
+                        <span class="label">
+                            <strong>
+                                Table
+                                1.
+                            </strong>
+                        </span>
+                        <div class="caption">
+                            <p class="chapter-para">
+                                The summary of KEGG release
+                                12.0 (October 1999)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="table-overflow">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Database&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>PATHWAY&nbsp;</td>
+                                    <td>
+                                        2706 entries for pathway diagrams
+                                        constructed from 143 manually drawn
+                                        diagrams&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>GENES&nbsp;</td>
+                                    <td>
+                                        110 018 entries in 24 complete genomes
+                                        and 12 partial genomes&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>LIGAND&nbsp;</td>
+                                    <td>
+                                        5645 entries in the COMPOUND
+                                        section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        3705 entries in the ENZYME section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        5207 reactions in the REACTION
+                                        section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Auxiliary data&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Ortholog group table&nbsp;</td>
+                                    <td>61 tables&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Genome map&nbsp;</td>
+                                    <td>
+                                        23 complete genomes and one partial
+                                        genome&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Comparative genome map&nbsp;</td>
+                                    <td>
+                                        23 × 23 complete genome
+                                        comparisons&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expression map&nbsp;</td>
+                                    <td>Four sets of expression maps&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Gene catalog&nbsp;</td>
+                                    <td>53 catalogs&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Molecular catalog&nbsp;</td>
+                                    <td>Eight catalogs&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Disease catalog&nbsp;</td>
+                                    <td>Three catalogs&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div content-id="GKD027TB1" class="table-modal">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Database&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>PATHWAY&nbsp;</td>
+                                    <td>
+                                        2706 entries for pathway diagrams
+                                        constructed from 143 manually drawn
+                                        diagrams&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>GENES&nbsp;</td>
+                                    <td>
+                                        110 018 entries in 24 complete genomes
+                                        and 12 partial genomes&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>LIGAND&nbsp;</td>
+                                    <td>
+                                        5645 entries in the COMPOUND
+                                        section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        3705 entries in the ENZYME section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        5207 reactions in the REACTION
+                                        section&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Auxiliary data&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Ortholog group table&nbsp;</td>
+                                    <td>61 tables&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Genome map&nbsp;</td>
+                                    <td>
+                                        23 complete genomes and one partial
+                                        genome&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Comparative genome map&nbsp;</td>
+                                    <td>
+                                        23 × 23 complete genome
+                                        comparisons&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Expression map&nbsp;</td>
+                                    <td>Four sets of expression maps&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Gene catalog&nbsp;</td>
+                                    <td>53 catalogs&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Molecular catalog&nbsp;</td>
+                                    <td>Eight catalogs&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>Disease catalog&nbsp;</td>
+                                    <td>Three catalogs&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="graphic-wrap">
+                        <a class="fig-view-orig openInAnotherWindow btn js-view-large"
+                           href="/view-large/38315125" target="_blank">
+                            Open in
+                            new tab
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a id="38315126" scrollto-destination="38315126"></a>
+            <div content-id="GKD027TB2"
+                 class="table-modal table-full-width-wrap"
+                 style="display: block;">
+                <div class="table-wrap table-wide" table-width="4"
+                     table-min-width-for-wide="">
+                    <div id="GKD027TB2" class="table-wrap-title"
+                         data-id="GKD027TB2">
+                        <span class="label">
+                            <strong>
+                                Table
+                                2.
+                            </strong>
+                        </span>
+                        <div class="caption">
+                            <p class="chapter-para">
+                                The data content of the
+                                GENES database entry
+                            </p>
+                        </div>
+                    </div>
+                    <div class="table-overflow">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Field&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                    <td>Links&nbsp;</td>
+                                    <td>Data source&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>ENTRY&nbsp;</td>
+                                    <td>
+                                        Entry identifier (gene accession
+                                        number)&nbsp;
+                                    </td>
+                                    <td>LinkDB database&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>NAME&nbsp;</td>
+                                    <td>
+                                        Gene names and alternative names&nbsp;
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>DEFINITION&nbsp;</td>
+                                    <td>Annotation of gene function&nbsp;</td>
+                                    <td>
+                                        LIGAND/ENZYME database, SWISS-PROT
+                                        database and PubMed database&nbsp;
+                                    </td>
+                                    <td>
+                                        GenBank, original database, SWISS-PROT
+                                        and KEGG&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CLASS&nbsp;</td>
+                                    <td>
+                                        Classification of genes according to the
+                                        KEGG pathways&nbsp;
+                                    </td>
+                                    <td>KEGG/PATHWAY database&nbsp;</td>
+                                    <td>KEGG&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>POSITION&nbsp;</td>
+                                    <td>Chromosomal position&nbsp;</td>
+                                    <td>KEGG/GENOME map&nbsp;</td>
+                                    <td>GenBank&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>DBLINKS&nbsp;</td>
+                                    <td>Outside links&nbsp;</td>
+                                    <td>
+                                        Original databases and NCBI Entrez
+                                        database&nbsp;
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>CODON_USAGE&nbsp;</td>
+                                    <td>Codon usage&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>Computed&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>AASEQ&nbsp;</td>
+                                    <td>Amino acid sequence&nbsp;</td>
+                                    <td>
+                                        see footnote
+                                        <sup>a</sup>&nbsp;
+                                    </td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>NTSEQ&nbsp;</td>
+                                    <td>Nucleotide sequence&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div content-id="GKD027TB2" class="table-modal">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Field&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                    <td>Links&nbsp;</td>
+                                    <td>Data source&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>ENTRY&nbsp;</td>
+                                    <td>
+                                        Entry identifier (gene accession
+                                        number)&nbsp;
+                                    </td>
+                                    <td>LinkDB database&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>NAME&nbsp;</td>
+                                    <td>
+                                        Gene names and alternative names&nbsp;
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>DEFINITION&nbsp;</td>
+                                    <td>Annotation of gene function&nbsp;</td>
+                                    <td>
+                                        LIGAND/ENZYME database, SWISS-PROT
+                                        database and PubMed database&nbsp;
+                                    </td>
+                                    <td>
+                                        GenBank, original database, SWISS-PROT
+                                        and KEGG&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CLASS&nbsp;</td>
+                                    <td>
+                                        Classification of genes according to the
+                                        KEGG pathways&nbsp;
+                                    </td>
+                                    <td>KEGG/PATHWAY database&nbsp;</td>
+                                    <td>KEGG&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>POSITION&nbsp;</td>
+                                    <td>Chromosomal position&nbsp;</td>
+                                    <td>KEGG/GENOME map&nbsp;</td>
+                                    <td>GenBank&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>DBLINKS&nbsp;</td>
+                                    <td>Outside links&nbsp;</td>
+                                    <td>
+                                        Original databases and NCBI Entrez
+                                        database&nbsp;
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>CODON_USAGE&nbsp;</td>
+                                    <td>Codon usage&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>Computed&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>AASEQ&nbsp;</td>
+                                    <td>Amino acid sequence&nbsp;</td>
+                                    <td>
+                                        see footnote
+                                        <sup>a</sup>&nbsp;
+                                    </td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>NTSEQ&nbsp;</td>
+                                    <td>Nucleotide sequence&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-wrap-foot">
+                        <p class="chapter-para">
+                            <sup>a</sup>Computational links
+                            are available including sequence similarity searches
+                            (FASTA and BLAST), motif search (MOTIF), membrane
+                            protein predictions (SOSUI and TSEG), and cellular
+                            localization site prediction (PSORT).
+                        </p>
+                        <p class="chapter-para"></p>
+                    </div>
+                    <div class="graphic-wrap">
+                        <a class="fig-view-orig openInAnotherWindow btn js-view-large"
+                           href="/view-large/38315126" target="_blank">
+                            Open in
+                            new tab
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="table-full-width-wrap">
+                <div class="table-wrap table-wide" table-width="4"
+                     table-min-width-for-wide="">
+                    <div id="GKD027TB2" class="table-wrap-title"
+                         data-id="GKD027TB2">
+                        <span class="label">
+                            <strong>
+                                Table
+                                2.
+                            </strong>
+                        </span>
+                        <div class="caption">
+                            <p class="chapter-para">
+                                The data content of the
+                                GENES database entry
+                            </p>
+                        </div>
+                    </div>
+                    <div class="table-overflow">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Field&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                    <td>Links&nbsp;</td>
+                                    <td>Data source&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>ENTRY&nbsp;</td>
+                                    <td>
+                                        Entry identifier (gene accession
+                                        number)&nbsp;
+                                    </td>
+                                    <td>LinkDB database&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>NAME&nbsp;</td>
+                                    <td>
+                                        Gene names and alternative names&nbsp;
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>DEFINITION&nbsp;</td>
+                                    <td>Annotation of gene function&nbsp;</td>
+                                    <td>
+                                        LIGAND/ENZYME database, SWISS-PROT
+                                        database and PubMed database&nbsp;
+                                    </td>
+                                    <td>
+                                        GenBank, original database, SWISS-PROT
+                                        and KEGG&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CLASS&nbsp;</td>
+                                    <td>
+                                        Classification of genes according to the
+                                        KEGG pathways&nbsp;
+                                    </td>
+                                    <td>KEGG/PATHWAY database&nbsp;</td>
+                                    <td>KEGG&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>POSITION&nbsp;</td>
+                                    <td>Chromosomal position&nbsp;</td>
+                                    <td>KEGG/GENOME map&nbsp;</td>
+                                    <td>GenBank&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>DBLINKS&nbsp;</td>
+                                    <td>Outside links&nbsp;</td>
+                                    <td>
+                                        Original databases and NCBI Entrez
+                                        database&nbsp;
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>CODON_USAGE&nbsp;</td>
+                                    <td>Codon usage&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>Computed&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>AASEQ&nbsp;</td>
+                                    <td>Amino acid sequence&nbsp;</td>
+                                    <td>
+                                        see footnote
+                                        <sup>a</sup>&nbsp;
+                                    </td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>NTSEQ&nbsp;</td>
+                                    <td>Nucleotide sequence&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div content-id="GKD027TB2" class="table-modal">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Field&nbsp;</td>
+                                    <td>Content&nbsp;</td>
+                                    <td>Links&nbsp;</td>
+                                    <td>Data source&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>ENTRY&nbsp;</td>
+                                    <td>
+                                        Entry identifier (gene accession
+                                        number)&nbsp;
+                                    </td>
+                                    <td>LinkDB database&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>NAME&nbsp;</td>
+                                    <td>
+                                        Gene names and alternative names&nbsp;
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>DEFINITION&nbsp;</td>
+                                    <td>Annotation of gene function&nbsp;</td>
+                                    <td>
+                                        LIGAND/ENZYME database, SWISS-PROT
+                                        database and PubMed database&nbsp;
+                                    </td>
+                                    <td>
+                                        GenBank, original database, SWISS-PROT
+                                        and KEGG&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CLASS&nbsp;</td>
+                                    <td>
+                                        Classification of genes according to the
+                                        KEGG pathways&nbsp;
+                                    </td>
+                                    <td>KEGG/PATHWAY database&nbsp;</td>
+                                    <td>KEGG&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>POSITION&nbsp;</td>
+                                    <td>Chromosomal position&nbsp;</td>
+                                    <td>KEGG/GENOME map&nbsp;</td>
+                                    <td>GenBank&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>DBLINKS&nbsp;</td>
+                                    <td>Outside links&nbsp;</td>
+                                    <td>
+                                        Original databases and NCBI Entrez
+                                        database&nbsp;
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>CODON_USAGE&nbsp;</td>
+                                    <td>Codon usage&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>Computed&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>AASEQ&nbsp;</td>
+                                    <td>Amino acid sequence&nbsp;</td>
+                                    <td>
+                                        see footnote
+                                        <sup>a</sup>&nbsp;
+                                    </td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>NTSEQ&nbsp;</td>
+                                    <td>Nucleotide sequence&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>GenBank or original database&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-wrap-foot">
+                        <p class="chapter-para">
+                            <sup>a</sup>Computational links
+                            are available including sequence similarity searches
+                            (FASTA and BLAST), motif search (MOTIF), membrane
+                            protein predictions (SOSUI and TSEG), and cellular
+                            localization site prediction (PSORT).
+                        </p>
+                        <p class="chapter-para"></p>
+                    </div>
+                    <div class="graphic-wrap">
+                        <a class="fig-view-orig openInAnotherWindow btn js-view-large"
+                           href="/view-large/38315126" target="_blank">
+                            Open in
+                            new tab
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h2 scrollto-destination="38315127" id="38315127"
+                class="backreferences-title">
+                References
+            </h2>
+            <div class="ref-list">
+                <span class="refLink"
+                      xmlns:helper="urn:XsltStringHelper">
+                    <a name="jumplink-GKD027C1" href="javascript:;"></a>
+                </span>
+                <div content-id="GKD027C1" xmlns:helper="urn:XsltStringHelper">
+                    <div class="ref false">
+                        <div role="GKD027C1" class="ref-content ">
+                            <div class="mixed-citation citation">
+                                <p class="mixed-citation-compatibility">
+                                    1
+                                    Kanehisa,M. (
+                                </p>
+                                <div class="year">1999</div>)
+                                <em>
+                                    Post-Genome
+                                    Informatics
+                                </em>.
+                                <em> </em>Oxford University
+                                Press, Oxford, UK.
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="refLink"
+                      xmlns:helper="urn:XsltStringHelper">
+                    <a name="jumplink-GKD027C2" href="javascript:;"></a>
+                </span>
+                <div content-id="GKD027C2" xmlns:helper="urn:XsltStringHelper">
+                    <div class="ref false">
+                        <div role="GKD027C2" class="ref-content ">
+                            <div class="mixed-citation citation">
+                                <p class="mixed-citation-compatibility">
+                                    2
+                                    Kanehisa,M. (
+                                </p>
+                                <div class="year">1997</div>)
+                                <div class="source ">Trends Genet.</div>,
+                                <div class="volume">13</div>,
+                                <div class="fpage">
+                                    375
+                                </div>–376.
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="refLink"
+                      xmlns:helper="urn:XsltStringHelper">
+                    <a name="jumplink-GKD027C3" href="javascript:;"></a>
+                </span>
+                <div content-id="GKD027C3" xmlns:helper="urn:XsltStringHelper">
+                    <div class="ref false">
+                        <div role="GKD027C3" class="ref-content ">
+                            <div class="mixed-citation citation">
+                                <p class="mixed-citation-compatibility">
+                                    3
+                                    Kanehisa,M. (
+                                </p>
+                                <div class="year">1997</div>)
+                                <div class="source ">Trends Biochem. Sci.</div>,
+                                <div class="volume">22</div>,
+                                <div class="fpage">442</div>–444.
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="refLink"
+                      xmlns:helper="urn:XsltStringHelper">
+                    <a name="jumplink-GKD027C4" href="javascript:;"></a>
+                </span>
+                <div content-id="GKD027C4" xmlns:helper="urn:XsltStringHelper">
+                    <div class="ref false">
+                        <div role="GKD027C4" class="ref-content ">
+                            <div class="mixed-citation citation">
+                                <p class="mixed-citation-compatibility">
+                                    4
+                                    Goto,S., Nishioka,T. and Kanehisa,M. (
+                                </p>
+                                <div class="year">2000</div>)
+                                <div class="source ">Nucleic Acids Res.</div>,
+                                <div class="volume">28</div>,
+                                <div class="fpage">380</div>–382.
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="refLink"
+                      xmlns:helper="urn:XsltStringHelper">
+                    <a name="jumplink-GKD027C5" href="javascript:;"></a>
+                </span>
+                <div content-id="GKD027C5" xmlns:helper="urn:XsltStringHelper">
+                    <div class="ref false">
+                        <div role="GKD027C5" class="ref-content ">
+                            <div class="mixed-citation citation">
+                                <p class="mixed-citation-compatibility">
+                                    5
+                                    Ogata,H., Goto,S., Sato,K., Fujibuchi,W.,
+                                    Bono,H. and Kanehisa,M. (
+                                </p>
+                                <div class="year">1999</div>)
+                                <div class="source ">Nucleic Acids Res.</div>,
+                                <div class="volume">27</div>,
+                                <div class="fpage">29</div>–34.
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="refLink"
+                      xmlns:helper="urn:XsltStringHelper">
+                    <a name="jumplink-GKD027C6" href="javascript:;"></a>
+                </span>
+                <div content-id="GKD027C6" xmlns:helper="urn:XsltStringHelper">
+                    <div class="ref false">
+                        <div role="GKD027C6" class="ref-content ">
+                            <div class="mixed-citation citation">
+                                <p class="mixed-citation-compatibility">
+                                    6
+                                    Bairoch,A. and Apweiler,R. (
+                                </p>
+                                <div class="year">1999</div>)
+                                <div class="source ">Nucleic Acids Res.</div>,
+                                <div class="volume">27</div>,
+                                <div class="fpage">49</div>–54. See also this
+                                issue:
+                                <em>Nucleic Acids Res</em>. (2000)
+                                <strong>28</strong>, 45–48.
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="refLink"
+                      xmlns:helper="urn:XsltStringHelper">
+                    <a name="jumplink-GKD027C7" href="javascript:;"></a>
+                </span>
+                <div content-id="GKD027C7" xmlns:helper="urn:XsltStringHelper">
+                    <div class="ref false">
+                        <div role="GKD027C7" class="ref-content ">
+                            <div class="mixed-citation citation">
+                                <p class="mixed-citation-compatibility">
+                                    7
+                                    Fujibuchi,W., Goto,S., Migimatsu,H.,
+                                    Uchiyama,I., Ogiwara,A., Akiyama,Y. and
+                                    Kanehisa,M. (
+                                </p>
+                                <div class="year">1998</div>)
+                                <div class="source ">
+                                    Pac. Symp. Biocomput. 1998
+                                </div>,
+                                <div class="fpage">683</div>–694.
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /foreach -->
+            <!-- /foreach -->
+
+
+
+        </div><!-- /.widget-items -->
+    </div><!-- /.module-widget -->
+
+
+</div>
