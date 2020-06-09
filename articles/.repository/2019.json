@@ -1,1 +1,158 @@
-﻿{"articles":[{"title":"Circos作图环境封装","url":"\/circos_dev","authors":["xieguigang"],"external_links":[],"time":"10\/4\/2019 12:00:00 AM","topics":["course","dev","circos"]},{"title":"GO功能注释原理","url":"\/GO_annotation","authors":["xieguigang"],"external_links":[],"time":"10\/4\/2019 12:00:00 AM","topics":["course","dev","gsea","go","gene ontology"]},{"title":"基因组功能富集计算分析","url":"\/GSEA","authors":["xieguigang"],"external_links":[],"time":"8\/12\/2019 12:00:00 AM","topics":["course","dev","gsea","kegg","fisher test"]},{"title":"KEGG代谢途径注释","url":"\/KEGG_pathway_mapping","authors":["xieguigang"],"external_links":[],"time":"10\/2\/2018 12:00:00 AM","topics":["course","dev","kegg","blastp"]}],"name":"2019","topics":{"course":[{"title":"Circos作图环境封装","url":"\/circos_dev"},{"title":"GO功能注释原理","url":"\/GO_annotation"},{"title":"基因组功能富集计算分析","url":"\/GSEA"},{"title":"KEGG代谢途径注释","url":"\/KEGG_pathway_mapping"}],"dev":[{"title":"Circos作图环境封装","url":"\/circos_dev"},{"title":"GO功能注释原理","url":"\/GO_annotation"},{"title":"基因组功能富集计算分析","url":"\/GSEA"},{"title":"KEGG代谢途径注释","url":"\/KEGG_pathway_mapping"}],"circos":[{"title":"Circos作图环境封装","url":"\/circos_dev"}],"gsea":[{"title":"GO功能注释原理","url":"\/GO_annotation"},{"title":"基因组功能富集计算分析","url":"\/GSEA"}],"go":[{"title":"GO功能注释原理","url":"\/GO_annotation"}],"gene ontology":[{"title":"GO功能注释原理","url":"\/GO_annotation"}],"kegg":[{"title":"基因组功能富集计算分析","url":"\/GSEA"},{"title":"KEGG代谢途径注释","url":"\/KEGG_pathway_mapping"}],"fisher test":[{"title":"基因组功能富集计算分析","url":"\/GSEA"}],"blastp":[{"title":"KEGG代谢途径注释","url":"\/KEGG_pathway_mapping"}]}}
+﻿{
+  "articles": [
+    {
+      "title": "Circos作图环境封装",
+      "url": "\/circos_dev",
+      "authors": [
+        "xieguigang"
+      ],
+      "external_links": [
+      ],
+      "time": "10\/4\/2019 12:00:00 AM",
+      "topics": [
+        "course",
+        "dev",
+        "circos"
+      ]
+    },
+    {
+      "title": "GO功能注释原理",
+      "url": "\/GO_annotation",
+      "authors": [
+        "xieguigang"
+      ],
+      "external_links": [
+      ],
+      "time": "10\/4\/2019 12:00:00 AM",
+      "topics": [
+        "course",
+        "dev",
+        "gsea",
+        "go",
+        "gene ontology"
+      ]
+    },
+    {
+      "title": "基因组功能富集计算分析",
+      "url": "\/GSEA",
+      "authors": [
+        "xieguigang"
+      ],
+      "external_links": [
+      ],
+      "time": "8\/12\/2019 12:00:00 AM",
+      "topics": [
+        "course",
+        "dev",
+        "gsea",
+        "kegg",
+        "fisher test"
+      ]
+    },
+    {
+      "title": "KEGG代谢途径注释",
+      "url": "\/KEGG_pathway_mapping",
+      "authors": [
+        "xieguigang"
+      ],
+      "external_links": [
+      ],
+      "time": "10\/2\/2018 12:00:00 AM",
+      "topics": [
+        "course",
+        "dev",
+        "kegg",
+        "blastp"
+      ]
+    }
+  ],
+  "name": "2019",
+  "topics": {
+    "course": [
+      {
+        "title": "Circos作图环境封装",
+        "url": "\/circos_dev"
+      },
+      {
+        "title": "GO功能注释原理",
+        "url": "\/GO_annotation"
+      },
+      {
+        "title": "基因组功能富集计算分析",
+        "url": "\/GSEA"
+      },
+      {
+        "title": "KEGG代谢途径注释",
+        "url": "\/KEGG_pathway_mapping"
+      }
+    ],
+    "dev": [
+      {
+        "title": "Circos作图环境封装",
+        "url": "\/circos_dev"
+      },
+      {
+        "title": "GO功能注释原理",
+        "url": "\/GO_annotation"
+      },
+      {
+        "title": "基因组功能富集计算分析",
+        "url": "\/GSEA"
+      },
+      {
+        "title": "KEGG代谢途径注释",
+        "url": "\/KEGG_pathway_mapping"
+      }
+    ],
+    "circos": [
+      {
+        "title": "Circos作图环境封装",
+        "url": "\/circos_dev"
+      }
+    ],
+    "gsea": [
+      {
+        "title": "GO功能注释原理",
+        "url": "\/GO_annotation"
+      },
+      {
+        "title": "基因组功能富集计算分析",
+        "url": "\/GSEA"
+      }
+    ],
+    "go": [
+      {
+        "title": "GO功能注释原理",
+        "url": "\/GO_annotation"
+      }
+    ],
+    "gene ontology": [
+      {
+        "title": "GO功能注释原理",
+        "url": "\/GO_annotation"
+      }
+    ],
+    "kegg": [
+      {
+        "title": "基因组功能富集计算分析",
+        "url": "\/GSEA"
+      },
+      {
+        "title": "KEGG代谢途径注释",
+        "url": "\/KEGG_pathway_mapping"
+      }
+    ],
+    "fisher test": [
+      {
+        "title": "基因组功能富集计算分析",
+        "url": "\/GSEA"
+      }
+    ],
+    "blastp": [
+      {
+        "title": "KEGG代谢途径注释",
+        "url": "\/KEGG_pathway_mapping"
+      }
+    ]
+  }
+}
