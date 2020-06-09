@@ -4,6 +4,6 @@
     <StartArguments>"D:\developer.gcmodeller.org\gcmodeller-hexo\dev\siteMap\test"</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Publish|x64'">
-    <StartArguments>"D:\developer.gcmodeller.org\gcmodeller-hexo\articles" --toc "D:\developer.gcmodeller.org\gcmodeller-hexo\post.html"</StartArguments>
+    <StartArguments>"D:\developer.gcmodeller.org\gcmodeller-hexo\articles"</StartArguments>
   </PropertyGroup>
 </Project>
