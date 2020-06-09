@@ -117,6 +117,7 @@
   <ItemGroup>
     <Compile Include="JSON.vb" />
     <Compile Include="Articles.vb" />
+    <Compile Include="Statics.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
