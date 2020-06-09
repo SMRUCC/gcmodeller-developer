@@ -1,6 +1,7 @@
 ﻿Imports Microsoft.VisualBasic.FileIO
 Imports Microsoft.VisualBasic.Linq
 Imports Microsoft.VisualBasic.Serialization.JSON
+Imports Microsoft.VisualBasic.ValueTypes
 Imports r = System.Text.RegularExpressions.Regex
 
 Module Articles
@@ -28,7 +29,9 @@ Module Articles
         Next
 
         Call New DbJson With {
-            .topics = topics.ToDictionary(Function(a) a.Key, Function(a) a.Value.ToArray)
+            .topics = topics.ToDictionary(Function(a) a.Key, Function(a) a.Value.ToArray),
+            .lastupdated = Now.UnixTimeStamp,
+            .volumns = volumns.ToArray
         }.GetJson _
          .SaveTo($"{root}/{repository}/index.json")
     End Sub
