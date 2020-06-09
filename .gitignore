@@ -16,5 +16,4 @@ obj/
 /dev/.vs/siteMap/v16/Server/sqlite3
 *.map
 
-articles/
 template/tmp.html
